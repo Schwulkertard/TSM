@@ -1,0 +1,25 @@
+state={
+	id=719
+	name="Mexico City"
+	provinces={
+		11986 11981 1859 11988
+	}
+	history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		victory_points = {
+			11986 25
+		}
+	}
+	resources = {
+		steel = 90
+	}
+	
+	manpower=5410000
+	state_category=large_city
+}

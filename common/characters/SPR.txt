@@ -1,0 +1,339 @@
+characters={
+
+	SPA_francisco_franco={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_francisco_franco
+			portraits={
+				army={
+					large="GFX_portrait_spain_francisco_franco"
+					small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
+				}
+			}
+
+			field_marshal={
+				traits={  panzer_leader trait_engineer trickster ranger infantry_leader }
+				skill=6
+				attack_skill=5
+				defense_skill=4
+				planning_skill=6
+				logistics_skill=5
+				legacy_id=1108
+				visible = {
+					always = yes
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = SPA_francisco_franco
+				allowed = {
+					original_tag = SPR
+				}
+				available = {
+					always = yes
+				}
+				traits = {
+					army_chief_offensive_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+	
+			country_leader={
+				ideology=fascism_ideology
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}
+	}
+
+	SPR_juan_lopez_sanchez={
+		name=SPR_juan_lopez_sanchez
+		portraits={
+			army={
+				small="GFX_idea_SPR_juan_lopez_sanchez"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_juan_lopez_sanchez
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+			}
+			traits = {
+				infrastructure_expert 
+			}
+			ai_will_do = {
+				factor = 1.000
+				modifier = {
+					factor = 0.000
+					OR = { 
+
+					}
+				}
+			}
+		}
+	}
+
+	SPR_juan_andrade={
+		name=SPR_juan_andrade
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_juan_andrade
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				backroom_backstabber 
+			}
+		}
+	}
+
+	SPA_jose_enrique_varela={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_jose_enrique_varela
+			portraits={
+				army={
+					large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+					small="gfx/interface/ideas/idea_spa_jose_enrique_varela.dds"
+				}
+			}
+			advisor={
+				cost = 150
+				slot = theorist
+				idea_token = SPA_jose_enrique_varela
+				ledger = army
+				allowed = {
+					has_dlc = "La Resistance"
+					original_tag = SPR
+				}
+				visible = {
+				
+				}
+				available = {
+					
+				}
+				traits = {
+					military_theorist
+				}
+				research_bonus = { land_doctrine = 0.1 }
+			}
+
+			corps_commander={
+				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader panzer_leader trait_engineer trickster hill_fighter }
+				skill=6
+				attack_skill=5
+				defense_skill=4
+				planning_skill=5
+				logistics_skill=5
+				legacy_id=1114
+				visible = {
+					
+					}
+				}
+			}
+		}
+		
+	SPR_felipe_diaz_sandino = { 
+		name=SPR_felipe_diaz_sandino
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = SPR_felipe_diaz_sandino
+			ledger = air
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				
+			}
+			available = {
+			
+			}
+			traits = { air_warfare_theorist }
+		}
+	}	
+
+	SPR_etelvino_vega = { # Stalinist
+		name=SPR_etelvino_vega
+		portraits={
+			army={
+				small="GFX_idea_SPR_etelvino_vega"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPR_etelvino_vega
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 100
+		}
+	}
+
+	SPA_alfredo_kindelan_duany={
+		name=SPA_alfredo_kindelan_duany
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SPA_alfredo_kindelan_duany
+			name = SPA_alfredo_kindelan_duany
+			allowed = {
+				original_tag = SPR
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SPR_francisco_ciutat_de_miguel = { # Stalinist
+		name=SPR_francisco_ciutat_de_miguel
+		portraits={
+			army={
+				small="GFX_idea_SPR_francisco_ciutat_de_miguel"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = SPR_francisco_ciutat_de_miguel
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+	}
+
+	SPR_infantry_military_council = { # Anarchist
+		name=SPR_infantry_military_council
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPR_infantry_military_council
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+			}
+			available = {
+			
+			}
+			traits = { army_commando_3 }
+			cost = 100
+		}
+	}
+
+	SPA_wilhelm_ritter_von_thoma = {
+		name=SPA_wilhelm_ritter_von_thoma
+		portraits={
+			army={
+				small="GFX_idea_SPA_wilhelm_ritter_von_thoma"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SPA_wilhelm_ritter_von_thoma
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+		}
+	}
+
+	SPR_domenec_batet = {
+		name=SPR_domenec_batet
+		portraits={
+			army={
+				small="GFX_idea_SPR_domenec_batet"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SPR_domenec_batet
+			ledger = army
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = { army_chief_morale_2 }
+			cost = 100
+		}
+	}
+}

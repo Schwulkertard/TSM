@@ -1,0 +1,175 @@
+
+soundeffect = {
+	name = "speech1"
+	sounds = {
+		sound = speech1
+	}
+	volume = 1
+	
+}soundeffect = {
+	name = "sp_ger_stuka"
+	sounds = {
+		sound = sp_ger_stuka
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "marschlied_panzergrenadiere"
+	sounds = {
+		sound = marschlied_panzergrenadiere
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "placeholdera"
+	sounds = {
+		sound = placeholdera
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "eisenhower"
+	sounds = {
+		sound = eisenhower
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "placeholdera_2"
+	sounds = {
+		sound = placeholdera_2
+	}
+	volume = 10
+	
+}
+soundeffect = {
+	name = "sp_ger_anschluss"
+	sounds = {
+		sound = sp_ger_anschluss
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "sp_usa_roosevelt"
+	sounds = {
+		sound = sp_usa_roosevelt
+	}
+	volume = 1
+	
+}
+
+soundeffect = {
+	name = "sp_jap_banzai"
+	sounds = {
+		sound = sp_jap_banzai
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "sp_ita_musso"
+	sounds = {
+		sound = sp_ita_musso
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "sp_uk_chur"
+	sounds = {
+		sound = sp_uk_chur
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "sp_sov_stalin"
+	sounds = {
+		sound = sp_sov_stalin
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "sp_sacred_war"
+	sounds = {
+		sound = sp_sacred_war
+	}
+	volume = 1
+	fade_out = 30
+	fade_in  = 10
+	
+}
+soundeffect = {
+	name = "sp_von_finnland"
+	sounds = {
+		sound = sp_von_finnland
+	}
+	volume = 1
+	fade_out = 30
+	fade_in  = 10
+	
+}
+soundeffect = {
+	name = "unser_rommel"
+	sounds = {
+		sound = unser_rommel
+	}
+	volume = 1
+	
+}
+soundeffect = {
+	name = "peace_europe"
+	sounds = {
+		sound = peace_europe
+	}
+	volume = 1.5
+	
+}
+soundeffect = {
+	name = "speech2"
+	sounds = {
+		sound = speech2
+	}
+	volume = 1.5	
+}
+soundeffect = {
+	name = "untergang"
+	sounds = {
+		sound = untergang
+	}
+	volume = 3
+}
+soundeffect = {
+	name = "sp_stalingrad"
+	sounds = {
+		sound = sp_stalingrad
+	}
+	volume = 3	
+}
+soundeffect = {
+	name = "speech3"
+	sounds = {
+		sound = speech3
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "appel_de_gaulle"
+	sounds = {
+		sound = appel_de_gaulle
+	}
+	volume = 1
+}
+soundeffect = {
+	name = "untergang2"
+	sounds = {
+		sound = untergang2
+	}
+	volume = 3
+}

@@ -1,0 +1,473 @@
+ideas = {
+	country = {
+		HUN_treaty_of_triannon = {
+			available = {
+				has_war = no
+			}
+			picture = hun_trianon
+			modifier = {
+				conscription = -0.005
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+		HUN_strengthen_fascists = {
+			picture = generic_fascism_drift_2
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		HUN_interventionism = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		HUN_interventionism_2 = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		HUN_interventionism_3 = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				political_power_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		HUN_barb_railways = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		HUN_bled_idea = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				experience_gain_army = 0.2
+				war_support_weekly = 0.002
+			}
+		}
+		HUN_disorganized_officers = {
+			picture = generic_disjointed_gov
+			research_bonus = {
+				land_doctrine = -0.25
+			}
+		}
+		HUN_convert = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		HUN_total_domination = {
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				conscription_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		HUN_civ_1 = {
+			picture = decisive_eco
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		HUN_civ_2 = {
+			picture = decisive_eco
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		HUN_indecisive = {
+			picture = decisive_eco
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+			}
+		}
+		HUN_mil_1 = {
+			picture = decisive_eco
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		HUN_mil_2 = {
+			picture = decisive_eco
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		HUN_make_room_idea = {
+			picture = generic_production_bonus
+			modifier = {
+				global_building_slots_factor = 0.2
+			}
+		}
+		HUN_economic_disaster = {
+			picture = economic_disaster
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		HUN_economic_disaster2 = {
+			picture = economic_disaster
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		HUN_right_wing = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				fascism_drift = 0.02
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+		}
+		HUN_corrupt_bureaucracy = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_advisor_cost_factor = 0.15
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		HUN_timed_cg = {
+			modifier = {
+				consumer_goods_factor = -0.075
+				stability_weekly = -0.003	
+			}
+		}
+		HUN_secret_rearmament = {
+			available = {
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				conscription = 0.0025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		HUN_invite_foreign_investors = {
+			picture = generic_foreign_capital
+			allowed_civil_war = {
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		HUN_hermann_goring = {
+			picture = generic_central_management
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		HUN_cg_reduction = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		HUN_rethink_our_plans = {
+			picture = ger_rethink
+			modifier = {
+				consumer_goods_factor = -0.025
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
+		HUN_tank_support = {
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.05
+				}
+				medium_tank_artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		HUN_assault_gun_focus = {
+			picture = generic_armor
+			allowed_civil_war = {
+			}
+			equipment_bonus = {
+				assault_gun_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		gustloff_werke1 = {
+			allowed = {
+				tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_gun_designs
+			}
+			picture = gustloff_werke
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.15
+					breakthrough = 0.05
+					defense = 0.05
+					build_cost_ic = 0.1
+				}
+			}
+		}
+		hanomag1 = {
+			allowed = {
+				tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_gun_designs
+			}
+			picture = hanomag
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.10
+					breakthrough = 0.15
+					defense = -0.05
+					build_cost_ic = 0.1
+				}
+				anti_tank_equipment = {
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = -0.05
+					build_cost_ic = 0.1
+				}
+				anti_air_equipment = {
+					air_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.075 
+				}
+			}
+		}
+		dimavag = {
+			allowed = {
+				tag = HUN
+			}
+			picture = GFX_idea_dimavag
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					breakthrough = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		raba = {
+			allowed = {
+				tag = HUN
+			}
+			picture = GFX_idea_raba
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.05
+					breakthrough = 0.1
+					build_cost_ic = 0.1
+				}
+				anti_tank_equipment = {
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.1
+				}
+				anti_air_equipment = {
+					air_attack = 0.1
+					build_cost_ic = 0.075
+				}
+			}
+		}
+	}
+	industrial_concern = {
+		bolleta_system = {
+			available = {
+				has_completed_focus = HUN_implement_bolleta
+			}
+			visible = {
+				original_tag = HUN
+			}
+			picture = generic_industrial_concern_1
+			cost = 100
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+	}
+
+	#TANK MANUFACTURER
+	tank_manufacturer = {
+		designer = yes
+		krupp_tank1 = {
+			cost = 100
+			picture = krupp_tank
+			allowed = {
+				original_TAG = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_designs
+			}
+			traits = {  }
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				medium_tank_chassis = {
+					reliability = -0.05
+					soft_attack = 0.15
+					hard_attack = 0.15
+					build_cost_ic = 0.05
+				}
+				medium_tank_aa_chassis = {
+					air_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		henschel1 = {
+			cost = 100
+			picture = henschel
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_designs
+			}
+			traits = {  }
+			modifier = {
+			}
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					armor_value = 0.05
+					hard_attack = 0.1
+					soft_attack = 0.1
+					reliability = -0.1
+					build_cost_ic = 0.1
+					hardness= 0.1
+				}
+				heavy_tank_destroyer_chassis = {
+					hard_attack = 0.2
+					reliability = 0.1
+					build_cost_ic = 0.20
+				}
+			}
+		}
+		GER_ckd1 = {
+			cost = 100
+			picture = GER_ckd
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_designs
+			}
+			traits = {  
+
+			}
+			equipment_bonus = {
+				light_tank_chassis = {
+					soft_attack = 0.1  hard_attack = 0.1 breakthrough = 0.05 build_cost_ic = 0.05
+				}
+				light_tank_destroyer_chassis = {
+					hard_attack = 0.15 breakthrough = 0.05 build_cost_ic = 0.05
+				}
+				light_tank_artillery_chassis = {
+					soft_attack = 0.1 breakthrough = 0.05 hardness = -0.05 build_cost_ic = 0.05
+				}
+				
+				light_tank_aa_chassis = {
+					air_attack = 0.1
+					breakthrough = 0.05
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		daimler_Benz_AG1  = {
+			cost = 100
+			picture = daimler_Benz_AG
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_get_german_designs
+			}
+			equipment_bonus = {
+				medium_tank_chassis = {
+					reliability = 0.1
+					maximum_speed = 0.1
+					hard_attack = 0.2
+				}
+				medium_tank_artillery_chassis= {
+					reliability = 0.05
+					soft_attack = 0.2
+					maximum_speed = 0.1
+				}
+				medium_tank_destroyer_chassis = {
+					hard_attack = 0.2
+					ap_attack = 0.2
+					reliability = 0.05
+					maximum_speed = 0.1
+				}
+				medium_tank_aa_chassis = {
+					reliability = 0.05
+					air_attack = 0.15
+					maximum_speed = 0.1
+				}
+			}
+		}
+	}
+
+	theorist_production = {
+		HUN_lajos_remenyi_schneller = {
+			picture = HUN_lajos_remenyi_schneller
+			cost = 150
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			traits = { captain_of_industry }
+		}
+		HUN_vilmos_roder = { 
+			picture = HUN_vilmos_roder
+			cost = 150
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			traits = { war_industrialist }
+		}
+	}
+}
+

@@ -1,0 +1,38 @@
+state={
+	id=300
+	name="STATE_333"
+	resources={
+		rubber=400
+		oil=170
+	}
+	history={
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = ENG
+ 		add_core_of=SWE
+        add_core_of=INS
+ 		victory_points = {
+ 			6836 5
+ 		}
+ 		victory_points = {
+ 			1153 5
+ 		}
+ 		buildings = {
+ 			infrastructure = 3
+ 			industrial_complex = 1
+ 			1153 = {
+ 				naval_base = 1
+ 			}
+ 			6836 = {
+ 				naval_base = 2
+ 			}
+ 		}
+ 	}
+	provinces={
+		1153 1251 1280 3948 4012 4067 4125 4766 6823 6836 6850 7446 9321 9376 9388 9416 9445 9461 11055 11070 11110 11162 11649 12073 12075 12076 12077 12078 12079 12081 12082 12083 12084 12085 12086 
+		1979 2047 6905 
+	}
+	manpower=889800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

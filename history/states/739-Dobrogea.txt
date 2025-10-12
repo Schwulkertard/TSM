@@ -1,0 +1,24 @@
+state={
+	id=739
+	name="Dobrogea"
+	manpower = 461400
+	state_category = city
+	history={
+		owner = ROM
+		victory_points = {622 3 }
+		buildings = {
+			infrastructure = 5
+			622 = {
+				naval_base = 8
+			}
+			650 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		622 8854 2881 650
+	}
+}

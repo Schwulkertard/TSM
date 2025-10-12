@@ -1,0 +1,64 @@
+characters={
+	LIT_antanas_smetona={
+		name=LIT_antanas_smetona
+		portraits={
+			civilian={
+				large="GFX_Portrait_lithuania_antanas_smetona"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LIT_stasys_rastikis={
+		name=LIT_stasys_rastikis
+		portraits={
+			army={
+				large="GFX_portrait_LIT_stasys_rastikis"
+				small="GFX_idea_LIT_stasys_rastikis"
+			}
+			civilian={
+				large="GFX_portrait_LIT_stasys_rastikis"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_stasys_rastikis_government
+			allowed = {
+				original_tag = LIT
+				has_dlc = "No Step Back"
+			}
+			available = {
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 10.000
+			}
+		}
+	}
+
+	LIT_edvardas_adamkavicius={
+		name=LIT_edvardas_adamkavicius
+		portraits={
+			army={
+				small="GFX_idea_LIT_edvardas_adamkavicius"
+				large="GFX_portrait_LIT_edvardas_adamkavicius"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer BALTIC_anti_bolshevik }
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+}

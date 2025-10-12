@@ -1,0 +1,29 @@
+state={
+ 	id=41
+ 	name="STATE_41"
+ 	manpower = 2269659
+ 	state_category = city
+ 	resources={
+ 		steel = 800
+ 	}
+ 	history={
+ 		owner = SPN
+ 		victory_points = {
+ 			3685 50
+ 		}
+ 		victory_points = {
+ 			820 1
+ 		}
+ 		buildings = {
+ 			infrastructure = 6
+ 			anti_air_building =10
+			air_base = 3
+ 		}
+ 		add_core_of = SPR
+ 		add_core_of = SPN
+ 	}
+ 	provinces={
+ 		820 854 891 925 3562 3611 3685 3724 6403 8980 9010 10728 11872
+ 	}
+ }
+

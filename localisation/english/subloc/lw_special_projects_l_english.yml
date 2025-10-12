@@ -1,0 +1,16 @@
+﻿l_english:
+##special projects
+ sp_naval_inclined_belt_armor:0 "Inclined Belt Armor"
+ sp_naval_inclined_belt_armor_desc:0 ""
+ sp_naval_dp_secondary:0 "Dual Purpose Battery"
+ sp_naval_dp_secondary_desc:0 ""
+ sp_naval_escort_carrier:0"Escort Carrier"
+ sp_naval_escort_carrier_desc:0""
+ sp_land_railway_gun:0"$railway_gun_equipment_1$"
+ sp_land_armor_1:0"$armor_tech_1$"
+ sp_land_armor_2:0"$armor_tech_2$"
+ sp_land_armor_3:0"$armor_tech_3$"
+ sp_land_engine_1:0"$engine_tech_1$"
+ sp_land_engine_2:0"$engine_tech_2$"
+ sp_land_engine_3:0"$engine_tech_3$"
+ sp_land_tungsten_core_ammunition:0"$tungston_core_ammunition$"

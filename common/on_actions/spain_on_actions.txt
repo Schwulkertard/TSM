@@ -1,0 +1,21 @@
+on_actions = {
+	on_weekly_SPR = {
+		effect = {
+			if={
+				limit ={ NOT ={has_global_flag=spain_joined} has_global_flag=end_of_spanish_civil_war 707={is_demilitarized_zone = no}}
+				every_owned_state= {
+					limit = { NOT= {state=41}}
+					set_demilitarized_zone = yes
+				}
+			}
+			if={
+				limit ={ JAP ={has_country_flag=JAP_border_conflict_prepared_dmz NOT={has_country_flag=JAP_border_conflict_ended}}}
+				every_state= {
+					limit = { OR={ state=635 state=632 state=375 state=376 } is_demilitarized_zone = no}
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+}
+

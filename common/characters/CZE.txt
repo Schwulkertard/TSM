@@ -1,0 +1,53 @@
+characters={
+	### The King of Bohemia
+	CZE_karl_albrecht = {
+		name=POL_karl_albrecht
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_karl_albrecht"
+			}
+		}
+	}
+
+	CZE_karel_vaclav_petrik={
+		name="Karel Václav Petrík"
+		portraits={
+			army={
+				small="GFX_idea_CZE_karel_vaclav_petrik"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CZE_karel_vaclav_petrik
+			ledger = army
+			allowed = {
+				original_tag = CZE
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}		
+	}
+
+	CZE_vojtyech_luzha={
+		name=CZE_vojtyech_luzha
+		portraits={
+			army={
+				large="GFX_idea_generic_army_europe_3"
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine fast_planner }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

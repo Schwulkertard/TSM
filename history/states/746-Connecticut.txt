@@ -1,0 +1,17 @@
+state={
+	id=746
+	name="Connecticut"
+	state_category = USA_state
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = USA
+	}
+	provinces={
+		9053 6399 9050
+	}
+	manpower=1672000
+	buildings_max_level_factor=1.000
+}

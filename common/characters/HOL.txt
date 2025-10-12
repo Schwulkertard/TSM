@@ -1,0 +1,48 @@
+characters={
+	HOL_hendrikus_colijn={
+		name=HOL_hendrikus_colijn
+		portraits={
+			civilian={
+				large="GFX_portrait_holland_hendrikus_colijn"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ strict_austerity_adherent }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HOL_conrad_helfrich={
+		name=HOL_conrad_helfrich
+		portraits={
+			army={
+				large="GFX_portrait_hol_conrad_helfrich"
+				small="gfx/interface/ideas/idea_hol_conrad_helfrich.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer seawolf superior_tactician }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=981
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = HOL_conrad_helfrich
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					navy_chief_commerce_raiding_3
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+}

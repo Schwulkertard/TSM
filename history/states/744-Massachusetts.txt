@@ -1,0 +1,24 @@
+state={
+	id=744
+	name="Massachusetts"
+	state_category = USA_state
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			dockyard = 4
+			6234 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			6234 20
+		}
+	}
+	provinces={
+		6234 3659 678 3482 681 865 862
+	}
+	manpower=4355000
+	buildings_max_level_factor=1.000
+}

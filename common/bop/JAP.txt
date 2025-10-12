@@ -1,0 +1,128 @@
+
+JAP_army_navy_rivalry = {
+	initial_value = 0.1
+	left_side = JAP_army_side	
+	right_side = JAP_navy_side	
+	decision_category = JAP_interservice_rivalry
+
+	### Neutral status
+	range = {
+		id = JAP_balance_range
+		min = -0.25
+		max = 0.25
+		modifier = {
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Army
+	side = {
+		id = JAP_army_side	
+		icon = GFX_bop_ITA_grand_council_side
+
+		range = {
+			id = JAP_army_side_medium_control_range
+			min = -0.5
+			max = -0.25
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = JAP_army_side_high_control_range
+			min = -0.75
+			max = -0.5
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.075
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = JAP_army_side_total_control_range
+			min = -1
+			max = -0.75
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_dockyard_factor = -0.2
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### Mussolini
+	side = {
+		id = JAP_navy_side	
+		icon = GFX_bop_ITA_mussolini_side
+
+		range = {
+			id = JAP_navy_side_medium_control_range
+			min = 0.25
+			max = 0.5
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = JAP_navy_side_high_control_range
+			min = 0.5
+			max = 0.75
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.075
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = JAP_navy_side_total_control_range
+			min = 0.75
+			max = 1
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_arms_factory_factor = -0.2
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}
+

@@ -1,0 +1,21 @@
+state={
+	id=721
+	name="Yucatan"
+	provinces={
+		11987 11979 4568
+	}
+	history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			11987 10
+		}
+	}
+
+	
+	manpower=410000
+	state_category=town
+}

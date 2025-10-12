@@ -1,0 +1,272 @@
+focus_tree = {
+	id = ven_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VEN
+		}
+	}
+	default = no
+	focus = {
+		id = VEN_hurensohn_sealion
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = {
+			or = {
+				ENG = {NOT = {has_full_control_of_state = 127 }}
+				ENG = {NOT = {has_full_control_of_state = 126 }}
+				ENG = {NOT = {has_full_control_of_state = 121 }}
+				ENG = {NOT = {has_full_control_of_state = 131 }}
+				ENG = {NOT = {has_full_control_of_state = 132 }}
+			}
+		}
+		completion_reward = {
+			CAN = {add_ideas =  tot_economic_mobilisation}
+			SAF = {add_ideas =  tot_economic_mobilisation}
+			AST = {add_ideas =  tot_economic_mobilisation}
+			RAJ = {add_ideas =  tot_economic_mobilisation}
+			ENG = {add_ideas =  tot_economic_mobilisation}
+			USA = {add_ideas =  tot_economic_mobilisation}
+			FRA = {add_ideas =  tot_economic_mobilisation}
+		}
+	}
+	focus = {
+		id = VEN_rubber_railroad
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = { 
+			date > 1941.1.1
+			 }
+			 completion_reward = { 
+				 USA = { 
+					swap_ideas = { 
+					remove_idea = reliance_on_natural_rubber
+					add_idea = reliance_on_natural_rubber2
+				}
+			 }
+			 ENG = { 
+				swap_ideas = { 
+				remove_idea = reliance_on_natural_rubber
+				add_idea = reliance_on_natural_rubber2
+			}
+		}
+			CAN= { 
+				swap_ideas = { 
+				remove_idea = reliance_on_natural_rubber
+				add_idea = reliance_on_natural_rubber2
+			}
+		 }
+		 SAF = { 
+			swap_ideas = { 
+			remove_idea = reliance_on_natural_rubber
+			add_idea = reliance_on_natural_rubber2
+		}
+	 }
+	 RAJ = { 
+		swap_ideas = { 
+		remove_idea = reliance_on_natural_rubber
+		add_idea = reliance_on_natural_rubber2
+	}
+		 }
+		 AST = { 
+			swap_ideas = { 
+			remove_idea = reliance_on_natural_rubber
+			add_idea = reliance_on_natural_rubber2
+		}
+	 }
+	 FRA = { 
+		swap_ideas = { 
+		remove_idea = reliance_on_natural_rubber
+		add_idea = reliance_on_natural_rubber2
+	}
+ }
+}
+}
+
+focus = {
+	id = VEN_Salvo
+	icon = GFX_goal_generic_consumer_goods
+	x = 10
+	y = 3
+	cost = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available_if_capitulated = yes
+	available = { 
+		date > 1940.6.1
+		AND= { JAP = { has_idea = JAP_salvo_genius } }
+		 }
+		 completion_reward = { 
+			 JAP = { 
+			 swap_ideas = {
+				remove_idea = JAP_salvo_genius
+				add_idea = JAP_salvo_dummkopf
+			 }
+			}
+		}
+	}
+
+	focus = {
+			id = VEN_Jap_railraod
+			icon = GFX_goal_generic_consumer_goods
+			x = 15
+			y = 3
+			cost = 0
+			ai_will_do = {
+				factor = 1
+			}
+			available_if_capitulated = yes
+			available = { 
+				date > 1940.6.1
+				 }
+				 completion_reward = { 
+			        every_state = {
+						limit= {OR = {state = 431 state = 430 state = 422 }}
+				
+						add_province_modifier = {
+							static_modifiers = { JAP_burma }
+							province = {
+								all_provinces = yes
+							}
+					}
+				}
+			}
+		}
+
+				focus = {
+					id = VEN_Jap_railraod_2
+					icon = GFX_goal_generic_consumer_goods
+					x = 16
+					y = 3
+					cost = 0
+					ai_will_do = {
+						factor = 1
+					}
+					available_if_capitulated = yes
+					available = { 
+							640 = { is_controlled_by = JAP }
+							288 = { is_controlled_by = JAP }
+						}
+						
+						 completion_reward = { 
+							every_state = {
+								limit= {OR = {state = 431 state = 430 state = 422 }}
+						
+								remove_province_modifier = {
+									static_modifiers = { JAP_burma }
+									province = {
+										all_provinces = yes
+									}
+								} 
+							}
+							}
+						}
+
+ focus = {
+	id = VEN_rubber_railroad_two
+	icon = GFX_goal_generic_consumer_goods
+	x = 5
+	y = 3
+	cost = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available_if_capitulated = yes
+	available = { 
+		date > 1941.10.1
+		 }
+		 completion_reward = { 
+			 USA = { 
+				remove_ideas = reliance_on_natural_rubber2
+			}
+		 
+		 ENG = { 
+			remove_ideas = reliance_on_natural_rubber2
+		}
+	
+		CAN= { 
+			remove_ideas = reliance_on_natural_rubber2
+		}
+	 
+	 SAF = { 
+		remove_ideas = reliance_on_natural_rubber2
+	}
+ 
+ RAJ = { 
+	remove_ideas = reliance_on_natural_rubber2
+}
+	 AST = { 
+		remove_ideas = reliance_on_natural_rubber2
+ }
+ FRA = { 
+	remove_ideas = reliance_on_natural_rubber2
+}
+
+			}
+		}
+	focus = {
+		id = VEN_hurensohn_sealion_2
+		icon = GFX_goal_generic_consumer_goods
+		x = 12
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = {
+			or = {
+				JAP = {NOT = {has_full_control_of_state = 528 }}
+				JAP = {NOT = {has_full_control_of_state = 282 }}
+				JAP = {NOT = {has_full_control_of_state = 531 }}
+				JAP = {NOT = {has_full_control_of_state = 529 }}
+				JAP = {NOT = {has_full_control_of_state = 533 }}
+			}
+		}
+		completion_reward = {
+			SPR = {add_ideas =  tot_economic_mobilisation}
+			HUN = {add_ideas =  tot_economic_mobilisation}
+			ROM = {add_ideas =  tot_economic_mobilisation}
+			BUL = {add_ideas =  tot_economic_mobilisation}
+			ITA = {add_ideas =  tot_economic_mobilisation}
+			GER = {add_ideas =  tot_economic_mobilisation}
+		}
+	}
+	focus = {
+		id = VEN_hurensohn_sealion_3
+		icon = GFX_goal_generic_consumer_goods
+		cost = 1
+		x = 14
+		y = 0
+		available_if_capitulated = yes
+		available = {
+			or = {
+				USA = {NOT = {has_full_control_of_state = 378 }}
+				USA = {NOT = {has_full_control_of_state = 385 }}
+				USA = {NOT = {has_full_control_of_state = 386 }}
+				USA = {NOT = {has_full_control_of_state = 361 }}
+				USA = {NOT = {has_full_control_of_state = 360 }}
+				USA = {NOT = {has_full_control_of_state = 358 }}
+				USA = {NOT = {has_full_control_of_state = 359 }}
+				USA = {NOT = {has_full_control_of_state = 357 }}
+			}
+		}
+		completion_reward = { 
+			USA = {add_ideas =  tot_economic_mobilisation}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+operations = {
+	ITA_give_germany_marsa_matruh = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { tag = ITA }
+		available = { controls_state=416}
+		visible={has_war=yes}
+		cost = 0
+		complete_effect = {
+			GER={set_state_owner=416}
+			416= {
+				set_state_province_controller = {
+					controller = GER
+					limit = {
+						is_in_faction_with=GER
+					}
+				}
+			}
+		}
+	}
+}
+foreign_politics = {
+	ITA_support_luftwaffe = {
+		icon = generic_operation
+		available = {
+			#GER={has_war_with=SOV}
+			has_equipment = {
+				fighter_equipment_alt > 599
+			}
+			has_deployed_air_force_size = {
+				size> 1999
+				type=fighter
+			}
+		}
+		allowed = {
+			tag = ITA
+		}
+		days_remove = 60
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 550 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+		}
+	}
+	ITA_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ITA
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ITA
+				}
+			}
+			ITA = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	GER_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = GER
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL={pow_before_annex=yes}
+			GER = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}

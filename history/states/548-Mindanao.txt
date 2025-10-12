@@ -1,0 +1,37 @@
+state={
+ 	id=548
+ 	name="STATE_627"
+ 	manpower = 1496508
+ 	state_category = rural
+ 	resources={
+ 		rubber = 200
+ 		
+ 	}
+ 	history={
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = USA
+		add_core_of = USP
+ 		add_core_of=SWE
+        add_core_of=INS
+ 		buildings = {
+ 			infrastructure = 4
+ 			industrial_complex = 1
+ 			3972 = {
+ 				naval_base = 1
+ 			}
+ 		}
+ 		victory_points = {
+ 			3972 4
+ 		}
+		 victory_points = {
+			9390 2
+		}
+		victory_points = {
+			11042 2
+		}
+ 	}
+ 	provinces={
+ 		1179 1238 1324 1352 1366 3972 3996 4128 4156 6749 6825 6852 6879 6907 9361 9390 9419 9476 9503 11001 11042 11044 11072 11099 11127 11152
+ 	}
+ }
+

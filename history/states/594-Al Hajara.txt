@@ -1,0 +1,21 @@
+state={
+ 	id=594
+ 	name="STATE_675"
+ 	manpower = 122093
+ 	state_category = wasteland
+ 	history={
+		victory_points = {
+			11275 1
+		}
+ 		owner = ENG
+ 		add_core_of=SWE
+ 		buildings = {
+ 			infrastructure = 2
+ 			air_base = 4
+ 		}
+ 	}
+ 	provinces={
+ 		1566 4608 9852 11275 11632 9940 482 4600 3204 4616 4635 9609 9922 11508
+ 	}
+ }
+

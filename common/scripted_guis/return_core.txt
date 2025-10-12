@@ -1,0 +1,47 @@
+scripted_gui = {
+	return_core = {
+
+		context_type = selected_state_context
+
+		window_name = "return_core_container"
+		parent_window_token = selected_state_view
+
+		visible = {
+			ROOT={original_tag=JAP}
+			OR={
+				is_core_of=MAN
+				is_core_of=SIA
+			}
+		}
+
+		effects = {
+			return_core_click = {
+				
+				if = {
+					limit={is_core_of=MAN}
+					MAN = {				
+					transfer_state =PREV
+					}
+				}
+				else_if = {
+					limit={is_core_of=SIA}
+					SIA = {				
+					transfer_state =PREV
+					}
+				}
+			}
+		}
+
+		triggers = {
+
+			return_core_click_enabled = {
+				is_owned_and_controlled_by = JAP
+				is_fully_controlled_by = JAP
+			}
+
+
+		}
+
+
+	}
+}

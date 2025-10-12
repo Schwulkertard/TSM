@@ -1,0 +1,60 @@
+ideas = {
+    country = {
+		BUL_two_year_plan = {
+			picture = generic_foreign_capital
+			allowed_civil_war = {
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		vmz_sopot = {
+			allowed = {
+				tag = BUL
+			}
+			picture = generic_artillery_manufacturer_1
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				artillery_equipment = {
+					breakthrough = 0.1
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+			}	
+		}
+		arsenal_ad = {
+			allowed = {
+				tag = BUL
+			}
+			picture = generic_infantry_equipment_manufacturer_3
+			cost = 100
+			modifier = { materiel_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					defense = -0.1
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+			}	
+		}
+	}
+	theorist_production = {
+		BUL_valko_chervenkov = { 
+			picture = bul_valko_chervenkov
+			cost = 150
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			traits = { captain_of_industry }
+		}
+	}
+}
+

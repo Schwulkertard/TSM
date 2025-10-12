@@ -1,0 +1,33 @@
+characters={
+	BEL_hubert_pierlot={
+		name=BEL_hubert_pierlot
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_mcl_keyaerts={
+		name=BEL_mcl_keyaerts
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer hill_fighter }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

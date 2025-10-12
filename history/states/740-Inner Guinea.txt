@@ -1,0 +1,21 @@
+state={
+	id=740
+	name="Inner Guinea"
+	manpower = 14300
+	state_category = wasteland
+	history= {
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+		   7538 5
+	   }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		7538 7531 9995 7019 9595
+	}
+	impassable = yes
+}
+

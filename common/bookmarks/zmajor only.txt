@@ -1,0 +1,294 @@
+bookmarks = {
+	bookmark = {
+		name = "Major Only"
+		desc = " MAJOR_ONLY_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_major"
+		default_country = "GER"
+		default = yes
+
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+			}
+			focuses = {
+				SOV_great_purge
+				SOV_collectivist_propaganda
+				SOV_positive_heroism
+
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_the_giant_wakes
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_imperial_conference
+				general_rearmament_focus
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_ussr_war_goal
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_ussr_war_goal
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				vittoria_mutilata
+				victor_emmanuel
+			}
+			focuses = {
+				ITA_pact_of_steel
+				ITA_greece_war_goal
+			}
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"FRA"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				#FRA_initiate_government_reform
+				#FRA_support_status_quo
+				#FRA_evacuation_to_morocco
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_two_nation_theory
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#HUN_treaty_of_triannon #task_modding
+			}
+			focuses = {
+				#HUN_strengthen_fascists
+				#HUN_demand_southern_slovakia
+				#wuw_HUN_renounce_the_treaty_of_trianon
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+			}
+			focuses = {
+				ROM_ig_farben_romania
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+
+
+
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !123 = { rain_light = yes }
+		ENG = {
+		set_cosmetic_tag = ENG_democratic2
+		}
+		RAJ = {
+		set_cosmetic_tag = RAJ_LW_2
+		}
+		set_global_flag= major_only_scenario
+		set_global_flag= reduced_industry
+		every_country={
+			limit={OR={tag=GER tag=ITA tag=ENG tag=USA}}
+			set_variable={reduced_country_ic=0.2}
+		}
+		every_country={
+			limit={OR={tag = SOV tag=JAP tag=RAJ}}
+			set_variable={reduced_country_ic=0.15}
+		}
+		every_country={
+			limit={NOT={OR={tag=GER tag = SOV tag=ITA tag=ENG tag=USA tag=JAP tag=RAJ}}}
+			set_variable={reduced_country_ic=0.1}
+		}
+		
+		634 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+					}
+		}
+		270 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+					}
+		}
+		195 = {
+			remove_building = {
+					type = industrial_complex
+					level = 5
+					#instant_build = yes
+			}
+		}
+		115 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+ 					type = dockyard
+ 					level = 5
+ 					#instant_build = yes
+ 				}
+		}
+		702 = {
+ 				add_core_of = TUR
+ 			}
+ 		705 = {
+ 				add_core_of = TUR
+ 			}
+		166 = {
+ 				add_core_of = TUR
+ 			}
+ 		170 = {
+ 				add_core_of = TUR
+ 			}
+		444 = {
+ 				add_core_of = RAJ
+ 			}
+		446 = {
+ 				add_core_of = RAJ
+ 			}
+		449 = {
+ 				add_core_of = RAJ
+ 			}
+		273 = {
+ 				add_core_of = RAJ
+ 			}
+		448 = {
+ 				add_core_of = RAJ
+ 			}
+		714 = {
+ 				add_core_of = RAJ
+ 			}
+		447 = {
+ 				add_core_of = RAJ
+ 			}
+		593 = {
+ 				add_core_of = RAJ
+ 			}
+		445 = {
+ 				add_core_of = RAJ
+ 			}
+		272 = {
+ 				add_core_of = RAJ
+ 			}
+		641 = {
+ 				add_core_of = RAJ
+ 			}
+			}
+		}
+	}
+

@@ -1,0 +1,518 @@
+ focus_tree = {
+ 	id = spn_focus
+ 	country = {
+ 		factor = 0
+ 		modifier = {
+ 			add = 10
+ 			tag = SPN
+ 		}
+ 	}
+ 	default = no
+ 	reset_on_civilwar = no
+ 	initial_show_position = {
+ 		focus = spr_industrial_effort
+ 	}
+ 	focus = {
+ 		id = spr_army_effort
+ 		icon = GFX_goal_generic_allies_build_infantry
+ 		x = 9
+ 		y = 0
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_equipment_effort
+ 		icon = GFX_goal_generic_small_arms
+ 		prerequisite = { focus = spr_army_effort }
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = spr_army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_motorization_effort
+ 		icon = GFX_goal_generic_army_motorized
+ 		prerequisite = { focus = spr_army_effort }
+ 		bypass = { has_tech = motorised_infantry }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = spr_army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = motorized_bonus
+ 				bonus = 3.0
+ 				technology = motorised_infantry
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_doctrine_effort
+ 		icon = GFX_goal_generic_army_doctrines
+ 		prerequisite = { focus = spr_army_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_equipment_effort_2
+ 		icon = GFX_goal_generic_army_artillery
+ 		prerequisite = { focus = spr_equipment_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_equipment_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_mechanization_effort
+ 		icon = GFX_goal_generic_build_tank
+ 		prerequisite = { focus = spr_motorization_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_motorization_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = motorized_bonus
+ 				ahead_reduction = 2
+ 				uses = 1
+ 				category = motorized_equipment
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_doctrine_effort_2
+ 		icon = GFX_goal_generic_army_doctrines
+ 		prerequisite = { focus = spr_doctrine_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_doctrine_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_equipment_effort_3
+ 		icon = GFX_goal_generic_army_artillery2
+ 		prerequisite = { focus = spr_equipment_effort_2 }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_equipment_effort_2
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				ahead_reduction = 2
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_armor_effort
+ 		icon = GFX_goal_generic_army_tanks
+ 		prerequisite = { focus = spr_mechanization_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = spr_mechanization_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = armor_bonus
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = armor
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_special_forces
+ 		icon = GFX_goal_generic_special_forces
+ 		prerequisite = { focus = spr_equipment_effort_3 }
+ 		prerequisite = { focus = spr_doctrine_effort_2 }
+ 		prerequisite = { focus = spr_armor_effort }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = spr_equipment_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = special_forces
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_industrial_effort
+ 		icon = GFX_goal_generic_production
+ 		x = 13
+ 		y = 0
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = industrial_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = industry
+ 			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 3
+ 			modifier = {
+ 				factor = 0
+ 				date < 1939.1.1
+ 				OR = {
+ 					tag = BEL
+ 					tag = LUX
+ 					tag = HOL
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_construction_effort
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = spr_industrial_effort }
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = spr_industrial_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 1
+ 			        }
+ 		        }
+            }
+
+ 	focus = {
+ 		id = spr_production_effort
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = spr_industrial_effort }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = spr_industrial_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 1
+ 			        }
+ 		        }
+            }
+ 	focus = {
+ 		id = spr_construction_effort_2
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = spr_construction_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_construction_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 2
+ 			        }
+ 		        }
+            }
+ 	focus = {
+ 		id = spr_production_effort_2
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = spr_production_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_production_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 2
+ 			        }
+ 		        }
+ 		}
+ 	focus = {
+ 		id = spr_production_effort_3
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = spr_production_effort_2 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_production_effort_2
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 3
+ 			     }
+ 		    }
+ 		}
+ 	focus = {
+ 		id = spr_construction_effort_3
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = spr_construction_effort_2 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_construction_effort_2
+ 		cost = 5R
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 2
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 3
+ 			     }
+ 		    }
+ 	    }
+ 	focus = {
+ 		id = spr_extra_tech_slot
+ 		icon = GFX_focus_research
+ 		prerequisite = { focus = spr_construction_effort_3 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_construction_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_research_slot = 1
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_extra_tech_slot_2
+ 		icon = GFX_focus_research
+ 		prerequisite = { focus = spr_extra_tech_slot }
+ 		available = {
+ 			num_of_factories > 50
+ 		}
+ 		cancel_if_invalid = no
+ 		continue_if_invalid = yes
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_extra_tech_slot
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_research_slot = 1
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_secret_weapons
+ 		icon = GFX_goal_generic_secret_weapon
+ 		prerequisite = { focus = spr_construction_effort_3 }
+ 		x = 2
+ 		y = 1
+ 		relative_position_id = spr_construction_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = secret_bonus
+ 				bonus = 1.0
+ 				uses = 4
+ 				category = electronics
+ 				category = nuclear
+ 				category = rocketry
+ 			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 1
+ 			modifier = {
+ 				factor = 0.25
+ 				always = yes
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_political_effort
+ 		icon = GFX_goal_generic_demand_territory
+ 		x = 17
+ 		y = 0
+ 		cost = 7.2
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_political_power = 120
+ 		}
+ 	}
+ 	
+ 	focus = {
+ 		id = spr_political_correctness
+ 		icon = GFX_goal_generic_dangerous_deal
+ 		prerequisite = { focus = spr_political_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_political_effort
+ 		cost = 7.2
+ 		search_filters = { FOCUS_FILTER_POLITICAL  }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			if = {
+ 				limit = { has_idea = neutrality_idea }
+ 				remove_ideas = neutrality_idea
+ 			}
+ 			add_political_power = 200
+ 			add_ideas = idea_political_correctness
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_indoctrination_focus
+ 		icon = GFX_goal_generic_propaganda
+ 		prerequisite = { focus = spr_political_correctness }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_political_correctness
+ 		cost = 7.2
+ 		search_filters = { FOCUS_FILTER_POLITICAL  }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = political_commissars_focus
+ 			add_political_power = 150
+			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_1
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_1
+ 					add_idea = SPA_carlism_2
+ 				}
+ 			}
+ 			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_2
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_2
+ 					add_idea = SPA_carlism_3
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = spr_ideological_fanaticism
+ 		icon = GFX_goal_generic_demand_territory
+ 		prerequisite = { focus = spr_indoctrination_focus }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = spr_indoctrination_focus
+ 		cost = 7.2
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_1
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_1
+ 					add_idea = SPA_carlism_2
+ 				}
+ 			}
+ 			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_2
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_2
+ 					add_idea = SPA_carlism_3
+ 				}
+ 			}
+ 			add_ideas = ideological_fanaticism_focus
+ 		}
+ 	}
+}
+

@@ -1,0 +1,26 @@
+state={
+ 	id=414
+ 	name="STATE_449"
+ 	manpower = 53431
+ 	state_category = enclave
+ 	history={
+		victory_points = {
+			3793 1
+		}
+ 		owner = ITA
+ 		add_core_of=SWE
+ 		buildings = {
+ 			infrastructure = 3
+
+ 			3793 = {
+ 				naval_base = 2
+				
+ 				coastal_bunker = 3
+ 			}		
+ 		}
+ 	}
+ 	provinces={
+ 		987 1143 3783 3793 3932 6543 6602 7370 7430 9226 9296 9858 10909 10975 11626 11751
+ 	}
+ }
+

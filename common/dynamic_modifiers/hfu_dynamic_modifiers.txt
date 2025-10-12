@@ -1,0 +1,175 @@
+Ostarbeiter = {
+	consumer_goods_expected_value=ostarbeiter_cg
+
+}
+dockyard_con_penalty = {
+	production_speed_dockyard_factor = dockyard_con_penalty 
+
+}
+
+jim_crow = {
+	state_production_speed_buildings_factor = -0.1
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+pittsburgh_steel = {
+	state_resources_steel_factor = 2
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+sun_belt_boom = {
+	state_production_speed_buildings_factor = 0.1
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+rust_belt_boom = {
+	state_production_speed_industrial_complex_factor = 0.2
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+guide_the_zaibatsus = {
+	state_production_speed_buildings_factor = 0.1
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+exploit_korea = {
+	state_resources_aluminium_factor = 1
+	state_resources_chromium_factor = 1
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+develop_korea = {
+	state_production_speed_buildings_factor = 0.4
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_defense
+}
+
+UK_development_funds = {
+	conversion_cost_civ_to_mil_factor=development_funds
+}
+Africa_status_allies = {
+		icon="GFX_idea_stiff_upper_lip"
+	consumer_goods_factor=ENG.africa_status
+}
+Africa_status_axis = {
+		icon="GFX_idea_stiff_upper_lip"
+	consumer_goods_factor=ITA.africa_status
+}
+relative_production_efficiency = {
+	production_factory_max_efficiency_factor=relative_production_efficiency_factor_actual
+}
+relative_industrial_capacity_factory = {
+	industrial_capacity_factory=relative_industrial_capacity_factory_actual
+}
+Stockpile = {
+
+	country_resource_aluminium=resource_stockpile_output^0
+	country_resource_rubber=resource_stockpile_output^1
+	country_resource_tungsten=resource_stockpile_output^2
+	country_resource_steel=resource_stockpile_output^3
+	country_resource_chromium=resource_stockpile_output^4
+
+}
+POW_industry = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pow_industrial_capacity
+	industrial_capacity_dockyard= pow_dockyard_capacity
+	local_resources_factor  = pow_resource_gain
+	production_speed_buildings_factor = pow_fortification
+	
+	
+
+}
+stiff_upper_lip={
+		icon="GFX_idea_stiff_upper_lip"
+				agency_upgrade_time = -0.30
+				army_core_attack_factor = battalions_uk
+				army_core_defence_factor = battalions_uk
+}
+JAP_volunteer_workers_in_burma = {
+	state_production_speed_buildings_factor = 1.0
+
+}
+JAP_attack = {
+	max_dig_in_factor = -0.3
+}
+GER_no_memes_africa = {
+	naval_invasion_penalty = 1
+}
+SOV_noob = {
+	max_dig_in = 7.5
+	dig_in_speed_factor = 1
+}
+SOV_kazan_line = {
+	max_dig_in = SOV.major_city_status
+
+}
+ITA_noob = {
+	max_dig_in = 7.5
+	dig_in_speed_factor = 1
+	local_supplies_for_controller= 10		
+
+}
+ENG_singapore = {
+	naval_invasion_penalty = 0.5
+}
+RAJ_penalty = {
+	naval_invasion_penalty = RAJ.burma_status
+}
+RAJ_penalty_visual={
+	icon = "FRA_fortification_focus"
+	naval_mine_hit_chance=RAJ.burma_status
+}
+USP_no_meme = {
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+	naval_invasion_penalty = 0.5
+	max_dig_in_factor = 0.5
+}
+pacific_war = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pacific_status
+	industrial_capacity_dockyard = pacific_status_negative
+
+}
+pacific_war_minor = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = ENG.pacific_status
+	industrial_capacity_dockyard = ENG.pacific_status_negative
+
+}
+Papua_defense={
+	naval_invasion_penalty=AST.pacific_status
+}
+Papua_visual={
+	icon = "FRA_fortification_focus"
+	naval_mine_hit_chance=AST.pacific_status
+}
+Atlantikwall={
+	naval_invasion_penalty=GER.pacific_status
+}
+imperium_romanum={
+	icon = "GFX_idea_imperium_romanum"
+	army_core_defence_factor = ITA.imperium_romanum
+	army_core_attack_factor = ITA.imperium_romanum
+}
+Atlantikwall_visual = {
+		icon = "FRA_fortification_focus"
+	naval_mine_hit_chance=GER.pacific_status
+}
+
+academy_weekly_manpower = {
+weekly_manpower = scaled_weekly_manpower
+}
+academy_over_time = {
+training_time_army_factor=academy_weekly_training_speed_result
+special_forces_min=academy_special_forces_capacity
+experience_gain_army=academy_experience_gain
+political_power_factor=academy_weekly_pp
+}

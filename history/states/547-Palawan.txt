@@ -1,0 +1,28 @@
+state=
+ {
+ 	id=547
+ 	name="STATE_626"
+ 	manpower = 83041
+ 	state_category = rural
+ 	history=
+ 	{
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = USA
+		add_core_of = USP
+ 		add_core_of=SWE
+        add_core_of=INS
+ 		victory_points = {
+ 			4158 3
+ 		}
+ 		buildings = {
+ 			infrastructure = 3
+ 			4158 = {
+ 				naval_base = 1
+ 			}
+ 		}
+ 	}
+ 	provinces={
+ 		4158 6881 9323
+ 	}
+ }
+

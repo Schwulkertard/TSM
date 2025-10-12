@@ -1,0 +1,17 @@
+state = {
+	id=738
+	name="Southern Alfold"
+	manpower = 735383
+	state_category = city
+	history = {
+		owner = HUN
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		6173 10548 6202 642 10569 8874
+	}
+}
+

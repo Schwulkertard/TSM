@@ -1,0 +1,67 @@
+scripted_gui = {
+
+	tool_open= {
+		context_type = player_context
+
+		window_name = "horsttool_open_container"
+		
+		parent_window_name  = "countryofficercorpview"
+		visible = {
+			has_country_flag = host
+			NOT = { has_country_flag = hidden_switch }
+		}
+
+		effects = {
+			tool_open_click = {
+				if = {
+					limit = { ROOT = { NOT = { has_country_flag = transfer_enabled } } }
+					ROOT = { set_country_flag = transfer_enabled }
+				}
+				else = {
+					ROOT = { clr_country_flag = transfer_enabled }
+				}
+			}
+		}
+		triggers = {
+			tool_open_click_enabled = {
+				always = yes
+			}
+		}
+	}
+	pause_window= {
+		context_type = player_context
+
+		window_name = "horsttool_open_container2"
+		
+		parent_window_name  = "topbar"
+		visible = {
+			always=no
+			OR={NOT={has_country_flag=hotjoin} 297={steel>1}}
+		}
+
+		effects = {
+			tool_open2_click = {
+				if = {
+					limit = { 297={steel>1} }
+					
+						add_resource = {
+    							type = steel
+    							amount = -10
+    							state = 297
+						}
+						add_to_variable={Global.hotjoin_rehost_count=1}
+				
+					every_country={clr_country_flag=hotjoin}
+				}
+				if = { limit={NOT={has_country_flag=hotjoin}}
+					ROOT = {set_country_flag = hotjoin }
+				}
+			}
+		}
+		triggers = {
+			tool_open2_click_enabled = {
+				OR={NOT={has_country_flag=hotjoin} 297={steel>1}}
+			}
+		}
+	}
+}

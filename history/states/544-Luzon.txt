@@ -1,0 +1,43 @@
+state= {
+ 	id=544
+ 	name="STATE_623"
+ 	manpower = 2010656
+ 	state_category = city
+ 	resources={
+ 		rubber = 250
+ 		oil = 100
+ 	}
+ 	history= {
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = USA
+		add_core_of = USP
+ 		add_core_of=SWE
+        add_core_of=INS
+ 		buildings = {
+ 			infrastructure = 4
+ 			industrial_complex = 2
+ 			11095 = {
+ 				naval_base = 1
+ 			}
+ 			1360 = {
+ 				naval_base = 1
+ 			}
+ 		}
+ 		victory_points = {
+ 			1360 1
+ 		}
+ 		victory_points = {
+ 			11095 1
+ 		}
+		 victory_points = {
+			6790 1
+		}
+		victory_points = {
+			4079 1
+		}
+ 	}
+ 	provinces={
+ 		1333 1360 3837 3946 3964 4079 4097 4152 6790 6901 9345 9417 9428 9456 9474 11095 11134
+ 	}
+ }
+

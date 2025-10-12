@@ -1,0 +1,17 @@
+characters={
+	INS_sukarno={
+		name=INS_sukarno
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits = {
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

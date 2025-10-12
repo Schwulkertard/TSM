@@ -1,0 +1,28 @@
+######################################
+category = {
+ name = "Speeches"
+ soundeffects = {
+	speech1
+	sp_ger_stuka
+	sp_ger_anschluss
+	sp_jap_banzai
+	sp_usa_roosevelt
+	sp_ita_musso
+	sp_uk_chur
+	sp_sov_stalin
+	sp_sacred_war
+	sp_von_finnland
+	placeholdera
+	placeholdera_2
+	marschlied_panzergrenadiere
+	eisenhower
+	unser_rommel
+	peace_europe
+	speech2
+	untergang
+	sp_stalingrad
+	speech3
+	appel_de_gaulle
+	untergang2
+ }
+}

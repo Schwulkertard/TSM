@@ -1,0 +1,43 @@
+ideas = {
+	
+	aircraft_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		vef = {
+			picture = generic_air_manufacturer_1
+			allowed = {
+				original_tag = LAT
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { light_aircraft_manufacturer }
+			equipment_bonus = {
+				# made light bombers, fighters and trainers
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	naval_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		lkod = {
+			picture = generic_naval_manufacturer_2
+			allowed = {
+				original_tag = LAT
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+				# mer research
+			}
+			traits = { naval_manufacturer }
+			modifier = {
+			}
+		}
+	}
+}
+

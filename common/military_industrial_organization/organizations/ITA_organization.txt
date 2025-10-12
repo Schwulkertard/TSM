@@ -1,0 +1,310 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+ITA_fiat_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_fiat
+	allowed = {	
+		tag = ITA 
+	}
+	initial_trait = {
+		limit_to_equipment_type = { medium_tank_chassis } 
+		
+		equipment_bonus = {				
+					
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+			}
+	}
+	add_trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { medium_tank_artillery_chassis  } 
+		equipment_bonus = {
+					soft_attack = 0.05
+					hard_attack = -0.1				
+		}
+	
+	}
+	add_trait = {
+		name = trait2
+		token = trait2
+		position = { x=2 y=0 }
+		limit_to_equipment_type = { medium_tank_destroyer_chassis } 
+		equipment_bonus = {				
+					hard_attack = 0.05
+					soft_attack = -0.1
+		}
+	}
+	add_trait = {
+		name = trait3
+		token = trait3
+		position = { x=3 y=0 }
+		limit_to_equipment_type = { medium_tank_aa_chassis } 
+		equipment_bonus = {					
+					
+						air_attack = 0.1
+		}
+	
+	}
+	
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+ITA_crda_organization = {
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_crda
+	allowed = {	
+		tag = ITA 
+	}
+	available = {
+	}
+	initial_trait = {
+	limit_to_equipment_type = { capital_ship } 
+		
+		equipment_bonus = {				
+				armor_value = -0.20
+				hg_attack = 0.15
+				naval_speed = 0.15
+			}
+	}
+	trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { screen_ship   } 
+		equipment_bonus = {		
+				lg_attack = 0.2 
+				torpedo_attack = 0.2 
+				naval_range = -0.5	
+		}
+	
+	}
+	trait = {
+		name = trait2
+		token = trait2
+		position = { x=2 y=0 }
+		limit_to_equipment_type = { submarine } 
+		equipment_bonus = {	
+				naval_range = 0.20
+		}
+	}
+}
+
+ITA_cantiere_oto_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_ITA_oto
+	allowed = {	
+		tag = ITA 
+	}
+	available = {
+	}
+}
+ITA_navalmeccanica_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_ITA_navalmeccanica
+	allowed = {	
+		tag = ITA 
+	}
+	available = {
+	} 
+} 
+#ITA_cantiere_navale_di_ancona_organization = {
+#	include = generic_escort_ship_organization
+#	icon = GFX_idea_ITA_cantera_navale_di_ancona
+#	allowed = {	
+#		tag = ITA 
+#	}
+#	available = {
+#	}
+#}
+#ITA_cantieri_navali_tosi_organization = {
+#	include = generic_submarine_organization
+#	icon = GFX_idea_ITA_cantieri_navali_tosi
+#	allowed = {	
+##		tag = ITA 
+#	}
+#	available = {
+#	}
+#}
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+ITA_macchi_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_macchi
+	allowed = {	
+		tag = ITA 
+	}
+	available = {
+	}
+	initial_trait = {
+		name = generic_mio_initial_trait_light_aircraft_designer
+
+		equipment_bonus = {
+					build_cost_ic = -0.15
+					air_agility = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.1
+		}
+	}
+}
+ITA_savoia_marchetti_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_savoia_marchetti
+	allowed = {	
+		tag = ITA 
+	}
+	available = {
+	}
+}
+ITA_caproni_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_caproni
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}
+# ITA_piaggio_organization = {
+	# include = generic_heavy_aircraft_organization
+	# icon = GFX_idea_piaggio
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+# }
+# ITA_imam_organization = {
+	# include = generic_medium_aircraft_organization
+	# icon = GFX_idea_ITA_imam
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+# }
+ITA_crda_cant_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_ITA_crda_cant
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}
+# ITA_fiat_aviazione_organization = {
+	# include = generic_range_focused_aircraft_organization
+	# icon = GFX_idea_ITA_fiat_aviazione
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+	# initial_trait = {
+		# equipment_bonus = {
+			# naval_strike_attack = -0.1
+			# maximum_speed = 0.1
+		# }
+	# }
+
+	# add_trait = {
+		# token = ITA_mio_trait_high_altitude_fighter_development
+		# name = ITA_mio_trait_high_altitude_fighter_development
+		# #icon = GFX_industrial_org_trait_placeholder
+		
+		# position = { x=0 y=1 }  
+		# relative_position_id = generic_mio_trait_low_drag_wings
+		
+		# any_parent = { generic_mio_trait_low_drag_wings }
+		
+		# limit_to_equipment_type = { mio_cat_eq_all_small_plane }
+		# equipment_bonus = {
+			# air_agility = 0.05
+			# air_attack = 0.03
+		# }
+	# }
+# }
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+ITA_beretta_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_beretta
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}
+ITA_lancia_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_lancia
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}
+
+ITA_breda_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_breda
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}
+ITA_brescia_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_ITA_brescia_arsenal
+	allowed = {	 
+		tag = ITA 
+	}
+	available = {
+	}
+}

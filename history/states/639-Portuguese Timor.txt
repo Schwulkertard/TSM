@@ -1,0 +1,27 @@
+state={
+ 	id=639
+ 	name="STATE_721"
+ 	manpower = 455604
+ 	state_category = pastoral
+ 	resources={
+ 		rubber = 200
+	}
+ 	history={
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = USA
+ 		add_core_of=SWE
+ 		victory_points = {
+ 			11074 3
+ 		}
+ 		buildings = {
+ 			infrastructure = 3
+ 			11074 ={
+ 				naval_base = 20
+ 			}
+ 		}
+ 	}
+ 	provinces={
+ 		1271 11062 11074 11685
+ 	}
+ }
+

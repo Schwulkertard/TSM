@@ -1,0 +1,23 @@
+state={
+ 	id=324
+ 	name="Maine"
+ 	state_category = USA_state
+ 	history={
+ 		owner = USA
+ 		buildings = {
+ 			infrastructure = 7
+ 			industrial_complex = 5
+ 			air_base = 10
+ 		}
+ 		add_core_of = USA
+ 		victory_points = {
+ 			11315 1
+ 		}
+ 	}
+ 	provinces={
+ 		9423 4017 1227 1556 1283 11103 9493 11315 11085 6921 6221 3503
+ 	}
+ 	manpower=840000
+ 	buildings_max_level_factor=1.000
+ }
+

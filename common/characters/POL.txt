@@ -1,0 +1,70 @@
+characters = {
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small="gfx/interface/ideas/idea_POL_ignacy_moscicki.dds"
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		
+		country_leader = {
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_walery_slawek = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small="gfx/interface/ideas/idea_POL_ignacy_moscicki.dds"
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_ignacy_moscicki
+			available = {
+			}
+			allowed = {
+				original_tag = POL
+				OR = {
+					has_dlc = "No Step Back"
+					has_dlc = "Poland: United and Ready"
+				}
+			}
+			traits = {
+				the_king_of_the_castle 
+			}
+		}
+	}
+
+	POL_wladyslaw_sikorski = {
+		name=POL_wladyslaw_sikorski
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
+			}
+			army = {
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
+				small = "gfx/interface/ideas/idea_POL_wladyslaw_sikorski.dds"
+			}
+		}
+
+		field_marshal = {
+			traits = { POL_sanation_left_leader defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

@@ -1,0 +1,44 @@
+recruit_character = LAT_karlis_ulmanis
+recruit_character = LAT_fricis_rothko
+recruit_character = LAT_sandis_millers
+recruit_character = LAT_evgenijs_veidenbaums
+recruit_character = LAT_vilis_lacis
+recruit_character = LAT_vilhelms_munters
+recruit_character = LAT_ludvigs_ctis
+recruit_character = LAT_teodors_zvejnieks
+recruit_character = LAT_izglitibas_tautas
+recruit_character = LAT_konstantins_cakste
+recruit_character = LAT_fricis_celmins
+recruit_character = LAT_otto_hellmich
+recruit_character = LAT_janis_kaminskis
+recruit_character = LAT_tomas_spade
+recruit_character = LAT_krisjanis_berkis
+recruit_character = LAT_janis_berzins
+recruit_character = LAT_kornelijs_veidnieks
+recruit_character = LAT_arturs_silgailis
+recruit_character = LAT_rudolfs_kocins
+recruit_character = LAT_arturs_sprogis
+capital = 12
+set_research_slots = 0
+oob = "LAT_1936"
+add_ideas = {
+	limited_conscription
+}
+set_technology = {}
+add_ideas = no_training
+set_convoys = 1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 15
+	communism = 15
+	neutrality = 40
+}
+
+### VARIANTS ###
+# 1936 Start #

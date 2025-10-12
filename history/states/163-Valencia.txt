@@ -1,0 +1,32 @@
+state={
+ 	id=163
+ 	name="STATE_167"
+ 	manpower = 1979294
+ 	state_category = large_town
+ 	history={
+ 		owner = SPN
+ 		victory_points = {
+ 			6397 5
+ 		}
+ 		victory_points = {
+ 			3834 1
+ 		}
+ 		buildings = {
+ 			infrastructure = 6
+ 			anti_air_building = 10
+			air_base = 2
+			3834 = {
+				naval_base = 2
+			}
+			6397 = {
+				naval_base = 3
+			}
+ 		}
+ 		add_core_of = SPR
+ 		add_core_of = SPN
+ 	}
+ 	provinces={
+ 		911 3566 3632 3834 6316 6354 6397 6436 9083 9089
+ 	}
+ }
+

@@ -1,0 +1,42 @@
+
+EFR_address_internal_affairs_first = {
+	allowed = {
+		original_tag = EFR
+	}
+	enable = {
+		original_tag = EFR
+	}
+	abort = {
+		always=no
+	}
+
+	ai_strategy = {
+    		type = spare_unit_factor
+    		value = -100
+	}
+	ai_strategy = {
+    		type = garrison
+    		value = 1000
+	}
+	
+}
+EFR_no_overseas = {
+	allowed = {
+		original_tag = EFR
+	}
+	enable = {
+		original_tag = EFR
+	}
+	abort = {
+		has_war=yes
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    		country_trigger = {
+		always=yes
+   	}
+    	value = -1000
+	}
+	
+}

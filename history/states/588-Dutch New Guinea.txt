@@ -1,0 +1,32 @@
+state={
+ 	id=588
+ 	name="STATE_669"
+ 	manpower = 314300
+ 	resources={
+ 		rubber = 250
+ 		steel = 200
+ 		oil = 100}
+ 	state_category = pastoral
+ 	history= {
+		set_state_flag = ASN_ALLIES_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = INS
+ 		add_core_of = INS
+ 		victory_points = {
+ 			11240 10
+ 		}
+ 		buildings = {
+ 			infrastructure = 3
+ 			11240 = {
+ 				naval_base = 2
+ 			}
+ 			6996 = {
+ 				naval_base = 2
+ 			}
+ 		}
+ 	}
+ 	provinces={
+ 		1487 1539 1554 1564 4194 4234 4248 4273 4308 6734 6944 6968 6984 6996 7031 7065 9539 9562 9655 11192 11240 11253 11313
+ 	}
+}
+

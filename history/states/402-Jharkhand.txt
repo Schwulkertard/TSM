@@ -1,0 +1,21 @@
+state={
+ 	id=402
+ 	name="STATE_436"
+ 	manpower = 5649240
+ 	state_category = rural
+ 	history={
+ 		owner = RAJ
+ 		add_core_of=RAJ
+ 		buildings = {
+ 			infrastructure = 4
+ 			industrial_complex = 1
+ 		}
+		victory_points = {
+			9566 3 
+		}
+ 	}
+ 	provinces={
+ 		1454 4278 6954 7023 7468 9566 9889 11244 11281 11331 11618
+ 	}
+ }
+

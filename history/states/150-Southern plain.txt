@@ -1,0 +1,22 @@
+state = {
+ 	id=150
+ 	name="STATE_154"
+ 	manpower = 2000000
+ 	state_category = city
+ 	history = {
+ 		owner = HUN
+ 		buildings = {
+ 			infrastructure = 6
+ 			industrial_complex = 2
+ 			air_base = 2
+ 		}
+ 		victory_points = {
+ 			10582 1
+ 		}
+ 		add_core_of = HUN
+ 	}
+ 	provinces={
+ 		662 693 3501 6237 8923 10567 10582
+ 	}
+ }
+

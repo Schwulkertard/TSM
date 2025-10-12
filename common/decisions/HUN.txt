@@ -1,0 +1,167 @@
+HUN_new_political_system = {
+
+	HUN_support_horty = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_new_beginnings
+		}
+		modifier = {
+			fascism_drift = 0.05
+			stability_weekly = 0.001
+		}
+		days_remove = 100
+		cost = 25
+		is_good = yes
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	HUN_support_civilian_industry = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_new_beginnings
+			NOT = { has_idea = HUN_civ_2 }
+		}
+		days_remove = 180
+		cost = 50
+		is_good = yes
+		remove_effect = {
+			if = {
+				limit = { has_idea = HUN_civ_1 }
+				swap_ideas = {
+					remove_idea = HUN_civ_1
+					add_idea = HUN_civ_2
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_indecisive }
+				swap_ideas = {
+					remove_idea = HUN_indecisive
+					add_idea = HUN_civ_1
+				}
+			}
+
+			if = {
+				limit = { has_idea = HUN_mil_1 }
+				swap_ideas = {
+					remove_idea = HUN_mil_1
+					add_idea = HUN_indecisive
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_mil_2 }
+				swap_ideas = {
+					remove_idea = HUN_mil_2
+					add_idea = HUN_mil_1
+				}
+			}
+		}
+	}
+	HUN_support_arms_industry = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_new_beginnings
+			NOT = { has_idea = HUN_mil_2 }
+		}
+		days_remove = 180
+		cost = 50
+		is_good = yes
+		remove_effect = {
+			if = {
+				limit = { has_idea = HUN_mil_1 }
+				swap_ideas = {
+					remove_idea = HUN_mil_1
+					add_idea = HUN_mil_2
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_indecisive }
+				swap_ideas = {
+					remove_idea = HUN_indecisive
+					add_idea = HUN_mil_1
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_civ_1 }
+				swap_ideas = {
+					remove_idea = HUN_civ_1
+					add_idea = HUN_indecisive
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_civ_2 }
+				swap_ideas = {
+					remove_idea = HUN_civ_2
+					add_idea = HUN_civ_1
+				}
+			}
+		}
+	}
+	HUN_hire_more_workers = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_new_beginnings
+		}
+		visible = {
+			NOT = { has_completed_focus = HUN_proclaim_greater_hungary }
+		}
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		days_remove = 120
+		days_re_enable = 60
+		cost = 100
+		is_good = yes
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	HUN_foreign_scientists_1 = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_outside_help
+		}
+		fire_only_once = yes
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		days_remove = -1
+		cost = 75
+		is_good = yes
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	HUN_foreign_scientists_2 = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			has_completed_focus = HUN_outside_help
+		}
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		days_remove = -1
+		fire_only_once = yes
+		cost = 75
+		is_good = yes
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+}

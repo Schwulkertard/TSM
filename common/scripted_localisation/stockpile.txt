@@ -1,0 +1,401 @@
+defined_text = { # global
+name = aluminium_stockpile_with_max_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^0>1000}
+}
+localization_key = stockpile_tt1
+}
+}
+defined_text = { # global
+name = rubber_stockpile_with_max_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^1>1000}
+}
+localization_key = stockpile_tt3
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt4
+}
+}
+defined_text = { # global
+name = tungsten_stockpile_with_max_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^2>1000}
+}
+localization_key = stockpile_tt5
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt6
+}
+}
+defined_text = { # global
+name = steel_stockpile_with_max_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^3>1000}
+}
+localization_key = stockpile_tt7
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt8
+}
+}
+defined_text = { # global
+name = chromium_stockpile_with_max_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^4>1000}
+}
+localization_key = stockpile_tt9
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt10
+}
+}
+defined_text = { # global
+name = aluminium_stockpile_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^0>1000}
+}
+localization_key = stockpile_tt11
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt12
+}
+}
+defined_text = { # global
+name = rubber_stockpile_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^1>1000}
+}
+localization_key = stockpile_tt13
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt14
+}
+}
+defined_text = { # global
+name = tungsten_stockpile_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^2>1000}
+}
+localization_key = stockpile_tt15
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt16
+}
+}
+defined_text = { # global
+name = steel_stockpile_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^3>1000}
+}
+localization_key = stockpile_tt17
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt18
+}
+}
+defined_text = { # global
+name = chromium_stockpile_text
+text = {
+trigger = {
+check_variable = {resource_stockpile^4>1000}
+}
+localization_key = stockpile_tt19
+}
+
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt20
+}
+}
+defined_text = { # global
+name = aluminium_balance_text
+text = {
+trigger = {
+check_variable = {resource_imported@aluminium>0}
+check_variable = {resource_stockpile_capacity^0=resource_stockpile^0}
+check_variable = {resource_balance^0<1000}
+}
+localization_key = stockpile_tt21
+}
+text = {
+trigger = {
+check_variable = {resource_imported@aluminium>0}
+check_variable = {resource_stockpile_capacity^0=resource_stockpile^0}
+}
+localization_key = stockpile_tt22
+}
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^0>1000}
+}
+localization_key = stockpile_tt23
+}
+
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^0>0}
+}
+localization_key = stockpile_tt24
+}
+text = {
+trigger = {
+OR={check_variable = {resource@aluminium<1000}
+check_variable = {resource@aluminium>-1000}
+}
+}
+localization_key = stockpile_tt25
+}
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt26
+}
+}
+defined_text = { # global
+name = rubber_balance_text
+text = {
+trigger = {
+check_variable = {resource_imported@rubber>0}
+check_variable = {resource_stockpile_capacity^1=resource_stockpile^1}
+check_variable = {resource_balance^1<1000}
+}
+localization_key = stockpile_tt27
+}
+text = {
+trigger = {
+check_variable = {resource_imported@rubber>0}
+check_variable = {resource_stockpile_capacity^1=resource_stockpile^1}
+}
+localization_key = stockpile_tt28
+}
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^1>1000}
+}
+localization_key = stockpile_tt29
+}
+
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^1>0}
+}
+localization_key = stockpile_tt30
+}
+text = {
+trigger = {
+OR={check_variable = {resource@rubber<1000}
+check_variable = {resource@rubber>-1000}
+}
+}
+localization_key = stockpile_tt31
+}
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt32
+}
+}
+defined_text = { # global
+name = tungsten_balance_text
+text = {
+trigger = {
+check_variable = {resource_imported@tungsten>0}
+check_variable = {resource_stockpile_capacity^2=resource_stockpile^2}
+check_variable = {resource_balance^2<1000}
+}
+localization_key = stockpile_tt33
+}
+text = {
+trigger = {
+check_variable = {resource_imported@tungsten>0}
+check_variable = {resource_stockpile_capacity^2=resource_stockpile^2}
+}
+localization_key = stockpile_tt34
+}
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^2>1000}
+}
+localization_key = stockpile_tt35
+}
+
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^2>0}
+}
+localization_key = stockpile_tt36
+}
+text = {
+trigger = {
+OR={check_variable = {resource@tungsten<1000}
+check_variable = {resource@tungsten>-1000}
+}
+}
+localization_key = stockpile_tt37
+}
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt38
+}
+}
+defined_text = { # global
+name = steel_balance_text
+text = {
+trigger = {
+check_variable = {resource_imported@steel>0}
+check_variable = {resource_stockpile_capacity^3=resource_stockpile^3}
+check_variable = {resource_balance^3<1000}
+}
+localization_key = stockpile_tt39
+}
+text = {
+trigger = {
+check_variable = {resource_imported@steel>0}
+check_variable = {resource_stockpile_capacity^3=resource_stockpile^3}
+}
+localization_key = stockpile_tt40
+}
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^3>1000}
+}
+localization_key = stockpile_tt41
+}
+
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^3>0}
+}
+localization_key = stockpile_tt42
+}
+text = {
+trigger = {
+OR={check_variable = {resource@steel<1000}
+check_variable = {resource@steel>-1000}
+}
+}
+localization_key = stockpile_tt43
+}
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt44
+}
+}
+defined_text = { # global
+name = chromium_balance_text
+text = {
+trigger = {
+check_variable = {resource_imported@chromium>0}
+check_variable = {resource_stockpile_capacity^4=resource_stockpile^4}
+check_variable = {resource_balance^4<1000}
+}
+localization_key = stockpile_tt45
+}
+text = {
+trigger = {
+check_variable = {resource_imported@chromium>0}
+check_variable = {resource_stockpile_capacity^4=resource_stockpile^4}
+}
+localization_key = stockpile_tt46
+}
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^4>1000}
+}
+localization_key = stockpile_tt47
+}
+
+text = {
+trigger = {
+check_variable = {resource_stockpile_output_unmod^4>0}
+}
+localization_key = stockpile_tt48
+}
+text = {
+trigger = {
+OR={check_variable = {resource@chromium<1000}
+check_variable = {resource@chromium>-1000}
+}
+}
+localization_key = stockpile_tt49
+}
+text = {
+trigger = {
+always=yes
+}
+localization_key = stockpile_tt50
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

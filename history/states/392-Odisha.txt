@@ -1,0 +1,29 @@
+
+state={
+	id=392
+	name="STATE_426"
+	resources={
+		steel=250.000
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			9239 3 
+		}
+
+	}
+
+	provinces={
+		1005 1047 1480 3840 4238 9131 9239 9267 9295 9588 10813 10950 11317 
+	}
+	manpower=5808040
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

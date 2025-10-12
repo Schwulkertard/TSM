@@ -1,0 +1,15 @@
+characters={
+	DEN_thorvald_stauning={
+		name="Thorvald Stauning"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEN/Portrait_Denmark_Thorvald_Stauning.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

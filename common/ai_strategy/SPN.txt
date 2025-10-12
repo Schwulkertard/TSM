@@ -1,0 +1,33 @@
+
+SPN_address_internal_affairs_first = {
+	allowed = {
+		original_tag = SPN
+	}
+	enable = {
+		original_tag = SPN
+	}
+	abort = {
+		always=no
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = TUR
+    	value = -100
+	}
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = FRA
+    	value = -100
+	}
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = SPR
+    	value = 100
+	}
+	ai_strategy = {
+    		type = garrison
+   		value = 0
+	}
+	
+}

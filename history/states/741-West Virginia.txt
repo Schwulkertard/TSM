@@ -1,0 +1,28 @@
+state={
+	id=741
+	name="West Virginia"
+	manpower = 1808000
+	state_category = city
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			fuel_silo = 1
+			industrial_complex = 5
+		}
+		add_core_of = USA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				dockyard = 5
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = jim_crow
+		}
+	}
+	provinces={
+		10782 6435 9111 764 6348 3716 9600 6447 4338 7034 3688 7080 6925
+	}
+}
+

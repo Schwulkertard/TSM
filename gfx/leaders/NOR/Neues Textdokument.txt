@@ -1,0 +1,5 @@
+#task_modding its a duplicate file from vanilla 
+
+
+[14:12:17][no_game_date][texturehandler.cpp:160]: Texture Handler encountered missing texture file: gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds
+[14:12:17][no_game_date][texturehandler.cpp:216]: Couldn't find texture file: 'gfx/leaders/NOR/Portrait_Norway_Johan_Nygaardsvold.dds'

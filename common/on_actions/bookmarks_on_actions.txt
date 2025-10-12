@@ -1,0 +1,90 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if={
+				limit={has_global_flag=unoscw}
+				SPN = {
+				every_owned_state={
+                    		SPR = {transfer_state=PREV}
+					}
+				}
+			}
+			if={
+				limit={has_global_flag=reduced_industry}
+				SPR = {
+				every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}
+		SPN = {
+				every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}
+		TUR = {
+ 				give_resource_rights = { receiver = GER state = 166 }
+				give_resource_rights = { receiver = GER state = 170 }
+				give_resource_rights = { receiver = GER state = 705 }
+				give_resource_rights = { receiver = GER state = 702 }
+				}
+		BUL = {
+                every_owned_state={
+                    ITA = {transfer_state=PREV}
+					}
+				}
+		NZL = {
+                every_owned_state={
+                    RAJ = {transfer_state=PREV}
+					}
+				}
+		SAF = {
+                every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		AST = {	
+				every_character={					
+					limit= { is_army_leader = yes }
+					set_nationality = RAJ
+				}
+                every_owned_state={
+                    RAJ = {transfer_state=PREV}
+					}
+				}
+		CAN = {
+                every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		USP = {
+				every_character={					
+					limit= { is_army_leader = yes }
+					set_nationality = USA
+				}
+                every_owned_state={
+                    USA = {transfer_state=PREV}
+					}
+				}
+		MEX= {
+                every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}	
+		JAP = {
+			set_variable={academy_special_forces_capacity=60}
+		}
+		MAN= {
+                every_owned_state={
+                    JAP = {transfer_state=PREV}
+			}
+		}
+		SIA = {
+                every_owned_state={
+                    JAP = {transfer_state=PREV}
+					}
+				}
+			}
+		
+		}
+	}
+}

@@ -1,0 +1,26 @@
+recruit_character = SWI_federal_council
+recruit_character = SWI_louis_calonder
+recruit_character = SWI_gustave_fogliardi
+recruit_character = SWI_johann_wille
+capital = 3
+#oob = "SWI_1936"
+set_research_slots = 0
+set_technology = {
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 96
+	fascism = 2
+	communism = 2
+}
+add_ideas = {
+	neutrality_idea
+	neutral_idea
+}
+set_stability = 0.85
+

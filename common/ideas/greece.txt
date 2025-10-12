@@ -1,0 +1,50 @@
+ideas = {
+	country = {
+		push_on_limit = {
+			picture = chi_war_of_resistance
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.20
+			}
+		}
+	}
+	aircraft_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		gnaf = {
+			picture = generic_air_manufacturer_3
+			allowed = {
+				original_tag = GRE
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { light_aircraft_manufacturer }
+			# trainers for RAF, great handling
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	naval_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		royal_hellenic_naval_shipyard = {
+			picture = generic_naval_manufacturer_1
+			allowed = {
+				original_tag = GRE
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { naval_manufacturer }
+		}
+	}
+}
+

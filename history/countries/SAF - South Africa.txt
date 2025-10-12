@@ -1,0 +1,172 @@
+recruit_character = SAF_j_b_m_hertzog
+recruit_character = SAF_d_f_malan
+recruit_character = SAF_moses_kotane
+recruit_character = SAF_pixley_ka_isaka_seme
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_jan_smuts
+recruit_character = SAF_guy_hallifax
+recruit_character = SAF_pierre_oliver_knoll
+recruit_character = SAF_cornelis_van_zuigenbrogge
+recruit_character = SAF_e_g_jansen
+recruit_character = SAF_adolf_malan
+recruit_character = SAF_marinus_van_osterkamp
+recruit_character = SAF_nicolaas_havenga
+recruit_character = SAF_sir_patrick_duncan
+recruit_character = SAF_jeannot_de_la_tourier
+recruit_character = SAF_j_f_van_rensburg
+recruit_character = SAF_pierre_van_ryneveld
+recruit_character = SAF_s_p_le_roux
+recruit_character = SAF_robert_palmer
+recruit_character = SAF_leonard_beyers
+recruit_character = SAF_c_de_weenburg_du_toit
+recruit_character = SAF_james_mitchell_baker
+capital = 267
+oob = "SAF_1936"
+set_stability = 0.5
+set_war_support = 0.15
+set_research_slots = 3
+add_ideas = reliance_on_natural_rubber
+add_relation_modifier = { target = ENG modifier = DOM_trade_1 }
+add_relation_modifier = { target = ENG modifier = DOM_trade_2 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+add_ideas = peace_training
+add_ideas = ENG_allied_exped_corp2
+set_rule = {can_be_spymaster = no}
+set_rule = {can_send_volunteers  = yes}
+# Starting tech
+set_technology = {
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	#desertinfantry_at = 1
+	#shocktroops = 1
+	#jungletroops = 1
+	basic_train = 1
+	bba_early_transport_plane = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	interwar_antiair = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	#early_fighter = 1
+	#naval_bomber1 = 1
+	#early_bomber = 1
+	#CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	tech_trucks = 1 
+ motorised_infantry = 1
+	fuel_silos = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_ideas = SAF_ossewabrandwag
+	add_ideas = SAF_history_of_segregation
+	add_ideas = SAF_the_commonwealth
+	add_to_tech_sharing_group = commonwealth_research
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+set_convoys = 300
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 20
+	producer = SAF
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 3500
+	producer = SAF
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = SAF
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 500
+	producer = SAF
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 75
+	fascism = 20
+	communism = 5
+}

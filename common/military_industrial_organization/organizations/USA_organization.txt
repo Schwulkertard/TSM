@@ -1,0 +1,346 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+USA_marmon_herrington_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_marmon_herrington
+	allowed = {	
+		tag = USA 
+
+	}
+	
+	initial_trait = {
+		limit_to_equipment_type = { medium_tank_chassis } 
+		
+		equipment_bonus = {				
+					
+					hard_attack = 0.10 
+					soft_attack = 0.10 
+					armor_value = -0.1 
+					hardness = -0.1 
+					build_cost_ic = -0.075
+			}
+	}
+	add_trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { medium_tank_artillery_chassis  } 
+		equipment_bonus = {		
+					soft_attack = 0.05 
+					hard_attack = -0.10		
+		}
+	
+	}
+	add_trait = {
+		name = trait2
+		token = trait2
+		position = { x=2 y=0 }
+		limit_to_equipment_type = { medium_tank_aa_chassis } 
+		equipment_bonus = {			
+					air_attack = 0.10	
+		}
+	}
+}
+
+USA_chrysler_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_chrysler
+	allowed = {	
+		tag = USA 
+
+	}
+	initial_trait = {
+		limit_to_equipment_type = { medium_tank_chassis } 
+		
+		equipment_bonus = {				
+					reliability = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					armor_value = 0.05
+					hardness = 0.05
+					build_cost_ic = 0.1
+			}
+	}
+	add_trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { medium_tank_aa_chassis  } 
+		equipment_bonus = {		
+					air_attack = 0.2	
+		}
+	
+	}
+}
+
+USA_army_ordnance_department_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_army_ordnance_department
+	allowed = {	
+		tag = USA 
+
+	}initial_trait = {
+		
+		equipment_bonus = {
+					armor_value = 0.1
+					hard_attack = 0.2
+					soft_attack = 0.2
+					reliability -0.15
+					build_cost_ic = 0.25
+		}
+	}
+}
+
+USA_detroit_arsenal_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {	
+		tag = USA 
+	}
+	
+	initial_trait = {
+		
+		equipment_bonus = {				
+					build_cost_ic = -0.10
+					soft_attack=0.05
+					reliability=0.1
+			}
+	}
+}
+
+USA_tank_destroyer_board_organization = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_usa_tank_destroyer_board
+	allowed = {	
+		tag = USA 
+	}
+	
+	initial_trait = {
+		
+			limit_to_equipment_type = { light_tank_destroyer_chassis}
+			equipment_bonus = {
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25
+			}
+	}
+	add_trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { medium_tank_destroyer_chassis  } 
+		equipment_bonus = {		
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25	
+		}
+	
+	}
+	add_trait = {
+		name = trait2
+		token = trait2
+		position = { x=2 y=0 }
+		limit_to_equipment_type = { heavy_tank_destroyer_chassis } 
+		equipment_bonus = {			
+						build_cost_ic = -0.1
+						ap_attack = 0.1
+						hard_attack = 0.25
+		}
+	}
+}
+
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+USA_norfolk_naval_yard_organization = {
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_norfolk_naval_yard
+	allowed = {	
+		tag = USA 
+
+	}
+}
+
+USA_electric_boat_company_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_electric_boat_company
+	allowed = {	
+		tag = USA 
+
+	}
+}
+
+USA_brooklyn_naval_yard_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_brooklyn_naval_yard
+	allowed = {	
+		tag = USA 
+
+	}
+
+	
+
+}
+
+USA_newport_news_shipbuilding_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_newport_news_shipbuilding
+	allowed = {	
+		tag = USA 
+
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+USA_north_american_aviation_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_north_american_aviation
+	allowed = {	
+		tag = USA 
+	
+	}
+	initial_trait = {
+
+	limit_to_equipment_type = { small_plane_airframe} 
+		equipment_bonus = {
+					build_cost_ic=-0.15
+					air_agility = 0.1
+					maximum_speed = 0.1
+		}
+	}
+	
+}
+
+USA_lockheed_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_lockheed
+	allowed = {	
+		tag = USA 
+
+	}
+	initial_trait = {
+		name = generic_mio_initial_trait_multi_role_aircraft_designer
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+
+		equipment_bonus = {
+				reliability = 0.2
+				air_defence = 0.2
+		}
+	}
+	
+	add_trait = {
+		name = trait1
+		token = trait1
+		position = { x=1 y=0 }
+		limit_to_equipment_type = { jet_fighter_equipment  } 
+		equipment_bonus = {		
+				air_range = 0.2
+		}
+	
+	}
+	add_trait = {
+		name = trait2
+		token = trait2
+		position = { x=2 y=0 }
+		limit_to_equipment_type = { medium_plane_fighter_airframe  } 
+		equipment_bonus = {		
+				air_range = 0.1
+		}
+	
+	}
+}
+
+USA_douglas_aircraft_company_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_douglas_aircraft_company
+	allowed = {	
+		tag = USA 
+
+	}
+}
+
+#USA_boeing_organization = {
+#	include = generic_heavy_aircraft_organization
+#	icon = GFX_idea_boeing
+#	allowed = {	
+#		tag = USA 
+#
+#	}
+#}
+
+USA_grumman_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_grumman
+	allowed = {	 
+		tag = USA 
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+USA_springfield_armory_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_springfield_armory
+	allowed = {	 
+		tag = USA 
+
+	}
+}
+
+USA_ford_motor_company_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_ford_motor_company
+	allowed = {	 
+		tag = USA 
+
+	}
+}
+
+USA_rock_island_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_rock_island_arsenal
+	allowed = {	 
+		tag = USA 
+
+	}
+}

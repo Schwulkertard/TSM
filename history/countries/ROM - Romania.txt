@@ -1,0 +1,212 @@
+recruit_character = ROM_armand_calinescu
+recruit_character = ROM_ion_antonescu
+recruit_character = ROM_horia_macellariu
+recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_constantin_ion_parhon
+recruit_character = ROM_octavian_goga
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ROM_ioan_mihail_racovita
+recruit_character = ROM_gheorghe_potopeanu
+recruit_character = ROM_emanoil_ionescu
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_ermil_gheorghiu
+recruit_character = ROM_nicolae_sova
+recruit_character = ROM_gheorghe_jienescu
+recruit_character = ROM_gheorghe_argeseanu
+recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_petru_groza
+recruit_character = ROM_nicolae_malaxa
+recruit_character = ROM_mihail_sturdza
+recruit_character = ROM_paul_teodorescu
+recruit_character = ROM_constantin_sanatescu
+capital = 46
+oob = "ROM_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "ROM_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ROM_1936_naval_legacy"
+	}
+}
+add_ideas = peace_training
+add_ideas = ENG_allied_exped_corp2
+add_relation_modifier = { target = GER modifier =  Axis_trade }
+set_rule = {can_be_spymaster = no}
+set_rule = {can_send_volunteers  = yes}
+set_research_slots = 3
+set_stability = 0.35
+set_war_support = 0.6
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+# Starting tech
+set_technology = {
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	#desertinfantry_at = 1
+	#shocktroops = 1
+	#jungletroops = 1
+	basic_train = 1
+	bba_early_transport_plane = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_trucks = 1 
+ motorised_infantry = 1
+	fuel_silos = 1
+	gwtank_chassis = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	#early_fighter = 1
+	mtg_transport = 1
+	interwar_antitank = 1
+	tech_recon = 1
+	armored_car1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+#Ideas
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		ROM_king_carol_ii_hedonist
+	}
+}
+#Kick off kings crazy life
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 500
+	producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 50
+	producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 14000
+	producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 100
+	producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 700
+	producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 72
+	producer = ROM
+}
+set_convoys = 200
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 20
+	fascism = 18
+	communism = 2
+	neutrality = 60
+}
+add_ideas = {
+	partial_economic_mobilisation
+}
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Delfinul Class"
+		type = ship_hull_submarine_2
+		name_group = ROM_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Marasti Class"
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}

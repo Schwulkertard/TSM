@@ -1,0 +1,17 @@
+guiTypes = {
+    containerWindowType = {
+        name = "return_core_container"
+        position = { x = 15 y = 34 }
+        
+        fade_time = 300
+        fade_type = linear
+        
+        buttonType = {
+            name = "return_core"
+            spriteType = "GFX_cancel_conversion_button"
+            position = { x = 7 y = 9 }
+            scale = 1.0
+			pdx_tooltip = "Return State"
+        }
+    }    
+}

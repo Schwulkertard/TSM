@@ -1,0 +1,28 @@
+
+state={
+	id=735
+	name="STATE_735"
+
+	history={
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		victory_points = {
+			9597 10 
+		}
+
+	}
+
+	provinces={
+		1302 1477 1489 4236 6972 7044 9552 9585 9597 11143 11230 11242 11254 11265 11278 11291 
+	}
+	manpower=3726720
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

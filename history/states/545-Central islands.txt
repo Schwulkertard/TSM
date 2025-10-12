@@ -1,0 +1,28 @@
+state=
+ {
+ 	id=545
+ 	name="STATE_624"
+ 	manpower = 1290672
+ 	state_category = town
+ 	history=
+ 	{
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = USA
+		add_core_of = USP
+ 		add_core_of=SWE
+        add_core_of=INS
+ 		buildings = {
+ 			infrastructure = 3
+ 		}
+ 		victory_points = {
+ 			4018 1
+ 		}
+		 victory_points = {
+			11158 1
+		}
+ 	}
+ 	provinces={
+ 		1317 3960 4018 4106 6772 9448 9482 11158
+ 	}
+ }
+

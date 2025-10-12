@@ -1,0 +1,148 @@
+ideas = {
+	country = {
+HOL_shared_intelligence_eng_fra = {
+			name = HOL_shared_intelligence_eng
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_eng_ger = {
+			name = HOL_shared_intelligence_eng
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_fra_eng = {
+			name = HOL_shared_intelligence_fra
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_fra_ger = {
+			name = HOL_shared_intelligence_fra
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_ger_fra = {
+			name = HOL_shared_intelligence_ger
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_ger_eng = {
+			name = HOL_shared_intelligence_ger
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		HOL_shared_intelligence_hol_ger = {
+			name = HOL_shared_intelligence_hol
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.02
+				defense_bonus_against = 0.05
+			}
+		}
+		HOL_shared_intelligence_hol_fra = {
+			name = HOL_shared_intelligence_hol
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.02
+				defense_bonus_against = 0.05
+			}
+		}
+		HOL_shared_intelligence_hol_eng = {
+			name = HOL_shared_intelligence_hol
+			picture = SOV_scientist_defect
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.02
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+}

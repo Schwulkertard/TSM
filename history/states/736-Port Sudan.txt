@@ -1,0 +1,24 @@
+state={
+ 	id=736
+ 	name="Port Sudan"
+ 	manpower = 598052
+ 	state_category = rural
+ 	history = {
+ 		owner = ENG
+ 		add_core_of=SWE
+ 		buildings = {
+ 			infrastructure = 2
+ 			air_base = 2
+ 			11524 = {
+ 				naval_base = 3
+ 			}
+ 		}
+ 		victory_points = {
+ 			11524 10
+ 		}
+ 	}
+ 	provinces={
+ 		1892 1868 1924 7374 9953 11524
+ 	}
+ }
+

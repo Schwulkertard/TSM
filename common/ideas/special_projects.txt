@@ -1,0 +1,34 @@
+
+
+ideas = {
+	hidden_ideas = {
+		floating_harbor_a={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				floating_harbor_duration = 2
+			
+			}
+		}
+		floating_harbor_b={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				floating_harbor_supply = 1
+			
+			}
+		}
+	}
+}

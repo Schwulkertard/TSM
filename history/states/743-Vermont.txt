@@ -1,0 +1,17 @@
+state={
+	id=743
+	name="Vermont"
+	state_category = USA_state
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = USA
+	}
+	provinces={
+		7067 4173 8892 11814
+	}
+	manpower=357000
+	buildings_max_level_factor=1.000
+}

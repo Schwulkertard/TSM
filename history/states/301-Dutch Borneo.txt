@@ -1,0 +1,39 @@
+state={
+	id=301
+	name="STATE_334"
+	resources={
+		rubber=700
+		oil=70
+	}
+	history={
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+ 		owner = INS
+ 		add_core_of = INS
+ 		victory_points = {
+ 			9413 5
+ 		}
+ 		victory_points = {
+ 			1261 5
+ 		}
+ 		buildings = {
+ 			infrastructure = 2
+ 			industrial_complex = 2
+ 			9413 = {
+ 				naval_base = 3
+ 			}
+ 			1261 = {
+ 				naval_base = 1
+ 			}
+ 			9500 = {
+ 				naval_base = 1
+ 			}
+ 		}
+	}
+	provinces={
+		1170 1175 1197 1249 1261 1349 1361 2022 2028 3967 4009 4052 4064 4138 4790 6692 6696 6761 6764 6820 6877 6886 7525 9316 9355 9358 9413 9442 9458 9486 9500 10995 11013 11079 11107 11125 11133 11159 11666 12059 12060 12061 12062 12063 12064 12065 12066 12067 12068 12069 12070 12071 12072 12074 12080 
+	}
+	manpower=2168600
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

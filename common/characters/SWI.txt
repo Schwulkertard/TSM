@@ -1,0 +1,15 @@
+characters={
+	SWI_federal_council={
+		name=SWI_federal_council
+		portraits={
+			civilian={
+				large="gfx/leaders/SWI/Portrait_Switzerland_Federal_council.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

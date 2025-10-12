@@ -1,0 +1,128 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_Improved_medium_guns_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_Improved_heavy_guns_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_cannon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_Advanced_heavy_guns_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_cannon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_goal_popup_bg2"
+		textureFile = "gfx//interface//pol_goal_popup_bg2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ssc_div_subunit_item_bg"
+		textureFile = "gfx//interface//ssc_div_subunit_item_bg.dds"
+	}
+	SpriteType = {
+		name = "GFX_ssc_division_designer_popup_bg"
+		textureFile = "gfx//interface//ssc_division_designer_popup_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_buildings_strip"
+		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
+		noOfFrames = 31
+	}
+	spriteType = {
+		name = "GFX_select_date_major"
+		texturefile = "gfx/interface/select_date_major.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_flexible_line_medium"
+		texturefile = "gfx/interface/technologies/industry/flexible_line_2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_improved_streamlined_line_medium"
+		texturefile = "gfx/interface/technologies/industry/streamlined_line_2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_concentrated_industry6_medium"
+		texturefile = "gfx/interface/technologies/industry/concentrated_industry6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_dispersed_industry6_medium"
+		texturefile = "gfx/interface/technologies/industry/dispersed_industry6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_construction6_medium"
+		texturefile = "gfx/interface/technologies/industry/construction6.dds"
+	}
+	SpriteType = {
+		name = "GFX_excavation6_medium"
+		texturefile = "gfx/interface/technologies/industry/excavation6.dds"
+	}
+	
+	
+	
+	SpriteType = {
+		name = "GFX_antiair1_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_recycling_centers_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_recycling_centers_a_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers_tungsten.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_recycling_centers_b_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers_chromium.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_recycling_centers_a_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers_aluminium.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_recycling_centers_b_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers_tungsten_chromium.dds"
+	}
+	SpriteType = {
+		name = "GFX_between_recycling_centers_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers2.dds"
+	}
+	SpriteType = {
+		name = "GFX_final_recycling_centers_medium"
+		texturefile = "gfx/interface/technologies/recycling_centers3.dds"
+	}		
+	SpriteType = {
+		name = "GFX_antiair2_medium"
+		texturefile = "gfx/interface/technologies/antiair1.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_antitank1_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_antitank2_medium"
+		texturefile = "gfx/interface/technologies/antitank2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_survivability_studies_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_survivability_studies.dds"
+	}	
+	SpriteType = {
+		name = "GFX_Shock_formations_medium"
+		texturefile = "gfx/interface/technologies/shock_formations.dds"
+		alwaystransparent = yes
+	}	
+}

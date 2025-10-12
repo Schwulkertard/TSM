@@ -1,0 +1,176 @@
+defined_text = { # global
+	name = POW_recruit_soldiers_tt1
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_soldiers_cost >0}
+
+		}
+		localization_key =  POW_recruit_soldiers_tt1_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_soldiers_cost = 0}
+
+		}
+		localization_key = POW_recruit_soldiers_tt1_2
+	}
+}
+defined_text = { # global
+	name = POW_recruit_soldiers_tt2
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_soldiers_cost >0}
+
+		}
+		localization_key =  POW_recruit_soldiers_tt2_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_soldiers_cost = 0}
+
+		}
+		localization_key = POW_recruit_soldiers_tt2_2
+	}
+}
+defined_text = { # global
+	name = POW_recruit_workers_tt1
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_workers_cost >0}
+
+		}
+		localization_key =  POW_recruit_workers_tt1_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_workers_cost = 0}
+
+		}
+		localization_key = POW_recruit_workers_tt1_2
+	}
+}
+defined_text = { # global
+	name = POW_recruit_workers_tt2
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_workers_cost >0}
+
+		}
+		localization_key =  POW_recruit_workers_tt2_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_recruit_workers_cost = 0}
+
+		}
+		localization_key = POW_recruit_workers_tt2_2
+	}
+}
+defined_text = { # global
+	name = POW_free_prisoners_tt1
+	text = {
+		trigger = {
+			check_variable= {POW_free_prisoners_cost >0}
+
+		}
+		localization_key =  POW_free_prisoners_tt1_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_free_prisoners_cost = 0}
+
+		}
+		localization_key = POW_free_prisoners_tt1_2
+	}
+}
+defined_text = { # global
+	name = POW_free_prisoners_tt2
+	text = {
+		trigger = {
+			check_variable= {POW_free_prisoners_cost >0}
+
+		}
+		localization_key =  POW_free_prisoners_tt2_1
+	}
+	text = {
+		trigger = {
+			check_variable= {POW_free_prisoners_cost = 0}
+
+		}
+		localization_key = POW_free_prisoners_tt2_2
+	}
+}
+defined_text = { # global
+	name = prisoners
+	text = {
+		trigger = {
+			state=1
+
+		}
+localization_key = pow_tt1
+	}
+	text = {
+		trigger = {
+			state=2
+
+		}
+localization_key = pow_tt2
+	}
+	text = {
+		trigger = {
+			state=3
+
+		}
+localization_key = pow_tt3
+	}
+	text = {
+		trigger = {
+			state=4
+
+		}
+localization_key = pow_tt4
+	}
+	text = {
+		trigger = {
+			state=5
+
+		}
+localization_key = pow_tt5
+	}
+	text = {
+		trigger = {
+			state=6
+
+		}
+localization_key = pow_tt6
+	}
+
+	text = {
+		trigger = {
+			state=7
+
+		}
+localization_key = pow_tt7
+	}
+	text = {
+		trigger = {
+			state=8
+
+		}
+localization_key = pow_tt8
+	}
+	text = {
+		trigger = {
+			state=9
+
+		}
+localization_key = pow_tt9
+	}
+	text = {
+		trigger = {
+			state=10
+
+		}
+localization_key = pow_tt10
+	}
+}

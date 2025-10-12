@@ -1,0 +1,23 @@
+categories = {
+
+	air_raids = {
+	    visible = { always=no }
+	    intel_source = air
+		available = { always=no }
+	}
+	
+
+	paratrooper_raids = {
+	    intel_source = air
+	    visible = { always=no }
+		available = { always=no }
+	}
+
+	nuclear_raids = {
+	    intel_source = air
+	    free_targeting = yes
+	    available = { always=no }
+		visible = { always=no }
+	}
+
+}
