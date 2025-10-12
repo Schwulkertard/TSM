@@ -1,23 +1,3 @@
-recruit_character = DEN_thorvald_stauning
-recruit_character = DEN_frits_clausen
-recruit_character = DEN_aksel_larsen
-recruit_character = DEN_peter_rochegune_munch
-recruit_character = DEN_wilhelm_wain_prior
-recruit_character = DEN_hans_a_rolsted
-recruit_character = DEN_ebbe_gortz
-recruit_character = DEN_paul_sommer
-recruit_character = DEN_hjalmar_rechnitzer
-recruit_character = DEN_ejnar_warum
-recruit_character = DEN_aage_vedel
-recruit_character = DEN_knud_kristensen
-recruit_character = DEN_carl_hammerich
-recruit_character = DEN_kaj_birksted
-recruit_character = DEN_christian_frederik_von_schalburg
-recruit_character = DEN_hans_lunding
-recruit_character = DEN_viggo_kampman
-recruit_character = DEN_poul_sommer
-recruit_character = DEN_william_wain_prior
-recruit_character = DEN_wilhelm_prior
 capital = 37
 oob = "DEN_1936"
 if = {
@@ -27,7 +7,7 @@ if = {
 		set_naval_oob = "DEN_1936_naval_legacy"
 	}
 }
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.9
 set_war_support = 0.1
 set_technology = {
@@ -35,19 +15,22 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_recon = 1
+	basic_train = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	#early_fighter = 1
+	early_fighter = 1
 }
 add_timed_idea = { idea = no_training days= 730 }
+add_ideas = neutrality_idea1
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 1000
+	amount = 12000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 50
+	amount = 500
 }
 add_manpower = 30000
 if = {
@@ -85,6 +68,9 @@ set_popularities = {
 	communism = 2
 }
 set_convoys = 40
+
+recruit_character = DEN_thorvald_stauning
+
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -144,3 +130,4 @@ if = {
 		}
 	}
 }
+

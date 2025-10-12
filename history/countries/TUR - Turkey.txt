@@ -1,8 +1,3 @@
-recruit_character = TUR_ismet_inönü
-recruit_character = TUR_mustafa_kemal_atatürk
-recruit_character = TUR_receb_atli
-recruit_character = TUR_iskender_subasi
-recruit_character = TUR_cemal_gürman
 capital = 49
 set_research_slots = 0
 add_ideas = {
@@ -11,6 +6,7 @@ add_ideas = {
 }
 set_technology = {
 }
+recruit_character = TUR_mustafa_kemal_ataturk
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"

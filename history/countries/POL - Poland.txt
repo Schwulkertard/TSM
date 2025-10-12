@@ -1,66 +1,54 @@
-recruit_character = POL_ignacy_mościcki
-recruit_character = POL_władysław_sikorski
-recruit_character = POL_władysław_bortnowski
-recruit_character = POL_stanisław_kopański
-recruit_character = POL_władysław_anders
-recruit_character = POL_roman_abraham
-recruit_character = POL_wincenty_kowalski
-recruit_character = POL_zbigniew_zieliński
-recruit_character = POL_bartosz_nowak
-recruit_character = POL_piotr_kwiatkowski
-recruit_character = POL_xawery_czernicki
-recruit_character = POL_jozef_zajac
-recruit_character = POL_ludomil_rayski
-recruit_character = POL_stanislaw_pawluc
-recruit_character = POL_mieczyslaw_michalowicz
-recruit_character = POL_stanislav_maczek
-recruit_character = POL_josef_unrug
-recruit_character = POL_roman_dmowski
-recruit_character = POL_jozef_beck
-recruit_character = POL_wladyslaw_kalkus
-recruit_character = POL_stanislaw_radkiewicz
-recruit_character = POL_tomislaw_lupaszko
-recruit_character = POL_kazimierz_sosnkowski
-recruit_character = POL_jan_kowalewski
-recruit_character = POL_jozef_haller
-recruit_character = POL_edward_rydz_smigly
-recruit_character = POL_eugeniusz_kwiatkowiski
-recruit_character = POL_zygmunt_buhusz_szysko
 capital = 10
 oob = "POL_1936"
-set_research_slots = 3
+set_research_slots = 0
 # Starting tech
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	basic_train = 1
-	bba_early_transport_plane = 1
-	armor_tech_1 = 1
-	engine_tech_1 = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_trucks = 1 
- motorised_infantry = 1
-	fuel_silos = 1
+	tech_mountaineers = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	interwar_antitank = 1
-	gwtank = 1
-	#early_fighter = 1
-	#early_bomber = 1
-	#CAS1 = 1
+	basic_train = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
 	trench_warfare = 1
-	grand_battle_plan = 1
-	prepared_defense = 1
-	grand_assault = 1
 }
-add_timed_idea = { idea = no_training days= 1095 }
+add_timed_idea = { idea = no_training days = 1005 }
 add_ideas = peace_training
-add_ideas = pol_idea
-add_manpower = 700000
+add_ideas = neutrality_idea1
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 60000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 1000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 2000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1000
+	producer = GER
+}
+
+recruit_character = POL_ignacy_moscicki
+recruit_character = POL_walery_slawek
+recruit_character = POL_wladyslaw_sikorski
+
+add_manpower = 320000
 set_convoys = 10
 set_politics = {
 	ruling_party = neutrality
@@ -68,65 +56,10 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-
 set_popularities = {
 	democratic = 18
 	fascism = 15
 	communism = 2
 	neutrality = 65
 }
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 600
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 400
-}
-add_equipment_to_stockpile = {
-	type = train_equipment_1
-	amount = 100
-}
-add_equipment_to_stockpile = {
-	type = anti_tank_equipment_1
-	amount = 300
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 20000
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 500
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 500
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_2
-	amount = 300
-	variant_name = "7TP"
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_operative_leader = {
-		name = "Roman Czerniawski"
-		GFX = GFX_portrait_roman_czerniawski
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { POL }
-	}
-	create_operative_leader = {
-		name = "Krystyna Skarbek"
-		GFX = GFX_portrait_krystyna_skarbek
-		traits = { operative_commando operative_seducer }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { POL }
-	}
-}
+

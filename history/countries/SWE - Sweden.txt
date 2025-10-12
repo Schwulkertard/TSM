@@ -1,8 +1,4 @@
-recruit_character = SWE_per_albin_hansson
-recruit_character = SWE_martin_johansson
-recruit_character = SWE_john_borg
-recruit_character = SWE_björn_Åslund
-capital = 137
+capital = 141
 set_research_slots = 0
 add_ideas = {
 	neutrality_idea
@@ -26,3 +22,5 @@ set_popularities = {
 }
 set_convoys = 1
 set_stability = 0.9
+
+recruit_character = SWE_per_albin_hansson 

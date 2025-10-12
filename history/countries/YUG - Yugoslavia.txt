@@ -1,68 +1,74 @@
-recruit_character = YUG_prince_paul
-recruit_character = YUG_ivan_gošnjak
-recruit_character = YUG_milutin_nedić
-recruit_character = YUG_blagoje_bojovic
-recruit_character = YUG_dragan_popovic
-recruit_character = YUG_zvezdan_horvatovic
-recruit_character = YUG_borivoje_mirkovic
-recruit_character = YUG_josip_broz_tito
-recruit_character = YUG_milan_nedic
-recruit_character = YUG_mihajlo_lukic
-recruit_character = YUG_bogoljub_ilic
-recruit_character = YUG_petar_vukcevic
-recruit_character = YUG_danilo_kalafatovic
-recruit_character = YUG_petar_kosic
-recruit_character = YUG_slobodan_jovanovic
-recruit_character = YUG_ljubomir_maric
-recruit_character = YUG_arso_jovanovic
-recruit_character = YUG_marijan_polic
-recruit_character = YUG_dusan_simovic
-recruit_character = YUG_draza_mihailovic
-recruit_character = YUG_ivan_ribar
-recruit_character = YUG_dimitrije_ljotic
 capital = 107
 oob = "YUG_1936"
-set_research_slots = 3
+set_research_slots = 0
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
-	add_ideas = {
-		YUG_idea_croatian_opposition
-		YUG_idea_macedonian_opposition
-		YUG_idea_slovene_nationalism
-		YUG_idea_serbian_general_staff
-	}
 }
-add_ideas = {
-	anti_german_military
-}
+add_ideas = neutrality_idea1
+add_timed_idea = { idea = no_training days= 1095 }
+add_ideas = peace_training
+
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	tech_support = 1
-	tech_engineers = 1
-	#early_fighter = 1
-	gwtank = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	interwar_antitank = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	superior_firepower = 1
+	basic_train = 1
+	early_fighter = 1
+	fighter1= 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	interwar_antitank = 1
+	radio = 1
+	radio_detection = 1
 }
-add_timed_idea = { idea = no_training days= 1095 }
+
+recruit_character = YUG_prince_paul
+recruit_character = YUG_milan_stojadinovic
+recruit_character = YUG_milan_grol
+
 add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2700
+	amount = 50000
+	producer = GER
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 175
+	amount = 1000
+	producer = GER
 }
-add_manpower = 175000
-set_convoys = 10
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1000
+	producer = GER
+}
+add_manpower = 250000
+set_convoys = 350
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
@@ -70,9 +76,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 15
-	neutrality = 60
+	neutrality = 100
 }
 set_stability = 0.6
+

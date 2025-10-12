@@ -1,33 +1,3 @@
-recruit_character = HOL_izaak_reijnders
-recruit_character = HOL_godfried_van_voorst_tot_voorst
-recruit_character = HOL_hendrikus_colijn
-recruit_character = HOL_godfried_ham
-recruit_character = HOL_johan_visscher
-recruit_character = HOL_jan_willem_den_breejen
-recruit_character = HOL_saul_de_groot
-recruit_character = HOL_charles_douw_van_der_krap
-recruit_character = HOL_antonie_pannekoek
-recruit_character = HOL_walraven_van_hall
-recruit_character = HOL_johan_furstner
-recruit_character = HOL_conrad_helfrich
-recruit_character = HOL_nico_van_straten
-recruit_character = HOL_anton_de_kom
-recruit_character = HOL_hein_ter_poorten
-recruit_character = HOL_jan_goudriaan
-recruit_character = HOL_adrianus_rudolphus_van_den_bent
-recruit_character = HOL_prince_bernhard
-recruit_character = HOL_meinout_rost_van_tonningen
-recruit_character = HOL_hendrik_van_oyen
-recruit_character = HOL_karel_doorman
-recruit_character = HOL_hendrik_seyffardt
-recruit_character = HOL_henri_winkelman
-recruit_character = HOL_jacob_adriaan_de_wilde
-recruit_character = HOL_petrus_wilhelmus_best
-recruit_character = HOL_maarten_belzer
-recruit_character = HOL_willem_schermerhorn
-recruit_character = HOL_adriaan_dijxhoorn
-recruit_character = HOL_cornelis_van_geelkerken
-recruit_character = HOL_marius_raaijmakers
 capital = 7
 oob = "HOL_1936"
 if = {
@@ -37,7 +7,7 @@ if = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
 }
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.75
 set_war_support = 0
 set_technology = {
@@ -47,19 +17,42 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_recon = 1
+	basic_train = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	#early_fighter = 1
-	#early_bomber = 1
+	early_fighter = 1
+	early_bomber = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	marines = 1
 }
+
+add_ideas = neutrality_idea1
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 3600
+	amount = 13500
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 750
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 800
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 850
+}
+add_equipment_to_stockpile = {
+	type = convoy
+	amount = 350
+}
+
+
 add_manpower = 55000
 if = {
 	limit = {
@@ -97,25 +90,7 @@ if = {
 	}
 }
 # DIPLOMACY
-set_autonomy = {
-	target = INS
-	autonomous_state = autonomy_integrated_puppet
-}
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
-add_ideas = {
-	HOL_wilhelmina
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		HOL_aloof_neutrality
-		HOL_shell_shocked_spectator_5
-		HOL_de_crisisjaren_5
-		HOL_weak_government
-	}
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.4.26"
@@ -129,6 +104,8 @@ set_popularities = {
 }
 set_convoys = 50
 set_stability = 0.75
+
+recruit_character = HOL_hendrikus_colijn
 
 ### VARIANTS ###
 # 1936 Start #
@@ -197,7 +174,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
@@ -214,7 +191,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
@@ -230,10 +207,9 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			mid_2_custom_slot = ship_light_medium_battery_1
 			rear_1_custom_slot = ship_airplane_launcher_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 		obsolete = yes
 	}
@@ -248,7 +224,6 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -292,3 +267,4 @@ if = {
 		}
 	}
 }
+

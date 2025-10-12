@@ -1,51 +1,3 @@
-recruit_character = FRA_Edouard_daladier
-recruit_character = FRA_alfred_heurtaux
-recruit_character = FRA_alphonse_georges
-recruit_character = FRA_alphonse_juin
-recruit_character = FRA_antoinemariebenoît_besson
-recruit_character = FRA_charles_de_gaulle
-recruit_character = FRA_charles_huntziger
-recruit_character = FRA_charles_tillon
-recruit_character = FRA_emile_muselier
-recruit_character = FRA_felix_gouin
-recruit_character = FRA_francois_darlan
-recruit_character = FRA_frederic_irene_joliot_curie
-recruit_character = FRA_gaston_henry_haye
-recruit_character = FRA_gastonhenri_billotte
-recruit_character = FRA_georges_bonnet
-recruit_character = FRA_henri_giraud
-recruit_character = FRA_henri_marie_auguste_bineau
-recruit_character = FRA_henry_freydenberg
-recruit_character = FRA_jacques_bouetwillaumez
-recruit_character = FRA_jean_courbet
-recruit_character = FRA_jean_de_laborde
-recruit_character = FRA_jean_de_lattre_de_tassigny
-recruit_character = FRA_jean_decoux
-recruit_character = FRA_jean_francois_jannekeyn
-recruit_character = FRA_jean_marie_abrial
-recruit_character = FRA_jean_marie_bergeret
-recruit_character = FRA_jeanmarie_charles_abrial
-recruit_character = FRA_jeanpierre_esteva
-recruit_character = FRA_joseph_vuillemin
-recruit_character = FRA_louis_guillaumat
-recruit_character = FRA_louis_kahn
-recruit_character = FRA_marcel_gensoul
-recruit_character = FRA_maurice_gamelin
-recruit_character = FRA_maurice_gauche
-recruit_character = FRA_maxime_weygand
-recruit_character = FRA_paul_reynaud
-recruit_character = FRA_philippe_fequant
-recruit_character = FRA_philippe_leclerc
-recruit_character = FRA_pierre_alombert_goget
-recruit_character = FRA_pierre_pucheu
-recruit_character = FRA_reneEmile_godfroy
-recruit_character = FRA_rene_emile_godfroy
-recruit_character = FRA_rene_massigli
-recruit_character = FRA_rene_olry
-recruit_character = FRA_rene_prioux
-recruit_character = FRA_robert_odic
-recruit_character = FRA_victor_denain
-recruit_character = FRA_vincent_auriol
 capital = 16
 oob = "FRA_1936"
 if = {
@@ -61,180 +13,54 @@ set_variable = {
 }
 set_rule = {can_be_spymaster = no}
 set_research_slots = 4
-set_stability = 0.25
+set_stability = 0.46
 set_war_support = 0.15
-set_rule = {can_send_volunteers  = yes}
 add_ideas = reliance_on_natural_rubber
-add_ideas = peace_training
 add_ideas = tradeback_is_cancer
-add_ideas = ENG_allied_exped_corp
+add_ideas = peace_training
 add_timed_idea = {
 	idea = FRA_civs
-	days = 365
-}
-add_timed_idea = {
-	idea = Phoney_War
-	days = 1460
+	days = 546
 }
 # Starting tech
 set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 	airfield_allowed = 1
-	#desertinfantry_at = 1
-	#shocktroops = 1
-	#jungletroops = 1
+	desertinfantry_at = 1
+	shocktroops = 1
 	basic_train = 1
-	bba_early_transport_plane = 1
-	armor_tech_1 = 1
-	engine_tech_1 = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_trucks = 1 
- motorised_infantry = 1
+	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
-	#early_fighter = 1
-	#fighter1 = 1
-	#naval_bomber1 = 1
-	#early_bomber = 1
-	#tactical_bomber1 = 1
-	#CAS1 = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	early_fighter = 1
+	fighter1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	interwar_antitank = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		#set_air_oob = "GER_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			iw_large_airframe = 1
-		}
-	}
-if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "M S.410"
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = light_mg_2x
-				special_type_slot_1 = radio_navigation_1
-				engine_type_slot = engine_2_1x
-			}
-			icon = "GFX_FRA_fighter1_medium"
-		}
-		create_equipment_variant = {
-			name = "Br.693"
-			type = small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-				special_type_slot_1 = radio_navigation_1
-				engine_type_slot = engine_2_1x				
-				special_type_slot_2 = dive_brakes_small
-				
-			}
-			icon = "GFX_FRA_CAS1_medium"
-		}
-	}
-if = { 
-	limit = { has_dlc = "No Step Back" }
-
-	#LSPAA
-	create_equipment_variant = {
-		name = "Light Tank SPAA"
-		type = light_tank_aa_chassis_2
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_anti_air_cannon_2
-			turret_type_slot = tank_light_two_man_tank_turret
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = extra_ammo_storage
-			special_type_slot_3 = extra_ammo_storage
-
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine_L
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 0
-		}
-
-		icon = "gfx/interface/technologies/FRA_light_tank_chassis_2.dds"
-	}
-
-	#DEFAULT LIGHT TANK
-	create_equipment_variant = {
-		name = "FCM 36"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_auto_cannon_2
-			turret_type_slot = tank_light_two_man_tank_turret
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = extra_ammo_storage
-			special_type_slot_3 = extra_ammo_storage
-
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine_L
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 0
-		}
-		
-		icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
-	}
-
-	#LIGHT TD
-	create_equipment_variant = {
-		name = "Light Tank Destroyer"
-		type = light_tank_destroyer_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = secondary_turret_small_cannon
-			special_type_slot_3 = extra_ammo_storage
-
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine_L
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 0
-		}
-
-		icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
-	}
-
+	engine_tech_1 = 1
+	armor_tech_1 = 1
+	assault_guns_1 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -284,7 +110,41 @@ if = {
 	}
 }
 set_convoys = 300
-
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 6000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 1500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 70000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 2000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 2500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 100
+	producer = FRA
+}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.5.1"
@@ -300,49 +160,185 @@ set_popularities = {
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line_pre_spain
+	FRA_protected_by_the_maginot_line
 	limited_conscription
 	FRA_full_employment
+	FRA_political_violence
 	FRA_inefficient_economy_2
 }
 
-if = {
-	limit = { has_dlc = "La Resistance" }
-	create_operative_leader = {
-		name = "Jeannie Rousseau"
-		GFX = GFX_portrait_jennie_rousseau
-		traits = { operative_linguist }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { FRA }
-	}
-	create_operative_leader = {
-		name = "Odette Samson"
-		GFX = GFX_portrait_odette_samson
-		traits = { operative_tough }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { FRA }
-	}
-	create_operative_leader = {
-		name = "René Joyeuse"
-		GFX = GFX_portrait_rene_joyeuse
-		traits = { operative_infiltrator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { FRA }
-	}
-	create_operative_leader = {
-		name = "Gilbert Renault"
-		GFX = GFX_portrait_gilbert_renault
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { FRA }
+
+create_equipment_variant = {
+	name = "M.S.406 A"
+	type = fighter_equipment_1
+	parent_version = 0
+	upgrades = {
+		plane_range_upgrade = 5
+		plane_engine_upgrade = 2
 	}
 }
+
+	create_equipment_variant = {
+		name = "Br.693 A"
+		type = CAS_equipment_1
+		parent_version = 0
+		upgrades = {
+			plane_range_upgrade = 5
+			plane_cas_upgrade = 2
+		}
+	}
+
+
+if = { 
+	limit = { has_dlc = "No Step Back" }
+
+	#LSPAA
+	create_equipment_variant = {
+		name = "Light Tank SPAA"
+		type = light_tank_aa_chassis_2
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_anti_air_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = extra_ammo_storage
+
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 2
+		}
+
+		icon = "gfx/interface/technologies/FRA_light_tank_chassis_2.dds"
+	}
+
+	#DEFAULT LIGHT TANK
+	create_equipment_variant = {
+		name = "FCM 36"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
+
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 2
+		}
+		
+		icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
+	}
+
+	#LIGHT TD
+	create_equipment_variant = {
+		name = "Light Tank Destroyer"
+		type = light_tank_destroyer_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = extra_ammo_storage
+
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 2
+		}
+
+		icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
+	}
+
+}
+
+add_equipment_to_stockpile = {
+	type = cas_equipment_1
+	variant_name = "Br.693 A"
+	amount = 400
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	variant_name = "M.S.406 A"
+	amount = 1000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+    type = light_tank_chassis_2
+    amount = 700
+    producer = FRA
+    variant_name = "FCM 36"
+}
+add_equipment_to_stockpile = {
+    type = light_tank_aa_chassis_2
+    amount = 150
+    producer = FRA
+    variant_name = "Light Tank SPAA"
+}
+add_equipment_to_stockpile = {
+    type = light_tank_destroyer_chassis_2
+    amount = 150
+    producer = FRA
+    variant_name = "Light Tank Destroyer"
+}
+
+#Order matters here Daladier will start as leaders because added last
+recruit_character = FRA_philippe_petain
+recruit_character = FRA_pierre_laval
+recruit_character = FRA_edouard_daladier
+recruit_character = FRA_jean_de_lattre_de_tassigny
+recruit_character = FRA_alphonse_juin
+recruit_character = FRA_maurice_gamelin
+recruit_character = FRA_maxime_weygand
+recruit_character = FRA_alphonse_georges
+recruit_character = FRA_antoinemariebenoit_besson
+recruit_character = FRA_charles_de_gaulle
+recruit_character = FRA_philippe_leclerc
+recruit_character = FRA_henri_giraud
+recruit_character = FRA_charles_huntziger
+recruit_character = FRA_gastonhenri_billotte
+recruit_character = FRA_henry_freydenberg
+recruit_character = FRA_rene_olry
+recruit_character = FRA_francois_darlan
+recruit_character = FRA_jeanmarie_charles_abrial
+recruit_character = FRA_jeanpierre_esteva
+recruit_character = FRA_jean_de_laborde
+recruit_character = FRA_philippe_fequant
+recruit_character = FRA_jean_marie_abrial
+recruit_character = FRA_jean_decoux
+recruit_character = FRA_jean_marie_bergeret
+recruit_character = FRA_martial_valin
+recruit_character = FRA_rene_emile_godfroy
+recruit_character = FRA_joseph_vuillemin
+recruit_character = FRA_henri_marie_auguste_bineau
+recruit_character = FRA_robert_odic
+recruit_character = FRA_jean_francois_jannekeyn
+recruit_character = FRA_rene_prioux
+recruit_character = FRA_pierre_alombert_goget
+recruit_character = FRA_gaston_henry_haye
+recruit_character = FRA_georges_bonnet
+recruit_character = FRA_paul_reynaud
+recruit_character = FRA_pierre_pucheu
+recruit_character = FRA_vincent_auriol
+recruit_character = FRA_rene_massigli
+recruit_character = FRA_leon_blum
+recruit_character = FRA_jacques_duclos
+
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -433,7 +429,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -464,7 +460,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
@@ -500,7 +496,6 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_light_medium_battery_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 		obsolete = yes
@@ -516,7 +511,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_armor_slot = empty
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = empty
@@ -656,56 +651,20 @@ if = {
 		}
 	}
 	# Carriers #
+	create_equipment_variant = {
+		name = "Béarn Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = FRA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+		}
+	}
 }
-add_equipment_to_stockpile = {
-	type = train_equipment
-	amount = 100
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 3000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 1000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 10000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 50000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 3300
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = small_plane_airframe_1
-	amount = 2000
-	producer = FRA
-	variant_name = "M S.410"
-}
-add_equipment_to_stockpile = {
-	type = small_plane_cas_airframe_1
-	amount = 500
-	producer = FRA
-	variant_name = "Br.693"
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 2250
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_2
-	amount = 1000
-	producer = FRA
-}
+

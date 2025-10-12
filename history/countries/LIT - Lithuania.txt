@@ -1,30 +1,20 @@
-recruit_character = LIT_antanas_smetona
-recruit_character = LIT_algirdas_dvarionas
-recruit_character = LIT_visvaldas_voldemaras
-recruit_character = LIT_aleksandras_voldemaras
-recruit_character = LIT_feliksas_baltusis
-recruit_character = LIT_vincentas_latozaite
-recruit_character = LIT_stasys_rastikis
-recruit_character = LIT_leonas_bistras
-recruit_character = LIT_adolfas_ramanauskas
-recruit_character = LIT_vladas_karvelis
-recruit_character = LIT_antanas_gustaitis
-recruit_character = LIT_antanas_kaskelis
-recruit_character = LIT_vladas_jurgutis
-recruit_character = LIT_albinas_cepas
-recruit_character = LIT_juozas_ambrazevicius
-recruit_character = LIT_jonas_cernius
-recruit_character = LIT_mykolas_slezevicius
-recruit_character = LIT_kazys_musteikis
-recruit_character = LIT_juoza_barzda_bradauskas
 capital = 11
 oob = "LIT_1936"
 set_research_slots = 0
 add_ideas = {
 	limited_conscription
 }
-set_technology = {}
+set_technology = {
+	infantry_weapons1 = 1
+}
+
+recruit_character = LIT_antanas_smetona
+recruit_character = LIT_stasys_rastikis
+recruit_character = LIT_edvardas_adamkavicius
+
+add_ideas = neutrality_idea1
 add_ideas = no_training
+
 set_convoys = 1
 set_politics = {
 	ruling_party = neutrality
@@ -38,4 +28,3 @@ set_popularities = {
 	communism = 15
 	neutrality = 40
 }
-

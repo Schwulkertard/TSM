@@ -1,35 +1,9 @@
-recruit_character = SPR_josé_díaz
-recruit_character = SPR_francisco_franco
-recruit_character = SPR_alejandro_lerroux
-recruit_character = SPR_davila_arrondo
-recruit_character = SPR_SPA_jose_antonio_giron
-recruit_character = SPR_augusto_barcia_trelles
-recruit_character = SPR_diego_hidalgo_duran_vanilla
-recruit_character = SPR_SPA_luis_carrero_blanco_vanilla
-recruit_character = SPR_SPA_miguel_ponte
-recruit_character = SPR_fransisco_franco_vanilla
-recruit_character = SPR_SPA_rafael_garcia_valino
-recruit_character = SPR_toribio_martinez_cabrera
-recruit_character = SPR_SPA_jose_antonio_primo_de_rivera
-recruit_character = SPR_SPA_jose_enrique_varela
-recruit_character = SPR_SPA_luis_valdes_cavanillas_vanilla
-recruit_character = SPR_SPA_fidel_davila_arrondo_vanilla
-recruit_character = SPR_SPA_enrique_canovas_lacruz
-recruit_character = SPR_SPA_wilhelm_ritter_von_thoma
-recruit_character = SPR_SPA_joaquin_garcia_morato
-recruit_character = SPR_SPA_emilio_herrera_vanilla
-recruit_character = SPR_SPA_miguel_cabanellas
-recruit_character = SPR_SPA_heli_rolando_de_tella
-recruit_character = SPR_SPA_emilio_mola_vidal_vanilla
-recruit_character = SPR_gonzalo_queipo_de_llano
-recruit_character = SPR_mohamed_meziane
-capital = 172
+capital = 41
 oob = "SPR_1936"
+add_ideas = peace_training
 add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
-	limited_conscription
-	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}
 set_variable = {
@@ -38,21 +12,20 @@ set_variable = {
 }
 set_research_slots = 3
 set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
-	#desertinfantry_at = 1
-	#shocktroops = 1
-	#jungletroops = 1
-	basic_train = 1
-	bba_early_transport_plane = 1
-	armor_tech_1 = 1
-	engine_tech_1 = 1
-	tech_trucks = 1 
- motorised_infantry = 1
-	fuel_silos = 1
+	amphibious_mechanized_infantry = 1
+	armored_car1 = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	marines = 1
+	motorised_infantry = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	engine_tech_1 = 1
+	basic_train = 1
+	fuel_silos = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -60,10 +33,45 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	#early_fighter = 1
-	#early_bomber = 1
-	#naval_bomber1 = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	tech_signal_company = 1
+	assault_guns_1 = 1
 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 4000
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 100
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 100
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 30
+	producer = SPR
+}
+
+recruit_character = SPA_francisco_franco  
+recruit_character = SPR_juan_lopez_sanchez
+recruit_character = SPR_juan_andrade
+recruit_character = SPA_jose_enrique_varela
+recruit_character = SPR_felipe_diaz_sandino
+recruit_character = SPR_etelvino_vega
+recruit_character = SPA_alfredo_kindelan_duany
+recruit_character = SPR_francisco_ciutat_de_miguel
+recruit_character = SPR_infantry_military_council
+recruit_character = SPA_wilhelm_ritter_von_thoma
+recruit_character = SPR_domenec_batet
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -83,21 +91,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-add_equipment_to_stockpile = {
-	type = train_equipment
-	amount = 50
-	producer = SPR
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 1000
-	producer = SPR
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 7500
-	producer = SPR
-}
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.2.16"
@@ -111,7 +104,5 @@ set_popularities = {
 	neutrality = 30
 }
 set_convoys = 200
-set_stability = 0.25
-set_war_support = 0.4
-
-
+set_stability = 0.35
+set_war_support = 0.15
