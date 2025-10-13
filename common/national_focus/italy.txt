@@ -58,7 +58,7 @@ focus_tree = {
 				instant_build = yes
 				                            }
 				}							
-			117 = {
+			154 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = dockyard
@@ -213,7 +213,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas= GER_germaniawerft
-			117 = {
+			154 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -231,11 +231,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_germaniawerft
 		cost = 5
-		available={controls_state=117}
-		bypass = {NOT={controls_state=117}}
+		available={controls_state=113}
+		bypass = {NOT={controls_state=113}}
 		available_if_capitulated = yes
 		completion_reward = {
-			117 = {
+			113 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -259,7 +259,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = ITA_small_ship_focus
-			117 = {
+			113 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -347,7 +347,7 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			117 = {
+			113 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -365,11 +365,11 @@ focus = {
 		y = 1
 		relative_position_id = ITA_modular_construction
 		cost = 3
-		available={controls_state=117}
+		available={controls_state=113}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			117 = {
+			113 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
@@ -493,7 +493,7 @@ focus = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		271 = {
+		155 = {
 		add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
@@ -521,7 +521,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		add_political_power = 150
-		448 = {
+		157 = {
 				add_resource = {
 					type = steel
 					amount = 60
@@ -607,7 +607,7 @@ focus = {
 		y = 1
 		cost = 7.2
 		completion_reward = {
-			161 = {
+			154 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -623,7 +623,7 @@ focus = {
 				instant_build = yes
 					}					
 							}
-			160 = {
+			156 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -1432,7 +1432,7 @@ focus = {
 			if = {
 				SPR = {
 					has_war = no
-					owns_state = 177
+					owns_state = 173
 				}
 			}
 		}
@@ -1443,7 +1443,7 @@ focus = {
 		completion_reward = {
 			random_other_country = {
 				limit = {
-					owns_state = 177
+					owns_state = 173
 				}
 				country_event = { id = italy.9 }
 			}
@@ -1474,12 +1474,12 @@ focus = {
 		prerequisite = { focus = ITA_romania_friend }
 		cost = 5
 		available = {
-			Date > 1942.1.1
-			has_full_control_of_state = 448
-			has_full_control_of_state = 661
-			has_full_control_of_state = 449
-			has_full_control_of_state = 450
-			has_full_control_of_state = 663
+			Date > 1941.1.1
+			has_full_control_of_state = 582
+			has_full_control_of_state = 414
+			has_full_control_of_state = 415
+			has_full_control_of_state = 413
+			has_full_control_of_state = 581
 		}
 		x = -2
 		y = 1
@@ -1488,11 +1488,11 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-			add_state_core = 448
-			add_state_core = 661
-			add_state_core = 449
-			add_state_core = 450
-			add_state_core = 663
+			add_state_core = 582
+			add_state_core = 414
+			add_state_core = 415
+			add_state_core = 413
+			add_state_core = 581
 		}
 	}
 	focus = {
@@ -1700,7 +1700,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			162 = {
+			154 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = synthetic_refinery
@@ -1756,7 +1756,7 @@ focus = {
 		id = ITA_desert_fox
 		icon = GFX_focus_ger_osttruppen
 		prerequisite = { focus = ITA_rommel }
-		available = {NOT = {has_full_control_of_state = 663 }}
+		available = {NOT = {has_full_control_of_state = 413 }}
 		x = 0
 		y = 1
 		relative_position_id = ITA_rommel
@@ -1770,7 +1770,7 @@ focus = {
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		prerequisite = { focus = ITA_rommel}
 		available = {
-			ITA ={  controls_state=446 }
+			ITA ={  controls_state=412 }
 		}
 		bypass = {
 		date > 1941.6.1
@@ -1786,7 +1786,7 @@ focus = {
 			add_manpower = 100000
 			add_stability = 0.1
 			add_war_support = 0.1
-			446 = {
+			412 = {
 				if = {
 					limit = {
 						is_controlled_by_ROOT_or_ally = yes
@@ -1810,7 +1810,7 @@ focus = {
 		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
 		icon = GOAL_equpiment
-		available = {has_full_control_of_state = 446 has_full_control_of_state = 458 }
+		available = {has_full_control_of_state = 412 }
 		relative_position_id = ITA_rommel
 		x = 2
 		y = 1
@@ -1855,7 +1855,7 @@ focus = {
 		id = ITA_escape_the_cage
 		icon = GFX_focus_ITA_escape_the_cage
 		prerequisite = { focus = ITA_rommel}
-		available = {NOT = {has_full_control_of_state = 448 has_full_control_of_state = 450}}
+		available = {NOT = {has_full_control_of_state = 415 has_full_control_of_state = 413}}
 		relative_position_id = ITA_rommel
 		x = -1
 		y = 2
@@ -1886,7 +1886,7 @@ focus = {
 					}
 				}
 			}
-		    162 = {
+		    154 = {
 				if = {
 					limit= {anti_air_building >0 anti_air_building <5 }
 					add_building_construction = {
@@ -1924,7 +1924,7 @@ focus = {
 					}
 				}
 			}
-			161 = {
+			115 = {
 				if = {
 					limit= {anti_air_building >0 anti_air_building <5 }
 					add_building_construction = {
@@ -1943,7 +1943,7 @@ focus = {
 					}
 				}
 			}
-			160 = {
+			152 = {
 				if = {
 					limit= {anti_air_building >0 anti_air_building <5 }
 					add_building_construction = {
