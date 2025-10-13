@@ -834,27 +834,6 @@ operations = {
 		}
 	}
 	
-	GER_Lennigrad = {
-		icon = ger_reichskommissariats
-		fire_only_once = yes
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			195 = {
-				CONTROLLER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-					}
-				}
-			}
-		}
-		complete_effect = {
-			set_province_name = { id =3151 name = "Lennigrad" }
-		}
-	}
-}
 GER_military_buildup = {
 }
 special_projects = {
