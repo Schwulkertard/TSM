@@ -111,16 +111,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			217 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = SOV_finish_five_year_plan_2IC
-			}
-			219 = {
+			212 = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
@@ -130,6 +121,15 @@ focus_tree = {
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			195 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_finish_five_year_plan_2IC
+			}
+			188 = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
@@ -1222,21 +1222,21 @@ focus = {
 			}
 		}
 		completion_reward = {
-			229 = {
+			214 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
 			}
-			400 = {
+			220 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
 			}
-			252 = {
+			221 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -1281,14 +1281,14 @@ focus = {
 		}
 		completion_reward = {
 			if = {
-				398 = {
+				222 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 3
 						instant_build = yes
 					}
 				}
-				573 = {
+				510 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 3
@@ -1296,39 +1296,12 @@ focus = {
 					}
 				}
 			}
-			582 = {
+			506 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
-			}
-		}
-	}
-	focus = {
-		id = SOV_tranformation_of_nature
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = SOV_infrastructure_effort }
-		x = 0
-		y = 1
-		relative_position_id = SOV_infrastructure_effort
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-		}
-		completion_reward = {
-			add_political_power = 100
-			add_resource = {
-				type = rubber
-				amount = 20
-				state = 237
-			}
-			add_resource = {
-				type = rubber
-				amount = 20
-				state = 404
 			}
 		}
 	}
@@ -1557,10 +1530,11 @@ focus = {
 	focus = {
 		id = SOV_ocean_going_navy
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SOV_great_purge }
-		x = 28
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = 0
 		y = 1
 		cost = 5
+		relative_position_id = SOV_expand_red_fleet
 		ai_will_do = {
 			factor = 1
 		}
@@ -1576,11 +1550,10 @@ focus = {
 	focus = {
 		id = SOV_expand_red_fleet
 		icon = GFX_focus_SOV_expand_red_fleet
-		prerequisite = { focus = SOV_ocean_going_navy }
-		available = { }
-		x = 0
+		prerequisite = { focus = SOV_great_purge }
+		x = 17
 		y = 1
-		relative_position_id = SOV_ocean_going_navy
+		relative_position_id = SOV_great_purge
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1588,7 +1561,7 @@ focus = {
 		available_if_capitulated = yes
 		completion_reward = {
 			navy_experience = 100
-			408 = {
+			133 = {
 				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = dockyard
@@ -1602,7 +1575,7 @@ focus = {
 				}
 				set_state_flag = SOV_expand_red_fleet_2dockyards
 			}
-			137 = {
+			188 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -1853,7 +1826,7 @@ focus = {
 	focus = {
 		id = SOV_lessons_of_war
 		icon = GFX_focus_SOV_lessons
-		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization focus = SOV_expand_red_fleet }
+		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization focus = SOV_ocean_going_navy }
 		available = {
 			OR = {
 				date > 1940.1.1
@@ -1973,14 +1946,14 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-		    564 = {
+		    487 = {
 				set_building_level = {
 					type = air_base
 					level = 20
 					instant_build = yes
 				}
 			}
-			560 = {
+			375 = {
 				set_building_level = {
 					type = air_base
 					level = 20
@@ -2208,7 +2181,7 @@ focus = {
 	relative_position_id = SOV_workers_culture
 	cost = 5
 	completion_reward = {
-		833 = {
+		494 = {
 			
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2217,7 +2190,7 @@ focus = {
 					instant_build = yes
 			}
 		}
-		351 = {
+		40 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -2225,7 +2198,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-		236 = {
+		499 = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = industrial_complex
@@ -2233,7 +2206,7 @@ focus = {
 			instant_build = yes
 				}
 			}
-			260 = {
+			487 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -2265,21 +2238,21 @@ focus = {
 				}
 			}
 			completion_reward = {
-				652 = {
+				242 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 3
 						instant_build = yes
 					}
 				}
-				251 = {
+				232 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 3
 						instant_build = yes
 					}
 				}
-				401 = {
+				244 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 3
@@ -2317,7 +2290,7 @@ cost = 7.2
 available = {
 	date > 1938.6.1 }
 completion_reward = { 
-	249 = {
+	242 = {
 		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
@@ -2325,7 +2298,7 @@ completion_reward = {
 			instant_build = yes
 			}
 		}
-	400 = {
+	258 = {
 		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
@@ -2333,7 +2306,7 @@ completion_reward = {
 			instant_build = yes
 			}
 		}
-	569 = {
+	248 = {
 		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
@@ -2341,7 +2314,7 @@ completion_reward = {
 			instant_build = yes
 			}
 		}
-	654 = {
+	220 = {
 		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
@@ -2349,7 +2322,7 @@ completion_reward = {
 			instant_build = yes
 			}
 		}
-	567 = {
+	211= {
 		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
@@ -2552,21 +2525,21 @@ focus = {
 		add_ideas = SOV_build_refs
 		set_technology= {synth_oil_experiments=1 popup=no}
 		
-		582 = {
+		242 = {
 			add_building_construction = {
 				type = synthetic_refinery
 				level = 2
 				instant_build = yes
 			}
 		}
-		573 = {
+		210 = {
 			add_building_construction = {
 				type = synthetic_refinery
 				level = 2
 				instant_build = yes
 			}
 		}
-		398 = {
+		222 = {
 			add_building_construction = {
 				type = synthetic_refinery
 				level = 2

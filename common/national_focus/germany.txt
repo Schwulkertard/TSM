@@ -767,14 +767,14 @@
 					instant_build = yes
 				}
 			}
-			152= {
+			148= {
 				add_building_construction = {
 					type = anti_air_building
 					level = 3
 					instant_build = yes
 				}
 			}
-			153 = {
+			149 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 3
@@ -1575,7 +1575,7 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-	    custom_effect_tooltip = "Spawns 20 Panzergrenadiere in Königsberg!"
+	    custom_effect_tooltip = "Spawns 20 Panzergrenadiere in Berlin!"
 		division_template = {
 					name = "Panzergrenadiere"
 					regiments = {
@@ -2066,10 +2066,10 @@ focus = {
 			4 = {
 				add_core_of = GER
 			}
-			152 = {
+			148 = {
 				add_core_of = GER
 			}
-			153 = {
+			149 = {
 				add_core_of = GER
 			}
 			AUS = {
@@ -2121,7 +2121,7 @@ focus = {
 			SOV = {
 				transfer_state = 78
 				transfer_state = 80
-				transfer_state = 766
+				transfer_state = 680
 				annex_country = {
 					target = LAT
 				}
@@ -2248,7 +2248,7 @@ focus = {
 				country_event = britain.193
 			}
 			SWE = {
-				give_resource_rights = { receiver = GER state = 666 }
+				give_resource_rights = { receiver = GER state = 585 }
 			}
 			set_global_flag=GER_resource_rights_swe
 		}
@@ -2346,7 +2346,7 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			195 = {
+			188 = {
 				add_province_modifier = {
 					static_modifiers = { german_OWK_plan }
 					province = {
@@ -2378,7 +2378,7 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			219 = {
+			212 = {
 				add_province_modifier = {
 					static_modifiers = { german_OWK_plan }
 					province = {
@@ -2428,7 +2428,7 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			217 = {
+			210 = {
 				add_province_modifier = {
 					static_modifiers = { german_OWK_plan }
 					province = {
@@ -2662,7 +2662,7 @@ focus = {
 			HUN = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
-				transfer_state = 664
+				transfer_state = 583
 				transfer_state = 73 
 			}
 			every_other_country = {
@@ -2740,10 +2740,10 @@ focus = {
 			188 = { add_claim_by = GER }
 			85 = { add_claim_by = GER }
 			86 = { add_claim_by = GER }
-			807 ={ add_claim_by = GER }
+			676 ={ add_claim_by = GER }
 			GER = {
-				transfer_state = 188
-				add_state_core = 188
+				transfer_state = 181
+				add_state_core = 181
 			}
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			LIT = {
@@ -2804,10 +2804,6 @@ focus = {
 			28 = { set_state_name = "Elsass-Lothringen" }
 			86 = { set_state_name = "Posen" }
 			762 = { set_state_name = "Kattowitz" }
-			set_province_name = { id =9503 name = "Strassburg" }
-			set_province_name = { id =678 name = "Mulhausen" }
-			set_province_name = { id =6558 name = "Posen" }
-			set_province_name = { id =6464 name = "Kattowitz" }
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}

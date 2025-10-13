@@ -1,4 +1,4 @@
-capital = 126
+capital = 124
 oob = "ENG_1936"
 if = {
 	limit = {
