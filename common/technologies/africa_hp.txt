@@ -13,56 +13,50 @@ technologies = {
 	}
 	africa_hp = {
 		motorized = {
-			max_strength = 27
+			max_strength = 10
 		}
 		mechanized = {
-			max_strength = 22
-		}
-		category_all_infantry = {
 			max_strength = 7
 		}
+		category_all_infantry = {
+			max_strength = 6
+		}
 	}
-
 	soviet_air = {
-
 		enable_building = {
 			building =air_base
 			level = 20
 		}
-		category_army = {
-			breakthrough = 0.10
-		}
 	}
 	africa_hp_off = {
 		motorized = {
-			max_strength = -27
+			max_strength = -10
 		}
 		mechanized = {
-			max_strength = -22
+			max_strength = -7
 		}
 		category_all_infantry = {
-			max_strength = -7
+			max_strength = -6
 		}
 	}
 	hp_buff_41 = {
 		category_all_infantry = {
-			max_strength = 3
+			max_strength = 2
 		}
 	}
 	hp_buff_42 = {
 		category_all_infantry = {
-			max_strength = 3
+			max_strength = 2
 		}
 	}
 	hp_buff_43 = {
 		category_all_infantry = {
-			max_strength = 3
+			max_strength = 2
 		}
 	}
-	atlantikwall = {
-	enable_building = {
-			building = coastal_bunker
-			level = 6
+	serb_modding_tank_gun = {
+		enable_equipment_modules = {
+			tank_medium_cannon_2_improved
 		}
 	}
 }
