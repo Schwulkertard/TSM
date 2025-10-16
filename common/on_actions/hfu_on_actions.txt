@@ -226,7 +226,6 @@ on_actions = {
 	effect= {
 		set_variable={Global.hotjoin_rehost_count=-1}
 		every_country={
- 			add_ideas = speed3
 			initialize_resource_stockpiles=yes			
 			add_dynamic_modifier = {modifier=Stockpile}
 			if= {limit={is_ai=no}
