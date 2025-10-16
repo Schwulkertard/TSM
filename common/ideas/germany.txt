@@ -151,21 +151,6 @@ ideas = {
 				training_time_factor = -0.1
 			}
 		}
-		GER_africa_hp = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			picture = generic_acquire_tanks
-			equipment_bonus = {
-				motorized_equipment = {
-					max_strength = 15 instant = yes
-				}
-				mechanized_equipment = {
-					max_strength = 13 instant = yes
-				}
-			}
-		}
 		GER_triumph_in_france = {
 			allowed = {
 				always = yes
