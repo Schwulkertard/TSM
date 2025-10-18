@@ -1723,7 +1723,7 @@ characters={
 				has_dlc = "La Resistance"
 			}
 			traits  = {
-				quartermaster_general 
+				backroom_backstabber 
 			}
 		}		
 	}

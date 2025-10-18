@@ -42,21 +42,21 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			395 = {
+			360 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
 			}
-			396 = {
+			254 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
 				}
 			}
-			261 = {
+			362 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -102,8 +102,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_philipino_workers
-		icon = GFX_focus_USA_philipino_workers
+		id = USA_filipino_workers
+		icon = GFX_focus_USA_filipino_workers
 		relative_position_id = USA_healthcare_act
 		prerequisite = { focus = USA_healthcare_act }
 		mutually_exclusive = { focus = USA_USACE_projects }
@@ -114,7 +114,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			627 = {
+			294 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -127,7 +127,7 @@ focus_tree = {
                     }
                 }
             }
-            628 = {
+            544 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -165,7 +165,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			date > 1941.6.1
+			date > 1941.1.1
 		}
 		prerequisite = { focus = USA_scientist_haven }
 		relative_position_id = USA_scientist_haven
@@ -180,6 +180,11 @@ focus_tree = {
 				technology = improved_rubber_processing
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
+			}
+			add_resource = {
+				type = rubber
+				amount = 100
+				state = 336
 			}
 		}
 	}
@@ -201,8 +206,8 @@ focus_tree = {
 	focus = {
 		id = USA_colonial_development
 		icon = GFX_focus_USA_colonial_development
-		relative_position_id = USA_philipino_workers
-		prerequisite = { focus = USA_philipino_workers }
+		relative_position_id = USA_filipino_workers
+		prerequisite = { focus = USA_filipino_workers }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -211,21 +216,33 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			627 = {
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			550 = {
+				add_resource = {
+					type = rubber
+					amount = 100
 				}
 			}
-			628 = {
-				add_extra_state_shared_building_slots = 7
+			605 = {
+				add_resource = {
+					type = rubber
+					amount = 100
+				}
+			}
+			294 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-					}
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			}
+			544 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
 			}
 		}
 	}
@@ -334,7 +351,7 @@ focus_tree = {
         icon = GFX_goal_generic_production
 		relative_position_id = USA_new_reforms
 		prerequisite = { focus = USA_new_reforms }
-		mutually_exclusive = { focus = USA_philipino_workers }
+		mutually_exclusive = { focus = USA_filipino_workers }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -383,7 +400,10 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			378 = {
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -391,26 +411,32 @@ focus_tree = {
 				instant_build = yes
 				}
 			}
-			385 = {
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-					}
+				}
 			}
-			386 = {
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-					}
+				}
 			}
 		}
 	}
 	focus = {
-		id = USA_roosevelt_highway
+		id = USA_sunbelt_investments
 		icon = GFX_focus_USA_highway
 		relative_position_id = USA_USACE_projects
 		prerequisite = { focus = USA_USACE_projects }
@@ -422,39 +448,49 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			378 = {
+			342 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			377 = {
+			343 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			376 = {
+			344 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			375 = {
+			338 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			379 = {
+			334 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = jim_crow
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = jim_crow
 				}
 			}
 		}
@@ -479,8 +515,8 @@ focus_tree = {
 	focus = {
 		id = USA_ford_motor_company_focus
 		icon = GFX_focus_USA_ford_motor_company
-		relative_position_id = USA_roosevelt_highway
-		prerequisite = { focus = USA_roosevelt_highway }
+		relative_position_id = USA_sunbelt_investments
+		prerequisite = { focus = USA_sunbelt_investments }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -590,28 +626,37 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		378 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes
-			}
-		}
-		385 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
-		386 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -699,7 +744,10 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			375 = {
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -707,22 +755,28 @@ focus_tree = {
 				instant_build = yes
 				}
 			}
-			371 = {
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-					}
 				}
-			370 = {
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-					}
 				}
+			}
 		}
 	}
 	focus = {
@@ -767,7 +821,7 @@ focus_tree = {
 		relative_position_id = USA_colonial_development
 		prerequisite = { focus = USA_agricultural_adjustment_act focus = USA_colonial_development focus = USA_ford_motor_company_focus }
 		available = {
-			date > 1938.3.1
+			date > 1939.1.1
 		}
 		available_if_capitulated = yes
 		x = 0
@@ -775,31 +829,9 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = USA_call_tt
-			hidden_effect = {
-				if = { limit = { has_completed_focus = USA_colonial_development }
-				627 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-												}
-					}
-				628 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-												}
-					}
-			}
+			add_ideas = isolation
 		}
-		add_ideas = isolation
-
 	}
-}
 focus = {
 	id = USA_lend_lease_act
 	icon = GFX_focus_generic_treaty
@@ -818,7 +850,6 @@ focus = {
 	completion_reward = {
 		remove_ideas = USA_neutrality_act
 		ENG = {
-			add_offsite_building = { type = industrial_complex level = 10 }
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = USA }
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 300 producer = USA }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
@@ -873,34 +904,35 @@ focus = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			360 = {
+			add_ideas = home_of_the_free
+			345 = {
                 add_resource = {
                 type = tungsten
-            	amount = 75
+            	amount = 750
                 }
             }
-            358 = {
+            363 = {
                 add_resource = {
                 type = steel
-                amount = 120
+                amount = 1200
                 }
             }
-            357 = {
+			327 = {
                 add_resource = {
                 type = steel
-                amount = 120
+                amount = 1200
                 }
             }
-            391 = {
+            353 = {
                 add_resource = {
                 type = aluminium
-                amount = 40
+                amount = 400
                 }
             }
-            371 = {
+            352 = {
                 add_resource = {
                 type = aluminium
-                amount = 40
+                amount = 400
                 }
             }
 		}
@@ -918,7 +950,7 @@ focus = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		completion_reward = {
-			custom_effect_tooltip = USA_doc_tt
+			custom_effect_tooltip = USA_income_tax_assesment_act_tt
 		    every_owned_state = {
 			limit= {AND = {infrastructure > 9 is_core_of = USA}  }
 				    add_extra_state_shared_building_slots = 4
@@ -1221,22 +1253,30 @@ focus = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			378 = {
-                add_extra_state_shared_building_slots = 5
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					can_construct_building = dockyard
+				}
+				add_extra_state_shared_building_slots = 5
                 add_building_construction = {
                     type = dockyard
                     level = 5
                     instant_build = yes
                 }
-            }
-            385 = {
-                add_extra_state_shared_building_slots = 5
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = USA
+					can_construct_building = dockyard
+				}
+				add_extra_state_shared_building_slots = 5
                 add_building_construction = {
                     type = dockyard
                     level = 5
                     instant_build = yes
                 }
-            }
+			}
 		}
 	}
 	focus = {
@@ -1635,7 +1675,7 @@ focus = {
 		relative_position_id = USA_american_dream
 		continue_if_invalid = yes
 		x = 0
-		y = 2
+		y = 1
 		cost = 0
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1645,7 +1685,7 @@ focus = {
 				}
 			}
 			add_political_power = 100
-			add_ideas = USA_war_economy
+			add_ideas = war_economy
 			set_country_flag = USA_the_giant_wakes_added_civ_eco
 		}
 	}
@@ -1989,26 +2029,19 @@ focus = {
 			add_ideas = USA_war_time
 				AST = {
 					add_ideas = free_trade
-				}
-				285 = {
+					273 = {
 					add_resource = {
 						type = steel
-						amount = 20
+						amount = 300
+						}
 					}
-				}
-				521 = {
-					add_resource = {
-						type = steel
-						amount = 10
-					}
-				}
-				285 = {
+					273 = {
 					add_resource = {
 						type = tungsten
-						amount = 15
+						amount = 150
+						}
 					}
 				}
-				transfer_state = 447
 		}
 	}
 	focus = {

@@ -404,217 +404,22 @@ USA_war_plans = {
 		}
 	}
 }
-USA_macro = {
-	USA_docks = {
-	icon = generic_construction
-	fire_only_once = yes
-	allowed = {
-		original_tag = USA
-	}
-	visible = {
-		original_tag = USA
-	}
-	complete_effect = {
-			357 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			358 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			360 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			359 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			361 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			375 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			378 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			362 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
-			363 = {
-				add_building_construction = {
-					type = dockyard
-					level = 10
-					instant_build = no
-				}
-			}
+USA_resource_expansion = {
+	USA_steel_city = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_administration
 		}
-	}
-	USA_infra_day1 = {
-		icon = generic_construction
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
-		allowed = {
-			original_tag = USA
-		}
-		visible = {
-			original_tag = USA
-		}
 		complete_effect = {
-				357 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				358 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				360 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = no
-					}
-				}
-				359 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				361 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				396 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = no
-					}
-				}
-				375 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = no
-					}
-				}
-				378 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = no
-					}
-				}
-				379 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				377 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
-				}
-				376 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = no
-					}
+			327 = {
+				add_dynamic_modifier = {
+					modifier = steel_city
 				}
 			}
 		}
-		USA_civs = {
-			icon = generic_construction
-			fire_only_once = yes
-			allowed = {
-				original_tag = USA
-			}
-			visible = {
-				original_tag = USA
-			}
-			complete_effect = {
-					357 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 10
-							instant_build = no
-						}
-					}
-					358 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 10
-							instant_build = no
-						}
-					}
-					360 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 10
-							instant_build = no
-						}
-					}
-					359 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 10
-							instant_build = no
-						}
-					}
-					361 = {
-						add_building_construction = {
-							type = industrial_complex
-							level = 10
-							instant_build = no
-						}
-					}
-				}
-			}
 	}
-
+}

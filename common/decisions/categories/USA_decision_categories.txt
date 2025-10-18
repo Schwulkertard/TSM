@@ -38,7 +38,8 @@ USA_puppet_minor = {
 		original_tag = USA
 	}
 }
-USA_macro = {
+USA_resource_expansion = {
+	priority = 90
 	allowed = {
 		original_tag = USA
 	}

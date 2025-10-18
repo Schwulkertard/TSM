@@ -13,7 +13,7 @@ jim_crow = {
 	icon = GFX_modifiers_generic_defense
 }
 
-pittsburgh_steel = {
+steel_city = {
 	state_resources_steel_factor = 2
 	enable = { always = yes }
 	icon = GFX_modifiers_generic_defense

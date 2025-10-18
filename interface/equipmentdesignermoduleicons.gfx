@@ -125,6 +125,42 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/rear.dds"
 	}
 
+	#Special
+	spriteType = {
+		name = "GFX_SMI_ship_anti_torpedo_bulge"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_anti_torpedo_bulge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_damage_control"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_damage_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_he_shell"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_he_shell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_ap_shell"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ap_shell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_shap_shell"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_shap_shell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_sap_shell"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_sap_shell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_pure_oxygen_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_pure_oxygen_torpedo.dds"
+	}
+
 	######## Ship Light battery
 
 	### Category Icon

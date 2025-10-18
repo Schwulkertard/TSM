@@ -1,9 +1,156 @@
-foreign_politics = {
-	ENG_annex_saf = {
+UK_foreign_politics = {
+	ENG_develop_CAN = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = uk_commonwealth_focus
+			NOT = {
+				has_country_flag = development_cooldown
+			}
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = development_cooldown
+			268 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ENG
+					NOT = {
+						state = 116
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = development_cooldown
+		}
+	}
+	ENG_develop_RAJ = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = uk_commonwealth_focus
+			NOT = {
+				has_country_flag = development_cooldown
+			}
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = development_cooldown
+			405 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ENG
+					NOT = {
+						state = 116
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = development_cooldown
+		}
+	}
+	ENG_develop_AST = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = uk_commonwealth_focus
+			NOT = {
+				has_country_flag = development_cooldown
+			}
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = development_cooldown
+			273 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ENG
+					NOT = {
+						state = 116
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = development_cooldown
+		}
+	}
+	ENG_develop_SAF = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = uk_commonwealth_focus
+			NOT = {
+				has_country_flag = development_cooldown
+			}
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = development_cooldown
+			600 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ENG
+					NOT = {
+						state = 116
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = development_cooldown
+		}
+	}
+	ENG_can_annex_saf = {
 		icon = generic_operation
 		available = {
 			SAF = { is_ai = yes }
-			date>1939.1.1
 		}
 		allowed = {
 			tag = ENG
@@ -18,10 +165,10 @@ foreign_politics = {
 				pow_before_annex=yes
 				every_owned_state={
 					limit={is_core_of=PREV}
-					add_core_of = ENG
+					add_core_of = CAN
 				}
 			}
-			ENG = {
+			CAN = {
 				annex_country = {
 					target = SAF
 					transfer_troops = yes
@@ -29,64 +176,228 @@ foreign_politics = {
 			}
 		}
 	}
-	
-	ENG_annex_ast = {
+	ENG_build_up_africa = {
 		icon = generic_operation
 		available = {
-			AST = { is_ai = yes }
-			date>1939.1.1
+			date > 1938.1.1
 		}
-		allowed = {
-			tag = ENG
-		}
-		cost = 0
-		visible = {
-			AST= { is_ai = yes }
-		}
-		fire_only_once = yes
+		days_remove = 100
 		complete_effect = {
-			AST = {
-				pow_before_annex=yes
-				every_owned_state={
-					limit={is_core_of=PREV}
-					add_core_of = ENG
+		}
+		remove_effect = {
+			412 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =3812
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 7
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province =3812
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province =6479
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province =3812
+					instant_build = yes
 				}
 			}
-			ENG = {
-				annex_country = {
-					target = AST
-					transfer_troops = yes
+			116 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =11883
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =3867
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			420 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			418 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			416 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province =7283
+					instant_build = yes
+				}
+			}
+			736 = {
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province =11524
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province =1868
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province =9953
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province =11524
+					instant_build = yes
+				}		
+				set_building_level = {
+					type = bunker
+					level = 5
+					province =1892
+					instant_build = yes
 				}
 			}
 		}
 	}
-	
-	ENG_annex_can = {
+	ENG_eritrea = {
 		icon = generic_operation
 		available = {
-			CAN = { is_ai = yes }
-			date>1939.1.1
+			475 = { is_controlled_by_ROOT_or_ally = yes }
 		}
-		allowed = {
-			tag = ENG
-		}
-		cost = 0
-		visible = {
-			CAN= { is_ai = yes }
-		}
-		fire_only_once = yes
+		days_remove = 15
 		complete_effect = {
-			CAN = {
-				pow_before_annex=yes
-				every_owned_state={
-					limit={is_core_of=PREV}
-					add_core_of = ENG
+		}
+		remove_effect = {
+		475 = {
+				add_compliance = 70 
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province =11553
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
 				}
 			}
-			ENG = {
-				annex_country = {
-					target = CAN
-					transfer_troops = yes
+		}	
+	}
+	ENG_ceylon = {
+		icon = generic_operation
+		available = {
+			388 = { is_controlled_by_ROOT_or_ally = yes }
+			date > 1939.1.1
+		}
+		days_remove = 100
+		complete_effect = {
+		}
+		remove_effect = {
+			388 = {
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province =6725
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province =6725
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =9405
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =11139
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =3951
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province =6809
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province =9378
+					instant_build = yes
 				}
 			}
 		}

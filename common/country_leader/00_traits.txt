@@ -1482,6 +1482,25 @@ leader_traits = {
 		}
 	}
 
+	silent_workhorse_usa = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.40
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	industrial_genius = {
+		sprite = 10
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	war_industrialist = {
 		sprite = 10
 		random = yes
@@ -1492,6 +1511,12 @@ leader_traits = {
 		ai_will_do = {
 			factor = 2
 		}
+	}
+
+	voice_of_the_people = {
+		sprite = 13
+		stability_factor = 0.05
+		political_power_gain = 0.3
 	}
 
 	captain_of_industry = {

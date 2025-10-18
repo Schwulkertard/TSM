@@ -7,6 +7,7 @@ technologies = {
 	early_ship_hull_light = {
 		enable_equipments = {
 			ship_hull_light_1
+			ship_hull_escort_light
 		}
 		enable_equipment_modules = {
 			light_ship_engine_1
@@ -304,7 +305,6 @@ technologies = {
 		}
 	}
 	modern_depth_charges = {
-		allow_branch = {always=no}
 		enable_equipment_modules = {
 			ship_depth_charge_4
 		}
@@ -410,6 +410,9 @@ technologies = {
 		}
 	}
 	advanced_sonar = {
+		allow_branch = {
+			always = no
+		}
 		enable_equipment_modules = {
 			ship_sonar_3
 		}
@@ -420,9 +423,6 @@ technologies = {
 		start_year = 1940
 		categories = {
 			year_1940
-		}
-		allow_branch = {
-			always = no
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -691,6 +691,9 @@ technologies = {
 			leads_to_tech = advanced_cruiser_armor_scheme
 			research_cost_coeff = 1
 		}
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
@@ -776,10 +779,6 @@ technologies = {
 			leads_to_tech = basic_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = basic_heavy_armor_scheme
-			research_cost_coeff = 1
-		}
 		research_cost = 1
 		start_year = 1922
 		folder = {
@@ -822,6 +821,10 @@ technologies = {
 			leads_to_tech = improved_ship_hull_heavy
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = basic_heavy_armor_scheme
+			research_cost_coeff = 1
+		}
 		research_cost = 1
 		start_year = 1936
 		categories = {
@@ -830,9 +833,6 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 7 }
-		}
-		sub_technologies = {
-			ship_hull_super_heavy
 		}
 		ai_will_do = {
 			factor = 1
@@ -860,6 +860,9 @@ technologies = {
 		}
 	}
 	ship_hull_super_heavy = {
+		allow_branch = {
+			always = no
+		}
 		enable_equipments = {
 			ship_hull_super_heavy_1
 		}
@@ -966,9 +969,6 @@ technologies = {
 		categories = {
 			year_1942
 		}
-		allow = {
-			date > 1941.1.1
-		}
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
@@ -1039,6 +1039,9 @@ technologies = {
 		}
 		on_research_complete = {
 			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		allow_branch = {
+			always = no
 		}
 		xp_research_type = navy
 		xp_boost_cost = 50
@@ -1657,6 +1660,9 @@ technologies = {
 		}
 	}
 	basic_submarine_snorkel = {
+		allow_branch = {
+			always = no
+		}
 		enable_equipment_modules = {
 			ship_sub_snorkel_1
 		}
@@ -1900,6 +1906,9 @@ technologies = {
 		}
 	}
 	basic_light_shell = {
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
@@ -2025,6 +2034,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_medium_battery_2
 			ship_light_medium_battery_2
+			ship_he_shell
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2109,6 +2119,9 @@ technologies = {
 		}
 	}
 	basic_medium_shell = {
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
@@ -2198,6 +2211,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_heavy_battery_2
+			ship_ap_shell
 		}
 		on_research_complete = {
 			custom_effect_tooltip = heavy_battery_advice_tt
@@ -2308,6 +2322,9 @@ technologies = {
 		}
 	}
 	basic_heavy_shell = {
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
@@ -2392,6 +2409,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_secondaries_1
+			dp_ship_secondaries_1
 		}
 		on_research_complete = {
 			custom_effect_tooltip = secondary_battery_advice_tt
@@ -2430,6 +2448,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_secondaries_2
+			dp_ship_secondaries_2
 		}
 		on_research_complete = {
 			custom_effect_tooltip = secondary_battery_advice_tt
@@ -2453,6 +2472,9 @@ technologies = {
 		}
 	}
 	dp_secondary_battery = {
+		allow_branch = {
+			always = no
+		}
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.0
@@ -2463,7 +2485,6 @@ technologies = {
 			year_1940
 		}
 		enable_equipment_modules = {
-			dp_ship_secondaries
 			dp_light_battery
 		}
 		on_research_complete = {
@@ -2586,6 +2607,9 @@ technologies = {
 		}
 	}
 	damage_control_3 = {
+		enable_equipment_modules = {
+			ship_damage_control
+		}
 		research_cost = 2
 		battleship = {
 			reliability = 0.03}
@@ -3171,6 +3195,16 @@ technologies = {
 		}
 		#set at gamestart
 		allow_branch = {always=no}
+	}
+	sp_naval_proximity_fuze_tech = {
+		#HIDDEN EFFECT FOR THE PROXIMITY FUZE 
+		navy_anti_air_attack_factor = 0.2
+		research_cost = 1
+		start_year = 1940
+		
+		allow = {
+			always = no
+		}
 	}
 }
 

@@ -7,4 +7,10 @@ ENG_imperial_conference_decision = {
 		original_tag = ENG
 	}
 }
-
+UK_foreign_politics = {
+	priority = 100
+	icon = eng_imperial_conference
+	allowed = {
+		original_tag = ENG
+	}
+}
