@@ -1610,7 +1610,7 @@ sp_naval_anechoic_tiles = {
 
 	resource_cost = {
 		resources = {
-			rubber = 12
+			rubber = 102
 			steel = 8
 		}
 	}

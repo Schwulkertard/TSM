@@ -476,9 +476,9 @@ ideas = {
 			}
 			modifier = {
 				surrender_limit=1.0
-				air_agility_factor = -0.10
-				air_attack_factor = -0.05
-				air_maximum_speed_factor = -0.10
+				industrial_capacity_factory = -0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.3
 				agency_upgrade_time = -0.30
 				operative_slot = 1
 				special_forces_min= 224
@@ -823,7 +823,7 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				stability_factor = 0.2
+				stability_weekly_factor = 0.01
 				consumer_goods_factor = -0.05
 			}
 		}

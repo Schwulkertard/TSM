@@ -423,7 +423,7 @@ sp_air_earthshaker_bomb = {
 	# resource_cost = {
 		# resources = {
 			# aluminium = 24
-			# rubber = 12
+			# rubber = 102
 		# }
 	# }
 	
