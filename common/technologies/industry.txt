@@ -1207,7 +1207,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 5
 			}
 		}
 		path = {
@@ -1260,7 +1260,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 5
 			}
 		}
 		path = {
@@ -1313,7 +1313,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 5
 			}
 		}
 		research_cost = 1.5

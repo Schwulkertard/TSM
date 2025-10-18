@@ -460,7 +460,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_synthetic_refinery_factor = 1
+				production_speed_synthetic_refinery_factor = 0.3
 			}
 		}
 		peoples_commissariat_focus = {
@@ -530,10 +530,13 @@ ideas = {
 			modifier = {
 				surrender_limit=1.0
 				agency_upgrade_time = -0.30
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = -0.25
 				production_factory_max_efficiency_factor = 0.25
 				production_factory_efficiency_gain_factor = -0.3
 				operative_slot = 1
+				special_forces_min= 224
+				send_volunteer_size	= 3
+				send_volunteer_divisions_required = -1
 			}
 		}
 		trotskyite_plot = {

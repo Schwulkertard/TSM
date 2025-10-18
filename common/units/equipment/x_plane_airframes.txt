@@ -209,8 +209,8 @@ equipments = {
 		build_cost_ic = 22
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		manpower = 20
@@ -233,8 +233,8 @@ equipments = {
     		build_cost_ic = 58
 	 	    lend_lease_cost = 11  
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 2
     		naval_strike_targetting = 10
@@ -262,8 +262,8 @@ equipments = {
     		build_cost_ic = 60
 	 	    lend_lease_cost = 11 
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 4
     		naval_strike_targetting = 10
@@ -292,8 +292,8 @@ equipments = {
     		build_cost_ic = 63
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -315,8 +315,8 @@ equipments = {
     		build_cost_ic = 63
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -345,8 +345,8 @@ equipments = {
     		build_cost_ic = 65
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -365,8 +365,8 @@ equipments = {
     		build_cost_ic = 65
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -386,8 +386,8 @@ equipments = {
     		build_cost_ic = 65
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -427,9 +427,9 @@ equipments = {
 
 		build_cost_ic = 30
 		resources = {
-			aluminium = 2
+			aluminium = 20
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 
 		manpower = 40
@@ -458,9 +458,9 @@ equipments = {
 
 		build_cost_ic = 32
 		resources = {
-			aluminium = 3
+			aluminium = 30
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 		manpower = 40
 		fuel_consumption = 0.42
@@ -488,9 +488,9 @@ equipments = {
 
 		build_cost_ic = 39
 		resources = {
-			aluminium = 4
+			aluminium = 40
 			chromium = 4
-			rubber = 1
+			rubber = 10
 		}
 		manpower = 60
 		fuel_consumption = 0.52
@@ -541,8 +541,8 @@ equipments = {
 		#Space taken in convoy
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		lend_lease_cost = 8
@@ -570,8 +570,8 @@ equipments = {
 		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 1
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 
 		naval_strike_attack = 3
@@ -603,8 +603,8 @@ equipments = {
 		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 2
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 		naval_strike_attack = 6
 		naval_strike_targetting = 10
@@ -635,8 +635,8 @@ equipments = {
 		build_cost_ic = 32.4 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 2
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 
 		naval_strike_attack = 8
@@ -691,8 +691,8 @@ equipments = {
 		build_cost_ic = 42
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -718,8 +718,8 @@ carrier_capable = yes
     		build_cost_ic = 46
 	 	    lend_lease_cost = 11    
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 5
     		naval_strike_targetting = 10
@@ -747,8 +747,8 @@ carrier_capable = yes
     		build_cost_ic = 48 
 	 	    lend_lease_cost = 1  
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 5
     		naval_strike_targetting = 10
@@ -775,8 +775,8 @@ carrier_capable = yes
     		build_cost_ic = 50 
 	 	    lend_lease_cost = 1  
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 5
     		naval_strike_targetting = 10
@@ -822,8 +822,8 @@ carrier_capable = yes
 		build_cost_ic = 26.4 # cv_version costs 20% more of base archetype
 			resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -854,8 +854,8 @@ carrier_capable = yes
 		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 1
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 
 		naval_strike_attack = 7
@@ -887,8 +887,8 @@ carrier_capable = yes
 		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 2
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 
 		naval_strike_attack = 13
@@ -944,8 +944,8 @@ carrier_capable = yes
 
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -972,8 +972,8 @@ carrier_capable = yes
     		build_cost_ic = 46
 	 	    lend_lease_cost = 11
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
 
 		naval_strike_targetting = 10
@@ -1006,8 +1006,8 @@ carrier_capable = yes
     		build_cost_ic = 48 
 	 	    lend_lease_cost =11  
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
 		surface_detection = 35 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 18 # For airwing of 100 planes (Destroyer I: 5 sub detection )
@@ -1035,8 +1035,8 @@ carrier_capable = yes
     		build_cost_ic = 50 
 	 	    lend_lease_cost = 1
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     	}
 
@@ -1085,8 +1085,8 @@ carrier_capable = yes
 
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -1116,8 +1116,8 @@ carrier_capable = yes
 		build_cost_ic = 33.2 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 1
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 		air_superiority = 1
 		reliability = 0.8
@@ -1146,8 +1146,8 @@ carrier_capable = yes
 		build_cost_ic = 35.2 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 2
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 		air_superiority = 1
 		reliability = 0.8
@@ -1187,9 +1187,9 @@ carrier_capable = yes
 		}
 		build_cost_ic = 16
 		resources = {
-			aluminium = 3
+			aluminium = 30
 			tungsten = 2
-			rubber = 1
+			rubber = 10
 		}
 		fuel_consumption = 0
 		air_superiority = 1
@@ -1214,9 +1214,9 @@ carrier_capable = yes
 		reliability = 0.5
 		build_cost_ic = 18
 		resources = {
-			aluminium = 3
+			aluminium = 30
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 		fuel_consumption = 0
 		air_superiority = 1
@@ -1241,9 +1241,9 @@ carrier_capable = yes
 		reliability = 0.8
 		build_cost_ic = 20
 		resources = {
-			aluminium = 3
+			aluminium = 30
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 		fuel_consumption = 0
 		air_superiority = 1
@@ -1285,9 +1285,9 @@ carrier_capable = yes
 		build_cost_ic = 14
 		manpower = 15
 		resources = {
-			aluminium = 2
+			aluminium = 20
 			tungsten = 2
-			rubber = 1
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -1334,8 +1334,8 @@ carrier_capable = yes
 		build_cost_ic = 35
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 		# build_cost_ic = 18
 		naval_strike_attack = 4
@@ -1367,8 +1367,8 @@ carrier_capable = yes
 	 	    lend_lease_cost = 15   
     		resources = {
     			#oil = 1
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 10
     		naval_strike_targetting = 6
@@ -1400,8 +1400,8 @@ carrier_capable = yes
 	 	    lend_lease_cost = 15 
     		resources = {
     			#oil = 1
-    			aluminium = 4
-    			rubber = 1
+    			aluminium = 40
+    			rubber = 10
     		}
     		naval_strike_attack = 12
     		naval_strike_targetting = 6
@@ -1433,8 +1433,8 @@ carrier_capable = yes
 	 	    lend_lease_cost = 15
     		resources = {
     			#oil = 1
-    			aluminium = 4
-    			rubber = 1
+    			aluminium = 40
+    			rubber = 10
     		}
     		naval_strike_attack = 14
     		naval_strike_targetting = 6
@@ -1463,8 +1463,8 @@ carrier_capable = yes
 	 	    lend_lease_cost = 15   
     		resources = {
     			#oil = 1
-    			aluminium = 4
-    			rubber = 1
+    			aluminium = 40
+    			rubber = 10
     		}
     		naval_strike_attack = 14
     		naval_strike_targetting = 6
@@ -1509,9 +1509,9 @@ carrier_capable = yes
 
 		build_cost_ic = 45
 		resources = {
-			aluminium = 2
+			aluminium = 20
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -1542,9 +1542,9 @@ carrier_capable = yes
 
 		build_cost_ic = 48
 		resources = {
-			aluminium = 3
+			aluminium = 30
 			tungsten = 3
-			rubber = 1
+			rubber = 10
 		}
 
 		air_superiority = 1
@@ -1591,8 +1591,8 @@ carrier_capable = yes
 		build_cost_ic = 28
 		resources = {
 			#oil = 1
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 
 		air_superiority = 1.25
@@ -1616,8 +1616,8 @@ carrier_capable = yes
     		build_cost_ic = 64 
 	 	    lend_lease_cost = 12
     		resources = {
-    			aluminium = 3
-    			rubber = 1
+    			aluminium = 30
+    			rubber = 10
     		}
     		naval_strike_attack = 6
     		naval_strike_targetting = 10
@@ -1645,8 +1645,8 @@ carrier_capable = yes
 		build_cost_ic = 68
 		resources = {
 			#oil = 1
-			aluminium = 4
-			rubber = 1
+			aluminium = 40
+			rubber = 10
 		}
 		naval_strike_attack = 9
 		naval_strike_targetting = 10
@@ -1671,8 +1671,8 @@ carrier_capable = yes
     		build_cost_ic = 72
 	 	    lend_lease_cost = 12   
     		resources = {
-    			aluminium = 4
-    			rubber = 1
+    			aluminium = 40
+    			rubber = 10
     		}
     		naval_strike_attack = 9
     		naval_strike_targetting = 10
@@ -1707,8 +1707,8 @@ carrier_capable = yes
 		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 		resources = {
-			aluminium = 2
-			rubber = 1
+			aluminium = 20
+			rubber = 10
 		}
 		air_superiority = 0
 		reliability = 0.8
@@ -1731,8 +1731,8 @@ carrier_capable = yes
 
 		build_cost_ic = 20
 		resources = {
-			aluminium = 3
-			rubber = 1
+			aluminium = 30
+			rubber = 10
 		}
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
