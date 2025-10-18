@@ -533,6 +533,9 @@ ideas = {
 			modifier = {
 				surrender_limit=1.0
 				agency_upgrade_time = -0.30
+				industrial_capacity_factory = -0.4
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = -0.3
 				operative_slot = 1
 			}
 		}
