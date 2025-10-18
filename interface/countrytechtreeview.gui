@@ -4352,14 +4352,14 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 672 y = 0 }
+				position = { x = 702 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_air
 			}
 			buttonType = {
 				name = "bba_air_techs_folder_tab"
-				position = { x = 735 y = 0 }
+				position = { x = 10000 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_air

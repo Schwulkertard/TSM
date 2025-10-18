@@ -45,6 +45,10 @@ technologies = {
 			leads_to_tech = infantry_weapons1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = motorised_infantry
+			research_cost_coeff = 1
+		}
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
@@ -1447,10 +1451,6 @@ technologies = {
 			leads_to_tech = amphibious_mechanized_infantry
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = assault_guns_1
-			research_cost_coeff = 1
-		}
 		research_cost = 2
 		start_year = 1936
 		categories = {
@@ -1458,7 +1458,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 4 y = @1918 }
 		}
 		folder = {
 			name = support_folder
@@ -1527,20 +1527,15 @@ technologies = {
 			leads_to_tech = armored_car2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = assault_gun_1
-			research_cost_coeff = 1
-		}
 		research_cost = 2
 		start_year = 1914
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 6 y = @1938 }
 		}
 		categories = {
 			motorized_equipment
 			armor
-			armored_car
 		}
 		ai_will_do = {
 			factor = 1
@@ -1577,12 +1572,11 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1940 }
+			position = { x = 6 y = @1940 }
 		}
 		categories = {
 			motorized_equipment
 			armor
-			armored_car
 		}
 		ai_will_do = {
 			factor = 1
@@ -1615,12 +1609,11 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1942 }
+			position = { x = 6 y = @1942 }
 		}
 		categories = {
 			motorized_equipment
 			armor
-			armored_car
 		}
 		sub_technologies = {
 			armored_car_at_upgrade
@@ -1658,75 +1651,6 @@ technologies = {
 		categories = {
 			motorized_equipment
 			armor
-			armored_car
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	assault_guns_1 = {
-		enable_equipments = {
-			early_assault_guns
-		}
-		research_cost = 2
-		start_year = 1936
-		categories = {
-			year_1936
-		}
-		path = {
-			leads_to_tech = assault_guns_2
-			research_cost_coeff = 1
-		}
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = 2 }
-		}
-		categories = {
-			assault_guns
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	assault_guns_2 = {
-		enable_equipments = {
-			improved_assault_guns
-		}
-		research_cost = 2
-		start_year = 1940
-		categories = {
-			year_1940
-		}
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = 8 }
-		}
-		path = {
-			leads_to_tech = assault_guns_3
-			research_cost_coeff = 1
-		}
-		categories = {
-			assault_guns
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	assault_guns_3 = {
-		enable_equipments = {
-			advanced_assault_guns
-		}
-		research_cost = 2
-		start_year = 1942
-		categories = {
-			year_1942
-		}
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = 12 }
-		}
-		categories = {
-			assault_guns
 		}
 		ai_will_do = {
 			factor = 1
@@ -1751,7 +1675,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1940 }
+			position = { x = 4 y = @1938 }
 		}
 		categories = {
 			motorized_equipment
@@ -1787,7 +1711,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 8 y = @1938 }
 		}
 		categories = {
 			motorized_equipment
@@ -1814,7 +1738,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1940 }
+			position = { x = 8 y = @1940 }
 		}
 		path = {
 			leads_to_tech = amphibious_mechanized_infantry_3
@@ -1841,7 +1765,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 8 y = @1942 }
 		}
 		categories = {
 			motorized_equipment
@@ -1868,7 +1792,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 4 y = @1940 }
 		}
 		categories = {
 			motorized_equipment
@@ -1891,7 +1815,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1944 }
+			position = { x = 4 y = @1942 }
 		}
 		categories = {
 			motorized_equipment

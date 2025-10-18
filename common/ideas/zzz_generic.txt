@@ -856,7 +856,6 @@ ideas = {
 		# POLITICAL
 	}
 	# TECHNOLOGY
-
 	tank_research = { 
 			
 		generic_tank_research = {
@@ -864,7 +863,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { tag = SWE tag = GER tag = ITA }
+				is_playable_country = yes
 			}
 			
 			cost = 100
@@ -881,7 +880,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				NOT = { tag = SWE }
+				is_playable_country = yes
 			}
 			
 			cost = 100
@@ -898,7 +897,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				NOT = { tag = SWE tag = SPR tag = GER }
+				is_playable_country = yes
 			}
 			
 			cost = 100
@@ -909,14 +908,14 @@ ideas = {
 		}
 		
 	}
-    materiel_research = {
+    weapons_research = {
 		
 		generic_infantry_equipment_research = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-				OR = { tag = CAN tag = SAF tag = RAJ tag = HUN tag = BUL tag = ROM }
+				is_playable_country = yes
 			}
 			
 			cost = 100
@@ -931,7 +930,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
-				OR = { tag = CAN tag = SAF tag = RAJ tag = HUN tag = BUL tag = ROM }
+				is_playable_country = yes
 			}
 			
 			cost = 100
@@ -944,37 +943,31 @@ ideas = {
 			traits = { artillery_research_trait }
 		}
 	}
-	industrial_research = {		
-		generic_electronics_concern = {
+	industrial_theorist = {		
+		generic_military_industrial_theorist = {
 		picture = generic_electronics_concern_1
 
 		allowed = {
-			OR = { tag = ROM tag = HUN tag = BUL tag = RAJ tag = SAF tag = CAN tag = AST }
+			is_playable_country = yes
 		}
 		  
-		cost = 100
+		cost = 150
 		removal_cost = 0
-		research_bonus = {
-			electronics = 0.2
-		}
-		traits = { electronics_concern }
+		traits = { military_industrial_theorist }
 	  }
-	  generic_industrial_research = {
+	  generic_civilian_industrial_theorist = {
 		  
 		picture = generic_industrial_concern_1
 
 		allowed = {
-			OR = { tag = ROM tag = HUN tag = BUL tag = RAJ tag = SAF tag = CAN }
+			is_playable_country = yes
 		}
 		  
-		cost = 100
-		removal_cost = 0
-		research_bonus = {
-			industry = 0.15
-		}	  
-		traits = { industrial_concern }
+		cost = 150
+		removal_cost = 0 
+		traits = { civilian_industrial_theorist }
 	  }
-  	}	
+  	}
 	#MANUFACTURERS
 
 	naval_manufacturer = {

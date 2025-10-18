@@ -1371,34 +1371,6 @@ ideas = {
 			
 		}
 	}
-	tank_research = {
-		krupp_research = {
-			visible = {
-				tag = GER
-			}
-			cost = 100
-			picture = krupp
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = { tank_research_trait }
-		}
-	}
-	aircraft_research = {
-		okwl_research = {
-			visible = {
-				tag = GER
-			}
-			cost = 100
-			picture = messerschmitt
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			traits = { aircraft_research_trait }
-		}
-	}
 	theorist = {
 		von_braun = {
 			ledger = air

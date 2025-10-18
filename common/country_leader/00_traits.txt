@@ -1,5 +1,52 @@
 leader_traits = {
+	aircraft_research_trait = {
+		random = no
+		 research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	naval_research_trait = {
+		random = no
+		 research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	tank_research_trait = {
+		random = no
+		 research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	materiel_research_trait = {
+		random = no
+		research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	artillery_research_trait = {
+		random = no
+		research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	motorized_research_trait = {
+		random = no
+		research_speed_factor = 0.01
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	military_industrial_theorist = {
+		
+	}
+	civilian_industrial_theorist = {
 
+	}
 	### HUNGARY ###
 	HUN_the_regent = {
 		random = no
