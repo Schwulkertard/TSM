@@ -2527,22 +2527,25 @@ focus = {
 		
 		242 = {
 			add_building_construction = {
+				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
-				level = 2
+				level = 3
 				instant_build = yes
 			}
 		}
 		210 = {
 			add_building_construction = {
+				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
-				level = 2
+				level = 3
 				instant_build = yes
 			}
 		}
 		222 = {
 			add_building_construction = {
+				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
-				level = 2
+				level = 3
 				instant_build = yes
 			}
 		}

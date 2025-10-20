@@ -460,7 +460,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.3
+				production_speed_synthetic_refinery_factor = 0.4
 			}
 		}
 		peoples_commissariat_focus = {

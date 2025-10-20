@@ -163,6 +163,35 @@ ideas = {
 				research_speed_factor = 0.10
 			}
 		}
+		FRA_slowly_mobilising = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = - 0.005
+				war_support_weekly = 0.005
+			}
+		}
+		colonial_development = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
 		FRA_global_investments = {
 			picture = generic_exploit_mines
 			allowed = {
