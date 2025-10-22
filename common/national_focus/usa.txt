@@ -2086,8 +2086,9 @@ focus = {
 		completion_reward = {
 			clr_country_flag = USA_no_armor_genius
 			set_country_flag = USA_armor_genius
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = better_joseph_stilwell
+			deactivate_advisor = joseph_stilwell
+			activate_advisor = better_joseph_stilwell
+			retire_character = USA_joseph_stilwell
 		}
 	}
 	focus = {

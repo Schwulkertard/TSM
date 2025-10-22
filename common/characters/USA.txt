@@ -648,7 +648,7 @@ characters={
 		#STRONGER ADVISOR
 		advisor={ 
 			slot = high_command
-			idea_token = joseph_stilwell
+			idea_token = better_joseph_stilwell
 			ledger = army
 			allowed = {
 				original_tag = USA

@@ -1533,7 +1533,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		better_joseph_stilwell = {
+		joseph_stilwell_2 = {
 			ledger = army
 			allowed = {
 				original_tag = USA
