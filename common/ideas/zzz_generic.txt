@@ -968,6 +968,9 @@ ideas = {
 		traits = { civilian_industrial_theorist }
 	  }
   	}
+	theorist_production = {
+		
+	}
 	#MANUFACTURERS
 
 	naval_manufacturer = {

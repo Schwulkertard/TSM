@@ -120,7 +120,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-                add_manpower = -50000
                 add_state_modifier = {
                     modifier = {
                         state_production_speed_buildings_factor = 0.75
@@ -133,7 +132,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				} 
-				add_manpower = -50000
                 add_state_modifier = {
                     modifier = {
                         state_production_speed_buildings_factor = 0.75
@@ -391,7 +389,7 @@ focus_tree = {
 		icon = GFX_focus_USA_industrial_expansion
 		relative_position_id = USA_new_reforms
 		prerequisite = { focus = USA_new_reforms }
-		mutually_exclusive = { focus = USA_factorio }
+		mutually_exclusive = { focus = USA_public_works_programs }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -561,7 +559,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_factorio
+		id = USA_public_works_programs
 		icon = GFX_focus_USA_factorio
 		relative_position_id = USA_appoint_regnery
 		prerequisite = { focus = USA_appoint_regnery }
@@ -574,7 +572,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = USA_set_for_life
+			add_ideas = USA_increased_programs
 		}
 	}
 	focus = {
@@ -617,7 +615,7 @@ focus_tree = {
 		id = USA_labour
         icon = GFX_focus_generic_industry_3
 		relative_position_id = USA_national_security
-		prerequisite = { focus = USA_factorio focus = USA_national_security }
+		prerequisite = { focus = USA_public_works_programs focus = USA_national_security }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -731,7 +729,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_am_works
+		id = USA_second_industrial_recovery_act
 		icon = GFX_focus_USA_am_works
 		relative_position_id = USA_fair_labour_standards_act
 		prerequisite = { focus = USA_fair_labour_standards_act focus = USA_extra_research_slot }
@@ -783,7 +781,7 @@ focus_tree = {
 		id = USA_federal_housing_act
         icon = GFX_focus_usa_guarantee_the_american_dream
 		relative_position_id = USA_scientists_abroad
-		prerequisite = { focus = USA_scientists_abroad focus = USA_am_works }
+		prerequisite = { focus = USA_scientists_abroad focus = USA_second_industrial_recovery_act }
 		available = {
 			congress_medium_support_trigger = yes
 		}
@@ -826,10 +824,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = 0
 		y = 2
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = isolation
+			swap_ideas = {
+				remove_idea = undisturbed_isolation
+				add_idea = isolation
+			}
 		}
 	}
 focus = {
@@ -884,10 +885,10 @@ focus = {
 		}
 		effect_tooltip = {
 			custom_effect_tooltip = USA_destroyers_for_bases_tt
-			transfer_state = 696
-			transfer_state = 690
-			transfer_state = 693
-			transfer_state = 689
+			transfer_state = 614
+			transfer_state = 298
+			transfer_state = 608
+			transfer_state = 611
 		}
 	}
 }
@@ -1313,7 +1314,7 @@ focus = {
                 bonus = 1.5
                 uses = 2
                 category = cl_tech
-				category = ca_tech
+				category = dd_tech
             }
 		}
 	}
@@ -1487,12 +1488,11 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
-				uses = 2
+				uses = 3
 				bonus = 1
-				technology = basic_heavy_shell
-				technology = basic_light_shell
-				technology = improved_heavy_shell
-				technology = improved_light_shell
+				technology = fire_control_methods_1
+				technology = fire_control_methods_2
+				technology = fire_control_methods_3
 			}
 		}
 	}
@@ -1583,11 +1583,14 @@ focus = {
 		available_if_capitulated = yes
 		x = 0
 		y = 2
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_stability = 0.4
-         	add_ideas = war_preparation
+         	swap_ideas = {
+				remove_idea = isolation
+				add_idea = war_preparation
+			}
 		}
 	}
 	focus = {
@@ -1645,17 +1648,16 @@ focus = {
 			NOT = { 721 = { is_controlled_by = JAP } }
 		}
 		completion_reward = {
-		    transfer_state = 721
-			629 = {
+			550 = {
 				add_building_construction = {
-					type = naval_base
-					province =4180
-					level = 20
+					type = coastal_bunker
+					province =3912
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					province =4180
+					province =9228
 					level = 5
 					instant_build = yes
 				}
@@ -1685,7 +1687,10 @@ focus = {
 				}
 			}
 			add_political_power = 100
-			add_ideas = war_economy
+			swap_ideas = {
+				remove_idea = war_preparation
+				add_idea = war_economy
+			}
 			set_country_flag = USA_the_giant_wakes_added_civ_eco
 		}
 	}
@@ -1698,21 +1703,231 @@ focus = {
 		relative_position_id = USA_american_dream
 		cost = 5
 		available = {
-			date > 1941.8.1
-		}
-		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_intervention_in_europe_tt
+				OR = {
+					date > 1942.9.1
+					AND = {
+				   	date > 1941.9.1
+						count_triggers = {
+							amount = 22
+							586={is_controlled_by_ROOT_or_ally = yes} 
+							300={is_controlled_by_ROOT_or_ally = yes} 
+							303={is_controlled_by_ROOT_or_ally = yes} 
+							713={is_controlled_by_ROOT_or_ally = yes} 
+							591={is_controlled_by_ROOT_or_ally = yes} 
+							302={is_controlled_by_ROOT_or_ally = yes} 
+							712={is_controlled_by_ROOT_or_ally = yes} 
+							301={is_controlled_by_ROOT_or_ally = yes} 
+							592={is_controlled_by_ROOT_or_ally = yes} 
+							587={is_controlled_by_ROOT_or_ally = yes} 
+							588={is_controlled_by_ROOT_or_ally = yes} 
+							639={is_controlled_by_ROOT_or_ally = yes} 
+							548={is_controlled_by_ROOT_or_ally = yes} 
+							546={is_controlled_by_ROOT_or_ally = yes} 
+							549={is_controlled_by_ROOT_or_ally = yes} 
+							547={is_controlled_by_ROOT_or_ally = yes} 
+							545={is_controlled_by_ROOT_or_ally = yes} 
+							294={is_controlled_by_ROOT_or_ally = yes} 
+							544={is_controlled_by_ROOT_or_ally = yes} 
+							388={is_controlled_by_ROOT_or_ally = yes} 
+							450={is_controlled_by_ROOT_or_ally = yes} 
+							656={is_controlled_by_ROOT_or_ally = yes} 
+						}
+						count_triggers = {
+							amount = 5
+							405={is_controlled_by_ROOT_or_ally = yes} 
+							294={is_controlled_by_ROOT_or_ally = yes} 
+							302={is_controlled_by_ROOT_or_ally = yes} 
+							273={is_controlled_by_ROOT_or_ally = yes} 
+							272={is_controlled_by_ROOT_or_ally = yes} 
+						}
+						count_triggers = {
+							amount = 4
+							450={is_controlled_by_ROOT_or_ally = yes} 
+							655={is_controlled_by_ROOT_or_ally = yes} 
+							555={is_controlled_by_ROOT_or_ally = yes} 
+							588={is_controlled_by_ROOT_or_ally = yes} 
+						}
+						count_triggers = {
+							amount = 8
+							559={is_controlled_by_ROOT_or_ally = yes} 
+							552={is_controlled_by_ROOT_or_ally = yes} 
+							553={is_controlled_by_ROOT_or_ally = yes} 
+							550={is_controlled_by_ROOT_or_ally = yes} 
+							568={is_controlled_by_ROOT_or_ally = yes} 
+							566={is_controlled_by_ROOT_or_ally = yes} 
+							567={is_controlled_by_ROOT_or_ally = yes} 
+							453={is_controlled_by_ROOT_or_ally = yes} 
+						}
+					}
+				   AND = {
+				   date > 1942.1.1
+				   count_triggers = {
+					amount = 17
+					586={is_controlled_by_ROOT_or_ally = yes} 
+					300={is_controlled_by_ROOT_or_ally = yes} 
+					303={is_controlled_by_ROOT_or_ally = yes} 
+					713={is_controlled_by_ROOT_or_ally = yes} 
+					591={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					712={is_controlled_by_ROOT_or_ally = yes} 
+					301={is_controlled_by_ROOT_or_ally = yes} 
+					592={is_controlled_by_ROOT_or_ally = yes} 
+					587={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+					639={is_controlled_by_ROOT_or_ally = yes} 
+					548={is_controlled_by_ROOT_or_ally = yes} 
+					546={is_controlled_by_ROOT_or_ally = yes} 
+					549={is_controlled_by_ROOT_or_ally = yes} 
+					547={is_controlled_by_ROOT_or_ally = yes} 
+					545={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					544={is_controlled_by_ROOT_or_ally = yes} 
+					388={is_controlled_by_ROOT_or_ally = yes} 
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					656={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 5
+					405={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					273={is_controlled_by_ROOT_or_ally = yes} 
+					272={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 4
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					655={is_controlled_by_ROOT_or_ally = yes} 
+					555={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 6
+					559={is_controlled_by_ROOT_or_ally = yes} 
+					552={is_controlled_by_ROOT_or_ally = yes} 
+					553={is_controlled_by_ROOT_or_ally = yes} 
+					550={is_controlled_by_ROOT_or_ally = yes} 
+					568={is_controlled_by_ROOT_or_ally = yes} 
+					566={is_controlled_by_ROOT_or_ally = yes} 
+					567={is_controlled_by_ROOT_or_ally = yes} 
+					453={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				   }
+				   AND = {
+				   date > 1942.3.1
+				   count_triggers = {
+					amount = 11
+					586={is_controlled_by_ROOT_or_ally = yes} 
+					300={is_controlled_by_ROOT_or_ally = yes} 
+					303={is_controlled_by_ROOT_or_ally = yes} 
+					713={is_controlled_by_ROOT_or_ally = yes} 
+					591={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					712={is_controlled_by_ROOT_or_ally = yes} 
+					301={is_controlled_by_ROOT_or_ally = yes} 
+					592={is_controlled_by_ROOT_or_ally = yes} 
+					587={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+					639={is_controlled_by_ROOT_or_ally = yes} 
+					548={is_controlled_by_ROOT_or_ally = yes} 
+					546={is_controlled_by_ROOT_or_ally = yes} 
+					549={is_controlled_by_ROOT_or_ally = yes} 
+					547={is_controlled_by_ROOT_or_ally = yes} 
+					545={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					544={is_controlled_by_ROOT_or_ally = yes} 
+					388={is_controlled_by_ROOT_or_ally = yes} 
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					656={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 3
+					405={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					273={is_controlled_by_ROOT_or_ally = yes} 
+					272={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 4
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					655={is_controlled_by_ROOT_or_ally = yes} 
+					555={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 4
+					559={is_controlled_by_ROOT_or_ally = yes} 
+					552={is_controlled_by_ROOT_or_ally = yes} 
+					553={is_controlled_by_ROOT_or_ally = yes} 
+					550={is_controlled_by_ROOT_or_ally = yes} 
+					568={is_controlled_by_ROOT_or_ally = yes} 
+					566={is_controlled_by_ROOT_or_ally = yes} 
+					567={is_controlled_by_ROOT_or_ally = yes} 
+					453={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				   }
+				   AND = {
+				   date > 1942.6.1
+				   count_triggers = {
+					amount = 6
+					586={is_controlled_by_ROOT_or_ally = yes} 
+					300={is_controlled_by_ROOT_or_ally = yes} 
+					303={is_controlled_by_ROOT_or_ally = yes} 
+					713={is_controlled_by_ROOT_or_ally = yes} 
+					591={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					712={is_controlled_by_ROOT_or_ally = yes} 
+					301={is_controlled_by_ROOT_or_ally = yes} 
+					592={is_controlled_by_ROOT_or_ally = yes} 
+					587={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+					639={is_controlled_by_ROOT_or_ally = yes} 
+					548={is_controlled_by_ROOT_or_ally = yes} 
+					546={is_controlled_by_ROOT_or_ally = yes} 
+					549={is_controlled_by_ROOT_or_ally = yes} 
+					547={is_controlled_by_ROOT_or_ally = yes} 
+					545={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					544={is_controlled_by_ROOT_or_ally = yes} 
+					388={is_controlled_by_ROOT_or_ally = yes} 
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					656={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 3
+					405={is_controlled_by_ROOT_or_ally = yes} 
+					294={is_controlled_by_ROOT_or_ally = yes} 
+					302={is_controlled_by_ROOT_or_ally = yes} 
+					273={is_controlled_by_ROOT_or_ally = yes} 
+					272={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 2
+					450={is_controlled_by_ROOT_or_ally = yes} 
+					655={is_controlled_by_ROOT_or_ally = yes} 
+					555={is_controlled_by_ROOT_or_ally = yes} 
+					588={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				count_triggers = {
+					amount = 2
+					559={is_controlled_by_ROOT_or_ally = yes} 
+					552={is_controlled_by_ROOT_or_ally = yes} 
+					553={is_controlled_by_ROOT_or_ally = yes} 
+					550={is_controlled_by_ROOT_or_ally = yes} 
+					568={is_controlled_by_ROOT_or_ally = yes} 
+					566={is_controlled_by_ROOT_or_ally = yes} 
+					567={is_controlled_by_ROOT_or_ally = yes} 
+					453={is_controlled_by_ROOT_or_ally = yes} 
+				}
+				   }
+				}
+			}
 		}
 		completion_reward = {
 			remove_ideas = Pacific_focus
-			transfer_state = 795
-						795 = {
-				add_building_construction = {
-					type = naval_base
-					province = 11446
-					level = 20
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
@@ -1770,7 +1985,6 @@ focus = {
 		relative_position_id = USA_war_plan_silver
 		cost = 3
 		completion_reward = {
-			set_technology={ tech_mountaineers = 1}
 			custom_effect_tooltip=USA_war_plan_black_tt
 			division_template = {
 				name = "US-Mountaineers"
@@ -1803,7 +2017,7 @@ focus = {
 					anti_tank = {x = 0 y = 5}
 				}
 			}
-			118 = {
+			116 = {
 				for_loop_effect = {
 					end = 8
 					create_unit = {
@@ -1818,8 +2032,8 @@ focus = {
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = USA_war_plan_black }
 		available = {
-			461={is_controlled_by_ROOT_or_ally=yes}
-			462={is_controlled_by_ROOT_or_ally=yes}
+			425={is_controlled_by_ROOT_or_ally=yes}
+			423={is_controlled_by_ROOT_or_ally=yes}
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1828,7 +2042,7 @@ focus = {
 		relative_position_id = USA_war_plan_black
 		cost = 4
 		completion_reward = {
-			461 = {
+			425 = {
 				set_building_level = {
 					type = naval_base
 					level = 20
@@ -1841,14 +2055,14 @@ focus = {
 					instant_build = yes
 				}
 			}
-			462 = {
+			423 = {
 				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
-			513 = {
+			440 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -1890,7 +2104,7 @@ focus = {
 		cost = 4
 		completion_reward = {
 			every_state = {
-				limit={OR={state=142 state=110}}
+				limit={OR={state=138 state=139}}
 				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
 		}
 	}
@@ -1909,7 +2123,7 @@ focus = {
 		cost = 2
 		completion_reward = {
 			every_state = {
-				limit={OR={state=115 state=114 state=156 state=1 state=117 }}
+				limit={OR={state=113 state=112 state=1 state=152 state=115 }}
 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
 		} 
 	}
@@ -1928,7 +2142,7 @@ focus = {
 		cost = 2
 		completion_reward = {
 			every_state = {
-				limit={OR={state=2 state=162 state=157 state=161 state=158 }}
+				limit={OR={state=2 state=158 state=154 state=653 state=21 }}
 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
 		}
 	}
@@ -1946,12 +2160,12 @@ focus = {
 		completion_reward = {
 			add_timed_idea={idea= USA_overlord days=60}
 			hidden_effect ={
-				ENG = {add_timed_idea={idea= USA_overlord days=60}}
-				FRA = {add_timed_idea={idea= USA_overlord days=60}}
-				SAF = {add_timed_idea={idea= USA_overlord days=60}}
-				CAN = {add_timed_idea={idea= USA_overlord days=60}}
-				AST = {add_timed_idea={idea= USA_overlord days=60}}
-				RAJ = {add_timed_idea={idea= USA_overlord days=60}}
+				every_country = {
+					limit = {
+						is_in_faction_with = USA
+					}
+					add_timed_idea={idea= USA_overlord days=60}
+				}
 			}
 		}
 	}
@@ -1967,42 +2181,34 @@ focus = {
 		relative_position_id = USA_american_dream
 		cost = 3
 		completion_reward = {
-			721 = {
+			552 = {
 				set_building_level = {
 					type = coastal_bunker
-					province = 12190
+					province = 11736
 					level = 3
 					instant_build = yes
 				}
 			}
-			737 = {
+			553 = {
 				set_building_level = {
 					type = coastal_bunker
-					province = 7251
+					province = 11731
 					level = 3
 					instant_build = yes
 				}
 			}
-			523 = {
+			551 = {
 				set_building_level = {
 					type = coastal_bunker
-					province = 4329
+					province = 11735
 					level = 3
 					instant_build = yes
 				}
 			}
-			634 = {
+			559 = {
 				set_building_level = {
 					type = coastal_bunker
-					province = 1269
-					level = 3
-					instant_build = yes
-				}
-			}
-			520 = {
-				set_building_level = {
-					type = coastal_bunker
-					province = 7669
+					province = 11024
 					level = 3
 					instant_build = yes
 				}
@@ -2055,107 +2261,9 @@ focus = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = USA_islands
-					}
-		}	
-	focus = {
-		id = USA_prepare_for_japan
-		icon = GFX_USA_appoint_mcaurther_as_commander
-		x = 0
-		y = 2
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 1
-		ai_will_do = {
-			factor = 1
+			add_ideas=USA_island_hopping
 		}
-		available = {
-			date > 1941.4.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			create_field_marshal = {
-				name = "Douglas MacArthur"
-				id =56
-				picture = "Portrait_USA_Douglas_MacArthur.dds"
-				traits = { media_personality politically_connected infantry_leader infantry_expert naval_invader jungle_rat skilled_staffer trait_engineer fortress_buster }
-				skill = 7
-				attack_skill = 7
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-		}
-	}
-	focus = {
-		id = USA_war_plan_orange
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_war_plans_division }
-		available = {
-			date>1942.1.1
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		relative_position_id = USA_prepare_for_japan
-		cost = 1
-		completion_reward = {
-			add_timed_idea = {idea = USA_guadalcanal days = 90}
-			hidden_effect = {
-				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-			}
-		}
-	}
-	focus = {
-		id = USA_iwo_jima
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_prepare_for_japan }
-		available = {
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		relative_position_id = USA_prepare_for_japan
-		cost = 2
-		completion_reward = {
-			every_state = {
-				limit={OR={state=526 state=645}}
-				add_dynamic_modifier = {modifier = JAP_attack days=120}
-		    }
-		}
-	}
-	focus = {
-		id = USA_downfall
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_iwo_jima }
-		available = {
-		 date > 1942.5.1
-	     NOT={JAP={controls_state = 566 controls_state = 453}}
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		relative_position_id = USA_iwo_jima
-		cost = 2
-		completion_reward = {
-		 JAP={remove_ideas = JAP_defense_of_homeland}
-		 every_state = {
-				limit={OR={state=282 state=532}}
-				add_dynamic_modifier = {modifier = JAP_attack days=60}
-		    }
-		}
-	}
+	}	
 	focus = {
 		id = USA_reinforce_oceania
 		icon = GFX_USA_bases_in_anzac
@@ -2168,7 +2276,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			285 = {is_controlled_by_ROOT_or_ally=yes}
+			273 = {is_controlled_by_ROOT_or_ally=yes}
 		}
 		bypass = {
 		}
@@ -2208,7 +2316,7 @@ focus = {
 					anti_tank = {x = 0 y = 5}
 				}
 			}
-			285 = {
+			273 = {
 				for_loop_effect = {
 					end = 8
 					create_unit = {
@@ -2236,54 +2344,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = USA_retake_the_philippines
-		icon = GFX_USA_fight_fascist_with_fire
-		x = 2
-		y = 2
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			every_state = {
-				limit={OR={state=603 state=327 state=628 state=627 state=623 state=626 state=624 }}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = USA_retake_the_east_indies
-		icon = GFX_USA_destroy_their_supply_chains
-		x = -2
-		y = 2
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			every_state = {
-				limit={OR={state=836 state = 672 state = 335 state=835 state=333 state=334 state=673 state=668 state=738 state=336 }}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
 		id = USA_island_hopping
 		icon = GFX_USA_the_island_hopping_campaign
 		x = 1
@@ -2295,7 +2355,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			date>1941.6.1
+			date>1941.9.1
 		}
 		bypass = {
 		}
@@ -2303,7 +2363,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas=USA_island_hopping
+			add_ideas = USA_islands
 		}
 	}
 	focus = {

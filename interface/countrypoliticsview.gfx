@@ -25,6 +25,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/idea_slot_tank_research.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_slot_theorist_production"
+		textureFile = "gfx/interface/idea_slot_theorist_production.dds"
+	}
+
 	#Government in Exile
 
 	spriteType = {

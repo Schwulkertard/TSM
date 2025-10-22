@@ -43,6 +43,7 @@ idea_categories = {
 		slot = aircraft_research
 		slot = weapons_research
 		slot = industrial_theorist
+		slot = theorist_production
 	}
 	
 	research_production = {

@@ -287,7 +287,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ infantry_officer trait_reckless infantry_leader naval_invader trait_engineer trickster expert_improviser }
+			traits={ infantry_officer trait_reckless infantry_leader naval_invader trait_engineer trickster expert_improviser urban_assault_specialist }
 			skill=6
 			attack_skill=6
 			defense_skill=2
@@ -633,15 +633,6 @@ characters={
 			}
 			cost = 100
 		}
-		corps_commander={
-			traits={ career_officer panzer_leader panzer_expert harsh_leader politically_connected trait_engineer organizer }
-			skill=1
-			attack_skill=7
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=601
-		}
 	}
 
 	USA_better_joseph_stilwell={
@@ -672,16 +663,6 @@ characters={
 				army_armored_3
 			}
 			cost = 150
-		}
-		
-		corps_commander={
-			traits={ career_officer panzer_leader panzer_expert harsh_leader politically_connected trait_engineer organizer }
-			skill=1
-			attack_skill=7
-			defense_skill=5
-			logistics_skill=6
-			planning_skill=5
-			legacy_id = 0
 		}
 	}
 

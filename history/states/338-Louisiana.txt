@@ -2,7 +2,7 @@ state={
  	id=338
  	name="STATE_371"
  	manpower = 2101592
- 	state_category = large_city
+ 	state_category = USA_state
  	resources={
  		oil = 440
  	}

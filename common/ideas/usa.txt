@@ -353,7 +353,7 @@ ideas = {
 				research_speed_factor = 0.25
 			}
 		}
-		USA_set_for_life = {
+		USA_increased_programs = {
 			picture = factorio
 			allowed = {
 				always = no
@@ -2049,7 +2049,7 @@ ideas = {
 			traits = { rocket_scientist }
 		}
 	}
-	industrial_theorist = {
+	theorist_production = {
 		USA_william_regnery = {
 			picture = generic_political_advisor_europe_6
 			cost = 100

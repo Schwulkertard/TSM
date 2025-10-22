@@ -83,7 +83,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.45
+				consumer_goods_expected_value = 0.4
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				production_speed_dockyard_factor = -1
