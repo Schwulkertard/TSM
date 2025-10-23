@@ -15,7 +15,19 @@ on_actions = {
 			}
 			
 		}
+		}
+		on_weekly_HUN = {
+		effect= {
+			set_variable = { HUN.total_civs = num_of_civilian_factories }
+		}
+		effect = {
+			if = {
+				limit = { has_idea = HUN_test }
+				add_to_temp_variable = { HUN.c = 0.01 }
+			}
+		}
 	}
+	
 	on_daily = {
 	effect = {
 		if= {limit={is_ai=no 

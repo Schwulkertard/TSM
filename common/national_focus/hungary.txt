@@ -364,7 +364,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = HUN_political_tt
 			set_temp_variable = { political_gain = HUN.total_civs }
-			multiply_temp_variable = { political_gain = 10 }
+			multiply_temp_variable = { political_gain = 5 }
 			set_temp_variable = { stab_gain = HUN.total_civs }
 			multiply_temp_variable = { stab_gain = 0.005 }
 

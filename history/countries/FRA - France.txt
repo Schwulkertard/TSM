@@ -339,6 +339,7 @@ recruit_character = FRA_rene_massigli
 recruit_character = FRA_leon_blum
 recruit_character = FRA_jacques_duclos
 
+
 ### VARIANTS ###
 # 1936 Start #
 if = {

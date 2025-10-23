@@ -1192,9 +1192,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				not  = {
-					has_government  = communism 
-				}
+				has_completed_focus = { FRA_extra_research_slot }
 			}
 			cost  = 150.000
 			traits  = {
@@ -1325,7 +1323,7 @@ characters={
 			}
 			
 			traits  = {
-				compassionate_gentleman 
+				captain_of_industry
 			}
 			on_add  = {
 			}
@@ -1351,7 +1349,7 @@ characters={
 				original_tag  = FRA
 			}
 			traits  = {
-				armaments_organizer 
+			war_industrialist
 			}
 			on_add  = {
 			}

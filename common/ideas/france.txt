@@ -30,6 +30,7 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+
 		FRA_lend_lease = { #so you can't lend lease EQ for others to use in Asia
 			picture = generic_production_bonus
 			allowed = {
@@ -83,6 +84,19 @@ ideas = {
 				conscription_factor = -0.25
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+			}
+		}
+		FRA_Metropolitan_industry = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.075
 			}
 		}
 		FRA_inefficient_economy_1 = {
@@ -163,19 +177,16 @@ ideas = {
 				research_speed_factor = 0.10
 			}
 		}
-		FRA_slowly_mobilising = {
-			picture = generic_foreign_capital
+		slowly_mobilising = {
 			allowed = {
-				original_tag = FRA
-				always = no
-			}
-			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
+			picture = ger_glory
 			modifier = {
-				stability_weekly = - 0.005
+				stability_weekly = -0.005
 				war_support_weekly = 0.005
+				
 			}
 		}
 		colonial_development = {
@@ -1522,10 +1533,10 @@ ideas = {
             }
         }
 	}
-	theorist_production = {
-		FRA_felix_gouin = {
+	industrial_theorist = {
+		FRA_roger_salengro = {
 			picture = generic_political_advisor_europe_3
-			cost = 75
+			cost = 150
 
 			allowed = {
 				original_tag = FRA
@@ -1533,7 +1544,7 @@ ideas = {
 
 			traits = { captain_of_industry }
 		}
-		FRA_zivony_peshkov={
+		FRA_charles_tillon={
 			picture = generic_political_advisor_europe_4
 			cost = 150
 
