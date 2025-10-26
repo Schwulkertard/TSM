@@ -18,10 +18,8 @@ set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = tradeback_is_cancer
 add_ideas = peace_training
-add_timed_idea = {
-	idea = FRA_civs
-	days = 546
-}
+add_ideas = FRA_small_businesses_focus
+
 # Starting tech
 set_technology = {
 	airfield_allowed = 1
