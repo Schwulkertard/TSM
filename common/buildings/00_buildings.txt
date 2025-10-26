@@ -59,7 +59,7 @@ buildings = {
 		icon_frame = 2
 		level_cap = {
 			shares_slots = yes
-			state_max = 60
+			state_max = 99
 		}
 		value = 8
 		infrastructure_construction_effect = yes
@@ -74,7 +74,7 @@ buildings = {
 		icon_frame = 1
 		level_cap = {
 			shares_slots = yes
-			state_max = 60
+			state_max = 99
 		}
 		value = 5
 		infrastructure_construction_effect = yes
@@ -233,7 +233,7 @@ buildings = {
 		icon_frame = 4
 		only_costal = yes
 		level_cap = {
-			state_max = 60
+			state_max = 99
 			shares_slots = yes
 		}
 		value = 5
@@ -551,6 +551,7 @@ rocket_site = {
 		level_cap = {
 			province_max = 1
 			state_max = 1
+			shares_slots = no
 		}
 		show_modifier = yes
 		state_modifiers = {
@@ -576,6 +577,8 @@ rocket_site = {
 		special_icon = GFX_dam_icon_small
 		level_cap = {
 			province_max = 1
+			state_max = 1
+			shares_slots = no
 		}
 		show_modifier = yes
 		state_modifiers = {

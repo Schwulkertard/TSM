@@ -16,6 +16,15 @@ ideas = {
 		}
 	}
 	country = {
+		USA_lend_lease_act_allies = {
+			allowed = {
+				original_tag = USA
+			}
+			modifier = {
+				license_production_speed = 0.15
+				license_tech_difference_speed = 0.25
+			}
+		}
 		USA_Tank_upgrade_cost={
 			allowed = {
 				original_tag = ENG

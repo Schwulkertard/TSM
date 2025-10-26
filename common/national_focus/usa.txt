@@ -195,10 +195,14 @@ focus_tree = {
 		relative_position_id = USA_rubber_reserve_company
 		cost = 2
 		available= {
-			date > 1941.6.1
+			date > 1942.1.1
 		}
 		completion_reward = {
-			add_ideas = USA_rubber1
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 20
+			}
 		}
 	}
 	focus = {
@@ -573,6 +577,27 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = USA_increased_programs
+			355 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 9726
+				}
+			}
+			353 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 1265
+				}
+			}
+			334 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 1265
+				}
+			}
 		}
 	}
 	focus = {
@@ -624,6 +649,13 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			344 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 10722
+				}
+			}
 			random_owned_state = {
 				limit = {
 					is_core_of = USA
@@ -842,7 +874,7 @@ focus = {
 	relative_position_id = USA_a_call_to_arms
 	cost = 2
 	available = {
-		date > 1940.4.1
+		date > 1940.6.1
 		ENG = { has_country_leader =  {
 			name = "Winston Churchill"
 			ruling_only = yes
@@ -855,6 +887,12 @@ focus = {
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 300 producer = USA }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
 			country_event = { id = wtt_britain.30 }
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			add_ideas = USA_lend_lease_act_allies
 		}
 	}
 }
