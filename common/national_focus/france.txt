@@ -540,7 +540,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_Subsaharan_investment }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 2.9
 		ai_will_do = {
 			factor = 1
 		}
@@ -586,12 +586,41 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = FRA_the_rearmnament_plan
+		icon = GFX_focus_generic_industry_1
+		
+			available = {
+			OR = { has_completed_focus = FRA_defensive_strategems 
+			       has_completed_focus = FRA_agressive_foreign_policy
+			 }
+		}
+		x = 15
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {  }  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		bypass = {
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = FRA_rearmnament_plan
+			unlock_decision_category_tooltip = FRA_rearmnament_plan
+		}
+	}
+
 	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = 14
-		y = 0
+		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -750,7 +779,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 16
-		y = 0
+		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -961,7 +990,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip= "This will enhance some of our agressive military focuses"
@@ -983,7 +1012,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		custom_effect_tooltip= "This will enhance some of our defensive military focuses "
