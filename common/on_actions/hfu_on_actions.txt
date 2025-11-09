@@ -27,6 +27,18 @@ on_actions = {
 			}
 		}
 	}
+
+	on_weekly_FRA = {
+		effect= {
+			set_variable = { FRA.total_civs = num_of_civilian_factories }
+		}
+		effect = {
+			if = {
+				limit = { has_idea = HUN_test }
+				add_to_temp_variable = { HUN.c = 0.01 }
+			}
+		}
+	}
 	
 	on_daily = {
 	effect = {

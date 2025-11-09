@@ -1077,6 +1077,9 @@ characters={
 			}
 		}
 		advisor={
+			available = {
+				has_completed_focus = FRA_agressive_foreign_policy
+			}
 			slot = political_advisor
 			idea_token = rene_massigli
 			allowed  = {
@@ -1106,6 +1109,9 @@ characters={
 			idea_token = georges_bonnet
 			allowed  = {
 				original_tag  = FRA
+			}
+			available = {
+				has_completed_focus = FRA_follow_appeasment
 			}
 			
 			cost  = 75.000
