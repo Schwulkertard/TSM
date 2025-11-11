@@ -1575,7 +1575,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			navy_experience = 200
-			custom_effect_tooltip = FRA_dockyard_shit_tt
+			custom_effect_tooltip= "For Every Mainland Core state that has a dockyard in it we will get 2 dockyards post cap ( NOT CODED IN YET)  "
 	        add_timed_idea = {
 				idea = ITA_dockyard_building
 				days = 60
