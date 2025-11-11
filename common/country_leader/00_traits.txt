@@ -1257,6 +1257,8 @@ leader_traits = {
 		random = no
 		# Boosts Democracy
 		sprite = 13
+		stability_weekly = 0.001
+		stability_factor = 0.05
 		democratic_drift = 0.1
 
 		ai_will_do = {
@@ -2781,6 +2783,16 @@ leader_traits = {
 	army_chief_defensive_3 = { # +15 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.20
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	army_chief_homeland_defense   { # 
+		sprite = 9
+		army_core_attack_factor = 0.10
+		army_core_defence_factor = 0.10
 
 		ai_will_do = {
 			factor = 3

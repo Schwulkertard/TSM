@@ -17,7 +17,7 @@ FRA_rearmnament_plan = {
 	FRA_centralise_aviation_industries = {
 		icon = generic_plane
 		available = {
-			has_completed_focus = FRA_centralised_industry
+			has_completed_focus = FRA_centralize_the_industries
 		}
 		visible = {
 			
@@ -29,6 +29,23 @@ FRA_rearmnament_plan = {
 			factor = 1
 		}
 		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -74,30 +91,163 @@ FRA_rearmnament_plan = {
 		visible = {
 			
 		}
-		cost = 50
+		cost = 25
 		fire_only_once = yes
 		days_remove = 60
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
-		add_tech_bonus = {
-				name = FRA_convert
-				bonus = 0.5
-				uses = 2
-				technology = basic_equipment_conversion
-				technology = improved_equipment_conversion
-				technology = advanced_equipment_conversion
-			}
+		
 			add_tech_bonus = {
 			name = Construction
 			uses = 1
-			bonus = 0.5
+			bonus = 1
 			category = construction_tech
 			}
 	}
 
 }
+FRA_rush_new_production_methods = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = FRA_improved_production_methods
+		}
+		visible = {
+			
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 120
+		days_re_enable = 120
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.3
+			consumer_goods_expected_value = 0.02
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+	}
+
 }
+FRA_issue_rearmnament_bonds = {
+		icon = generic_plane
+		available = {
+		}
+		visible = {
+			
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 120
+		days_re_enable = 120
+		modifier = {
+			stability_weekly = -0.0025
+			consumer_goods_expected_value = -0.05
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+	}
+
+}
+FRA_defend_norway = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = FRA_aggressive_focus
+		}
+		visible = {
+			
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+			consumer_goods_expected_value = 0.02
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+				custom_effect_tooltip= "When we complete this decision and Germany declares war on norway we will spawn 6 mountaineer division in trondheim "
+				hidden_effect = { set_country_flag = FRA_norway_bullshit  }
+	}
+
+}
+FRA_great_war_veterans = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = FRA_defensive_focus
+		}
+		visible = {
+			
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+			consumer_goods_expected_value = 0.02
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+				custom_effect_tooltip= "When we complete this decision we will spawn 6 veteran great war shocktroops with modern equipment "
+				hidden_effect = { 
+					division_template = {
+					name = "Great War shocktroops"
+					regiments = {
+					shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+	    shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		shocktroop = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+		shocktroop = { x = 2 y = 0 }
+		shocktroop = { x = 2 y = 1 }
+		shocktroop = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		shocktroop = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 3 y = 4 }
+		anti_tank_brigade = { x = 2 y = 4 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_air_brigade = { x = 4 y = 0 }
+	}
+					
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+					}
+				}
+				16 = {
+					for_loop_effect = {
+						end = 6
+						create_unit = {
+							division = "name = \"Great War shocktroops\" division_template = \"Great War shocktroops\" start_experience_factor = 0.3"
+							owner = FRA
+						}
+						}}
+						}
+	}
+
+}
+
 
 

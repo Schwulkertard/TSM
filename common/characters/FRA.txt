@@ -173,7 +173,7 @@ characters={
 			}
 			cost = 100.000
 			traits = {
-				army_chief_defensive_2
+				army_chief_homeland_defense
 			}
 			cost = 100
 			ai_will_do = {
@@ -1198,7 +1198,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus = { FRA_extra_research_slot }
+				has_completed_focus =  FRA_extra_research_slot 
 			}
 			cost  = 150.000
 			traits  = {

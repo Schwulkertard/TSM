@@ -77,7 +77,7 @@ characters={
 					has_government  = fascism 
 				}
 				traits  = {
-					army_chief_defensive_3 
+					army_chief_homeland_defense
 				}
 				ai_will_do  = {
 					factor  = 1.000

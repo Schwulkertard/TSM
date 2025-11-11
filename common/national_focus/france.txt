@@ -505,7 +505,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		add_to_tech_sharing_group = commonwealth_research
-		add_ideas = FRA_pierre_pucheu
+		add_political_power = 75
+		custom_effect_tooltip = available_political_advisor	
+		show_ideas_tooltip = FRA_pierre_pucheu
 	
 		}
 	}
@@ -615,11 +617,16 @@ focus_tree = {
 		}
 	}
 
+
+
 	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
 		mutually_exclusive = { focus = FRA_aggressive_focus }
-		x = 14
+
+		prerequisite = { focus = FRA_army_reform }
+		relative_position_id = FRA_army_reform
+		x = -1
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -629,18 +636,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
+			unlock_decision_tooltip = { decision = FRA_great_war_veterans show_effect_tooltip = yes }
 		}
 	}
 	focus = {
 		id = FRA_firepower_kills
 		icon = GFX_goal_generic_army_artillery
 		x = 1
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_heavy_armor_focus }
+		prerequisite = { focus = FRA_aggressive_focus focus = FRA_defensive_focus }
 		relative_position_id = FRA_defensive_focus
 		cost = 5
 		ai_will_do = {
@@ -681,12 +689,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_methodical_battle
-				category = land_doctrine
-				uses = 2
-				bonus = 1
-			}
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1
 				amount = 1000
@@ -697,29 +699,35 @@ focus_tree = {
 	focus = {
 		id = FRA_artillery_focus
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = FRA_defensive_focus }
-		x = -1
+		prerequisite = { focus = FRA_the_rearmnament_plan }
+		x = -2
 		y = 1
-		relative_position_id = FRA_defensive_focus
+		relative_position_id = FRA_the_rearmnament_plan
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = FRA_artillery_focus
 				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
+			add_tech_bonus = {
+				name = FRA_gun_focus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
 		id = FRA_heavy_armor_focus
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = FRA_defensive_focus focus = FRA_aggressive_focus }
-		x = 1
+		prerequisite = { focus = FRA_the_rearmnament_plan }
+		x = 0
 		y = 1
-		relative_position_id = FRA_defensive_focus
+		relative_position_id = FRA_the_rearmnament_plan
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {	
@@ -744,15 +752,15 @@ focus_tree = {
 	focus = {
 		id = FRA_fusiliers_marine
 		icon = GFX_goal_generic_amphibious_assault
-		x = 0
+		x = -1
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_methodical_battle }
+		prerequisite = { focus = FRA_aggressive_focus focus = FRA_defensive_focus }
 		mutually_exclusive = { }
-		relative_position_id = FRA_methodical_battle
+		relative_position_id =  FRA_defensive_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -778,7 +786,9 @@ focus_tree = {
 		id = FRA_aggressive_focus
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = FRA_defensive_focus }
-		x = 16
+		prerequisite = { focus = FRA_army_reform }
+		relative_position_id = FRA_army_reform
+		x = 1
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -789,6 +799,40 @@ focus_tree = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
 			army_experience = 25
+			unlock_decision_tooltip = { decision = FRA_defend_norway show_effect_tooltip = yes }
+		}
+	}
+	focus = {
+		id = FRA_improved_production_methods
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_the_rearmnament_plan }
+		relative_position_id = FRA_the_rearmnament_plan
+		cost = 2.9
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_convert
+				bonus = 1
+				uses = 2
+				technology = basic_equipment_conversion
+				technology = improved_equipment_conversion
+				technology = advanced_equipment_conversion
+			}
 		}
 	}
 	focus = {
@@ -800,7 +844,7 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_aggressive_focus }
+		prerequisite = { focus = FRA_aggressive_focus focus = FRA_defensive_focus }
 		relative_position_id = FRA_aggressive_focus
 		cost = 5
 		ai_will_do = {
@@ -847,14 +891,14 @@ focus_tree = {
 	focus = {
 		id = FRA_air_dominance
 		icon = GFX_goal_generic_air_fighter2
-		x = 3
+		x = 0
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_aggressive_focus }
-		relative_position_id = FRA_aggressive_focus
+		prerequisite = { focus = FRA_firepower_kills }
+		relative_position_id = FRA_firepower_kills
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -873,15 +917,15 @@ focus_tree = {
 	focus = {
 		id = FRA_air_ground_cooperation
 		icon = GFX_goal_generic_air_bomber
-		x = 0
+		x = 3
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_air_dominance }
+		prerequisite = { focus = FRA_aggressive_focus }
 		mutually_exclusive = { }
-		relative_position_id = FRA_air_dominance
+		relative_position_id = FRA_aggressive_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -897,12 +941,12 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1
-				amount = 300
+				amount = 500
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
 				type = CAS_equipment_1
-				amount = 200
+				amount = 400
 				producer = FRA
 			}
 		}
@@ -911,15 +955,16 @@ focus_tree = {
 		id = FRA_army_reform
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
-			focus = FRA_firepower_kills
+			focus = FRA_heavy_armor_focus 
+			focus = FRA_improved_production_methods
+			focus = FRA_artillery_focus
 		}
-		x = -1
-		y = 3
-		relative_position_id = FRA_aggressive_focus
+		x = 0
+		y = 1
+		relative_position_id = FRA_heavy_armor_focus
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-			NOT = { has_idea = FRA_disjointed_government }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -936,8 +981,7 @@ focus_tree = {
 				technology = antitank2
 				technology = antitank3
 				bonus = 1
-				ahead_reduction = 1
-				uses = 3
+				uses = 2
 			}
 		}
 	}
@@ -993,7 +1037,6 @@ focus_tree = {
 		cost = 2.9
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			custom_effect_tooltip= "This will enhance some of our agressive military focuses"
 			add_political_power = 75
 		custom_effect_tooltip = available_political_advisor	
 		show_ideas_tooltip = rene_massigli
@@ -1015,7 +1058,6 @@ focus_tree = {
 		cost = 2.9
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		custom_effect_tooltip= "This will enhance some of our defensive military focuses "
 		add_political_power = 75
 		custom_effect_tooltip = available_political_advisor	
 		show_ideas_tooltip = georges_bonnet
@@ -1432,7 +1474,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 150
+			custom_effect_tooltip= "When we complete this focus we will get 2.5 political power per civilian factory we have "
+			set_temp_variable = { political_gain = FRA.total_civs }
+			multiply_temp_variable = { political_gain = 2.5 }
+			add_political_power = political_gain
 			remove_ideas = FRA_disjointed_government
 		}
 	}
@@ -1553,7 +1598,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 5
+		cost = 2.9
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {

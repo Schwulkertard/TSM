@@ -2754,6 +2754,7 @@ focus = {
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}
+		available = { controls_state = 139 }
 		cancel_if_invalid = yes
 		x = 1
 		y = 1
