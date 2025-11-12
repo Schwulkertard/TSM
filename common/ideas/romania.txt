@@ -1,5 +1,169 @@
 ideas = {
 	country = {
+		ROM_powerful_boyars = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		ROM_industrialization = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		ROM_krupp = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		ROM_opel_idea = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_fascism_support = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				fascism_drift = 0.2
+			}
+		}
+		ROM_desire_for_revenge = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			targeted_modifier = {
+				tag = SOV
+				breakthrough_bonus_against = 0.05
+			}
+		}
+		ROM_war_preparation = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				industrial_capacity_factory = 1
+			}
+		}
+		ROM_revanchism = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.025
+				recruitable_population_factor = 0.1
+			}
+		}
+		ROM_iron_guard = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				stability_weekly = -0.003
+				stability_factor = -0.1
+			}
+		}
+		ROM_iron_guard_controlled = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+		ROM_iron_guard_supported = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				war_support_weekly = 0.005
+				recruitable_population_factor = 0.2
+			}
+		}
+		ROM_outdated_doctrine = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.25
+			}
+		}
+		ROM_future_secured = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_expected_value = -0.025
+			}
+			cancel = {
+				has_war_with = SOV
+			}
+		}
+		ROM_agrarian_society = {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		ROM_oil_trade= {
+			picture = anti_soviet_pact
+			removal_cost = -1
+			allowed = {
+				original_tag = ROM
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.1
+			}
+		}
 		ROM_revenge_against_soviet = {
 			picture = anti_soviet_pact
 			removal_cost = -1
@@ -235,20 +399,6 @@ ideas = {
 				foreign_subversive_activites = -0.4
 			}
 		}
-		ROM_iron_guard = {
-			removal_cost = -1
-			allowed = {
-				original_tag = ROM
-			}
-			allowed_civil_war = {
-			}
-			modifier = {
-				resistance_damage_to_garrison = -0.2
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-				conscription = 0.04
-			}
-		}
 		ROM_constitutional_guarantees = {
 			picture = generic_constitutional_guarantees
 			removal_cost = -1
@@ -323,18 +473,6 @@ ideas = {
 			}
 			modifier = {
 				production_speed_nuclear_reactor_factor = 0.25
-			}
-		}
-		ROM_war_preparation = {
-			picture = generic_war_preparation
-			removal_cost = -1
-			allowed = {
-				original_tag = ROM
-			}
-			allowed_civil_war = {
-			}
-			modifier = {
-				army_defence_factor = 0.1
 			}
 		}
 		ROM_army_war_college = {
@@ -497,7 +635,7 @@ ideas = {
 				original_tag = ROM
 			}
 
-			traits = { war_industrialist }
+			traits = { captain_of_industry }
 		}
 	
 		ROM_petru_groza = { 

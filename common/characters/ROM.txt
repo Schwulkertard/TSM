@@ -63,7 +63,7 @@ characters={
 				original_tag  = ROM
 			}
 			traits  = {
-				prince_of_terror 
+				smooth_talking_charmer 
 			}
 		}
 
@@ -517,25 +517,13 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_mihail_sturdza
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
+				has_completed_focus = ROM_infrastructure_focus
 			}
 			allowed  = {
 				original_tag  = ROM
 			}
 			traits  = {
-				fascist_demagogue 
+				modernizer 
 			}
 			ai_will_do  = {
 				factor  = 0.000

@@ -1439,12 +1439,20 @@ leader_traits = {
 		}
 	}
 	
-	
 	smooth_talking_charmer = {
 		random = yes
 		sprite = 13
-		trade_opinion_factor = 0.10
+		global_building_slots_factor = 0.10
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	modernizer = {
+		random = yes
+		sprite = 13
+		production_speed_infrastructure_factor = 0.2
 		ai_will_do = {
 			factor = 1
 		}
