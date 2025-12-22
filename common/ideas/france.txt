@@ -218,16 +218,29 @@ ideas = {
 				research_speed_factor = 0.10
 			}
 		}
-		slowly_mobilising = {
+		worker_strikes = {
 			allowed = {
 				always = yes
 			}
 			removal_cost = -1
 			picture = ger_glory
 			modifier = {
-				stability_weekly = -0.005
-				war_support_weekly = 0.005
+				stability_weekly = -0.002
 				
+				consumer_goods_factor = 0.05
+				
+			}
+		}
+		40_hour_work_week = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ger_glory
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.02
 			}
 		}
 		colonial_development = {
@@ -243,6 +256,25 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
+
+		 FRA_Rhineland_Offensive {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+
+		}
+			}
+		
 
 		FRA_global_investments = {
 			picture = generic_exploit_mines

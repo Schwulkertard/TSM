@@ -58,7 +58,6 @@ country_event = {
 	option = {
 		FRA ={
 			remove_ideas = Phoney_War
-			remove_ideas = tradeback_is_cancer
 		}
 		GER ={
 			remove_ideas = GER_westfeldzug

@@ -967,7 +967,25 @@ ideas = {
 		removal_cost = 0 
 		traits = { civilian_industrial_theorist }
 	  }
-  	}
+  	
+	FRA_Big_Industry_Conglomerates = {
+		picture = generic_electronics_concern_1
+
+		allowed = {
+			original_tag = FRA
+		}
+		available = { has_completed_focus = FRA_Alliance_with_the_capitalists }
+		  
+		cost = 150
+		removal_cost = 0
+		modifier = {
+		research_speed_factor = 0.1
+   industrial_capacity_factory = 0.1
+   industrial_capacity_dockyard = 0.1
+   production_speed_buildings_factor = 0.1
+    }
+	  }
+	  }
 	theorist_production = {
 		
 	}

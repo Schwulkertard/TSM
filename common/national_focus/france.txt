@@ -127,7 +127,7 @@ focus_tree = {
 		completion_reward = {
 		    custom_effect_tooltip = FRA_doc_tt
 		    every_owned_state = {
-			limit= {AND = {industrial_complex > 4 is_core_of = FRA}  }
+			limit= {AND = {industrial_complex > 3 is_core_of = FRA}  }
 				   
 				    add_offsite_building = {
 				type = industrial_complex
@@ -598,7 +598,7 @@ focus_tree = {
 			       has_completed_focus = FRA_agressive_foreign_policy
 			 }
 		}
-		x = 15
+		x = 16
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -735,7 +735,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1.2
-				ahead_reduction= 1
 				uses = 1
 				technology = basic_medium_tank_chassis
 				technology = basic_heavy_tank_chassis
@@ -988,7 +987,7 @@ focus_tree = {
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 24
+		x = 25
 		y = 0
 		offset = {
 			x = 0
@@ -1226,9 +1225,9 @@ focus_tree = {
 				remove_idea = FRA_expanded_citizenship
 				add_idea = FRA_france_undividable
 			}
-			add_state_core = 460
-			add_state_core = 459
-			add_state_core = 513
+			add_state_core = 423
+			add_state_core = 424
+			add_state_core = 422
 		}
 	}
 	focus = {
@@ -1253,6 +1252,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			remove_worker_shortage_effect = yes
 			add_ideas = { FRA_expanded_citizenship }
 		}
 	}
@@ -1262,28 +1262,16 @@ focus_tree = {
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = FRA_expand_the_citizenship
+			focus = FRA_freedom_front
 		}
-		relative_position_id = FRA_expand_the_citizenship
+		relative_position_id = FRA_freedom_front
 		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			remove_worker_shortage_effect = yes
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-					NOT = {
-						is_on_continent = europe
-					}
-				}
-				add_compliance = 10
-			}
+			
 		}
 	}
 	focus = {
@@ -1362,7 +1350,7 @@ focus_tree = {
 			focus = FRA_follow_appeasment
 		}
 		relative_position_id = FRA_form_the_popular_front
-		cost = 5
+		cost = 2.9
 		ai_will_do = {
 			factor = 1
 		}
@@ -1380,6 +1368,64 @@ focus_tree = {
 			multiply_temp_variable = { communism_temp = -0.2 }
 			add_stability = communism_temp
 			remove_ideas = FRA_political_violence
+		}
+	}
+	focus = {
+		id = FRA_The_Mantignon_Agreements
+		icon = GFX_goal_anti_comintern_pact
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = FRA_ban_communism
+		}
+		relative_position_id = FRA_ban_communism
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = worker_strikes
+		}
+		bypass = {
+		NOT = { has_idea = worker_strikes }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
+		completion_reward = {
+			custom_effect_tooltip = "This focus will automatically bypass when the idea Worker Strikes expires"
+			swap_ideas = {
+					remove_idea = worker_strikes
+					add_idea = 40_hour_work_week
+				}
+		}
+	}
+	focus = {
+		id = FRA_Alliance_with_the_capitalists
+		icon = GFX_goal_anti_comintern_pact
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = FRA_The_Mantignon_Agreements
+		}
+		relative_position_id = FRA_ban_communism
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+        NOT = { has_idea = 40_hour_work_week }
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
+		completion_reward = {
+			add_ideas = FRA_Big_Industry_Conglomerates
 		}
 	}
 	focus = {
@@ -1479,6 +1525,33 @@ focus_tree = {
 			multiply_temp_variable = { political_gain = 2.5 }
 			add_political_power = political_gain
 			remove_ideas = FRA_disjointed_government
+		}
+	}
+	focus = {
+		id = FRA_aid_the_poles
+		icon = GFX_goal_generic_fortify_city
+		available = {
+			
+		}
+		prerequisite = { focus = FRA_defensive_strategems }
+		x = 0
+		y = 1
+		bypass = {
+			GER = { has_full_control_of_state = 10 }
+		 }
+		relative_position_id = FRA_defensive_strategems
+		cost = 1
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip= "This foucs bypases if Germany controls Warsaw "
+			add_timed_idea = {
+				idea = FRA_Rhineland_Offensive
+				days = 14
+			} 
 		}
 	}
 	focus = {

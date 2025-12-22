@@ -45,8 +45,9 @@ leader_traits = {
 		
 	}
 	civilian_industrial_theorist = {
-
+          
 	}
+	
 	### HUNGARY ###
 	HUN_the_regent = {
 		random = no

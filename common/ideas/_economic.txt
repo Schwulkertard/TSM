@@ -1,13 +1,5 @@
 ideas = {
 	country={
-		tradeback_is_cancer = {
-			allowed = {
-				always = no # Added via focus
-			}
-			picture = GFX_idea_cancer
-			removal_cost=-1
-			modifier={production_lack_of_resource_penalty_factor = -1}
-		}
 		neutrality_idea1 = {
 			allowed = {
 				always = no

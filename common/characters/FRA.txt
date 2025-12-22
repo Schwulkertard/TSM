@@ -1200,7 +1200,7 @@ characters={
 			available  = {
 				has_completed_focus =  FRA_extra_research_slot 
 			}
-			cost  = 150.000
+			cost  = 75
 			traits  = {
 				technocrat 
 			}

@@ -2410,6 +2410,9 @@
 
  FRA_naval_bomber_focus_desc:0 "Ships have proven exceptionally vulnerable to aircraft. We should keep improving on their technology to ensure we stay ahead of any countermeasures."
 
+ FRA_naval_bomber_focus_desc:0 "Ships have proven exceptionally vulnerable to aircraft. We should keep improving on their technology to ensure we stay ahead of any countermeasures."
+
+
  limited_rearmament_focus:0 "Limited Rearmament"
 
  limited_rearmament_focus_desc:1 "The recent stirrings from Germany and other Fascist powers around the world suggest that we may not enjoy peace in our time. In preparation, we should begin to set the pieces in motion for our own rearmament if the situation gets any worse."
