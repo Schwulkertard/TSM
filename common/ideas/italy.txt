@@ -170,7 +170,7 @@ ideas = {
 			}
 			picture = generic_morale_bonus
 			equipment_bonus = {
-				fighter_equipment_alt = {
+				small_plane_airframe = {
 					build_cost_ic = -0.5 instant = yes
 				}
 			}
@@ -711,18 +711,8 @@ ideas = {
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			equipment_bonus = {
-				fighter_equipment_alt = {
+				small_plane_airframe = {
 					build_cost_ic = -0.1
-					air_agility = 0.1
-					air_attack = 0.1
-					maximum_speed = 0.1
-				}
-				fighter_equipment = {
-					air_agility = 0.1
-					air_attack = 0.1
-					maximum_speed = 0.1
-				}
-				jet_fighter_equipment = {
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1

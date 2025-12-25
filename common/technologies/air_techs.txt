@@ -1489,7 +1489,7 @@ technologies = {
 	strategic_bomber1 = {
 		allow_branch={NOT={tag=EFR}}
 		enable_equipments = {
-			strat_bomber_equipment_1
+			large_plane_airframe_1
 		}
 		path = {
 			leads_to_tech = strategic_bomber2
@@ -1523,7 +1523,7 @@ technologies = {
 	}
 	strategic_bomber2 = {
 		enable_equipments = {
-			strat_bomber_equipment_2
+			large_plane_airframe_2
 		}
 		path = {
 			leads_to_tech = strategic_bomber3
@@ -1557,7 +1557,7 @@ technologies = {
 	}
 	strategic_bomber3 = {
 		enable_equipments = {
-			strat_bomber_equipment_3
+			large_plane_airframe_3
 		}
 		path = {
 			leads_to_tech = jet_strategic_bomber1
@@ -1594,7 +1594,7 @@ technologies = {
 	}
 	jet_strategic_bomber1 = {
 		enable_equipments = {
-			jet_strat_bomber_equipment_1
+			large_plane_airframe_4
 		}
 		research_cost = 2
 		start_year = 1950

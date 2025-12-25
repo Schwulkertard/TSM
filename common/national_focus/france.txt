@@ -128,12 +128,10 @@ focus_tree = {
 		    custom_effect_tooltip = FRA_doc_tt
 		    every_owned_state = {
 			limit= {AND = {industrial_complex > 3 is_core_of = FRA}  }
-				   
-				    add_offsite_building = {
+			}
+			add_offsite_building = {
 				type = industrial_complex
 				level = 2
-
-			}
 			}
 		}
 	}
@@ -690,7 +688,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = fighter_equipment_1
+				type = small_plane_airframe_1
 				amount = 1000
 				producer = FRA
 			}
@@ -939,7 +937,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = fighter_equipment_1
+				type = small_plane_airframe_1
 				amount = 500
 				producer = FRA
 			}
@@ -2548,7 +2546,7 @@ focus_tree = {
 			air_experience = 25
 			SOV = {
 				add_equipment_to_stockpile = {
-					type = fighter_equipment
+					type = small_plane_airframe
 					amount = 150
 					producer = SOV
 				}

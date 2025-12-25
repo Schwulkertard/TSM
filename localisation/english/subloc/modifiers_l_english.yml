@@ -905,6 +905,7 @@
  MODIFIER_REPAIR_SPEED_FACTOR:0 "Ship Repair Speed"
  MODIFIER_STRIKE_FORCE_MOVING_ORG:0 "Strike Force Org loss"
  MODIFIER_STRIKE_FORCE_MOVING_ORG_DESC:0 "Strike Forces loss of org during movement will be affected by this"
+ modifier_experience_gain_escort_carrier_mission_factor:1 "Escort Carrier Mission Experience Gain"
  modifier_experience_gain_battle_cruiser_training_factor:1 "Battlecruiser Training Experience Gain"
  modifier_experience_gain_battle_cruiser_combat_factor:1 "Battlecruiser Combat Experience Gain"
  modifier_experience_gain_battleship_training_factor:1 "Battleship Training Experience Gain"

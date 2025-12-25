@@ -1181,7 +1181,7 @@ focus = {
 			}
 			create_equipment_variant = {
 				name = "Homeland Fighter Upgraded"
-				type = fighter_equipment_alt_2
+				type = small_plane_airframe_2
 				upgrades = {
 						plane_engine_upgrade=5
 					    plane_range_upgrade=5
@@ -1189,7 +1189,7 @@ focus = {
 			}
 			add_equipment_production = {
 					equipment = {
-						type = fighter_equipment_alt_2
+						type = small_plane_airframe_2
 						creator = "ITA"
 						version_name = "Homeland Fighter Upgraded"
 					}

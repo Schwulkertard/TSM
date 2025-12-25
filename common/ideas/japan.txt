@@ -1134,7 +1134,7 @@ ideas = {
 			}
 			cost = 100
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1
@@ -1152,13 +1152,13 @@ ideas = {
 			}
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1
 					air_range = 0.1
                     air_defence = 0.2
 					reliability = 0.2
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
                     air_defence = 0.2
 					reliability = 0.2
 				}
@@ -1172,7 +1172,7 @@ ideas = {
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					air_ground_attack = 0.1 reliability = 0.1
 				}
 			}

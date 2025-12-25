@@ -9,11 +9,10 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
-		industrial_complex = 3
-		arms_factory = 2
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		victory_points = {
 			9239 3 
