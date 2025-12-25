@@ -131,6 +131,15 @@ NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
 
+--COAL DEFINES
+NDefines.NProduction.ENERGY_SCALE_PER_TRADE_FACTORY_EXPORT = 0 -- Factor of how many of the factories gained from trade is affects the energy cost scaling
+NDefines.NProduction.ENERGY_COST_CAP = 0						-- Maximum energy cost per factory
+NDefines.NProduction.MILITARY_FACTORY_COHERENCY_BONUS = 0							-- Value we add to the weight of a production line already in progress, if we only have one military factory. (to reduce fluctuating AI production)				
+NDefines.NProduction.MILITARY_FACTORY_COHERENCY_BONUS = 0							-- Value we add to the weight of a production line already in progress, if we only have one military factory. (to reduce fluctuating AI production)				
+NDefines.NProduction.RESOURCE_TO_ENERGY_COEFFICIENT = 1		-- How much energy per coal produces
+NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 0.01 		 	-- The base energy production of a country
+NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.0 -- Scales energy cost based on the total number of factories
+NDefines.NProduction.BASE_ENERGY_COST = 0.01
 
 
 
