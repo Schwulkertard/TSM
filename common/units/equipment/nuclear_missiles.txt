@@ -44,7 +44,7 @@ equipments = {
 		
 		build_cost_ic = 800
 		resources = {
-			aluminium = 30
+			aluminium = 3
 			tungsten = 3
 			chromium = 1
 		}
@@ -75,7 +75,7 @@ equipments = {
 		sprite = missile_default
 		build_cost_ic = 1200
 		resources = {
-			aluminium = 40
+			aluminium = 4
 			tungsten = 3
 			chromium = 2
 		}
