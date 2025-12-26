@@ -328,7 +328,7 @@ guiTypes = {
 		}
 	}
 
-	
+
     #### OFFICER CORP MAIN VIEW ####
 
 	containerWindowType = {
@@ -1253,89 +1253,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-	containerWindowType = {
-		name = "army_spirit_entry"
-		position = { x = 59 y = -56 }
-		size = { width=150 height=66 }
-		clipping = no
 
-		origo = center
-
-		buttonType = {
-			name = "button"
-			position = { x = 94 y = 46 }
-			spriteType = "GFX_officer_corp_spirit_bg_enabled"
-			no_clicksound = yes
-			#frame = 1
-			centerposition = yes
-		}
-		iconType = {
-			name = "army_spirit_glow"
-			position = { x = 94 y = 45 }
-			spriteType = "GFX_spirit_glow"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "icon_background"
-			position = { x = 96 y = 38 }
-			spriteType = "GFX_officer_corp_spirit_icon_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			scale = 0.8
-			frame = 10
-		}
-
-		iconType = {
-			name = "spirit_icon"
-			position = { x = 95 y = 49 }
-			spriteType = "GFX_placeholder_bordered"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-	}
-
-    containerWindowType = {
-		name = "special_forces_academy_spirit_entry"
-		position = { x = 63 y = -56 }
-		size = { width=150 height=66 }
-		clipping = no
-
-		origo = center
-
-		buttonType = {
-			name = "button"
-			position = { x = 94 y = 46 }
-			spriteType = "GFX_officer_corp_spirit_bg_enabled"
-			no_clicksound = yes
-			frame = 1
-			centerposition = yes
-		}
-		iconType = {
-			name = "academy_spirit_glow"
-			position = { x = 94 y = 45 }
-			spriteType = "GFX_spirit_glow"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "icon_background"
-			position = { x = 96 y = 38 }
-			spriteType = "GFX_officer_corp_spirit_icon_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			scale = 0.8
-			frame = 1
-		}
-
-		iconType = {
-			name = "spirit_icon"
-			position = { x = 94 y = 48 }
-			spriteType = "GFX_placeholder_bordered"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-	}
 	containerWindowType = {
 		name = "naval_command_spirit_entry"
 		position = { x = 55 y = -42 }
@@ -1584,11 +1502,11 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "spirit_window"
-		size = { width=500 height=593 }
+		size = { width=500 height=658 }
 		show_sound = open_sub_window
 		moveable = yes
 		#orientation = left
-		position = { x = 790 y = 377 }
+		position = { x = 790 y = 409 }
 		origo = center
 
 		background = {
@@ -1598,7 +1516,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "icon_background_army"
-			position = { x = -270 y = 64 }
+			position = { x = -270 y = 50 }
 			size = { x = 520 y = 66 }
 			quadTextureSprite = "GFX_spirit_banner_decoration_army"
 			format = center
@@ -1608,7 +1526,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "icon_background_navy"
-			position = { x = -265 y = 64 }
+			position = { x = -265 y = 50 }
 			size = { x = 508 y = 66 }
 			quadTextureSprite = "GFX_spirit_banner_decoration_navy"
 			format = center
@@ -1618,9 +1536,19 @@ guiTypes = {
 
 		buttonType = {
 			name = "icon_background_air"
-			position = { x = -260 y = 68 }
+			position = { x = -260 y = 50 }
 			size = { x = 500 y = 66 }
 			quadTextureSprite = "GFX_spirit_banner_decoration_air"
+			format = center
+			orientation = "center_up"
+			alwaystransparent = yes
+		}
+				
+		buttonType = {
+			name = "icon_inherited_spirit_bg"
+			position = { x = -49 y = 32 }
+			spriteType = "GFX_officer_corp_spirit_icon_strip"
+			scale = 0.75
 			format = center
 			orientation = "center_up"
 			alwaystransparent = yes
@@ -1628,7 +1556,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "title"
-			position = { x = -308 y = 5 }
+			position = { x = -308 y = 2 }
 			font = "hoi_24header"
 			text = "ARMY_ARMY_LABEL"
 			maxWidth = 600
@@ -1639,7 +1567,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "switch"
-			position = { x = -308 y = 32 }
+			position = { x = -308 y = 24 }
 			font = "hoi_18b"
 			text = "Switch out Henschel"
 			maxWidth = 600
@@ -1650,7 +1578,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 0 y = 114 }
+			position = { x = 0 y = 98 }
 			size = { width=100% height=100%% }
 
 			containerWindowType = {
@@ -1686,16 +1614,6 @@ guiTypes = {
 		}
 		
 		buttonType = {
-			name = "icon_inherited_spirit_bg"
-			position = { x = -49 y = 46 }
-			spriteType = "GFX_officer_corp_spirit_icon_strip"
-			scale = 0.75
-			format = center
-			orientation = "center_up"
-			alwaystransparent = yes
-		}
-		
-		buttonType = {
 			name = "close"
 			position = { x = -42 y = 5 }
 			quadTextureSprite ="GFX_closebutton"
@@ -1712,7 +1630,7 @@ guiTypes = {
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -1788,92 +1706,93 @@ guiTypes = {
 		}
 	}
 	
-	containerWindowType = {
-		name = "special_forces_academy_spirit_window_item_grid"
-		size = { width = 231 height = 74 }
-		clipping = no
-
-		background = {
-			name = "idea_entry_bg"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_spirit_entry_bg_strip"
-		}
-
-		iconType = {
-			name = "icon"
-			position = { x = 42 y = 38 }
-			spriteType = "GFX_placeholder_bordered"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
-
-		containerWindowType = {
-		    name = "traits_container"
-		    position = { x = 76 y = 0 }
-		    show_position = { x = 0 y = 0 }
-			size = { width=170 height=100%% }
-
-			instantTextboxType = {
-				name = "name"
-				position = { x = 0 y = 10 }
-				font = "hoi_18mbs"
-				fixedsize = yes
-				text = ""
-				maxWidth = 120
-				format = left
-				alwaystransparent = yes
-			}
-
-			instantTextboxType = {
-				name = "traits"
-				position = { x = 0 y = 28 }
-				font = "hoi_16mbs"
-				fixedsize = yes
-				text = ""
-				maxWidth = 140
-				maxHeight = 100%%
-				format = left
-				alwaystransparent = yes
-			}
-		}
-
-		instantTextboxType = {
-			name = "cost"
-			position = { x = 80 y = 47 }
-			font = "hoi_16mbs"
-			text = ""
-			maxWidth = 142
-			maxHeight = 10
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "stats"
-			position = { x = 300 y = 32 }
-			font = "hoi_16mbs"
-			text = ""
-			maxWidth = 142
-			maxHeight = 10
-			format = center
-			alwaystransparent = yes
-		}
-	}
 	containerWindowType = {
 		name = "army_spirit_window_item_grid"
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
+			name = "idea_entry_bg"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_spirit_entry_bg_strip"
+		}
+
+		iconType = {
+			name = "icon"
+			position = { x = 42 y = 38 }
+			spriteType = "GFX_placeholder_bordered"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x = 53 y = 51 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+
+		containerWindowType = {
+		    name = "traits_container"
+		    position = { x = 76 y = 0 }
+		    show_position = { x = 0 y = 0 }
+			size = { width=170 height=100%% }
+
+			instantTextboxType = {
+				name = "name"
+				position = { x = 0 y = 10 }
+				font = "hoi_18mbs"
+				fixedsize = yes
+				text = ""
+				maxWidth = 120
+				format = left
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "traits"
+				position = { x = 0 y = 28 }
+				font = "hoi_16mbs"
+				fixedsize = yes
+				text = ""
+				maxWidth = 140
+				maxHeight = 100%%
+				format = left
+				alwaystransparent = yes
+			}
+		}
+
+		instantTextboxType = {
+			name = "cost"
+			position = { x = 80 y = 47 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 142
+			maxHeight = 10
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "stats"
+			position = { x = 300 y = 32 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 142
+			maxHeight = 10
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "division_command_spirit_window_item_grid"
+		size = { width = 231 height = 74 }
+		clipping = no
+
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -1950,11 +1869,11 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "division_command_spirit_window_item_grid"
+		name = "naval_academy_spirit_window_item_grid"
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -1981,7 +1900,7 @@ guiTypes = {
 		    name = "traits_container"
 		    position = { x = 76 y = 0 }
 		    show_position = { x = 0 y = 0 }
-			size = { width=170 height=100%% }
+			size = { width = 170 height = 100%% }
 
 			instantTextboxType = {
 				name = "name"
@@ -2031,11 +1950,11 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "naval_academy_spirit_window_item_grid"
+		name = "navy_spirit_window_item_grid"
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -2112,11 +2031,11 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "navy_spirit_window_item_grid"
+		name = "naval_command_spirit_window_item_grid"
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -2191,87 +2110,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	} 
-
-	containerWindowType = {
-		name = "naval_command_spirit_window_item_grid"
-		size = { width = 231 height = 74 }
-		clipping = no
-
-		background = {
-			name = "idea_entry_bg"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_spirit_entry_bg_strip"
-		}
-
-		iconType = {
-			name = "icon"
-			position = { x = 42 y = 38 }
-			spriteType = "GFX_placeholder_bordered"
-			centerposition = yes
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
-
-		containerWindowType = {
-			name = "traits_container"
-			position = { x = 76 y = 0 }
-			show_position = { x = 0 y = 0 }
-			size = { width = 170 height = 100%% }
-
-			instantTextboxType = {
-				name = "name"
-				position = { x = 0 y = 10 }
-				font = "hoi_18mbs"
-				fixedsize = yes
-				text = ""
-				maxWidth = 120
-				format = left
-				alwaystransparent = yes
-			}
-
-			instantTextboxType = {
-				name = "traits"
-				position = { x = 0 y = 28 }
-				font = "hoi_16mbs"
-				fixedsize = yes
-				text = ""
-				maxWidth = 140
-				maxHeight = 100%%
-				format = left
-				alwaystransparent = yes
-			}
-		}
-
-		instantTextboxType = {
-			name = "cost"
-			position = { x = 80 y = 47 }
-			font = "hoi_16mbs"
-			text = ""
-			maxWidth = 142
-			maxHeight = 10
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "stats"
-			position = { x = 300 y = 32 }
-			font = "hoi_16mbs"
-			text = ""
-			maxWidth = 142
-			maxHeight = 10
-			format = center
-			alwaystransparent = yes
-		}
-	}
 
 	containerWindowType = {
 		name = "air_force_academy_spirit_window_item_grid"
@@ -2359,7 +2197,7 @@ guiTypes = {
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -2440,7 +2278,7 @@ guiTypes = {
 		size = { width = 231 height = 74 }
 		clipping = no
 
-		background = {
+		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_spirit_entry_bg_strip"
@@ -2476,6 +2314,94 @@ guiTypes = {
 				fixedsize = yes
 				text = ""
 				maxWidth = 120
+				format = left
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "traits"
+				position = { x = 0 y = 28 }
+				font = "hoi_16mbs"
+				fixedsize = yes
+				text = ""
+				maxWidth = 140
+				maxHeight = 100%%
+				format = left
+				alwaystransparent = yes
+			}
+		}
+
+		instantTextboxType = {
+			name = "cost"
+			position = { x = 80 y = 47 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 142
+			maxHeight = 10
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "stats"
+			position = { x = 300 y = 32 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 142
+			maxHeight = 10
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "faction_intel_agency_char_view_item"
+		size = { width = 231 height = 74 }
+		clipping = no
+			
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window2_1b_border"
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_idea_entry_bg_2"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "icon"
+			position = { x = 42 y = 38 }
+			spriteType = "GFX_placeholder_bordered"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x = 53 y = 51 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+
+		containerWindowType = {
+			name = "traits_container"
+			position = { x = 76 y = 0 }
+			show_position = { x = 0 y = 0 }
+			size = { width=170 height=100%% }
+
+			instantTextboxType = {
+				name = "name"
+				position = { x = 0 y = 10 }
+				font = "hoi_18mbs"
+				fixedsize = yes
+				text = ""
+				maxWidth = 150
+				maxHeight = 13
 				format = left
 				alwaystransparent = yes
 			}

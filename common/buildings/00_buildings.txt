@@ -541,7 +541,7 @@ rocket_site = {
 		spawn_point = dam_spawn
 		infrastructure_construction_effect = yes 
 		damage_factor = -1
-		is_buildable = yes
+		is_buildable = no
 		need_detection = yes
 		detecting_intel_type = civilian 
 		province_damage_modifiers = { flooded }
@@ -632,24 +632,6 @@ rocket_site = {
 		state_modifiers = {
 			
 		}
-	}
-	recycling_center = {
-		show_on_map = 0
-		base_cost = 12000
-		icon_frame = 29
-		local_resources_steel = 50
-		local_resources_aluminium = 10
-        local_resources_chromium = 10
-        local_resources_tungsten = 10
-		refinery = yes
-		level_cap = {
-			state_max = 3
-		}
-		value = 10
-		damage_factor = 0.05
-		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
 	}
 }
 

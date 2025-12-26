@@ -39,7 +39,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
 		}
 				
@@ -88,7 +88,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 2 }
 		}
 		
@@ -135,7 +135,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 2 }
 		}
 		
@@ -183,7 +183,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 4 }
 		}
 		
@@ -229,7 +229,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 6 }
 		}
 		
@@ -281,7 +281,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 6 }
 		}
 		
@@ -330,7 +330,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 8 }
 		}
 		
@@ -366,7 +366,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 10 }
 		}
 		
@@ -401,7 +401,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 10 }
 		}
 		
@@ -457,7 +457,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
 		}
 		
@@ -512,7 +512,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 2 }
 		}
 		
@@ -567,7 +567,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 2 }
 		}
 		
@@ -617,7 +617,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 4 }
 		}
 		
@@ -675,7 +675,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 6 }
 		}
 		
@@ -739,7 +739,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 6 }
 		}
 		
@@ -794,7 +794,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 8 }
 		}
 		
@@ -834,7 +834,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 10 }
 		}
 		
@@ -870,7 +870,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 10 }
 		}
 		
@@ -919,7 +919,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
 		}
 		
@@ -970,7 +970,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 2 }
 		}
 		
@@ -1018,7 +1018,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 2 }
 		}
 		
@@ -1069,7 +1069,7 @@ technologies = {
 		}
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 4 }
 		}
 		
@@ -1117,7 +1117,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 6 }
 		}
 		
@@ -1170,7 +1170,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 6 }
 		}
 		
@@ -1216,7 +1216,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 0 y = 8 }
 		}
 		
@@ -1254,7 +1254,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = -1 y = 10 }
 		}
 		
@@ -1289,7 +1289,7 @@ technologies = {
 
 		
 		folder = {
-			name = air_doctrine_folder
+			name = special_forces_doctrine_folder
 			position = { x = 1 y = 10 }
 		}
 		
