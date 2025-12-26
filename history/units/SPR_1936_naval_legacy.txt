@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Base Naval El Ferrol"
-		naval_base =721
-		task_force = {
-			name = "Escuadrón de El Ferrol"
-			location =721
-			ship = { name = "ARE Jaime I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SPR } } }
+	 } }
 			ship = { name = "ARE España" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = SPR } } }
 			ship = { name = "ARE Libertad" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
 			ship = { name = "ARE Almirante Cervera" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
@@ -16,13 +10,7 @@ units= {
 			ship = { name = "ARE Lazaga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SPR } } }
 		}
 	}
-	fleet = {
-		name = "Base Naval Cádiz"
-		naval_base =994
-		task_force = {
-			name = "Escuadrón de Cádiz"
-			location =994
-			ship = { name = "ARE República" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+	 } }
 			ship = { name = "ARE Méndez Núñez" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
 		}
 		task_force = {
@@ -34,13 +22,7 @@ units= {
 			ship = { name = "B4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SPR } } }
 		}
 	}
-	fleet = {
-		name = "Base Naval Cartagena"
-		naval_base =9207
-		task_force = {
-			name = "Escuadrón de Cartagena"
-			location =9207
-			ship = { name = "ARE Almirante Ferrándiz" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SPR } } }
+	 } }
 			ship = { name = "ARE Sánchez Barcáiztegui" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SPR } } }
 			ship = { name = "ARE Alcalá Galiano" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SPR } } }
 			ship = { name = "ARE Almirante Valdés" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SPR } } }

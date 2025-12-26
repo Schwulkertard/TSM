@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Türk Donanmasi"
-		naval_base =881
-		task_force = {
-			name = "Türk Donanmasi"
-			location =881
-			ship = { name = "TCG Yavuz" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = TUR } } }
+	 } }
 			ship = { name = "TCG Mecidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
 			ship = { name = "TCG Hamidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
 			ship = { name = "TCG Peyk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }

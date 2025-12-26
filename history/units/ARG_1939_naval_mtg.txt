@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Armada Argentina"
-		naval_base =1496
-		task_force = {
-			name = "Armada Argentina"
-			location =1496
-			ship = { name = "ARA Rivadavia" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ARG version_name = "Rivadavia Class" } } }
+	 } }
 			ship = { name = "ARA Moreno" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ARG version_name = "Rivadavia Class" } } }
 			ship = { name = "ARA Veinticinco de Mayo" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARG version_name = "Veinticinco de Mayo Class" } } }
 			ship = { name = "ARA Almirante Brown" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARG version_name = "Veinticinco de Mayo Class" } } }

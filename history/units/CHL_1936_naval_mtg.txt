@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Armada de Chile"
-		naval_base =615
-		task_force = {
-			name = "Armada de Chile"
-			location =615
-			ship = { name = "BACH Almirante Latorre" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CHL version_name = "Almirante Latorre Class" } } }
+	 } }
 			ship = { name = "BACH O'Higgins" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHL version_name = "O'Higgins Class" } } }
 			ship = { name = "BACH Chacabuco" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHL version_name = "Chacabuco Class" } } }
 			ship = { name = "BACH Almirante Lynch" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHL version_name = "Almirante Lynch Class" } } }

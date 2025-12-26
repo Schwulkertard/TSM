@@ -1,12 +1,6 @@
 ﻿
 units = {
-	fleet = {
-		name = "Kriegsmarine"
-		naval_base =214
-		task_force = {
-			name = "Hochseeflotte"
-			location =214
-			ship = { name = "Scharnhorst" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }
+	 } }
 			ship = { name = "Gneisenau" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = GER version_name = "Scharnhorst Class" } } }
 			ship = { name = "Admiral Hipper" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }
 			ship = { name = "Deutschland" definition = heavy_cruiser  start_experience_factor = 0.25 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
@@ -72,13 +66,7 @@ units = {
 			ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }
 		}
 	}
-	fleet = {
-		name = "Unterseeboots Flotte"
-		naval_base =5898
-		task_force = {
-			name = "I. U-Boots-Flot. Weddigen"
-			location =5898
-			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
+	 } }
 			ship = { ordered_name = 13 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { ordered_name = 17 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }

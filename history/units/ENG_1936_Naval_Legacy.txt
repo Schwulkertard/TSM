@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Home Command Legacy Test"
-		naval_base =10040
-		task_force = {
-			name = "Home Fleet"
-			location =10040
-			ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
+	 }
 				
 			}
 			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
@@ -199,13 +193,7 @@
 			ship = { name = "HMS H50" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG } } }
 		}
 	}
-	fleet = {
-		name = "Mediterranean Command"
-		naval_base =3812
-		task_force = {
-			name = "Mediterranean Fleet"
-			location =3812
-			ship = { name = "HMS Glorious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
+	 }
 				
 			}
 			ship = { name = "HMS Warspite" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
@@ -263,13 +251,7 @@
 			ship = { name = "HMS Oswald" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 		}
 	}
-	fleet = {
-		name = "North and South Americas Command"
-		naval_base =1916
-		task_force = {
-			name = "America and West Indies Fleet"
-			location =11694
-			ship = { name = "HMS Berwick" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+	 } }
 			ship = { name = "HMS York" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Orion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 		}
@@ -296,13 +278,7 @@
 			ship = { name = "HMS Clyde" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 		}
 	}
-	fleet = {
-		name = "Far East Command"
-		naval_base =11178
-		task_force = {
-			name = "East Indies Fleet"
-			location =9378
-			ship = { name = "HMS Danae" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+	 } }
 			ship = { name = "HMS Durban" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Despatch" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 		}

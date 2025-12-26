@@ -1,11 +1,5 @@
 units = {
-	fleet = {
-		name = "Japanese ASW Fleet"
-		naval_base =9135
-		task_force = {
-			name = "Japanese ASW Task Force 1"
-			location =9135
-			ship = { name = "ASW1" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
+	 } }
 			ship = { name = "ASW2" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW3" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW4" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }

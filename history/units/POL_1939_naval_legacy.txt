@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Polskie Sily Morskie"
-		naval_base =330
-		task_force = {
-			name = "Polska Flota Niszczycieli"
-			location =330
-			ship = { name = "ORP Grom" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
+	 } }
 			ship = { name = "ORP Blyskawica" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }
 			ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }
 			ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }

@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Amiral Nord"
-		naval_base =540
-		task_force = {
-			name = "1ère Région Navale"
-			location =540
-			ship = { name = "La Cordelière" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+	 } }
 			ship = { name = "L'Incomprise" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 			ship = { name = "Branlebas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 		}
@@ -19,13 +13,7 @@ units= {
 			ship = { name = "Antiope" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 		}
 	}
-	fleet = {
-		name = "Amiral Ouest"
-		naval_base =3329
-		task_force = {
-			name = "2ème Région Navale"
-			location =3329
-			ship = { name = "Courbet" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }
+	 } }
 			ship = { name = "Paris" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }
 			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Chacal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -86,13 +74,7 @@ units= {
 			ship = { name = "Sidi Ferruch" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 		}
 	}
-	fleet = {
-		name = "Amiral Sud"
-		naval_base =867
-		task_force = {
-			name = "3ème Région Navale"
-			location =867
-			ship = { name = "Lynx" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
+	 } }
 			ship = { name = "Tigre" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Baliste" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 			ship = { name = "La Bayonnaise" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
@@ -157,13 +139,7 @@ units= {
 			ship = { name = "Perle" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
 		}
 	}
-	fleet = {
-		name = "Amiral Afrique"
-		naval_base =6598
-		task_force = {
-			name = "4ème Région Navale"
-			location =9177
-			ship = { name = "La Pomone" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+	 } }
 			ship = { name = "La Bombarde" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 			ship = { name = "L'Iphigénie" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 		}
@@ -271,13 +247,7 @@ units= {
 			ship = { name = "Henri Poincaré" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 		}
 	}
-	fleet = {
-		name = "Flotte d'Extrême Orient"
-		naval_base =4130
-		task_force = {
-			name = "Flotte du Extrême Orient"
-			location =4130
-			ship = { name = "Suffren" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
+	 } }
 			ship = { name = "Lamotte-Picquet" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 		}
 	}

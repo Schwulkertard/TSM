@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Koninklijke Marine"
-		naval_base =3098
-		task_force = {
-			name = "Koninklijke Vloot"
-			location =3098
-			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Hertog Hendrik Class" } } }
+	 } }
 			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Soerabaja Class" } } }
 			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Van Galen Class" } } }
 		}
@@ -22,13 +16,7 @@
 			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
 		}
 	}
-	fleet = {
-		name = "Nederlands-Indië Marine"
-		naval_base =4136
-		task_force = {
-			name = "Nederlands-Indië Eskader"
-			location =4136
-			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Soerabaja Class" } }	}
+	 }	}
 			ship = { name = "HrMs Java" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Java Class" } } }
 			ship = { name = "HrMs Sumatra" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Java Class" } } }
 			ship = { name = "HrMs De Ruyter" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "De Ruyter Class" } } }

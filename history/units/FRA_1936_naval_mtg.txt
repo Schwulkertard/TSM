@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Amiral Nord"
-		naval_base =540
-		task_force = {
-			name = "1ère Région Navale"
-			location =540
-			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
+	 } }
 			ship = { name = "Chacal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Léopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Panthère" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }

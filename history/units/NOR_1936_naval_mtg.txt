@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Kongelige Norske Marine"
-		naval_base =8532
-		task_force = {
-			name = "1. Sjøforsvarsdistrikt"
-			location =8532
-			ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }
+	 } }
 			ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge Class" } } }
 			ship = { name = "HNoMS Olaf Tryggvason" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = NOR version_name = "Olaf Tryggvason Class" } } }
 			ship = { name = "HNoMS Frøya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }

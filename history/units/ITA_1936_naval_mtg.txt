@@ -1,12 +1,6 @@
 ﻿
 units= {
-	fleet = {
-		name = "Comando Navale Ionio e Basso Adriatico"
-		naval_base =10743
-		task_force = {
-			name = "I Squadra Navale"
-			location =10743
-			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
+	 } }
 			ship = { name = "RN Andrea Doria" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
 			ship = { name = "RN Battleship Roma" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
 			ship = { name = "RN Regina Margherita" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }

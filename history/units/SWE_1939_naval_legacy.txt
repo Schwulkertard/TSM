@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Kungliga Svenska Marinen"
-		naval_base =35
-		task_force = {
-			name = "Kustflottan"
-			location =35
-			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SWE } } }
+	 } }
 			ship = { name = "HMS Örnen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }
 			ship = { name = "HMS Jacob Bagge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SWE } } }
 		}

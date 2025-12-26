@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Koninklijke Marine"
-		naval_base =3098
-		task_force = {
-			name = "Koninklijke Vloot"
-			location =3098
-			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+	 } }
 			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
 			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HOL } } }
 		}
@@ -21,13 +15,7 @@
 			ship = { name = "HrMs O-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL version_name = "K-XIV Class" } } }
 		}
 	}
-	fleet = {
-		name = "Nederlands-Indië Marine"
-		naval_base =4136
-		task_force = {
-			name = "Nederlands-Indië Eskader"
-			location =4136
-			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } }	}
+	 }	}
 			ship = { name = "HrMs Java" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
 			ship = { name = "HrMs Sumatra" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
 			ship = { name = "HrMs Van Ghent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HOL } } }

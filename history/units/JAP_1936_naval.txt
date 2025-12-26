@@ -1,12 +1,6 @@
 ﻿
 units = {
-	fleet = {
-		name = "Dai 1 Kantai"
-		naval_base =9181
-		task_force = {
-			name = "1 Kantai"
-			location =9181
-			ship = { name = "Kongo" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class"} } }
+	 } }
 			ship = { name = "Kirishima" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class"} } }
 			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class"} } }
 			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class"} } }

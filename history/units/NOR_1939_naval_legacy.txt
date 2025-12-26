@@ -1,11 +1,5 @@
 ﻿units = {
-	fleet = {
-		name = "Kongelige Norske Marine"
-		naval_base =8532
-		task_force = {
-			name = "1. Sjøforsvarsdistrikt"
-			location =8532
-			ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }
+	 } }
 			ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }
 			ship = { name = "HNoMS A2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
 			ship = { name = "HNoMS A3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }

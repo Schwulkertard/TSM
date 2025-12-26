@@ -1,12 +1,6 @@
 ﻿
 units = {
-	fleet = {
-		name = "Home Command Legacy Test"
-		naval_base =10040
-		task_force = {
-			name = "Home Fleet"
-			location =10040
-			ship = { name = "HMS Ark Royal" definition = carrier equipment = { carrier_2 = { amount = 1 owner = ENG } }
+	 }
 				air_wings = {
 					cv_fighter_equipment_1 =  { owner = "ENG" amount = 12 }
 					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 18 }
@@ -263,13 +257,7 @@ units = {
 			ship = { name = "HMS L27" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG } } }
 		}
 	}
-	fleet = {
-		name = "Foreign Stations Command"
-		naval_base =10040
-		task_force = {
-			name = "North Atlantic Fleet"
-			location =3867
-			ship = { name = "HMS Colombo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+	 } }
 			ship = { name = "HMS Capetown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Wryneck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Keppel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
@@ -283,13 +271,7 @@ units = {
 			ship = { name = "HMS Wrestler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
 		}
 	}
-	fleet = {
-		name = "Mediterranean Command"
-		naval_base =3812
-		task_force = {
-			name = "Mediterranean Fleet"
-			location =3812
-			ship = { name = "HMS Glorious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } }
+	 }
 				air_wings = {
 					cv_fighter_equipment_0 =  { owner = "ENG" amount = 12 }
 					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 12 }
@@ -358,13 +340,7 @@ units = {
 			ship = { name = "HMS Oswald" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 		}
 	}
-	fleet = {
-		name = "North and South Americas Command"
-		naval_base =1916
-		task_force = {
-			name = "West Indies Command"
-			location =11694
-			ship = { name = "HMS Berwick" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+	 } }
 			ship = { name = "HMS York" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Orion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 		}
@@ -395,13 +371,7 @@ units = {
 			ship = { name = "HMS Clyde" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 		}
 	}
-	fleet = {
-		name = "Far East Command"
-		naval_base =11178
-		task_force = {
-			name = "East Indies Fleet"
-			location =9378
-			ship = { name = "HMS Gloucester" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
+	 } }
 			ship = { name = "HMS Manchester" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 			ship = { name = "HMS Liverpool" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 		}

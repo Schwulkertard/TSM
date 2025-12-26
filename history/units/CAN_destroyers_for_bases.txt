@@ -1,12 +1,6 @@
 ﻿
 units = {
-	fleet = {
-		name = "American Destroyer Squadron"
-		naval_base =6826
-		task_force = {
-			name = "American Destroyer Flotilla 4"
-			location =6826
-			ship = { name = "HMCS St. Clair" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
+	 } }
 			ship = { name = "HMCS Niagara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMCS Hamilton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
 			ship = { name = "HMCS Annapolis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA creator = USA } } }
