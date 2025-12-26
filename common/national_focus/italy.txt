@@ -525,12 +525,12 @@ focus = {
 				add_resource = {
 					type = steel
 					amount = 60
-					state = 448
+					state = 157
 				}
 				add_resource = {
 					type = tungsten
 					amount = 40
-					state = 448
+					state = 157
 				}
 			}					
 		} 
@@ -1464,8 +1464,8 @@ focus = {
 			add_state_core = 103
 			add_state_core = 44
 			add_state_core = 105
-			add_state_core = 802
-			add_state_core = 185
+			add_state_core = 178
+			add_state_core = 47
 		}
 	}
 focus = {
