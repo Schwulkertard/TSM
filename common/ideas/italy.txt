@@ -672,7 +672,7 @@ ideas = {
 			}
 		}
 	}
-	materiel_research = {
+	materiel_manufacturer = {
 		designer = yes
 		beretta = {
 			allowed = {
@@ -748,14 +748,14 @@ ideas = {
 			cost = 100
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1
 				}
 			}
 			traits = { CAS_manufacturer }
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		danieli = {
 			allowed = {
 				original_tag = ITA

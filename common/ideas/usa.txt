@@ -1908,7 +1908,7 @@ ideas = {
             }
         }
 	}
-	materiel_research = {
+	weapons_research = {
 		designer = yes
 		springfield_armory = {
 			allowed = {
@@ -1931,7 +1931,7 @@ ideas = {
 			traits = { artillery_research_trait }
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		standard_oil_california = {
 			allowed = {
 				original_tag = USA

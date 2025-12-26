@@ -202,7 +202,7 @@ ideas = {
 			}
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		bhp_steel = {
 			picture = generic_industrial_research_1
 			allowed = {
@@ -245,7 +245,7 @@ ideas = {
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 	}
-	materiel_research = {
+	weapons_research = {
 		designer = yes
 		lysaghts_works = {
 			picture = generic_infantry_equipment_manufacturer_2

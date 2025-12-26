@@ -1302,7 +1302,7 @@ ideas = {
 			}
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		ig_faben = {
 			allowed = {
 				original_tag = GER
@@ -1341,7 +1341,7 @@ ideas = {
 			traits = { electronics_concern }
 		}
 	}
-	materiel_research = {
+	weapons_research = {
 		designer = yes
 		mauser = {
 			allowed = {

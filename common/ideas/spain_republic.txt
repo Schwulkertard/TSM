@@ -127,7 +127,7 @@ ideas = {
 			}
 		}
 	}
-	materiel_research = {
+	weapons_research = {
 		designer = yes
 		SPR_star_bonifacio_echeverria = {
 			picture = SPR_star_bonifacio_echeverria
@@ -196,7 +196,7 @@ ideas = {
 			}
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		SPR_compania_telefonica_nacional = {
 			picture = SPR_compania_telefonica_nacional
 			allowed = {

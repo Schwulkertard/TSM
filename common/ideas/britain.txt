@@ -986,7 +986,7 @@ ideas = {
             }
         }
 	}
-	materiel_research = {
+	weapons_research = {
 		designer = yes
 		rsaf_enfield = {
 			allowed = {
@@ -1009,7 +1009,7 @@ ideas = {
 			traits = { artillery_research_trait }
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		aioc = {
 			allowed = {
 				original_TAG = ENG
