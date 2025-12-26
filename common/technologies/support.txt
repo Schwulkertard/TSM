@@ -44,6 +44,7 @@ technologies = {
 		}
 		research_cost = 1.0
 		start_year = 1918
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1918 }
@@ -80,6 +81,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1936 }
@@ -122,12 +124,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			dozer_blade
-			flamethrower
-		}
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
 		}
 		path = {
 			leads_to_tech = tech_engineers3
@@ -138,6 +134,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }
@@ -162,6 +159,7 @@ technologies = {
 			}
 		}
 	}
+	
 	tech_engineers3 = {
 		engineer = {
 			entrenchment  = 2
@@ -171,16 +169,20 @@ technologies = {
 			}
 		}
 		light_flame_tank = {
+			entrenchment  = 1
 			fort = {
+
 				attack = 0.10
 			}
 		}
 		medium_flame_tank = {
+			entrenchment  = 1
 			fort = {
 				attack = 0.10
 			}
 		}
 		heavy_flame_tank = {
+			entrenchment  = 1
 			fort = {
 				attack = 0.10
 			}
@@ -194,6 +196,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1942 }
@@ -226,10 +229,8 @@ technologies = {
 				defence = 0.1
 			}
 		}
-		enable_equipment_modules = {
-			auto_loader
-		}
 		light_flame_tank = {
+			entrenchment  = 1
 			urban = {
 				attack = 0.1
 			}
@@ -238,6 +239,7 @@ technologies = {
 			}
 		}
 		medium_flame_tank = {
+			entrenchment  = 1
 			urban = {
 				attack = 0.1
 			}
@@ -246,6 +248,7 @@ technologies = {
 			}
 		}
 		heavy_flame_tank = {
+			entrenchment  = 1
 			urban = {
 				attack = 0.1
 			}
@@ -258,6 +261,7 @@ technologies = {
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1945 }
@@ -298,6 +302,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1936 }
@@ -343,9 +348,13 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1939 }
+		}
+		enable_subunits ={
+			sniper_recon
 		}
 		categories = {
 			support_tech
@@ -380,9 +389,13 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1942 }
+		}
+		enable_subunits ={
+			rangers_support
 		}
 		categories = {
 			support_tech
@@ -413,6 +426,7 @@ technologies = {
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1945 }
@@ -450,6 +464,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1936 }
@@ -494,7 +509,7 @@ technologies = {
 	}
 	tech_military_police2 = {
 		military_police = {
-			max_organisation = 15
+			max_organisation=20
 		}
 		path = {
 			leads_to_tech = tech_military_police3
@@ -505,6 +520,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1939 }
@@ -523,7 +539,7 @@ technologies = {
 	}
 	tech_military_police3 = {
 		military_police = {
-			max_organisation = 15
+			max_organisation=20
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -534,6 +550,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1942 }
@@ -552,14 +569,14 @@ technologies = {
 	}
 	tech_military_police4 = {
 		military_police = {
-			suppression_factor = 0.1
-			max_organisation = 15
+			max_organisation=20
 		}
 		research_cost = 1
 		start_year = 1943
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1945 }
@@ -589,6 +606,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1936 }
@@ -616,9 +634,13 @@ technologies = {
 	tech_maintenance_company2 = {
 		maintenance_company = {
 			reliability_factor = 0.05
+			#equipment_capture_factor = 0.05
+			default_morale =0.2
 		}
 		enable_equipment_modules = {
 			easy_maintenance
+			plane_easy_maintenance
+			plane_easy_maintenance_m
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -629,6 +651,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1939 }
@@ -656,6 +679,7 @@ technologies = {
 	tech_maintenance_company3 = {
 		maintenance_company = {
 			reliability_factor = 0.05
+			default_morale =0.2
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -666,6 +690,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1942 }
@@ -692,13 +717,15 @@ technologies = {
 	}
 	tech_maintenance_company4 = {
 		maintenance_company = {
-			reliability_factor = 0.1
+			reliability_factor = 0.05
+			default_morale =0.2
 		}
 		research_cost = 1
 		start_year = 1943
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1945 }
@@ -739,6 +766,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1936 }
@@ -768,7 +796,6 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-			max_strength = 5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital3
@@ -779,6 +806,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1939 }
@@ -808,7 +836,6 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
-			max_strength = 5
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -819,6 +846,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1942 }
@@ -848,13 +876,13 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 			experience_loss_factor = -0.10
-			max_strength = 10
 		}
 		research_cost = 1
 		start_year = 1943
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1945 }
@@ -896,6 +924,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1936 }
@@ -939,6 +968,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1939 }
@@ -982,6 +1012,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1942 }
@@ -1017,6 +1048,7 @@ technologies = {
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1945 }
@@ -1059,6 +1091,7 @@ technologies = {
 		categories = {
 			year_1936
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1936 }
@@ -1090,6 +1123,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1939 }
@@ -1128,6 +1162,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1942 }
@@ -1162,6 +1197,7 @@ technologies = {
 		categories = {
 			year_1943
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1945 }
@@ -1193,16 +1229,14 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1910
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1918 }
 		}
+		
 		path = {
 			leads_to_tech = wartime_train
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = armored_train
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1228,44 +1262,13 @@ technologies = {
 			}
 		}
 	}
-	railway_gun = {
-		enable_equipments = {
-			railway_gun_equipment_1
-		}
-		research_cost = 1.5
-		start_year = 1940
-		categories = {
-			year_1940
-		}
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1940 }
-		}
-		categories = {
-			train_tech
-			artillery
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				OR = {
-					TAG = GER
-					tag = SOV
-				}
-				factor = 1.5
-			}
-		}
-	}
+	
 	wartime_train = {
 		enable_equipments = {
 			train_equipment_2
 		}
 		path = {
-			leads_to_tech = railway_gun
+			leads_to_tech = armored_train
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
@@ -1273,6 +1276,7 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
 			position = { x = 0 y = 4 }
@@ -1316,9 +1320,10 @@ technologies = {
 		categories = {
 			year_1941
 		}
+		special_project_specialization = { specialization_land }
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 0 y = @1940 }
 		}
 		categories = {
 			train_tech
