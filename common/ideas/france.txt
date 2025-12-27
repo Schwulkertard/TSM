@@ -231,7 +231,7 @@ ideas = {
 				
 			}
 		}
-		40_hour_work_week = {
+		fourty_hour_work_week = {
 			allowed = {
 				always = yes
 			}

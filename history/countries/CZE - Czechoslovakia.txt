@@ -1,11 +1,6 @@
 capital = 9
 oob = "CZE_1936"
 set_technology = {
-	desertinfantry_at = 1
-	shocktroops = 1
-	tech_mountaineers = 1
-	paratroopers = 1
-	marines = 1
 	motorised_infantry = 1
 	
 	

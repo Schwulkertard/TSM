@@ -93,14 +93,6 @@ characters={
 				factor  = 10.000
 				modifier  = {
 					is_historical_focus_on  = yes 
-					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
-					}
-					factor  = 0.000
-				}
-				modifier  = {
-					is_historical_focus_on  = yes 
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
@@ -1551,14 +1543,6 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 10.000
-				modifier  = {
-					is_historical_focus_on  = yes 
-					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
-					}
-					factor  = 0.000
-				}
 				modifier  = {
 					is_historical_focus_on  = yes 
 					NOT  = {

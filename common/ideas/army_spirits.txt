@@ -128,11 +128,6 @@ ideas = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
-
-				modifier = {
-					factor = 2
-					has_tech = superior_firepower
-				}
 			}
 		}
 		
@@ -176,11 +171,6 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = trench_warfare
 				}
 			}
 		}
@@ -386,11 +376,6 @@ ideas = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
-
-				modifier = {
-					factor = 2
-					has_tech = mobile_warfare
-				}
 			}
 		}
 
@@ -415,11 +400,6 @@ ideas = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
-
-				modifier = {
-					factor = 2
-					has_tech = superior_firepower
-				}
 			}
 		}
 
@@ -436,11 +416,6 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
-				}
-
-				modifier = {
-					factor = 2
-					has_tech = trench_warfare
 				}
 			}
 		}

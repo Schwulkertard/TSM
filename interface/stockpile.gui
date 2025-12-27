@@ -27,13 +27,13 @@ guiTypes = {
 			buttonText = "Stockpile"
 			#frame=0
 			#quadTextureSprite = "GFX_military_deployment_add_line_btn"
-			position = { x=130 y=12}
+			position = { x=150 y=12}
 			Orientation = "UPPER_LEFT"
 			#alwaystransparent = yes
 		}
 		instantTextboxType = {
 				name = "stockpile_title"
-				position = { x=22 y=146 }
+				position = { x=592 y=126 }
 				font = "hoi_16mbs"
 				text = "Stockpile:"
 				maxWidth = 78
@@ -43,7 +43,7 @@ guiTypes = {
 			}
 		instantTextboxType = {
 				name = "stockpile_title2"
-				position = { x=22 y=195 }
+				position = { x=22 y=265 }
 				font = "hoi_16mbs"
 				text = "Max Stockpile: [?resource_stockpile_capacity^4|*1]"
 				maxWidth = 120
@@ -53,7 +53,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_oil"
-				position = { x=93 y=145  }
+				position = { x=582 y=145  }
 				font = "hoi_16mbs"
 				text = "0"
 				maxWidth = 78
@@ -63,7 +63,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_aluminium"
-				position = { x=162 y=145  }
+				position = { x=582 y=165  }
 				font = "hoi_16mbs"				
 				text= [aluminium_stockpile_text]
 				maxWidth = 78
@@ -73,7 +73,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_rubber"
-				position = { x=229 y=145  }
+				position = { x=582 y=185  }
 				font = "hoi_16mbs"				
 				text= [rubber_stockpile_text]
 				maxWidth = 78
@@ -83,7 +83,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_tungsten"
-				position = { x=296 y=145  }
+				position = { x=582 y=205  }
 				font = "hoi_16mbs"				
 				text= [tungsten_stockpile_text]
 				maxWidth = 78
@@ -93,7 +93,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_steel"
-				position = { x=365 y=145  }
+				position = { x=582 y=225  }
 				font = "hoi_16mbs"				
 				text= [steel_stockpile_text]
 				maxWidth = 78
@@ -103,7 +103,7 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "stockpile_chromium"
-				position = { x=432 y=145  }
+				position = { x=582 y=245  }
 				font = "hoi_16mbs"				
 				text= [chromium_stockpile_text]
 				maxWidth = 78

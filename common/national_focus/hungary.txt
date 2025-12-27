@@ -1171,7 +1171,6 @@ focus_tree = {
 				name = HUN_sf
 				uses = 1
 				bonus = 1
-				technology = assault_guns_2
 				technology = amphibious_mechanized_infantry_2
 				technology = armored_car2
 			}
@@ -1232,13 +1231,6 @@ focus_tree = {
 		}
 		cost = 5
 		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_SF
-				uses = 1
-				ahead_reduction = 2
-				bonus = 1
-				technology = elite_forces
-			}
 		}
 	}
 	focus = {

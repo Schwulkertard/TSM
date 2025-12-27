@@ -471,11 +471,7 @@ update_pacific_war = {
 		limit = {ITA={OR={413= {is_controlled_by_GER_or_ally=yes} 415= {is_controlled_by_GER_or_ally=yes} 422= {is_controlled_by_GER_or_ally=yes}  582= {is_controlled_by_GER_or_ally=yes}} NOT={ has_dynamic_modifier = {modifier=imperium_romanum}} date<1941.1.1}}
 		ITA={add_dynamic_modifier = {modifier=imperium_romanum}}
 	}
-	
-	if= { 
-		limit = {ITA={AND={has_completed_focus=ITA_stab OR={413= {is_controlled_by_GER_or_ally=yes} 415= {is_controlled_by_GER_or_ally=yes} 422= {is_controlled_by_GER_or_ally=yes}  582= {is_controlled_by_GER_or_ally=yes}} NOT={ has_idea = SPA_the_duty_to_work}}}}
-		ITA={add_ideas=SPA_the_duty_to_work}
-	}
+
 	if= { 
 		limit = {ITA={413= {is_controlled_by_GER_or_ally=no} 415= {is_controlled_by_GER_or_ally=no} 422= {is_controlled_by_GER_or_ally=no}  582= {is_controlled_by_GER_or_ally=no}  has_dynamic_modifier = {modifier=imperium_romanum} date<1941.1.1}}
 		ITA={remove_dynamic_modifier = {modifier=imperium_romanum}}

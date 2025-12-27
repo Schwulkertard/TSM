@@ -9,7 +9,51 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+		}
+		speed3_africa={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_attack_factor =-0.5
+			
+			}
+			equipment_bonus = {
+				medium_plane_airframe = {
+					instant = yes
+					air_defence = -0.5
+				}
+				large_plane_airframe = {
+					instant = yes
+					air_defence = -0.5
 				}
 			}
+		}
+		speed3_scw={
+			picture = generic_infantry_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_attack_factor = -0.4
+				army_defence_factor = -0.4
+				army_org_factor = 0.6
+				breakthrough_factor = 0.3
+				army_speed_factor = -0.66
+				army_strength_factor = 12
+				land_reinforce_rate = 0.1
+				max_dig_in_factor = -0.33
+				experience_gain_army_unit_factor=-0.5
+			}
+		}
 	}
+}
 

@@ -222,6 +222,221 @@ ideas = {
 			picture = generic_infantry_bonus
 		}
 		# POLITICAL
+		JAP_island_hopping1 = {
+			name = rubber
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.35
+				war_support_factor = -0.20
+				stability_factor = -0.20 
+			}
+		}
+		JAP_island_hopping2 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.35
+				war_support_factor = -0.20
+				stability_factor = -0.20
+			}
+		}
+		JAP_island_hopping3 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				war_support_factor = -0.25
+				stability_factor = -0.25
+			}
+		}
+		JAP_island_hopping4 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.20
+				war_support_factor = -0.2
+				stability_factor = -0.2 
+			}
+		}
+		JAP_island_hopping5 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				war_support_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
+		JAP_island_hopping6 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = -0.10
+				stability_factor = -0.10
+			}
+		}
+		JAP_island_hopping7 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+		JAP_island_hopping8 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0
+				war_support_factor = 0
+				stability_factor = 0 
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+			}
+		}
+		JAP_island_hopping9 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.6
+			}
+		}
+		JAP_island_hopping10 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				war_support_factor = 0.10
+				stability_factor = 0.10
+				army_core_attack_factor = 0.7
+				army_core_defence_factor = 0.7
+			}
+		}
+		JAP_island_hopping11 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+		JAP_island_hopping12 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.20
+				war_support_factor = 0.20
+				stability_factor = 0.20
+				army_core_attack_factor = 0.9
+				army_core_defence_factor = 0.9
+			}
+		}
+		JAP_island_hopping13 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				war_support_factor = 0.25
+				stability_factor = 0.25
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1
+			}
+		}
+		JAP_island_hopping14 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.30
+				war_support_factor = 0.18
+				stability_factor = 0.18
+				army_core_attack_factor = 1.1
+				army_core_defence_factor = 1.1
+			}
+		}
+		JAP_island_hopping15 = {
+			allowed = {
+				always = no
+			}
+			picture = rubber
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.35
+				political_power_gain = 0.35
+				war_support_factor = 0.20
+				stability_factor = 0.20
+				army_core_attack_factor = 1.1
+				army_core_defence_factor = 1.1
+			}
+		}
 		student_mobilization_idea = {
 			allowed = {
 				always = no
@@ -1259,7 +1474,7 @@ ideas = {
 					armor_value = 0.05
 					build_cost_ic = 0.05
 				}
-				amphibious_tank_equipment = {
+				amphibious_tank_chassis = {
 					reliability = 0.05
 					soft_attack = 0.1
 					hard_attack = 0.1
@@ -1291,7 +1506,7 @@ ideas = {
 					hard_attack = 0.1
 					build_cost_ic = 0.05
 				}
-				light_tank_aa_equipment = {
+				light_tank_aa_chassis = {
 					reliability = 0.05
 					air_attack = 0.1
 					build_cost_ic = 0.05

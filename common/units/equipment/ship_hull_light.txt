@@ -50,6 +50,12 @@ equipments = {
  				}
  			}
  			rear_1_custom_slot = mid_1_custom_slot
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_special_slot
+				}
+			}
  		}
  		module_count_limit = {
  			category = ship_radar
@@ -122,6 +128,12 @@ equipments = {
  				}
  			}
  			rear_1_custom_slot = mid_1_custom_slot
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_special_slot
+				}
+			}
  		}
  		default_modules = {
  			mid_1_custom_slot = empty
@@ -179,6 +191,12 @@ equipments = {
  					ship_light_battery
  				}
  			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_special_slot
+				}
+			}
  		}
  		default_modules = {
  			fixed_ship_engine_slot = light_ship_engine_3
@@ -237,6 +255,12 @@ equipments = {
  					ship_light_battery
  				}
  			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_special_slot
+				}
+			}
  		}
  		surface_detection = 20
  		reliability = 0.92

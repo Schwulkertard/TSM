@@ -41,7 +41,35 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = FRA_invest_in_the_metropole
+		icon = GFX_goal_generic_construct_civilian
+		x = -3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_devalue_the_franc }
+		mutually_exclusive = { }
+		relative_position_id = FRA_devalue_the_franc
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = FRA_Metropolitan_industry
+
+		}
+	}
 	focus = {
 		id = FRA_autoroutes
 		icon = GFX_goal_generic_construct_infrastructure
@@ -136,6 +164,43 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FRA_invest_in_the_colonies
+		icon = GFX_goal_generic_construct_civilian
+		x = 3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_devalue_the_franc }
+		mutually_exclusive = {  }
+		relative_position_id = FRA_devalue_the_franc
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			any_owned_state = {
+				not = { is_core_of = ROOT }
+				not = { is_on_continent = europe }
+				is_controlled_by = ROOT
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					not = { is_on_continent = europe }
+				}
+				add_compliance = 30
+			}
+			add_ideas = {
+				colonial_development
+			}
+		}
+	}
+	focus = {
 		id = FRA_West_Africa_investments
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
@@ -221,35 +286,6 @@ focus_tree = {
 					instant_build = yes
 				}
 		}
-		}
-	}
-	focus = {
-		id = FRA_invest_in_the_metropole
-		icon = GFX_goal_generic_construct_civilian
-		x = -3
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = FRA_devalue_the_franc }
-		mutually_exclusive = { }
-		relative_position_id = FRA_devalue_the_franc
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {
-			add_ideas = FRA_Metropolitan_industry
-
 		}
 	}
 	focus = {
@@ -445,45 +481,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-	focus = {
-		id = FRA_invest_in_the_colonies
-		icon = GFX_goal_generic_construct_civilian
-		x = 3
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = FRA_devalue_the_franc }
-		mutually_exclusive = {  }
-		relative_position_id = FRA_devalue_the_franc
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = {
-				not = { is_core_of = ROOT }
-				not = { is_on_continent = europe }
-				is_controlled_by = ROOT
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					not = { is_core_of = ROOT }
-					not = { is_on_continent = europe }
-				}
-				add_compliance = 30
-			}
-			add_ideas = {
-				colonial_development
-			}
-		}
-	}
 	focus = {
 		id = FRA_extra_research_slot
 		icon = GFX_focus_research
@@ -615,7 +612,40 @@ focus_tree = {
 		}
 	}
 
-
+	focus = {
+		id = FRA_army_reform
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = FRA_heavy_armor_focus 
+			focus = FRA_improved_production_methods
+			focus = FRA_artillery_focus
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_heavy_armor_focus
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			remove_ideas = FRA_victors_of_wwi
+			army_experience = 100
+			add_tech_bonus = {
+				name = FRA_army_reform
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				technology = antitank1
+				technology = antitank2
+				technology = antitank3
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
 
 	focus = {
 		id = FRA_defensive_focus
@@ -949,40 +979,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_army_reform
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {
-			focus = FRA_heavy_armor_focus 
-			focus = FRA_improved_production_methods
-			focus = FRA_artillery_focus
-		}
-		x = 0
-		y = 1
-		relative_position_id = FRA_heavy_armor_focus
-		cost = 5
-		available_if_capitulated = yes
-		available = {
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			remove_ideas = FRA_victors_of_wwi
-			army_experience = 100
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				technology = antitank1
-				technology = antitank2
-				technology = antitank3
-				bonus = 1
-				uses = 2
-			}
-		}
-	}
-	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 25
@@ -1058,9 +1054,53 @@ focus_tree = {
 		add_political_power = 75
 		custom_effect_tooltip = available_political_advisor	
 		show_ideas_tooltip = georges_bonnet
-	}
 		}
-	
+	}
+		focus = {
+		id = FRA_economic_devolution
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_invest_in_the_colonies
+			focus = FRA_invest_in_the_metropole
+		}
+		relative_position_id = FRA_invest_in_the_metropole
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+			NOT = {
+				FRA_has_inefficient_economy = yes
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = { has_idea = FRA_inefficient_economy_2 }
+				swap_ideas = {
+					remove_idea = FRA_inefficient_economy_2
+					add_idea = FRA_inefficient_economy_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = FRA_inefficient_economy_1
+				}
+				remove_ideas = FRA_inefficient_economy_1
+			}
+		}
+	}
 	focus = {
 		id = FRA_laissez_faire
 		icon = GFX_goal_generic_consumer_goods
@@ -1194,7 +1234,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			REMINDER TO ADD SHIT FOR MIOOOS
+			#REMINDER TO ADD SHIT FOR MIOOOS
 			swap_ideas = { 
 			remove_idea = FRA_small_businesses_focus
 			add_idea = FRA_centralised_industry
@@ -1255,24 +1295,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_france_undividable
-		icon = GFX_focus_chi_reach_out_to_france
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = FRA_freedom_front
-		}
-		relative_position_id = FRA_freedom_front
-		cost = 5
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = FRA_freedom_front
 		icon = GFX_goal_generic_national_unity
 		x = 0
@@ -1298,6 +1320,24 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.20 }
+		}
+	}
+	focus = {
+		id = FRA_france_undividable
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_freedom_front
+		}
+		relative_position_id = FRA_freedom_front
+		cost = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -1395,7 +1435,7 @@ focus_tree = {
 			custom_effect_tooltip = "This focus will automatically bypass when the idea Worker Strikes expires"
 			swap_ideas = {
 					remove_idea = worker_strikes
-					add_idea = 40_hour_work_week
+					add_idea = fourty_hour_work_week
 				}
 		}
 	}
@@ -1413,7 +1453,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-        NOT = { has_idea = 40_hour_work_week }
+        NOT = { has_idea = fourty_hour_work_week }
 		}
 		bypass = {
 		
@@ -1424,51 +1464,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
 			add_ideas = FRA_Big_Industry_Conglomerates
-		}
-	}
-	focus = {
-		id = FRA_economic_devolution
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_invest_in_the_colonies
-			focus = FRA_invest_in_the_metropole
-		}
-		relative_position_id = FRA_invest_in_the_metropole
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-			NOT = {
-				FRA_has_inefficient_economy = yes
-			}
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			if = {
-				limit = { has_idea = FRA_inefficient_economy_2 }
-				swap_ideas = {
-					remove_idea = FRA_inefficient_economy_2
-					add_idea = FRA_inefficient_economy_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = FRA_inefficient_economy_1
-				}
-				remove_ideas = FRA_inefficient_economy_1
-			}
 		}
 	}
 	focus = {
@@ -1930,7 +1925,7 @@ focus_tree = {
 			producer = FRA
 		}
 		add_equipment_to_stockpile = {
-			type = motorized_equipment
+			type = motorized_equipment_1
 			amount = 1000
 			producer = FRA
 		}

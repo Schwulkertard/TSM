@@ -143,7 +143,7 @@
 		add_equipment_to_stockpile = {
 
 		type = motorized_equipment_1
-		amount = 200
+		amount = 400
 		producer = MAN
 		}
 
@@ -2337,17 +2337,7 @@ completion_reward = {
 		amount = 5000
 		producer = MAN
 		}
-
-
-
-		add_equipment_to_stockpile = {
-
-		type = motorized_equipment_1
-		amount = 200
-		producer = MAN
-		}
-
-
+		
 		add_equipment_to_stockpile = {
 
 		type = support_equipment_1

@@ -149,9 +149,6 @@ focus_tree = {
 				category = cl_tech
 				category = ca_tech
 			}
-			set_technology = {
-				improved_decimetric_radar = 1
-			}
 		}
 	}
 	focus = {
@@ -1174,7 +1171,7 @@ focus = {
 			}
 			}
 			set_technology={
-				fighter2_alt=1
+				improved_small_airframe = 1
 			}
 			set_technology={
 				fighter3=1
@@ -1246,15 +1243,8 @@ focus = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
-				uses = 1
-				technology=fighter4
-			}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
 				uses = 2
 				technology=cas3
-				technology=cas4
 			}
 		}
 	}
@@ -1375,18 +1365,6 @@ focus = {
 		completion_reward = {
 		    add_research_slot = 1
 			add_stability = 0.075
-			GER = {
-				add_tech_bonus = {
-					bonus = 3.0
-					uses = 1
-					technology = tech_mountaineers2
-				}
-				add_tech_bonus = {
-					bonus = 3.0
-					uses = 2
-					category = naval_doctrine
-				}
-			}
 			add_to_tech_sharing_group = axis_research
 			add_tech_bonus = {
 				name = synth_bonus

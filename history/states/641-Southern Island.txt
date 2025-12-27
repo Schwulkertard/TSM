@@ -7,6 +7,7 @@ state={
  	}
  	state_category = large_town
  	history={
+		add_extra_state_shared_building_slots = 2
  		owner = AST
  		buildings = {
  			infrastructure = 7

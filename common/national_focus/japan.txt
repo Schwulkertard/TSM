@@ -1564,8 +1564,8 @@ focus = {
 					name = JAP_jet_prototypes
 					bonus = 1.0
 					uses = 2
-					technology = fighter4
-					technology = heavy_fighter4
+					technology = late_small_airframe
+					technology = late_medium_airframe
 				}
 			}
 		}

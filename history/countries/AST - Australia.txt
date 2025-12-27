@@ -1,4 +1,4 @@
-capital = 285
+capital = 273
 oob = "AST_1936"
 set_stability = 0.65
 set_war_support = 0.15
@@ -7,15 +7,9 @@ add_ideas = reliance_on_natural_rubber
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
-	assault_guns_1 = 1
 	amphibious_mechanized_infantry = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	desertinfantry_at = 1
-	shocktroops = 1
-	paratroopers = 1
-	tech_mountaineers = 1
-	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -35,11 +29,23 @@ set_technology = {
 	motorised_infantry = 1
 	fuel_silos = 1
 	interwar_antitank = 1
-	fleet_in_being = 1
 	armored_car1 = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_small_airframe = 1
+	basic_medium_airframe = 1
+	bba_early_transport_plane = 1
+	early_bombs = 1
+	air_torpedoe_1 = 1
+	photo_reconnaisance = 1
+	aa_lmg = 1
+	engines_1 = 1
+	engines_2 = 1
+	aircraft_construction = 1
 }
 set_variable = {
 	var = min_fuel
@@ -60,7 +66,6 @@ if = {
 		early_carrier = 1
 		transport = 1
 	}
-	set_naval_oob = "AST_1936_naval_legacy"
 }
 if = {
 	limit = {
@@ -77,20 +82,16 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}
-	set_naval_oob = "AST_1936_naval"
 }
 recruit_character = AST_john_curtin
 recruit_character = AST_leslie_morshead
@@ -149,139 +150,5 @@ add_equipment_to_stockpile = {
 	amount = 30
 	producer = AST
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Sydney Class"
-		type = light_cruiser_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_gun_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Canberra Class"
-		type = heavy_cruiser_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	### Ship Variants ###
-	# Light Cruisers #
-	create_equipment_variant = {
-		name = "Sydney Class"
-		type = ship_hull_cruiser_2
-		name_group = AST_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_light_medium_battery_2
-		}
-	}
-	create_equipment_variant = {
-		name = "Town Class"
-		type = ship_hull_cruiser_1
-		name_group = AST_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	# Heavy Cruisers #
-	create_equipment_variant = {
-		name = "Canberra Class"
-		type = ship_hull_cruiser_2
-		name_group = AST_CA_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			front_1_custom_slot = ship_medium_battery_2
-			mid_1_custom_slot = ship_medium_battery_2
-			mid_2_custom_slot = ship_medium_battery_2
-			rear_1_custom_slot = ship_medium_battery_2
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "V/W Class"
-		type = ship_hull_light_1
-		name_group = AST_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	create_equipment_variant = {
-		name = "S Class"
-		type = ship_hull_light_1
-		name_group = AST_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "E/F/G/H Class"
-		type = ship_hull_light_2
-		name_group = AST_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_sonar_2
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_torpedo_2
-		}
-	}
-}
+
 

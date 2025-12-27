@@ -1,5 +1,27 @@
 ideas = {
 	country = {
+		ENG_allied_exped_corp = {
+			allowed = {
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+			    send_volunteer_size	= 1
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension	 = -1
+			}
+		}
+		ENG_allied_exped_corp2 = {
+			allowed = {
+			}
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+			    send_volunteer_size	= 1
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension	 = -1
+			}
+		}
 		uk_cw_infra = {
 			allowed = {
 				original_tag = ENG

@@ -1,6 +1,5 @@
 recruit_character = SPR_SPA_manuel_azana
 recruit_character = SPR_SPA_tomas_garciano_goni_vanilla
-recruit_character = SPR_SPA_emilio_mola
 recruit_character = SPR_SPA_miguel_cabanellas_ferrer_vanilla
 recruit_character = SPR_SPA_fransisco_moreno_fernandez_vanilla
 recruit_character = SPR_SPA_luis_carrero_blanco
@@ -25,20 +24,17 @@ set_variable = {
 	value = 0.800
 }
 add_offsite_building = { type = arms_factory level = 3 }
-set_research_slots = 0
+set_research_slots = 1
 set_technology = {
 	special_forces_mountaineers = 1
 	special_forces_marines = 1
 	special_forces_paratroopers = 1
-	#desertinfantry_at = 1
-	#shocktroops = 1
-	#jungletroops = 1
 	basic_train = 1
 	bba_early_transport_plane = 1
 	armor_tech_1 = 1
 	engine_tech_1 = 1
 	tech_trucks = 1 
- motorised_infantry = 1
+ 	motorised_infantry = 1
 	fuel_silos = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
@@ -49,9 +45,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	#early_fighter = 1
-	#early_bomber = 1
-	#naval_bomber1 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

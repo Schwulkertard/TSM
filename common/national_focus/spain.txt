@@ -1075,21 +1075,6 @@ focus_tree = {
 		cost = 7.2
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 2.0
-				uses = 1
-				technology = extreme_environment_training
-			}
-			add_tech_bonus = {
-				bonus = 2.0
-				uses = 1
-				technology = survival_training 
-			}
-			add_tech_bonus = {
-				bonus = 2.0
-				uses = 1
-				technology = elite_forces 
-			}
 		}
 	}
 	focus = {

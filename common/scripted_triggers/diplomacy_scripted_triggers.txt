@@ -40,16 +40,6 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { OR={NOT={FROM={tag=USA} }date>1941.6.1}} 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { OR={NOT={tag=USA}  date>1941.6.1}}  
-DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER= {
-OR={NOT={FROM={has_tech = trench_warfare}}
-AND={FROM={has_tech = trench_warfare} ROOT={has_tech = trench_warfare}}
-}
-}
-DIPLOMACY_REQUEST_EXP_FORCE_ENABLE_TRIGGER = {
-OR={NOT={ROOT={has_tech = trench_warfare}}
-AND={FROM={has_tech = trench_warfare} ROOT={has_tech = trench_warfare}}
-}
-}
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 	if = {
 		limit = {

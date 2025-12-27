@@ -1,4 +1,4 @@
-capital = 266
+capital = 383
 oob = "PER_1936"
 set_research_slots = 0
 # Starting tech

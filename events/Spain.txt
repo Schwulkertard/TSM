@@ -295,7 +295,6 @@ country_event = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			add_ideas = FRA_protected_by_the_maginot_line			
-			remove_ideas = FRA_protected_by_the_maginot_line_pre_spain
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp
 			remove_ideas = SPR_kindergarten

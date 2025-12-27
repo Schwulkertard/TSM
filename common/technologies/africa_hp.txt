@@ -26,9 +26,10 @@ technologies = {
 			max_strength = 2
 		}
 	}
-	serb_modding_tank_gun = {
-		enable_equipment_modules = {
-			tank_medium_cannon_2_improved
+	soviet_air = {
+		enable_building = {
+			building =air_base
+			level = 20
 		}
 	}
 }

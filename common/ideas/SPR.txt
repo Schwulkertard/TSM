@@ -143,48 +143,6 @@ ideas = {
 				max_surrender_limit_offset = 0.15
 			}
 		}
-		SPA_anti_republican_offensive = {
-			picture = SPR_nationalist_remnants
-			allowed = {
-				original_tag = SPR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = SPD
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-		SPA_anti_anarchist_offensive = {
-			picture = SPR_nationalist_remnants
-			allowed = {
-				original_tag = SPR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = SPC
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-		SPA_anti_carlist_offensive = {
-			picture = SPR_nationalist_remnants
-			allowed = {
-				original_tag = SPR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = SPB
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
 		SPA_recovering_from_civil_war = {
 			name = SPA_recovering_from_civil_war
 			picture = FRA_matignon_agreements
@@ -397,34 +355,6 @@ ideas = {
 				training_time_factor = -0.15
 				conscription = 0.01
 				
-			}
-		}
-		SPA_eliminate_the_carlists = {
-			picture = SPA_eliminate_the_carlists
-			allowed = {
-				original_tag = SPR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = SPB
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-		SPA_no_compromise_on_carlist_ideals = {
-			picture = SPA_carlism
-			allowed = {
-				original_tag = SPR
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
 			}
 		}
 		SPA_expand_conscription = {

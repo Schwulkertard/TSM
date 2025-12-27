@@ -1379,10 +1379,7 @@ focus_tree = {
 			}
 			set_technology = {
 				radio_detection = 1
-				decimetric_radar = 1
-				improved_decimetric_radar = 1
 				centimetric_radar = 1
-				improved_centimetric_radar = 1
 			}
 		}
 	}

@@ -102,7 +102,6 @@ bookmarks = {
 			}
 			focuses = {
 				ITA_pact_of_steel
-				ITA_greece_war_goal
 			}
 		}
 		"JAP"={
@@ -114,8 +113,6 @@ bookmarks = {
 				JAP_militarism
 			}
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
 				JAP_strike_on_the_southern_resource_area
 			}
 		}
@@ -150,9 +147,6 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_two_nation_theory
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
 			}
 		}
 
@@ -179,9 +173,6 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_ig_farben_romania
-				ROM_institute_royal_dictatorship
-				ROM_preserve_greater_romania
 			}
 		}
 

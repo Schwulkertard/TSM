@@ -4,9 +4,6 @@ equipments = {
 		year = 1933
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
 		}
 		
  		can_license = no
@@ -841,9 +838,6 @@ equipments = {
 		year = 1933
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
 		}
 		upgrades = {
  			plane_engine_upgrade
@@ -1634,9 +1628,6 @@ equipments = {
 		year = 1933
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
 		}
 		upgrades = {
  			plane_engine_upgrade
@@ -2293,9 +2284,6 @@ cv_small_plane_airframe = {
 		year = 1933
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
 		}
 
 		is_archetype = yes

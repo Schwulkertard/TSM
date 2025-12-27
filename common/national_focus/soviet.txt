@@ -1371,19 +1371,19 @@ focus = {
 				name = air_bonus
 				bonus = 1.0
 				uses = 1
-				technology= cas2
+				technology= improved_small_airframe
 			}
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 1
 				uses = 1
-				technology= cas3
+				technology= advanced_small_airframe
 			}
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 1
 				uses = 1
-				technology= CAS4
+				technology= late_small_airframe
 			}
 		}
 	}
@@ -1500,7 +1500,7 @@ focus = {
 				name = air_bonus
 				bonus = 1
 				uses = 1
-				technology= fighter4
+				technology= late_small_airframe
 			}
 		}
 	}
@@ -1523,27 +1523,6 @@ focus = {
 				technology = antiair1
 				technology = antiair2
 				technology = antiair3
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_ocean_going_navy
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SOV_expand_red_fleet }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_expand_red_fleet
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 3.0
-				uses = 5
-				category = naval_doctrine
 			}
 		}
 	}
@@ -1608,18 +1587,18 @@ focus = {
 					fixed_ship_anti_air_slot=ship_anti_air_2
 					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
 					fixed_ship_engine_slot=heavy_ship_engine_3
-					fixed_ship_secondaries_slot=dp_ship_secondaries
+					fixed_ship_secondaries_slot=dp_ship_secondaries_2
 					fixed_ship_armor_slot=ship_armor_shbb
 					front_1_custom_slot=ship_super_heavy_battery_1
-					mid_1_custom_slot=dp_ship_secondaries
-					mid_2_custom_slot=dp_ship_secondaries
+					mid_1_custom_slot=dp_ship_secondaries_2
+					mid_2_custom_slot=dp_ship_secondaries_2
 					rear_1_custom_slot=ship_super_heavy_battery_1
 					front_2_custom_slot=ship_super_heavy_battery_1
-					mid_3_custom_slot=dp_ship_secondaries
+					mid_3_custom_slot=dp_ship_secondaries_2
 					rear_2_custom_slot=ship_super_heavy_battery_1
 				}
 			}
-			custom_effect_tooltip = "Adds a Sovetsky Soyuz Class super heavy battleship to the production queue at 70% completion"
+			custom_effect_tooltip = "Adds Two Sovetsky Soyuz Class super heavy battleship to the production queue at 70% completion"
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
@@ -1629,9 +1608,29 @@ focus = {
 					}
 					name = "Sovetsky Soyuz"
 					requested_factories = 1
-					progress = 0.7
-					amount = 1
+					progress = 0.5
+					amount = 2
 				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_ocean_going_navy
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_expand_red_fleet
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 3.0
+				uses = 5
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1968,7 +1967,6 @@ focus = {
 		prerequisite = { focus = SOV_heavy_tonk}
 		available = {
 		date > 1942.06.01
-		has_tech = mobile_warfare
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -1980,26 +1978,6 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-		custom_effect_tooltip = SOV_doc_tt
-		  set_technology = {
-		   mobile_warfare = 1 popup=no
-		   delay = 1 popup=no
-		   elastic_defence = 1 popup=no
-		   mobile_infantry = 1 popup=no
-		   mass_motorization = 1 popup=no
-		   mechanised_offensive = 1 popup=no
-		   armored_spearhead  = 1 popup=no
-		   schwerpunk = 1 popup=no
-		   blitzkrieg = 1 popup=no
-		   kampfgruppe  = 1 popup=no
-		   firebrigades = 1 popup=no
-           backhand_blow = 1 popup=no
-           modern_blitzkrieg = 1 popup=no
-		   volkssturm = 1 popup=no
-		   nd_conscription = 1 popup=no
-		   werwolf_guerillas = 1 popup=no
-
-		}
 		custom_effect_tooltip = SOV_doc_tt
 		}
 	}
@@ -2526,24 +2504,24 @@ focus = {
 		set_technology= {synth_oil_experiments=1 popup=no}
 		
 		242 = {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
 				level = 3
 				instant_build = yes
 			}
 		}
 		210 = {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
 				level = 3
 				instant_build = yes
 			}
 		}
 		222 = {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-				add_extra_state_shared_building_slots = 3
 				type = synthetic_refinery
 				level = 3
 				instant_build = yes

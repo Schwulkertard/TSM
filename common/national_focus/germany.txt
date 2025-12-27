@@ -1306,11 +1306,6 @@ focus = {
 			bonus = 1
 			uses = 1
 			}
-			add_tech_bonus = {
-				technology = fighter4
-				bonus = 1
-				uses = 1
-				}
 		}
 	}
 	focus = {
@@ -3808,13 +3803,13 @@ focus = {
 			name = bomber_bonus
 			bonus = 1
 			uses = 1
-			technology = CAS3
+			technology = advanced_small_airframe
 		}
 		add_tech_bonus = {
 			name = bomber_bonus
 			bonus = 1
 			uses = 1
-			technology = CAS4
+			technology = late_small_airframe
 		}		
 						}	
 		}
@@ -3840,7 +3835,6 @@ focus = {
 	relative_position_id = GER_ground_support
 	cost = 5
 	completion_reward = {
-		set_technology = {advanced_centimetric_radar =1}
 		add_ideas = GER_advanced_radar_idea
 		}
 }							

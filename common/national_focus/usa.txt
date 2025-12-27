@@ -1158,8 +1158,6 @@ focus = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
 				technology = tech_engineers
 				technology = tech_engineers2
 				technology = tech_engineers3
@@ -1254,7 +1252,7 @@ focus = {
                 name = fighter_command_focus
                 bonus = 1
                 uses = 1
-                technology= fighter4
+                technology= late_small_airframe
             }
         }
 	}

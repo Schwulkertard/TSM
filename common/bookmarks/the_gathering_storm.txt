@@ -101,7 +101,6 @@ bookmarks = {
 			}
 			focuses = {
 				ITA_pact_of_steel
-				ITA_greece_war_goal
 			}
 		}
 		"JAP"={
@@ -113,8 +112,6 @@ bookmarks = {
 				JAP_militarism
 			}
 			focuses = {
-				JAP_the_zero
-				JAP_warrior_spirit
 				JAP_strike_on_the_southern_resource_area
 			}
 		}
@@ -177,7 +174,6 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				YUG_idea_foreign_capital
-				HOL_combined_chiefs_of_staff_representation
 			}
 			focuses = {
 				MEX_focus_nationalize_the_oil_fields
@@ -210,9 +206,6 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_two_nation_theory
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
 			}
 		}
 
@@ -239,9 +232,6 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_ig_farben_romania
-				ROM_institute_royal_dictatorship
-				ROM_preserve_greater_romania
 			}
 		}
 
@@ -250,7 +240,6 @@ bookmarks = {
 			history = "SIA_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				MAN_faction_trade
 				SIA_thai_empire
 				SIA_golden_era
 			}
@@ -281,16 +270,6 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
-			
-		USP = {
-				every_character={					
-					limit= { is_army_leader = yes }
-					set_nationality = USA
-				}
-                #every_owned_state={
-                    #USA = {transfer_state=PREV}
-		#			}
-			}
 		}
 	}
 }

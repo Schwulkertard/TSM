@@ -106,413 +106,6 @@ faction_goal_building_up_guam = {
 #  # #  #  #  #  # #  # 
  ##  #  # ### #  # #  # 
 
-
-faction_goal_guerilla_expansion = {
-	name = guerilla_expansion_goal_name
-	description = guerilla_expansion_goal_desc
-	category = short_term
-	group = FOCUS_FILTER_POLITICAL_CHARACTER
-	allowed = {
-	}
-	visible = {
-		FROM = {
-			has_war = yes
-			is_literally_china = yes
-		}
-	}
-	completed = {
-		custom_trigger_tooltip = {
-			tooltip = GUERILLA_TOTAL_ABOVE_THRESHOLD
-			check_variable = { global.guerilla_counter > 4 }
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members 
-					limit = {
-						check_variable = { THIS.guerilla_counter > 2 }
-					}
-				}
-				name = GUERILLA_ABOVE_THRESHOLD
-			}
-			add_faction_influence_ratio = 0.2
-			add_war_support = 0.05
-		}
-	}
-	ai_will_do = {
-		base = 3 # Pretty much everyone should want to do this
-		modifier = {
-			add = 2 # PRC cares more
-			original_tag = PRC
-		}
-	}
-}
-
-faction_goal_north_subjugated = {
-	name = faction_goal_north_subjugated_name
-	description = faction_goal_north_subjugated_desc
-	category = short_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_south_flag
-				has_country_flag = CHI_tour_the_west_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_north }
-	}
-	completed = {
-		NXM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SHX = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		GSM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		HBC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		XIC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SND = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
-faction_goal_unlock_research = {
-	name = faction_goal_unlock_research_name
-	description = faction_goal_unlock_research_desc
-	category = short_term
-	group = FOCUS_FILTER_INTERNAL_AFFAIRS
-	available = {
-		FROM = { num_faction_members > 2 }
-	}
-	visible = {
-		FROM = { has_faction_research_unlocked = no }
-	}
-	select_effect = {
-		set_temp_variable = { total_techs = 0 }
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  {
-					faction_members
-				}
-			}
-			add_to_temp_variable = { total_techs = num_researched_technologies }
-		}
-		
-		multiply_temp_variable = {
-			var = total_techs
-			value = 1.20
-		}
-		scope:faction = {
-			set_variable = { unlock_military_techs_researched_target = total_techs }
-		}
-	}
-	completed = {
-		scope:faction = {
-			hidden_trigger = {
-				tooltip_evaluation = eval
-				set_temp_variable = { unlock_military_techs_researched_compare = 0 }			
-				all_collection_elements = {
-					collection = {
-						input = game:scope
-						operators =  { faction_members }
-					}
-					add_to_temp_variable = { unlock_military_techs_researched_compare = num_researched_technologies }
-				}
-				set_temp_variable = { unlock_military_techs_researched_compare_temp_target = unlock_military_techs_researched_compare }
-				multiply_temp_variable = { unlock_military_techs_researched_compare_temp_target = 1.20 }
-			}
-			if = {
-				limit = {
-					has_variable = unlock_military_techs_researched_target
-				}
-				check_variable = {
-					var = unlock_military_techs_researched_compare
-					value = unlock_military_techs_researched_target
-					compare = greater_than
-					tooltip = "GOAL_T_TRIGGER_A"
-				}
-			}
-			else = {
-				check_variable = {
-					var = unlock_military_techs_researched_compare
-					value = unlock_military_techs_researched_compare_temp_target
-					compare = greater_than
-					tooltip = "GOAL_T_TRIGGER_A"
-				}
-			}
-		}
-	}
-	complete_effect = {
-		set_faction_research_unlocked = yes
-		add_faction_initiative = 1
-	}
-	ai_will_do = {
-		base = 1000 # They should always do this if they can
-	}
-}
-
-faction_goal_unlock_military = {
-	name = faction_goal_unlock_military_name
-	description = faction_goal_unlock_military_desc
-	category = short_term
-	group = FOCUS_FILTER_INTERNAL_AFFAIRS
-	available = {
-		FROM = { num_faction_members > 2 }
-	}
-	visible = {
-		FROM = { has_faction_military_unlocked = no }
-	}
-	select_effect = {
-		set_temp_variable = { total_divs = 0 }
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  {
-					faction_members
-				}
-			}
-			add_to_temp_variable = { total_divs = num_armies }
-		}
-		
-		multiply_temp_variable = {
-			var = total_divs
-			value = 1.20
-		}
-		scope:faction = {
-			set_variable = { unlock_target = total_divs }
-		}
-	}
-	completed = {
-		scope:faction = {
-			hidden_trigger = {
-				tooltip_evaluation = eval
-				set_temp_variable = { unlock_compare = 0 }			
-				all_collection_elements = {
-					collection = {
-						input = game:scope
-						operators =  { faction_members }
-					}
-					add_to_temp_variable = { unlock_compare = num_armies }
-					set_temp_variable = { unlock_military_techs_researched_compare_temp_target = unlock_compare }
-					multiply_temp_variable = { unlock_military_techs_researched_compare_temp_target = 1.20 }
-				}
-			}
-			if = {
-				limit = {
-					has_variable = unlock_target
-				}
-				check_variable = {
-					var = unlock_compare
-					value = unlock_target
-					compare = greater_than
-					tooltip = "GOAL_T_TRIGGER_B"
-				}
-			}
-			else = {
-				check_variable = {
-					var = unlock_compare
-					value = unlock_military_techs_researched_compare_temp_target
-					compare = greater_than
-					tooltip = "GOAL_T_TRIGGER_B"
-				}
-			}
-		}
-	}
-	complete_effect = {
-		set_faction_military_unlocked = yes
-		add_faction_initiative = 1
-	}
-	ai_will_do = {
-		base = 1000 # They should always do this if they can
-	}
-}
-
-faction_goal_west_subjugated = {
-	name = faction_goal_west_subjugated_name
-	description = faction_goal_west_subjugated_desc
-	category = short_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_south_flag
-				has_country_flag = CHI_tour_the_north_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_west }
-	}
-	completed = {
-		XSM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		KHM = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SIK = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		SIC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
-faction_goal_south_subjugated = {
-	name = faction_goal_south_subjugated_name
-	description = faction_goal_south_subjugated_desc
-	group = FOCUS_FILTER_ANNEXATION
-	category = short_term
-	visible = {
-		FROM = {
-			original_tag = CHI
-			has_faction_template = faction_template_chinese_united_front 
-			NOT = {
-				has_country_flag = CHI_tour_the_north_flag
-				has_country_flag = CHI_tour_the_west_flag
-			}
-		}
-	}
-	available = {
-		FROM = { has_completed_focus = CHI_tour_the_south }
-	}
-	completed = {
-		GDC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		GXC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-		YUN = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 50
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members
-					limit = {
-						is_subject = yes
-					}
-				}
-				
-				name = ALL_FACTION_MEMBERS
-			}
-			custom_effect_tooltip = ALL_FACTION_MEMBERS
-			add_timed_idea = {
-				idea = idea_CHI_central_government_integration_pressure
-				days = 365
-			}
-		}
-	}
-	ai_will_do = {
-		base = 1
-	}
-}
-
-
  ###  ##  ###   ##  #  # 
    # #  # #  # #  # ## # 
    # #### ###  #### # ## 
@@ -569,117 +162,6 @@ faction_goal_coastal_security = {
  #  #  #  # #   #  ##   #      #  # # ##  #  #  # # ## 
   # #  #  # #   #  #    #      #  # #  #  #  #  # #  # 
 ##   ##    #   ### ###  #       ##  #  # ###  ##  #  # 
-
-
-faction_goal_production_quotas = {
-	name = production_quotas_goal_name
-	description = production_quotas_goal_desc
-	group = FOCUS_FILTER_INDUSTRY
-	category = short_term
-	allowed = {
-		original_tag = SOV
-	}
-	available = {
-		has_war = no
-	}
-	completed = {
-		count_in_collection = {
-			collection = {
-				input = game:scope
-				operators = { faction_members }
-				name = FACTION_NAME
-			}
-			stockpile = infantry_equipment
-			size > 100000
-		}
-		count_in_collection = {
-			collection = {
-				input = game:scope
-				operators = { faction_members }
-				name = FACTION_NAME
-			}
-			stockpile = artillery_equipment
-			size > 2500
-		}
-		count_in_collection = {
-			collection = {
-				input = game:scope
-				operators = { faction_members }
-				name = FACTION_NAME
-			}
-			stockpile = support_equipment
-			size > 1000
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 200
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = INFLUENCE_ABOVE_30_PERCENT
-		every_faction_member = {
-			limit = { faction_influence_ratio > 0.3}
-			add_political_power = 75
-		}
-	}
-	ai_will_do = {
-		base = 1
-		modifier = {
-			add = 1
-			date < 1940.1.1
-		}
-	}
-}
-
-faction_goal_stall_the_fascist_threat = {
-	name = stall_the_fascist_threat_goal_name
-	description = stall_the_fascist_threat_goal_desc
-	group = FOCUS_FILTER_INTERNAL_AFFAIRS
-	category = short_term
-	allowed = {
-	}
-	visible = {
-		date < 1938.6.1
-		FROM = {
-			original_tag = SOV
-		}
-	}
-	completed = {
-		OR = {
-			AND = {
-				date > 1939.1.1
-				NOT = { has_global_flag = scw_over }
-			}
-			AND = {
-				has_global_flag = scw_over
-				has_global_flag = republican_victory
-			}
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 200
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = ALL_FACTION_MEMBERS
-		every_faction_member = { army_experience = 50 }
-	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			add = 1
-			SPR_scw_in_progress = yes
-		}
-		modifier = {
-			add = 9 # SOV should always prio this
-			SPR_scw_in_progress = yes
-			original_tag = SOV
-		}
-	}
-}
-
 
 ##########################################################
 
@@ -799,7 +281,6 @@ faction_goal_spy_master = {
 				}
 			}
 			add_faction_initiative = 1
-			gain_random_agency_upgrade = yes
 		}
 		every_faction_member = { # Fallback in case someone completed everything
 			visible_when_empty = yes
@@ -2487,8 +1968,6 @@ faction_goal_develop_malayan_riches = {
 		OR = {
 			333 = { is_controlled_by_ROOT_or_ally = yes }
 			336 = {	is_controlled_by_ROOT_or_ally = yes }
-			1021 = { is_controlled_by_ROOT_or_ally = yes }
-			1024 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 	}
 	available = {
@@ -2498,8 +1977,6 @@ faction_goal_develop_malayan_riches = {
 		}
 		333 = { is_controlled_by_ROOT_or_ally = yes }
 		336 = {	is_controlled_by_ROOT_or_ally = yes }
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
-		1024 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	completed = {
 		333 = {
@@ -2507,14 +1984,6 @@ faction_goal_develop_malayan_riches = {
 			infrastructure > 4
 		}
 		336 = {
-			CONTROLLER = { has_tech = excavation3 }
-			infrastructure > 4
-		}
-		1021 = {
-			CONTROLLER = { has_tech = excavation3 }
-			infrastructure > 4
-		}
-		1024 = {
 			CONTROLLER = { has_tech = excavation3 }
 			infrastructure > 4
 		}
@@ -2529,10 +1998,6 @@ faction_goal_develop_malayan_riches = {
 			add_resource = {
 			    type = rubber
 			    amount = 8
-			}
-			add_resource = {
-			    type = coal
-			    amount = 1
 			}
 		}
 		336 = {
@@ -2553,26 +2018,6 @@ faction_goal_develop_malayan_riches = {
 			    amount = 4
 			}
 		}
-		1021 = {
-			add_resource = {
-			    type = aluminium
-			    amount = 3
-			}
-			add_resource = {
-			    type = tungsten
-			    amount = 12
-			}
-			add_resource = {
-			    type = steel
-			    amount = 4
-			}
-		}
-		1024 = {
-			add_resource = {
-			    type = rubber
-			    amount = 8
-			}
-		}
 	}
 	ai_will_do = {
 		base = 0
@@ -2581,8 +2026,6 @@ faction_goal_develop_malayan_riches = {
 			OR = {
 				controls_state = 333
 				controls_state = 336
-				controls_state = 1021
-				controls_state = 1024
 			}
 		}
 		modifier = {
@@ -2760,10 +2203,6 @@ faction_goal_develop_indonesian_riches = {
 			    type = rubber
 			    amount = 28
 			}
-			add_resource = {
-			    type = coal
-			    amount = 2
-			}
 		}
 		335 = {
 			add_resource = {
@@ -2793,10 +2232,6 @@ faction_goal_develop_indonesian_riches = {
 			add_resource = {
 			    type = rubber
 			    amount = 50
-			}
-			add_resource = {
-			    type = coal
-			    amount = 3
 			}
 		}
 		673 = {
@@ -4686,22 +4121,6 @@ faction_goal_fortify_strait_of_hormuz = {
 					level > 0
 				}
 			}
-			1013 = {
-				any_province_building_level = {
-					province = {
-						id = 13369
-					}
-					building = coastal_bunker
-					level > 0
-				}
-				any_province_building_level = {
-					province = {
-						id = 13369
-					}
-					building = bunker
-					level > 0
-				}
-			}
 			OR = {
 				AND = {
 					divisions_in_state = { state = 412 size > 0 }
@@ -4751,18 +4170,6 @@ faction_goal_fortify_strait_of_hormuz = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 13369
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				province = 13369
 				instant_build = yes
 			}
 		}
@@ -4903,48 +4310,16 @@ faction_goal_expand_singapore_naval_base = {
 		
 	}
 	visible = {
-		1021 = { is_controlled_by_ROOT_or_ally = yes }
 	}
 	available = {
 
 	}
 	completed = {
-		1021 = {
-			air_base > 7
-			any_province_building_level = {
-				province = {
-					all_provinces = yes
-				}
-				building = naval_base
-				level > 9
-			}
-			any_province_building_level = {
-				province = {
-					all_provinces = yes
-				}
-				building = coastal_bunker
-				level > 3
-			}
-		}
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
 		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
-		every_faction_member = { 
-			visible_when_empty = yes
-			limit = {
-				controls_state = 1021
-			}
-			add_faction_initiative = 1
-		}
-		1021 = {
-			add_building_construction = {
-				type = anti_air_building
-				level = 1
-				instant_build = yes
-			}
-		}
 	}
 	ai_will_do = {
 		base = 1
@@ -5165,17 +4540,6 @@ faction_goal_fortify_iwo_jima = {
 
 	}
 	completed = {
-		645 = {
-			air_base > 2
-			anti_air_building > 0
-			any_province_building_level = {
-				province = {
-					id = 13025
-				}
-				building = coastal_bunker
-				level > 1
-			}
-		}
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -5192,12 +4556,6 @@ faction_goal_fortify_iwo_jima = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = coastal_bunker
-				level = 1
-				province = 13025
 				instant_build = yes
 			}
 		}

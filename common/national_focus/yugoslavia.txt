@@ -1704,13 +1704,6 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = YUG_supremacy_of_offense
- 				bonus = 1.0
- 				uses = 2
- 				category = cat_mobile_warfare
- 				category = cat_superior_firepower
- 			}
  		}
  	}
  	focus = {

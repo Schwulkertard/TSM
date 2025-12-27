@@ -394,22 +394,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		on_research_complete = {
-			if = {
-				limit={has_idea=railwaygun_1}
-				remove_ideas = railwaygun_1
-			}
-			else_if = {
-				limit={has_idea=railwaygun_2}
-				remove_ideas =railwaygun_2
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_concentrated_industry
-				}
-				TAG = "[This.GetTAG]"
-			}
-		}
 		XOR = {
 			dispersed_industry
 		}
@@ -683,15 +667,6 @@ technologies = {
 			name = industry_folder
 			position = { x = 6 y = 2 }
 		}
-		on_research_complete = {
-			add_ideas = railwaygun_1
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry
-				}
-				TAG = "[This.GetTAG]"
-			}
-		}
 		ai_will_do = {
 			factor = 25
 			modifier = {
@@ -751,18 +726,6 @@ technologies = {
 		categories = {
 			year_1937
 		}
-		on_research_complete = {
-			swap_ideas = {
-				remove_idea = railwaygun_1
-				add_idea = railwaygun_2
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry2
-				}
-				TAG = "[This.GetTAG]"
-			}
-		}
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 4 }
@@ -801,18 +764,6 @@ technologies = {
 		categories = {
 			year_1939
 		}
-		on_research_complete = {
-			swap_ideas = {
-				remove_idea = railwaygun_2
-				add_idea = railwaygun_3
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry3
-				}
-				TAG = "[This.GetTAG]"
-			}
-		}
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 6 }
@@ -844,18 +795,6 @@ technologies = {
 		path = {
 			leads_to_tech = dispersed_industry5
 			research_cost_coeff = 1
-		}
-		on_research_complete = {
-			swap_ideas = {
-				remove_idea = railwaygun_3
-				add_idea = railwaygun_4
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry4
-				}
-				TAG = "[This.GetTAG]"
-			}
 		}
 		research_cost = 2
 		start_year = 1941
@@ -910,18 +849,6 @@ technologies = {
 				date > "1943.1.1"
 			}
 		}
-		on_research_complete = {
-			swap_ideas = {
-				remove_idea = railwaygun_4
-				add_idea = railwaygun_5
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry5
-				}
-				TAG = "[This.GetTAG]"
-			}
-		}
 		categories = {
 			industry
 			dispersed_industry_category
@@ -953,18 +880,6 @@ technologies = {
 			modifier = {
 				factor = 10
 				date > "1944.1.1"
-			}
-		}
-		on_research_complete = {
-			swap_ideas = {
-				remove_idea = railwaygun_5
-				add_idea = railwaygun_6
-			}
-			meta_effect = {
-				text = {
-					set_global_flag = [TAG]_dispersed_industry6
-				}
-				TAG = "[This.GetTAG]"
 			}
 		}
 		categories = {

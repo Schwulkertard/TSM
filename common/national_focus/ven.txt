@@ -136,13 +136,6 @@ focus = {
 				 completion_reward = { 
 			        every_state = {
 						limit= {OR = {state = 431 state = 430 state = 422 }}
-				
-						add_province_modifier = {
-							static_modifiers = { JAP_burma }
-							province = {
-								all_provinces = yes
-							}
-					}
 				}
 			}
 		}
@@ -164,14 +157,7 @@ focus = {
 						
 						 completion_reward = { 
 							every_state = {
-								limit= {OR = {state = 431 state = 430 state = 422 }}
-						
-								remove_province_modifier = {
-									static_modifiers = { JAP_burma }
-									province = {
-										all_provinces = yes
-									}
-								} 
+								limit= {OR = {state = 431 state = 430 state = 422 }}} 
 							}
 							}
 						}

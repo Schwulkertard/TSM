@@ -1,4 +1,4 @@
-capital = 141
+capital = 137
 set_research_slots = 0
 add_ideas = {
 	neutrality_idea
