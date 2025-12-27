@@ -44,7 +44,6 @@ types = {
 		}
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_nuclear_bomb
 		}
 		# Specific Target is visible
 		show_target = {
@@ -85,9 +84,6 @@ types = {
 		arrow = {
 			type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		success_factors = {
 			success = {
@@ -272,10 +268,10 @@ types = {
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
+			always = no
 		}
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_nuclear_warheads
 		}
 		# Specific Target is visible
 		show_target = {
@@ -318,11 +314,6 @@ types = {
 		}
 
 		launch_sound = raid_launch_nuclear_missile
-
-        unit_model = {
-            type = equipment
-            scale = 0.5
-        }
 
 		success_factors = {
 			success = {
@@ -435,10 +426,10 @@ types = {
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
+			always = no
 		}
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_thermo_nuclear_bomb
 		}
 		# Specific Target is visible
 		show_target = {
@@ -482,9 +473,6 @@ types = {
 		arrow = {
 			type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		success_factors = {
 			success = {
@@ -682,10 +670,10 @@ types = {
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
+			always = no
 		}
 		# Raid Type is visible
 		visible = {
-			is_special_project_completed = sp:sp_nuclear_warheads
 		}
 		# Specific Target is visible
 		show_target = {
@@ -729,11 +717,6 @@ types = {
 		}
 
 		launch_sound = raid_launch_nuclear_missile
-
-        unit_model = {
-            type = equipment
-            scale = 0.5
-        }
 
 		success_factors = {
 			success = {

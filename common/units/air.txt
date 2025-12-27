@@ -8,9 +8,7 @@ sub_units = {
 		type = fighter
 		need = { small_plane_airframe = 1 }
 		categories = { category_fighter }
-		carrier_air_wing_size = 10
 		land_air_wing_size = 100
-		mega_carrier_air_wing_size = 10
 	}
 	cv_fighter = {
 		sprite = light_plane
@@ -32,8 +30,6 @@ sub_units = {
 		need = { small_plane_cas_airframe = 1 }
 		categories = { category_cas }
 		land_air_wing_size = 100
-		carrier_air_wing_size = 10
-		mega_carrier_air_wing_size = 10
 	}
 	cv_cas = {
 		sprite = light_plane
@@ -44,6 +40,7 @@ sub_units = {
 		categories = { category_cas }
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
 	}
 
 	nav_bomber = {
@@ -53,9 +50,7 @@ sub_units = {
 		type = naval_bomber
 		need = { small_plane_naval_bomber_airframe = 1 }
 		categories = { category_nav_bomber }
-		land_air_wing_size = 100
 		carrier_air_wing_size = 10
-		mega_carrier_air_wing_size = 10
 	}
 	cv_nav_bomber = {
 		sprite = light_plane
@@ -66,6 +61,7 @@ sub_units = {
 		categories = { category_nav_bomber }
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
+		mega_carrier_air_wing_size = 10
 	}
 
 	suicide_craft = {
@@ -75,8 +71,6 @@ sub_units = {
 		type = suicide
 		need = { small_plane_suicide_airframe = 1 }
 		land_air_wing_size = 100
-		carrier_air_wing_size = 10
-		mega_carrier_air_wing_size = 10
 	}
 	cv_suicide_craft = {
 		sprite = light_plane

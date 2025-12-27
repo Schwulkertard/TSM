@@ -9,22 +9,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-				armor = {
-					instant = yes
-					maximum_speed = -0.2
-				}
-				mechanized = {
-					instant = yes
-					maximum_speed = -0.2
-				}
-				motorized = {
-					instant = yes
-					maximum_speed = -0.2
-				}
-				infantry = {
-					instant = yes
-					maximum_speed = -0.2
-					}
 				}
 			}
 	}

@@ -14,7 +14,6 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_fighter_equipment
 		is_buildable = no
-		carrier_capable = yes
 		type = fighter
 		type_override = fixed_main_weapon_slot
 		allowed_types = {

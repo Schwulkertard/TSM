@@ -559,23 +559,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
-		
-		MAN_militarism = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = man_militarism
-			modifier = {
-				war_support_factor = 0.2
-				mobilization_laws_cost_factor = -0.25
-				justify_war_goal_time = -0.2
-				research_speed_factor = -0.05
-			}
-		}
+
 		JAP_hirohito = {
 			allowed = {
 				always = no
@@ -1179,7 +1163,7 @@ ideas = {
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
-	industrial_research = {
+	industrial_concern = {
 		kawasaki = {
 			allowed = {
 				original_tag = JAP
@@ -1211,7 +1195,7 @@ ideas = {
 			research_bonus = {
 				industry = 0.05
 			}
-			traits = { refinery_concern infrastructure_expert }
+			traits = { refinery_concern }
 		}
 	}
 	weapons_research = {

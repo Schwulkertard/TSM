@@ -1342,7 +1342,6 @@ ideas = {
 		}
 	}
 	weapons_research = {
-		designer = yes
 		mauser = {
 			allowed = {
 				original_tag = GER

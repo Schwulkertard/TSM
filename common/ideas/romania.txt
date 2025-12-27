@@ -487,21 +487,6 @@ ideas = {
 				army_leader_cost_factor = -0.5
 			}
 		}
-		ROM_local_development = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_air_bonus
-			modifier = {
-				air_ace_generation_chance_factor = 0.20
-				air_cas_present_factor = 0.1
-				air_air_superiority_agility_factor=0.5
-			}
-		}
 		ROM_acquire_licenses = {
 			picture = generic_license_production
 			removal_cost = -1
@@ -536,23 +521,6 @@ ideas = {
 			}
 			modifier = {
 				conscription_factor = 0.07
-			}
-		}
-		ROM_coastal_defense_ships = {
-			picture = generic_coastal_defense_ships
-			removal_cost = -1
-			allowed = {
-				original_tag = ROM
-			}
-			allowed_civil_war = {
-			}
-			equipment_bonus = {
-				heavy_cruiser = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
-					armor_value = 0.2
-					lg_attack = 0.1
-					build_cost_ic = -0.1
-					instant = yes
-				}
 			}
 		}
 		ROM_coastal_defense_ships_2 = {

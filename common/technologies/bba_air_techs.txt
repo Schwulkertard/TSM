@@ -112,10 +112,10 @@ technologies = {
 			small_plane_cas_airframe_0
 			small_plane_naval_bomber_airframe_0
 			small_plane_suicide_airframe_0
-			#cv_small_plane_airframe_0
-			#cv_small_plane_cas_airframe_0
-			#cv_small_plane_naval_bomber_airframe_0
-			#cv_small_plane_suicide_airframe_0
+			cv_small_plane_airframe_0
+			cv_small_plane_cas_airframe_0
+			cv_small_plane_naval_bomber_airframe_0
+			cv_small_plane_suicide_airframe_0
 		}
 		
 	
@@ -163,10 +163,10 @@ technologies = {
 			small_plane_cas_airframe_1
 			small_plane_naval_bomber_airframe_1
 			small_plane_suicide_airframe_1
-			#cv_small_plane_airframe_1
-			#cv_small_plane_cas_airframe_1
-			#cv_small_plane_naval_bomber_airframe_1
-			#cv_small_plane_suicide_airframe_1
+			cv_small_plane_airframe_1
+			cv_small_plane_cas_airframe_1
+			cv_small_plane_naval_bomber_airframe_1
+			cv_small_plane_suicide_airframe_1
 		}
 	
 		path = {
@@ -183,7 +183,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -233,10 +233,10 @@ technologies = {
 			small_plane_cas_airframe_2
 			small_plane_naval_bomber_airframe_2
 			small_plane_suicide_airframe_2
-			#cv_small_plane_airframe_2
-			#cv_small_plane_cas_airframe_2
-			#cv_small_plane_naval_bomber_airframe_2
-			#cv_small_plane_suicide_airframe_2
+			cv_small_plane_airframe_2
+			cv_small_plane_cas_airframe_2
+			cv_small_plane_naval_bomber_airframe_2
+			cv_small_plane_suicide_airframe_2
 		}
 	
 		path = {
@@ -253,7 +253,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -305,17 +305,75 @@ technologies = {
 			small_plane_cas_airframe_3
 			small_plane_naval_bomber_airframe_3
 			small_plane_suicide_airframe_3
-			#cv_small_plane_airframe_3
-			#cv_small_plane_cas_airframe_3
-			#cv_small_plane_naval_bomber_airframe_3
-			#cv_small_plane_suicide_airframe_3
+			cv_small_plane_airframe_3
+			cv_small_plane_cas_airframe_3
+			cv_small_plane_naval_bomber_airframe_3
+			cv_small_plane_suicide_airframe_3
+		}
+		
+		path = {
+			leads_to_tech = late_small_airframe
+			research_cost_coeff = 1
+		}
+		allow={date>1941.1.1}
+		research_cost = 2
+		start_year = 1942
+		categories = {
+			year_1942
+		}
+
+		special_project_specialization = { specialization_air }
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	late_small_airframe = {
+
+		enable_equipments = {
 		}
 		
 		path = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		allow={date>1941.1.1}
+		allow={date>1941.6.1}
 		research_cost = 2
 		start_year = 1944
 		categories = {
@@ -325,7 +383,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = 10 }
 		}
 		
 		categories = {
@@ -469,7 +527,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 5 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -526,7 +584,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 7 }
+			position = { x = 2 y = 6 }
 		}
 		
 		categories = {
@@ -572,10 +630,59 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = modern_medium_airframe
+			leads_to_tech = late_medium_airframe
 			research_cost_coeff = 1
 		}
 		allow={date>1941.1.1}
+		research_cost = 2
+		start_year = 1942
+		categories = {
+			year_1942
+		}
+		special_project_specialization = { specialization_air }
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1944.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	late_medium_airframe = {
+
+		enable_equipments = {
+		}
+		
+		path = {
+			leads_to_tech = modern_medium_airframe
+			research_cost_coeff = 1
+		}
+		allow={date>1941.6.1}
 		research_cost = 2
 		start_year = 1944
 		categories = {
@@ -584,7 +691,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 9 }
+			position = { x = 2 y = 10 }
 		}
 		
 		categories = {
@@ -717,7 +824,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -760,7 +867,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -791,6 +898,47 @@ technologies = {
 		}
 		
 		path = {
+			leads_to_tech = late_large_airframe
+			research_cost_coeff = 1
+		}
+		allow={date>1941.1.1}
+		research_cost = 3
+		start_year = 1942
+		categories = {
+			year_1942
+		}
+		special_project_specialization = { specialization_air }
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+		}
+	}
+
+	late_large_airframe = {
+
+		enable_equipments = {
+		}
+		
+		path = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
 		}
@@ -803,7 +951,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = 10 }
 		}
 		
 		categories = {

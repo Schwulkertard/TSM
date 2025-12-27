@@ -34,6 +34,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = basic_dp_light_battery
+			research_cost_coeff = 1
+		}
+
 		enable_equipment_modules = {
 			ship_light_battery_1
 			ship_medium_battery_1
@@ -193,11 +198,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = improved_light_shell
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = basic_dp_light_battery
 			research_cost_coeff = 1
 		}
 
@@ -1655,6 +1655,10 @@ technologies = {
 
 	basic_naval_mines = {
 
+		allow_branch = {
+			always = no
+		}
+
 		research_cost = 2
 
 		start_year = 1922
@@ -2148,9 +2152,10 @@ technologies = {
 	mtg_transport = { 
 
 		transport_capacity = -0.33
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 2 
-		naval_invasion_plan_cap = 1
+		naval_invasion_prep_days = -30
+		naval_invasion_division_cap = 100
+		naval_invasion_plan_cap = 100
+		naval_invasion_planning_bonus_speed = 1
 
 		on_research_complete = {
 			custom_effect_tooltip = {
@@ -2216,9 +2221,6 @@ technologies = {
 
 		#invasion_preparation = -0.25
 		amphibious_invasion_defence = 0.15
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 4 
-		naval_invasion_plan_cap = 3	
 		#naval_invasion_capacity = 20
 
 		path = {
@@ -2238,7 +2240,7 @@ technologies = {
 		show_equipment_icon = yes
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -2302,14 +2304,11 @@ technologies = {
 	mtg_tank_landing_craft = {
 
 		amphibious_invasion = 0.25
-		amphibious_invasion_defence = 0.5
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 5 
-		naval_invasion_plan_cap = 4			
+		amphibious_invasion_defence = 0.5		
 		#naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1940
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }
