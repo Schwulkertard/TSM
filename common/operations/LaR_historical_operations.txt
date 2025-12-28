@@ -82,7 +82,6 @@ bruneval_raid = { ### 1/50
 		NOT = { original_tag = GER }
 	}
 	available = {
-		enemy_has_equal_or_better_radar_tech_trigger = yes
 	}
 
 	visible = {

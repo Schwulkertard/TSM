@@ -1,31 +1,5 @@
 set_mio_traits = {
-every_country= {
-	limit={
-		is_playable_country=yes
-	}
-	every_military_industrial_organization = {
-	complete_mio_trait=trait1
-	complete_mio_trait=trait2
-	complete_mio_trait=trait3
-	complete_mio_trait=trait4
-	complete_mio_trait=trait5
-	complete_mio_trait=trait6
-	}
 }
-}
-update_dockyard_penalty = {
-every_country= {
-	limit={
-		OR={tag=ENG tag=USA tag=GER tag=ITA tag=JAP}
-	}
-	if={limit={num_of_naval_factories>49}
-	add_dynamic_modifier = {
-    	modifier = dockyard_con_penalty}
-	set_variable={dockyard_con_penalty=num_of_naval_factories}
-	add_to_variable={dockyard_con_penalty=-50}
-	multiply_variable={dockyard_con_penalty=-0.003}
-}
-}}
 update_axis_designers =
 {
 every_country= {

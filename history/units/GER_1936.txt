@@ -233,7 +233,7 @@ instant_effect = {
 		equipment = {
 			type = light_tank_chassis_2
 			creator = "GER"
-			version_name = "Panzer II"
+			version_name = "Panzer 38(t)"
 		}
 		
 		requested_factories = 2

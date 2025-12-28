@@ -205,7 +205,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = ROM_iron_guard_coup
-				date = 1939.1.1
+				date > 1939.1.1
 			}
 		}
 		completion_reward = {

@@ -42,6 +42,24 @@ technologies = {
 		
 
 	}
+	special_forces_focus = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: GRE_mountain_training_effect
+		category_special_forces = {
+			breakthrough = 0.1
+		}
+		
+
+	}
 	static_warfare_tech={
 		research_cost = 1
 		allow = {

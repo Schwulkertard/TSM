@@ -52,45 +52,62 @@ set_technology = {
 	aircraft_construction = 1
 }
 
-create_equipment_variant = {
-	name = "I-16-A"
-	type = fighter_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 2
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "I-16"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x
+			}
+			icon = "GFX_SOV_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "LBsh"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = tank_buster_1
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_SOV_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "Il-4"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_SOV_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "DB-3"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
+			}
+			icon = "GFX_SOV_tactical_bomber1_medium"
 	}
 }
-
-	create_equipment_variant = {
-		name = "LBSh A"
-		type = CAS_equipment_1
-		parent_version = 0
-		upgrades = {
-			plane_range_upgrade = 5
-			plane_cas_upgrade = 2
-		}
-	}
-
-		create_equipment_variant = {
-			name = "Il 4 A"
-			type = nav_bomber_equipment_1
-			parent_version = 0
-			upgrades = {
-				plane_range_upgrade = 5
-				plane_naval_upgrade = 2
-			}
-		}
-
-			create_equipment_variant = {
-				name = "SB-2M A"
-				type = tac_bomber_equipment_1
-				parent_version = 0
-				upgrades = {
-					plane_range_upgrade = 5
-					plane_tac_bomb_upgrade = 2
-				}
-			}
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -161,36 +178,31 @@ add_equipment_to_stockpile = {
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	variant_name = "I-16-A"
+	type = small_plane_airframe_1
+	variant_name = "I-16"
 	amount = 1500
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	variant_name = "LBSh A"
+	type = small_plane_cas_airframe_1
+	variant_name = "LBSh"
 	amount = 600
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
+	type = small_plane_naval_bomber_airframe_1
 	amount = 300
-	variant_name = "Il 4 A"
+	variant_name = "Il 4"
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
-	variant_name = "SB-2M A"
-	amount = 300
+	type = medium_plane_airframe_1
+	variant_name = "DB-3"
+	amount = 400
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = heavy_fighter_equipment_1
-	amount = 100
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 200
 	producer = SOV
 }

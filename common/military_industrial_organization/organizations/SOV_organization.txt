@@ -68,7 +68,7 @@ SOV_gaz_organization = {
 		name = trait5
 		token = trait5
 		position = { x=5 y=0 }
-		limit_to_equipment_type = { lmechanized_td_equipment } 
+		limit_to_equipment_type = { mechanized_td_equipment } 
 		equipment_bonus = {	
 					ap_attack=0.15
 					hard_attack = 0.1

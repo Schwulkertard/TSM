@@ -147,7 +147,7 @@ add_equipment_to_stockpile = {
 	producer = GER
 }
 add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 100
 	producer = GER
 }
@@ -295,71 +295,86 @@ if = {
 
 }
 
-#Fighter 1 variant for Germany
-create_equipment_variant = {
-	name = "Bf 109 A"
-	type = fighter_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 2
-	}
-	icon = "gfx/interface/technologies/GER_fighter1.dds"
-}
-
-create_equipment_variant = {
-	name = "Ju 87 A"
-	type = CAS_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_cas_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Do 22 A"
-	type = nav_bomber_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_naval_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "He 111 A"
-	type = tac_bomber_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_tac_bomb_upgrade = 2
-	}
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "Bf 109 D"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x
+			}
+			icon = "GFX_GER_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Ju 87"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1					
+				engine_type_slot = engine_2_1x					
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_GER_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "Do 22"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1	
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_GER_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "He 111"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
+			}
+			icon = "GFX_GER_tactical_bomber1_medium"
+		}
 }
 
 add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
+	type = small_plane_naval_bomber_airframe_1
 	amount = 300
 	producer = GER
-	variant_name = "Do 22 A"
+	variant_name = "Do 22"
 }
 add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
+	type = medium_plane_airframe_1
 	amount = 400
 	producer = GER
-	variant_name = "He 111 A"
+	variant_name = "He 111"
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
+	type = small_plane_airframe_1
 	amount = 1000
 	producer = GER
-	variant_name = "Bf 109 A"
+	variant_name = "Bf 109"
 }
 add_equipment_to_stockpile = {
-	type = CAS_equipment_1
+	type = small_plane_cas_airframe_1
 	amount = 600
 	producer = GER
-	variant_name = "Ju 87 A"
+	variant_name = "Ju 87"
 	}	
 add_equipment_to_stockpile = {
     type = light_tank_chassis_2

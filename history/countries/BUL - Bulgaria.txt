@@ -45,6 +45,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	basic_train = 1
 }
 
 recruit_character = BUL_boris_iii
@@ -84,7 +85,7 @@ set_popularities = {
 	neutrality = 60
 }
 add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 30
 	producer = BUL
 }

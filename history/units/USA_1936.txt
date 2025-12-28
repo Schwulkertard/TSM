@@ -156,15 +156,6 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			version_name = "Catalina"
-			type = small_plane_naval_bomber_airframe_1
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
 			type = motorized_equipment_1
 			creator = "USA"
 		}

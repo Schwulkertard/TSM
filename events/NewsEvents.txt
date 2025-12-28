@@ -4727,10 +4727,7 @@ news_event = {
 	option = {
 		name = news.230.a
 		trigger = {
-			OR = {
 				tag = MEX
-				tag = ARG
-			}
 		}
 	}
 	option = {
@@ -4747,7 +4744,6 @@ news_event = {
 				OR = {
 					tag = USA
 					tag = MEX
-					tag = ARG
 				}
 			}
 		}
@@ -4759,29 +4755,7 @@ news_event = {
 				has_government = democratic
 				tag = USA
 				tag = MEX
-				tag = ARG
 			}
-		}
-	}
-}
-news_event = {
-	id = news.231
-	title = news.231.t
-	desc = news.231.d
-	picture = GFX_news_event_generic_sign_treaty1
-	major = yes
-	is_triggered_only = yes
-	fire_for_sender = no
-	option = {
-		name = news.231.a
-		trigger = {
-			is_independent_china_or_warlord = yes
-		}
-	}
-	option = {
-		name = news.231.b
-		trigger = {
-			is_independent_china_or_warlord = no
 		}
 	}
 }
@@ -5217,35 +5191,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = RAJ
-			}
-		}
-	}
-}
-news_event = {
-	id = news.285
-	title = news.285.t
-	desc = news.285.desc
-	picture = GFX_news_event_partition_of_india
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = news.285.a
-		trigger = {
-			TAG = RAJ
-		}
-	}
-	option = {
-		name = news.285.b
-		trigger = {
-			TAG = PAK
-		}
-	}
-	option = {
-		name = news.285.c
-		trigger = {
-			NOT = {
-				TAG = RAJ
-				TAG = PAK
 			}
 		}
 	}
@@ -6171,35 +6116,6 @@ news_event = {
 			NOT = {
 				TAG = YUG
 				TAG = BUL
-			}
-		}
-	}
-}
-news_event = {
-	id = news.326
-	title = news.326.t
-	desc = news.326.desc
-	picture = GFX_news_event_banovina_croatia
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = news.326.a
-		trigger = {
-			TAG = YUG
-		}
-	}
-	option = {
-		name = news.326.b
-		trigger = {
-			TAG = CRO
-		}
-	}
-	option = {
-		name = news.326.c
-		trigger = {
-			NOT = {
-				TAG = YUG
-				TAG = CRO
 			}
 		}
 	}

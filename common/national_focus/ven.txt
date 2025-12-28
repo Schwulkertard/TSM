@@ -120,48 +120,6 @@ focus = {
 		}
 	}
 
-	focus = {
-			id = VEN_Jap_railraod
-			icon = GFX_goal_generic_consumer_goods
-			x = 15
-			y = 3
-			cost = 0
-			ai_will_do = {
-				factor = 1
-			}
-			available_if_capitulated = yes
-			available = { 
-				date > 1940.6.1
-				 }
-				 completion_reward = { 
-			        every_state = {
-						limit= {OR = {state = 431 state = 430 state = 422 }}
-				}
-			}
-		}
-
-				focus = {
-					id = VEN_Jap_railraod_2
-					icon = GFX_goal_generic_consumer_goods
-					x = 16
-					y = 3
-					cost = 0
-					ai_will_do = {
-						factor = 1
-					}
-					available_if_capitulated = yes
-					available = { 
-							640 = { is_controlled_by = JAP }
-							288 = { is_controlled_by = JAP }
-						}
-						
-						 completion_reward = { 
-							every_state = {
-								limit= {OR = {state = 431 state = 430 state = 422 }}} 
-							}
-							}
-						}
-
  focus = {
 	id = VEN_rubber_railroad_two
 	icon = GFX_goal_generic_consumer_goods

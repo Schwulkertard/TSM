@@ -1206,6 +1206,9 @@ focus = {
         }
         completion_reward = {
             add_ideas = USA_airborne_divisions
+			set_technology = {
+				special_forces_focus = 1
+			}
         }
 	}
 	focus = {

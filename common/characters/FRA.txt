@@ -173,7 +173,7 @@ characters={
 			}
 			cost = 100.000
 			traits = {
-				army_chief_homeland_defense
+				army_chief_old_guard
 			}
 			cost = 100
 			ai_will_do = {

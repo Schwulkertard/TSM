@@ -62,7 +62,7 @@ add_equipment_to_stockpile = {
 	producer = SPR
 }
 add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 30
 	producer = SPR
 }

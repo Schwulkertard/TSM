@@ -729,7 +729,6 @@ operations = {
 			ENG = {NOT ={controls_state = 412}}
 			country_exists = PER
 		}
-		is_good = yes
 		available = {
 			
 			ENG = {NOT ={controls_state = 278}}
@@ -874,7 +873,7 @@ operations = {
 			factor = 1
 		}
 	}
-	
+}
 GER_military_buildup = {
 }
 special_projects = {
@@ -1199,7 +1198,6 @@ GER_reichswerke_four_year_plan = {
 		on_map_mode = map_and_decisions_view
 		cost = 10
 		days_remove = 30
-		is_good = yes
 		fire_only_once = no
 		modifier = {
 			civilian_factory_use = 5
@@ -1252,7 +1250,6 @@ GER_reichswerke_four_year_plan = {
 		on_map_mode = map_and_decisions_view
 		cost = 10
 		days_remove = 30
-		is_good = yes
 		fire_only_once = no
 		modifier = {
 			civilian_factory_use = 5
@@ -1280,11 +1277,7 @@ GER_reichswerke_four_year_plan = {
 		available = {
 			has_navy_size = {
 				unit = battleship
-				size > 9
-			}
-			has_navy_size = {
-				unit = battle_cruiser
-				size > 2
+				size > 11
 			}
 			has_navy_size = {
 				unit = carrier
@@ -1319,5 +1312,5 @@ GER_reichswerke_four_year_plan = {
 	}
 
 }
-}
+
 

@@ -1282,7 +1282,6 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			set_technology = { serb_modding_tank_gun = 1 }
 		}
 	}
 	

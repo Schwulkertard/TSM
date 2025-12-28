@@ -61,6 +61,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	basic_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -119,18 +120,8 @@ add_equipment_to_stockpile = {
 	producer = USA
 }
 add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 100
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 69
-	producer = USA
-}
-add_equipment_to_stockpile = {
-	type = train_equipment
-	amount = 100
+	type = train_equipment_1
+	amount = 500
 	producer = USA
 }
 add_equipment_to_stockpile = {

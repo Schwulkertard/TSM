@@ -1,5 +1,17 @@
 ideas = {
 	country = {
+		GER_lessons_of_spain_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = spanish_civil_war
+			modifier = {
+			}
+		}
 	    GER_determine_the_investment1 = {
 			allowed = {
 				original_tag = GER

@@ -1380,6 +1380,9 @@ focus = {
 			
 			completion_reward = {
 				add_ideas = JAP_superior_will
+				set_technology = {
+				special_forces_focus = 1
+				}
 			}
 		}
 

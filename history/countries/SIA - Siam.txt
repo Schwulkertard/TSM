@@ -79,11 +79,10 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-add_ideas = MAN_faction_trade
 add_ideas = MAN_no_invasions
 set_convoys = 100
 add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 20
 	producer = MAN
 }

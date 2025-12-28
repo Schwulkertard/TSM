@@ -1,6 +1,12 @@
 ################
 ##### SPR ######
 ################
+SPR_civil_war = {
+	priority = 10
+	allowed = {
+		original_tag = SPR
+	}
+}
 SPR_opposition_civil_war_preparations = {
 	priority = 9
 	icon = spr_the_inevitable_civil_war
@@ -19,7 +25,7 @@ SPR_the_inevitable_civil_war = {
 		has_dlc = "La Resistance"
 	}
 	custom_icon = {
-		tag = SPA
+		tag = SPN
 		value = spa_civil_war_divisions_counter_icon_value
 		desc = spa_civil_war_divisions_counter_full_breakdown
 		visible = {

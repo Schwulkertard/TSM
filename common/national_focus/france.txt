@@ -611,7 +611,33 @@ focus_tree = {
 			unlock_decision_category_tooltip = FRA_rearmnament_plan
 		}
 	}
-
+	focus = {
+		id = FRA_heavy_armor_focus
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FRA_the_rearmnament_plan }
+		x = 0
+		y = 1
+		relative_position_id = FRA_the_rearmnament_plan
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {	
+			army_experience = 100
+			add_tech_bonus = {
+				name = FRA_light_medium_armor
+				bonus = 1.2
+				uses = 1
+				technology = basic_medium_tank_chassis
+				technology = basic_heavy_tank_chassis
+			}
+			add_tech_bonus = {
+				name = FRA_light_medium_armor
+				bonus = 1.0
+				uses = 1
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+			}
+		}
+	}
 	focus = {
 		id = FRA_army_reform
 		icon = GFX_goal_generic_army_doctrines
@@ -746,33 +772,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = infantry_weapons
-			}
-		}
-	}
-	focus = {
-		id = FRA_heavy_armor_focus
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = FRA_the_rearmnament_plan }
-		x = 0
-		y = 1
-		relative_position_id = FRA_the_rearmnament_plan
-		cost = 5
-		available_if_capitulated = yes
-		completion_reward = {	
-			army_experience = 100
-			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 1.2
-				uses = 1
-				technology = basic_medium_tank_chassis
-				technology = basic_heavy_tank_chassis
-			}
-			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 1.0
-				uses = 1
-				technology = improved_medium_tank_chassis
-				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
@@ -1185,7 +1184,7 @@ focus_tree = {
 			focus = FRA_laissez_faire
 			focus = FRA_extra_research_slot_2
 		}
-		mutually_exclusive = { focus = FRA_centralize_the_industries  }
+		mutually_exclusive = { focus = FRA_centralize_the_industries }
 		relative_position_id = FRA_laissez_faire
 		cost = 5
 		ai_will_do = {
@@ -1219,7 +1218,7 @@ focus_tree = {
 			focus = FRA_laissez_faire
 			focus = FRA_extra_research_slot_2
 		}
-		mutually_exclusive = { focus = FRA_small_businesses_focus  }
+		mutually_exclusive = { focus = FRA_small_industry_reliance }
 		relative_position_id = FRA_laissez_faire
 		cost = 5
 		ai_will_do = {
@@ -1827,7 +1826,7 @@ focus_tree = {
 							fixed_ship_anti_air_slot = ship_anti_air_1
 							fixed_ship_radar_slot = empty
 							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = dp_ship_secondaries
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
 							front_1_custom_slot = ship_deck_space
 						}
 					}

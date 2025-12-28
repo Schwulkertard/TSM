@@ -59,7 +59,6 @@ on_actions = {
 		effect={
 			SOV={soviet_losses_check=yes}
 			#update_axis_designers=yes
-			update_dockyard_penalty=yes
 			sealion_core_defense=yes
 			update_academy_weekly=yes
 			update_sov_major_city_status = yes

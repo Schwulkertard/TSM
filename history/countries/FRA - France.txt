@@ -54,6 +54,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	basic_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -132,7 +133,7 @@ add_equipment_to_stockpile = {
 	producer = FRA
 }
 add_equipment_to_stockpile = {
-	type = train_equipment
+	type = train_equipment_1
 	amount = 100
 	producer = FRA
 }
@@ -159,23 +160,33 @@ add_ideas = {
 }
 
 
-create_equipment_variant = {
-	name = "MS.406 A"
-	type = fighter_equipment_1
-	parent_version = 0
-	upgrades = {
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 2
-	}
-}
-
-	create_equipment_variant = {
-		name = "Br.693 A"
-		type = CAS_equipment_1
-		parent_version = 0
-		upgrades = {
-			plane_range_upgrade = 5
-			plane_cas_upgrade = 2
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "M S.410"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x
+			}
+			icon = "GFX_FRA_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Br.693"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1
+				engine_type_slot = engine_2_1x				
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_FRA_CAS1_medium"
 		}
 	}
 
@@ -258,14 +269,14 @@ if = {
 }
 
 add_equipment_to_stockpile = {
-	type = cas_equipment_1
-	variant_name = "Br.693 A"
+	type = small_plane_cas_airframe_1
+	variant_name = "Br.693"
 	amount = 400
 	producer = FRA
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	variant_name = "MS.406 A"
+	type = small_plane_airframe_1
+	variant_name = "MS.406"
 	amount = 1000
 	producer = FRA
 }

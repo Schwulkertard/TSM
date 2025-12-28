@@ -577,7 +577,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		iconType = {
+		buttonType = {
 			name = "remove"
 			position = { x = 4000 y = 29 }
 			spriteType = "GFX_cancel_conversion_button"

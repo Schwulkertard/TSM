@@ -920,11 +920,6 @@ ideas = {
 			modifier = {
 			land_reinforce_rate = 0.1
 			}
-			equipment_bonus = {
-				category_special_forces = {
-					default_morale = 0.10
-				}
-			}
 		}
 		JAP_tora_tora_tora_idea = {
 			allowed = {

@@ -1023,12 +1023,12 @@ focus_tree = {
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
 					fixed_ship_radar_slot = ship_radar_4
 					fixed_ship_engine_slot = heavy_ship_engine_3
-					fixed_ship_secondaries_slot = dp_ship_secondaries
+					fixed_ship_secondaries_slot = dp_ship_secondaries_4
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3
 					mid_1_custom_slot = ship_heavy_battery_3
-					mid_2_custom_slot = dp_ship_secondaries
-					mid_3_custom_slot = dp_ship_secondaries
+					mid_2_custom_slot = dp_ship_secondaries_4
+					mid_3_custom_slot = dp_ship_secondaries_4
 					rear_1_custom_slot = ship_heavy_battery_3
 				}
 			}
@@ -1670,6 +1670,9 @@ focus_tree = {
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
+			set_technology = {
+				special_forces_focus = 1
+			}
 		}
 	}
 	focus = {
