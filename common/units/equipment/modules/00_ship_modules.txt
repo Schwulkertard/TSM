@@ -243,16 +243,21 @@ equipment_modules = {
  	#### ##  ####  # #    #       ###  ####  #   #  ##  ###    #
  	#  # #   #  #  # #    #       #  # #  #  #   #  #   #  #   #
  	#  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #
- 	ship_heavy_battery_1 = {
+ 	ship_355_battery = {
  		category = ship_heavy_battery
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = capital_ship
  		add_stats = {
- 			hg_attack = 11
- 			build_cost_ic = 1200
+ 			hg_attack = 10
+			lg_attack = 2
+ 			build_cost_ic = 1100
  		}
  		multiply_stats = {
  			naval_speed = -0.04
+			reliability = -0.025
+			naval_heavy_gun_hit_chance_factor = 0.1
+			hg_attack = 0.02
+			lg_armor_piercing = 0.2
  		}
  		add_average_stats = {
  			hg_armor_piercing = 40
@@ -266,17 +271,20 @@ equipment_modules = {
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
- 	ship_heavy_battery_2 = {
+ 	ship_381_battery = {
  		category = ship_heavy_battery
- 		parent = ship_heavy_battery_1
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = capital_ship
  		add_stats = {
  			hg_attack = 12
- 			build_cost_ic = 1250
+			lg_attack = 1
+ 			build_cost_ic = 1200
  		}
  		multiply_stats = {
  			naval_speed = -0.05
+			reliability = -0.05
+			hg_attack = 0.02
+			lg_armor_piercing = 0.2
  		}
  		add_average_stats = {
  			hg_armor_piercing = 45
@@ -286,17 +294,12 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = ship_heavy_battery
- 			convert_cost_ic = 900
- 		}
- 		can_convert_from = {
- 			module = ship_heavy_battery_1
- 			convert_cost_ic = 600
+ 			convert_cost_ic = 750
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
- 	ship_heavy_battery_3 = {
+ 	ship_406_battery = {
  		category = ship_heavy_battery
- 		parent = ship_heavy_battery_2
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = capital_ship
  		add_stats = {
@@ -305,6 +308,7 @@ equipment_modules = {
  		}
  		multiply_stats = {
  			naval_speed = -0.06
+			reliability = -0.1
  		}
  		add_average_stats = {
  			hg_armor_piercing = 50
@@ -314,39 +318,31 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = ship_heavy_battery
- 			convert_cost_ic = 1200
- 		}
- 		can_convert_from = {
- 			module = ship_heavy_battery_2
- 			convert_cost_ic = 600
+ 			convert_cost_ic = 750
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
- 	ship_heavy_battery_4 = {
+ 	ship_457_battery = {
  		category = ship_heavy_battery
- 		parent = ship_heavy_battery_3
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = capital_ship
  		add_stats = {
- 			hg_attack = 17
- 			build_cost_ic = 1500
+ 			hg_attack = 15
+ 			build_cost_ic = 1400
  		}
  		multiply_stats = {
  			naval_speed = -0.07
+			reliability = -0.15
  		}
  		add_average_stats = {
- 			hg_armor_piercing = 50
+ 			hg_armor_piercing = 65
  		}
  		build_cost_resources = {
  			steel = 5
  		}
  		can_convert_from = {
  			module_category = ship_heavy_battery
- 			convert_cost_ic = 1200
- 		}
- 		can_convert_from = {
- 			module = ship_heavy_battery_3
- 			convert_cost_ic = 600
+ 			convert_cost_ic = 750
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -2196,7 +2192,6 @@ equipment_modules = {
  			build_cost_ic = 0.10
  			naval_speed = -0.15
  			max_strength = 0.05
- 			lg_armor_piercing = 0.2
  		}
  		build_cost_resources = {
  			steel = 10
@@ -2204,7 +2199,6 @@ equipment_modules = {
  		add_stats = {
  			armor_value = 45
  			surface_visibility = 10
-			naval_torpedo_damage_reduction_factor = -1.5
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2216,18 +2210,16 @@ equipment_modules = {
  		category = ship_heavy_armor
  		gfx = ship_armor_1
  		multiply_stats = {
- 			build_cost_ic = -0.10
- 			hg_armor_piercing = -0.3
- 			lg_armor_piercing = 0.3
- 			lg_attack = 0.1
+ 			build_cost_ic = 0.10
+ 			naval_speed = -0.15
+ 			max_strength = 0.05
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			chromium = 10
  		}
  		add_stats = {
  			armor_value = 35
- 			surface_visibility = 8
-			naval_torpedo_damage_reduction_factor = -1
+ 			surface_visibility = 10
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2242,7 +2234,6 @@ equipment_modules = {
  			build_cost_ic = 0.10
  			naval_speed = -0.15
  			max_strength = 0.1
- 			lg_armor_piercing = 0.2
  		}
  		build_cost_resources = {
  			chromium = 10
@@ -2250,7 +2241,6 @@ equipment_modules = {
  		add_stats = {
  			armor_value = 50
  			surface_visibility = 10
-			naval_torpedo_damage_reduction_factor = -1.50
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2262,19 +2252,16 @@ equipment_modules = {
  		category = ship_heavy_armor
  		gfx = ship_armor_2
  		multiply_stats = {
- 			build_cost_ic = -0.10
- 			max_strength = 0.05
- 			hg_armor_piercing = -0.3
- 			lg_armor_piercing = 0.3
- 			lg_attack = 0.1
+ 			build_cost_ic = 0.10
+ 			naval_speed = -0.15
+ 			max_strength = 0.1
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			chromium = 10
  		}
  		add_stats = {
  			armor_value = 40
- 			surface_visibility = 8
-			naval_torpedo_damage_reduction_factor = -1
+			surface_visibility = 10
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2289,7 +2276,6 @@ equipment_modules = {
  			build_cost_ic = 0.10
  			naval_speed = -0.15
  			max_strength = 0.15
- 			lg_armor_piercing = 0.2
  		}
  		build_cost_resources = {
  			chromium = 10
@@ -2297,7 +2283,6 @@ equipment_modules = {
  		add_stats = {
  			armor_value = 55
  			surface_visibility = 10
-			naval_torpedo_damage_reduction_factor = -1.5
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2309,19 +2294,16 @@ equipment_modules = {
  		category = ship_heavy_armor
  		gfx = ship_armor_3
  		multiply_stats = {
- 			build_cost_ic = -0.10
- 			max_strength = 0.10
- 			hg_armor_piercing = -0.3
- 			lg_armor_piercing = 0.3
- 			lg_attack = 0.1
+ 			build_cost_ic = 0.10
+ 			naval_speed = -0.15
+ 			max_strength = 0.15
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			chromium = 10
  		}
  		add_stats = {
  			armor_value = 45
- 			surface_visibility = 8
-			naval_torpedo_damage_reduction_factor = -1
+ 			surface_visibility = 10
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
