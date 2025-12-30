@@ -102,6 +102,36 @@ leader_traits = {
 		industrial_factory_donations = 2
 	}
 
+	HUN_desertnomist_major = {
+		random = no
+		sprite = 13
+		industrial_factory_donations = 4
+	}
+
+	Mil_donations = {
+		random = no
+		sprite = 13
+		military_factory_donations = 3
+	}
+
+	Mil_donations_major = {
+		random = no
+		sprite = 13
+		military_factory_donations = 6
+	}
+
+	Dock_donations = {
+		random = no
+		sprite = 13
+		dockyard_donations = 3
+	}
+
+	Dock_donations_major = {
+		random = no
+		sprite = 13
+		dockyard_donations = 6
+	}
+
 	dictator = {
 		random = no
 		political_power_factor = 0.5

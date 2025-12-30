@@ -877,28 +877,139 @@ ideas = {
 		}
 	}
 	industrial_theorist = {		
+		generic_military_industrial_theorist_majors = {
+		picture = generic_electronics_concern_1
+
+		allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = SOV
+					original_tag = ITA
+					original_tag = ENG
+					original_tag = USA
+					original_tag = JAP
+					
+
+				}
+			}
+		  
+		cost = 150
+		removal_cost = 0
+		traits = { Mil_donations_major }
+	  }
+	  generic_civilian_industrial_theorist_major = {
+		  
+		picture = generic_industrial_concern_1
+
+		allowed = {
+				OR = {
+						
+					original_tag = GER
+					original_tag = SOV
+					original_tag = ITA
+					original_tag = ENG
+					original_tag = USA
+					original_tag = JAP
+
+				}
+			}
+		  
+		cost = 150
+		removal_cost = 0 
+		traits = { HUN_desertnomist_major }
+	  }
+	  generic_dockyard_industrial_theorist_major = {
+		picture = generic_naval_manufacturer
+
+		allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = SOV
+					original_tag = ITA
+					original_tag = ENG
+					original_tag = USA
+					original_tag = JAP
+
+				}
+			}
+		  
+		cost = 150
+		removal_cost = 0
+		traits = { Dock_donations_major }
+	  }
 		generic_military_industrial_theorist = {
 		picture = generic_electronics_concern_1
 
 		allowed = {
-			is_playable_country = yes
-		}
+				OR = {
+						
+					original_tag = SPR
+					original_tag = HUN
+					original_tag = BUL
+					original_tag = ROM
+					original_tag = CAN
+					original_tag = AST
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAN
+					original_tag = SIA
+
+				}
+			}
 		  
 		cost = 150
 		removal_cost = 0
-		traits = { military_industrial_theorist }
+		traits = { Mil_donations }
 	  }
 	  generic_civilian_industrial_theorist = {
 		  
 		picture = generic_industrial_concern_1
 
 		allowed = {
-			is_playable_country = yes
-		}
+				OR = {
+						
+					original_tag = SPR
+					original_tag = HUN
+					original_tag = BUL
+					original_tag = ROM
+					original_tag = CAN
+					original_tag = AST
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAN
+					original_tag = SIA
+
+				}
+			}
 		  
 		cost = 150
 		removal_cost = 0 
-		traits = { civilian_industrial_theorist }
+		traits = { HUN_desertnomist }
+	  }
+
+	  generic_dockyard_industrial_theorist = {
+		picture = generic_naval_manufacturer
+
+		allowed = {
+				OR = {
+						
+					original_tag = SPR
+					original_tag = HUN
+					original_tag = BUL
+					original_tag = ROM
+					original_tag = CAN
+					original_tag = AST
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAN
+					original_tag = SIA
+
+				}
+			}
+		  
+		cost = 150
+		removal_cost = 0
+		traits = { Dock_donations }
 	  }
   	
 	FRA_Big_Industry_Conglomerates = {
