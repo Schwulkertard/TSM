@@ -165,7 +165,6 @@ set_popularities = {
 	fascism = 60
 	communism = 20
 }
-create_faction = Axis
 add_to_faction = GER
 add_to_faction = ROM
 add_to_faction = ITA

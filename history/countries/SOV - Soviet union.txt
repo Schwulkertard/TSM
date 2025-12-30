@@ -217,7 +217,6 @@ set_popularities = {
 	fascism = 1.9
 	communism = 88
 }
-create_faction = Comintern
 add_to_faction = SOV
 add_ideas = {
 	trotskyite_plot
