@@ -360,7 +360,7 @@ mounted_infantry = {
         always = yes
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
 
     ai_will_do = { 
@@ -452,7 +452,7 @@ commandos = {
        
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
 
 
@@ -571,7 +571,7 @@ irregulars = {
         
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
 
 
@@ -665,7 +665,7 @@ peoples_war = {
         has_government = communism
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
     ai_will_do = {
 

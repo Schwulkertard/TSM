@@ -158,7 +158,7 @@ flying_batteries = {
     
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
 
     
@@ -523,7 +523,7 @@ self_propelled_support = {
        
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        
     }
 
 
