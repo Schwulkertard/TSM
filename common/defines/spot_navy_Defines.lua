@@ -122,3 +122,17 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 7 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 1.5
+-- Having Naval Dominance will provide the following benefits:
+NDefines.NNavy.CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = true				-- If an enemy control a sea region, consider that region as blocked
+NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_FRACTION = 0.0006					-- How much dominance points goes into one percent of the multiplier from strike force missions. ( e.g. a taskforce of 1000 dominance generates a 60% multiplier ) 
+NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_MULTIREGION_DECAY = 0.025			-- Percentage that the strike force mission's naval dominance multiplier decreases with for each additional assigned region
+NDefines.NNavy.NAVAL_DOMINANCE_SPOTTING_BONUS = 0.05
+NDefines.NNavy.NAVAL_DOMINANCE_ORG_RECOVERY = 0.1
+NDefines.NNavy.NAVAL_DOMINANCE_SHIP_RECOVERY_CHANCE = 0.1
+NDefines.NNavy.NAVAL_DOMINANCE_MINES_PLANTING_BONUS = 0.2						-- Naval planting bonus when having naval dominance in the region
+NDefines.NNavy.NAVAL_DOMINANCE_MINES_SWEEPING_BONUS = 0.2						-- Naval sweeping bonus when having naval dominance in the region
+NDefines.NNavy.NAVAL_DOMINANCE_CHANCE_OF_ACCIDENT_REDUCTION = 0.25			-- The chance to encounter an accident during naval training would be reduced when having naval dominance in the region
+
+NDefines.NNavy.NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000				-- Tuning parameter for homebase calculation. Distance to normalize against. Everything above said value will be treated as score = 0.
+NDefines.NNavy.NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02					-- Tuning parameter for homebase calculation. Multiplier for how much the level of the naval base impacts its total score.
+NDefines.NNavy.NAVAL_HOMEBASE_OWNERSHIP_BONUS = 0.04							-- Tuning parameter for homebase calculation. Adds to total score based on if the base is owned by the country doing the calculation.
