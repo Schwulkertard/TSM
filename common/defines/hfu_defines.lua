@@ -301,6 +301,7 @@ NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.3     -- large river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
+NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1	-- If using the 'immobile' cohesion setting, factor ALL planning speed growth by this
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1	
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
