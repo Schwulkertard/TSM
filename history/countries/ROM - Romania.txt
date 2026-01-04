@@ -113,6 +113,7 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_nicolae_sova 
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_mihail_sturdza

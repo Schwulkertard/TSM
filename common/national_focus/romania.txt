@@ -226,8 +226,10 @@ focus_tree = {
 			factor = 9
 		}
 		available = {
+			has_completed_focus = ROM_avenge_1940
 		}
 		completion_reward = {
+			add_ideas = ROM_church_secured
 			custom_effect_tooltip = "TODO: 10% rec rate left side 1% manpower right side"
 		}
 	}
@@ -286,6 +288,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = ROM_king_carol_ii_hedonist
+			retire_country_leader = yes
+			create_country_leader = {
+				name = ROM_king_michael
+				picture = GFX_Portrait_romania_michael_i
+				ideology = despotism
+			}
 		}
 	}
 	focus = {
@@ -350,6 +358,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = "TODO: give carol -25% pp cost to stuff"
+			add_country_leader_trait = socialite_connections
 		}
 	}
 	focus = {
@@ -458,6 +467,7 @@ focus_tree = {
 			factor = 9
 		}
 		available = {
+			fascism > 0.35
 		}
 		completion_reward = {
 			add_popularity = {
@@ -467,6 +477,13 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
+			}
+			remove_ideas = ROM_king_carol_ii_hedonist
+			retire_country_leader = yes
+			create_country_leader = {
+				name = ROM_corneliu_codreanu
+				picture = GFX_Portrait_romania_corneliu_zelea_codreanu
+				ideology = fascism_ideology
 			}
 		}
 	}
@@ -546,6 +563,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -564,6 +582,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = ROM_army_maneuvers
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -583,6 +606,49 @@ focus_tree = {
 			has_completed_focus = ROM_weaken_the_king
 		}
 		completion_reward = {
+			custom_effect_tooltip = ROM_iron_guard_militia_tt
+			division_template = {
+					name = "Garda de Fier"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_tank = { x = 0 y = 3 }
+						logistics_company = { x = 0 y = 4 }
+						anti_air = { x = 0 y = 5 }
+					}
+				}
+			46 = {
+				for_loop_effect = {
+					end = 2
+					create_unit = {
+						division = "name = \"Garda de Fier\" division_template = \"Garda de Fier\" start_experience_factor = 1"
+						owner = ROM
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -601,6 +667,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = ROM_army_maneuvers
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -620,6 +691,7 @@ focus_tree = {
 			has_completed_focus = ROM_reassert_authority
 		}
 		completion_reward = {
+			add_ideas = ROM_french_drill
 		}
 	}
 	focus = {
@@ -638,6 +710,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				technology = improved_infantry_weapons
+				bonus = 1
+			}
 		}
 	}
 	focus = {
@@ -656,6 +733,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				category = cat_artillery
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -674,6 +757,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				category = logistics_tech
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -693,6 +782,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = ROM_army_maneuvers
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -711,6 +805,9 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			set_technology = {
+				rom_green_devils = 1
+			}
 		}
 	}
 	focus = {
@@ -729,6 +826,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				category = cat_anti_tank
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -747,6 +850,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				technology = advanced_infantry_weapons
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 	focus = {
@@ -765,6 +874,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				category = engineers_tech
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -783,6 +898,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_ideas = ROM_armored_support
 		}
 	}
 	focus = {

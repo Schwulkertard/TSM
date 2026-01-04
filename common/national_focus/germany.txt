@@ -2104,6 +2104,28 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					ROM = {
+						has_completed_focus = ROM_prevent_partition
+					}
+				}
+				ROM = {
+					set_country_flag = rom_no_partition
+				}
+			}
+			if = {
+				limit = { 
+					ROM = {
+						NOT = {
+							has_completed_focus = ROM_prevent_partition
+						}
+					}
+				}
+				HUN = {
+					transfer_state = 76
+				}
+			}
 			SOV = {
 				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt

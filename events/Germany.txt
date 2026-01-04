@@ -9,12 +9,10 @@ country_event = {
 		GRE = { has_capitulated = yes}
 	}
 	immediate = {
-		76={remove_core_of=ROM}
-		HUN = {transfer_state = 76
+		HUN = {
 			transfer_state = 45
 			transfer_state = 678
 		}
-		ROM = { remove_state_core = 76 }
 		if = {
 			limit = {country_exists = BUL }
 			77 = {remove_core_of = ROM}
