@@ -15,13 +15,12 @@ combat_support = {
     name = DOCTRINE_TRACK_COMBAT_SUPPORT
     background = "GFX_sup_firepower_bg"
     icon = "GFX_doctrine_milestone_artillery_land"
-     icon_frame = "GFX_doctrine_decor_land"
+    icon_frame = "GFX_doctrine_decor_land"
     mastery = {
         multiplier = 10.0
         categories = {
 	        category_line_artillery
 	        category_artillery
-            category_support_battalions
         }
     }
 }
@@ -40,6 +39,35 @@ armor = {
         }
         sub_units = {
             armored_car
+        }
+    }
+}
+
+
+support = {
+    name = DOCTRINE_TRACK_support
+    background = "GFX_sup_firepower_bg"
+    icon = "GFX_doctrine_milestone_artillery_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 8.0
+        categories = {
+            category_line_artillery
+	        category_artillery
+            category_support_battalions
+        }
+    }
+}
+motorized = {
+    name = DOCTRINE_TRACK_motorized
+    background = "GFX_mob_warfare_bg"
+    icon = "GFX_doctrine_milestone_armored_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 5.0
+        categories = {
+            category_cavalry
+			category_vehicle_infantry
         }
     }
 }

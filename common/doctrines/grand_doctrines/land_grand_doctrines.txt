@@ -24,20 +24,23 @@ new_mobile_warfare = {
         infantry
         combat_support
         armor
-        operations
+        motorized
+		support
+		operations
     }
 
     # EFFECTS
-	planning_speed = 0.20
-	army_speed_factor = 0.10
+	planning_speed = 0.50
+	army_speed_factor = 0.05
+    org_loss_when_moving = -0.15
 	enable_tactic = tactic_unexpected_thrust
 	
 
     milestones = {
         {
             #Infantry
-	        org_loss_when_moving = -0.15
-            land_reinforce_rate = 0.02
+            category_all_infantry = {max_organisation = 5}
+            land_reinforce_rate = 0.05
             enable_tactic = tactic_delay
 
             effect = {
@@ -56,8 +59,7 @@ new_mobile_warfare = {
         }
         {
             #Artillery/Support
-	        planning_speed = 0.1
-            org_loss_at_low_org_factor = -0.1
+	        category_mobile_artillery = {soft_attack = 0.05 air_attack = 0.05 hard_attack = 0.05}
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -75,9 +77,76 @@ new_mobile_warfare = {
         }
         {
             #Armor
-	        additional_brigade_column_size = 1
+            category_all_armor = {max_organisation = 10 default_morale =0.05}
             enable_tactic = tactic_blitz
 
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+        #motorized
+        motorized={
+			need = {
+				motorized_equipment = -20
+			}
+		}
+		mot_anti_tank_brigade={
+			need = {
+				motorized_equipment = -10
+			}
+		}
+		mot_anti_air_brigade={
+			need = {
+				motorized_equipment = -10
+			}
+		}
+		mot_artillery_brigade={
+			need = {
+				motorized_equipment = -10
+			}
+		}
+		mot_rocket_artillery_brigade={
+			need = {
+				motorized_equipment = -10
+			}
+		}
+        mechanized={
+			need = {
+				mechanized_equipment = -10
+			}
+		}
+		on_milestone_complete = {
+			custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
+			custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
+			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 10 less Motorized Equipment"
+		}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #support
             effect = {
                 if = {
                     limit = {
@@ -139,7 +208,9 @@ superior_firepower = {
         infantry
         combat_support
         armor
-        operations
+        motorized
+		support
+		operations
     }
 
     # EFFECTS
@@ -218,6 +289,38 @@ superior_firepower = {
             }
         }
         {
+            #motorized
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #support
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
             #Operations
             enable_tactic = tactic_tactical_withdrawal
             category_army = {
@@ -264,7 +367,9 @@ grand_battleplan = {
         infantry
         combat_support
         armor
-        operations
+        motorized
+		support
+		operations
     }
 
     # EFFECTS
@@ -333,6 +438,38 @@ grand_battleplan = {
             
         }
         {
+            #motorized
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #support
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
             #Operations
             coordination_bonus = 0.1
             max_command_power = 30
@@ -375,7 +512,9 @@ mass_assault = {
         infantry
         combat_support
         armor
-        operations
+        motorized
+		support
+		operations
     }
 
     # EFFECTS
@@ -429,6 +568,38 @@ mass_assault = {
             land_reinforce_rate = 0.02
             enable_tactic = tactic_overwhelming_fire
 
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #motorized
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #support
             effect = {
                 if = {
                     limit = {
