@@ -45,6 +45,7 @@ technologies = {
 			ship_light_medium_battery_1
 			ship_355_battery
 			ship_secondaries_1
+			ship_283_battery
 		}
 
 
@@ -565,6 +566,7 @@ technologies = {
 			ship_381_battery
 			ship_super_heavy_battery_1
 			ship_medium_battery_2
+			ship_305_battery
 		}
 
 		on_research_complete = {

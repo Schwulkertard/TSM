@@ -114,7 +114,7 @@ equipment_modules = {
  	}
 	dp_light_battery_1 = {
 		abbreviation = "sae"
-		category = dp_light_battery
+		category = ship_light_battery
 		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
@@ -142,7 +142,7 @@ equipment_modules = {
 
 	dp_light_battery_2 = {
 		abbreviation = "saf"
-		category = dp_light_battery
+		category = ship_light_battery
 		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
@@ -175,7 +175,7 @@ equipment_modules = {
 
 	dp_light_battery_3 = {
 		abbreviation = "sag"
-		category = dp_light_battery
+		category = ship_light_battery
 		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
@@ -208,7 +208,7 @@ equipment_modules = {
 
 	dp_light_battery_4 = {
 		abbreviation = "sah"
-		category = dp_light_battery
+		category = ship_light_battery
 		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
@@ -244,9 +244,15 @@ equipment_modules = {
  	#  # #   #  #  # #    #       #  # #  #  #   #  #   #  #   #
  	#  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #
  	ship_355_battery = {
- 		category = ship_heavy_battery
+ 		category = ship_14_battery
  		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
+		forbid_module_categories = {
+		    ship_15_battery
+		    ship_16_battery
+		    ship_18_battery 
+		}
  		add_stats = {
  			hg_attack = 10
 			lg_attack = 2
@@ -257,7 +263,7 @@ equipment_modules = {
 			reliability = -0.025
 			naval_heavy_gun_hit_chance_factor = 0.1
 			hg_attack = 0.02
-			lg_armor_piercing = 0.2
+			lg_armor_piercing = 1
  		}
  		add_average_stats = {
  			hg_armor_piercing = 40
@@ -265,26 +271,27 @@ equipment_modules = {
  		build_cost_resources = {
  			steel = 5
  		}
- 		can_convert_from = {
- 			module_category = ship_heavy_battery
- 			convert_cost_ic = 700
- 		}
  		critical_parts = { damaged_heavy_guns }
  	}
  	ship_381_battery = {
- 		category = ship_heavy_battery
+ 		category = ship_15_battery
  		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
+		forbid_module_categories = {
+		    ship_14_battery
+		    ship_16_battery
+		    ship_18_battery 
+		}
  		add_stats = {
  			hg_attack = 12
-			lg_attack = 1
  			build_cost_ic = 1200
  		}
  		multiply_stats = {
  			naval_speed = -0.05
 			reliability = -0.05
 			hg_attack = 0.02
-			lg_armor_piercing = 0.2
+			lg_armor_piercing = 1
  		}
  		add_average_stats = {
  			hg_armor_piercing = 45
@@ -292,16 +299,18 @@ equipment_modules = {
  		build_cost_resources = {
  			steel = 5
  		}
- 		can_convert_from = {
- 			module_category = ship_heavy_battery
- 			convert_cost_ic = 750
- 		}
  		critical_parts = { damaged_heavy_guns }
  	}
  	ship_406_battery = {
- 		category = ship_heavy_battery
+ 		category = ship_16_battery
  		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
+			forbid_module_categories = {
+		    ship_14_battery
+		    ship_15_battery
+		    ship_18_battery 
+		}
  		add_stats = {
  			hg_attack = 15
  			build_cost_ic = 1300#1450
@@ -316,16 +325,18 @@ equipment_modules = {
  		build_cost_resources = {
  			steel = 5
  		}
- 		can_convert_from = {
- 			module_category = ship_heavy_battery
- 			convert_cost_ic = 750
- 		}
  		critical_parts = { damaged_heavy_guns }
  	}
  	ship_457_battery = {
- 		category = ship_heavy_battery
+ 		category = ship_18_battery
  		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
+		forbid_module_categories = {
+		    ship_14_battery
+		    ship_15_battery
+		    ship_16_battery 
+		}
  		add_stats = {
  			hg_attack = 15
  			build_cost_ic = 1400
@@ -339,10 +350,6 @@ equipment_modules = {
  		}
  		build_cost_resources = {
  			steel = 5
- 		}
- 		can_convert_from = {
- 			module_category = ship_heavy_battery
- 			convert_cost_ic = 750
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -367,7 +374,7 @@ equipment_modules = {
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
- ship_super_heavy_battery_2 = {
+ 	ship_super_heavy_battery_2 = {
  		category = ship_super_heavy_battery
  		sfx = sfx_ui_sd_module_turret
  		gfx = ship_heavy_battery_5
@@ -393,6 +400,40 @@ equipment_modules = {
  	# # # ##  #  #  #  #  # # # #     ###  ####  #   #  ##  ###    #
  	#   # #   #  #  #  #  # #   #     #  # #  #  #   #  #   #  #   #
  	#   # ### ###  ###  ##  #   #     ###  #  #  #   #  ### #  #   #
+	ship_283_battery = {
+ 		category = ship_11_battery
+ 		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
+ 		add_equipment_type = capital_ship
+ 		add_stats = {
+ 			lg_attack = 14
+ 			build_cost_ic = 700
+ 		}
+ 		multiply_stats = {
+ 			naval_speed = -0.04
+ 		}
+ 		add_average_stats = {
+ 			lg_armor_piercing = 24
+ 		}
+ 		critical_parts = { damaged_heavy_guns }
+ 	}
+	ship_305_battery = {
+ 		category = ship_12_battery
+		gui_category = ship_heavy_battery
+ 		sfx = sfx_ui_sd_module_turret
+ 		add_equipment_type = capital_ship
+ 		add_stats = {
+ 			lg_attack = 16
+ 			build_cost_ic = 800
+ 		}
+ 		multiply_stats = {
+ 			naval_speed = -0.05
+ 		}
+ 		add_average_stats = {
+ 			lg_armor_piercing = 26
+ 		}
+ 		critical_parts = { damaged_heavy_guns }
+ 	}
  	ship_medium_battery_1 = {
  		category = ship_medium_battery
  		sfx = sfx_ui_sd_module_turret
@@ -411,7 +452,6 @@ equipment_modules = {
  			surface_visibility = 5
  			naval_speed = -5
  			build_cost_ic =1000
-			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
  			module_category = ship_light_battery
@@ -442,7 +482,6 @@ equipment_modules = {
  			surface_visibility = 5
  			naval_speed = -5
  			build_cost_ic = 1200
-			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
@@ -473,7 +512,6 @@ equipment_modules = {
  			surface_visibility = 5
  			naval_speed = -5
  			build_cost_ic = 1400
-			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
@@ -504,7 +542,6 @@ equipment_modules = {
  			surface_visibility = 5
  			naval_speed = -5
  			build_cost_ic = 1600
-			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
@@ -608,7 +645,6 @@ equipment_modules = {
  		add_average_stats = {
  			lg_armor_piercing = 10
  			max_strength = 30
-			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
@@ -766,32 +802,26 @@ equipment_modules = {
  	}
 	dp_ship_secondaries_4 = {
 		abbreviation = "sba"
-		category = ship_dp_secondaries
-		gui_category = ship_secondaries
-		parent = dp_ship_secondaries_3
+		category = ship_secondaries
 		gfx = dp_secondary_battery_4
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 4.5
-			anti_air_attack = 3
+			lg_attack = 10
+			anti_air_attack = 5
 			build_cost_ic = 360
 		}
 
 		multiply_stats = {
 			naval_speed = -0.03
+			build_cost_ic = 0.01
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
 			module_category = ship_secondaries
-			convert_cost_ic = 200
-		}
-
-		can_convert_from = {
-			module_category = ship_dp_secondaries
 			convert_cost_ic = 200
 		}
 		critical_parts = { damaged_secondaries }

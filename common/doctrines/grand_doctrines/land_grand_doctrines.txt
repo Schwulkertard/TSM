@@ -126,22 +126,20 @@ new_mobile_warfare = {
 				mechanized_equipment = -10
 			}
 		}
-		on_milestone_complete = {
-			custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
-			custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
-			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 10 less Motorized Equipment"
-		}
-            effect = {
+        effect = {
+        custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
+        custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
+        custom_effect_tooltip = "Each Motorized Artillery requires Batallion 10 less Motorized Equipment"
                 if = {
                     limit = {
                         NOT = {
-                            has_variable = armor_milestone_var
+                            has_variable = motorized_milestone_var
                         }
                     }
-                    set_variable = { armor_milestone_var = 1 }
+                    set_variable = { motorized_milestone_var = 1 }
                 }
                 else = {
-                    add_to_variable = { armor_milestone_var = 1 }
+                    add_to_variable = { motorized_milestone_var = 1 }
                 }
             }
         }
@@ -151,13 +149,13 @@ new_mobile_warfare = {
                 if = {
                     limit = {
                         NOT = {
-                            has_variable = armor_milestone_var
+                            has_variable = support_milestone_var
                         }
                     }
-                    set_variable = { armor_milestone_var = 1 }
+                    set_variable = { support_milestone_var = 1 }
                 }
                 else = {
-                    add_to_variable = { armor_milestone_var = 1 }
+                    add_to_variable = { support_milestone_var = 1 }
                 }
             }
         }

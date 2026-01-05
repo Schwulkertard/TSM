@@ -764,7 +764,7 @@ equipments = {
  		module_slots = {
  			fixed_ship_battery_slot = {
  				required = yes
- 				allowed_module_categories = { ship_heavy_battery }
+ 				allowed_module_categories = { ship_11_battery ship_12_battery }
  			}
  			fixed_ship_anti_air_slot = inherit
  			fixed_ship_fire_control_system_slot = inherit
@@ -775,7 +775,7 @@ equipments = {
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_anti_air
+ 					ship_11_battery ship_12_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -790,18 +790,11 @@ equipments = {
  			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_mine_layer
- 					ship_anti_air
- 					ship_airplane_launcher
- 					ship_torpedo
+					ship_11_battery ship_12_battery
  				}
  			}
  		}
  		default_modules = {
- 			front_1_custom_slot = ship_anti_air_1
- 			fixed_ship_battery_slot = ship_heavy_battery_1
- 			fixed_ship_secondaries_slot = ship_secondaries_1
- 			rear_1_custom_slot = ship_torpedo_1
  		}
  	}
  	ship_hull_cruiser_coastal_defense_ship = {
