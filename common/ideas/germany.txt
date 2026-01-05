@@ -378,6 +378,7 @@ ideas = {
 			picture = generic_build_infrastructure
 			modifier = {
 				production_speed_infrastructure_factor = 0.5
+				global_building_slots_factor=0.3
 			}
 		}
 		GER_align_hungary = {
@@ -721,8 +722,7 @@ ideas = {
 			removal_cost = -1
 			picture = ger_glory
 			modifier = {
-				stability_weekly = 0.01
-				war_support_weekly = 0.01
+				stability_weekly = 0.005
 				
 			}
 		}
@@ -824,53 +824,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
-		GER_mefo_bills_1 = {
-			name = GER_mefo_bills
-			allowed = {
-				original_tag = GER
-				has_war=no
-			}
-
-			cancel={
-                has_war=yes
-            }
-			
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			removal_cost = -1
-			picture = ger_mefo_bills
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.25
-				production_speed_naval_base_factor = 0.25
-				production_speed_coastal_bunker_factor = 0.25
-				production_speed_bunker_factor = 0.25
-				production_speed_air_base_factor = 0.25
-				production_speed_anti_air_building_factor = 0.5
-				production_speed_radar_station_factor = 0.25
-				production_speed_fuel_silo_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.3
-				political_power_cost = 0.2
-			}
-			
-		}
 		
-		GER_mefo_bills_ended = {
-			allowed = {
-				original_tag = GER
-			}
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			removal_cost = -1
-			picture = ger_mefo_bills_payment
-			modifier = {
-				consumer_goods_factor = 0.20
-			}
-		}
 		GER_messerschmitt_transport_plane = {
 			allowed = {
 				original_tag = GER
@@ -1469,13 +1423,13 @@ ideas = {
 		}
 		GER_hjalmar_schacht = {
 			picture = hjalmar_schacht
-			cost = 75
+			cost = 150
 
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan
+				has_completed_focus = GER_order_above_all
 			}
 			
 			traits = { captain_of_industry }	

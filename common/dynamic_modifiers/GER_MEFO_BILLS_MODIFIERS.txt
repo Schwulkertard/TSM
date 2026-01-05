@@ -1,0 +1,27 @@
+GER_Mefo_Bills_dynamic = {
+    enable = { always = yes }
+
+    icon = GFX_idea_ger_mefo_bills
+
+    political_power_cost = GER_political_power_cost_var
+   
+    industrial_capacity_factory = GER_industrial_capacity_factory_var
+    industrial_capacity_dockyard = GER_industrial_capacity_dockyard_var
+    production_factory_efficiency_gain_factor = GER_production_factory_efficiency_gain_factor_var
+    stability_factor = GER_stability_factor_var
+    war_support_factor = GER_war_support_factor_var
+
+    production_speed_arms_factory_factor = GER_production_speed_arms_factory_factor_var
+    production_speed_industrial_complex_factor = GER_production_speed_industrial_complex_factor_var
+    production_speed_dockyard_factor = GER_production_speed_dockyard_factor_var
+    conversion_cost_mil_to_civ_factor = GER_conversion_cost_mil_to_civ_factor_var
+    conversion_cost_civ_to_mil_factor = GER_conversion_cost_civ_to_mil_factor_var
+    production_factory_max_efficiency_factor = GER_production_factory_max_efficiency_factor_var
+    consumer_goods_expected_value = GER_consumer_goods_factor_var
+    research_speed_factor = GER_research_speed_factor_var
+    production_factory_start_efficiency_factor = GER_production_factory_start_efficiency_factor_var
+    production_speed_buildings_factor = GER_production_speed_buildings_factor_var
+    production_speed_infrastructure_factor = GER_production_speed_infrastructure_factor_var
+    production_cost_synthetic_refinery_factor = GER_production_speed_synthetic_refinery_factor_var
+    production_cost_synthetic_rubber_refinery_factor = GER_production_speed_synthetic_rubber_refinery_factor_var
+}

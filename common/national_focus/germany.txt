@@ -11,39 +11,9 @@
 	default = no
 
 	focus = {
-		id = GER_four_year_plan
-		icon = GFX_focus_GER_four_year_plan
-		x = 3
-		y = 0
-		cost = 5
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 1.0
-				uses = 2
-				technology = advanced_machine_tools
-				technology = flexible_line
-				technology = assembly_line_production
-				technology = streamlined_line
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry5
-				technology = dispersed_industry3
-				technology = dispersed_industry4
-				technology = dispersed_industry5
-			}
-			custom_effect_tooltip = available_theorist_production
-			show_ideas_tooltip = GER_hjalmar_schacht
-		}
-	}
-	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 12
+		x = 20
 		y = 0
 		cost = 7.2
 		available = {
@@ -63,11 +33,11 @@
 	focus = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_GER_grosraumwirtschaft
-		prerequisite = { focus = GER_four_year_plan }
-		x = -3
+		prerequisite = { focus = GER_rethink_our_old_plans }
+		x = -1.5
 		y = 1
-		relative_position_id = GER_four_year_plan
-		cost = 5
+		relative_position_id = GER_rethink_our_old_plans
+		cost = 7.2
 		ai_will_do = {
 			factor = 1
 		}
@@ -76,15 +46,85 @@
 			add_ideas = GER_grosraumwirtschaft
 		}
 	}
+
+	focus = {
+		id = GER_MittelEuropa
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_grosraumwirtschaft focus = GER_get_better_advisors }
+		x = 0
+		y = 2
+		relative_position_id = GER_rethink_our_old_plans
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_Reichsbank_War_loans
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_MittelEuropa }
+		x = -1.5
+		y = 3
+		relative_position_id = GER_rethink_our_old_plans
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+
+
+	focus = {
+		id = GER_Use_our_Infrastructure_Advantage
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_MittelEuropa }
+		x = 1.5
+		y = 3
+		relative_position_id = GER_rethink_our_old_plans
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_Mobilise_the_Industry_Barons
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_Reichsbank_War_loans focus = GER_Use_our_Infrastructure_Advantage }
+		x = 0
+		y = 4
+		relative_position_id = GER_rethink_our_old_plans
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
 	
 	focus = {
 		id = GER_german_war_economy
 		icon = GFX_focus_GER_german_war_economy
-		prerequisite = { focus = GER_grosraumwirtschaft }
+		prerequisite = { focus = GER_Mobilise_the_Industry_Barons }
 		x = 0
-		y = 1
-		relative_position_id = GER_grosraumwirtschaft
-		cost = 2
+		y = 5
+		relative_position_id = GER_hermann_goering_plan
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -105,257 +145,7 @@
 		    } 
 		}}
 	}
-	focus = {
-		id = GER_align_hungary
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = GER_german_war_economy }
-		x = 0
-		y = 1
-		relative_position_id = GER_german_war_economy
-		cost = 2
-		ai_will_do = {
-			factor = 1
-			}
-		available = {
-			date > 1939.03.01
-		}
-			completion_reward = {
-				HUN = {
-					add_timed_idea = { idea = GER_align_hungary days = 100 }
-				}
-				ROM = {
-					add_timed_idea = { idea = GER_align_hungary days = 100 }
-				}
-				BUL = {
-					add_timed_idea = { idea = GER_align_hungary days = 100 }
-				}
-			}
-		}
-	focus = {
-		id = GER_integrate_war_economies
-		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_align_hungary }
-		x = 0
-		y = 1
-		relative_position_id = GER_align_hungary
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			GER = { has_completed_focus = GER_danzig_or_war }
-		}
-		available_if_capitulated = no
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_integrate_war_economies_1 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_integrate_war_economies_2 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			HUN = {
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_1 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_2 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			ROM = {
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_1 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_2 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			HUN = { country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
-				
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-				}
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			
-			ROM = { 
-			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
-				country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-				}
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			BUL = {
-				country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }		}
-				
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
+	
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
@@ -848,43 +638,21 @@
 		id = GER_order_above_all
 		icon = GFX_focus_GER_order
 		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = GER_four_year_plan
-		prerequisite = { focus = GER_four_year_plan }
+		x = 5
+		y = 0
 		completion_reward = { 
 		add_political_power = 150
+		custom_effect_tooltip = available_theorist_production
+		show_ideas_tooltip = GER_hjalmar_schacht
 		}
 	}	
 	focus = {
-		id = GER_rebuild_our_glory
-		icon = GFX_focus_GER_rebuild_our_glory
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = GER_four_year_plan
-		prerequisite = { focus = GER_four_year_plan }
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-		completion_reward = { 
-			add_tech_bonus = {
-			name = Construction
-			uses = 1
-			bonus = 1.5
-			category = construction_tech
-							}
-			add_timed_idea = {
-				idea = GER_rebuild_our_glory1
-				days = 70
-							}
-		}
-	}
-	focus = {
 		id = GER_autarky
 		icon = GFX_focus_GER_autarky
-		prerequisite = { focus = GER_rebuild_our_glory }
+		prerequisite = { focus = GER_autobahn }
 		x = 0
 		y = 1
-		relative_position_id = GER_rebuild_our_glory
+		relative_position_id = GER_autobahn
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -907,10 +675,10 @@
 	focus = {
 		id = GER_autobahn
 		icon = GFX_focus_GER_autobahn
-		prerequisite = { focus = GER_order_above_all }
-		x = 0
+		prerequisite = { focus = GER_hermann_goering_plan focus = GER_Fuhrer_Prinzip }
+		x = -3.5
 		y = 1
-		relative_position_id = GER_order_above_all
+		relative_position_id = GER_hermann_goering_plan
 		cost = 7.2
 		available = {
 		}
@@ -962,58 +730,386 @@
 		}
 	}
 	focus = {
-		id = GER_extra_tech_slot
-		icon = GFX_focus_GER_extra_tech_slot
-		prerequisite = { focus = GER_autobahn focus = GER_autarky }
-		x = 1
+			id = GER_Fuhrer_Prinzip
+			icon = GFX_focus_GER_hermann_goering
+			cost = 7.2
+			x = -7
+			y = 1
+			mutually_exclusive = { focus = GER_rethink_our_old_plans focus = GER_hermann_goering_plan }
+			relative_position_id = GER_order_above_all
+			prerequisite = { focus = GER_order_above_all }
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			completion_reward = { 
+				add_ideas = war_economy
+
+           
+		    custom_effect_tooltip = GER_Fuhrer_prinzip_tt
+
+			add_to_variable = {
+				GER_political_power_cost_var = -0.15
+			}
+			add_to_variable = {
+				GER_industrial_capacity_factory_var = 0.1
+			}
+			add_to_variable = {
+				GER_industrial_capacity_dockyard_var = 0.1
+			}
+			add_to_variable = {
+				GER_war_support_factor_var = 0.1
+			}
+			add_to_variable = {
+				GER_stability_factor_var = -0.1
+			}
+			add_to_variable = {
+				GER_production_speed_arms_factory_factor_var = 0.1
+			}
+			add_to_variable = {
+				GER_production_speed_dockyard_factor_var = 0.1
+			}
+		}
+	}	
+
+	focus = {
+		id = GER_Fuhrer_directives
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_Fuhrer_Prinzip }
+		x = 1.5
 		y = 1
-		relative_position_id = GER_autobahn
+		relative_position_id = GER_Fuhrer_Prinzip
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}
+
+	focus = {
+		id = GER_Fuhrer_directives
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_Fuhrer_Prinzip }
+		x = 1.5
+		y = 1
+		relative_position_id = GER_Fuhrer_Prinzip
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_right_hand_man
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_Fuhrer_Prinzip }
+		x = -1.5
+		y = 1
+		relative_position_id = GER_Fuhrer_Prinzip
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_integrate_war_economies
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_right_hand_man focus = GER_Fuhrer_directives }
+		x = 0
+		y = 2
+		relative_position_id = GER_Fuhrer_Prinzip
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = no
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_integrate_war_economies_1 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = { has_state_flag = GER_integrate_war_economies_2 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			HUN = {
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_1 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_2 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			ROM = {
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_1 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_2 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			HUN = { country_event = { id = wtt_germany.72 }
+				set_temp_variable = {neutral=party_popularity@neutrality}
+				multiply_temp_variable={neutral=100}
+				set_temp_variable = {fasc=party_popularity@fascism}
+				multiply_temp_variable={fasc=100}
+				set_temp_variable = {comm=party_popularity@communism}
+				multiply_temp_variable={comm=100}
+				set_temp_variable = {demo=party_popularity@democratic}
+				multiply_temp_variable={demo=100}
+				
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+				}
+				set_popularities = {
+				neutrality = neutral
+				fascism = fasc
+				communism=comm
+				democratic= demo
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			
+			ROM = { 
+			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
+				country_event = { id = wtt_germany.72 }
+				set_temp_variable = {neutral=party_popularity@neutrality}
+				multiply_temp_variable={neutral=100}
+				set_temp_variable = {fasc=party_popularity@fascism}
+				multiply_temp_variable={fasc=100}
+				set_temp_variable = {comm=party_popularity@communism}
+				multiply_temp_variable={comm=100}
+				set_temp_variable = {demo=party_popularity@democratic}
+				multiply_temp_variable={demo=100}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+				}
+				set_popularities = {
+				neutrality = neutral
+				fascism = fasc
+				communism=comm
+				democratic= demo
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			BUL = {
+				country_event = { id = wtt_germany.72 }
+				set_temp_variable = {neutral=party_popularity@neutrality}
+				multiply_temp_variable={neutral=100}
+				set_temp_variable = {fasc=party_popularity@fascism}
+				multiply_temp_variable={fasc=100}
+				set_temp_variable = {comm=party_popularity@communism}
+				multiply_temp_variable={comm=100}
+				set_temp_variable = {demo=party_popularity@democratic}
+				multiply_temp_variable={demo=100}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }		}
+				
+				set_popularities = {
+				neutrality = neutral
+				fascism = fasc
+				communism=comm
+				democratic= demo
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
 	focus = {
 			id = GER_hermann_goering_plan
 			icon = GFX_focus_GER_hermann_goering
 			cost = 7.2
-			x = -1
+			x = 0
 			y = 1
 			mutually_exclusive = { focus = GER_rethink_our_old_plans }
-			relative_position_id = GER_extra_tech_slot
-			prerequisite = { focus = GER_extra_tech_slot }
+			relative_position_id = GER_order_above_all
+			prerequisite = { focus = GER_order_above_all}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
-			completion_reward = { 
-				add_ideas = GER_hermann_goering_plan1
+			completion_reward = {
+				add_timed_idea = { idea = GER_rebuild_our_glory1 days = 100 } 
+				custom_effect_tooltip = GER_Goering_plan_tt
+			add_to_variable = {
+				GER_production_speed_industrial_complex_factor_var = 0.1
+			}
+			add_to_variable = {
+				GER_production_speed_arms_factory_factor_var = 0.1
+			}
 		}
 	}		
 	focus = {
 		id = GER_rethink_our_old_plans
 		icon = GFX_focus_GER_rethink_our_plans
 		cost = 7.2
-		x = 1
+		x = 7
 		y = 1
 		mutually_exclusive = { focus = GER_hermann_goering_plan }
-		relative_position_id = GER_extra_tech_slot
-		prerequisite = { focus = GER_extra_tech_slot }
+		relative_position_id = GER_order_above_all
+		prerequisite = { focus = GER_order_above_all }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { 
-		add_ideas = GER_rethink_our_old_plans1
-							}
+				add_ideas = low_economic_mobilisation
+				add_ideas = free_trade
+
+				custom_effect_tooltip = GER_Rethink_our_plans_tt
+
+				add_to_variable = {
+				GER_political_power_cost_var = 0.15
+			}
+			add_to_variable = {
+				GER_industrial_capacity_factory_var = -0.1
+			}
+			add_to_variable = {
+				GER_industrial_capacity_dockyard_var = -0.1
+			}
+			add_to_variable = {
+				GER_war_support_factor_var = -0.2
+			}
+			add_to_variable = {
+				GER_stability_factor_var = 0.1
+			}
+			add_to_variable = {
+				GER_production_speed_industrial_complex_factor_var = 0.3
+			}
+		}
 		}
 	focus = {
 		id = GER_hermann_goring_werke
 		icon = GFX_focus_GER_hgw
 		dynamic = yes
-		prerequisite = { focus = GER_four_year_plan }
-		x = 3
+		prerequisite = { focus = GER_hermann_goering_plan focus = GER_rethink_our_old_plans }
+		x = 3.5
 		y = 1
-		relative_position_id = GER_four_year_plan
+		relative_position_id = GER_hermann_goering_plan
 		cost = 5
 		ai_will_do = {
 			factor = 9
@@ -1140,31 +1236,15 @@ focus = {
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_industrial_effort_2_2IC
-			}
 		}
 	}
 	focus = {
 		id = GER_coal_liquidization
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER_kdf_wagen }
+		prerequisite = { focus = GER_rhineland }
 		x = 0
-		y = 1
-		relative_position_id = GER_kdf_wagen
+		y = -2
+		relative_position_id = GER_rhineland
 		cost = 5
 		ai_will_do = {
 			factor = 4
@@ -1312,7 +1392,7 @@ focus = {
 		icon = GFX_focus_GER_summon_fritz_todt
 		prerequisite = { focus = GER_hermann_goering_plan focus = GER_rethink_our_old_plans }
 		x = 1
-		y = 1
+		y = 5
 		relative_position_id = GER_hermann_goering_plan
 		cost = 5
 		ai_will_do = {
@@ -2094,7 +2174,7 @@ focus = {
 		cancel = {
 		}
 		cancel_if_invalid = no
-		x = 20
+		x = 27
 		y = 0
 		cost = 5
 		available = {
@@ -2844,7 +2924,7 @@ focus = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 27
+		x = 35
 		y = 0
 		cost = 2.98
 		ai_will_do = {
@@ -3897,10 +3977,10 @@ focus = {
 focus = {
 	id = GER_get_better_advisors
 	icon = GFX_focus_GER_get_better_advisors
-    prerequisite = {  focus = GER_rhineland }
-	x = 5
+    prerequisite = {  focus = GER_rethink_our_old_plans }
+	x = 1.5
 	y = 1
-	relative_position_id = GER_rhineland
+	relative_position_id = GER_rethink_our_old_plans
 	cost = 5
 	completion_reward = {
 		add_political_power = 75
@@ -3911,13 +3991,13 @@ focus = {
 focus = {
 	id = GER_keep_our_technology
 	icon = GFX_focus_GER_technology_lead
-	prerequisite = {  focus = GER_get_better_advisors }
+	prerequisite = {  focus = GER_rhineland }
 	bypass = {
 		date > 1936.7.1
 	}
-	x = 0
+	x = 5
 	y = 1
-	relative_position_id = GER_get_better_advisors
+	relative_position_id = GER_rhineland
 	cost = 5
 	completion_reward = {
 		custom_effect_tooltip = "This focus will automatically bypass if not taken before July 1936."

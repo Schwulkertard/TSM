@@ -108,12 +108,40 @@ if = {
 		armored_car1 = 1
 	}
 }
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+
+
+set_variable = { GER_political_power_cost_var = -0.15 }
+
+set_variable = { GER_industrial_capacity_factory_var = 0.1 }
+set_variable = { GER_industrial_capacity_dockyard_var = 0.1}
+
+set_variable = { GER_stability_factor_var = 0 }
+set_variable = { GER_war_support_factor_var = 0 }
+
+
+set_variable = { GER_production_speed_industrial_complex_factor_var = 0.1 }
+set_variable = { GER_production_speed_arms_factory_factor_var = 0.1 }
+set_variable = { GER_production_speed_dockyard_factor_var = 0.1 }
+
+set_variable = { GER_conversion_cost_mil_to_civ_factor_var = 0 }
+set_variable = { GER_conversion_cost_civ_to_mil_factor_var = 0 }
+set_variable = { GER_global_building_slots_factor_var = 0 }
+set_variable = { GER_production_factory_efficiency_gain_factor_var = 0 }
+
+set_variable = { GER_production_factory_max_efficiency_factor_var = 0.05 }
+set_variable = { GER_consumer_goods_factor_var = -0.05 }
+set_variable = { GER_research_speed_factor_var = 0 }
+set_variable = { GER_production_factory_start_efficiency_factor_var = 0 }
+set_variable = { GER_experience_gain_army_factor_var = 0 }
+set_variable = { GER_production_speed_buildings_factor_var = 0.1 }
+set_variable = { GER_production_speed_infrastructure_factor_var = 0 }
+set_variable = { GER_production_speed_synthetic_refinery_factor_var = 0 }
+
+
 set_country_flag=fuel_system_enabled
-add_timed_idea = {
-	idea = GER_mefo_bills_1
-	days = 1369#731
-}
+
+
+
 set_research_slots = 5
 set_convoys = 300
 add_equipment_to_stockpile = {
@@ -177,6 +205,10 @@ add_ideas = {
 	limited_exports_axis
 	limited_conscription
 	partial_economic_mobilisation
+}
+
+add_dynamic_modifier = {
+	modifier = GER_Mefo_Bills_dynamic
 }
 
 #POLITICAL
