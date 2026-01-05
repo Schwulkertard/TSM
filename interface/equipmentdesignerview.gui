@@ -310,7 +310,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "base_stats"
 				position = { x = 10 y = 55 }
-				size = { width = 171 height = 224 }
+				size = { width = 182 height = 224 }
 				clipping = yes
 
 				background = {

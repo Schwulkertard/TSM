@@ -6,8 +6,18 @@ characters={
 				large="gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 			}
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_gheorghe_tatarescu
+			allowed  = {
+				original_tag  = ROM
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+		}
 		country_leader={
-			ideology=conservatism
+			ideology=centrism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -56,21 +66,19 @@ characters={
 				small="GFX_idea_ROM_armand_calinescu"
 			}
 		}
+
 		advisor={
 			slot = political_advisor
 			idea_token = ROM_armand_calinescu
 			allowed  = {
 				original_tag  = ROM
 			}
-			traits  = {
-				smooth_talking_charmer 
+			available = {
+				has_completed_focus = ROM_reassert_authority
 			}
-		}
-
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
+			traits  = {
+				industrial_genius 
+			}
 		}
 	}
 
@@ -516,9 +524,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ROM_mihail_sturdza
-			available  = {
-				has_completed_focus = ROM_infrastructure_focus
-			}
 			allowed  = {
 				original_tag  = ROM
 			}
