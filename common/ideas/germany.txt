@@ -366,6 +366,27 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
+
+		GER_autarky_idea_1 = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.025
+				production_speed_synthetic_refinery_factor=0.1
+				global_building_slots_factor=0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
 		GER_grosraumwirtschaft = {
 			allowed = {
 				original_tag = GER

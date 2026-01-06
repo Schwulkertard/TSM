@@ -1938,6 +1938,9 @@
 
  war_economy:0 "General Mobilization"
 
+ 
+ GER_Planned_economy:0 "Centrally Planned Economy"
+
 
 
  tot_economic_mobilisation:0 "Total Mobilization"
@@ -10525,6 +10528,8 @@
 
 
  GER_autarky_idea:0 "Autarky"
+
+ GER_autarky_idea_1:0 "Autarky"
 
 
 
