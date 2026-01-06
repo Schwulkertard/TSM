@@ -105,45 +105,6 @@ increase_occupation_cost_effect = {
 		add_ideas = FRA_occupation_costs_1
 	}
 }
-FRA_congress_of_paris_italian_claims_setup_effect = {
-	add_state_claim = 416
-	add_state_claim = 412
-	add_state_claim = 421
-	add_state_claim = 420
-	add_state_claim = 476
-	add_state_claim = 474
-	add_state_claim = 261
-	add_state_claim = 472
-	add_state_claim = 473
-	add_state_claim = 471
-}
-FRA_congress_of_paris_portugese_claims_setup_effect = {
-	add_state_claim = 282
-	add_state_claim = 685
-	add_state_claim = 684
-	add_state_claim = 470
-	add_state_claim = 468
-	add_state_claim = 467
-	add_state_claim = 600
-	add_state_claim = 267
-	add_state_claim = 637
-}
-FRA_right_wing_riot_effect = {
-	if = {
-		limit = {
-			has_idea = FRA_political_violence
-		}
-		country_event = lar_france_political_violence.1
-	}
-}
-FRA_communism_riot_effect = {
-	if = {
-		limit = {
-			has_idea = FRA_political_violence
-		}
-		country_event = lar_france_political_violence.2
-	}
-}
 FRA_transfer_indochina_effect = {
 	if = {
 		limit = {
@@ -289,5 +250,25 @@ FRA_transfer_western_africa_effect = {
 		}
 		transfer_state = 557
 	}
+}
+
+add_offmap_dockyards_from_marks = {
+    # Count marked states
+    set_temp_variable = { marked_cnt = 0 }
+
+    every_owned_state = {
+        limit = { has_state_flag = dock_mark }
+        add_to_temp_variable = { marked_cnt = 1 }
+    }
+
+    # Repeat marked_cnt times, each time add 2 OFF-MAP dockyards
+    set_temp_variable = { i = 0 }
+    while_loop_effect = {
+        limit = { check_variable = { i < marked_cnt } }
+
+        add_to_temp_variable = { i = 1 }
+
+        add_offsite_building = { type = dockyard level = 2 }
+    }
 }
 

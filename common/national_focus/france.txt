@@ -1661,6 +1661,13 @@ focus_tree = {
 					set_state_flag = FRA_colonial_naval_bases
 				}
 			}
+			every_owned_state = {
+				limit = {
+					is_core_of = FRA
+					dockyard > 0
+				}
+				set_state_flag = dock_mark
+			}
 		}
 	}
 	focus = {
@@ -1679,6 +1686,7 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 200
 			custom_effect_tooltip= "For Every Mainland Core state that has a dockyard in it we will get 2 dockyards post cap"
+			add_offmap_dockyards_from_marks = yes
 	        add_timed_idea = {
 				idea = ITA_dockyard_building
 				days = 60
