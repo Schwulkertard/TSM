@@ -164,7 +164,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_invest_in_the_colonies
+		id = FRA_Invest_in_rearmnament
 		icon = GFX_goal_generic_construct_civilian
 		x = 3
 		y = 2
@@ -196,12 +196,40 @@ focus_tree = {
 				add_compliance = 30
 			}
 			add_ideas = {
-				colonial_development
+				FRA_rebuild_the_military
 			}
 		}
 	}
 	focus = {
-		id = FRA_West_Africa_investments
+		id = FRA_ramp_up_tank_production
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_Invest_in_rearmnament }
+		mutually_exclusive = {  }
+		relative_position_id = FRA_Invest_in_rearmnament 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = FRA_mechanisation_effort
+		}
+	}
+	focus = {
+		id = FRA_Aircraft_factories
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
 		y = 1
@@ -209,9 +237,9 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_invest_in_the_colonies }
+		prerequisite = { focus = FRA_Invest_in_rearmnament }
 		mutually_exclusive = {  }
-		relative_position_id = FRA_invest_in_the_colonies 
+		relative_position_id = FRA_Invest_in_rearmnament 
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -227,18 +255,64 @@ focus_tree = {
 		completion_reward = {
 			
 
-			693 = {
+			24 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 		}
-		694 = {
+		30 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+		}
+	}
+
+	focus = {
+		id = FRA_Aircraft_factories
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_Invest_in_rearmnament }
+		mutually_exclusive = {  }
+		relative_position_id = FRA_Invest_in_rearmnament 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			
+
+			24 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+		30 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -246,17 +320,48 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_Subsaharan_investment
+		id = FRA_increased_shifts_for_armnament_factories
 		icon = GFX_goal_generic_construct_civilian
-		x = 2
+		x = 0
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_invest_in_the_colonies }
+		prerequisite = { focus = FRA_Aircraft_factories }
 		mutually_exclusive = {  }
-		relative_position_id = FRA_invest_in_the_colonies
+		relative_position_id = FRA_Aircraft_factories
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_increased_shifts
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = FRA_Subsaharan_investment
+		icon = GFX_goal_generic_construct_civilian
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = FRA_appeal_to_the_french_nation }
+		mutually_exclusive = {  }
+		relative_position_id = FRA_appeal_to_the_french_nation
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -274,7 +379,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 		}
@@ -282,7 +387,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 		}
@@ -415,72 +520,6 @@ focus_tree = {
 		}
 		}
 	}
-
-	
-
-	focus = {
-		id = FRA_expand_dam_network
-		icon = GFX_focus_generic_industry_1
-		
-			available = {
-			
-			
-		}
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = FRA_West_Africa_investments } 
-		relative_position_id =  FRA_West_Africa_investments
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		bypass = {
-		}
-		complete_tooltip = {
-			every_owned_state = {
-				limit = {
-					has_state_flag = FRA_industrial_expansion_target
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			466 = {
-				add_building_construction = {
-					type = dam
-					level = 1
-					province = 4749
-				}
-			}
-			466 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					
-					type = industrial_complex
-					level = 1
-				}
-			}
-			686 = {
-				add_building_construction = {
-					type = dam
-					level = 1
-					province = 2909
-				}
-			}
-			686 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-	}
 	focus = {
 		id = FRA_extra_research_slot
 		icon = GFX_focus_research
@@ -529,14 +568,14 @@ focus_tree = {
 		id = FRA_global_integration
 		icon = GFX_goal_generic_construction
 		x = 2
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_Subsaharan_investment }
+		prerequisite = { focus = FRA_appeal_to_the_french_nation }
 		mutually_exclusive = { }
-		relative_position_id = FRA_invest_in_the_colonies
+		relative_position_id = FRA_appeal_to_the_french_nation
 		cost = 2.9
 		ai_will_do = {
 			factor = 1
@@ -624,7 +663,7 @@ focus_tree = {
 			army_experience = 100
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 1.2
+				bonus = 1.0
 				uses = 1
 				technology = basic_medium_tank_chassis
 				technology = basic_heavy_tank_chassis
@@ -643,7 +682,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = {
 			focus = FRA_heavy_armor_focus 
-			focus = FRA_improved_production_methods
+			focus = FRA_motorized_focus
 			focus = FRA_artillery_focus
 		}
 		x = 0
@@ -831,14 +870,14 @@ focus_tree = {
 	focus = {
 		id = FRA_improved_production_methods
 		icon = GFX_goal_generic_position_armies
-		x = 2
+		x = 0
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = { focus = FRA_the_rearmnament_plan }
-		relative_position_id = FRA_the_rearmnament_plan
+		prerequisite = { focus = FRA_ramp_up_tank_production }
+		relative_position_id = FRA_ramp_up_tank_production
 		cost = 2.9
 		ai_will_do = {
 			factor = 1
@@ -897,15 +936,14 @@ focus_tree = {
 	focus = {
 		id = FRA_motorized_focus
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = FRA_battle_of_maneuver }
-		x = 0
+		prerequisite = { focus = FRA_the_rearmnament_plan }
+		x = 2
 		y = 1
-		relative_position_id = FRA_battle_of_maneuver
+		relative_position_id = FRA_the_rearmnament_plan
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 5
-			add_ideas = FRA_motorized_focus
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
 				bonus = 1.0
@@ -1065,7 +1103,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_invest_in_the_colonies
+			focus = FRA_Invest_in_rearmnament
 			focus = FRA_invest_in_the_metropole
 		}
 		relative_position_id = FRA_invest_in_the_metropole
@@ -1525,8 +1563,8 @@ focus_tree = {
 		available = {
 			
 		}
-		prerequisite = { focus = FRA_defensive_strategems }
-		x = 0
+		prerequisite = { focus = FRA_defensive_strategems focus = FRA_france_undividable }
+		x = -1
 		y = 1
 		bypass = {
 			GER = { has_full_control_of_state = 10 }
@@ -1556,7 +1594,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_invest_in_the_colonies
+			focus = FRA_Invest_in_rearmnament
 			focus = FRA_invest_in_the_metropole
 		}
 		relative_position_id = FRA_invest_in_the_metropole
@@ -1640,7 +1678,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			navy_experience = 200
-			custom_effect_tooltip= "For Every Mainland Core state that has a dockyard in it we will get 2 dockyards post cap ( NOT CODED IN YET)  "
+			custom_effect_tooltip= "For Every Mainland Core state that has a dockyard in it we will get 2 dockyards post cap"
 	        add_timed_idea = {
 				idea = ITA_dockyard_building
 				days = 60
@@ -1881,6 +1919,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes	
+		completion_reward = { 
+			hidden_effect = {
+				if = {
+				limit = {
+					has_completed_focus = FRA_prepare_the_new_navy
+				}
+		}
+		every_owned_state = {
+			limit= {AND = {dockyard > 0 is_core_of = FRA limit_to_coastal = yes}  }
+			}
+			add_offsite_building = {
+				type = dockyard
+				level = 2
+}	
+}	
+}
 }	
 	focus = {
 		id = FRA_refus_absurde

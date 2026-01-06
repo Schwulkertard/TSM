@@ -96,7 +96,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		FRA_small_businesses_focus = {
@@ -239,11 +239,11 @@ ideas = {
 			picture = ger_glory
 			modifier = {
 				stability_weekly = 0.002
-				political_power_gain = 0.1
+				political_power_gain = 0.15
 				consumer_goods_factor = 0.02
 			}
 		}
-		colonial_development = {
+		 = {
 			removal_cost = -1
 			allowed = {
 				always = no # Added via focus
@@ -253,7 +253,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_buildings_factor = 0.15
+			 = 0.1
 			}
 		}
 
@@ -1378,6 +1378,44 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = -0.4
 				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		FRA_increased_shifts = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.3
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = -0.05
+			}
+		}
+		FRA_mechanisation_effort = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.05  instant = yes
+				}
+				light_tank_chassis_tank_chassis = {
+					build_cost_ic = -0.05  instant = yes
+				}
+				heavy_tank_chassis_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 		Phoney_War = {
