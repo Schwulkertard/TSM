@@ -359,7 +359,7 @@
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
-		icon = GFX_focus_GER_air_inno_1
+		icon = GFX_focus_GER_airforce
 		x = -3
 		y = 1
 		relative_position_id = GER_rhineland
@@ -2705,7 +2705,7 @@ focus = {
 	}
 	focus = {
 		id = GER_end_of_czechoslovakia
-		icon = GFX_focus_GER_end_of_czechslovakia
+		icon = GFX_focus_GER_fate_of_czechoslovakia
 		prerequisite = { focus = GER_demand_sudetenland}
 		available = {
 		}
