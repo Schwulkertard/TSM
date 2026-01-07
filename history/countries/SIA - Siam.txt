@@ -5,6 +5,13 @@ set_war_support = 0.4
 set_research_slots = 3
 oob = "SIA_1936"
 if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SIA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SIA_1936_naval_legacy"
+	}
+}
+if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_to_tech_sharing_group = japanese_research
 }
@@ -38,9 +45,16 @@ recruit_character = SIA_thawon_thamrongnawasawat
 recruit_character = SIA_phra_silpasakrakorn
 recruit_character = SIA_luang_wichitwathakan
 set_technology = {
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
+	#desertinfantry_at = 1
+	#shocktroops = 1
+	#jungletroops = 1
 	basic_train = 1
+	bba_early_transport_plane = 1
 	armor_tech_1 = 1
 	engine_tech_1 = 1
 	infantry_weapons = 1
@@ -48,8 +62,9 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_trucks = 1 
- 	motorised_infantry = 1
+ motorised_infantry = 1
 	fuel_silos = 1
+	#early_fighter = 1
 	gw_artillery = 1
 	gwtank_chassis = 1
 	mtg_transport = 1
@@ -58,19 +73,6 @@ set_technology = {
 	tech_recon = 1
 	early_ship_hull_light = 1
 	armored_car1 = 1
-	iw_small_airframe = 1
-	iw_medium_airframe = 1
-	iw_large_airframe = 1
-	basic_small_airframe = 1
-	basic_medium_airframe = 1
-	bba_early_transport_plane = 1
-	early_bombs = 1
-	air_torpedoe_1 = 1
-	photo_reconnaisance = 1
-	aa_lmg = 1
-	engines_1 = 1
-	engines_2 = 1
-	aircraft_construction = 1
 }
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
@@ -79,10 +81,11 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+add_ideas = MAN_faction_trade
 add_ideas = MAN_no_invasions
 set_convoys = 100
 add_equipment_to_stockpile = {
-	type = train_equipment_1
+	type = train_equipment
 	amount = 20
 	producer = MAN
 }
@@ -100,4 +103,21 @@ set_politics = {
 set_popularities = {
 	fascism = 20
 	neutrality = 80
+}
+create_equipment_variant = {
+	name = "Phra Ruang Class" #collection of various WWI and early interwar ships with similiar capabilities
+	type = ship_hull_light_1
+	name_group = JAP_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+	obsolete = yes
 }
