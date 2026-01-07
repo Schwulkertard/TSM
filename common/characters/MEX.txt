@@ -235,52 +235,7 @@ characters={
 		}
 	}
 
-	MEX_manuel_avila_camacho={
-		name=MEX_manuel_avila_camacho
-		portraits={
-			civilian={
-				large="GFX_portrait_MEX_avila_civil" #Can become country leader (Non-Aligned -> Oligarchism) (Democratic -> Conservatism)
-				small=GFX_portrait_MEX_manuel_avila_camacho_small # TODO_Manu: THIS IS A CIVILIAN PORTRAIT FOR HIS POLITICAL ADVISOR ROLE -> Need code support for civilian-small
-			}
-			army={
-				large="GFX_portrait_MEX_avila_military"
-				#small="gfx/interface/ideas/idea_MEX_avila_military.dds" THIS IS A MILITARY PORTRAIT FOR PROMOTED MILITARY ADVISOR -> Need code support for civilian-small (for the other portrait)
-				small=GFX_portrait_MEX_manuel_avila_camacho_small # TODO_Manu: THIS IS A CIVILIAN PORTRAIT FOR HIS POLITICAL ADVISOR ROLE -> Need code support for civilian-small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MEX_manuel_avila
-			cost = 75.000
-			allowed = {
-				original_tag = MEX
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_military_budget_review 
-				}
-			}
-			traits = {
-				war_industrialist 
-			}
-			modifier = {
-				mobilization_laws_cost_factor = -0.25
-			}
-		}
-
-		corps_commander={
-			traits={ politically_connected }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=705
-		}
-	}
+	
 
 	MEX_othon_blanco={
 		name=MEX_othon_blanco
@@ -727,6 +682,7 @@ characters={
 			visible = {
 				always = no
 			}
+			cost = 150
 			traits = {
 				ambitious_union_boss 
 			}
@@ -743,6 +699,7 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = MEX_jose_vasconcelos
+			cost = 150
 			allowed = {
 				original_tag = MEX
 			}
@@ -795,20 +752,7 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_jefe_maximo 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				
 			}
 			traits = {
 				shadow_of_calles 
@@ -835,7 +779,7 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = MEX_luis_montes_de_oca
-			cost = 75.000
+			cost = 150.000
 			allowed = {
 				original_tag = MEX
 			}
@@ -853,33 +797,7 @@ characters={
 		}
 	}
 
-	MEX_alberto_pani={
-		name=MEX_alberto_pani
-		portraits={
-			army={
-				small=GFX_portrait_MEX_alberto_pani_small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MEX_alberto_pani
-			cost = 75.000
-			allowed = {
-				original_tag = MEX
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_agricultural_credit_bank 
-				}
-			}
-			traits = {
-				captain_of_industry 
-			}
-		}
-	}
+	
 
 	MEX_pablo_gonzalez={
 		name=MEX_pablo_gonzalez

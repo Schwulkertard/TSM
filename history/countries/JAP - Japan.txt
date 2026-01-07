@@ -1,6 +1,7 @@
 recruit_character = JAP_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
+recruit_character = JAP_emperor_hirohito
 recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_shunroku_hata
 recruit_character = JAP_akira_muto

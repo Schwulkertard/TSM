@@ -953,6 +953,7 @@ ideas = {
 					original_tag = RAJ
 					original_tag = MAN
 					original_tag = SIA
+					original_tag = MEX
 
 				}
 			}
@@ -978,7 +979,7 @@ ideas = {
 					original_tag = RAJ
 					original_tag = MAN
 					original_tag = SIA
-
+                     original_tag = MEX
 				}
 			}
 		  
@@ -1003,7 +1004,7 @@ ideas = {
 					original_tag = RAJ
 					original_tag = MAN
 					original_tag = SIA
-
+                     original_tag = MEX
 				}
 			}
 		  

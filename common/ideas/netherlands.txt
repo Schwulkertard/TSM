@@ -16,6 +16,49 @@ HOL_shared_intelligence_eng_fra = {
 				defense_bonus_against = 0.1
 			}
 		}
+		HOL_make_use_of_our_riches = {
+			picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		HOL_responsibility_for_our_own_defense = {
+			picture = generic_fortify_the_borders
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		HOL_combined_chiefs_of_staff_representation = {
+			picture = generic_war_preparation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_command_power = 15
+				command_power_gain_mult = 0.05
+				planning_speed = 0.1
+			}
+			removal_cost = -1
+		}
 		HOL_shared_intelligence_eng_ger = {
 			name = HOL_shared_intelligence_eng
 			picture = SOV_scientist_defect
@@ -143,6 +186,89 @@ HOL_shared_intelligence_eng_fra = {
 				attack_bonus_against = 0.02
 				defense_bonus_against = 0.05
 			}
+		}
+		}
+		weapons_research = {
+		designer = yes
+		rsaf_enfield = {
+			allowed = {
+				original_TAG = MEX
+			}
+			traits = { materiel_research_trait }
+			research_bonus = {
+				infantry_tech = 0.15
+				motorized_equipment = 0.15
+			}
+		}
+		royal_arsenal = {
+			allowed = {
+				original_TAG = MEX
+			}
+			research_bonus = {
+				artillery = 0.15
+				support_tech = 0.15
+			}
+			traits = { artillery_research_trait }
+		}
+	}
+		industrial_concern = {
+		aioc = {
+			allowed = {
+				original_TAG = MEX
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = { industrial_concern }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_idea_with_trait = silent_workhorse
+					factor = 10
+				}
+			}
+		}
+		english_electric = {
+			allowed = {
+				original_TAG = MEX
+			}
+			research_bonus = {
+				electronics = 0.20
+			}
+			cost = 75
+			traits = { electronics_concern }
+			modifier = {
+			}
+		}
+	}
+		theorist_production = {
+		MEX_alberto_pani ={
+			picture = alberto pani
+			cost = 150
+
+			allowed = {
+				original_tag = MEX
+			}
+			available = {
+				has_completed_focus = MEX_focus_agricultural_credit_bank
+			}
+
+			traits = { industrial_genius }
+		}
+		MEX_manuel_avila_camacho ={
+			picture = manuel avila
+			cost = 150
+
+			allowed = {
+				original_tag = MEX
+			}
+			available = {
+				has_completed_focus = MEX_focus_military_budget_review
+			}
+
+			traits = { war_industrialist }
 		}
 	}
 }

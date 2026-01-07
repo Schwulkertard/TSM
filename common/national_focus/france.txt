@@ -953,32 +953,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_air_dominance
-		icon = GFX_goal_generic_air_fighter2
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = FRA_firepower_kills }
-		relative_position_id = FRA_firepower_kills
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = { FRA_air_dominance }
-		}
-	}
-	focus = {
 		id = FRA_air_ground_cooperation
 		icon = GFX_goal_generic_air_bomber
 		x = 3
