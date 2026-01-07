@@ -239,8 +239,7 @@ ideas = {
 			picture = ger_glory
 			modifier = {
 				stability_weekly = 0.002
-				political_power_gain = 0.15
-				consumer_goods_factor = 0.02
+				political_power_gain = 0.2
 			}
 		}
 		 = {

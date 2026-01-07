@@ -1453,6 +1453,7 @@ leader_traits = {
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.15
 		political_power_factor = 0.1
+		daily_compliance_gain = 0.02
 
 		ai_will_do = {
 			factor = 1
