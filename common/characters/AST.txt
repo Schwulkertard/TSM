@@ -488,7 +488,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				air_air_superiority_3
+				army_armored_3
 			}
 			cost = 200
 			ai_will_do = {
@@ -613,7 +613,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				quartermaster_general 
+				technocrat 
 			}
 		}		
 	}
@@ -791,46 +791,5 @@ characters={
 		}		
 	}
 	
-	AST_arthur_calwell={
-		name=AST_arthur_calwell
-		portraits={
-			army={
-				small="GFX_idea_AST_arthur_calwell" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = AST_arthur_calwell
-			allowed = {
-				original_tag = AST
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}		
-	}
 	#Illusive Gentleman auto-generated
 }
