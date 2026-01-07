@@ -23,6 +23,7 @@ state={
  		victory_points = {
  			4265 5
  		}
+		add_core_of = AST
  		add_core_of = NZL
  	}
 	resources = {

@@ -11,7 +11,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_great_purge
-		icon = GFX_focus_SOV_purge
+		icon = GFX_focus_SOV_stalins_cult_of_personality
 		x = 11
 		y = 0
 		cost = 7.2
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_peoples_commissariat
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = {  focus = SOV_great_purge}
 		x = 23
 		y = 1
@@ -196,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_speed_up_production
-        icon = GFX_focus_SOV_work_faster
+        icon = GFX_focus_GER_legacy_of_the_spartacus_league
 		prerequisite = {  focus = SOV_peoples_commissariat }
 		relative_position_id = SOV_peoples_commissariat
 		x = 0
@@ -388,7 +388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_open_old_stockpiles
-		icon = GFX_focus_SOV_open_old_stockpiles
+		icon = GFX_focus_SOV_organization_centralization_discipline
 		relative_position_id = SOV_great_figher
 		x = -1
 		y = 2
@@ -431,7 +431,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_novikov_blueprint
-		icon = GFX_focus_SOV_novikov_blueprints
+		icon = GFX_focus_PER_the_peoples_airforce
 		relative_position_id = SOV_move_industry_to_urals
 		x = 2
 		y = 6
@@ -450,7 +450,7 @@ focus_tree = {
 }
 focus = {
 	id = SOV_appoint_golovanov
-	icon = GFX_focus_SOV_appoint_golovanov
+	icon = GFX_focus_SOV_approach_primakov
 	relative_position_id = SOV_move_industry_to_urals
 	x = -2
 	y = 6
@@ -470,7 +470,7 @@ focus = {
 }
 	focus = {
 		id = SOV_wartime_industry
-		icon = GFX_focus_SOV_iron_fist
+		icon = GFX_focus_SOV_socialism_in_one_country
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0 
 		y = 4
@@ -1471,7 +1471,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_aviation_cult
-		icon = GFX_focus_SOV_aviation_cult
+		icon = GFX_focus_generic_women_in_military
 		prerequisite = { focus = SOV_factories_must_grow }
 		x = 2
 		y = 1
@@ -1615,7 +1615,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_ocean_going_navy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_PER_the_peoples_navy
 		prerequisite = { focus = SOV_expand_red_fleet }
 		x = 0
 		y = 1
@@ -1670,7 +1670,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_rehabilitated_military
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = SOV_great_purge }
 		x = 19
 		y = 1
@@ -2071,7 +2071,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_drive_them_out
-		icon = GFX_focus_SOV_push_out
+		icon = GFX_focus_POL_ban_nazi_party
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0
 		y = 7
@@ -2112,7 +2112,7 @@ focus = {
 	}
 focus = {
 	id = SOV_leningrad_designs
-	icon = GFX_focus_SOV_leningrad_designs
+	icon = GFX_focus_NORDIC_com_research
 	prerequisite = { focus = SOV_progress_cult }
 	x = 0
 	y = 1
@@ -2127,7 +2127,7 @@ focus = {
 	
 focus = {
 	id = SOV_mechanization_effort
-	icon = GFX_focus_SOV_mechanization_effort
+	icon = GFX_focus_SWE_lynx_armored_car
 	prerequisite = { focus = SOV_leningrad_designs }
 	x = 0
 	y = 1
@@ -2152,7 +2152,7 @@ focus = {
 focus = {
     id = SOV_winter_camps
 	prerequisite = { focus = SOV_workers_culture }
-	icon = GFX_focus_SOV_winter_camps
+	icon = GFX_focus_generic_communist_industry
 	x = 0
 	y = 1
 	relative_position_id = SOV_workers_culture
@@ -2193,9 +2193,9 @@ focus = {
 				}
 			}
 		}		
-focus = {
+		focus = {
 			id = SOV_trans_volga_railways
-			icon = GFX_focus_SOV_transvolga
+			icon = GFX_focus_AUS_danubian_socialist_communes
 			x = -5
 			y = 1
 			cost = 5
@@ -2240,7 +2240,7 @@ focus = {
 		}		
 focus = {
 	id = SOV_long_term
-	icon = GFX_focus_SOV_long_term
+	icon = GFX_focus_por_workers_of_iberia
 	prerequisite = { focus = SOV_trans_volga_railways }
 	relative_position_id = SOV_trans_volga_railways
 	cost = 7.2
@@ -2256,7 +2256,7 @@ focus = {
 }
 focus = {
 id = SOV_short_term
-icon = GFX_focus_SOV_short_term
+icon = GFX_focus_prc_agrarian_socialism
 prerequisite = {focus = SOV_trans_volga_railways}
 relative_position_id = SOV_trans_volga_railways
 x = -1
@@ -2311,7 +2311,7 @@ completion_reward = {
 }	
 focus = {
 	id = SOV_technological_advancment
-	icon = GFX_focus_SOV_technology_advancment
+	icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
 	cost = 7.2
 	relative_position_id = SOV_start_five_year_plan
 	prerequisite = { focus = SOV_long_term focus = SOV_short_term }
@@ -2346,7 +2346,7 @@ focus = {
 	}
 focus = {
 	id = SOV_modernize_the_tank_corp
-	icon = GFX_focus_SOV_modernize_tank
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 	cost = 5
 	prerequisite = { focus = SOV_socialist_science focus = SOV_mechanization_effort }
 	relative_position_id = SOV_winter_camps 
@@ -2364,7 +2364,7 @@ focus = {
 }
 focus = {
 	id = SOV_great_terror
-	icon = GFX_focus_SOV_the_great_terror
+	icon = GFX_SOV_coup_detat_ccp_2d_sov_compatibility
 	cost = 5
 	prerequisite = { focus = SOV_great_purge }
 	relative_position_id = SOV_great_purge 
@@ -2376,7 +2376,7 @@ focus = {
 }
 focus = {
 	id = SOV_road_quality
-	icon = GFX_focus_SOV_road_quality
+	icon = GFX_focus_GER_the_peoples_victory
 	cost = 5
 	prerequisite = { focus = SOV_great_terror }
 	relative_position_id = SOV_great_terror
@@ -2398,7 +2398,7 @@ focus = {
 }
 focus = {
 	id = SOV_industrial_revolution
-	icon = GFX_focus_SOV_industrial_revolution
+	icon = GFX_focus_CHL_union_of_hispanic_republics
 	cost = 5
 	prerequisite = { focus = SOV_great_terror }
 	relative_position_id = SOV_great_terror
@@ -2419,7 +2419,7 @@ focus = {
 }
 focus = {
 	id = SOV_factories_must_grow
-	icon = GFX_focus_SOV_factories_must_grow
+	icon = GFX_SOV_father_of_nations_ccp_2d_sov_compatibility
 	prerequisite = { focus = SOV_stalin_constitution }
 	x = 2
 	y = 1
@@ -2431,7 +2431,7 @@ focus = {
 }
 focus = {
 	id = SOV_people_work
-	icon = GFX_focus_SOV_people_work
+	icon = GFX_focus_AUS_union_of_danubian_socialist_republics
 	cost = 7.2
 	prerequisite =  { focus = SOV_road_quality focus = SOV_industrial_revolution }
 	relative_position_id = SOV_road_quality
@@ -2459,7 +2459,7 @@ focus = {
 }
 focus = {
 	id = SOV_research_institutes
-	icon = GFX_focus_SOV_research_institutes
+	icon = GFX_focus_PER_construct_air_defenses
 	cost = 5
 	prerequisite = { focus = SOV_road_quality focus = SOV_industrial_revolution }
 	relative_position_id = SOV_road_quality
@@ -2471,7 +2471,7 @@ focus = {
 }
 focus = {
 	id = SOV_develop_modern_guns
-	icon = GFX_focus_SOV_develop_modern_guns
+	icon = GFX_focus_NORDIC_com_army
 	cost = 5
 	prerequisite = { focus = SOV_research_institutes }
 	relative_position_id = SOV_research_institutes
