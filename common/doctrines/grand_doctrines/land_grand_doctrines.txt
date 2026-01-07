@@ -30,16 +30,16 @@ new_mobile_warfare = {
     }
 
     # EFFECTS
-	planning_speed = 0.50
-	army_speed_factor = 0.05
-    org_loss_when_moving = -0.15
+	army_speed_factor = 0.1
+    org_loss_when_moving = -0.2
 	enable_tactic = tactic_unexpected_thrust
 	
 
     milestones = {
         {
             #Infantry
-            category_all_infantry = {max_organisation = 5}
+            category_light_infantry = {max_organisation = 10}
+            dig_in_speed_factor = 0.25
             land_reinforce_rate = 0.05
             enable_tactic = tactic_delay
 
@@ -59,7 +59,7 @@ new_mobile_warfare = {
         }
         {
             #Artillery/Support
-	        category_mobile_artillery = {soft_attack = 0.05 air_attack = 0.05 hard_attack = 0.05}
+	        category_mobile_artillery = {soft_attack = 0.1 air_attack = 0.1 hard_attack = 0.1}
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -77,7 +77,7 @@ new_mobile_warfare = {
         }
         {
             #Armor
-            category_all_armor = {max_organisation = 10 default_morale =0.05}
+            category_all_armor = {max_organisation = 10 default_morale =0.05 breakthrough = 0.1 maximum_speed = 0.1}
             enable_tactic = tactic_blitz
 
             effect = {
@@ -145,6 +145,9 @@ new_mobile_warfare = {
         }
         {
             #support
+            light_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
+            medium_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
+            heavy_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
             effect = {
                 if = {
                     limit = {
@@ -161,7 +164,9 @@ new_mobile_warfare = {
         }
         {
             #Operations
-	        planning_speed = 0.2
+            planning_speed = 1
+            coordination_bonus = 0.06
+            category_army = { max_organisation = 10 default_morale = 0.1}
             enable_tactic = tactic_backhand_blow   
 
             effect = {
@@ -213,19 +218,17 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
-    category_line_artillery = {
+    category_army = {
         soft_attack = 0.1
+        hard_attack = 0.05
+        air_attack = 0.05
     }
-    category_support_artillery = {
-        soft_attack = 0.05
-    }
-
-
+    
     milestones = {
         {
             #Infantry
             enable_tactic = tactic_elastic_defense
-            supply_consumption_factor = -0.1
+            category_light_infantry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
 
             effect = {
                 if = {
@@ -243,11 +246,8 @@ superior_firepower = {
         }
         {
             #Artillery/Support
-            additional_brigade_column_size = 1
-            category_support_battalions = {
-                max_organisation = 10
-            }
-            planning_decay_rate_factor = -0.1
+            
+            category_line_artillery = { soft_attack = 0.1 hard_attack = 0.1}
             enable_tactic = tactic_barrage
 
             effect = {
@@ -268,8 +268,11 @@ superior_firepower = {
         {
             #Armor
             enable_tactic = tactic_delay
-            category_army = {
-                default_morale = 0.2
+            category_all_armor = {
+                max_organisation = 5
+                soft_attack = 0.1
+                air_attack = 0.05
+                breakthrough = 0.1
             }
 
             effect = {
@@ -288,6 +291,7 @@ superior_firepower = {
         }
         {
             #motorized
+            category_cavalry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
             effect = {
                 if = {
                     limit = {
@@ -304,6 +308,14 @@ superior_firepower = {
         }
         {
             #support
+            category_support_artillery = {
+                soft_attack = 0.1
+                hard_attack = 0.1
+                breakthrough = 0.1
+            }  
+            category_support_battalions = {
+                max_organisation = 10
+            }            
             effect = {
                 if = {
                     limit = {
@@ -321,10 +333,14 @@ superior_firepower = {
         {
             #Operations
             enable_tactic = tactic_tactical_withdrawal
+            land_reinforce_rate = 0.02
+            coordination_bonus = 0.04
             category_army = {
-                default_morale = 0.4
+                max_organisation = 5
+                default_morale = 0.1
             }
-            planning_decay_rate_factor = -0.1
+            planning_decay_rate_factor = -0.25
+            planning_speed = 0.5
 
             effect = {
                 if = {
@@ -375,14 +391,83 @@ grand_battleplan = {
     
     max_planning = 0.1
     command_power_gain = 0.25
-
     milestones = {
         {
             #Infantry 
-            additional_brigade_column_size = 1
             enable_tactic = tactic_elastic_defense
-            max_dig_in_factor = 0.05
-
+            max_dig_in_factor = 0.2
+        infantry = {
+		
+			urban = {
+				attack = 0.025
+			}
+			jungle = {
+				attack = 0.025
+			}
+			mountain = {
+				attack = 0.025
+			}
+			hills = {
+				attack = 0.025
+			}
+			forest = {
+				attack = 0.025
+			}
+		}
+		marine = {
+		
+			urban = {
+				attack = 0.025
+			}
+			jungle = {
+				attack = 0.025
+			}
+			mountain = {
+				attack = 0.025
+			}
+			hills = {
+				attack = 0.025
+			}
+			forest = {
+				attack = 0.025
+			}
+		}
+		mountaineers = {
+		
+			urban = {
+				attack = 0.025
+			}
+			jungle = {
+				attack = 0.025
+			}
+			mountain = {
+				attack = 0.025
+			}
+			hills = {
+				attack = 0.025
+			}
+			forest = {
+				attack = 0.025
+			}
+		}
+		paratrooper = {
+		
+			urban = {
+				attack = 0.025
+			}
+			jungle = {
+				attack = 0.025
+			}
+			mountain = {
+				attack = 0.025
+			}
+			hills = {
+				attack = 0.025
+			}
+			forest = {
+				attack = 0.025
+			}
+		}
             effect = {
                 if = {
                     limit = {
@@ -398,8 +483,151 @@ grand_battleplan = {
             }
         }
         {
-            #Artillery/Support
-            coordination_bonus = 0.1
+            #Artillery
+        artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        mot_artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        rocket_artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        mot_rocket_artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        light_sp_artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        medium_sp_artillery_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        heavy_sp_artillery_brigade= {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+        motorized_rocket_brigade = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
             enable_tactic = tactic_overwhelming_fire
 
             effect = {
@@ -418,8 +646,61 @@ grand_battleplan = {
         }
         {
             #Armor
-            land_reinforce_rate = 0.02
             enable_tactic = tactic_breakthrough
+            light_armor = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+            medium_armor = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}   
+            heavy_armor = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
             effect = {
                 if = {
                     limit = {
@@ -437,6 +718,60 @@ grand_battleplan = {
         }
         {
             #motorized
+            motorized = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+            mechanized = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
+            cavalry = {
+		
+                urban = {
+                    attack = 0.025
+                }
+                jungle = {
+                    attack = 0.025
+                }
+                mountain = {
+                    attack = 0.025
+                }
+                hills = {
+                    attack = 0.025
+                }
+                forest = {
+                    attack = 0.025
+			}
+		}
             effect = {
                 if = {
                     limit = {
@@ -453,6 +788,8 @@ grand_battleplan = {
         }
         {
             #support
+            signal_company = { initiative = 0.1 }
+            category_support_battalions = { breakthrough = 0.2}
             effect = {
                 if = {
                     limit = {
@@ -469,9 +806,10 @@ grand_battleplan = {
         }
         {
             #Operations
-            coordination_bonus = 0.1
+            category_army = { max_organisation = 15}
+            coordination_bonus = 0.08
             max_command_power = 30
-
+            land_night_attack = 0.15
             effect = {
                 if = {
                     limit = {
@@ -525,9 +863,22 @@ mass_assault = {
         {
             #Infantry
             enable_tactic = tactic_human_wave_tactics
-            additional_brigade_column_size = 1
+            category_light_infantry = { default_morale = 0.1 }
+        infantry ={
+            need = {infantry_equipment = -15}
+            max_strength = -3}
+        mountaineers = {
+            need = {support_equipment = -5}
+			max_strength = -4}
+        paratrooper = {
+            need = {support_equipment = -5}
+			max_strength = -4}
+		marine = {
+            need = {support_equipment = -5}
+			max_strength = -4}
 
             effect = {
+                custom_effect_tooltip = "Each Infantry Batallion requires 10 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -543,11 +894,28 @@ mass_assault = {
         }
         {
             #Artillery/Support
+                    artillery_brigade={
+		max_strength = -1.5
+			need = {
+				artillery_equipment = -4
+			}
+		}
+		anti_tank_brigade={
+		max_strength = -1.2
+			need = {
+				anti_tank_equipment  = -2
+			}
+		}
+		anti_air_brigade={
+		max_strength = -0.45
+			need = {
+				anti_air_equipment = -2
+			}
+		}
             enable_tactic = tactic_elastic_defense
-            out_of_supply_factor = -0.05
-            minimum_training_level = -0.05
 
             effect = {
+                custom_effect_tooltip = "Artillery Batallion needs 4 less and each Anti-Tank and Anti-Air Batallion 2 less Equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -564,6 +932,7 @@ mass_assault = {
         {
             #Armor
             land_reinforce_rate = 0.02
+            category_all_armor = { default_morale = 0.1 breakthrough = 0.1}
             enable_tactic = tactic_overwhelming_fire
 
             effect = {
@@ -582,7 +951,21 @@ mass_assault = {
         }
         {
             #motorized
+            category_cavalry = {default_morale = 0.1 }
+            motorized = {
+			need = {
+				motorized_rocket_equipment = 10
+				motorized_equipment = -10
+			}
+		}
+		mechanized = {
+			need = {
+				motorized_rocket_equipment = 10
+				mechanized_equipment = -10
+			}
+		}
             effect = {
+                custom_effect_tooltip = continuous_offensive_tt
                 if = {
                     limit = {
                         NOT = {
@@ -598,7 +981,23 @@ mass_assault = {
         }
         {
             #support
+            field_hospital = {
+			need = {support_equipment = -5}
+		}
+		engineer = {
+			need = {support_equipment = -5}
+		}
+		category_recon = {
+			need = {support_equipment = -5}
+		}
+		signal_company = {
+			need = {support_equipment = -5}
+		}
+		maintenance_company = {
+			need = {support_equipment = -5}
+		}
             effect = {
+                custom_effect_tooltip = "Support Companies require 5 less Support Equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -616,7 +1015,7 @@ mass_assault = {
             #Operations
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
-            minimum_training_level = -0.05
+            minimum_training_level = -0.2
             dig_in_speed_factor = 0.05
 
             effect = {
