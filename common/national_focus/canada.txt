@@ -1686,7 +1686,7 @@ focus_tree = {
  		completion_reward = {
  			modify_tech_sharing_bonus = {
  				id = commonwealth_research
- 				bonus = 0.03
+ 				bonus = 0.05
  			}
  			ENG = {
  				add_opinion_modifier = {
@@ -1863,10 +1863,10 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_tech_bonus = {
- 				name = CAN_rcaf_station_borden
+ 				name = CAN_dollar_a_year_men
  				bonus = 1.0
  				uses = 1
- 				category = air_doctrine
+ 				category = industry
  			}
  		}
  	}
@@ -1894,24 +1894,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			if = {
- 				limit = {
- 					NOT = { has_dlc = "La Resistance" }
- 				}
- 				add_tech_bonus = {
- 					name = CAN_camp_x
- 					bonus = 1.0
- 					uses = 1
- 					category = encryption_tech
- 					category = decryption_tech
- 				}
- 			}
- 			else = {
- 				hidden_effect = {
- 					set_technology = { lar_decryption_bonus_tech = 1 }
- 				}
- 				custom_effect_tooltip = lar_decryption_bonus_tt
- 			}
+ 			add_ideas = FRA_global_investments
  		}
  	}
  	focus = {

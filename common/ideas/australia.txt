@@ -360,6 +360,16 @@ ideas = {
 
 			traits = { war_industrialist }
 		}
+		AST_arthur_calwell = = {
+			picture = AST_arthur_calwell
+			cost = 150
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { industrial_genius }
+		}
 	}
 }
 
