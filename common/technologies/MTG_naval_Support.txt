@@ -17,12 +17,6 @@ technologies = {
 			leads_to_tech = basic_light_battery
 			research_cost_coeff = 1
 		}
-		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
-			custom_effect_tooltip = medium_battery_advice_tt
-			custom_effect_tooltip = heavy_battery_advice_tt
-			custom_effect_tooltip = secondary_battery_advice_tt
-		}
 
 		#path = {
 		#	leads_to_tech = basic_medium_battery
@@ -43,8 +37,10 @@ technologies = {
 			ship_light_battery_1
 			ship_medium_battery_1
 			ship_light_medium_battery_1
-			ship_355_battery
 			ship_secondaries_1
+			ship_381_battery
+			ship_355_battery
+			ship_305_battery
 			ship_283_battery
 		}
 
@@ -92,10 +88,6 @@ technologies = {
 		path = {
 			leads_to_tech = basic_light_shell
 			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
 		}
 
 		enable_equipment_modules = {
@@ -196,13 +188,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
-		}
-
 		enable_equipment_modules = {
 			ship_light_battery_3
 			ship_light_medium_battery_3
+			ship_he_shell
 		}
 
 
@@ -295,10 +284,6 @@ technologies = {
 		enable_equipment_modules = {
 			ship_light_battery_4
 			ship_light_medium_battery_4
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
 		}
 
 
@@ -563,14 +548,10 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_381_battery
+			ship_457_battery
+			ship_406_battery
 			ship_super_heavy_battery_1
 			ship_medium_battery_2
-			ship_305_battery
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = heavy_battery_advice_tt
 		}
 
 		folder = {
@@ -615,12 +596,8 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_406_battery
 			ship_medium_battery_3
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = heavy_battery_advice_tt
+			ship_ap_shell
 		}
 
 		folder = {
@@ -660,12 +637,8 @@ technologies = {
 		start_year = 1944
 
 		enable_equipment_modules = {
-			ship_457_battery
 			ship_medium_battery_4
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = heavy_battery_advice_tt
+			ship_shap_shell
 		}
 
 		folder = {
@@ -795,10 +768,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
-		}
-
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 11 }
@@ -838,10 +807,6 @@ technologies = {
 		enable_equipment_modules = {
 			dp_light_battery_3
 			dp_ship_secondaries_3
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
 		}
 
 		path = {
@@ -889,10 +854,6 @@ technologies = {
 			dp_light_battery_4
 			dp_ship_secondaries_4
 			dp_ship_medium_1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
 		}
 
 		folder = {
@@ -989,10 +950,6 @@ technologies = {
 		enable_equipment_modules = {
 			ship_torpedo_1
 			ship_torpedo_sub_1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = torpedo_advice_tt
 		}
 
 		folder = {
@@ -1206,9 +1163,6 @@ technologies = {
 			leads_to_tech = magnetic_detonator
 			research_cost_coeff = 1
 		}
-		on_research_complete = {
-			custom_effect_tooltip = torpedo_advice_tt
-		}
 
 		enable_equipment_modules = {
 			ship_torpedo_2
@@ -1252,13 +1206,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = torpedo_advice_tt
-		}
-
 		enable_equipment_modules = {
 			ship_torpedo_3
-			ship_torpedo_sub_3			
+			ship_torpedo_sub_3
+			ship_pure_oxygen_torpedo
 		}
 		
 
@@ -1295,10 +1246,6 @@ technologies = {
 		enable_equipment_modules = {
 			ship_torpedo_4
 			ship_torpedo_sub_4			
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = torpedo_advice_tt
 		}
 
 
@@ -1340,8 +1287,27 @@ technologies = {
 			leads_to_tech = damage_control_2
 			research_cost_coeff = 1
 		}
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
+		carrier = {
+			reliability = 0.03
+		}
+		escort_carrier = {
+			reliability = 0.03
+		}
+		battleship = {
+			reliability = 0.03
+		}
+		battle_cruiser = {
+			reliability = 0.03
+		}
+		heavy_cruiser = {
+			reliability = 0.03
+		}
+		light_cruiser = {
+			reliability = 0.03
+		}
+		destroyer = {
+			reliability = 0.03
+		}
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 1 }
@@ -1389,8 +1355,27 @@ technologies = {
 			leads_to_tech = damage_control_3
 			research_cost_coeff = 1
 		}
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
+		carrier = {
+			reliability = 0.03
+		}
+		escort_carrier = {
+			reliability = 0.03
+		}
+		battleship = {
+			reliability = 0.03
+		}
+		battle_cruiser = {
+			reliability = 0.03
+		}
+		heavy_cruiser = {
+			reliability = 0.03
+		}
+		light_cruiser = {
+			reliability = 0.03
+		}
+		destroyer = {
+			reliability = 0.03
+		}
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 6 }
@@ -1429,8 +1414,30 @@ technologies = {
 	damage_control_3 = {
 
 		research_cost = 1.25
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
+		carrier = {
+			reliability = 0.03
+		}
+		escort_carrier = {
+			reliability = 0.03
+		}
+		battleship = {
+			reliability = 0.03
+		}
+		battle_cruiser = {
+			reliability = 0.03
+		}
+		heavy_cruiser = {
+			reliability = 0.03
+		}
+		light_cruiser = {
+			reliability = 0.03
+		}
+		destroyer = {
+			reliability = 0.03
+		}
+		enable_equipment_modules = {
+			ship_damage_control
+		}
 		path = {
 			leads_to_tech = sp_improved_repair_ship
 			research_cost_coeff = 1

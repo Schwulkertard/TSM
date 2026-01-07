@@ -27,9 +27,11 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.7   -- screening efficiency (screen to capital ratio) at 0% positioning
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.8  -- AA penalty at 0% positioning
 
-NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 2 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.1 -- chance for critical hit from torpedo.
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.15 -- chance for critical hit from torpedo.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
+NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
+NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 5.0 -- Multiplier for the critical damage. Scaled down with the ship reliability.
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 0.0 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.2 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
@@ -38,16 +40,16 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		70.0,	-- big guns
 		140.0,	-- torpedos
-		36,	-- small guns
+		40.0,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		1.0,	-- big guns
-		1.0,	-- torpedos
+		3.0,	-- torpedos
 		1.0,	-- small guns
 	}
 
-NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.95 --vanilla -0.9
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = 0.0 --vanilla -0.9
 
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
 
@@ -107,6 +109,33 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		0.4, -- NAVAL_INVASION_SUPPORT
 	}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		2.00,
+		1.00,
+		0.75,
+		0.50,
+		0.25,
+		0.00 --there isn't much point setting this higher than 0
+}
+
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		2.50,
+		1.25,
+		0.75,
+		0.50,
+		0.25,
+		0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
+}
+
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		1.00,
+		0.75,
+		0.55,
+		0.35,
+		0.15 --
+}
+
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 15.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of convoy route size (0 to turn off)
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define

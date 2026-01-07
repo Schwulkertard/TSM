@@ -1,0 +1,829 @@
+ideas = {
+	country = {
+		idea_RAJ_chindits = {
+			name = RAJ_chindits_dlc
+			picture = eng_special_air_service
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				out_of_supply_factor = -0.2
+				no_supply_grace = 72
+				pocket_penalty = -0.15
+				
+			}
+		}
+
+		idea_RAJ_womens_auxiliary_corps= {
+			picture = generic_women_in_the_army
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				spotting_chance = 0.05
+				air_detection = 0.1
+				static_anti_air_hit_chance_factor = 0.2 
+				tech_air_damage_factor = -0.02
+				dig_in_speed_factor = 0.18
+
+			}
+		}
+
+		idea_RAJ_military_pensions = {
+			name = RAJ_military_pensions
+			picture = SOV_third_five_year_plan_military
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				war_support_weekly = 0.001
+			}
+		}
+
+		idea_RAJ_standardized_rations = {
+			name = RAJ_standardized_rations
+			allowed = {
+				original_tag = RAJ
+			}
+			picture = SWE_severe_lack_of_ammunition
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.06
+				army_org_factor = 0.05
+			}
+		}
+
+		idea_RAJ_specialized_dietary_requirement = {
+			name = RAJ_specialized_dietary_requirement
+			allowed = {
+				original_tag = RAJ
+			}
+			picture = SWE_hodgepodge_of_equipment
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				army_org_regain = 0.1
+				army_org_factor = 0.04
+			}
+		}
+
+		idea_RAJ_indian_army_doctrine_ger = {
+			picture = german_advisors
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+		}
+
+		idea_RAJ_indian_army_doctrine_usa = {
+			picture = generic_usa_conflict
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			modifier = {
+				planning_speed = 0.15
+				max_planning_factor = 0.05
+				command_power_gain = 0.15
+			}
+		}
+
+		idea_RAJ_indian_army_doctrine_sov = {
+			picture = saf_soviet_advisers
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			modifier = {
+				training_time_army_factor = -0.15
+				army_infantry_attack_factor = 0.05
+				army_strength_factor = 0.05
+			}
+		}
+
+		### LOYALIST BRANCH ###
+
+		RAJ_high_import_duties = {
+			picture = GER_recovering_economy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.15
+				consumer_goods_factor = -0.15
+				economy_cost_factor = -0.2
+			}
+		}
+
+		RAJ_imperial_industry_initiative = { #Improved version of the above
+			picture = GER_recovering_economy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.15
+				consumer_goods_factor = -0.15
+				economy_cost_factor = -0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		RAJ_the_great_recovery = { #Improved version of the above
+			picture = GER_recovering_economy
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.15
+				consumer_goods_factor = -0.15
+				economy_cost_factor = -0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+
+			}
+		}
+
+		RAJ_the_zamindari_system = {
+			picture = ARG_civilian_economy_boost
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		RAJ_the_zamindari_system_2 = { #Improved version of the above
+			name = RAJ_the_zamindari_system
+			picture = ARG_civilian_economy_boost
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.15
+			}
+		}
+
+		RAJ_the_zamindari_system_3 = { #Improved version of the above
+			name = RAJ_the_zamindari_system
+			picture = ARG_civilian_economy_boost
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.15
+				supply_node_range = 0.1
+			}
+		}
+
+		RAJ_exports_for_the_empire = { #For UK and Dominions (no RAJ)
+			picture = ARG_civilian_economy_boost #generic_goods_red_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				NOT = { is_subject_of = ENG }
+				RAJ = {
+					NOT = { is_subject_of = ENG }
+				}
+				has_war_with = RAJ
+				OVERLORD = {
+					has_war_with = RAJ
+				}
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		RAJ_war_industry = {
+			picture = RAJ_private_military_complex
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_industrial_organization_research_bonus = 0.15
+				military_industrial_organization_funds_gain = 0.15
+
+				production_speed_facility_factor = 0.15
+				special_project_speed_factor = 0.1
+
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		RAJ_war_industry_no_aat = {
+			name = RAJ_war_industry
+			picture = RAJ_private_military_complex
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				tank_manufacturer_cost_factor = -0.5
+				industrial_concern_cost_factor = -0.5
+				materiel_manufacturer_cost_factor = -0.5
+				aircraft_manufacturer_cost_factor = -0.5
+				naval_manufacturer_cost_factor = -0.5
+
+				production_speed_facility_factor = 0.2
+				special_project_speed_factor = 0.1
+
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		RAJ_mobilization_of_the_indian_army = { #Timed NS
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = -0.2
+				mobilization_speed = 0.2
+				war_support_weekly = 0.002
+				mobilization_laws_cost_factor = -0.35
+			}
+		}
+
+		RAJ_naval_invasion_support = { #Timed NS
+			name = RAJ_support_naval_invasions
+			picture = generic_naval_invasion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_invasion_prep_speed = 0.15
+				naval_invasion_capacity = 10
+				modifier_army_sub_unit_marine_max_org_factor = 0.15
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+		RAJ_congress_productivity_effort_ns = {
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1	
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		RAJ_congress_shipbuilding_effort_ns = {
+			picture = AUS_streamline_cruiser_production_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1	
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		RAJ_congress_construction_effort_ns = {
+			picture = generic_improved_industries
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1	
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
+		RAJ_congress_war_propaganda_ns = {
+			picture = generic_reserve_divisions
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1	
+			
+			modifier = {
+				war_support_weekly = 0.005
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+		idea_RAJ_ammunition_factory_khadki = {
+
+			picture = raj_ammunition_factory_khadki
+			name = RAJ_ammunition_factory_khadki 
+			allowed = {
+				is_raj_or_raj_inheritor = yes
+				has_dlc = "Graveyard of Empires"
+			}
+
+
+			available = {
+				always = yes
+			}
+
+			visible = {
+				check_variable = { khadi_level = 0 }
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		idea_RAJ_ammunition_factory_khadki_1 = {
+
+			picture = raj_ammunition_factory_khadki
+			name = RAJ_ammunition_factory_khadki 
+			allowed = {
+				is_raj_or_raj_inheritor = yes
+				has_dlc = "Graveyard of Empires"
+			}
+
+
+			available = {
+				has_completed_focus = RAJ_ammunition_factory_khadki
+			}
+
+			visible = {
+				check_variable = { khadi_level = 1 }
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		idea_RAJ_ammunition_factory_khadki_2 = {
+
+			picture = raj_ammunition_factory_khadki
+			name = RAJ_ammunition_factory_khadki 
+			allowed = {
+				is_raj_or_raj_inheritor = yes
+				has_dlc = "Graveyard of Empires"
+			}
+
+			visible = {
+				check_variable = { khadi_level = 2 }
+			}
+
+			available = {
+				#has_completed_focus = RAJ_ammunition_factory_khadki
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					defense = 0.06
+					ap_attack = 0.25
+
+				}
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		idea_RAJ_ammunition_factory_khadki_3 = {
+
+			picture = raj_ammunition_factory_khadki
+			name = RAJ_ammunition_factory_khadki 
+			allowed = {
+				is_raj_or_raj_inheritor = yes
+				has_dlc = "Graveyard of Empires"
+			}
+
+			visible = {
+				check_variable = { khadi_level = 3 }
+			}
+
+			available = {
+				#has_completed_focus = RAJ_ammunition_factory_khadki
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					defense = 0.06
+					ap_attack = 0.25
+					soft_attack = 0.05
+					breakthrough = 0.05
+
+				}
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+		idea_gun_and_shell_factory_cossipore = {
+			picture = raj_gun_and_shell_factory_cossipore
+			allowed = {
+
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+			name = RAJ_gun_and_shell_factory_cossipore
+			visible = {
+				check_variable = { RAJ.gun_and_shell_level = 0 }
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		idea_gun_and_shell_factory_cossipore_1 = {
+			name = RAJ_gun_and_shell_factory_cossipore
+			picture = raj_gun_and_shell_factory_cossipore
+			allowed = {
+
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+			
+			visible = {
+				check_variable = { RAJ.gun_and_shell_level = 1 }
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.06
+				}
+
+				anti_tank_equipment = {
+					ap_attack = 0.06
+				}
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		idea_gun_and_shell_factory_cossipore_2 = {
+			name = RAJ_gun_and_shell_factory_cossipore
+			picture = raj_gun_and_shell_factory_cossipore
+			allowed = {
+
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+
+
+			visible = {
+				check_variable = { RAJ.gun_and_shell_level = 2 }
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.06
+					build_cost_ic = -0.05
+				}
+
+				anti_tank_equipment = {
+					ap_attack = 0.06
+					build_cost_ic = -0.05
+				}
+
+
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		idea_gun_and_shell_factory_cossipore_3 = {
+			name = RAJ_gun_and_shell_factory_cossipore
+			picture = raj_gun_and_shell_factory_cossipore
+			allowed = {
+
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+
+
+			visible = {
+				check_variable = { RAJ.gun_and_shell_level = 3 }
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.06
+					build_cost_ic = -0.1
+				}
+
+				anti_tank_equipment = {
+					ap_attack = 0.06
+					build_cost_ic = -0.1
+				}
+
+
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		idea_medak = {
+			name = RAJ_ordnance_factory_medak
+			picture = raj_ordnance_factory_medak
+
+			allowed = {
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+
+			visible = {
+				NOT = { has_completed_focus = RAJ_chariot_of_victory }
+			}
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+
+
+		idea_medak_1 = {
+			name = RAJ_ordnance_factory_medak
+			picture = raj_ordnance_factory_medak
+
+			allowed = {
+				has_dlc = "Graveyard of Empires" 
+				is_raj_or_raj_inheritor = yes
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			equipment_bonus = {
+				mechanized_equipment = {
+					breakthrough = 0.06
+					armor_value = 0.08
+				}
+			}
+
+
+			visible = {
+				has_completed_focus = RAJ_chariot_of_victory 
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+
+
+	industrial_concern = {
+		idea_RAJ_azad_hind_bank = { 
+			name = idea_RAJ_azad_hind_bank
+			picture = tur_balkan_central_bank_wealthy_greece
+			allowed = {
+				has_dlc = "Graveyard of Empires"
+				original_tag = RAJ
+			}
+			available = {
+			}
+			visible = {
+				
+			}
+			cost = 100
+			removal_cost = 10
+			research_bonus = {
+			}
+			traits = {  } 
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				war_support_factor = 0.05	
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+
+		idea_RAJ_the_reserve_bank_of_india = { 
+			picture = raj_reserve_bank_of_india
+			allowed = {
+				has_dlc = "Graveyard of Empires"
+				original_tag = RAJ
+			}
+			available = {
+				#has_completed_focus = RAJ_establish_the_reserve_bank_of_india 
+			}
+			visible = {
+				
+			}
+			cost = 100
+			removal_cost = -1
+			research_bonus = {
+			}
+			traits = { } 
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.05		
+			}
+		}
+	}
+}

@@ -417,7 +417,6 @@ recruit_character = ENG_neville_chamberlain
 recruit_character = ENG_bernard_montgomery
 recruit_character = ENG_claude_auchinleck
 recruit_character = ENG_alan_cunningham
-recruit_character = ENG_william_slim
 recruit_character = ENG_richard_oconnor
 recruit_character = ENG_harold_alexander
 recruit_character = ENG_john_vereker

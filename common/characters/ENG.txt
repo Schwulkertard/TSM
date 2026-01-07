@@ -302,25 +302,6 @@ characters={
 		}
 	}
 
-	ENG_william_slim={
-		name=ENG_william_slim
-		portraits={
-			army={
-				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
-				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
-			}
-		}
-		corps_commander={
-			traits = { trickster war_hero hill_fighter infantry_leader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-			legacy_id=0
-		}
-	}
-
 	ENG_richard_oconnor={
 		name=ENG_richard_oconnor
 		portraits={
@@ -335,7 +316,7 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=999
+			legacy_id=1001
 		}
 	}
 

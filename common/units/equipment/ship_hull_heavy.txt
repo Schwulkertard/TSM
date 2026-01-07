@@ -16,7 +16,7 @@ equipments = {
  		module_slots = {
  			fixed_ship_battery_slot = {
  				required = yes
- 				allowed_module_categories = { ship_heavy_battery }
+ 				allowed_module_categories = { ship_14_battery ship_15_battery ship_16_battery ship_18_battery }
  			}
  			fixed_ship_anti_air_slot = {
  				required = yes
@@ -46,7 +46,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_anti_air
- 					ship_heavy_battery
+ 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -62,12 +62,16 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_anti_air
- 					ship_heavy_battery
+ 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
  				}
  			}
  		}
  		module_count_limit = {
  			category = ship_radar
+ 			count < 2
+ 		}
+		module_count_limit = {
+ 			category = ship_airplane_launcher
  			count < 2
  		}
  		default_modules = {
@@ -246,7 +250,7 @@ equipments = {
  		}
  		naval_range = 3000
  		max_strength = 350
- 		reliability = 0.80
+ 		reliability = 0.75
  		fuel_consumption = 67
  		build_cost_ic = 3300
  	}
@@ -298,7 +302,7 @@ equipments = {
  		}
  		naval_range = 3500
  		max_strength = 370
- 		reliability = 0.85
+ 		reliability = 0.8
  		fuel_consumption = 67
  		naval_speed = 22
  		build_cost_ic = 3400
@@ -369,7 +373,7 @@ equipments = {
  		naval_range = 4000
  		naval_speed = 24
  		max_strength = 400
- 		reliability = 0.9
+ 		reliability = 0.85
  		fuel_consumption = 67
  		build_cost_ic = 3500
  		resources = {
@@ -439,7 +443,7 @@ equipments = {
  		max_strength = 450
  		naval_speed = 26
  		fuel_consumption = 67
- 		reliability = 0.95
+ 		reliability = 0.9
  		build_cost_ic = 3600
  		resources = {
  			#oil = 10

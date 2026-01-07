@@ -55,6 +55,74 @@ characters={
 		}
 	}
 
+	RAJ_orde_wingate = {
+		name=RAJ_orde_wingate
+		portraits={
+			army={
+				large="GFX_RAJ_orde_wingate"
+				small=GFX_portrait_RAJ_orde_wingate_small
+			}
+		}
+
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = RAJ_orde_wingate
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { has_completed_focus = RAJ_chindits_dlc }
+			traits = {
+				special_operations_specialist 
+			}
+
+			visible = {
+			}
+
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	ENG_geoffry_scoones = {
+		name = ENG_geoffry_scoones
+		portraits={
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Generic_land_6.dds"
+				small="gfx/interface/ideas/idea_ENG_tom_moore.dds"
+			}
+		}
+		corps_commander = {
+			traits = { jungle_rat infantry_leader }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=999
+		}
+	}
+
+	ENG_william_slim={
+		name=ENG_william_slim
+		portraits={
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
+				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
+			}
+		}
+		corps_commander={
+			traits = { trickster war_hero hill_fighter infantry_leader }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id=1000
+		}
+	}
+
 	RAJ_noel_beresfordpeirse={
 		name=RAJ_noel_beresfordpeirse
 		portraits={

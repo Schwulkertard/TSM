@@ -756,8 +756,9 @@ equipments = {
  		build_cost_ic = 3500
  		naval_speed = 25
  		surface_visibility = 22
- 		naval_range = 1500
- 		max_strength = 220
+ 		naval_range = 4000
+ 		max_strength = 275
+		armor_value = 12
  		resources = {
  			steel = 30
  		}
@@ -791,6 +792,12 @@ equipments = {
  				required = no
  				allowed_module_categories = {
 					ship_11_battery ship_12_battery
+ 				}
+ 			}
+			rear_2_custom_slot = {
+ 				required = no
+ 				allowed_module_categories = {
+					ship_special_slot
  				}
  			}
  		}

@@ -221,7 +221,6 @@ categories =  {
 				movement = -0.2
 				defence = -0.2
 			}
-			navy_fuel_consumption_factor = 0.2
 		}
 		heavy_cruiser = {
 			units = {
@@ -229,15 +228,6 @@ categories =  {
 				movement = -0.2
 				defence = -0.2
 			}
-			navy_fuel_consumption_factor = 0.2
-		}
-		carrier = {
-			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
-			}
-			navy_fuel_consumption_factor = 0.2
 		}
 		navy_visibility = -0.2
 		positioning = -0.15
@@ -257,7 +247,14 @@ categories =  {
 				movement = -0.2
 				defence = -0.2
 			}
-			navy_fuel_consumption_factor = 0.2
+		}
+
+		heavy_cruiser = {
+			units = {
+				attack = -0.2
+				movement = -0.2
+				defence = -0.2
+			}
 		}
 
 		submarine = {
@@ -280,7 +277,6 @@ categories =  {
 				movement = -0.2
 				defence = -0.2
 			}
-			navy_fuel_consumption_factor = 0.2
 		}
 
 		destroyer = {
@@ -292,9 +288,9 @@ categories =  {
 		}
 		light_cruiser = {
 			units = {
-				attack = -0.1
-				movement = -0.1
-				defence = -0.1
+				attack = -0.2
+				movement = -0.2
+				defence = -0.2
 			}
 		}
 		submarine = {
