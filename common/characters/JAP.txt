@@ -1121,11 +1121,10 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
-			available = {
-				has_completed_focus = JAP_occupation_mastery
+			available = { 
 			}
 			traits = {
-				chinese_ambassador
+				prince_of_terror
 			}
 		}
 	}

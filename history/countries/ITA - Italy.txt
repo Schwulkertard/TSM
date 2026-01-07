@@ -13,7 +13,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	never_surrender
-	ITA_bad_leadership
+	
 }
 set_variable = {
 	var = min_fuel
