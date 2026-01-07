@@ -60,7 +60,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_dockyard_factor = 1
+				production_speed_dockyard_factor = 2
 			}
 			picture = eng_the_sun_never_sets
 			removal_cost = -1
@@ -287,7 +287,7 @@ ideas = {
 			}
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				conscription = 0.01
 			}
 		}
@@ -835,9 +835,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				refit_ic_cost = -0.1
-				refit_speed = 0.1
-				repair_speed_factor = 0.1
+				refit_ic_cost = -0.15
+				refit_speed = 0.15
+				repair_speed_factor = 0.15
 			}
 		}
 	}

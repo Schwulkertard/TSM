@@ -494,7 +494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_global_integration
-		icon = GFX_goal_generic_construction
+		icon = GFX_FRA_110_million_strong
 		x = 2
 		y = 1
 		offset = {
@@ -636,7 +636,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_defensive_focus
-		icon = GFX_focus_generic_anti_tank_guns
+		icon = GFX_FRA_field_fortification_efforts
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 
 		prerequisite = { focus = FRA_army_reform }
@@ -679,7 +679,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_methodical_battle
-		icon = GFX_focus_generic_provoke_border_clashes
+		icon = GFX_FRA_methodical_battle
 		x = -3
 		y = 1
 		offset = {
@@ -707,7 +707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_artillery_focus
-		icon = GFX_focus_generic_railway_gun
+		icon = GFX_FRA_french_artillery
 		prerequisite = { focus = FRA_the_rearmament_plan }
 		x = -2
 		y = 1
@@ -857,29 +857,6 @@ focus_tree = {
 				uses = 1
 				category = cat_mechanized_equipment
 			}
-		}
-	}
-	focus = {
-		id = FRA_air_dominance
-		icon = GFX_goal_generic_air_fighter2
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = FRA_firepower_kills }
-		relative_position_id = FRA_firepower_kills
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		completion_reward = {
-			add_ideas = { FRA_air_dominance }
 		}
 	}
 	focus = {
@@ -1808,7 +1785,7 @@ focus_tree = {
 }	
 	focus = {
 		id = FRA_refus_absurde
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_FRA_strengthen_french_national_spirit
 		x = -4
 		y = 1
 		prerequisite = {

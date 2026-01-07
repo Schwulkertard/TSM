@@ -1,0 +1,313 @@
+﻿l_english:
+
+ ITA_air_innovation:0 "Air Innovation"
+
+ ITA_triumph_in_africa:0 "Triumph in Africa"
+
+ ITA_modernized_anti_tank:0 "Modernize Anti Tank Guns"
+
+ ITA_naval_air_effort:0 "Naval-Air Coordination"
+
+ ITA_8_Million_Bayonets:0 "8 Million Bayonets"
+
+ ITA_escape_the_cage:0 "Escape the Cage"
+
+ ITA_german_rocketry:0 "German Rocketry"
+
+ ITA_roman_legacy:0 "Roman Legacy"
+
+ ITA_viva_il_duce:0 "The Italian Social Republic"
+
+ ITA_naval_advancement:0 "Develop the Pugliese System"
+
+ ITA_new_gun:0 "Semi-Armor Piercing Shells"
+
+ ITA_naval_effort:0 "Naval Development Plan"
+
+ ITA_rommel:0 "Deutsches Afrikakorps"
+
+ ITA_egypt:0 "Aegyptus"
+
+ ITA_desert_fox:0 "Desert Fox"
+
+ ITA_sword_of_islam:0 "Sword of Islam"
+
+ ITA_Illyricum:0 "Illyricum"
+
+ ITA_alpini:0 "Alpini Divisions"
+
+ ITA_alpini_desc:0 "The great war taught us how to fight in the mountains"
+
+ ITA_eco:0  "Land Reforms"
+
+ ITA_iri:0 "Expand the IRI"
+
+ ITA_stab:0 "Stabilize the Economy"
+
+ ITA_mili:0 "Militarize the Economy"
+
+ ITA_autarky:0 "Autarky"
+
+ ITA_nat:0 "Develop the North"
+
+ ITA_moder:0 "Develop the South"
+
+ ITA_research:0 "Extra Research Slot"
+
+ ITA_buro:0 "Decrease Bureaucracy"
+
+ ITA_mono:0 "Dismantle the Italian Monopolies"
+
+ ITA_corp:0 "Encourage Corporatism"
+
+ ITA_faire:0 "Adopt Laissez Faire"
+
+ ITA_synd:0 "Devalue the Lira"
+
+ ITA_research_2:0 "Extra Research Slot"
+
+ ITA_highway:0 "Italian Highways"
+
+ ITA_oil:0 "Prospect For Oil"
+
+ ITA_road_rome:0 "Italy First"
+
+ ITA_refs:0 "Italian Refineries"
+
+ ITA_libya:0 "Libyan Infrastructure"
+
+ ITA_naval_rearmament:0 "Mare Nostrum"
+
+ ITA_plan_z:0 "Appoint Campioni"
+
+ ITA_u_boat_effort:0 "Cavagnari´s Plan"
+
+ ITA_motorized:0 "FIAT"
+
+ ITA_pan_med:0 "Pan Mediterranean Army"
+
+ ITA_desert_warfare:0 "Desert Warfare"
+
+ ITA_from_the_skys:0 "Aeronautica Militare"
+
+ ITA_desert_warfare_2:0 "Libyan Divisions"
+
+ ITA_modernized_artillery_2:0 "Superior Firepower"
+
+ ITA_alpini_2:0 "Return of the Arditi"
+
+ ITA_trade_interdiction:0 "Trade Interdiction"
+
+ ITA_graf_zeppelin:0 "Develop the Falco"
+
+ ITA_recover_from_operation_chariot:0 "Expand Naval Facilities"
+
+ ITA_fjord_fleet_basing:0 "Protection for German Convoys"
+
+ ITA_h_class:0 "Develop the Littorio"
+
+ ITA_germaniawerft:0 "German Naval Cooperation"
+
+ ITA_modular_construction:0 "Modular Construction"
+
+ ITA_u_boot_bunker:0 "Sottomarino bunker"
+
+ ITA_u_boot_bunker2:0 "Sottomarino Construction Base"
+
+ ITA_operation_sealion:0 "Battle for Gibraltar"
+
+ ITA_atlantikschlacht:0 "Fight for the Mediterranean"
+
+ ITA_monsoon_boats:0 "Monsoon Boats"
+
+ ITA_ethiopian_war_logistics:0 "Ethiopian War Logistics"
+
+ ITA_ethiopian_war_logistics_desc:0 "We might have misjudged the logistics situation for our glorious conquest of Ethiopia. We must make it our primary goal to provide our brave troops with the necessary supplies."
+
+ ITA_fortification_effort:0 "Alpine Wall"
+
+ ITA_fortification_effort_desc:0 "We must defend our shores and borders against aggression by the fading and decadent imperial powers France and Britain."
+
+ ITA_fortification_effort_forts:0 "Add §Y15 Land Forts§! on the French border.\n"
+
+ ITA_fortification_effort_2:0 "Fortify the Islands"
+
+ ITA_fortification_effort_3:0 "Volturno Line"
+
+ ITA_fortification_effort_4:0 "Gothic Line"
+
+ ITA_fortification_effort_5:0 "Libyan Defense"
+
+ ITA_army_primacy:0 "Army Primacy"
+
+ ITA_army_primacy_desc:0 "Industrially, Italy is still lagging behind the decadent colonial empires. We must choose whether to prioritize the army or the navy. The choice seems obvious; like the ancient Roman Empire depended on its legions, so must the new Italian Empire!"
+
+ ITA_modernized_artillery:0 "Modernized Artillery"
+
+ ITA_modernized_artillery_desc:0 "The Regio Esercito is, in theory, one of the largest armies in the world. Unfortunately, there is no way we can equip all those men properly. Worst of all, most of our artillery is from 1918!"
+
+ ITA_modernized_army:0 "Modernized Army"
+
+ ITA_modernized_army_desc:0 "Better artillery will increase our fighting efficiency greatly, but we also have need of new tactics and doctrines."
+
+ ITA_armored_effort:0 "Armored Effort"
+
+ ITA_armored_effort_desc:0 "Fighting in Ethiopia is well and good, but our tanks are simply not up to the standard needed to fight against the decadent - though still powerful - plutodemocracies of Europe."
+
+ ITA_mare_nostrum:0 "Mare Nostrum"
+
+ ITA_mare_nostrum_desc:0 "Our resources are limited and we must make some painful choices, but the British Empire has us caged in the Mediterranean. Breaking out will require a navy to rival even theirs..."
+
+ ITA_carrier_effort:0 "Carrier Effort"
+
+ ITA_carrier_effort_desc:0 "Modern battle fleets will be centered on aircraft carriers, not battleships. The supremacy of air power over ships was demonstrated by the Americans back in 1921!"
+
+ ITA_capital_ships:0 "Capital Ship Effort"
+
+ ITA_capital_ships_desc:0 "The nation with the most battleships will rule the oceans. We must not allow the Royal Navy to outgun us in the Mediterranean..."
+
+ ITA_bomber_effort:0 "Bomber Effort"
+
+ ITA_bomber_effort_desc:0 "The era is past when armies could win wars without looking to the skies. We must develop our tactical bombers to provide our soldiers with the air support they need."
+
+ ITA_atlantic_fleet:0 "Atlantic Fleet"
+
+ ITA_atlantic_fleet_desc:0 "Once we have broken out of the British cage, we will need to project our power across the oceans. This must be our first priority."
+
+ ITA_marines_and_landing_craft:0 "Marines and Landing Craft"
+
+ ITA_marines_and_landing_craft_desc:0 "Wars are not won by naval power alone; we must also be able to transport our armies across the waves and put them ashore safely..."
+
+ ITA_jet_engine_effort:0 "Jet Engine Effort"
+
+ ITA_jet_engine_effort_desc:0 "Italy should be at the forefront of jet engine development thanks to the brilliant work of Secondo Campini. We should give him all the resources he needs to further improve his designs for the Regio Aeronautica."
+
+ ITA_light_ship_effort:0 "Light Ship Effort"
+
+ ITA_light_ship_effort_desc:0 "The convoys to our overseas territories need protection. We need to develop new doctrines as well as more modern destroyers."
+
+ ITA_escort_effort:0 "Escort Effort"
+
+ ITA_escort_effort_desc:0 "We should make further efforts to protect our vulnerable convoys in the Mediterranean."
+
+ ITA_sea_wolves:0 "Sea Wolves"
+
+ ITA_sea_wolves_desc:0 "Our German allies have developed terrifyingly efficient submarines and the 'wolf pack' doctrines to employ them. We should learn from them."
+
+ ITA_slovenia_dalmatia_claims:0 "Steel Pact"
+
+ ITA_slovenia_dalmatia_claims_desc:0 "There is still a significant Italian population in Yugoslavia, dating back to the glory days of Venice at least. Restoring these regions to Italian rule is an important step towards recreating the Roman Empire!"
+
+ ITA_slovenia_dalmatia_claims_threat:0 "Italian Claims on Yugoslavia"
+
+ ITA_support_nationalist_spain:0 "Support Nationalist Spain"
+
+ ITA_support_nationalist_spain_desc:0 "Spain is in the midst of a civil war which will determine whether it will be a future possible fascist ally or remain a useless republic - or worse yet, fall to communism or anarchy. We must provide support to the true Spaniards before it is too late!"
+
+ ITA_demand_balearic_islands:0 "Demand Balearic Islands"
+
+ ITA_demand_balearic_islands_desc:0 "Having proven our support for Franco's new regime, we are in a position to request one of the important territories we fought to defend, the Balearic Islands, be ceded to Italy to strengthen our strategic hold of the Mediterranean."
+
+ ITA_bulgaria_friend:0 "Pact of Steel"
+
+ ITA_bulgaria_friend_desc:0 "Our relationship with Nazi Germany is troubled by ideological differences and conflicting aims; Il Duce is extremely wary of German ambitions in Austria and the Balkans. However, realities do change..."
+
+ ITA_albania_war_goal:1 "Albanian Occupation"
+
+ ITA_albania_war_goal_desc:1 "Albania paints an easy target for our troops to occupy. We are unlikely to be met with much resistance. We must show the world the might of Italy and restore the glory of the Roman Empire!"
+
+ ITA_pact_of_steel:0 "Albanian Occupation"
+
+ ITA_pact_of_steel_desc:0 "Albania paints an easy target for our troops to occupy. We are unlikely to be met with much resistance. We must show the world the might of Italy and restore the glory of the Roman Empire!"
+
+ ITA_german_millitary_cooperation:0 "German Military Cooperation"
+
+ ITA_german_millitary_cooperation_desc:0 "Through tight cooperation with the powerful German military we can combine the best part of German efficiency and Italian innovation. We will have a strategic advantage over anyone who dares face us."
+
+ ITA_claims_on_france:0 "Claims On France"
+
+ ITA_claims_on_france_desc:0 "Take land from Vichy France. With the German Conquest of Paris and a new government formed in France, it is time for us to claim our rightful piece of Southern Europe. Germany has expanded heavily in the north, and it is only fair that we are granted a slice of our own."
+
+ ITA_claims_on_france_tt:0 "§YVichy France§! exists and controls §YSavoy§! and §YCorsica§!"
+
+ ITA_go_after_france:0 "Go After France"
+
+ ITA_go_after_france_desc:0 "France... yet another reactionary democracy of the west who, at every moment seeks to hinder the advance and have often endangered the very existence of the Italian people. We go to battle for the good of Italy and the future of the Empire."
+
+ ITA_claims_on_turkey:0 "Claims On Turkey"
+
+ ITA_claims_on_turkey_desc:0 "The 1915 treaty of London promised Italy Turkish lands in Anatolia in exchange for the Western powers gains in the Levant. They took their due, claiming that they were merely League of Nations mandates, while Italy was denied. The new Italy is much stronger than the old and we will force the Turks to keep the British promises."
+
+ ITA_italy_first:0 "Italy First"
+
+ ITA_italy_first_desc:0 "Mussolini will never play second fiddle to Hitler! We must heed the lessons of the Roman Empire; Teutonic interference in Italian affairs never ends well..."
+
+ ITA_rome:0 "Mediterraneum Mare"
+
+ ITA_rome_desc:0 "Non ducor, duco."
+
+ ITA_romania_friend:0 "Blackshirts"
+
+ ITA_romania_friend_desc:0 "Milizia Volontaria per la Sicurezza Nazionale"
+
+ ITA_german_rd_treaty:0 "Pact of Steel"
+
+ ITA_german_rd_treaty_desc:0 "We should ask the Germans to exchange technological secrets for the benefit of both of our great nations."
+
+ ITA_spanish_italian_faction:0 "Spanish-Italian Alliance"
+
+ ITA_spanish_italian_faction_desc:0 "Franco and the Spanish nationalists are our natural allies, united by religion, culture and ideology. Together, we could seize Gibraltar and make life very difficult for the Royal Navy..."
+
+ ITA_italian_highways:0 "Italian Highways"
+
+ ITA_italian_highways_desc:0 "We need to expand our infrastructure to ensure easy mobility of troops throughout our empire. With enemies at every corner of the world this is a crucial part of being able to defend all Italian soil."
+
+ ITA_libyan_refineries:0 "Italian Refineries"
+
+ ITA_libyan_refineries_desc:0 "Italy is a perfect place for constructing refineries. Close to oil sources and close to production in the homeland."
+
+ ITA_libyan_infrastructure:0 "Libyan Infrastructure"
+
+ ITA_libyan_infrastructure_desc:0 "Our vast lands in Northern Africa still lack behind the remainder of our empire in terms of infrastructure. We should focus our efforts on bringing them up to par."
+
+ ITA_prospect_for_oil:0 "Prospect For Oil"
+
+ ITA_prospect_for_oil_desc:0 "Old empires always fear new ones on the rise and we should not depend on them. We cannot rely on oil from other nations and should focus our efforts on finding our own source within the empire. This is how we make sure to stay competitive far into the future."
+
+ ITA_greece_war_goal:0 "Balkan Dominance"
+
+ ITA_greece_war_goal_desc:0 "What kind of Roman Empire are we restoring if we do not include Greece and Yugoslavia? They should be easy targets..."
+
+ ITA_greece_friend:0 "Befriend Greece"
+
+ ITA_greece_friend_desc:0 "The Greeks are a fellow ancient people and the cradle of Western civilization. It should not be impossible to align their aims with ours..."
+
+ ITA_turkey_friend:0 "Befriend Turkey"
+
+ ITA_turkey_friend_desc:0 "The Turks have no reason to love us after the Italian-Turkish war and the Great War. However, Realpolitik takes precedence over old gripes, and the current situation in the Mediterranean could bring our two stars into alignment."
+
+ ITA_portugal_friend:0 "Befriend Portugal"
+
+ ITA_portugal_friend_desc:0 "Portugal is, along with Spain, natural allies of the Italian people. We must strengthen these bonds of friendship."
+
+ ITA_anti_uk_war_goals:0 "War with the UK"
+
+ ITA_anti_uk_war_goals_desc:0 "The decaying British Empire has us caged in the Mediterranean and will never voluntarily give us the keys. We must strike at the English as soon as the time is right!"
+
+ ITA_japan_friend:0 "Befriend Japan"
+
+ ITA_japan_friend_desc:0 "The Japanese are much like us; a young, hungry power with a positive demography, held ransom by trade from waning plutodemocracies like the UK and the Netherlands. We should unite with them to form a vibrant Naval Axis across the oceans!"
+
+ ITA_hitler_rome:0 "Italy First"
+
+ ITA_social_republic:0 "Italian Social Republic"
+
+ ITA_pugliese_system:0 "Pugliese System"
+
+ ITA_refit_idea:0 "Advanced Naval Yards"
+
+ ITA_small_ship_focus:0 "Screen Effort"
+
+ ITA_dockyard_building:0 "Expand Naval Facilities"
+
+ ITA_hitler_visit:0 "Hitler Visits Rome"

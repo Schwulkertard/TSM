@@ -42,7 +42,7 @@
 	}
 	focus = {
 		id = GER_rhineland
-		icon = GFX_focus_GER_rhineland
+		icon = GFX_focus_GER_remilitarize_the_rhineland
 		x = 12
 		y = 0
 		cost = 7.2
@@ -62,7 +62,7 @@
 	}
 	focus = {
 		id = GER_grosraumwirtschaft
-		icon = GFX_focus_GER_grosraumwirtschaft
+		icon = GFX_GOAL_infrastructure_projects
 		prerequisite = { focus = GER_four_year_plan }
 		x = -3
 		y = 1
@@ -133,7 +133,7 @@
 		}
 	focus = {
 		id = GER_integrate_war_economies
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_GER_integrated_economies
 		prerequisite = { focus = GER_align_hungary }
 		x = 0
 		y = 1
@@ -466,7 +466,7 @@
 	}
 	focus = {
 		id = GER_army_innovation
-		icon = GFX_focus_GER_army_inno_1
+		icon = GFX_focus_GER_army
 		prerequisite = { focus = GER_rhineland }
 		x = 0
 		y = 1
@@ -505,7 +505,7 @@
 	}
 	focus = {
 		id = GER_soviet_treaty
-		icon = GFX_focus_GER_soviet_treaty
+		icon = GFX_SOV_german_soviet_background
 		prerequisite = { focus = GER_army_innovation }
 		available = {
 		}
@@ -846,7 +846,7 @@
 	}
 	focus = {
 		id = GER_order_above_all
-		icon = GFX_focus_GER_order
+		icon = GFX_GER_a_soldiers_oath
 		cost = 5
 		x = -1
 		y = 1
@@ -858,7 +858,7 @@
 	}	
 	focus = {
 		id = GER_rebuild_our_glory
-		icon = GFX_focus_GER_rebuild_our_glory
+		icon = GFX_goal_GER_autarky
 		cost = 5
 		x = 1
 		y = 1
@@ -880,7 +880,7 @@
 	}
 	focus = {
 		id = GER_autarky
-		icon = GFX_focus_GER_autarky
+		icon = GFX_ENG_amend_factory_acts
 		prerequisite = { focus = GER_rebuild_our_glory }
 		x = 0
 		y = 1
@@ -980,7 +980,7 @@
 	}
 	focus = {
 			id = GER_hermann_goering_plan
-			icon = GFX_focus_GER_hermann_goering
+			icon = GFX_focus_GER_the_four_year_plan
 			cost = 7.2
 			x = -1
 			y = 1
@@ -994,7 +994,7 @@
 	}		
 	focus = {
 		id = GER_rethink_our_old_plans
-		icon = GFX_focus_GER_rethink_our_plans
+		icon = GFX_focus_GER_kdf_wagen
 		cost = 7.2
 		x = 1
 		y = 1
@@ -1160,7 +1160,7 @@ focus = {
 	}
 	focus = {
 		id = GER_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_focus_GER_subsidize_hoesch_benzin
 		prerequisite = { focus = GER_kdf_wagen }
 		x = 0
 		y = 1
@@ -1223,7 +1223,7 @@ focus = {
 	}				
 	focus = {
 		id = GER_german_engineering
-		icon = GFX_focus_GER_Wunderwaffe
+		icon = GFX_focus_GER_wunderwaffe
 		prerequisite = { focus = GER_long_range_escorts focus = GER_air_innovation_2 focus = GER_flak_36 focus = GER_synthetic_rubber }
 		x = 1
 		y = 1
@@ -1272,7 +1272,7 @@ focus = {
 	
 	focus = {
 		id = GER_panzer_4_ausfg
-		icon = GFX_focus_GER_Schwerer_Panzer
+		icon = GFX_GOAL_german_tank
 		prerequisite = { focus = GER_army_innovation_2 }
 		x = 0
 		y = 1
@@ -2271,7 +2271,7 @@ focus = {
 	}
 	focus = {
 		id = GER_anti_comitern_pact
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_focus_GER_kriegslokomotive
 		available = {
 			date > 1941.1.1
 		}
@@ -2504,7 +2504,7 @@ focus = {
 	focus = {
 		id = GER_blau
 		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_GER_our_place_in_the_sun
 		available = {
 			Date > 1942.3.1
 			NOT={has_idea=GER_barbarossa}
@@ -2568,7 +2568,7 @@ focus = {
 	}
 	focus = {
 		id = GER_south
-		icon = GFX_focus_GER_south
+		icon = GFX_focus_AUS_osterreichische_gebirgsjager
 		mutually_exclusive = { focus = GER_north }
 		prerequisite = { focus = GER_blau}
 		icon = GFX_focus_ger_reichskommisariats
@@ -2592,7 +2592,7 @@ focus = {
 	focus = {
 		id = GER_summer_defensive
 		prerequisite = { focus = GER_north focus = GER_south  }
-		icon = GFX_focus_GER_winter_of_1941
+		icon = GFX_focus_GER_appease_the_wehrmacht
 		available = {
 			NOT = {has_idea = GER_blau }
 			has_war_with = SOV
@@ -2653,7 +2653,7 @@ focus = {
 	}
 	focus = {
 		id = GER_demand_sudetenland
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_focus_GER_integrate_czechoslovakia
 		prerequisite = { focus = GER_anschluss }
 		available = {
 		}
@@ -2765,7 +2765,7 @@ focus = {
 	}
 	focus = {
 		id = GER_alta
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_focus_GER_around_maginot
 		prerequisite = { focus = GER_danzig_or_war }
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
@@ -2900,6 +2900,9 @@ focus = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
+			set_technology = {
+				early_ship_hull_carrier = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -2953,12 +2956,15 @@ focus = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
+			set_technology = {
+				early_ship_hull_carrier = 1
+			}
 		}
 	}
 	focus = {
 		id = GER_naval_effort
 		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_GER_navy
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
@@ -2981,16 +2987,15 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				category = dd_tech
+				technology = basic_ship_hull_light
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				category = cl_tech
-				category = ca_tech
+				technology = basic_ship_hull_cruiser
 			}
 		}
 		completion_reward = {
@@ -3030,23 +3035,15 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				category = dd_tech
+				technology = basic_ship_hull_light
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_all_options
-				bonus = 100
-				uses = 2
-				category = naval_doctrine
+				technology = basic_ship_hull_cruiser
 			}
 		}
 	}
@@ -3062,48 +3059,43 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		available={date>1940.1.1
-		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+		available = {
+			date > 1939.1.1
+			has_tech = basic_ship_hull_cruiser
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_all_options
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_all_options
-				bonus = 100
-				uses = 2
-				category = naval_doctrine
-			}
 			set_technology = {
 				improved_ship_hull_cruiser = 1
 			}
 			create_equipment_variant = {
-				name = "Hindenburg-Klasse"
+				name = "Hindenburg Class"
 				type = ship_hull_cruiser_3
-				name_group = GER_BB_HISTORICAL
+				name_group = GER_CA_HISTORICAL
 				parent_version = 0
 				modules = {
 					fixed_ship_battery_slot=ship_light_medium_battery_3
 					fixed_ship_anti_air_slot=ship_anti_air_2
-					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
+					fixed_ship_fire_control_system_slot=ship_fire_control_system_1
 					fixed_ship_engine_slot=cruiser_ship_engine_3
 					fixed_ship_secondaries_slot=ship_secondaries_2
 					fixed_ship_armor_slot=ship_armor_cruiser_3
-					front_1_custom_slot=ship_light_medium_battery_3
-					mid_1_custom_slot=ship_light_medium_battery_3
-					mid_2_custom_slot=ship_light_medium_battery_3
-					rear_1_custom_slot=ship_airplane_launcher_2
-					rear_2_custom_slot=ship_light_medium_battery_3
+					front_1_custom_slot=ship_medium_battery_3
+					mid_1_custom_slot=ship_secondaries_2
+					mid_2_custom_slot=ship_secondaries_2
+					rear_1_custom_slot=ship_medium_battery_3
+					rear_2_custom_slot=ship_medium_battery_3
 				}
 			}
-			custom_effect_tooltip="Adds five Hindenburg-Klasse Light Cruisers to the production queue, at 90% completion rate"
+			custom_effect_tooltip="Adds five Hindenburg Class Heavy Cruisers to the production queue, at 90% completion rate"
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_cruiser_3
 						creator = "GER"
-						version_name = "Hindenburg-Klasse"
+						version_name = "Hindenburg Class"
 					}
 					name = "Hindenburg"
 					requested_factories = 1
@@ -3114,7 +3106,7 @@ focus = {
 					equipment = {
 						type = ship_hull_cruiser_3
 						creator = "GER"
-						version_name = "Hindenburg-Klasse"
+						version_name = "Hindenburg Class"
 					}
 					name = "Roon"
 					requested_factories = 1
@@ -3125,9 +3117,9 @@ focus = {
 					equipment = {
 						type = ship_hull_cruiser_3
 						creator = "GER"
-						version_name = "Hindenburg-Klasse"
+						version_name = "Hindenburg Class"
 					}
-					name = "Lenny"
+					name = "Agir"
 					requested_factories = 1
 					progress = 0.9
 					amount = 1
@@ -3136,9 +3128,9 @@ focus = {
 					equipment = {
 						type = ship_hull_cruiser_3
 						creator = "GER"
-						version_name = "Hindenburg-Klasse"
+						version_name = "Hindenburg Class"
 					}
-					name = "Florian"
+					name = "Hellea"
 					requested_factories = 1
 					progress = 0.9
 					amount = 1
@@ -3147,9 +3139,9 @@ focus = {
 				equipment = {
 					type = ship_hull_cruiser_3
 					creator = "GER"
-					version_name = "Hindenburg-Klasse"
+					version_name = "Hindenburg Class"
 				}
-				name = "Vinnie"
+				name = "Soor"
 				requested_factories = 1
 				progress = 0.9
 				amount = 1
@@ -3206,21 +3198,14 @@ focus = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available={date>1940.1.1
-		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+		available={date > 1939.6.1
+		has_tech = basic_ship_hull_heavy
+		}
 		available_if_capitulated = yes
 		complete_tooltip = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			navy_experience = 50
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_all_options
-				bonus = 100
-				uses = 2
-				category = naval_doctrine
-			}
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -3242,32 +3227,32 @@ focus = {
 				improved_ship_hull_heavy = 1
 			}
 			create_equipment_variant = {
-				name = "Bismarck-Klasse"
+				name = "Bismarck Class"
 				type = ship_hull_heavy_3
 				name_group = GER_BB_HISTORICAL
 				parent_version = 0
 				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_battery_slot = ship_381_battery
 					fixed_ship_anti_air_slot = ship_anti_air_3
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = ship_secondaries_2
 					fixed_ship_armor_slot = ship_armor_bb_3
-					front_1_custom_slot = ship_heavy_battery_3
+					front_1_custom_slot = ship_381_battery
 					mid_1_custom_slot = ship_anti_air_3
 					mid_2_custom_slot = ship_anti_air_3
-					mid_3_custom_slot = ship_heavy_battery_3
-					rear_1_custom_slot = ship_heavy_battery_3
+					mid_3_custom_slot = ship_381_battery
+					rear_1_custom_slot = ship_381_battery
 				}
 			}
-			custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively."
+			custom_effect_tooltip="Adds two Bismarck Class Battleships to the production queue, at 85% and 90% complete, respectively."
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_3
 						creator = "GER"
-						version_name = "Bismarck-Klasse"
+						version_name = "Bismarck Class"
 					}
 					name = "Bismarck"
 					requested_factories = 1
@@ -3278,7 +3263,7 @@ focus = {
 					equipment = {
 						type = ship_hull_heavy_3
 						creator = "GER"
-						version_name = "Bismarck-Klasse"
+						version_name = "Bismarck Class"
 					}
 					name = "Tirpitz"
 					requested_factories = 1
@@ -3293,8 +3278,8 @@ focus = {
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z focus = GER_all_options}
-		available={date>1940.1.1
-		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+		available={date>1939.1.1
+		has_tech = basic_ship_hull_submarine}
 		x = 3
 		y = 1
 		relative_position_id = GER_naval_effort
@@ -3306,14 +3291,6 @@ focus = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_all_options
-				bonus = 100
-				uses = 2
-				category = naval_doctrine
-			}
-			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -3336,7 +3313,7 @@ focus = {
 	}
 	focus = {
 		id = GER_trade_interdiction
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_BRA_german_submarine_development
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 1
 		y = 1
@@ -3348,19 +3325,12 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 2.0
-				uses = 4
-				category = naval_doctrine
-			}
 			add_ideas=GER_trade_interdiction
 		}
 	}
 	focus = {
 		id = GER_graf_zeppelin
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_GER_seeherrschaft
 		prerequisite = { focus=GER_plan_z focus=GER_all_options }
 		x = 1
 		y = 1
@@ -3369,18 +3339,21 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_tech = basic_ship_hull_carrier
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip="Adds one Bismarck-Klasse Battleship to the production queue, at 90% complete."
+			custom_effect_tooltip="Adds one Graf Zeppelin Aircraft Carrier to the production queue, at 90% complete."
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_3
+						type = ship_hull_carrier_1
 						creator = "GER"
-						version_name = "Bismarck-Klasse"
+						version_name = "Graf Zeppelin Class"
 					}
-					name = "Hindenburg"
+					name = "Graf Zeppelin"
 					requested_factories = 1
 					progress = 0.9
 					amount = 1
@@ -3391,7 +3364,7 @@ focus = {
 	focus = {
 		id = GER_naval_air_effort
 		text = naval_air_effort
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_GER_graf_zeppelin
 		prerequisite = { focus = GER_graf_zeppelin  }
 		x = 0
 		y = 1
@@ -3402,11 +3375,8 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			set_technology = {
+				air_torpedoe_2 = 1
 			}
 		}
 	}
@@ -3455,7 +3425,7 @@ focus = {
 	}
 	focus = {
 		id = GER_fjord_fleet_basing
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_generic_refit_civilian_ships
 		prerequisite = { focus = GER_recover_from_operation_chariot  }
 		x = 0
 		y = 1
@@ -3496,7 +3466,7 @@ focus = {
 	}
 	focus = {
 		id = GER_germaniawerft
-		icon = GFX_focus_GER_germaniawerft
+		icon = GFX_focus_GER_high_seas_fleet
 		prerequisite = { focus=GER_plan_z  }
 		x = -1
 		y = 1
@@ -3536,7 +3506,7 @@ focus = {
 				ship_hull_super_heavy = 1
 			}
 			create_equipment_variant = {
-				name = "H-Klasse"
+				name = "H-41 Class"
 				type = ship_hull_super_heavy_1
 				name_group = GER_BB_HISTORICAL
 				parent_version = 0
@@ -3557,15 +3527,15 @@ focus = {
 					rear_2_custom_slot = ship_airplane_launcher_2
 				}
 			}
-			custom_effect_tooltip="Adds two H-Klasse Battleships to the production queue, at 75% and 50% complete, respectively."
+			custom_effect_tooltip="Adds two H-41 Class Battleships to the production queue, at 75% and 50% complete, respectively."
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_super_heavy_1
 						creator = "GER"
-						version_name = "H-Klasse"
+						version_name = "H-41 Class"
 					}
-					name = "Schlachtschiff H"
+					name = "H-41"
 					requested_factories = 1
 					progress = 0.75
 					amount = 1
@@ -3574,9 +3544,9 @@ focus = {
 					equipment = {
 						type = ship_hull_super_heavy_1
 						creator = "GER"
-						version_name = "H-Klasse"
+						version_name = "H-41 Class"
 					}
-					name = "Schlachtschiff J"
+					name = "H-44"
 					requested_factories = 1
 					progress = 0.5
 					amount = 1
@@ -3586,7 +3556,7 @@ focus = {
 	}
 	focus = {
 		id = GER_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_focus_generic_cruiser_submarines
 		prerequisite = { focus = GER_trade_interdiction }
 		x = 0
 		y = 1
@@ -3632,7 +3602,7 @@ focus = {
 	}
 	focus = {
 		id = GER_u_boot_bunker2
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_generic_merchant_fleet
 		prerequisite = { focus=GER_u_boot_bunker  }
 		x = 0
 		y = 1
@@ -3693,7 +3663,7 @@ focus = {
 	}
 	focus = {
 		id = GER_atlantikschlacht
-		icon = GFX_focus_GER_atlantikschlacht
+		icon = GFX_focus_GER_sentinels_of_the_pacific
 		prerequisite = { focus = GER_modular_construction focus=GER_naval_air_effort }
 		prerequisite = { focus = GER_fjord_fleet_basing }
 		x = 0
@@ -3711,7 +3681,7 @@ focus = {
 	}
 	focus = {
 		id = GER_monsoon_boats
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_generic_midget_submarines
 		prerequisite = {  focus = GER_modular_construction }
 		prerequisite = { focus = GER_u_boot_bunker2 }
 		x = -1
@@ -3729,7 +3699,7 @@ focus = {
 	}
 	focus = {
 		id = GER_ardennenoffensive
-		icon = GFX_focus_GER_ardennenoffensive
+		icon = GFX_focus_GER_shatter_usas_hegemony
 		prerequisite = { focus = GER_albert_speer_focus }
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
@@ -3812,7 +3782,7 @@ focus = {
 	}
 focus = {
 	id = GER_ground_support
-	icon = GFX_focus_GER_GER_ground_support2
+	icon = GFX_focus_GER_amerikabomber
 	prerequisite = {  focus = GER_fighter_3 }
 	x = 0
 	y = 1
@@ -3837,7 +3807,7 @@ focus = {
 
 focus = {
 	id = GER_reinforce_the_line
-	icon = GFX_focus_GER_reinforce_the_line
+	icon = GFX_focus_GER_gebirgsjager
 	prerequisite = {  focus = GER_panzer_4_ausfg }
 	x = 0
 	y = 1
@@ -3849,7 +3819,7 @@ focus = {
 	}
 focus = {
 	id = GER_advanced_radar_development
-	icon = GFX_focus_GER_GER_advanced_radar
+	icon = GFX_focus_generic_radio_communication
 	prerequisite = {  focus = GER_ground_support }
 	x = 0
 	y = 1
@@ -3877,7 +3847,7 @@ focus = {
 }
 focus = {
 	id = GER_marinestosstrupp
-	icon = GFX_focus_GER_marine
+	icon = GFX_focus_GER_hegemony_of_the_ss
 	prerequisite = {  focus = GER_develop_mp43 }
 	x = 0
 	y = 1
@@ -3896,7 +3866,7 @@ focus = {
 	}						
 focus = {
 	id = GER_get_better_advisors
-	icon = GFX_focus_GER_get_better_advisors
+	icon = GFX_focus_GER_reorganize_the_wehrmacht
     prerequisite = {  focus = GER_rhineland }
 	x = 5
 	y = 1
@@ -3910,7 +3880,7 @@ focus = {
 }
 focus = {
 	id = GER_keep_our_technology
-	icon = GFX_focus_GER_technology_lead
+	icon = GFX_focus_GER_customs_union
 	prerequisite = {  focus = GER_get_better_advisors }
 	bypass = {
 		date > 1936.7.1
@@ -3942,7 +3912,7 @@ focus = {
 		}
 focus = {
 	id = GER_adjust_the_building_plans
-	icon = GFX_focus_GER_adjust
+	icon = GFX_focus_AFG_a_modern_economy
 	prerequisite = {  focus = GER_keep_our_technology }
 	x = 0
 	y = 1
@@ -3954,7 +3924,7 @@ focus = {
 }									 	
 focus = {
 	id = GER_determine_the_investment
-	icon = GFX_focus_GER_determine_the_investment
+	icon = GFX_focus_AUS_invest_in_alpen_elektrowerke
 	prerequisite = {  focus = GER_adjust_the_building_plans }
 	x = 0
 	y = 1
@@ -4130,7 +4100,7 @@ focus = {
 	}
 	focus = {
 		id = GER_new_transport_plane
-		icon = Ger_goal_air_armada
+		icon = GFX_focus_generic_air_bases
 		prerequisite = { Focus = GER_strategic_air_effort Focus = GER_tactical_air_effort }
 		x = 1
 		y = 1
@@ -4145,7 +4115,7 @@ focus = {
 	}
 focus = {
 	id = GER_panther_massproduction
-	icon = GFX_focus_GER_king_tiger
+	icon = GFX_SS_panzer_elite
 	prerequisite = { focus =  GER_russische_befreiungsarmee }
 	x = 0
 	y = 1

@@ -3197,6 +3197,16 @@ leader_traits = {
 		}
 	}
 
+	army_commando_4 = { # +12 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.20
+		special_forces_defence_factor = 0.15
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
 
 	army_cavalry_1 = { # +4 cavalry/motorized efficiency
 		sprite = 8
