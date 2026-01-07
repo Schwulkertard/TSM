@@ -101,7 +101,7 @@ focus_tree = {
 			}}
 	focus = {
 		id = SOV_capitals_of_socialism
-		icon = GFX_focus_GER_leningrad
+		icon = GFX_SOV_capitals_of_socialism
 		x = 2
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
@@ -1246,7 +1246,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_infrastructure_effort
-		icon = GFX_focus_SOV_infrastructrure_effort
+		icon = GFX_SOV_one_way_trip_to_hell
 		prerequisite = { focus = SOV_start_five_year_plan }
 		prerequisite = { focus = SOV_capitals_of_socialism }
 		relative_position_id = SOV_start_five_year_plan
@@ -1471,7 +1471,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_aviation_cult
-		icon = GFX_focus_generic_women_in_military
+		icon = GFX_SOV_airforce_tactical_school
 		prerequisite = { focus = SOV_factories_must_grow }
 		x = 2
 		y = 1
@@ -1698,7 +1698,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_military_reorganization
-		icon = GFX_focus_SOV_military_reoganization
+		icon = GFX_SOV_increase_standards
 		prerequisite = { focus = SOV_rehabilitated_military }
 		x = 0
 		y = 1
@@ -1913,7 +1913,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_heavy_tonk
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_SOV_armour_development
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
@@ -2020,7 +2020,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_barb_2
-		icon = GFX_SOV_infantry_development
+		icon = GFX_SOV_mass_mechanization
 		prerequisite = { focus = SOV_tankograd}
 		available = {
 		}
@@ -2048,7 +2048,7 @@ focus = {
 }
 	focus = {
 		id = SOV_uranus
-		icon = GFX_SOV_protect_the_east
+		icon = GFX_focus_SWE_the_beast_stirs
 		prerequisite = { focus = SOV_great_patriotic_general }
 		available = {
 			date > 1942.08.15
@@ -2112,7 +2112,7 @@ focus = {
 	}
 focus = {
 	id = SOV_leningrad_designs
-	icon = GFX_focus_NORDIC_com_research
+	icon = GFX_SOV_choose_okmo
 	prerequisite = { focus = SOV_progress_cult }
 	x = 0
 	y = 1
@@ -2471,7 +2471,7 @@ focus = {
 }
 focus = {
 	id = SOV_develop_modern_guns
-	icon = GFX_focus_NORDIC_com_army
+	icon = GFX_SOV_improve_equipment
 	cost = 5
 	prerequisite = { focus = SOV_research_institutes }
 	relative_position_id = SOV_research_institutes

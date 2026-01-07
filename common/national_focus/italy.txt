@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1200 }
 	focus = {
 		id = ITA_triumph_in_africa
-		icon = GFX_focus_ITA_spqr
+		icon = GFX_focus_ITA_imperial_recognition
 		available = {
 		}
 		available_if_capitulated = yes
@@ -43,30 +43,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			navy_experience = 50
-			add_tech_bonus = {
-					name = naval_doctrine
-					bonus = 2.0
-					uses = 3
-					category = naval_doctrine
-				}
+			navy_experience = 100
 			2 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = dockyard
 				level = 3
 				instant_build = yes
-				                            }
-				}							
+				}
+			}							
 			154 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = dockyard
 				level = 3
 				instant_build = yes
-					                        }
-				  }
-			
+				}
+			}
 		}
 	}
 	focus = {
@@ -81,19 +74,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			navy_experience = 50
-			add_tech_bonus = {
-				name = naval_doctrine
-				bonus = 2.0
-				uses = 3
-				category = naval_doctrine
-			}
-			add_timed_idea = { idea = ITA_dockyard_building days = 90 }
+			navy_experience = 100
+			add_timed_idea = { idea = ITA_dockyard_building days = 60 }
 		}
 	}
 	focus = {
 		id = ITA_naval_rearmament
-		icon = GFX_focus_GER_naval_rearm
+		icon = GFX_focus_ITA_milizia_marittima_di_artiglieria
 		x = 5
 		y = 1
 		prerequisite = {
@@ -108,21 +95,19 @@ focus_tree = {
 				name = dd_bonus
 				bonus = 3.0
 				uses = 1
-				category = dd_tech
+				technology = basic_ship_hull_light
 			}
 			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 3.0
 				uses = 1
-				category = cl_tech
-				category = ca_tech
+				technology = basic_ship_hull_cruiser
 			}
 	}
 }	
 	focus = {
 		id = ITA_naval_effort
-		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_ITA_new_horizons
 		prerequisite = { focus = ITA_naval_rearmament }
 		x = 0
 		y = 1
@@ -131,23 +116,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = doctrine_bonus
-				bonus = 3
-				uses = 3
-				category = naval_doctrine
-			}
-			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1
 				uses = 1
-				category = dd_tech
+				technology = improved_ship_hull_light
 			}
 			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 1
 				uses = 1
-				category = cl_tech
-				category = ca_tech
+				technology = improved_ship_hull_cruiser
 			}
 		}
 	}
@@ -162,12 +140,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = ITA_naval_advancement
+			add_ideas = ITA_pugliese_system
 		}
 	}
 	focus = {
 		id = ITA_new_gun
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_goal_italy_regia_marina_2
 		prerequisite = { focus = ITA_naval_advancement  }
 		x = 0
 		y = 1
@@ -190,14 +168,23 @@ focus_tree = {
 				uses = 1
 				technology = improved_heavy_battery
 			}
-			set_technology = {
-				improved_fire_control_system = 1
+			add_tech_bonus = {
+				name = light_gun
+				bonus = 1.0
+				uses = 1
+				technology = basic_dp_light_battery
+			}
+			add_tech_bonus = {
+				name = light_gun
+				bonus = 1.0
+				uses = 1
+				technology = improved_dp_light_battery
 			}
 		}
 	}
 	focus = {
 		id = ITA_germaniawerft
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_generic_naval_invasion
 		prerequisite = { focus=ITA_plan_z  }
 		x = -1
 		y = 1
@@ -227,9 +214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_germaniawerft
-		cost = 5
-		available={controls_state=113}
-		bypass = {NOT={controls_state=113}}
+		cost = 3
 		available_if_capitulated = yes
 		completion_reward = {
 			113 = {
@@ -284,23 +269,23 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_battleship
 				uses = 1
-				bonus = 2
-                technology = improved_ship_hull_heavy  
+				bonus = 3
+                technology = basic_ship_hull_heavy
 			}
 			add_tech_bonus = {
 				name = ITA_battleship
 				uses = 1
 				bonus = 1
-                technology = advanced_ship_hull_heavy
+                technology = improved_ship_hull_heavy
 			}
 	}
 }
 focus = {
 	id = ITA_graf_zeppelin
-	icon = GFX_goal_generic_wolf_pack
+	icon = GFX_focus_GER_graf_zeppelin
 	prerequisite = { focus= ITA_h_class }
 	available = {
-		date > 1939.1.1
+		date > 1938.1.1
 	}
 	x = 0
 	y = 1
@@ -309,17 +294,21 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
-		custom_effect_tooltip = "Get Carrier 3, designer can be used."
-		navy_experience = 25
 		set_technology = {
-			improved_ship_hull_carrier = 1
+			basic_ship_hull_carrier = 1
 			popup = yes
+		}
+		add_tech_bonus = {
+			name = ITA_battleship
+			uses = 1
+			bonus = 1
+            technology = improved_ship_hull_carrier
+		}
 	}
-}
 }	
 	focus = {
 		id = ITA_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_ITA_develop_marconi_class
 		prerequisite = { focus = ITA_plan_z focus = ITA_u_boat_effort }
 		x = -1
 		y = 1
@@ -333,7 +322,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_u_boot_bunker
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_PHI_the_concrete_battleship
 		prerequisite = { focus = ITA_fjord_fleet_basing }
 		x = 0
 		y = 1
@@ -362,7 +351,6 @@ focus = {
 		y = 1
 		relative_position_id = ITA_modular_construction
 		cost = 3
-		available={controls_state=113}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -378,7 +366,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_operation_sealion
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_SMB_blue_water_fleet
 		prerequisite = { focus = ITA_new_gun }
 		prerequisite = { focus = ITA_recover_from_operation_chariot  }
 		x = 1
@@ -396,7 +384,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_atlantikschlacht
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		prerequisite = { 
 			focus = ITA_u_boot_bunker2
 			focus = ITA_new_gun
@@ -436,7 +424,7 @@ focus = {
 																			
 	focus = {
 		id = ITA_army_primacy
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_ITA_bersaglieri
 		x = 14
 		y = 1
 		cost = 5
@@ -567,7 +555,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_modernized_anti_tank
-		icon = GFX_focus_anti_tank
+		icon = GFX_goal_ITA_focus_on_artillery
 		prerequisite = { focus = ITA_modernized_army }
 		x = 3
 		y = 1
@@ -590,7 +578,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_modernized_artillery_2
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_focus_generic_anti_tank_guns
 		prerequisite = { focus = ITA_modernized_anti_tank }
 		x = 0
 		y = 1
@@ -619,7 +607,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_german_millitary_cooperation
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_italy_draw_closer_to_germany
 		prerequisite = { focus = ITA_modernized_artillery_2 }
 		available = {
 		}
@@ -637,7 +625,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_pan_med
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_ITA_bend_the_bars
 		prerequisite = { focus = ITA_modernized_army }
 		x = 0
 		y = 1
@@ -658,7 +646,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_desert_warfare_2
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_focus_ITA_comandante_diavolo
 		prerequisite = { focus = ITA_pan_med}
 		x = -1
 		y = 1
@@ -698,7 +686,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_armored_effort
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_italy_p40
 		prerequisite = { focus = ITA_modernized_army }
 		x = -3
 		y = 1
@@ -755,7 +743,6 @@ focus = {
 	focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		text = secret_weapons
 		prerequisite = { focus = ITA_motorized }
 		available = {
 		}
@@ -781,8 +768,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_air_innovation
-		icon = GFX_goal_generic_build_airforce
-		text = "Regia Aeronautica"
+		icon = GFX_ITA_cc2
 		prerequisite = {
 			focus = ITA_triumph_in_africa
 		}
@@ -795,14 +781,14 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			air_experience = 50
-			162 = {	add_building_construction = {
+			air_experience = 100
+			113 = {	add_building_construction = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
-			156 = {	add_building_construction = {
+			112 = {	add_building_construction = {
 					type = air_base
 					level = 10
 					instant_build = yes
@@ -815,6 +801,7 @@ focus = {
 				}
 			}
 			add_tech_bonus = {
+				name = ita_aa
 				bonus = 1.0
 				uses = 2
 				category = cat_anti_air
@@ -823,8 +810,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_naval_air_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		text = naval_air_effort
+		icon = GFX_focus_generic_air_carrier
 		prerequisite = { focus = ITA_air_innovation }
 		x = 0
 		y = 1
@@ -834,19 +820,32 @@ focus = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		completion_reward = {
-			air_experience = 100
-			set_technology = {naval_bomber2 = 1
-			}
-			create_equipment_variant = {
-				name = "Bomber Alpha"
-				type = nav_bomber_equipment_2
-				upgrades = {
-					plane_naval_upgrade=2
-					plane_range_upgrade=2
+ 		completion_reward = {
+ 			set_technology = {
+				air_torpedoe_1 = 1
+				air_torpedoe_2 = 1
+				improved_small_airframe = 1
+ 			}
+ 			create_equipment_variant = {
+ 				name = "Savoia-Marchetti.79 Sparviero"
+ 				type = small_plane_naval_bomber_airframe_2
+ 				upgrades = {
+ 					plane_armor_upgrade=0
+ 					plane_engine_upgrade=0
+ 				}
+				
+			design_team = mio:ITA_crda_cant_organization
+			modules={
+				engine_type_slot=engine_3_1x
+				special_type_slot_1=dive_brakes_small
+				special_type_slot_2=floats
+				fixed_main_weapon_slot=torpedo_mounting_2
+				fixed_auxiliary_weapon_slot_1=light_mg_2x
+				fixed_auxiliary_weapon_slot_2=bomb_locks
+				special_type_slot_3=drop_tanks
 				}
-			}
-		}
+ 			}
+ 		}
 	}
 	focus = {
 		id = ITA_german_air_cooperation
@@ -872,8 +871,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_air_innovation_2
-		icon = GFX_goal_generic_build_airforce
-		text = air_innovation_2
+		icon = GFX_focus_generic_pilot_training
 		prerequisite = {  focus = ITA_german_air_cooperation}
 		available = {date >1940.10.1}
 		x = 0
@@ -886,38 +884,39 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			if= {limit={NOT={has_idea=macchi}}
-				add_ideas=macchi
-			if= {limit={NOT={
-					amount_taken_ideas = {
-   				 		amount > 0
-    						slots = {
-        						aircraft_manufacturer
-   			 			}
-					} 
-				}}
-				add_political_power=-100
-			}
-			}
 			set_technology={
-				improved_small_airframe = 1
-			}
-			set_technology={
-				fighter3=1
-			}
+				improved_small_airframe=1
+				engines_3=1
+				survivability_studies=1
+				aa_cannon_1=1
+ 			}
+
 			create_equipment_variant = {
-				name = "Homeland Fighter Upgraded"
-				type = small_plane_airframe_2
-				upgrades = {
-						plane_engine_upgrade=5
-					    plane_range_upgrade=5
-			    } 
+			name = "C.202 Folgore"
+			type = small_plane_airframe_2
+			design_team = mio:ITA_macchi_organization
+			modules = {
+			engine_type_slot=engine_3_1x
+			special_type_slot_1=drop_tanks
+			special_type_slot_2=fuel_injection_s
+			fixed_main_weapon_slot=aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1=aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_2=aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_3=radio_navigation_1
+			special_type_slot_3=self_sealing_fuel_tanks_small
 			}
+			upgrades={
+				 plane_armor_upgrade= 3
+ 			 	 plane_engine_upgrade= 5
+ 			}
+			icon = "GFX_ITA_fighter2_medium"
+			}
+
 			add_equipment_production = {
 					equipment = {
 						type = small_plane_airframe_2
 						creator = "ITA"
-						version_name = "Homeland Fighter Upgraded"
+						version_name = "C.202 Folgore"
 					}
 					requested_factories = 150
 					progress = 0.1
@@ -925,15 +924,15 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 3
+				bonus = 1.5
 				uses = 1
-				technology=fighter3
+				technology = advanced_small_airframe
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 3
 				uses = 1
-				technology=cas2
+				technology = cas_2
 			}
 		}
 	}
@@ -958,7 +957,6 @@ focus = {
 				idea = ITA_air_deployment
 				days =30
 			}
-			
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_2
 				amount = 2000
@@ -969,17 +967,11 @@ focus = {
 				amount = 750
 				producer = ITA
 			}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				technology=cas3
-			}
 		}
 	}
 	focus = {
 		id = ITA_road_rome
-		icon = ger_alliance_with_italy
+		icon = GFX_focus_ITA_italy_first
 		prerequisite = { focus = ITA_triumph_in_africa}
 		available = {date > 1937.08.01}
 		x = 8
@@ -999,7 +991,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_bulgaria_friend
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_generic_german_trade
 		prerequisite = { focus = ITA_road_rome }
 		x = 0
 		y = 1
@@ -1031,7 +1023,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_pact_of_steel
-		icon = GFX_focus_ITA_pact_of_steel
+		icon = GFX_focus_ITA_albanian_irredentism
 		prerequisite = { focus = ITA_bulgaria_friend }
 		available = {
 		}
@@ -1078,7 +1070,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_german_rd_treaty
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_ITA_pact_of_steel
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 		}
@@ -1171,17 +1163,16 @@ focus = {
 			add_state_core = 103
 			add_state_core = 44
 			add_state_core = 105
-			add_state_core = 178
-			add_state_core = 47
+			add_state_core = 159
 		}
 	}
 focus = {
 		id = ITA_sword_of_islam
-		icon = GFX_ITA_Generic_Ultranat_Eagle
+		icon = GFX_focus_IRQ_rally_the_arab_world
 		prerequisite = { focus = ITA_romania_friend }
 		cost = 5
 		available = {
-			Date > 1941.1.1
+			Date > 1942.1.1
 			has_full_control_of_state = 582
 			has_full_control_of_state = 414
 			has_full_control_of_state = 415
@@ -1204,7 +1195,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_alpini
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_ITA_alpine_division
 		prerequisite = { focus = ITA_pan_med }
 		cost = 5
 		available = {
@@ -1232,7 +1223,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_alpini_2
-		icon = GFX_focus_RAJ_lions_of_the_great_war
+		icon = GFX_focus_ITA_banda_carita
 		prerequisite = { focus = ITA_alpini }
 		cost = 5
 		available = {
@@ -1255,7 +1246,7 @@ focus = {
 	
    focus = {
  		id = ITA_eco
- 		icon = GFX_goal_generic_construction
+ 		icon = GFX_focus_ITA_grande_rivolta_rurale
  		available = {
  		}
 		prerequisite = { focus = ITA_triumph_in_africa }
@@ -1268,7 +1259,7 @@ focus = {
  			} }
  	focus = {
  		id = ITA_iri
- 		icon = GFX_goal_generic_construct_mil_factory
+ 		icon = GFX_focus_GER_customs_union
  		prerequisite = { focus = ITA_eco }
  		relative_position_id = ITA_eco
  		available = {
@@ -1298,7 +1289,7 @@ focus = {
  	}
  	focus = {
  		id = ITA_nat
- 		icon = GFX_focus_generic_strike_at_democracy1
+ 		icon = GFX_focus_ITA_northern_industry
  		prerequisite = { focus = ITA_iri }
  		relative_position_id = ITA_iri
  		mutually_exclusive = { focus = ITA_moder}
@@ -1314,7 +1305,7 @@ focus = {
  	}
  	focus = {
  		id = ITA_mili
- 		icon = GFX_goal_generic_production2
+ 		icon = GFX_focus_ITA_modernize_ansaldo_facilities
  		prerequisite = { focus = ITA_nat }
  		relative_position_id = ITA_nat
  		available = {
@@ -1344,8 +1335,7 @@ focus = {
  	}
  	focus = {
  		id = ITA_corp
-		
- 		icon = GFX_focus_SOV_worker_cluture
+ 		icon = GFX_focus_generic_devaluation
  		prerequisite = { focus = ITA_nat  }
  		#prerequisite = { focus = ITA_stab }
  		relative_position_id = ITA_nat
@@ -1410,7 +1400,7 @@ focus = {
  	focus = {
  		id = ITA_buro
  		prerequisite = { focus = ITA_eco  }
- 		icon = GFX_goal_generic_construct_civ_factory
+ 		icon = GFX_focus_IRQ_construct_the_kut_barrage
  		relative_position_id = ITA_eco
  		available = {
  		}
@@ -1458,7 +1448,7 @@ focus = {
  		prerequisite = { focus = ITA_buro  }
  		relative_position_id = ITA_buro
  		mutually_exclusive = { focus = ITA_nat}
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_ITA_southern_industry
  		available = {
  		}
  		x = -1
@@ -1484,7 +1474,7 @@ focus = {
  	}
  	focus = {
  		id = ITA_mono
- 		icon = GFX_focus_hol_prepare_the_inundation_lines
+ 		icon = GFX_focus_ITA_redirect_alfa_romeo_production
  		prerequisite = { focus = ITA_buro  }
  		relative_position_id = ITA_buro
  		available = {
@@ -1511,7 +1501,7 @@ focus = {
  		id = ITA_synd
  		prerequisite = { focus = ITA_moder  }
  		relative_position_id = ITA_moder
- 		icon = GFX_focus_generic_self_management
+ 		icon = GFX_focus_ITA_devaluate_the_lire
  		available = {
  		}
  		x = 2
@@ -1519,14 +1509,30 @@ focus = {
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
- 			add_timed_idea = { idea = syndicalism  days = 180}
+ 			add_timed_idea = { idea = syndicalism  days = 1460 }
+			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ITA
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 3
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 4
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 4
+ 					instant_build = yes
+ 				}
+ 			}
  		}
  	}
  	focus = {
  		id = ITA_faire
  		prerequisite = { focus = ITA_moder  }
  		relative_position_id = ITA_moder
- 		icon = GFX_focus_generic_tank_production
+ 		icon = GFX_focus_ITA_workers_unions
  		available = {
  		}
  		x = 0
@@ -1543,26 +1549,10 @@ focus = {
  						include_locked = yes
  					}
  				}
- 				add_extra_state_shared_building_slots = 4
+ 				add_extra_state_shared_building_slots = 6
  				add_building_construction = {
  					type = industrial_complex
- 					level = 4
- 					instant_build = yes
- 				}
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ITA
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 3
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 4
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 4
+ 					level = 6
  					instant_build = yes
  				}
  			}
@@ -1587,7 +1577,7 @@ focus = {
  		id = ITA_highway
  		prerequisite = { focus = ITA_faire focus = ITA_corp }
  		relative_position_id = ITA_faire
- 		icon = GFX_goal_generic_construct_infrastructure
+ 		icon = GFX_focus_generic_road_investment
  		available = {
  		}
  		x = -1
@@ -1665,7 +1655,7 @@ focus = {
  		}
  	}
  	focus = {
- 		id = ITA_road_rome
+ 		id = ITA_hitler_visit
  		prerequisite = { focus = ITA_eco }
  		relative_position_id = ITA_eco
  		icon = GFX_focus_GER_summon_fritz_todt
@@ -1716,7 +1706,7 @@ focus = {
  		prerequisite = { focus = ITA_oil }
 		prerequisite = { focus = ITA_libya }
  		relative_position_id = ITA_oil
- 		icon = GFX_goal_generic_oil_refinery
+ 		icon = GFX_focus_GER_factories_for_resources
  		available = {
  			
  		}
@@ -1755,7 +1745,7 @@ focus = {
  		id = ITA_libya
  		prerequisite = { focus = ITA_highway}
  		relative_position_id = ITA_highway
- 		icon = GFX_goal_generic_construct_civilian
+ 		icon = GFX_focus_generic_develop_libya
  		available = {
  		}
  		x = 1
@@ -1892,7 +1882,7 @@ focus = {
  	}
 	focus = {
 		id = ITA_rommel
-		icon = GFX_focus_GER_army_inno_1
+		icon = GFX_focus_GER_afrikakorps
 		available = {
 			AND ={
 				date > 1941.2.21
@@ -1910,6 +1900,7 @@ focus = {
 			add_timed_idea= {idea= ITA_production_boost days=30}
 			GER = {remove_unit_leader = 4}
 			ITA={
+				country_event = { id = italy.187}
 				create_corps_commander = {
 					name = "Erwin Rommel"
 					picture = "Portrait_Germany_Erwin_Rommel.dds"
@@ -1926,7 +1917,7 @@ focus = {
 	}	
 	focus = {
 		id = ITA_desert_fox
-		icon = GFX_focus_ger_osttruppen
+		icon = GFX_gazala
 		prerequisite = { focus = ITA_rommel }
 		available = {NOT = {has_full_control_of_state = 413 }}
 		x = 0
@@ -1939,7 +1930,7 @@ focus = {
     }	
     focus = {
 		id = ITA_egypt
-		icon = GFX_focus_usa_guarantee_the_american_dream
+		icon = GFX_focus_IRQ_reach_out_to_jordan
 		prerequisite = { focus = ITA_rommel}
 		available = {
 			ITA ={  controls_state=412 }
@@ -1981,7 +1972,7 @@ focus = {
 	focus = {
 		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
-		icon = GOAL_equpiment
+		icon = GFX_focus_ITA_blackshirts
 		available = {has_full_control_of_state = 412 }
 		relative_position_id = ITA_rommel
 		x = 2
@@ -1999,7 +1990,6 @@ focus = {
 		icon = GFX_focus_GER_New_Missile_Designs
 		prerequisite = { focus = ITA_rommel}
 		available = {
-		date > 1941.06.01
 		}
 		relative_position_id = ITA_rommel
 		x = 1
@@ -2009,15 +1999,10 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		    set_technology = {
-			    rocket_engines = 1
-			    experimental_rockets = 1
-		    }
-			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
 				name = GER_rocketry_focus
-				bonus = 3.0
-				uses = 2
+				bonus = 1
+				uses = 4
 				category = rocketry
 			}
 		}
@@ -2025,7 +2010,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_escape_the_cage
-		icon = GFX_focus_ITA_escape_the_cage
+		icon = GFX_focus_ITA_mare_nostrum
 		prerequisite = { focus = ITA_rommel}
 		available = {NOT = {has_full_control_of_state = 415 has_full_control_of_state = 413}}
 		relative_position_id = ITA_rommel
@@ -2139,7 +2124,7 @@ focus = {
 }
     focus = {
 		id = ITA_roman_legacy
-		icon = GFX_focus_ITA_sparta
+		icon = GFX_goal_ITA_mare_nostrum_2
 		prerequisite = { focus = ITA_escape_the_cage }
 		prerequisite = { focus = ITA_german_rocketry }
 		available = {
@@ -2157,7 +2142,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_viva_il_duce
-		icon = GFX_focus_ITA_viva_il_duce
+		icon = GFX_focus_ITA_capo_supremo
 		prerequisite = { focus = ITA_roman_legacy}
 		available = {
 		surrender_progress > 0.5
