@@ -286,8 +286,15 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
-				transfer_state = 468
-				transfer_state = 470
+ 			unlock_decision_tooltip = { decision = SAF_zambia
+ 				show_effect_tooltip = no
+ 				show_modifiers = no }
+ 			unlock_decision_tooltip = { decision = SAF_rhodesia
+ 				show_effect_tooltip = no
+ 				show_modifiers = no }
+ 			unlock_decision_tooltip = { decision = SAF_east_africa
+ 				show_effect_tooltip = no
+ 				show_modifiers = no }
  		}
  	}
  	focus = {
