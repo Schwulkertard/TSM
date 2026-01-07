@@ -1,5 +1,17 @@
 add_namespace = britain
 country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = britain.3.a
+		add_ideas = test_build_trade
+	}
+}
+country_event = {
 	id = britain.4
 	title = britain.4.t
 	desc = britain.4.d

@@ -44,6 +44,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	tech_trucks = 1
 }
 recruit_character = MEX_lazaro_cardenas
 recruit_character = MEX_salvador_abascal

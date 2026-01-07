@@ -898,7 +898,7 @@ equipments = {
  			}
  		}
  		default_modules = {
- 			fixed_ship_battery_slot = ship_super_heavy_battery_1
+ 			fixed_ship_battery_slot = ship_460_battery
  			fixed_ship_anti_air_slot = ship_anti_air_4
  			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
  			fixed_ship_radar_slot = empty
@@ -908,7 +908,7 @@ equipments = {
  			front_1_custom_slot = ship_anti_air_4
  			mid_1_custom_slot = ship_anti_air_4
  			mid_2_custom_slot = ship_secondaries_2
- 			rear_1_custom_slot = ship_super_heavy_battery_1
+ 			rear_1_custom_slot = ship_460_battery
  		}
  		hg_armor_piercing = 0
  		hg_attack = 0
@@ -1006,7 +1006,7 @@ equipments = {
  			}
  		}
  		default_modules = {
- 			fixed_ship_battery_slot = ship_super_heavy_battery_1
+ 			fixed_ship_battery_slot = ship_460_battery
  			fixed_ship_anti_air_slot = ship_anti_air_4
  			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
  			fixed_ship_radar_slot = empty
@@ -1017,7 +1017,7 @@ equipments = {
  			mid_1_custom_slot = ship_anti_air_4
  			mid_2_custom_slot = ship_secondaries_2
  			mid_3_custom_slot = ship_secondaries_2
- 			rear_1_custom_slot = ship_super_heavy_battery_1
+ 			rear_1_custom_slot = ship_460_battery
  		}
  		hg_armor_piercing = 0
  		hg_attack = 0

@@ -45,6 +45,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	tech_trucks = 1
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1

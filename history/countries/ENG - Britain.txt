@@ -51,6 +51,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	tech_trucks = 1
 }
 if = {
 	limit = {
@@ -93,7 +94,6 @@ if = {
 		tech_maintenance_company = 1
 	    tech_field_hospital = 1
     	tech_logistics_company = 1
-		basic_ship_hull_heavy = 1
 		tech_signal_company = 1
 	}
 }
@@ -220,7 +220,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = medium_plane_airframe_1
-	variant_name = "Welington"
+	variant_name = "Wellington"
 	amount = 600
 	producer = ENG
 }

@@ -62,6 +62,7 @@ set_technology = {
 	engines_2 = 1
 	aircraft_construction = 1
 	basic_train = 1
+	tech_trucks = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

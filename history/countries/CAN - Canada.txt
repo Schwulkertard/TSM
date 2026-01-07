@@ -65,6 +65,7 @@ if = {
 		early_battlecruiser = 1
 		early_carrier = 1
 		transport = 1
+		tech_trucks = 1
 	}
 }
 if = {

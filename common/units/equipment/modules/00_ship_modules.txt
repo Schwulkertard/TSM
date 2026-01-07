@@ -353,10 +353,9 @@ equipment_modules = {
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
- 	ship_super_heavy_battery_1 = {
+ 	ship_460_battery = {
  		category = ship_super_heavy_battery
  		sfx = sfx_ui_sd_module_turret
- 		gfx = ship_heavy_battery_4
  		add_equipment_type = capital_ship
  		add_stats = {
  			hg_attack = 15
@@ -371,27 +370,6 @@ equipment_modules = {
  		}
  		add_average_stats = {
  			hg_armor_piercing = 60
- 		}
- 		critical_parts = { damaged_heavy_guns }
- 	}
- 	ship_super_heavy_battery_2 = {
- 		category = ship_super_heavy_battery
- 		sfx = sfx_ui_sd_module_turret
- 		gfx = ship_heavy_battery_5
- 		add_equipment_type = capital_ship
- 		add_stats = {
- 			hg_attack = 17
- 			build_cost_ic = 2500
- 		}
- 		build_cost_resources = {
- 			steel = 5
- 			#chromium = 10
- 		}
- 		multiply_stats = {
- 			naval_speed = -0.05
- 		}
- 		add_average_stats = {
- 			hg_armor_piercing = 70
  		}
  		critical_parts = { damaged_heavy_guns }
  	}

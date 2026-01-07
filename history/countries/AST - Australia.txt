@@ -46,6 +46,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	tech_trucks = 1
 }
 set_variable = {
 	var = min_fuel

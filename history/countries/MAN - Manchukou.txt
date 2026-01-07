@@ -54,6 +54,7 @@ set_technology = {
 	interwar_antiair = 1
 	tech_recon = 1
 	armored_car1 = 1
+	tech_trucks = 1
 }
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
@@ -65,7 +66,6 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_to_tech_sharing_group = japanese_research
 }
-add_ideas = MAN_faction_trade
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	set_country_flag = MAN_northern_bandits

@@ -298,6 +298,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SMI_ship_460_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/shbb_battery_icn_1.dds"
+	}
+
+	spriteType = {
 		name = "GFX_SMI_ship_heavy_battery_5"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_5.dds"
 	}
