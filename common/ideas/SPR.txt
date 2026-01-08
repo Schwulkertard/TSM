@@ -160,7 +160,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.1
 			}
 			rule = { can_decline_call_to_war = yes }
 		}
@@ -181,7 +181,7 @@ ideas = {
 				industrial_capacity_factory = -0.14
 				industrial_capacity_dockyard = -0.14
 				production_speed_buildings_factor = -0.07
-				consumer_goods_factor = 0.28
+				consumer_goods_expected_value = 0.08
 			}
 			rule = { can_decline_call_to_war = yes }
 		}
@@ -202,7 +202,7 @@ ideas = {
 				industrial_capacity_factory = -0.07
 				industrial_capacity_dockyard = -0.07
 				production_speed_buildings_factor = -0.04
-				consumer_goods_factor = 0.16
+				consumer_goods_expected_value = 0.04
 			}
 			rule = { can_decline_call_to_war = yes }
 		}
@@ -378,7 +378,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		SPA_embrace_the_spanish_destiny = {
@@ -478,7 +478,7 @@ ideas = {
 			}
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		SPA_national_recovery_2 = {
@@ -492,7 +492,7 @@ ideas = {
 			}
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -506,7 +506,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.4
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -520,7 +520,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.4
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -535,7 +535,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -550,7 +550,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.4
+				consumer_goods_expected_value = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -567,7 +567,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05

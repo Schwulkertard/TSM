@@ -1011,6 +1011,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+		set_technology = {
+			afct = 1
+		}
 		add_tech_bonus = {
 			name = dd_bonus
 			bonus = 3.0
@@ -1077,7 +1080,7 @@ focus_tree = {
 		icon = GFX_SINK_BURN_DESTROY
 		x = -1
 		y = 1
-		available = {date > 1940.1.1}
+		available = {date > 1940.3.1}
 		relative_position_id = uk_battleship_focus
 		cost = 3
 		ai_will_do = {
@@ -1096,9 +1099,9 @@ focus_tree = {
 			}
 			every_unit_leader = {
 				limit={has_id=985}
-				add_skill_level=2
 				add_unit_leader_trait=ironside
 				add_unit_leader_trait=air_controller
+				add_unit_leader_trait=green_water_expert
 			}
 		}
 	}
@@ -1156,7 +1159,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ENG_andrew_cunningham
+			show_ideas_tooltip = andrew_cunningham
+			every_unit_leader = {
+				limit={has_id=985}
+				add_unit_leader_trait=green_water_expert
+			}
 			create_equipment_variant = {
 				name = "HMS Lion"
 				type = ship_hull_heavy_3
@@ -1174,6 +1181,16 @@ focus_tree = {
 					mid_2_custom_slot = dp_ship_secondaries_4
 					mid_3_custom_slot = dp_ship_secondaries_4
 					rear_1_custom_slot = ship_406_battery
+				}
+			}
+			ITA = {
+				every_unit_leader = {
+					limit = {
+						has_trait = double_green_water_expert
+					}
+					remove_trait = {
+						trait = double_green_water_expert
+					}
 				}
 			}
 		}

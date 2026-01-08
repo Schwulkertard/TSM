@@ -193,3 +193,4 @@ recruit_character = USA_robert_taft
 recruit_character = USA_donald_nelson
 recruit_character = USA_joseph_patterson
 recruit_character = USA_chester_w_nimitz
+recruit_character = USA_douglas_macarthur

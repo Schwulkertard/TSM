@@ -140,7 +140,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = ITA_pugliese_system
+			set_technology = {
+				pugliese = 1
+			}
 		}
 	}
 	focus = {
@@ -620,7 +622,12 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = ITA_german_millitary_cooperation_focus
+			add_to_tech_sharing_group = axis_research	
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			}
 		}
 	}
 	focus = {
@@ -1086,7 +1093,6 @@ focus = {
 		completion_reward = {
 		    add_research_slot = 1
 			add_stability = 0.075
-			add_to_tech_sharing_group = axis_research
 			add_tech_bonus = {
 				name = synth_bonus
 				bonus = 3.0
@@ -1111,14 +1117,6 @@ focus = {
 				ahead_reduction = 0.75
 				uses = 1
 				technology = advanced_heavy_tank_chassis
-			}
-			ITA = {
-				add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
-			}
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = rubber
-				amount = 2
 			}
 		}
 	}
@@ -1509,7 +1507,7 @@ focus = {
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
- 			add_timed_idea = { idea = syndicalism  days = 1460 }
+ 			add_timed_idea = { idea = syndicalism  days = 500 }
 			random_owned_controlled_state = {
  				limit = {
  					is_core_of = ITA

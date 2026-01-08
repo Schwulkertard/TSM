@@ -243,33 +243,59 @@ equipment_modules = {
  	#### ##  ####  # #    #       ###  ####  #   #  ##  ###    #
  	#  # #   #  #  # #    #       #  # #  #  #   #  #   #  #   #
  	#  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #
+	ship_330_battery = {
+ 		category = ship_13_battery
+ 		sfx = sfx_ui_sd_module_turret
+		gui_category = ship_heavy_battery
+ 		add_equipment_type = capital_ship
+		forbid_module_categories = {
+			ship_14_battery
+		    ship_15_battery
+		    ship_16_battery
+		}
+ 		add_stats = {
+ 			hg_attack = 13
+ 			build_cost_ic = 1300
+ 		}
+ 		multiply_stats = {
+			naval_speed = -0.01
+			reliability = -0.03
+			naval_heavy_gun_hit_chance_factor = 0.25
+			hg_attack = 0.04
+ 		}
+ 		add_average_stats = {
+ 			hg_armor_piercing = 35
+ 		}
+ 		build_cost_resources = {
+ 			steel = 5
+ 		}
+ 		critical_parts = { damaged_heavy_guns }
+ 	}
  	ship_355_battery = {
  		category = ship_14_battery
  		sfx = sfx_ui_sd_module_turret
 		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
 		forbid_module_categories = {
+			ship_13_battery
 		    ship_15_battery
 		    ship_16_battery
-		    ship_18_battery 
 		}
  		add_stats = {
- 			hg_attack = 12
-			lg_attack = 2
- 			build_cost_ic = 1100
+ 			hg_attack = 16
+ 			build_cost_ic = 1530
  		}
  		multiply_stats = {
- 			naval_speed = -0.04
-			reliability = -0.025
-			naval_heavy_gun_hit_chance_factor = 0.1
-			hg_attack = 0.02
-			lg_armor_piercing = 1
+ 			naval_speed = -0.03
+			reliability = -0.06
+			naval_heavy_gun_hit_chance_factor = 0.2
+			hg_attack = 0.03
  		}
  		add_average_stats = {
  			hg_armor_piercing = 40
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 8
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -279,25 +305,25 @@ equipment_modules = {
 		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
 		forbid_module_categories = {
+			ship_13_battery
 		    ship_14_battery
 		    ship_16_battery
-		    ship_18_battery 
 		}
  		add_stats = {
- 			hg_attack = 14
- 			build_cost_ic = 1200
+ 			hg_attack = 18.6
+ 			build_cost_ic = 1660
  		}
  		multiply_stats = {
  			naval_speed = -0.05
-			reliability = -0.05
+			reliability = -0.08
+			naval_heavy_gun_hit_chance_factor = 0.15
 			hg_attack = 0.02
-			lg_armor_piercing = 1
  		}
  		add_average_stats = {
  			hg_armor_piercing = 45
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 10
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -306,24 +332,24 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
 		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
-			forbid_module_categories = {
+		forbid_module_categories = {
+			ship_13_battery
 		    ship_14_battery
 		    ship_15_battery
-		    ship_18_battery 
 		}
  		add_stats = {
- 			hg_attack = 17
- 			build_cost_ic = 1300#1450
+ 			hg_attack = 22.6
+ 			build_cost_ic = 1860
  		}
  		multiply_stats = {
- 			naval_speed = -0.06
-			reliability = -0.1
+ 			naval_speed = -0.08
+			reliability = -0.13
  		}
  		add_average_stats = {
  			hg_armor_piercing = 50
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 13
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -333,6 +359,7 @@ equipment_modules = {
 		gui_category = ship_heavy_battery
  		add_equipment_type = capital_ship
 		forbid_module_categories = {
+			ship_13_battery
 		    ship_14_battery
 		    ship_15_battery
 		    ship_16_battery 
@@ -349,7 +376,7 @@ equipment_modules = {
  			hg_armor_piercing = 60
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 10
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -362,7 +389,7 @@ equipment_modules = {
  			build_cost_ic = 1800
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 10
  			#chromium = 10
  		}
  		multiply_stats = {
@@ -388,7 +415,7 @@ equipment_modules = {
 		}
  		add_stats = {
  			lg_attack = 14
- 			build_cost_ic = 650
+ 			build_cost_ic = 750
  		}
  		multiply_stats = {
  			naval_speed = -0.05
@@ -409,7 +436,7 @@ equipment_modules = {
 		}
  		add_stats = {
  			lg_attack = 12
- 			build_cost_ic = 750
+ 			build_cost_ic = 850
  		}
  		multiply_stats = {
  			naval_speed = -0.06
@@ -642,44 +669,6 @@ equipment_modules = {
  		}
  		critical_parts = { damaged_light_guns }
  	}
-	dp_ship_medium_1 = {
-		abbreviation = "sdq"
-		category = ship_medium_battery
-		gui_category = ship_medium_battery
-		sfx = sfx_ui_sd_module_turret
-		parent = ship_light_medium_battery_3
-		add_stats = {
-			lg_attack = 7.5
-			anti_air_attack = 4.5
-			build_cost_ic = 450
-		}
-
-		multiply_stats = {
-			naval_speed = -0.06
-		}
-		
-		add_average_stats = {
-			lg_armor_piercing = 8
-			max_strength = 20
-		}
-
-		forbid_module_categories = {
-		     ship_medium_battery
-		}
-		
-		can_convert_from = {
-			module_category = ship_medium_battery
-			convert_cost_ic = 650
-			convert_cost_resources = {
-				steel = 1
-			}
-		}
-		can_convert_from = {
-			module = ship_light_medium_battery_3
-			convert_cost_ic = 450
-		}
-		critical_parts = { damaged_secondaries }
-	}
  	## ###  ##   ##  #  # ###   ##  ###  ### ###  ##
  	#   #   #  # #  # ## # #  # #  # #  #  #  #   #
  	#  ##  #    #  # # ## #  # #### ###   #  ##   #
@@ -727,7 +716,7 @@ equipment_modules = {
  		category = ship_secondaries
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
- 			lg_attack = 4
+ 			lg_attack = 3
  			anti_air_attack = 2
  			build_cost_ic = 250
  		}
@@ -748,7 +737,7 @@ equipment_modules = {
  		category = ship_secondaries
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
- 			lg_attack = 6
+ 			lg_attack = 5
  			anti_air_attack = 3
  			build_cost_ic = 300
  		}
@@ -769,7 +758,7 @@ equipment_modules = {
  		category = ship_secondaries
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
- 			lg_attack = 8
+ 			lg_attack = 7
  			anti_air_attack = 4
  			build_cost_ic = 350
  		}
@@ -792,7 +781,7 @@ equipment_modules = {
 		gfx = dp_secondary_battery_4
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 10
+			lg_attack = 9
 			anti_air_attack = 5
 			build_cost_ic = 360
 		}
@@ -809,6 +798,30 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_secondaries
 			convert_cost_ic = 200
+		}
+		critical_parts = { damaged_secondaries }
+	}
+	dp_ship_medium_1 = {
+		abbreviation = "sdq"
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 10
+			anti_air_attack = 5
+			build_cost_ic = 500
+		}
+
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 5
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 250
 		}
 		critical_parts = { damaged_secondaries }
 	}
@@ -1391,13 +1404,13 @@ equipment_modules = {
  		category = heavy_ship_engine
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
- 			naval_speed = 7
+ 			naval_speed = 6
  			fuel_consumption = 20
  			build_cost_ic = 1800
 			reliability = -0.15
  		}
  		multiply_stats = {
- 			naval_speed = 0.2
+ 			naval_speed = 0.15
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
@@ -1409,7 +1422,7 @@ equipment_modules = {
  		parent = heavy_ship_engine_1
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
- 			naval_speed = 7
+ 			naval_speed = 6.25
  			fuel_consumption = 25
  			build_cost_ic = 2200
 			reliability = -0.15
@@ -1427,13 +1440,13 @@ equipment_modules = {
  		parent = heavy_ship_engine_2
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
- 			naval_speed = 7
+ 			naval_speed = 6.5
  			fuel_consumption = 30
  			build_cost_ic = 2600
 			reliability = -0.15
  		}
  		multiply_stats = {
- 			naval_speed = 0.4
+ 			naval_speed = 0.45
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
@@ -1451,7 +1464,7 @@ equipment_modules = {
 			reliability = -0.15
  		}
  		multiply_stats = {
- 			naval_speed = 0.45
+ 			naval_speed = 0.6
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
@@ -1962,9 +1975,9 @@ equipment_modules = {
  			build_cost_ic = 150
  		}
  		multiply_stats = {
- 			hg_attack = 0.08
- 			lg_attack = 0.1
- 			torpedo_attack = 0.1
+ 			hg_attack = 0.06
+ 			lg_attack = 0.08
+ 			torpedo_attack = 0.08
  			naval_speed = -0.01
  		}
  	}
@@ -1981,9 +1994,29 @@ equipment_modules = {
  			convert_cost_ic = 80
  		}
  		multiply_stats = {
- 			hg_attack = 0.12
- 			lg_attack = 0.15
- 			torpedo_attack = 0.15
+ 			hg_attack = 0.1
+ 			lg_attack = 0.13
+ 			torpedo_attack = 0.13
+ 			naval_speed = -0.01
+ 		}
+ 	}
+
+	ship_airplane_launcher_3 = {
+ 		category = ship_airplane_launcher
+ 		gfx = ship_airplane_launcher_3
+ 		add_stats = {
+ 			surface_detection = 13
+ 			sub_detection = 4.5
+ 			build_cost_ic = 190
+ 		}
+ 		can_convert_from = {
+ 			module_category = ship_airplane_launcher
+ 			convert_cost_ic = 80
+ 		}
+ 		multiply_stats = {
+ 			hg_attack = 0.14
+ 			lg_attack = 0.18
+ 			torpedo_attack = 0.18
  			naval_speed = -0.01
  		}
  	}
@@ -2081,10 +2114,6 @@ equipment_modules = {
  		manpower = 375 #outside the add_stats section for code reasons
  		multiply_stats = {
  			naval_speed = -0.025
- 		}
- 		can_convert_from = {
- 			module_category = ship_heavy_battery
- 			convert_cost_ic = 500
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
@@ -2222,7 +2251,7 @@ equipment_modules = {
  			max_strength = 0.05
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			chromium = 10
  		}
  		add_stats = {
  			armor_value = 45
@@ -2243,7 +2272,7 @@ equipment_modules = {
  			max_strength = 0.05
  		}
  		build_cost_resources = {
- 			chromium = 10
+ 			chromium = 5
  		}
  		add_stats = {
  			armor_value = 40
@@ -2285,7 +2314,7 @@ equipment_modules = {
  			max_strength = 0.1
  		}
  		build_cost_resources = {
- 			chromium = 10
+ 			chromium = 5
  		}
  		add_stats = {
  			armor_value = 45
@@ -2327,7 +2356,7 @@ equipment_modules = {
  			max_strength = 0.15
  		}
  		build_cost_resources = {
- 			chromium = 10
+ 			chromium = 5
  		}
  		add_stats = {
  			armor_value = 50
@@ -2546,65 +2575,80 @@ equipment_modules = {
 		category = ship_special_slot
 		gfx = ship_pure_oxygen_torpedo
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			naval_torpedo_hit_chance_factor = 0.1
 			torpedo_attack = 0.1
 		}
+		critical_parts = { destroyed_ammo_storage }
 	}
 	ship_sap_shell = {
 		category = ship_special_slot
 		gfx = ship_sap_shell
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			hg_attack = 0.075
 			hg_armor_piercing = 0.075
 			lg_attack = 0.1
 			lg_armor_piercing = 0.1
 		}
+		critical_parts = { destroyed_ammo_storage }
 	}
 	ship_shap_shell = {
 		category = ship_special_slot
 		gfx = ship_shap_shell
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			hg_attack = 0.2
 			hg_armor_piercing = 0.2
 		}
+		critical_parts = { destroyed_ammo_storage }
 	}
 	ship_ap_shell = {
 		category = ship_special_slot
 		gfx = ship_ap_shell
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			hg_attack = 0.15
 			hg_armor_piercing = 0.15
 		}
+		critical_parts = { destroyed_ammo_storage }
 	}
 	ship_he_shell = {
 		category = ship_special_slot
 		gfx = ship_he_shell
 		multiply_stats = {
-			build_cost_ic = 0.1
+			build_cost_ic = 0.075
 			lg_attack = 0.1
 			lg_armor_piercing = 0.1
 		}
+		critical_parts = { destroyed_ammo_storage }
 	}
 	ship_damage_control = {
 		category = ship_special_slot
 		gfx = ship_damage_control
-			multiply_stats = {
-			build_cost_ic = 0.1
-			reliability = 0.3
+		multiply_stats = {
+			build_cost_ic = 0.075
+			reliability = 0.4
 			max_strength = 0.1
 		}
 	}
 	ship_anti_torpedo_bulge = {
-		category = ship_special_slot
+		category = ship_special_slot_italy
 		gfx = ship_anti_torpedo_bulge
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.5
-			naval_torpedo_damage_reduction_factor = 0.5
 			armor_value = 5
+		}
+		multiply_stats = {
+			naval_torpedo_enemy_critical_chance_factor = -0.33
+			naval_torpedo_damage_reduction_factor = 0.33
+		}
+	}
+	ship_afc_table = {
+		category = ship_special_slot_uk
+		gfx = ship_afct
+		multiply_stats = {
+			naval_light_gun_hit_chance_factor = 0.15
+			naval_heavy_gun_hit_chance_factor = 0.15
 		}
 	}
  }

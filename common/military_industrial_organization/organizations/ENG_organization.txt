@@ -425,7 +425,6 @@ ENG_cammell_laird_organization = {
 	allowed = {	
 		
 		or = {
-					
 					original_TAG = ENG
 					original_TAG = FRA
 					original_TAG = CAN
@@ -433,7 +432,7 @@ ENG_cammell_laird_organization = {
 					original_TAG = SAF
 					original_TAG = RAJ
 					original_TAG = NZL
-				}
+		}
 		has_dlc = "Arms Against Tyranny"
 	}
 }

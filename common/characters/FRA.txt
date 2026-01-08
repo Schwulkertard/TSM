@@ -1078,7 +1078,7 @@ characters={
 		}
 		advisor={
 			available = {
-				has_completed_focus = FRA_agressive_foreign_policy
+				has_completed_focus = FRA_aggressive_foreign_policy
 			}
 			slot = political_advisor
 			idea_token = rene_massigli

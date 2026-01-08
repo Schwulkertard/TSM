@@ -241,13 +241,29 @@ characters={
 				small="gfx/interface/ideas/idea_USA_lucian_truscott.dds"
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = lucian_truscott
+			ledger = army
+				allowed = {
+					original_tag = USA
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
 		corps_commander={
-			traits={ trait_engineer commando cavalry_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			traits={ infantry_leader naval_invader trait_engineer trickster expert_improviser urban_assault_specialist }
+			skill=6
+			attack_skill=6
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -262,28 +278,13 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = mark_clark
-			ledger = army
-				allowed = {
-					original_tag = USA
-				}
-				traits = {
-					army_infantry_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
 		
 		corps_commander={
-			traits={ infantry_officer trait_reckless infantry_leader naval_invader trait_engineer trickster expert_improviser urban_assault_specialist }
-			skill=6
-			attack_skill=6
+			traits={ infantry_officer trait_reckless }
+			skill=3
+			attack_skill=3
 			defense_skill=2
-			planning_skill=3
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=0
 		}
@@ -322,13 +323,13 @@ characters={
 			}
 		}
 		
-		field_marshal={
-			traits={ media_personality politically_connected infantry_leader infantry_expert naval_invader jungle_rat skilled_staffer trait_engineer fortress_buster }
-			skill=7
-			attack_skill=7
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+		corps_commander={
+			traits={ media_personality politically_connected infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=57
 		}
 	}
@@ -359,12 +360,12 @@ characters={
 		}
 
 		corps_commander={
-			traits={ armor_officer brilliant_strategist infantry_leader }
-			skill=3
-			attack_skill=1
-			defense_skill=7
-			planning_skill=1
-			logistics_skill=1
+			traits={ infantry_leader infantry_expert naval_invader jungle_rat skilled_staffer trait_engineer fortress_buster }
+			skill=7
+			attack_skill=7
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -586,12 +587,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ panzer_leader infantry_officer }
-			skill=4
-			attack_skill=4
+			traits={ panzer_leader infantry_officer ranger }
+			skill=5
+			attack_skill=5
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -747,8 +748,8 @@ characters={
 			skill=5
 			attack_skill=4
 			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=6
+			maneuvering_skill=8
+			coordination_skill=8
 			legacy_id=0
 		}
 	}
@@ -764,13 +765,30 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ gentlemanly blue_water_expert naval_lineage superior_tactician spotter ironside air_controller }
+			traits={ gentlemanly naval_lineage superior_tactician spotter ironside air_controller blue_water_expert }
 			skill=6
-			attack_skill=6
+			attack_skill=7
 			defense_skill=5
 			maneuvering_skill=6
 			coordination_skill=7
 			legacy_id=0
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = chester_nimitz
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				date > 1942.6.1
+			}
+			traits = {
+				navy_chief_nimitz
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -783,7 +801,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ superior_tactician spotter air_controller }
+			traits={ superior_tactician spotter air_controller inshore_fighter }
 			skill=6
 			attack_skill=6
 			defense_skill=3
@@ -839,12 +857,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ gentlemanly superior_tactician fly_swatter }
-			skill=4
-			attack_skill=4
+			traits={ gentlemanly superior_tactician fly_swatter air_controller green_water_expert }
+			skill=6
+			attack_skill=6
 			defense_skill=5
-			maneuvering_skill=3
-			coordination_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
 			legacy_id=0
 		}
 	}

@@ -151,10 +151,9 @@ FRA_defend_norway = {
 			factor = 1
 		}
 		complete_effect = {
-				custom_effect_tooltip= "When we complete this decision and Germany declares war on norway we will spawn 6 mountaineer division in trondheim "
-				hidden_effect = { set_country_flag = FRA_norway_bullshit  }
+		custom_effect_tooltip= "When we complete this decision and Germany declares war on norway we will spawn 6 mountaineer division in trondheim "
+		hidden_effect = { set_country_flag = FRA_norway_bullshit  }
 	}
-
 }
 FRA_great_war_veterans = {
 		icon = generic_plane

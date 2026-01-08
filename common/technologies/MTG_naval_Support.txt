@@ -40,6 +40,7 @@ technologies = {
 			ship_secondaries_1
 			ship_381_battery
 			ship_355_battery
+			ship_330_battery
 			ship_305_battery
 			ship_283_battery
 		}
@@ -284,6 +285,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_light_battery_4
 			ship_light_medium_battery_4
+			ship_sap_shell
 		}
 
 
@@ -548,7 +550,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_457_battery
 			ship_406_battery
 			ship_460_battery
 			ship_medium_battery_2

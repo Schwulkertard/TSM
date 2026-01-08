@@ -148,7 +148,7 @@ ideas = {
 			
 			modifier = {
 				trade_opinion_factor = -0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				economy_cost_factor = -0.2
 			}
 		}
@@ -167,7 +167,7 @@ ideas = {
 			
 			modifier = {
 				trade_opinion_factor = -0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				economy_cost_factor = -0.2
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
@@ -188,7 +188,7 @@ ideas = {
 			
 			modifier = {
 				trade_opinion_factor = -0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				economy_cost_factor = -0.2
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
@@ -213,7 +213,7 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = -0.2
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -233,7 +233,7 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = -0.2
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_rail_way_factor = 0.15
 				production_speed_supply_node_factor = 0.15
 			}
@@ -255,7 +255,7 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = -0.2
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_rail_way_factor = 0.15
 				production_speed_supply_node_factor = 0.15
 				supply_node_range = 0.1
@@ -286,7 +286,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -400,7 +400,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.10
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 			}
 		}
 
@@ -419,7 +419,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_dockyard = 0.15
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 			}
 		}
 
@@ -822,7 +822,7 @@ ideas = {
 			traits = { } 
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
-				consumer_goods_factor = -0.05		
+				consumer_goods_expected_value = -0.05		
 			}
 		}
 	}

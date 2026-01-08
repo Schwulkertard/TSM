@@ -1377,7 +1377,7 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT
 		cost = 500
 		modifier = {
-			navy_capital_ship_defence_factor = 0.1
+			navy_capital_ship_attack_factor = 0.075
 		}
 
 		ai_will_do = {
@@ -1540,7 +1540,6 @@ leader_traits = {
 		sub_unit_modifiers = {
 			light_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
 			}
 			heavy_cruiser = {
 				naval_damage_factor = 0.1
@@ -1673,7 +1672,7 @@ leader_traits = {
 	big_guns_expert = {
 		type = navy
 		modifier = {
-			navy_capital_ship_attack_factor = 0.15
+			navy_capital_ship_attack_factor = 0.075
 		}
 
 		ai_will_do = {
@@ -1790,7 +1789,7 @@ leader_traits = {
 	dive_bomber = {
 		type = navy
 		sub_unit_modifiers = {
-			cas = {
+			cv_cas = {
 				air_attack_factor = 0.1
 				air_mission_efficiency = 0.1
 			}
@@ -1810,7 +1809,7 @@ leader_traits = {
 	torpedo_bomber = {
 		type = navy
 		sub_unit_modifiers = {
-			nav_bomber = {
+			cv_nav_bomber = {
 				air_attack_factor = 0.1
 				air_mission_efficiency = 0.1
 			}

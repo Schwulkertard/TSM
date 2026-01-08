@@ -725,7 +725,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		USA_intervention_in_the_americas = {
@@ -813,7 +813,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		USA_the_pentagon = {
@@ -968,7 +968,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				stability_factor = 0.1
 			}
 		}
@@ -1252,7 +1252,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		USA_adjusted_compensation_payment = {
@@ -1265,7 +1265,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		liberty_ships_focus = {
@@ -1542,7 +1542,7 @@ ideas = {
 				army_core_defence_factor = 0.25
 				training_time_factor = -0.5
 				equipment_capture = 0.125
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 				conscription_factor = 0.25
 			}
 		}

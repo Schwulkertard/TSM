@@ -61,11 +61,11 @@ UK_development_funds = {
 }
 Africa_status_allies = {
 		icon="GFX_idea_stiff_upper_lip"
-	consumer_goods_factor=ENG.africa_status
+	consumer_goods_expected_value=ENG.africa_status
 }
 Africa_status_axis = {
 		icon="GFX_idea_stiff_upper_lip"
-	consumer_goods_factor=ITA.africa_status
+	consumer_goods_expected_value=ITA.africa_status
 }
 relative_production_efficiency = {
 	production_factory_max_efficiency_factor=relative_production_efficiency_factor_actual

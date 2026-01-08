@@ -688,21 +688,22 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
-			slot = theorist
+			slot = navy_chief
 			idea_token = isoroku_yamamoto
-			ledger = navy
 			allowed = {
 				original_tag = JAP
 			}
-			
 			traits = {
-				naval_aviation_pioneer
+				navy_chief_yamamoto
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.200
 			}
 		}
 		
 		navy_leader={
-			traits={ air_controller flight_deck_manager ironside superior_tactician spotter }
+			traits={ air_controller flight_deck_manager ironside superior_tactician spotter blue_water_expert }
 			skill=6
 			attack_skill=7
 			defense_skill=3
@@ -817,24 +818,9 @@ characters={
 				large="gfx/leaders/JAP/Portrait_Japan_Soemu_Toyoda.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = soemu_toyoda
-			ledger = navy
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				navy_capital_ship_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		navy_leader={
-			traits={ ironside fleet_protector superior_tactician }
+			traits={ ironside fleet_protector superior_tactician inshore_fighter }
 			skill=5
 			attack_skill=7
 			defense_skill=4

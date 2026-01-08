@@ -34,6 +34,7 @@ UK_foreign_politics = {
 		}
 		remove_effect = {
 			clr_country_flag = development_cooldown
+			country_event = britain.1116
 		}
 	}
 	ENG_develop_RAJ = {
@@ -71,6 +72,7 @@ UK_foreign_politics = {
 		}
 		remove_effect = {
 			clr_country_flag = development_cooldown
+			country_event = britain.1116
 		}
 	}
 	ENG_develop_AST = {
@@ -108,6 +110,7 @@ UK_foreign_politics = {
 		}
 		remove_effect = {
 			clr_country_flag = development_cooldown
+			country_event = britain.1116
 		}
 	}
 	ENG_develop_SAF = {
@@ -145,6 +148,7 @@ UK_foreign_politics = {
 		}
 		remove_effect = {
 			clr_country_flag = development_cooldown
+			country_event = britain.1116
 		}
 	}
 	ENG_can_annex_saf = {

@@ -217,16 +217,16 @@ categories =  {
 		
 		battle_cruiser = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 		heavy_cruiser = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 		navy_visibility = -0.2
@@ -243,17 +243,17 @@ categories =  {
 		
 		battle_cruiser = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 
 		heavy_cruiser = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 
@@ -273,24 +273,17 @@ categories =  {
 
 		battleship = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 
-		destroyer = {
-			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
-			}
-		}
 		light_cruiser = {
 			units = {
-				attack = -0.2
-				movement = -0.2
-				defence = -0.2
+				attack = -0.3
+				movement = -0.3
+				defence = -0.3
 			}
 		}
 		submarine = {

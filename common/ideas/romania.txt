@@ -412,7 +412,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				political_power_gain = -0.25
 			}
 		}
@@ -500,7 +500,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				consumer_goods_factor = -0.025
+				consumer_goods_expected_value = -0.025
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}

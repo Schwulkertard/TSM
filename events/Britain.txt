@@ -6,6 +6,7 @@ country_event = {
 	trigger = {
 		always = yes
 	}
+	fire_only_once = yes
 	option = {
 		name = britain.3.a
 		add_ideas = test_build_trade
@@ -261,3 +262,12 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = britain.1116
+	title = britain.1116.t
+	desc = britain.1116.d
+	is_triggered_only = yes
+	option = {
+		name = britain.1116.a
+	}
+}

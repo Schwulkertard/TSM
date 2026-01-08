@@ -288,7 +288,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.35
 				political_power_gain = 0.35
 				war_support_factor = 0.20
 				stability_factor = 0.20
@@ -445,7 +444,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		spiritual_mobilization_idea = {

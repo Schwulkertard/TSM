@@ -16,7 +16,7 @@ equipments = {
  		module_slots = {
  			fixed_ship_battery_slot = {
  				required = yes
- 				allowed_module_categories = { ship_14_battery ship_15_battery ship_16_battery ship_18_battery }
+ 				allowed_module_categories = { ship_14_battery ship_15_battery ship_16_battery ship_13_battery }
  			}
  			fixed_ship_anti_air_slot = {
  				required = yes
@@ -46,7 +46,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_anti_air
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_14_battery ship_15_battery ship_16_battery ship_13_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -62,7 +62,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_anti_air
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_14_battery ship_15_battery ship_16_battery ship_13_battery
  				}
  			}
  		}
@@ -74,6 +74,14 @@ equipments = {
  			category = ship_airplane_launcher
  			count < 2
  		}
+		module_count_limit = {
+			category = ship_special_slot_uk
+			count < 2
+		}
+		module_count_limit = {
+			category = ship_special_slot_italy
+			count < 2
+		}
  		default_modules = {
  			fixed_ship_battery_slot = empty
  			fixed_ship_anti_air_slot = empty
@@ -106,7 +114,6 @@ equipments = {
  		build_cost_ic = 3300
  		resources = {
  			steel = 10
- 			chromium = 5
  		}
  		manpower = 4000
  	}
@@ -161,7 +168,6 @@ equipments = {
  		build_cost_ic = 3000
  		resources = {
  			steel = 10
- 			chromium = 10
  		}
  		manpower = 3200
  	}
@@ -174,7 +180,7 @@ equipments = {
  		module_slots = {
  			fixed_ship_battery_slot = {
  				required = yes
- 				allowed_module_categories = { ship_14_battery ship_15_battery ship_16_battery ship_18_battery }
+ 				allowed_module_categories = { ship_14_battery ship_15_battery ship_16_battery ship_13_battery }
  			}
  			fixed_ship_anti_air_slot = {
  				required = no
@@ -203,7 +209,7 @@ equipments = {
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -212,6 +218,8 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
+					ship_special_slot_italy
+					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
@@ -225,7 +233,7 @@ equipments = {
  			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
 			mid_3_custom_slot = {
@@ -271,7 +279,7 @@ equipments = {
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -280,13 +288,15 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
+					ship_special_slot_italy
+					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = mid_1_custom_slot
  			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
 			mid_3_custom_slot = {
@@ -301,7 +311,7 @@ equipments = {
  			fixed_ship_engine_slot = heavy_ship_engine_2
  		}
  		naval_range = 3500
- 		max_strength = 370
+ 		max_strength = 390
  		reliability = 0.8
  		fuel_consumption = 67
  		naval_speed = 22
@@ -309,7 +319,6 @@ equipments = {
  		resources = {
  			#oil = 10
  			steel = 10
- 			chromium = 10
  		}
  		manpower = 5200
  	}
@@ -330,7 +339,7 @@ equipments = {
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -339,7 +348,8 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+					ship_special_slot_italy
+					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
@@ -354,7 +364,7 @@ equipments = {
  			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
 			rear_2_custom_slot = {
@@ -371,15 +381,16 @@ equipments = {
  			fixed_ship_armor_slot = ship_armor_bb_2
  		}
  		naval_range = 4000
- 		naval_speed = 24
- 		max_strength = 400
- 		reliability = 0.85
+ 		naval_speed = 25
+ 		max_strength = 420
+ 		reliability = 0.9
  		fuel_consumption = 67
  		build_cost_ic = 3500
+		armor_value = 5
  		resources = {
  			#oil = 10
  			steel = 10
- 			chromium = 10
+ 			
  		}
  		manpower = 6000
  	}
@@ -400,7 +411,7 @@ equipments = {
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
  			mid_1_custom_slot = {
@@ -409,7 +420,8 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+					ship_special_slot_italy
+					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
@@ -425,7 +437,7 @@ equipments = {
  			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_14_battery ship_15_battery ship_16_battery ship_18_battery
+ 					ship_13_battery ship_14_battery ship_15_battery ship_16_battery
  				}
  			}
 			front_2_custom_slot = {
@@ -440,15 +452,16 @@ equipments = {
  			rear_1_custom_slot = empty
  		}
  		naval_range = 4500
- 		max_strength = 450
- 		naval_speed = 26
+ 		max_strength = 470
+ 		naval_speed = 27
  		fuel_consumption = 67
- 		reliability = 0.9
+ 		reliability = 1
  		build_cost_ic = 3600
+		armor_value = 5
  		resources = {
  			#oil = 10
  			steel = 10
- 			chromium = 10
+ 			
  		}
  		manpower = 6000
  	}
@@ -602,7 +615,7 @@ equipments = {
  		build_cost_ic = 7500
  		resources = {
  			steel = 10
- 			chromium = 10
+ 			
  		}
  		manpower = 9000
  	}
@@ -696,7 +709,7 @@ equipments = {
  		resources = {
  			#oil = 10
  			steel = 30
- 			chromium = 10
+ 			
  		}
  		manpower = 6000
  	}
@@ -738,7 +751,7 @@ equipments = {
  		resources = {
  			#oil = 20
  			steel = 40
- 			chromium = 10
+ 			
  		}
  		manpower = 6600
  	}
@@ -929,7 +942,7 @@ equipments = {
  		resources = {
  			#oil = 20
  			steel = 40
- 			chromium = 10
+ 			
  		}
  		manpower = 9000
  	}
@@ -1080,7 +1093,7 @@ equipments = {
  		resources = {
  			#oil = 10
  			steel = 30
- 			chromium = 10
+ 			
  		}
  		manpower = 3500
  	}
@@ -1122,7 +1135,7 @@ equipments = {
  		resources = {
  			#oil = 10
  			steel = 40
- 			chromium = 10
+ 			
  		}
  		manpower = 4000
  	}
