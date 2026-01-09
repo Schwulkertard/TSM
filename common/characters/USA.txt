@@ -1464,7 +1464,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				has_completed_focus = USA_voice_of_the_people
+				has_completed_focus = USA_public_information_campaign
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1682,11 +1682,14 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = USA_donald_nelson
+			available = {
+				has_completed_focus = USA_total_mobilization
+			}
 			allowed  = {
 				original_tag  = USA
 			}
 			traits  = {
-				armaments_organizer 
+				usa_total_war 
 			}
 		}
 	}

@@ -1,0 +1,255 @@
+﻿l_english:
+
+ ENG_southern_thrust:0 "Southern Thrust"
+
+ ENG_southern_thrust_desc:0 ""
+
+ ENG_GENERAL_REARMAMENT_DESC_HISTORICAL:0 "It is starting to look like another Great War is inevitable. If it isn't Hitler it will be the Mikado, or even the Soviets... Public opinion has swung enough that we can initiate a program of general rearmament."
+
+ ENG_GENERAL_REARMAMENT_DESC_AHISTORICAL:0 "Our predecessors have neglected our military situation too much. We must initiate a program of general rearmament to resolve the scathing inadequacies of our armed forces."
+
+ crypto_bomb_focus:0 "Cryptologic Bomb"
+
+ crypto_bomb_focus_desc:0 "The Poles have been developing a brilliant machine they call the 'Cryptologic Bomb' which can break the German Enigma ciphers. We have the resources to develop it further at our Bletchley Park facility."
+
+ tizard_mission_focus:0 "The Tizard Mission"
+
+ tizard_mission_focus_desc:0 "We have produced many breakthroughs in technology that we cannot fully exploit ourselves due to our lack of resources and industrial capacity. Henry Tizard would like to head a delegation to negotiate a technology sharing treaty with the USA."
+
+ maud_focus:0 "The MAUD Committee"
+
+ maud_focus_desc:0 "The 'Military Application of Uranium Detonation' committee is convinced that it is theoretically possible to construct a bomb of unbelievable power by employing uranium to achieve an uncontrolled nuclear fission reaction. However, we might not be able to develop this technology in time on our own. We should speak with the Americans."
+
+ general_rearmament_focus:0 "General Rearmament"
+
+ general_rearmament_focus_desc:1 "[Root.GetGeneralRearmamentDesc]"
+
+ air_defense_focus:0 "Air Defense"
+
+ air_defense_focus_tt:1 "Add maximum §YAnti-Air§! in §YEast Anglia§!, §YSussex§! and §YSouth-West England§!"
+
+ air_defense_focus_bypass_tt:0 "Not enough building slots for §YAnti-Air§!"
+
+ air_defense_focus_desc:0 "There is no question of where the enemy will be coming from; we must protect the coast with extensive anti-air batteries."
+
+ radar_focus:0 "RADAR"
+
+ radar_focus_desc:0 "The ability to detect enemy bombers will be crucial to the war effort. We should spare no resources in further developing Radar technology and constructing a network of detection stations along the coasts."
+
+ royal_ordinance_focus:2 "Royal Ordnance Factories"
+
+ royal_ordinance_focus_desc:1 "The Royal Arsenal at Woolwich is woefully insufficient to produce all the munitions and small arms we need. We should establish many more factories around the country, preferably in relatively safe areas."
+
+ ENG_ROYAL_ORDNANCE_FACTORIES_NAME_HISTORICAL:0 "Royal Ordnance Factories"
+
+ ENG_ROYAL_ORDNANCE_FACTORIES_NAME_COMMUNIST:0 "Revolutionary Ordnance Factories"
+
+ ENG_ROYAL_ORDNANCE_FACTORIES_DESC_HISTORICAL:0 "The Royal Arsenal at Woolwich is woefully insufficient to produce all the munitions and small arms we need. We should establish many more factories around the country, preferably in relatively safe areas."
+
+ ENG_ROYAL_ORDNANCE_FACTORIES_DESC_COMMUNIST:0 "The Revolutionary Arsenal at Woolwich is woefully insufficient to produce all the munitions and small arms we need. We should establish many more factories around the country, preferably in relatively safe areas."
+
+ ENG_shadow_scheme_focus:0 "Initiate Shadow Scheme"
+
+ ENG_recently_developed_tt:0 "Current days are: [?ENG_recently_developed:days|Y0]"
+
+ ENG_recently_developed:0 "Last Development"
+
+ ENG_defend_ceylon: "Fortify Ceylon"
+
+ ENG_bofors_focus:0 "License the Bofors Gun"
+
+ ENG_churchill:0 "Prepare for the Second Battle of El-Alamein"
+
+ ENG_seventeen_pounder_focus:0 "Develop the 17 Pounder"
+
+ ENG_royal_artillery_focus:0 "Royal artillery Regiments"
+
+ shadow_scheme_focus_desc:0 "The Air Ministry has come up with a brilliant suggestion for easier conversion of civilian factories into military ones. With the appropriate grants and loans to various key companies, their factories can be extended and adapted in advance to make the transition to military applications much smoother."
+
+ shadow_scheme_focus_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built after completing this focus when completing the Shadow Scheme.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y15§!. " 
+
+ ENG_shadow_scheme_focus2:0 "Complete the Shadow Scheme"
+
+ uk_small_arms_focus:0 "BSA Company"
+
+ uk_small_arms_focus_desc:1 "The Royal Ordnance Factories are not producing enough small arms, but, like we did in the Great War, we could contract the Birmingham Small Arms Company and expand their capacity."
+
+ ENG_BSA_COMPANY_DESC_HISTORICAL:0 "The Royal Ordnance Factories are not producing enough small arms, but, like we did in the Great War, we could contract the Birmingham Small Arms Company and expand their capacity."
+
+ ENG_BSA_COMPANY_DESC_COMMUNIST:0 "The Revolutionary Ordnance Factories are not producing enough small arms, but, like we did in the Great War, we could contract the Birmingham Small Arms Company and expand their capacity."
+
+ UK_secret_focus:0 "Secret Weapons"
+
+ UK_secret_focus_desc:0 "We now possess the knowledge and the infrastructure to focus on the development of various secret weapons projects that used to belong in the realm of science fiction."
+
+ air_rearmament_focus:0 "Air Rearmament"
+
+ air_rearmament_focus_desc:1 "In any war with a continental enemy, the Royal Air Force will prove the key to victory. First, we must ensure that our airbases can support our rearmament plans!"
+
+ ENG_AIR_REARMAMENT_DESC_HISTORICAL:0 "In any war with a continental enemy, the Royal Air Force will prove the key to victory. First, we must ensure that our airbases can support our rearmament plans!"
+
+ ENG_AIR_REARMAMENT_DESC_COMMUNIST:0 "In any war with a continental enemy, the People's Air Force will prove the key to victory. First, we must ensure that our airbases can support our rearmament plans!"
+
+ fighter_command_focus:0 "Fighter Command"
+
+ fighter_command_focus_desc:0 "Our first priority must be to control our own skies! It is hard to discern a more important area of military research than fighter development."
+
+ bomber_command_focus:0 "Bomber Command"
+
+ bomber_command_focus_desc:0 "Like Giulio Douhet always said; 'The bomber will always get through!'. Advances in radar technology and anti-air defenses notwithstanding, we should prioritize the development of better bombers."
+
+ coastal_command_focus:0 "Coastal Command"
+
+ coastal_command_focus_desc:1 "Our industry is driven by resources shipped to Britain from many distant parts of the Empire. Our convoys are our lifeblood and must be protected by both the Royal Navy and the Royal Air Force. We should set up a special RAF formation to protect the approaches to our ports!"
+
+ ENG_COASTAL_COMMAND_DESC_HISTORICAL:0 "Our industry is driven by resources shipped to Britain from many distant parts of the Empire. Our convoys are our lifeblood and must be protected by both the Royal Navy and the Royal Air Force. We should set up a special RAF formation to protect the approaches to our ports!"
+
+ ENG_COASTAL_COMMAND_DESC_COMMUNIST:0 "Our industry is driven by resources shipped to Britain from many distant parts of the Empire. Our convoys are our lifeblood and must be protected by both the Workers' Liberation Navy and the People's Air Force. We should set up a special PAF formation to protect the approaches to our ports!"
+
+ aircraft_production_focus:0 "Aircraft Production Group"
+
+ aircraft_production_focus_desc:0 "Aircraft production remains our highest priority. The London Aircraft Production Group (LAPG) should be created to manage and coordinate all available aircraft related production."
+
+ uk_jet_focus:0 "Spitfire Griffon"
+
+ uk_jet_focus_desc:0 "We have to keep up with the enemy in the air, therefore our planes should be fitted with the newest state of the art engines."
+
+ naval_rearmament_focus:0 "Naval Rearmament"
+
+ naval_rearmament_focus_desc:1 "Though we tried to prevent a naval arms race with the Second London Naval Treaty, even the signatories are mostly ignoring it. The Royal Navy must never lose its global supremacy. We must always ensure that it remains the largest in the world."
+
+ ENG_NAVAL_REARMAMENT_DESC_HISTORICAL:0 "Though we tried to prevent a naval arms race with the Second London Naval Treaty, even the signatories are mostly ignoring it. The Royal Navy must never lose its global supremacy. We must always ensure that it remains the largest in the world."
+
+ ENG_NAVAL_REARMAMENT_DESC_COMMUNIST:0 "Though we tried to prevent a naval arms race with the Second London Naval Treaty, even the signatories are mostly ignoring it. The Workers' Liberation Navy must never lose its global supremacy. We must always ensure that it remains the largest in the world."
+
+ uk_destroyer_focus:0 "Destroyer Focus"
+
+ uk_destroyer_focus_desc:0 "Modern battleships are marvels, but we must not neglect the critical role of the humble destroyer in the protection of our convoys."
+
+ uk_convoy_focus:0 "Convoy Escort Focus"
+
+ uk_convoy_focus_desc:0 "It cannot be stressed enough, our convoys are our lifeblood. We must do everything in our power to protect them and to replace lost tonnage quickly."
+
+ uk_waves_focus:0 "Britannia Rules the Waves"
+
+ uk_waves_focus_desc:1 "In the long shadow of the Royal Navy, other naval powers are forced to come up with innovative new doctrines to compensate. We must not grow complacent and rely solely on the quantity and quality of individual ships."
+
+ ENG_BRITANNIA_RULES_THE_WAVES_DESC_HISTORICAL:0 "In the long shadow of the Royal Navy, other naval powers are forced to come up with innovative new doctrines to compensate. We must not grow complacent and rely solely on the quantity and quality of individual ships."
+
+ ENG_BRITANNIA_RULES_THE_WAVES_DESC_COMMUNIST:0 "In the long shadow of the Workers' Liberation Navy, other naval powers are forced to come up with innovative new doctrines to compensate. We must not grow complacent and rely solely on the quantity and quality of individual ships."
+
+ uk_carrier_focus:0 "Carrier Focus"
+
+ uk_carrier_focus_desc:0 "There is an intense argument among naval theorists about the continued viability of the battleship. There are those who argue that modern air power will come to dominate naval power, and that the aircraft carrier will replace the battleship as the king of the oceans."
+
+ uk_spain_focus:0 "Coerce Spain"
+
+ uk_spain_focus_desc:0 "The Spanish know better than most the power of the Royal Navy, but perhaps a reminder is in order..."
+
+ uk_battleship_focus:0 "Battleship Focus"
+
+ uk_battleship_focus_desc:0 "While the theorists bicker about air supremacy or naval supremacy, no one wants the guns of a battleship pointing at their palace. Even if the carrier enthusiasts prove right in the end, battleships will still dominate the oceans for years to come."
+
+ uk_turkey_focus:0 "Coerce Turkey"
+
+ uk_turkey_focus_desc:0 "They don't have to love us, but Johnny Turkey should know enough to fear our battleships..."
+
+ uk_amphibious_focus:0 "Amphibious Warfare"
+
+ uk_amphibious_focus_desc:0 "Ruling the waves is fine, but sometimes you need to get your feet wet. We must not neglect our ability to land invasion forces in hostile territory."
+
+ singapore_focus:0 "The Singapore Strategy"
+
+ singapore_focus_desc:0 "Singapore should remain our primary naval base in the East. Hong Kong may fall to the Japanese, but Singapore must remain impregnable until the Main Fleet can arrive to decisively defeat the enemy."
+
+ sp_landward_forts_focus:0 "Landward Fortifications"
+
+ sp_landward_forts_focus_desc:0 "The current defenses on Singapore Island are inadequate. We must focus our efforts on beefing up the fortifications!"
+
+ peninsular_focus:0 "Peninsular War"
+
+ peninsular_focus_desc:0 "We should preempt and slow down an enemy coming down from the north through Malaya before they even reach Singapore."
+
+ hongkong_focus:0 "Hold Hong Kong"
+
+ hongkong_focus_desc:0 "The Singapore Strategy is obsolete. Our plan should be bolder and rely on a base much closer to Japan. With sufficient fortifications and facilities, Hong Kong will serve perfectly!"
+
+ hk_landward_forts_focus:0 "Landward Fortifications"
+
+ hk_landward_forts_focus_desc:0 "Hong Kong will have to become a fortress city in order to withstand a sustained attack from mainland China."
+
+ hk_air_focus:0 "Air Defenses"
+
+ hk_air_focus_desc:0 "We must expand and improve the anti-air emplacements in Hong Kong greatly."
+
+ uk_embargo_focus:0 "Embargo Policy"
+
+ uk_embargo_focus_desc:0 "The best way of defeating dictators - whether red or brown - is to simply starve them of the resources they need to wage war. The problem is just to browbeat the bankers and corporations who do business with them..."
+
+ uk_sanction_italy_focus:0 "Sanction Italy"
+
+ uk_sanction_italy_focus_desc:0 "Mussolini dreams of a new Roman Empire and, absurd as it may sound, might someday attack us to achieve his dream. We should do what we can to prevent this before it comes to war."
+
+ uk_sanction_japan_focus:0 "Sanction Japan"
+
+ uk_sanction_japan_focus_desc:0 "The Japanese seem committed to creating their 'Greater East Asia Co-Prosperity Sphere'; under their hegemony, of course. The British Empire is the primary obstacle, together with the colonies of other Western powers. They must be denied access to the resources they need."
+
+ uk_burma_focus:0 "The Burma Road"
+
+ uk_burma_focus_desc:0 "We should aid the Chinese in their struggle against Japan by constructing a road - and associated infrastructure - between Burma and China, where supplies can reach them overland, safe from Japanese predation."
+
+ uk_scandinavian_focus:0 "Scandinavian Intervention"
+
+ uk_scandinavian_focus_desc:0 "Scandinavia would have little strategic import if it were not for one thing; Swedish iron exports. We must put pressure on both Sweden and Norway in order to prevent this vital resource from reaching Germany. If they refuse, we might have to be prepared to invade..."
+
+ uk_iraq_focus:0 "Secure Iraq"
+
+ uk_iraq_focus_desc:0 "We granted Iraq independence in 1932, but considering the current global situation, that might have been a mistake. Iraqi oil must never be allowed to reach our enemies..."
+
+ uk_iran_focus:0 "Secure Iran"
+
+ uk_iran_focus_desc:0 "Iran is not just rich in oil that must be denied our enemies; it is also the strategic nexus between India, the Middle East and the Soviet Union."
+
+ uk_free_india_focus:0 "Indian Independence"
+
+ uk_free_india_focus_desc:0 "Japan is actively fomenting rebellion in India and has even formed a 'National Indian Army' composed of Indian recruits. The situation could grow dangerous if nothing is done to prevent it. We can either defeat Japan quickly, or promise the Indians independence in a few years."
+
+ uk_colonial_focus:0 "Rule Through Responsibility"
+
+ uk_colonial_focus_desc:0 "Our vast, sprawling empire houses some of the greatest minds in the world, but its size prevents many of them from ever meeting. By encouraging them to work together on our most important projects, we can achieve results faster."
+
+ uk_asia_focus:0 "Fortify East Asia"
+
+ uk_asia_focus_desc:0 "Many of our old colonies in the east are threatened by civil wars and imperial ambitions of local countries. We must not neglect our remaining outposts, but continue to develop these regions to secure our global presence."
+
+ uk_china_focus:0 "Influence China"
+
+ uk_china_focus_desc:0 "Although the Chinese nationalists have called themselves enemies of our colonial efforts, they are trapped between enemies with too few allies. If we reach out to them, they may be willing to shift their policies."
+
+ uk_commonwealth_focus:0 "Commonwealth Ties"
+
+ uk_commonwealth_focus_desc:0 "United by common allegiance to the Crown, the nations of the British Commonwealth are the first we can count on in the event of another global conflict. Securing our diplomatic administration there will be of the essence."
+
+ uk_india_focus:0 "Develop the Raj"
+
+ uk_india_focus_desc:0 "The state of our colonies in India remains controversial both abroad and at home, but whatever is in store for them, strengthening their industrial capacity is a priority at the present stage."
+
+ ENG_afct_tt:0 "§G Enables Module §YAdmiralty Fire Control Table§!"
+
+ ENG_united_against_evil:0 "United Against Tyranny"
+
+ UK_royal_artillery_focus:0 "New Artillery Guns"
+
+ UK_seventeen_pounder_focus:0 "Develop the 17 Pounder"
+
+ UK_bofors_focus:0 "Develop the Bofors Gun"
+
+ uk_infra_focus:0 "Foundations of Defense"
+
+ ENG_pressure_axis:0 "Prepared for Any Storm"
+
+ royal_navy_focus:0 "Royal Dockyard Factories"
+
+ ENG_compass:0 "Operation Compass"
+
+ ENG_crusader:0 "Operation Crusader"

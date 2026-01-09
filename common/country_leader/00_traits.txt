@@ -1531,6 +1531,14 @@ leader_traits = {
 		}
 	}
 
+	usa_total_war = {
+		sprite = 10
+		production_factory_max_efficiency_factor = 0.1
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
 	silent_workhorse_usa = {
 		random = yes
 		sprite = 13

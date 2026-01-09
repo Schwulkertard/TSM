@@ -358,7 +358,6 @@
 	}
 	focus = {
 		id = GER_air_innovation
-		text = air_innovation
 		icon = GFX_focus_GER_airforce
 		x = -3
 		y = 1
@@ -500,7 +499,7 @@
 				category = land_doctrine
 			}
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch
+			show_ideas_tooltip = franz_halder
 		}
 	}
 	focus = {
@@ -510,10 +509,6 @@
 		available = {
 		}
 		bypass = {
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-			}
 		}
 		x = 0
 		y = 1
@@ -3912,7 +3907,7 @@ focus = {
 		}
 focus = {
 	id = GER_adjust_the_building_plans
-	icon = GFX_focus_AFG_a_modern_economy
+	icon = GFX_ROM_prioritize_aircraft_industry
 	prerequisite = {  focus = GER_keep_our_technology }
 	x = 0
 	y = 1

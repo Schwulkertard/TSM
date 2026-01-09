@@ -12,7 +12,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1100 }
 	focus = {
 		id = ROM_stabilize_the_throne
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_monarchy_1
 		x = 14
 		y = 0
 		cost = 7.2
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_education_reform
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_the_royal_foundation
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -47,7 +47,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_expand_universities
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_university_1
 		prerequisite = {
 			focus = ROM_education_reform
 		}
@@ -67,7 +67,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_end_boyars
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_expropriate_industrialist
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_distribute_land
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_farmland
 		prerequisite = {
 			focus = ROM_end_boyars
 		}
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_national_service_act
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_military_mission
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -148,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_german_ties
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_german_trade
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -167,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_ploiesti_trade_deal
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_monetary_union
 		prerequisite = {
 			focus = ROM_german_ties
 		}
@@ -189,7 +189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_armed_and_ready
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_secure_greater_romania
 		prerequisite = {
 			focus = ROM_ploiesti_trade_deal
 			focus = ROM_adopt_german_doctrine
@@ -214,7 +214,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_secure_the_church
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_spread_fascism
 		prerequisite = {
 			focus = ROM_armed_and_ready
 		}
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_integrate_odessa
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_advanced_military_studies
 		prerequisite = {
 			focus = ROM_armed_and_ready
 		}
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_reassert_authority
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_detente_the_entente
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -298,7 +298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_royalist_propaganda
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_form_the_national_renaissance_front
 		prerequisite = {
 			focus = ROM_reassert_authority
 		}
@@ -321,7 +321,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_control_iron_guard
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_imprison_the_iron_guard
 		prerequisite = {
 			focus = ROM_royalist_propaganda
 		}
@@ -343,7 +343,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_carol_personality_cult
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_institute_a_royal_dictatorship
 		prerequisite = {
 			focus = ROM_reassert_authority
 		}
@@ -363,7 +363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_ensure_prosperity
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_romanian_purchasing_commission
 		prerequisite = {
 			focus = ROM_carol_personality_cult
 		}
@@ -383,7 +383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_national_catastrophe
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_antonescus_coup_detat
 		prerequisite = {
 			focus = ROM_ensure_prosperity
 		}
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_weaken_the_king
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_abolish_the_monarchy
 		prerequisite = {
 			focus = ROM_stabilize_the_throne
 		}
@@ -433,7 +433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_support_the_guard
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_operetta_fascism
 		prerequisite = {
 			focus = ROM_weaken_the_king
 		}
@@ -455,7 +455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_iron_guard_coup
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_national_legionary_state
 		prerequisite = {
 			focus = ROM_support_the_guard
 		}
@@ -489,7 +489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_prevent_partition
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_preserve_greater_romania
 		prerequisite = {
 			focus = ROM_weaken_the_king
 		}
@@ -509,7 +509,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_prepare_for_war
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_crusade_against_atheism
 		prerequisite = {
 			focus = ROM_prevent_partition
 		}
@@ -531,7 +531,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_avenge_1940
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_romania_reborn
 		prerequisite = {
 			focus = ROM_iron_guard_coup
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_german_military_mission
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_GER_appease_the_wehrmacht
 		x = 33
 		y = 0
 		cost = 5
@@ -568,7 +568,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_army_maneuvers
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_deploy_reserve_divisions
 		prerequisite = {
 			focus = ROM_german_military_mission
 		}
@@ -591,7 +591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_iron_guard_militia
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_who_guards_the_iron_guard
 		prerequisite = {
 			focus = ROM_army_maneuvers
 		}
@@ -653,7 +653,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_western_drill
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_GER_prussian_legacy
 		prerequisite = {
 			focus = ROM_german_military_mission
 		}
@@ -676,7 +676,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_french_military_mission
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = {
 			focus = ROM_western_drill
 		}
@@ -696,7 +696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_modernize_equipment
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_convert_old_artillery
 		prerequisite = {
 			focus = ROM_german_military_mission
 		}
@@ -719,7 +719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_modernize_artillery
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_special_mountaineers_artillery
 		prerequisite = {
 			focus = ROM_modernize_equipment
 		}
@@ -743,7 +743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_modernize_logistics
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_improve_logistics
 		prerequisite = {
 			focus = ROM_modernize_equipment
 		}
@@ -767,7 +767,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_lessons_of_war
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_army_attack
 		prerequisite = {
 			focus = ROM_modernize_artillery
 			focus = ROM_modernize_logistics
@@ -791,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_green_devils
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_special_mountaineers
 		prerequisite = {
 			focus = ROM_lessons_of_war
 		}
@@ -812,7 +812,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_at_advancements
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_anti_tank_guns
 		prerequisite = {
 			focus = ROM_lessons_of_war
 		}
@@ -836,7 +836,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_battle_rifle_development
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_GER_copy_german_fighter
 		prerequisite = {
 			focus = ROM_lessons_of_war
 		}
@@ -860,7 +860,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_engineer_corps
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_sabotage
 		prerequisite = {
 			focus = ROM_lessons_of_war
 		}
@@ -884,7 +884,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_armored_infantry_support
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_self_propelled_gun
 		prerequisite = {
 			focus = ROM_lessons_of_war
 		}
@@ -903,7 +903,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_begin_industrialization
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_low_cost_housing
 		x = 6
 		y = 0
 		cost = 5
@@ -918,7 +918,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_expand_ploiesti
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_resource_extraction
 		prerequisite = {
 			focus = ROM_begin_industrialization
 		}
@@ -941,7 +941,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_open_new_mines
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = {
 			focus = ROM_expand_ploiesti
 		}
@@ -964,7 +964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_discover_new_resources
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_light_metal_production
 		prerequisite = {
 			focus = ROM_open_new_mines
 		}
@@ -993,7 +993,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_infrastructure_focus
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_focus_generic_public_works
 		prerequisite = {
 			focus = ROM_begin_industrialization
 		}
@@ -1029,7 +1029,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_develop_heavy_industry
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_prioritize_aircraft_industry
 		prerequisite = {
 			focus = ROM_infrastructure_focus
 		}
@@ -1073,7 +1073,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_armament_industry
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_fund_iar_company
 		prerequisite = {
 			focus = ROM_begin_industrialization
 		}
@@ -1098,7 +1098,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_krupp_contracts
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_fascist_economics
 		prerequisite = {
 			focus = ROM_armament_industry
 		}
@@ -1117,7 +1117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_license_german_equipment
-		icon = GFX_focus_rom_preserve_romania
+		icon = GFX_ROM_axis_motor_companies
 		prerequisite = {
 			focus = ROM_krupp_contracts
 		}

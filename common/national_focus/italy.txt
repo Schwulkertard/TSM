@@ -140,8 +140,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			set_technology = {
+			custom_effect_tooltip = ITA_pugliese_tt
+			hidden_effect = {
+				set_technology = {
 				pugliese = 1
+				}
 			}
 		}
 	}

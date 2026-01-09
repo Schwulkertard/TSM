@@ -916,6 +916,9 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = franz_halder
+			available = {
+				has_completed_focus = GER_army_innovation
+			}
 			allowed = {
 				original_tag = GER
 			}

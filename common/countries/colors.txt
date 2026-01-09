@@ -1,8 +1,8 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
 }
 ENG = {
 	color = rgb { 156 47 38 }
@@ -17,7 +17,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 SAF = {
-	color = rgb { 195 107 160 }
+	color = rgb { 78 44 117 }
 	color_ui = rgb { 198 169 248 }
 }
 MON = {
@@ -67,16 +67,16 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 SPR = {
-	color = rgb { 242 205 50 }
-	color_ui = rgb { 255 255 122 }
+	color = rgb { 228 114 16 }
+	color_ui = rgb { 228 114 16 }
 }
 SPN = {
-	color = rgb { 156 47 38 }
-	color_ui = rgb { 156 47 38 }
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color = rgb { 10 100 70 }
+	color_ui = rgb { 10 30 50 }
 }
 ROM = {
 	color = rgb { 230 190 0 }
@@ -108,7 +108,7 @@ DEN = {
 	color_ui = rgb { 199 151 121 }
 }
 BUL = {
-	color = rgb { 51 155 0 }
+	color = rgb { 83 149 105 }
 	color_ui = rgb { 210 147 217 }
 }
 FIN = {
@@ -116,12 +116,12 @@ FIN = {
 	color_ui = rgb { 255 255 255 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 152 85 92 }
+	color_ui = rgb { 152 85 92 }
 }
 AST = {
-	color = rgb { 57 143 97 }
-	color_ui = rgb { 74 186 126 }
+	color = rgb { 10 150 90 }
+	color_ui = rgb { 10 150 90 }
 }
 CAN = {
 	color = rgb { 119 48 39 }

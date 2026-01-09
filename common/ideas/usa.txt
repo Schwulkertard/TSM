@@ -279,7 +279,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				air_strategic_bomber_bombing_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.15
 			}
 		}
 		USA_island_hopping = {
@@ -1023,7 +1023,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.2
 			}
 		}
 		USA_national_employment_strategy = {
@@ -1602,43 +1602,6 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 			}
-		}
-		USA_robert_taft = {
-			picture = generic_political_advisor_europe_1
-			allowed = {
-				original_tag = USA
-			}
-			traits = { silent_workhorse }
-		}
-		USA_henry_morgenthau = {
-			picture = generic_political_advisor_europe_6
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-			}
-			traits = { financial_expert }
-		}
-		USA_donald_nelson = {
-			picture = generic_political_advisor_europe_3
-			available = {
-				
-			}
-			allowed = {
-				original_tag = USA
-			}
-			traits = { armaments_organizer }
-		}
-		usa_william_donovan = {
-			available = {
-				has_intelligence_agency = yes
-				threat > 0.5
-			}
-			allowed = {
-				original_tag = USA
-				has_dlc = "La Resistance"
-			}
-			traits = { head_of_intelligence }
 		}
 	}
 	army_chief = {

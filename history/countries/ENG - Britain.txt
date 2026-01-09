@@ -4,10 +4,6 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-add_offsite_building = {
-	type = dockyard
-	level = 1
-}
 set_research_slots = 4
 create_intelligence_agency = yes
 set_stability = 0.40
@@ -303,6 +299,7 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = SAF
 add_to_faction = USA
+add_to_faction = MEX
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet	
 #give_guarantee = CZE

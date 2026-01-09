@@ -120,73 +120,73 @@ division_template = {
 }
 units = {
 	division= {
-		name = "6. SS-Waffen-Grenadier-Division"
+		name = "1. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "9. SS-Waffen-Grenadier-Division"
+		name = "2. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "12. SS-Waffen-Grenadier-Division"
+		name = "6. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "14. SS-Waffen-Grenadier-Division"
+		name = "10. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "15. SS-Waffen-Grenadier-Division"
+		name = "18. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "16. SS-Waffen-Grenadier-Division"
+		name = "20. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "18. SS-Waffen-Grenadier-Division"
+		name = "30. Infanterie-Division"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "19. SS-Waffen-Grenadier-Division"
+		name = "44. Infanterie-Division Hoch- und Deutschmeister"
 		location =6026
 		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "21. SS-Waffen-Grenadier-Division"
+		name = "1. SS-Panzerdivision Leibstandarte SS Adolf Hitler"
 		location =6026
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "23. SS-Waffen-Grenadier-Division"
+		name = "2. SS-Panzerdivision 'Das Reich'"
 		location =6026
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "26. SS-Waffen-Grenadier-Division"
+		name = "3. SS-Panzerdivision 'Totenkopf'"
 		location =6026
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
-		name = "28. SS-Waffen-Grenadier-Division"
+		name = "4. SS-Panzerdivision 'Wiking'"
 		location =6026
 		division_template = "Panzer-Division"
 		start_experience_factor = 1

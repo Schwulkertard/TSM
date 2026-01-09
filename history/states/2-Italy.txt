@@ -2,7 +2,7 @@ state= {
  	id=2
  	name="STATE_2"
  	manpower = 2781971
- 	state_category = city
+ 	state_category = large_city
  	history=
  	{
  		owner = ITA

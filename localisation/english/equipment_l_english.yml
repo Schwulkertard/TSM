@@ -4040,7 +4040,7 @@ tank_reliability_variant_upgrade_desc:0 "Improving reliability leads to less bro
  JAP_ship_hull_light_3:0 "Akizuki Class"
  JAP_ship_hull_light_4:0 "Shimakaze Class"
  JAP_ship_hull_cruiser_1:0 "Furutaka Class "
- JAP_ship_hull_cruiser_2:0 "Mogami Class "
+ JAP_ship_hull_cruiser_2:0 "Mogami Class"
  JAP_ship_hull_cruiser_3:0 "Tone Class "
  JAP_ship_hull_cruiser_4:0 "Ibuki Class"
  JAP_ship_hull_heavy_1:0 "Fuso Class "
