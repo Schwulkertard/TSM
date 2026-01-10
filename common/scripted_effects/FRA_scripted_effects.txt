@@ -253,7 +253,6 @@ FRA_transfer_western_africa_effect = {
 }
 
 add_offmap_dockyards_from_marks = {
-    # Count marked states
     set_temp_variable = { marked_cnt = 0 }
 
     every_owned_state = {
@@ -261,7 +260,6 @@ add_offmap_dockyards_from_marks = {
         add_to_temp_variable = { marked_cnt = 1 }
     }
 
-    # Repeat marked_cnt times, each time add 2 OFF-MAP dockyards
     set_temp_variable = { i = 0 }
     while_loop_effect = {
         limit = { check_variable = { i < marked_cnt } }
@@ -272,3 +270,20 @@ add_offmap_dockyards_from_marks = {
     }
 }
 
+add_offmap_civs_from_marks = {
+    set_temp_variable = { marked_cnt = 0 }
+
+    every_owned_state = {
+        limit = { has_state_flag = civ_mark }
+        add_to_temp_variable = { marked_cnt = 1 }
+    }
+
+    set_temp_variable = { i = 0 }
+    while_loop_effect = {
+        limit = { check_variable = { i < marked_cnt } }
+
+        add_to_temp_variable = { i = 1 }
+
+        add_offsite_building = { type = industrial_complex level = 3 }
+    }
+}
