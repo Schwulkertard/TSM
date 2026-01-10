@@ -50,6 +50,7 @@ set_technology = {
 	engines_1 = 1
 	engines_2 = 1
 	aircraft_construction = 1
+	tech_trucks = 1
 }
 if = {
 	limit = {
@@ -69,7 +70,6 @@ if = {
 		early_battlecruiser = 1
 		early_ship_hull_carrier = 1
 		transport = 1
-		tech_trucks = 1
 	}
 }
 if = {
