@@ -199,7 +199,7 @@ characters={
 	}
 
 	ITA_Rodolfo_Graziani={
-		name=ITA_Rodolfo_Graziani
+		name="Rodolfo Graziani"
 		portraits={
 			army={
 				large = "gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
@@ -207,8 +207,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { offensive_doctrine organizer panzer_leader trickster hill_fighter expert_improviser panzer_expert }
-			skill = 7
+			traits = { organizer panzer_leader trickster hill_fighter expert_improviser panzer_expert brilliant_strategist }
+			skill = 6
 			attack_skill = 4
 			defense_skill = 2
 			planning_skill = 2

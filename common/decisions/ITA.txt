@@ -30,26 +30,143 @@ foreign_politics = {
 			}
 		}
 	}
-	GER_annex_bul = {
+
+	ITA_fortification_effort_5 = {
 		icon = generic_operation
 		available = {
-			BUL = { is_ai = yes }
-			date>1939.1.1
+			date>1937.1.1
 		}
 		allowed = {
-			tag = GER
+			tag = ITA
 		}
-		cost = 0
+		cost = 50
 		visible = {
-			BUL = { is_ai = yes }
 		}
 		fire_only_once = yes
 		complete_effect = {
-			BUL={pow_before_annex=yes}
-			GER = {
-				annex_country = {
-					target = BUL
-					transfer_troops = yes
+			413 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =1094
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =1064
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province =1094
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			582 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =1075
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			414 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =3793
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			415 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province =10843
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province =10843
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	ITA_fortification_effort_2 = {
+		icon = generic_operation
+		available = {
+			date>1937.1.1
+		}
+		allowed = {
+			tag = ITA
+		}
+		cost = 50
+		visible = {
+		}
+		fire_only_once = yes
+		complete_effect = {
+			160 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province =10007
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+				}
+			}
+			113 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+				}
+			}
+			112 = {
+				set_building_level = {
+					type = air_base
+					level = 10
 				}
 			}
 		}

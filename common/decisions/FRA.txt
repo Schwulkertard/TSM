@@ -12,7 +12,7 @@ war_measures = {
 		}
 	}
 }
-FRA_rearmnament_plan = { 
+FRA_rearmament_plan = { 
 
 	FRA_centralise_aviation_industries = {
 		icon = generic_plane
@@ -109,7 +109,7 @@ FRA_support_small_businesses = {
 
 }
 
-FRA_issue_rearmnament_bonds = {
+FRA_issue_rearmament_bonds = {
 		icon = generic_plane
 		available = {
 		}

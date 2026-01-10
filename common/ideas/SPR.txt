@@ -32,6 +32,8 @@ ideas = {
 				conscription = 0.04			
 				experience_gain_army_unit_factor=-0.4
 				industrial_capacity_factory=1
+				min_export = -1
+				production_lack_of_resource_penalty_factor = -1
 			}
 			equipment_bonus = {
 				small_plane_airframe = {

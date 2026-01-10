@@ -67,15 +67,13 @@ if = {
 	}
 }
 #Ideas
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		ROM_king_carol_ii_hedonist
-	}
+add_ideas = {
+	ROM_king_carol_ii_hedonist
+	ROM_powerful_boyars
+	ROM_iron_guard
+	ROM_outdated_doctrine
+	ROM_agrarian_society
 }
-#Kick off kings crazy life
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
 	amount = 100

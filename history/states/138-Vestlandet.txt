@@ -14,15 +14,12 @@ state={
  			air_base = 1
  			8532 = {
  				naval_base = 3
- 				coastal_bunker = 1
  			}
  			52 = {
  				naval_base = 1
- 				coastal_bunker = 1
  			}
  			113 = {
  				naval_base = 3
- 				coastal_bunker = 2
  			}
  		}
  		victory_points = {

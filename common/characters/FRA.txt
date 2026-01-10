@@ -1111,7 +1111,7 @@ characters={
 				original_tag  = FRA
 			}
 			available = {
-				has_completed_focus = FRA_follow_appeasment
+				has_completed_focus = FRA_follow_appeasement
 			}
 			
 			cost  = 75.000

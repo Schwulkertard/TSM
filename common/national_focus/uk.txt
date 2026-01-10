@@ -1098,7 +1098,6 @@ focus_tree = {
 				limit={has_id=985}
 				add_unit_leader_trait=ironside
 				add_unit_leader_trait=air_controller
-				add_unit_leader_trait=green_water_expert
 			}
 			custom_effect_tooltip = ENG_afct_tt
 			hidden_effect = {

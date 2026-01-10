@@ -1,6 +1,6 @@
 ﻿l_english:
 
- ENG_southern_thrust:0 "Southern Thrust"
+ ENG_southern_thrust:0 "§RSouthern Thrust§!"
 
  ENG_southern_thrust_desc:0 ""
 
@@ -48,13 +48,11 @@
 
  ENG_ROYAL_ORDNANCE_FACTORIES_DESC_COMMUNIST:0 "The Revolutionary Arsenal at Woolwich is woefully insufficient to produce all the munitions and small arms we need. We should establish many more factories around the country, preferably in relatively safe areas."
 
- ENG_shadow_scheme_focus:0 "Initiate Shadow Scheme"
+ shadow_scheme_focus:0 "§YInitiate Shadow Scheme§!"
 
  ENG_recently_developed_tt:0 "Current days are: [?ENG_recently_developed:days|Y0]"
 
  ENG_recently_developed:0 "Last Development"
-
- ENG_defend_ceylon: "Fortify Ceylon"
 
  ENG_bofors_focus:0 "License the Bofors Gun"
 
@@ -68,7 +66,7 @@
 
  shadow_scheme_focus_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built after completing this focus when completing the Shadow Scheme.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y15§!. " 
 
- ENG_shadow_scheme_focus2:0 "Complete the Shadow Scheme"
+ ENG_shadow_scheme_focus2:0 "§YComplete the Shadow Scheme§!"
 
  uk_small_arms_focus:0 "BSA Company"
 
@@ -130,7 +128,7 @@
 
  uk_convoy_focus_desc:0 "It cannot be stressed enough, our convoys are our lifeblood. We must do everything in our power to protect them and to replace lost tonnage quickly."
 
- uk_waves_focus:0 "Britannia Rules the Waves"
+ uk_waves_focus:0 "§BBritannia Rules the Waves§!"
 
  uk_waves_focus_desc:1 "In the long shadow of the Royal Navy, other naval powers are forced to come up with innovative new doctrines to compensate. We must not grow complacent and rely solely on the quantity and quality of individual ships."
 
@@ -250,6 +248,24 @@
 
  royal_navy_focus:0 "Royal Dockyard Factories"
 
- ENG_compass:0 "Operation Compass"
+ ENG_compass:0 "§ROperation Compass§!"
 
- ENG_crusader:0 "Operation Crusader"
+ ENG_crusader:0 "§ROperation Crusader§!"
+
+ ENG_develop_CAN:0 "Develop Canada"
+
+ ENG_develop_RAJ:0 "Develop India"
+
+ ENG_develop_AST:0 "Develop Australia"
+
+ ENG_develop_SAF:0 "Develop South Africa"
+
+ ENG_can_annex_saf:0 "Let Canada Annex South Africa"
+
+ ENG_build_up_africa:0 "Prepare the Defense of Egypt"
+
+ ENG_eritrea:0 "Build up Eritrea"
+
+ ENG_ceylon:0 "Build up Ceylon"
+
+ UK_foreign_policy:0 "Foreign Policy"

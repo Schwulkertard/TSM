@@ -428,7 +428,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.075
 			}
 		}
-		FRA_rearmnament_plan = {
+		FRA_rearmament_plan = {
 			picture = chi_hyper_inflation1
 			allowed = {
 				original_tag = FRA
@@ -1400,14 +1400,14 @@ ideas = {
 					has_government = fascism
 				}
 			}
-			modifier = {
+			equipment_bonus = {
 				medium_tank_chassis = {
 					build_cost_ic = -0.05  instant = yes
 				}
-				light_tank_chassis_tank_chassis = {
+				light_tank_chassis = {
 					build_cost_ic = -0.05  instant = yes
 				}
-				heavy_tank_chassis_tank_chassis = {
+				heavy_tank_chassis = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}

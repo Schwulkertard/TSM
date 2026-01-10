@@ -972,7 +972,7 @@ focus = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRIAL }
 		completion_reward = {
-			custom_effect_tooltip = USA_income_tax_assesment_act_tt
+			custom_effect_tooltip = USA_income_tax_assessment_act_tt
 		    every_owned_state = {
 			limit= {AND = {infrastructure > 9 is_core_of = USA}  }
 				    add_extra_state_shared_building_slots = 4

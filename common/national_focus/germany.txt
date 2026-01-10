@@ -3342,6 +3342,21 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip="Adds one Seydlitz Aircraft Carrier to the production queue, at 90% complete."
 			hidden_effect = {
+					create_equipment_variant = {
+						name = "Seydlitz Class"
+						type = ship_hull_carrier_1
+						name_group = GER_CV_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
+							front_1_custom_slot = ship_deck_space
+						}
+					}
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_carrier_1

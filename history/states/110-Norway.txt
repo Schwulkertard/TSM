@@ -17,7 +17,6 @@ state={
  			air_base = 4
  			5656 = {
  				naval_base = 6
- 				coastal_bunker = 3
  			}
  		}
  		add_core_of = NOR

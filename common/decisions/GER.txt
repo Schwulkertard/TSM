@@ -552,7 +552,7 @@ operations = {
 						}
 					}
 				}
-				ENG = { add_to_faction = DEN }
+				ENG = { add_to_faction = DEN }	
 				ENG = { add_to_faction = NOR }
 				DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }

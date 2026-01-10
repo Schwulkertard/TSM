@@ -343,3 +343,61 @@
  FRA_naval_bomber_focus_desc:0 "Ships have proven exceptionally vulnerable to aircraft. We should keep improving on their technology to ensure we stay ahead of any countermeasures."
 
  FRA_naval_bomber_focus_desc:0 "Ships have proven exceptionally vulnerable to aircraft. We should keep improving on their technology to ensure we stay ahead of any countermeasures."
+
+ FRA_Aircraft_factories:0 "Aicraft Factories"
+
+ FRA_increased_shifts_for_armament_factories:0 "Increased Shifts for Armament Factories"
+
+ FRA_metropolitan_france_military:0 "Metropolitan Arms Factories"
+
+ FRA_highway_buildup:0 "Highway Expansion"
+
+ FRA_ramp_up_tank_production:0 "Ramp Up Tank Production"
+
+ FRA_improved_production_methods:0 "Improved Production Methods"
+
+ FRA_small_industry_reliance:0 "Rely on the Small Business"
+
+ FRA_centralize_the_industries:0 "Merge the Conglomerate"
+
+ FRA_the_rearmament_plan:0 "Decide the Rearmament Plan"
+
+ FRA_civ_payouts:0 "Colonial Revenue"
+
+ FRA_follow_appeasement:0 "Follow Appeasement"
+
+ FRA_aggressive_foreign_policy:0 "Reject Appeasement"
+
+ FRA_aid_the_poles:0 "Saar Offensive"
+
+ FRA_The_Matignon_Agreements:0 "Matignon Agreements"
+
+ FRA_Alliance_with_the_capitalists:0 "Alliance with the Capitalists"
+
+ FRA_prepare_the_new_navy:0 "Counter the Kriegsmarine"
+
+ FRA_centralise_aviation_industries:0 "Merge Aviation Plants"
+
+ FRA_support_small_businesses:0 "Support Small Businesses"
+
+ FRA_issue_rearmament_bonds:0 "Rearmament Bonds"
+
+ FRA_defend_norway:0 "Expeditionary Force to Norway"
+
+ FRA_great_war_veterans:0 "Call up Great War Veterans"
+
+ FRA_Subsaharan_investment:0 "Subsaharan Investment"
+
+ FRA_resources:0 "Colonial Extraction"
+
+ FRA_colonial_soldiers:0 "Expand Colonial Recruitment"
+
+ FRA_economy1:0 "Colonial Economy"
+
+ FRA_arty1:0 "Modern Artillery"
+
+ FRA_tank_modernization:0 "Wartime Designs"
+
+ FRA_doctrine:0 "Study our Defeat"
+
+ FRA_mechanized:0 "Mechanized Cavalry"
