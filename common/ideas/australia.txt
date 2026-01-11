@@ -242,33 +242,6 @@ ideas = {
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 	}
-	weapons_research = {
-		designer = yes
-		lysaghts_works = {
-			picture = generic_infantry_equipment_manufacturer_2
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			traits = { artillery_research_trait }
-		}
-		lithgow_saf = {
-			picture = generic_infantry_equipment_manufacturer_1
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-			research_bonus = {
-				infantry_weapons = 0.15
-				motorized_equipment = 0.15
-			}
-			traits = { materiel_research_trait }
-		}
-	}
 	aircraft_manufacturer = {
 		designer = yes
 		AST_commonwealth_aircraft_corporation = {

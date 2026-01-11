@@ -25,7 +25,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = stalinism
-			traits = { stalin_heart_of_steel }
+			traits = { }
 			expire = "1953.3.1.1"
 			id = -1
 		}
@@ -2122,7 +2122,7 @@ characters = {
 				always = yes
 			}
 			traits = {
-				infrastructure_expert 
+				modernizer 
 			}
 		}
 	}

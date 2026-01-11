@@ -8,6 +8,7 @@ UK_foreign_politics = {
 			}
 		}
 		days_remove = 70
+		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = development_cooldown
 			268 = {
@@ -46,6 +47,7 @@ UK_foreign_politics = {
 			}
 		}
 		days_remove = 70
+		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = development_cooldown
 			405 = {
@@ -84,6 +86,7 @@ UK_foreign_politics = {
 			}
 		}
 		days_remove = 70
+		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = development_cooldown
 			273 = {
@@ -122,6 +125,7 @@ UK_foreign_politics = {
 			}
 		}
 		days_remove = 70
+		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = development_cooldown
 			600 = {
@@ -186,6 +190,7 @@ UK_foreign_politics = {
 			date > 1938.1.1
 		}
 		days_remove = 100
+		fire_only_once = yes
 		complete_effect = {
 		}
 		remove_effect = {
@@ -316,6 +321,7 @@ UK_foreign_politics = {
 			475 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 		days_remove = 15
+		fire_only_once = yes
 		complete_effect = {
 		}
 		remove_effect = {
@@ -347,6 +353,7 @@ UK_foreign_politics = {
 			date > 1939.1.1
 		}
 		days_remove = 100
+		fire_only_once = yes
 		complete_effect = {
 		}
 		remove_effect = {

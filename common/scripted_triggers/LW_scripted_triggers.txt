@@ -6,7 +6,6 @@ is_playable_country = {
 		tag = JAP
 		tag = RAJ
 		tag = AST
-		tag = NZL
 		tag = MAN
 		tag = BUL
 		tag = ROM

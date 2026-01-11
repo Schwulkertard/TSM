@@ -2094,29 +2094,6 @@ ideas = {
             }
         }
 	}
-	weapons_research = {
-		designer = yes
-		springfield_armory = {
-			allowed = {
-				original_tag = USA
-			}
-			research_bonus = {
-				infantry_weapons = 0.15
-				motorized_equipment = 0.15
-			}
-			traits = { materiel_research_trait }
-		}
-		rock_island_arsenal = {
-			allowed = {
-				original_tag = USA
-			}
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			traits = { artillery_research_trait }
-		}
-	}
 	industrial_concern = {
 		standard_oil_california = {
 			allowed = {

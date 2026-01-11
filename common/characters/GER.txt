@@ -1241,16 +1241,12 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
 			}
 			ai_will_do = {
 				factor = 30.000
 			}
 			traits = {
-				political_genius 
+				reichsleiter
 			}
 		}		
 	}

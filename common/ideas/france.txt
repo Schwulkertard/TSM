@@ -1443,52 +1443,6 @@ ideas = {
 		}
 	}
 
-	weapons_research = {
-			
-		designer = yes
-		
-		somua = {
-		
-			allowed = {
-				original_tag = FRA
-			}
-
-			research_bonus = {
-				motorized_equipment = 0.2
-			}
-			
-			traits = { motorized_research_trait }
-
-		}
-		
-		mas = {
-						
-			allowed = {
-				original_tag = FRA
-			}
-						
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			
-			traits = { materiel_research_trait }
-		}
-	
-		schneider = {
-						
-			allowed = {
-				original_tag = FRA
-			}		
-			
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			
-			traits = { artillery_research_trait }
-		}
-	}
-
 	naval_manufacturer = {
 
 		designer = yes

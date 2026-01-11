@@ -20,7 +20,7 @@ leader_traits = {
 			factor = 5
 		}
 	}
-	materiel_research_trait = {
+	weapons_research_trait = {
 		random = no
 		research_speed_factor = 0.01
 		ai_will_do = {
@@ -1549,10 +1549,20 @@ leader_traits = {
 		}
 	}
 
+	reichsleiter = {
+		sprite = 10
+		stability_weekly = 0.003
+		war_stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	industrial_genius = {
 		sprite = 10
 		production_speed_industrial_complex_factor = 0.15
 		production_speed_infrastructure_factor = 0.15
+		production_speed_synthetic_refinery_factor = 0.15
 		ai_will_do = {
 			factor = 1
 		}

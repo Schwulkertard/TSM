@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-HOL_shared_intelligence_eng_fra = {
+		HOL_shared_intelligence_eng_fra = {
 			name = HOL_shared_intelligence_eng
 			picture = SOV_scientist_defect
 			allowed = {
@@ -188,29 +188,6 @@ HOL_shared_intelligence_eng_fra = {
 			}
 		}
 		}
-		weapons_research = {
-		designer = yes
-		rsaf_enfield = {
-			allowed = {
-				original_TAG = MEX
-			}
-			traits = { materiel_research_trait }
-			research_bonus = {
-				infantry_tech = 0.15
-				motorized_equipment = 0.15
-			}
-		}
-		royal_arsenal = {
-			allowed = {
-				original_TAG = MEX
-			}
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			traits = { artillery_research_trait }
-		}
-	}
 		industrial_concern = {
 		aioc = {
 			allowed = {

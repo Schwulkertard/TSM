@@ -1145,41 +1145,6 @@ ideas = {
 			}
 		}
 	}
-	weapons_research = {
-		designer = yes
-		grabin_design_bureau = {
-			allowed = {
-				original_tag = SOV
-			}
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			traits = { artillery_research_trait }
-		}
-		tula_arms_plant = {
-			allowed = {
-				original_tag = SOV
-			}
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			traits = { materiel_research_trait }
-		}
-		gaz = {
-			allowed = {
-				original_tag = SOV
-			}
-			research_bonus = {
-				motorized_equipment = 0.15
-				mot_rockets = 0.50
-				rocketry = 0.25
-			}
-			traits = { motorized_equipment_manufacturer }
-			modifier = {
-			}
-		}
-	}
 	naval_manufacturer = {
 		designer = yes
 		nevskoye_design_bureau = {

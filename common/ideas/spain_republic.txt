@@ -70,15 +70,5 @@ ideas = {
 			}
 		}
 	}
-	naval_manufacturer = {
-	}
-	aircraft_manufacturer = {
-	}
-	weapons_research = {
-	}
-	materiel_manufacturer = {
-	}
-	industrial_concern = {
-	}
 }
 
