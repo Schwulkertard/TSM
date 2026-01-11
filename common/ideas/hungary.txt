@@ -818,7 +818,7 @@ ideas = {
 			picture = generic_improved_industries
 
 			modifier = {
-				consumer_goods_expected_value = -0.01
+				consumer_goods_expected_value = -0.03
 			}
 		}
 

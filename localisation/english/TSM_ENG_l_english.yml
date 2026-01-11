@@ -64,9 +64,11 @@
 
  shadow_scheme_focus_desc:0 "The Air Ministry has come up with a brilliant suggestion for easier conversion of civilian factories into military ones. With the appropriate grants and loans to various key companies, their factories can be extended and adapted in advance to make the transition to military applications much smoother."
 
- shadow_scheme_focus_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built after completing this focus when completing the Shadow Scheme.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y15§!. " 
+ shadow_scheme_focus_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y3 Civilian Factories§! built after completing this focus when completing the Shadow Scheme.\nThe maximum number of §YMilitary Factories§! we can cover up is §GInfinite§!. " 
 
  ENG_shadow_scheme_focus2:0 "§YComplete the Shadow Scheme§!"
+
+ ENG_shadow_debug_tt:0 "Shadow Conversion Debug\n\nBaseline civs: §Y[?shadow_civs1]§!\nCurrent civs (starting cores): §Y[?shadow_dbg_current]§!\nEligible civs (capped): §Y[?shadow_dbg_delta]§!\nMils to gain: §G[?shadow_dbg_mils]§!"
 
  uk_small_arms_focus:0 "BSA Company"
 

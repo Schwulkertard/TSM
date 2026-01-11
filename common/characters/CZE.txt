@@ -1,4 +1,18 @@
 characters={
+	CZE_edvard_beneš={
+		name="Edvard Beneš"
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EDVARD_BENES_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	### The King of Bohemia
 	CZE_karl_albrecht = {
 		name=POL_karl_albrecht

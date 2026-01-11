@@ -1,4 +1,13 @@
 UK_foreign_politics = {
+	ENG_shadow_refresh_debug = {
+      	icon = generic_factory
+     	visible = { always = yes }
+      	available = { always = yes }
+		complete_effect = {
+			custom_effect_tooltip = ENG_shadow_debug_tt
+      		ENG_shadow_debug_calc = yes
+		}
+    }
 	ENG_develop_CAN = {
 		icon = generic_operation
 		available = {

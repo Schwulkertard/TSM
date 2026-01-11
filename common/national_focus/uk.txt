@@ -77,9 +77,9 @@ focus_tree = {
 			clamp_variable = {
 				var = ENG.shadow_civs2
 				min = 0
-				max = 30
+				max = 90
 			}
-			divide_variable={ENG.shadow_civs2=2}
+			divide_variable={ENG.shadow_civs2=3}
 			set_variable={ENG.shadow_civs3=ENG.shadow_civs2}
 			round_variable=ENG.shadow_civs2
 			if={
@@ -106,6 +106,8 @@ focus_tree = {
 			}}
 		}
  		completion_reward = {
+			custom_effect_tooltip = ENG_shadow_debug_tt
+			hidden_effect = { ENG = { ENG_shadow_debug_calc = yes } }
 			for_each_scope_loop = {
 				array = ENG.starting_core_states
 		
@@ -115,9 +117,9 @@ focus_tree = {
 			clamp_variable = {
 				var = ENG.shadow_civs2
 				min = 0
-				max = 30
+				max = 90
 			}
-			divide_variable={ENG.shadow_civs2=2}
+			divide_variable={ENG.shadow_civs2=3}
 			set_variable={ENG.shadow_civs3=ENG.shadow_civs2}
 			round_variable=ENG.shadow_civs2
 			if={
@@ -415,10 +417,17 @@ focus_tree = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
 			custom_effect_tooltip = available_theorist_production
 			show_ideas_tooltip = ENG_clement_attlee
+			ENG = {
+			set_variable = { var = shadow_civs1 value = 0 }
+
 			for_each_scope_loop = {
-			array = ENG.starting_core_states
-	
-			add_to_variable= {ENG.shadow_civs1=industrial_complex_level}
+				array = ENG.starting_core_states
+				set_temp_variable = { var = tmp_civs value = industrial_complex_level }
+
+				ROOT = {
+				add_to_variable = { var = shadow_civs1 value = temp:tmp_civs }
+				}
+			}
 			}
 		}
 	}
