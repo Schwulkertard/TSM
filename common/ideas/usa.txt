@@ -762,6 +762,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier = {
+				special_forces_cap_flat = 128
+			}
 			removal_cost = -1
 		}
 		USA_womens_armed_service_integration_act = {

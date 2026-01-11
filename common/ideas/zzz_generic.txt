@@ -246,6 +246,7 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
 				special_forces_training_time_factor = -0.1
+				special_forces_cap_flat = 64
 			}
 		}
 		collectivist_ethos_focus = {

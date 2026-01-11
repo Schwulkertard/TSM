@@ -396,6 +396,7 @@ ideas = {
 			}
 			modifier = {
 				special_forces_training_time_factor = -0.1
+				special_forces_cap_flat = 128
 			}
 			picture = eng_special_air_service
 			removal_cost = -1

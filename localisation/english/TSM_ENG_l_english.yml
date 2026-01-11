@@ -68,7 +68,7 @@
 
  ENG_shadow_scheme_focus2:0 "§YComplete the Shadow Scheme§!"
 
- ENG_shadow_debug_tt:0 "Shadow Conversion Debug\n\nBaseline civs: §Y[?shadow_civs1]§!\nCurrent civs (starting cores): §Y[?shadow_dbg_current]§!\nEligible civs (capped): §Y[?shadow_dbg_delta]§!\nMils to gain: §G[?shadow_dbg_mils]§!"
+ ENG_shadow_debug_tt:0 "Shadow Scheme\n\nEligible Civilian Factories: §Y[?shadow_dbg_delta]§!\nMilitary Factories to gain: §G[?shadow_dbg_mils]§!"
 
  uk_small_arms_focus:0 "BSA Company"
 

@@ -36,6 +36,8 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.3, 0.2, 0.04, 0  } -- game speeds
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   --vanilla 6 --> 20% bonus damage instead of 40% extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.CASUALTIES_WS_P_PENALTY_DIVISOR = 200							--Divisor for casualties WS penalty
+NDefines.NMilitary.CASUALTIES_WS_A_PENALTY_DIVISOR = 600							--Divisor for casualties WS penalty
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
@@ -80,8 +82,9 @@ NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 5
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
 NDefines.NProduction.RAILWAY_GUN_REPAIR_SPEED = 8.0		-- Railway gun strength repair speed per factory
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5
 ---------------------------------------------------------------
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 10000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 9999 -- pp cost to scorch a state
@@ -206,7 +209,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 50
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
 NDefines.NTechnology.BASE_TECH_COST = 85           -- Base cost for a tech. multiplied with tech cost and ahead of time penalties
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50 -- Was 30, exists to help speed 5 macro
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 15 -- Was 30, exists to help speed 5 macro
 NDefines.NTechnology.DEFAULT_XP_UNLOCK_RESEARCH_COST = 10000			-- default xp cost of a research to unlock directly
 NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_COST = 0				-- default xp cost of a research to speed up the process
 NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_BONUS = 0			-- default boost research bonus gained when xp is used to research an item

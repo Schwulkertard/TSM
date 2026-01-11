@@ -244,6 +244,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				conscription = 0.01
+				special_forces_cap_flat = 64
 			}
 		}
 		sour_loser = {
