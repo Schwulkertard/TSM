@@ -293,3 +293,13 @@
  ENG_infrastructure_effort:0 "Infrastructure Effort"
 
  ENG_extra_housing:0 "Housing Projects"
+ 
+ SUBDOCTRINE_GREAT_WAR_INFANTRY:0 "Defense in Depth"
+ 
+ SUBDOCTRINE_ARMORED_ADVANCE:0 "Armored Advance"
+ 
+ DOCTRINE_TRACK_COMBAT_SUPPORT:0 "Artillery"
+ 
+ DOCTRINE_TRACK_SUPPORT:0 "Support Comapanies"
+ 
+ DOCTRINE_TRACK_MOTORIZED:0 "Mobile Infantry"

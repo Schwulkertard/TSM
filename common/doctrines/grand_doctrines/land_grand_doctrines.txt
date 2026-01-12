@@ -96,34 +96,35 @@ new_mobile_warfare = {
         }
         {
         #motorized
+        category_mobile_infantry = {max_organisation=10 default_morale = 0.05}
         motorized={
 			need = {
-				motorized_equipment = -20
+				motorized_equipment = -10
 			}
 		}
 		mot_anti_tank_brigade={
 			need = {
-				motorized_equipment = -10
+				motorized_equipment = -5
 			}
 		}
 		mot_anti_air_brigade={
 			need = {
-				motorized_equipment = -10
+				motorized_equipment = -5
 			}
 		}
 		mot_artillery_brigade={
 			need = {
-				motorized_equipment = -10
+				motorized_equipment = -5
 			}
 		}
 		mot_rocket_artillery_brigade={
 			need = {
-				motorized_equipment = -10
+				motorized_equipment = -5
 			}
 		}
         mechanized={
 			need = {
-				mechanized_equipment = -10
+				mechanized_equipment = -5
 			}
 		}
         effect = {
@@ -166,7 +167,8 @@ new_mobile_warfare = {
             #Operations
             planning_speed = 1
             coordination_bonus = 0.06
-            category_army = { max_organisation = 10 default_morale = 0.1}
+            army_morale = 0.1
+            army_org_factor = 0.1
             enable_tactic = tactic_backhand_blow   
 
             effect = {
@@ -291,7 +293,7 @@ superior_firepower = {
         }
         {
             #motorized
-            category_cavalry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
+            category_mobile_infantry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
             effect = {
                 if = {
                     limit = {
@@ -335,10 +337,8 @@ superior_firepower = {
             enable_tactic = tactic_tactical_withdrawal
             land_reinforce_rate = 0.02
             coordination_bonus = 0.04
-            category_army = {
-                max_organisation = 5
-                default_morale = 0.1
-            }
+            army_morale = 0.1
+            army_org_factor = 0.05
             planning_decay_rate_factor = -0.25
             planning_speed = 0.5
 
@@ -806,7 +806,8 @@ grand_battleplan = {
         }
         {
             #Operations
-            category_army = { max_organisation = 15}
+            army_morale = 0.0
+            army_org_factor = 0.15
             coordination_bonus = 0.08
             max_command_power = 30
             land_night_attack = 0.15
@@ -951,7 +952,7 @@ mass_assault = {
         }
         {
             #motorized
-            category_cavalry = {default_morale = 0.1 }
+            category_mobile_infantry = {default_morale = 0.1 }
             motorized = {
 			need = {
 				motorized_rocket_equipment = 10
@@ -1016,7 +1017,9 @@ mass_assault = {
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
             minimum_training_level = -0.2
-            dig_in_speed_factor = 0.05
+            army_morale = 0.2
+            army_org_factor = 0.05 
+            coordination_bonus = 0.04
 
             effect = {
                 if = {

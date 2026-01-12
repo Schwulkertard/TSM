@@ -94,7 +94,7 @@ political_actions = {
 			}
 		}            
 	}
-}	
+    }	
 	raj_rubber4 = {                           
 		allowed = { tag = RAJ tag = JAP }                 
 		available = {                          
@@ -123,7 +123,7 @@ political_actions = {
 			  }
 		  }            
 		}
-}
+    }
 	improved_worker_conditions_cancel = {
 		icon = generic_industry
 		allowed = {
@@ -573,4 +573,113 @@ economy_decisions = {
 		}
 	}
 }
-
+exercise_decisions = {
+    infantry_exercise = {
+		icon = generic_prepare_civil_war
+        allowed = {
+			always = yes
+		}
+        available = {
+            command_power > 25
+		}
+        visible = {
+            always = yes
+		}
+        fire_only_once = no
+		days_remove = 365
+        remove_effect = {
+            add_mastery = {
+				amount = 50
+				track = infantry
+            }
+        }
+        modifier = {
+            industrial_capacity_factory = -0.025
+		}
+		cost = 0
+		complete_effect = {
+            add_command_power = -25
+		}
+    }
+   artillery_exercise = {
+		icon = generic_military
+        allowed = {
+			always = yes
+		}
+        available = {
+            command_power > 50
+		}
+        visible = {
+            always = yes
+		}
+        fire_only_once = no
+		days_remove = 365
+        remove_effect = {
+            add_mastery = {
+				amount = 50
+				track = combat_support
+            }
+        }
+        modifier = {
+            industrial_capacity_factory = -0.05
+		}
+		cost = 0
+		complete_effect = {
+            add_command_power = -50
+		}
+    }
+    armor_exercise = {
+		icon = GFX_decision_generic_merge_plant_tank
+        allowed = {
+			always = yes
+		}
+        available = {
+            command_power > 100
+        }
+        visible = {
+            always = yes
+		}
+        fire_only_once = no
+		days_remove = 365
+        remove_effect = {
+            add_mastery = {
+				amount = 50
+				track = armor
+            }
+        }
+        modifier = {
+            industrial_capacity_factory = -0.1
+		}
+		cost = 0
+		complete_effect = {
+            add_command_power = -100
+		}
+    }
+    mechanized_exercise = {
+		icon = generic_prepare_civil_war
+        allowed = {
+			always = yes
+		}
+        available = {
+            command_power > 75
+		}
+        visible = {
+            always = yes
+		}
+        fire_only_once = no
+		days_remove = 365
+        remove_effect = {
+            add_mastery = {
+				amount = 50
+				track = motorized
+            }
+        }
+        modifier = {
+            industrial_capacity_factory = -0.075
+		}
+		cost = 0
+		complete_effect = {
+            add_command_power = -75
+		}
+    }
+}

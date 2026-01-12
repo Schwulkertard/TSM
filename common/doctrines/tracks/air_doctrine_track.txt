@@ -19,11 +19,14 @@ strike_aircraft = {
     icon = "GFX_doctrine_milestone_striker_air"
     icon_frame = "GFX_doctrine_decor_air"
     mastery = {
-        multiplier = 8.0 
+        multiplier = 0.5 
         equipment = {
             cas
             naval_bomber
             suicide
+        }
+		categories = {
+            category_army
         }
     }
 }

@@ -4,9 +4,9 @@ infantry = {
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 1.0
+        multiplier = 0.2
         categories = {
-            category_all_infantry
+            category_light_infantry
         }
     }
 }
@@ -17,10 +17,9 @@ combat_support = {
     icon = "GFX_doctrine_milestone_artillery_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 10.0
+        multiplier = 2.0
         categories = {
 	        category_line_artillery
-	        category_artillery
         }
     }
 }
@@ -31,43 +30,35 @@ armor = {
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 4.0
+        multiplier = 0.8
         categories = {
-	        category_tanks
-	        category_all_armor
-            
-        }
-        sub_units = {
-            armored_car
-        }
-    }
-}
+			category_all_armor
+            }
+		}
+	}
 
 
 support = {
-    name = DOCTRINE_TRACK_support
+    name = DOCTRINE_TRACK_SUPPORT
     background = "GFX_sup_firepower_bg"
     icon = "GFX_doctrine_milestone_artillery_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 8.0
+        multiplier = 1.5
         categories = {
-            category_line_artillery
-	        category_artillery
             category_support_battalions
         }
     }
 }
 motorized = {
-    name = DOCTRINE_TRACK_motorized
+    name = DOCTRINE_TRACK_MOTORIZED
     background = "GFX_mob_warfare_bg"
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 5.0
+        multiplier = 1.0
         categories = {
-            category_cavalry
-			category_vehicle_infantry
+			category_mobile_infantry
         }
     }
 }
@@ -78,13 +69,9 @@ operations = {
     icon = "GFX_doctrine_milestone_operations_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 0.7
+        multiplier = 0.1
         categories = {
-            category_all_infantry
-	        category_line_artillery
-	        category_artillery
-	        category_tanks
-	        category_all_armor
+            category_army
         }
     }
 }
