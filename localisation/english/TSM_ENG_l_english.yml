@@ -68,7 +68,7 @@
 
  ENG_shadow_scheme_focus2:0 "§YComplete the Shadow Scheme§!"
 
- ENG_shadow_debug_tt:0 "Shadow Scheme\n\nEligible Civilian Factories: §Y[?shadow_dbg_delta]§!\nMilitary Factories to gain: §G[?shadow_dbg_mils]§!"
+ ENG_shadow_debug_tt:0 "Click to Refresh\n\nEligible Civilian Factories: §Y[?shadow_dbg_delta]§!\nMilitary Factories to gain: §G[?shadow_dbg_mils]§!"
 
  uk_small_arms_focus:0 "BSA Company"
 
@@ -271,3 +271,25 @@
  ENG_ceylon:0 "Build up Ceylon"
 
  UK_foreign_policy:0 "Foreign Policy"
+
+ britain.1117.t:0 "Commonwealth Development"
+
+ britain.1117.d:0 "We can now pick what Dominion to develop. This event will fire very 70 days."
+
+ britain.1117.a:0 "Develop Canada"
+
+ britain.1117.b:0 "Develop South Africa"
+
+ britain.1117.c:0 "Develop India"
+
+ britain.1117.e:0 "Develop Australia"
+
+ ENG_infrastructure_development:0 "Infrastructure Development"
+
+ ENG_shadow_refresh_debug:0 "Shadow Scheme Status"
+
+ ENG_expand_healthcare:0 "Expand Healthcare"
+
+ ENG_infrastructure_effort:0 "Infrastructure Effort"
+
+ ENG_extra_housing:0 "Housing Projects"

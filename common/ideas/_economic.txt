@@ -12,11 +12,13 @@ ideas = {
 			picture = neutrality_idea
 			removal_cost=-1
 			modifier={
-				consumer_goods_expected_value = 1000
-				production_speed_buildings_factor = -1000
-				research_speed_factor = -1000
-                political_power_gain = -1000
-				industrial_capacity_factory = -1000
+				consumer_goods_expected_value = 10
+				research_speed_factor = -10
+                political_power_gain = -10
+				industrial_capacity_factory = -10
+				industrial_capacity_dockyard = -10
+				enemy_justify_war_goal_time = 10
+				ai_get_ally_desire_factor = -100
 			}
 		}
 		wartime_economy_man = {

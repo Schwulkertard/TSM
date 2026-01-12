@@ -74,14 +74,6 @@ equipments = {
  			category = ship_airplane_launcher
  			count < 2
  		}
-		module_count_limit = {
-			category = ship_special_slot_uk
-			count < 2
-		}
-		module_count_limit = {
-			category = ship_special_slot_italy
-			count < 2
-		}
  		default_modules = {
  			fixed_ship_battery_slot = empty
  			fixed_ship_anti_air_slot = empty
@@ -218,8 +210,6 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
-					ship_special_slot_italy
-					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
@@ -288,8 +278,6 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
-					ship_special_slot_italy
-					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = mid_1_custom_slot
@@ -348,8 +336,6 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
-					ship_special_slot_italy
-					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
@@ -420,8 +406,6 @@ equipments = {
  					ship_anti_air
  					ship_secondaries
  					ship_airplane_launcher
-					ship_special_slot_italy
-					ship_special_slot_uk
  				}
  			}
  			mid_2_custom_slot = {
