@@ -79,6 +79,5 @@ replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="portraits"
 replace_path="tests"
-
-name="TSM"
-supported_version="1.16.10"
+name="TSM 67"
+supported_version="1.17.3.0"
