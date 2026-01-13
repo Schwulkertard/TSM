@@ -17,7 +17,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = 14
 		y = 0
-		cost = 7.2
+		cost = 10
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
 			add_named_threat = { threat = 2 name = ITA_ethiopia }
@@ -1203,7 +1203,7 @@ focus = {
 		prerequisite = { focus = ITA_triumph_in_africa }
  		x = 4
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			add_ideas = war_economy
@@ -1248,7 +1248,7 @@ focus = {
  		}
  		x = 1
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			add_ideas = GER_autarky_idea
@@ -1294,7 +1294,7 @@ focus = {
  		}
  		x = 0
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			random_owned_controlled_state = {
@@ -1404,7 +1404,7 @@ focus = {
  		}
  		x = -1
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			add_ideas = Ita_modernizations
@@ -1488,7 +1488,7 @@ focus = {
  		}
  		x = 0
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			random_owned_controlled_state = {

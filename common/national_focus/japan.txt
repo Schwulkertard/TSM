@@ -21,7 +21,7 @@ focus_tree = {
  				NOT = { has_dlc = "Waking the Tiger" }
  			}
  		}
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 4
  		}
@@ -686,7 +686,7 @@ focus_tree = {
  		y = 1
  		mutually_exclusive = {focus = JAP_challenge_the_zaibatsus}
  		relative_position_id = JAP_purge_the_kodoha_faction
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 3
  		}
@@ -730,7 +730,7 @@ focus_tree = {
  		x = 4
  		y = 1
  		relative_position_id = JAP_purge_the_kodoha_faction
- 		cost = 7.2
+ 		cost = 10
          mutually_exclusive = {focus = JAP_guide_the_zaibatsus}
  		ai_will_do = {
  			factor = 3
@@ -779,7 +779,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = JAP_guide_the_zaibatsus
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 3
  		}
@@ -815,7 +815,7 @@ focus_tree = {
  		x = 2
  		y = 1
  		relative_position_id = JAP_guide_the_zaibatsus
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 2
  		}
@@ -839,7 +839,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = JAP_national_mobilization_law
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 4
  		}
@@ -862,7 +862,7 @@ focus_tree = {
  		relative_position_id = JAP_nationalize_war_industry
  		x = 0
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -1293,7 +1293,7 @@ focus_tree = {
  		x = -1
  		y = 1
  		relative_position_id = JAP_modern_artillery
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 3
  		}
@@ -1474,7 +1474,7 @@ focus_tree = {
  		x = 4
  		y = 2
  		relative_position_id = JAP_army_expansion_law
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  			modifier = {
@@ -1512,7 +1512,7 @@ focus_tree = {
  		x = -1
  		y = 1
  		relative_position_id = JAP_fighter_modernization
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -1535,7 +1535,7 @@ focus_tree = {
  		x = 1
  		y = 1
  		relative_position_id = JAP_fighter_modernization
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  			modifier = {
@@ -1669,7 +1669,7 @@ focus_tree = {
  		x = 9
  		y = 0
  		relative_position_id = JAP_army_expansion_law
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  			modifier = {
@@ -2138,7 +2138,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = JAP_long_lance_torpedoes
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 2
  		}
@@ -2172,7 +2172,7 @@ focus_tree = {
  		prerequisite = { focus = JAP_develop_chinese_resources }
  		mutually_exclusive = { focus = JAP_coal_liquification}
  		relative_position_id = JAP_armored_divisions
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 2
  		}
@@ -2202,7 +2202,7 @@ focus_tree = {
  		x = -3
  		y = 1
  		relative_position_id = JAP_armored_divisions
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 2
  		}

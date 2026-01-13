@@ -185,7 +185,7 @@ focus_tree = {
 		text = "Develope Mindanao Area"
 		prerequisite = { focus = UAC_focus_devalue_our_economy }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -225,7 +225,7 @@ focus_tree = {
 		text = "Industrial Sector Expansion"
 		prerequisite = { focus = UAC_focus_develope_juba_area }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -274,7 +274,7 @@ focus_tree = {
 		prerequisite = { focus = UAC_focus_industrial_sector }
 		prerequisite = { focus = UAC_focus_african_trade_zone }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -319,7 +319,7 @@ focus_tree = {
 		text = "Asian Trade Zone"
 		prerequisite = { focus = UAC_focus_develope_juba_area }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -362,7 +362,7 @@ focus_tree = {
 		text = "Hawaii Housing Act"
 		prerequisite = { focus = UAC_focus_expand_civilian_administration focus = UAC_focus_devalue_our_economy }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -408,7 +408,7 @@ focus_tree = {
 		text = "Luzon Mines"
 		prerequisite = { focus = UAC_focus_sanaa_housing_act }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -472,7 +472,7 @@ focus_tree = {
 		text = "New Research Facilities"
 		prerequisite = { focus = UAC_focus_aden_chromium_mines }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -512,7 +512,7 @@ focus_tree = {
 			focus = UAC_focus_arab_integration
 		}
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -551,7 +551,7 @@ focus_tree = {
 		text = "Fight The Filipinos"
 		prerequisite = { focus = UAC_focus_ignore_the_arabs }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -594,7 +594,7 @@ focus_tree = {
 			focus = UAC_focus_ignore_the_arabs
 		}
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -634,7 +634,7 @@ focus_tree = {
 		text = "Filipine Research Team"
 		prerequisite = { focus = UAC_focus_arab_integration }
 		relative_position_id = "The United States Indo-Pacific Command"
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -827,7 +827,7 @@ focus_tree = {
 		text = "Military Factories"
 		prerequisite = { focus = UAC_focus_military_independence focus = UAC_focus_invite_british_military_concerns }
 		relative_position_id = UAC_focus_expand_the_military_sector
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -911,7 +911,7 @@ focus_tree = {
 		text = "Military Factories II"
 		prerequisite = { focus = UAC_focus_military_factories focus = UAC_focus_tools}
 		relative_position_id = UAC_focus_expand_the_military_sector
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1811,7 +1811,7 @@ focus_tree = {
 #		mutually_exclusive = {
 #			focus = "Open Great War Stockpiles"
 #		}
-#		cost = 7.2
+#		cost = 10
 #
 #		ai_will_do = {
 #			factor = 1
@@ -2260,7 +2260,7 @@ focus_tree = {
 #		
 #		relative_position_id = "The United States Indo-Pacific Command"
 #		prerequisite = { focus = "Mobile African Special Reaction Force" }
-#		cost = 7.2
+#		cost = 10
 #
 #		ai_will_do = {
 #			factor = 1
@@ -2313,7 +2313,7 @@ focus_tree = {
 #		text = "Army Modernization"
 #		relative_position_id = "The United States Indo-Pacific Command"
 #		prerequisite = { focus = "Mobile African Special Reaction Force" }
-##		cost = 7.2
+##		cost = 10
 #
 #		ai_will_do = {
 #			factor = 1
@@ -2366,7 +2366,7 @@ focus_tree = {
 #		################## Rote Schrift
 #		relative_position_id = "The United States Indo-Pacific Command"
 #		prerequisite = { focus = "First African Tank Corps" }
-##		cost = 7.2
+##		cost = 10
 #
 #		ai_will_do = {
 #			factor = 1

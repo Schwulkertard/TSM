@@ -22,7 +22,7 @@
 		x = 20
 		y = 0
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -661,7 +661,7 @@
 		y = 1
 		relative_position_id = MAN_zaibatsu_alliance
 
-		cost = 7.2
+		cost = 10
 
 		available = {
 
@@ -3002,7 +3002,7 @@ completion_reward = {
 		y = 1
 		relative_position_id = MAN_public_education
 
-		cost = 7.2
+		cost = 10
 
 		available = {
 			has_completed_focus = MAN_reclaim_the_empire

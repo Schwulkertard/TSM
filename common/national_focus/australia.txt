@@ -116,7 +116,7 @@ focus_tree = {
  		x = -2
  		y = 2
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -143,7 +143,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -178,7 +178,7 @@ focus_tree = {
  		x = 2
  		y = 2
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -212,7 +212,7 @@ focus_tree = {
  		x = -1
  		y = 3
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -235,7 +235,7 @@ focus_tree = {
  		x = 0
  		y = 4
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -266,7 +266,7 @@ focus_tree = {
  		x = 1
  		y = 3
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -294,7 +294,7 @@ focus_tree = {
  		x = -2
  		y = 4
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -323,7 +323,7 @@ focus_tree = {
  		x = 2
  		y = 4
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -351,7 +351,7 @@ focus_tree = {
  		x = 0
  		y = 5
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -380,7 +380,7 @@ focus_tree = {
  		x = -1
  		y = 6
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -409,7 +409,7 @@ focus_tree = {
  		x = 1
  		y = 6
  		relative_position_id = AST_additional_militia_training
- 		cost = 7.2
+ 		cost = 10
  		available = {
 			date > 1941.1.1
 		}
@@ -560,7 +560,7 @@ focus_tree = {
  		relative_position_id = AST_expand_the_raaf
  		x = 1
  		y = 1
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -675,7 +675,7 @@ focus_tree = {
  		x = 1
  		y = 3
  		relative_position_id = AST_expand_the_raaf
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -704,7 +704,7 @@ focus_tree = {
  		x = -1
  		y = 5
  		relative_position_id = AST_expand_the_raaf
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -841,7 +841,7 @@ focus_tree = {
  		x = 0
  		y = 4
  		relative_position_id = AST_expand_the_raaf
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -867,7 +867,7 @@ focus_tree = {
  		x = 1
  		y = 5
  		relative_position_id = AST_expand_the_raaf
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -1431,7 +1431,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = AST_standard_gauge_railway
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 5
  		}
@@ -1543,7 +1543,7 @@ focus_tree = {
  		x = 0
  		y = 3
  		relative_position_id = AST_standard_gauge_railway
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 5
  		}
@@ -1774,7 +1774,7 @@ focus_tree = {
  		x = -2
  		y = 1
  		relative_position_id = AST_establish_advisory_war_council
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 8
  		}
@@ -1831,7 +1831,7 @@ focus_tree = {
  		x = -4
  		y = 2
  		relative_position_id = AST_establish_advisory_war_council
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 10
  		}
@@ -1881,7 +1881,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = AST_establish_advisory_war_council
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 5
  		}
@@ -1999,7 +1999,7 @@ focus_tree = {
  		x = -3
  		y = 4
  		relative_position_id = AST_establish_advisory_war_council
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 15
  		}
@@ -2055,7 +2055,7 @@ focus_tree = {
  		x = -2
  		y = 3
  		relative_position_id = AST_establish_advisory_war_council
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  			factor = 5
  		}
@@ -2409,7 +2409,7 @@ focus_tree = {
  		x = 1
  		y = 4
  		relative_position_id = AST_support_the_policy_of_appeasement
- 		cost = 7.2
+ 		cost = 10
  		ai_will_do = {
  		}
  		available = {

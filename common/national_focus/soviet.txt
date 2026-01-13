@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_stalins_cult_of_personality
 		x = 11
 		y = 0
-		cost = 7.2
+		cost = 10
 		completion_reward = {
 			swap_ideas = { remove_idea = trotskyite_plot
 				add_idea = trotskyite_plot_purged}
@@ -105,7 +105,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SOV_capitals_of_socialism
 		prerequisite = { focus = SOV_production_targets }
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
@@ -185,7 +185,7 @@ focus_tree = {
 		prerequisite = {  focus = SOV_great_purge}
 		x = 23
 		y = 1
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -722,7 +722,7 @@ focus = {
 		prerequisite = { focus = SOV_great_patriotic_general  }
 		prerequisite = { focus = SOV_barb_2  }
 		prerequisite = { focus = SOV_wartime_industry  }
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1061,7 +1061,7 @@ focus = {
 		prerequisite = { focus = SOV_capitals_of_socialism }
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
@@ -1310,7 +1310,7 @@ focus = {
 		prerequisite = { focus = SOV_great_purge }
 		x = 11
 		y = 1
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1327,7 +1327,7 @@ focus = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1423,7 +1423,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1833,7 +1833,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_military_reorganization
-		cost = 7.2
+		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
 		    set_technology = {improved_heavy_tank_chassis = 1 popup=no}
@@ -2078,7 +2078,7 @@ focus = {
 		prerequisite = { focus = SOV_appoint_golovanov  }
 		prerequisite = { focus = SOV_novikov_blueprint  }
 		prerequisite = { focus = SOV_uranus  }
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2243,7 +2243,7 @@ focus = {
 	icon = GFX_focus_por_workers_of_iberia
 	prerequisite = { focus = SOV_trans_volga_railways }
 	relative_position_id = SOV_trans_volga_railways
-	cost = 7.2
+	cost = 10
 	available = {
 		date > 1938.6.1 }
 	x = 1
@@ -2263,7 +2263,7 @@ x = -1
 y = 1
 mutually_exclusive = {
 	focus = SOV_long_term }
-cost = 7.2
+cost = 10
 available = {
 	date > 1938.6.1 }
 completion_reward = { 
@@ -2312,7 +2312,7 @@ completion_reward = {
 focus = {
 	id = SOV_technological_advancment
 	icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
-	cost = 7.2
+	cost = 10
 	relative_position_id = SOV_start_five_year_plan
 	prerequisite = { focus = SOV_long_term focus = SOV_short_term }
 	available = {
@@ -2320,7 +2320,7 @@ focus = {
 	}
 		x = 6
 		y = 1
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
@@ -2432,7 +2432,7 @@ focus = {
 focus = {
 	id = SOV_people_work
 	icon = GFX_focus_AUS_union_of_danubian_socialist_republics
-	cost = 7.2
+	cost = 10
 	prerequisite =  { focus = SOV_road_quality focus = SOV_industrial_revolution }
 	relative_position_id = SOV_road_quality
 	x = 1

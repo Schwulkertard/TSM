@@ -422,7 +422,7 @@
  		icon = GFX_goal_generic_demand_territory
  		x = 17
  		y = 0
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_POLITICAL }
  		available_if_capitulated = yes
  		completion_reward = {
@@ -437,7 +437,7 @@
  		x = 0
  		y = 1
  		relative_position_id = spr_political_effort
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_POLITICAL  }
  		available_if_capitulated = yes
  		completion_reward = {
@@ -456,7 +456,7 @@
  		x = 0
  		y = 1
  		relative_position_id = spr_political_correctness
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_POLITICAL  }
  		available_if_capitulated = yes
  		completion_reward = {
@@ -489,7 +489,7 @@
  		x = 0
  		y = 1
  		relative_position_id = spr_indoctrination_focus
- 		cost = 7.2
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_POLITICAL }
  		available_if_capitulated = yes
  		completion_reward = {

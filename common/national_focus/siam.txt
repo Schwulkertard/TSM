@@ -21,7 +21,7 @@ focus_tree = {
 		x = 4
 		y = 0
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 0
@@ -58,7 +58,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_of_the_king
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -75,7 +75,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_promote_songsuradet
 
-		cost = 7.2
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -92,7 +92,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_promote_songsuradet
 
-		cost = 7.2
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -111,7 +111,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_to_absolutism
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -131,7 +131,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_guarantee_army_loyalty
         search_filters = { FOCUS_FILTER_MANPOWER }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -151,7 +151,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_to_absolutism
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -171,7 +171,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_curtail_noble_power
         search_filters = { FOCUS_FILTER_POLITICAL }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -207,7 +207,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_to_absolutism
 
-		cost = 7.2
+		cost = 10
         available = {
             590 = {		
                 CONTROLLER = { 					
@@ -271,7 +271,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_thai_legacy
 
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 2
 		}
@@ -297,7 +297,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_reform_the_administration
         search_filters = { FOCUS_FILTER_INDUSTRY }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -319,7 +319,7 @@ focus_tree = {
 		x = 12
 		y = 0
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 15
@@ -338,7 +338,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_khana_ratsadon
         search_filters = { FOCUS_FILTER_STABILITY }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 6
@@ -356,7 +356,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_songsuradet_rebellion
         search_filters = { FOCUS_FILTER_POLITICAL }
-		cost = 7.2
+		cost = 10
 		
 		ai_will_do = {
 			factor = 11
@@ -376,7 +376,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_songsuradet_rebellion
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 20
@@ -411,7 +411,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_rise_of_phibun
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -431,7 +431,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_solidify_the_dictatorship
         search_filters = { FOCUS_FILTER_MANPOWER }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -454,7 +454,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_rise_of_phibun
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 8
@@ -504,7 +504,7 @@ focus_tree = {
 			factor = 1
 		}
         
-		cost = 7.2
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -537,7 +537,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_rise_of_phibun
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 6
@@ -557,7 +557,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_curb_civilian_wing
         search_filters = { FOCUS_FILTER_POLITICAL }
-		cost = 7.2
+		cost = 10
 		
 
 		ai_will_do = {
@@ -578,7 +578,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SIA_prepare_for_expansion
         search_filters = { FOCUS_FILTER_INDUSTRY }
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 4000
@@ -596,7 +596,7 @@ focus_tree = {
 		x = 19
 		y = 0
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -635,7 +635,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_industrialization_development
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 11
@@ -673,7 +673,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_agricultural_mechanization
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 11
@@ -784,7 +784,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_industrialization_development
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -822,7 +822,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_defense_industry
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -859,7 +859,7 @@ focus_tree = {
 		y = 1
 		relative_position_id =  SIA_rapid_urbanization
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 11
@@ -903,7 +903,7 @@ focus_tree = {
         y = 1
         relative_position_id = SIA_arms_production
 
-        cost = 7.2   
+        cost = 10   
 
         ai_will_do = {
             factor = 9
@@ -944,7 +944,7 @@ focus_tree = {
         y = 1
         relative_position_id = SIA_invite_japanese_investors
 
-        cost = 7.2
+        cost = 10
 
         ai_will_do = {
             factor = 20
@@ -963,7 +963,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_research_slot
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -1001,7 +1001,7 @@ focus_tree = {
 			factor = 80
 		}
         
-        cost = 7.2
+        cost = 10
         available = {
 			has_war=yes
            590 = {		
@@ -1180,7 +1180,7 @@ focus_tree = {
 			factor = 80
 		}
         
-        cost = 7.2
+        cost = 10
         available = {
 			has_war=yes
             controls_state = 275
@@ -1295,7 +1295,7 @@ focus_tree = {
         y = 1
         relative_position_id = SIA_vietnamese_tungsten
         search_filters = { FOCUS_FILTER_INDUSTRY }
-        cost = 7.2
+        cost = 10
 
 		ai_will_do = {
 			factor = 4000
@@ -1671,7 +1671,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_expand_bangkok_naval_base
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -1701,7 +1701,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_expand_bangkok_naval_base
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -1730,7 +1730,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_destroyer_effort
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1759,7 +1759,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_submarine_effort
 
-		cost = 7.2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

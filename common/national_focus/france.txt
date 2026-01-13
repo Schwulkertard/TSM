@@ -940,7 +940,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 75
@@ -1025,7 +1025,7 @@ focus_tree = {
 			
 		}
 		relative_position_id = FRA_economic_devolution
-		cost = 7.2
+		cost = 10
 		available = {
 			num_of_factories > 120
 		}
@@ -2490,7 +2490,7 @@ focus_tree = {
 			focus = FRA_resources
 		}
 		relative_position_id = FRA_resources
-		cost = 7.2
+		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2511,7 +2511,7 @@ focus_tree = {
 			focus = FRA_arty1
 		}
 		relative_position_id = FRA_arty1
-		cost = 7.2
+		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
