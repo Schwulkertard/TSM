@@ -4079,9 +4079,9 @@ tank_reliability_variant_upgrade_desc:0 "Improving reliability leads to less bro
  USA_ship_hull_super_heavy_1:0 "Virginia Class"
  USA_ship_hull_super_heavy_2:0 "Montana Class"
 
-
-
-
-
-
-
+ USA_ship_hull_cruiser_panzerschiff:0 "Alaska Class"
+ ENG_ship_hull_cruiser_panzerschiff:0 "Admiral Class"
+ GER_ship_hull_cruiser_panzerschiff:0 "P Class"
+ JAP_ship_hull_cruiser_panzerschiff:0 "B-65 Class"
+ FRA_ship_hull_cruiser_panzerschiff:0 "Dunkerque Class"
+ ITA_ship_hull_cruiser_panzerschiff:0 "Costanzo Ciano Class"

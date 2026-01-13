@@ -9,6 +9,7 @@ equipments = {
  		can_license = no
 		is_archetype = yes
 		is_convertable = yes
+		carrier_capable = yes
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = fighter
@@ -2285,7 +2286,10 @@ cv_small_plane_airframe = {
 
 		can_be_produced = {
 		}
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		is_archetype = yes
 		is_convertable = yes
 		carrier_capable = yes
@@ -2326,21 +2330,14 @@ cv_small_plane_airframe = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
+					nav_aircraft
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
+				required = yes
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
 				}
 			}
 
@@ -2348,35 +2345,39 @@ cv_small_plane_airframe = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					twin_plane_engine_type
 				}
 			}
 
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
+					plane_special_module_fuel_injection_s
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_fuel_injection_s
 				}
 			}
 		}
-
+        module_count_limit = {
+			category = plane_ammunition
+			count < 2
+		}
 		module_count_limit = {
 			module = guided_anti_ship_missile
 			count < 2
@@ -2392,6 +2393,15 @@ cv_small_plane_airframe = {
 			count < 2
 		}
 
+		module_count_limit = {
+			category = plane_special_module_fuel_injection_s
+			count < 2
+		}
+		module_count_limit = {
+			category = special_bombs
+			count < 3
+		}
+		
 		module_count_limit = {
 			module = non_strategic_materials_small
 			count < 2
@@ -2413,27 +2423,18 @@ cv_small_plane_airframe = {
 		}
 
 		module_count_limit = {
-			module = tank_buster_1
-			count < 3
-		}
-
-		module_count_limit = {
-			module = tank_buster_2
+			category = cas_weapon
 			count < 2
 		}
 
 		module_count_limit = {
-			module = small_bomb_bay
-			count < 3
+			module = floats
+			count < 2
 		}
 
-		module_count_limit = {
-			module = floats #can't put floats on carrier planes, that would be silly
-			count < 1
-		}
 
 		module_count_limit = {
-			module = recon_camera
+			module = plane_easy_maintenance
 			count < 2
 		}
 
@@ -2466,6 +2467,10 @@ cv_small_plane_airframe = {
 			category = plane_special_module_defense_turret
 			count < 2
 		}
+		module_count_limit = {
+			module =  armor_plate_small
+			count < 2
+		}
 
 		default_modules = {
 			fixed_main_weapon_slot = empty
@@ -2480,7 +2485,10 @@ cv_small_plane_airframe = {
 		abbreviation = "afc0"
 		derived_variant_name = cv_fighter_equipment_0
 		year = 1933
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		module_slots = inherit
 		priority = 5
@@ -2498,7 +2506,10 @@ cv_small_plane_airframe = {
 		abbreviation = "afc1"
 		derived_variant_name = cv_fighter_equipment_1
 		year = 1936
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_0
 		priority = 5
@@ -2519,53 +2530,58 @@ cv_small_plane_airframe = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
+					nav_aircraft
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
 				}
 			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					twin_plane_engine_type
 				}
 			}
 
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_ammunition
+					plane_special_module_small
+					plane_special_module_fuel_injection_s
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 		}
@@ -2574,7 +2590,10 @@ cv_small_plane_airframe = {
 		abbreviation = "afc2"
 		derived_variant_name = cv_fighter_equipment_2
 		year = 1939
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_1
 		priority = 5
@@ -2595,81 +2614,73 @@ cv_small_plane_airframe = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
+					nav_aircraft
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
+				required = yes
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					twin_plane_engine_type
-					plane_jet_engine_type
-					twin_plane_jet_engine_type
+					plane_rocket_engine_type
 				}
 			}
 
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
+		}
+		default_modules = {
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection_s
+			fixed_auxiliary_weapon_slot_3 = radio_navigation_1
 		}
 	}
 
@@ -2677,7 +2688,10 @@ cv_small_plane_airframe = {
 		abbreviation = "afc3"
 		derived_variant_name = cv_fighter_equipment_3
 		year = 1942
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_2
 		priority = 5
@@ -2698,95 +2712,89 @@ cv_small_plane_airframe = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
 					nav_bomber_weapon
-					kamikaze_bomber_weapon
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
-
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
-					cas_weapon
+					fighter_weapon
 				}
 			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					twin_plane_engine_type
 					plane_jet_engine_type
-					twin_plane_jet_engine_type
+					plane_rocket_engine_type
 				}
 			}
 
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					plane_ammunition
 					plane_special_module_small
-					plane_special_module_defense_turret
-					plane_special_module_bomb_sights
+					plane_special_module_fuel_injection_s
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
+		}
+		default_modules = {
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2_s
+			fixed_auxiliary_weapon_slot_4 = radio_navigation_2
 		}
 	}
 
 	cv_small_plane_airframe_4 = { #modern
 		abbreviation = "afc4"
 		year = 1945
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_3
 		priority = 5

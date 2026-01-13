@@ -260,7 +260,7 @@ equipment_modules = {
  		multiply_stats = {
 			naval_speed = -0.01
 			reliability = -0.03
-			naval_heavy_gun_hit_chance_factor = 0.25
+			naval_heavy_gun_hit_chance_factor = 0.3
 			hg_attack = 0.04
  		}
  		add_average_stats = {
@@ -414,16 +414,19 @@ equipment_modules = {
 		    ship_12_battery 
 		}
  		add_stats = {
- 			hg_attack = 14
+ 			hg_attack = 15
  			build_cost_ic = 750
  		}
  		multiply_stats = {
  			naval_speed = -0.05
 			hg_armor_piercing = 0.33
-			naval_heavy_gun_hit_chance_factor = 0.1
+			naval_heavy_gun_hit_chance_factor = 0.33
  		}
  		add_average_stats = {
- 			hg_armor_piercing = 11
+ 			hg_armor_piercing = 12
+ 		}
+		build_cost_resources = {
+ 			steel = 5
  		}
  		critical_parts = { damaged_heavy_guns }
  	}
@@ -442,9 +445,13 @@ equipment_modules = {
  		multiply_stats = {
  			naval_speed = -0.06
 			hg_armor_piercing = 0.5
+			naval_heavy_gun_hit_chance_factor = 0.5
  		}
  		add_average_stats = {
  			hg_armor_piercing = 12
+ 		}
+		build_cost_resources = {
+ 			steel = 5
  		}
  		critical_parts = { damaged_heavy_guns }
  	}

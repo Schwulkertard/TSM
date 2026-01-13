@@ -19,7 +19,6 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -0.2
 	naval_strike = -0.2
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
@@ -45,7 +44,6 @@ weather_blizzard = { # on Region
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -0.2
 	naval_strike = -0.2
 	air_accidents = 0.3
 	air_bombing_targetting = -0.7
@@ -150,7 +148,6 @@ german_OWK_plan = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -0.4
 	air_bombing_targetting = -0.5
 	naval_retreat_speed = 0.1
 }
@@ -503,12 +500,11 @@ water_modifier_shark_infested = {
 
 screening_bonus = {
 	naval_retreat_speed = 0.2
-	naval_hit_chance = 0.4
 }
 
 capital_screening_bonus = {
 	naval_retreat_speed = 0.2
-	sortie_efficiency = 0.1
+	sortie_efficiency = 0.2
 }
 
 country_is_at_peace = {

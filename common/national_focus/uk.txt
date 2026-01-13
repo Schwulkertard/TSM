@@ -135,7 +135,7 @@ focus_tree = {
 			clamp_variable = {
 				var = ENG.shadow_civs2
 				min = 0
-				max = 90
+				max = 120
 			}
 			divide_variable={ENG.shadow_civs2=3}
 			set_variable={ENG.shadow_civs3=ENG.shadow_civs2}
@@ -165,44 +165,53 @@ focus_tree = {
 		}
  		completion_reward = {
 			custom_effect_tooltip = ENG_shadow_debug_tt
-			hidden_effect = { ENG = { ENG_shadow_debug_calc = yes } }
-			for_each_scope_loop = {
-				array = ENG.starting_core_states
-		
-				add_to_variable= {ENG.shadow_civs2=industrial_complex_level}
-			}
-			subtract_from_variable={ENG.shadow_civs2=ENG.shadow_civs1}
-			clamp_variable = {
-				var = ENG.shadow_civs2
-				min = 0
-				max = 90
-			}
-			divide_variable={ENG.shadow_civs2=3}
-			set_variable={ENG.shadow_civs3=ENG.shadow_civs2}
-			round_variable=ENG.shadow_civs2
-			if={
-				limit={
-					check_variable = {
-						var = ENG.shadow_civs3
-						value = ENG.shadow_civs2
-						compare = less_than
+			hidden_effect = { ENG_shadow_debug_calc = yes }
+			ENG = {
+				set_variable = { var = shadow_civs2 value = 0 }
+
+				for_each_scope_loop = {
+					array = ENG.starting_core_states
+
+					set_temp_variable = { var = tmp_civs value = industrial_complex_level }
+
+					ROOT = {
+						add_to_variable = { var = shadow_civs2 value = temp:tmp_civs }
 					}
 				}
-				subtract_from_variable={ENG.shadow_civs2=1}
-			
-			}
-			for_loop_effect = {
-				end = ENG.shadow_civs2
-				ENG={random_owned_controlled_state= {
-					limit= {is_core_of=ENG}
-					add_extra_state_shared_building_slots=1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}	
+
+				subtract_from_variable = { var = shadow_civs2 value = var:shadow_civs1 }
+
+				clamp_variable = { var = shadow_civs2 min = 0 max = 120 }
+
+				multiply_variable = { var = shadow_civs2 value = 2 }
+				divide_variable   = { var = shadow_civs2 value = 5 }
+
+				set_variable   = { var = shadow_civs3 value = var:shadow_civs2 }
+				round_variable = shadow_civs2
+				if = {
+					limit = {
+						check_variable = {
+							var = shadow_civs3
+							value = var:shadow_civs2
+							compare = less_than
+						}
+					}
+					subtract_from_variable = { var = shadow_civs2 value = 1 }
 				}
-			}}
+
+				for_loop_effect = {
+					end = var:shadow_civs2
+					random_owned_controlled_state = {
+						limit = { is_core_of = ENG }
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
  	}
 	focus = {
