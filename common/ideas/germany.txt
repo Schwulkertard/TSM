@@ -275,7 +275,6 @@ ideas = {
 			modifier = {
 				air_cas_present_factor = 0.1
 				agency_upgrade_time = -0.30
-				sortie_efficiency = -1
 			}
 		}
 		GER_air_innovations_2_idea = {

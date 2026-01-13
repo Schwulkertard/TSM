@@ -757,7 +757,7 @@ equipments = {
  		max_strength = 275
 		armor_value = 12
  		resources = {
- 			steel = 30
+ 			steel = 15
  		}
  		module_slots = {
  			fixed_ship_battery_slot = {
