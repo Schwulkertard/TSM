@@ -45,4 +45,5 @@ sub_unit_categories = {
 	category_carrier_cas
 	category_carrier_nav_bomber
 	category_maritime_patrol_bomber
+	category_medium_maritime_patrol_bomber
 }

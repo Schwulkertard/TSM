@@ -48,12 +48,10 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					#recon_camera
-                    motor_cannon
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-					tank_buster_weapon
 				}
 			}
 
@@ -86,6 +84,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_fuel_injection_s
+					
 				}
 			}
 
@@ -99,16 +98,13 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_fuel_injection_s
+					
 				}
 			}
 		}
         module_count_limit = {
 			category = plane_ammunition
 			count < 2
-		}
-        module_count_limit = {
-			category = motor_cannon
-			count < 3
 		}
 		module_count_limit = {
 			module = guided_anti_ship_missile
@@ -270,7 +266,6 @@ equipments = {
 					nav_bomber_weapon
 					special_bombs
 					kamikaze_bomber_weapon
-					tank_buster_weapon
 				}
 			}
 
@@ -297,6 +292,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 
@@ -310,6 +306,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 			special_type_slot_3 = {
@@ -322,6 +319,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 		}
@@ -357,9 +355,9 @@ equipments = {
 					#recon_camera
 					fighter_weapon
 					cas_weapon
+					special_bombs
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-					tank_buster_weapon
 				}
 			}
 
@@ -400,6 +398,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 
@@ -413,6 +412,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 
@@ -426,6 +426,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 		}
@@ -465,12 +466,11 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					#recon_camera
-                    motor_cannon
 					fighter_weapon
 					cas_weapon
+					special_bombs
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
-					tank_buster_weapon
 				}
 			}
 
@@ -522,6 +522,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 
@@ -535,6 +536,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 			special_type_slot_3 = {
@@ -547,6 +549,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_bomb_sights
+					
 				}
 			}
 		}
@@ -586,9 +589,9 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					#recon_camera
-                    motor_cannon
 					fighter_weapon
 					cas_weapon
+					special_bombs
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 				}
@@ -650,6 +653,7 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					
 				}
 			}
 
@@ -663,6 +667,7 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					
 				}
 			}
 			special_type_slot_3 = {
@@ -675,6 +680,7 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
+					
 				}
 			}
 		}
@@ -787,6 +793,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
+					
 				}
 			}
 
@@ -799,6 +806,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
+					
 				}
 			}
 			special_type_slot_3 = {
@@ -810,6 +818,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
+					
 				}
 			}
 
@@ -822,6 +831,7 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
+					
 				}
 			}
 		}
@@ -854,6 +864,7 @@ equipments = {
 			tactical_bomber
 			fighter
 			scout_plane
+			medium_maritime_patrol_plane
 			#cas
 			#naval_bomber
 		}
@@ -1023,10 +1034,6 @@ equipments = {
 			module = torpedo_mounting
 			count < 2
 		}
-		module_count_limit = {
-			module = tank_buster
-			count < 3
-		}
 
 		module_count_limit = {
 			module = demining_coil
@@ -1133,6 +1140,7 @@ equipments = {
 					recon_camera
 					#cas_weapon
 					#nav_bomber_weapon
+					nav_bomber_weapon
 				}
 			}
 
@@ -1762,11 +1770,6 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = non_strategic_materials_large
-			count < 2
-		}
-
-		module_count_limit = {
 			module = flying_boat_large
 			count < 2
 		}
@@ -1879,6 +1882,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					strat_weapon
+					nav_bomber_weapon
 				}
 			}
 
@@ -1886,7 +1890,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
                     strat_weapon
-										
+					nav_bomber_weapon	
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 

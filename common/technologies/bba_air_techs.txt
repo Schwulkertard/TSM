@@ -112,10 +112,6 @@ technologies = {
 			small_plane_cas_airframe_0
 			small_plane_naval_bomber_airframe_0
 			small_plane_suicide_airframe_0
-			cv_small_plane_airframe_0
-			cv_small_plane_cas_airframe_0
-			cv_small_plane_naval_bomber_airframe_0
-			cv_small_plane_suicide_airframe_0
 		}
 		
 	
@@ -163,10 +159,6 @@ technologies = {
 			small_plane_cas_airframe_1
 			small_plane_naval_bomber_airframe_1
 			small_plane_suicide_airframe_1
-			cv_small_plane_airframe_1
-			cv_small_plane_cas_airframe_1
-			cv_small_plane_naval_bomber_airframe_1
-			cv_small_plane_suicide_airframe_1
 		}
 	
 		path = {
@@ -233,10 +225,6 @@ technologies = {
 			small_plane_cas_airframe_2
 			small_plane_naval_bomber_airframe_2
 			small_plane_suicide_airframe_2
-			cv_small_plane_airframe_2
-			cv_small_plane_cas_airframe_2
-			cv_small_plane_naval_bomber_airframe_2
-			cv_small_plane_suicide_airframe_2
 		}
 	
 		path = {
@@ -305,10 +293,6 @@ technologies = {
 			small_plane_cas_airframe_3
 			small_plane_naval_bomber_airframe_3
 			small_plane_suicide_airframe_3
-			cv_small_plane_airframe_3
-			cv_small_plane_cas_airframe_3
-			cv_small_plane_naval_bomber_airframe_3
-			cv_small_plane_suicide_airframe_3
 		}
 		
 		path = {
@@ -476,6 +460,7 @@ technologies = {
 			medium_plane_airframe_0
 			medium_plane_fighter_airframe_0
 			medium_plane_scout_plane_airframe_0
+			medium_plane_maritime_patrol_plane_airframe_0
 		}
 
 		path = {
@@ -511,6 +496,7 @@ technologies = {
 			medium_plane_airframe_1
 			medium_plane_fighter_airframe_1
 			medium_plane_scout_plane_airframe_1
+			medium_plane_maritime_patrol_plane_airframe_1
 		}
 	
 		path = {
@@ -570,6 +556,7 @@ technologies = {
 			medium_plane_airframe_2
 			medium_plane_fighter_airframe_2
 			medium_plane_scout_plane_airframe_2
+			medium_plane_maritime_patrol_plane_airframe_2
 		}
 	
 		path = {
@@ -627,6 +614,7 @@ technologies = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
+			medium_plane_maritime_patrol_plane_airframe_3
 		}
 		
 		path = {
@@ -1019,6 +1007,7 @@ technologies = {
 		enable_equipment_modules = {
 			bomb_locks
 			medium_bomb_bay
+			armor_piercing_bomb_locks
 		}
 		
 		research_cost = 0.5

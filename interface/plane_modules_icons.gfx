@@ -18,7 +18,13 @@ spriteTypes = {
 ###################################################
 
 
-		#### MODULES ####
+	#### MODULES ####
+
+	spriteType = {
+		name = "GFX_EMI_armor_piercing_bomb_locks"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_armor_piercing_bomb_locks_icon.dds"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_EMI_ammunition_1"

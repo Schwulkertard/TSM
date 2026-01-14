@@ -157,7 +157,7 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01
 NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.3 --vanilla 0.2
 ---Air
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.015 -- vanilla 0.05
-NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 10    -- same as above but used inside naval combat for carrier battles
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 5.0    -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 2          -- how often carrier planes do battle inside naval combat
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 0.55
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20

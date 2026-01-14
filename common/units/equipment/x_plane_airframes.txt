@@ -120,6 +120,14 @@ duplicate_archetypes = {
 		forbid_mission_type = training
 	}
 
+	medium_plane_maritime_patrol_plane_airframe = {
+		archetype = medium_plane_airframe
+		type = medium_maritime_patrol_plane
+		sprite = light_plane
+		air_map_icon_frame = 8
+		interface_overview_category_index = 3
+	}
+
 	# large_plane
 
 	large_plane_maritime_patrol_plane_airframe = {
