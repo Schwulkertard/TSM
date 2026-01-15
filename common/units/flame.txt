@@ -1,3 +1,4 @@
+
 sub_units = {
 	light_flame_tank = {
 		abbreviation = "LFT"

@@ -11,7 +11,6 @@ sub_units = {
 		type = {
 			infantry
 			support
-			flame
 		}
 
 		group = support
@@ -69,7 +68,7 @@ sub_units = {
 			infantry_equipment = 10
 			support_equipment = 30
 		}
-		same_support_type = flame
+		same_support_type = engineer
 
 		can_be_parachuted = yes
 
@@ -313,8 +312,8 @@ sub_units = {
 		
 		
 		battalion_mult = {
-			category = category_light_infantry
-			breakthrough = 0.1
+			category = category_army
+			breakthrough = 0.05
 		}
 
 				

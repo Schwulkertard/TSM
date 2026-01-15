@@ -198,6 +198,7 @@ technologies = {
 	
 		
 	infantry_weapons = {
+		additional_brigade_column_size = 2
 		enable_equipments = {
 			infantry_equipment_0
 		}
@@ -251,15 +252,19 @@ technologies = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = improved_infantry_weapons
+			research_cost_coeff = 1
+		}
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1938
 		categories = {
-			year_1936
+			year_1938
 		}
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = 4}
 		}
 		categories = {
 			infantry_weapons
@@ -297,7 +302,6 @@ technologies = {
 			soft_attack = 0.05
 		}
 		path = {
-			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
@@ -308,7 +312,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1938 }
+			position = { x = 2 y = 4 }
 		}
 		categories = {
 			infantry_weapons
@@ -335,19 +339,24 @@ technologies = {
 			leads_to_tech = improved_infantry_weapons_2
 			research_cost_coeff = 1
 		}
+		
 		path = {
-			leads_to_tech = infantry_at
+			leads_to_tech = advanced_infantry_weapons
+			research_cost_coeff = 1
+		}
+		path = {
+			infantry_equipment_2
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1939
+		start_year = 1940
 		categories = {
-			year_1939
+			year_1940
 		}
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = 8 }
 		}
 		categories = {
 			infantry_weapons
@@ -377,23 +386,19 @@ technologies = {
 	}
 	improved_infantry_weapons_2 = {
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.075
 		}
 		cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.075
 		}
 		motorized = {
-			soft_attack = 0.05
+			soft_attack = 0.075
 		}
 		mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.075
 		}
 		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
-		path = {
-			leads_to_tech = advanced_infantry_weapons
-			research_cost_coeff = 1
+			soft_attack = 0.075
 		}
 		research_cost = 2
 		start_year = 1940
@@ -403,7 +408,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1940 }
+			position = { x = 2 y = @1940 }
 		}
 		categories = {
 			infantry_weapons
@@ -434,14 +439,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1943
 		categories = {
-			year_1942
+			year_1943
 		}
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 0 y = @1943 }
 		}
 		categories = {
 			infantry_weapons
@@ -468,14 +473,14 @@ technologies = {
 			ap_attack = 1
 		}
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1944
 		categories = {
-			year_1943
+			year_1944
 		}
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 0 y = @1944 }
 		}
 		categories = {
 			infantry_weapons
@@ -502,6 +507,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = advanced_infantry_weapons2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = infantry_at
 			research_cost_coeff = 1
 		}
 		research_cost = 2
@@ -535,7 +544,7 @@ technologies = {
 	}
 	advanced_infantry_weapons2 = {
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		cavalry = {
 			soft_attack = 0.1
@@ -554,7 +563,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1944 }
+			position = { x = 2 y = @1942 }
 		}
 		categories = {
 			infantry_weapons

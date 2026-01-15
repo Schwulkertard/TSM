@@ -586,7 +586,7 @@ exercise_decisions = {
             always = yes
 		}
         fire_only_once = no
-		days_remove = 365
+		days_remove = 180
         remove_effect = {
             add_mastery = {
 				amount = 50
@@ -613,7 +613,7 @@ exercise_decisions = {
             always = yes
 		}
         fire_only_once = no
-		days_remove = 365
+		days_remove = 180
         remove_effect = {
             add_mastery = {
 				amount = 50
@@ -634,13 +634,13 @@ exercise_decisions = {
 			always = yes
 		}
         available = {
-            command_power > 100
+            command_power > 99
         }
         visible = {
             always = yes
 		}
         fire_only_once = no
-		days_remove = 365
+		days_remove = 180
         remove_effect = {
             add_mastery = {
 				amount = 50
@@ -667,7 +667,7 @@ exercise_decisions = {
             always = yes
 		}
         fire_only_once = no
-		days_remove = 365
+		days_remove = 180
         remove_effect = {
             add_mastery = {
 				amount = 50

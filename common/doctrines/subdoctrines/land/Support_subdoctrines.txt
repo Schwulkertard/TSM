@@ -42,28 +42,57 @@ mobile_recon_and_assault = {
     rewards = {
 
         motorization_support = {
-            category_mobile_and_mobile_combat_sup = {
-                maximum_speed = 0.1
-                default_morale = 0.2
+            category_support_battalions = {
+                max_organisation= 10
+                default_morale = 0.1
             }
 
         }
         long_range_reconnaissance = {
-            category_recon = {
-                maximum_speed = 0.15
+            armored_car_recon = {
+                desert = {
+                    attack = 0.03
+                }
+                hills = {
+                    attack = 0.03
+                }
+           light_tank_recon = {
+                forest = {
+                    attack = 0.03
+                }
+                hills = {
+                    attack = 0.03
+                }
+            }
             }
         }
         mobile_operational_deployments = {
-            light_tank_recon = {
+            armored_signal = {
                 battalion_mult = {
                     category = category_all_armor
-                    breakthrough = 0.1
+                    breakthrough = 0.05
+                }   
+            }
+            armored_maintenance = { 
+                battalion_mult = {
+                    category = category_all_armor
+                    max_strength = 0.05
+                    add = yes
                 }
             }
-            mot_artillery_brigade = {
-                soft_attack = 0.05
+            assault_engineer = {
+                battalion_mult = {
+                category = category_army
+                breakthrough = 0.05
+                }
             }
-
+            armored_engineer = {
+                river = {
+                    attack = 0.03 
+                    defence = 0.06 
+                    movement = 0.1 
+                }
+            }
         }
         self_propelled_support_elements = {
             category_self_propelled_artillery = {
@@ -352,7 +381,7 @@ armored_infantry_support = {
             hardness = 0.05
         }
     #TODO jack look if you can make a script effect for production bonuses
-
+        
     rewards = {
         mobile_reserves = {
         #1
@@ -383,10 +412,6 @@ armored_infantry_support = {
             }
         }
         mobile_armored_strongpoints = {
-        #5
-            category_tanks = {
-                breakthrough = 0.1
-            }
         }
     }
 }
