@@ -24,7 +24,7 @@ set_technology = {
     engine_tech_1 = 1
 	fuel_silos = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
+	#infantry_weapons1= 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	mtg_transport = 1
@@ -80,7 +80,7 @@ add_equipment_to_stockpile = {
 	producer = ROM
 }
 add_equipment_to_stockpile = {
-	type = infantry_equipment_1
+	type = infantry_equipment_0
 	amount = 10000
 	producer = ROM
 }

@@ -6,7 +6,7 @@ set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
+	#infantry_weapons1= 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -19,7 +19,7 @@ add_ideas = peace_training
 add_ideas = neutrality_idea1
 
 add_equipment_to_stockpile = {
-	type = infantry_equipment_1
+	type = infantry_equipment_0
 	amount = 60000
 	producer = GER
 }

@@ -7,7 +7,7 @@ set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
+	#infantry_weapons1= 1
 	tech_support = 1
 	tech_recon = 1
 	basic_train = 1
@@ -22,7 +22,7 @@ add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
 
 add_equipment_to_stockpile = {
-	type = infantry_equipment_1
+	type = infantry_equipment_0
 	amount = 13500
 }
 add_equipment_to_stockpile = {
