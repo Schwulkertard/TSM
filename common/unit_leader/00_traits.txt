@@ -2229,6 +2229,16 @@ leader_traits = {
 		}
 	}
 
+	Bemitleidenswert = {
+		
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
 	trait_SPA_falangist_loyalties = {
 
 		type = all

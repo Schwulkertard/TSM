@@ -113,7 +113,7 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 			}
-			name=SPA_jose_enrique_varela
+			name="DesertRoad"
 			portraits={
 				army={
 					large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
@@ -142,7 +142,7 @@ characters={
 			}
 
 			corps_commander={
-				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader panzer_leader trait_engineer trickster hill_fighter }
+				traits={ Bemitleidenswert organizer infantry_leader panzer_leader trait_engineer trickster hill_fighter }
 				skill=6
 				attack_skill=5
 				defense_skill=4

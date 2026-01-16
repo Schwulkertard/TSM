@@ -1,8 +1,10 @@
 capital = 48
 oob = "BUL_1936"
-set_research_slots = 4
+set_research_slots = 3
 add_ideas = {
 	limited_conscription
+	BUL_second_national_catastrophe
+	BUL_imro_01
 }
 add_ideas = peace_training
 set_variable = {
@@ -65,8 +67,15 @@ recruit_character = BUL_vladimir_stoychev
 recruit_character = BUL_stoyan_trendafilov
 recruit_character = BUL_trifon_trifonov
 recruit_character = BUL_ferdinand_kozovski
+recruit_character = BUL_dimitrana_ivanova
+recruit_character = BUL_valko_chervenkov
+recruit_character = BUL_stefan_stefanov
+recruit_character = BUL_konstantin_muraviev
+recruit_character = BUL_stoycho_mushanov
+recruit_character = BUL_nikola_mihov
+recruit_character = BUL_asen_nikolov
 
-set_stability = 0.7
+set_stability = 0.6
 set_war_support = 0.60
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
@@ -82,8 +91,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 5
-	fascism = 35
-	neutrality = 60
+	communism = 10
+	fascism = 30
+	neutrality = 55
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1

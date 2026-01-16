@@ -47,6 +47,27 @@ leader_traits = {
 	civilian_industrial_theorist = {
           
 	}
+
+	## BULGARIA ###
+	tsar_unifier = { #Tsar Boris III
+		random = no
+		stability_weekly_factor = 0.003
+	}
+
+	brilliant_researcher = {
+		random = no
+		research_speed_factor = 0.15
+	}
+
+	master_recruiter = {
+		random = no
+		weekly_manpower = 1000
+	}
+
+	gold_digger = {
+		random = no
+		consumer_goods_expected_value = 0.02
+	}
 	
 	### HUNGARY ###
 	HUN_the_regent = {

@@ -24,15 +24,17 @@ new_fleet_in_being = {
 
     # EFFECTS
 	battleship = {
-		max_organisation = 15			
+		max_organisation = 20			
 	}
-	navy_capital_ship_defence_factor = 0.1
+
+    battle_cruiser = {
+        max_organisation = 20
+    }
 	
     milestones = {
         {
-            #Capital Ships
-			mines_planting_by_fleets_factor = 0.2
-			convoy_escort_efficiency = 0.15
+            #Submarines
+            submarine_attack = 5
             effect = {
                 if = {
                     limit = {
@@ -48,8 +50,13 @@ new_fleet_in_being = {
             }
         }
         {
-            #Carriers
-	        navy_capital_ship_attack_factor = 0.1
+            #Screens
+            light_cruiser = {
+                lg_attack = 0.1
+            }
+            heavy_cruiser = {
+                lg_attack = 0.1
+            }
 
             effect = {
                 if = {
@@ -66,8 +73,10 @@ new_fleet_in_being = {
             }
         }
         {
-            #Screens
-			navy_anti_air_attack_factor = 0.10
+            #Carriers
+			carrier = {
+                max_strength = 0.1
+            }
 
             effect = {
                 if = {
@@ -84,9 +93,18 @@ new_fleet_in_being = {
             }
         }
         {
-            #Submarines
-	        naval_torpedo_reveal_chance_factor = -0.05
-			strike_force_movement_org_loss = -0.2
+            #Capital Ships
+            battleship = {
+                hg_attack = 0.05
+            }
+            battle_cruiser = {
+                hg_attack = 0.05
+            }
+            heavy_cruiser = {
+                hg_attack = 0.05
+            }
+            naval_retreat_speed = -0.25
+            naval_retreat_chance_after_initial_combat = -0.25
 
             effect = {
                 if = {
@@ -113,6 +131,9 @@ new_convoy_raiding = {
     icon = GFX_doctrine_trade_interdiction_medium
     available = {
         always = yes
+    }
+    visible = {
+        always = no
     }
 
     xp_cost = 0
@@ -253,12 +274,12 @@ new_base_strike = {
 	carrier = {
 		max_organisation = 20
 	}
-	port_strike = 0.4
+	port_strike = 0.25
 	
     milestones = {
         {
             #Capital Ships
-			convoy_escort_efficiency = 0.15
+			naval_torpedo_reveal_chance_factor = -0.10
 
             effect = {
                 if = {
@@ -276,8 +297,17 @@ new_base_strike = {
         }
         {
             #Carriers
-	        naval_strike_targetting_factor = 0.1
-			naval_torpedo_reveal_chance_factor = -0.10
+            destroyer = {
+                maximum_speed = 0.05
+            }
+
+            light_cruiser = {
+                maximum_speed = 0.05
+            }
+
+            heavy_cruiser = {
+                maximum_speed = 0.05
+            }
 
             effect = {
                 if = {
@@ -295,8 +325,9 @@ new_base_strike = {
         }
         {
             #Screens
-			carrier_capacity_penalty_reduction = -0.1
-			naval_detection = 0.05
+			carrier = {
+                naval_speed = 0.1
+            }
 
             effect = {
                 if = {
@@ -314,9 +345,15 @@ new_base_strike = {
         }
         {
             #Submarines
-	        sortie_efficiency = 0.30
-			naval_strike_targetting_factor = 0.1
-			navy_carrier_air_agility_factor = 0.10
+            battle_cruiser = {
+                reliability = 0.1
+            }
+            battleship = {
+                reliability = 0.1
+            }
+            heavy_cruiser = {
+                reliability = 0.1
+            }
 
             effect = {
                 if = {

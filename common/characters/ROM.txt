@@ -1,9 +1,12 @@
 characters={
 	ROM_gheorghe_tatarescu={
-		name=ROM_gheorghe_tatarescu
+		name="Simon"
 		portraits={
 			civilian={
 				large="gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
+			}
+			army = {
+				small = "GFX_idea_ROM_rizen"
 			}
 		}
 		advisor={

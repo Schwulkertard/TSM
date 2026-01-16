@@ -38,15 +38,15 @@ NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20 -- Each carrier above the opt
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_BASE = 10                             -- base scoring for target picking for planes inside naval combat based on screening efficency, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_BASE = 5
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_BASE = 50
-NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_BASE = 200
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_BASE = 250
 NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_BASE = 1.0
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCALE = 10                             -- scaled scoring for target picking for planes inside naval combat, max value when zero screening efficency, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_SCALE = 10
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCALE = 10
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCALE = 10
 NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCALE = 1.0
-NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5                         -- how much score factor from low health (scales between 0->this number)
-NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5                           -- how much score factor from low AA guns (scales between 0->this number)
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 10                         -- how much score factor from low health (scales between 0->this number)
+NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 2.5                           -- how much score factor from low AA guns (scales between 0->this number)
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.1									-- base chance for hit
 NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.03									-- never less hit chance then this?
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
@@ -61,7 +61,9 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 		3.0,	-- torpedos
 		1.0,	-- small guns
 	}
-
+NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = 0.0 --vanilla -0.9
 
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
@@ -87,7 +89,7 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.5									-- hidden subs get faster e
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 NDefines.NNavy.DETECTION_CHANCE_MULT_AIR_SUPERIORITY_BONUS = 0.2
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.33 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.3 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
@@ -154,7 +156,7 @@ NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of conv
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01
-NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.3 --vanilla 0.2
+NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.5 --vanilla 0.2
 ---Air
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.015 -- vanilla 0.05
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 5.0    -- same as above but used inside naval combat for carrier battles
@@ -163,9 +165,10 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 0.55
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.2
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.6		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 7 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 1.0
 NDefines.NAir.CARRIER_COMBAT_DAMAGE_STATS_MULTIPLIER = 0.5
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.4
 -- Having Naval Dominance will provide the following benefits:
 NDefines.NNavy.CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = true				-- If an enemy control a sea region, consider that region as blocked
 NDefines.NNavy.NAVAL_DOMINANCE_STRIKE_FORCE_FRACTION = 0.0006					-- How much dominance points goes into one percent of the multiplier from strike force missions. ( e.g. a taskforce of 1000 dominance generates a 60% multiplier ) 

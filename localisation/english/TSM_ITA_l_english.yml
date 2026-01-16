@@ -210,10 +210,6 @@
 
  ITA_demand_balearic_islands_desc:0 "Having proven our support for Franco's new regime, we are in a position to request one of the important territories we fought to defend, the Balearic Islands, be ceded to Italy to strengthen our strategic hold of the Mediterranean."
 
- ITA_bulgaria_friend:0 "Pact of Steel"
-
- ITA_bulgaria_friend_desc:0 "Our relationship with Nazi Germany is troubled by ideological differences and conflicting aims; Il Duce is extremely wary of German ambitions in Austria and the Balkans. However, realities do change..."
-
  ITA_albania_war_goal:1 "Albanian Occupation"
 
  ITA_albania_war_goal_desc:1 "Albania paints an easy target for our troops to occupy. We are unlikely to be met with much resistance. We must show the world the might of Italy and restore the glory of the Roman Empire!"
@@ -313,5 +309,7 @@
  ITA_dockyard_building:0 "Expand Naval Facilities"
 
  ITA_hitler_visit:0 "Hitler Visits Rome"
+
+ ITA_germany_friend:0 "Befriend Germany"
 
  ITA_pugliese_tt:0 "§G Enables Module §YPugliese System§!"

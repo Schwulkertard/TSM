@@ -994,7 +994,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = ITA_bulgaria_friend
+		id = ITA_germany_friend
 		icon = GFX_focus_generic_german_trade
 		prerequisite = { focus = ITA_triumph_in_africa }
 		x = 2
@@ -1075,13 +1075,13 @@ focus = {
 	focus = {
 		id = ITA_german_rd_treaty
 		icon = GFX_focus_ITA_pact_of_steel
-		prerequisite = { focus = ITA_bulgaria_friend }
+		prerequisite = { focus = ITA_germany_friend }
 		available = {
 			date > 1939.6.1
 		}
 		x = 0
 		y = 1
-		relative_position_id = ITA_bulgaria_friend
+		relative_position_id = ITA_germany_friend
 		cost = 5
 		ai_will_do = {
 			factor = 1
