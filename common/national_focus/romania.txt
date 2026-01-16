@@ -500,11 +500,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
+		bypass = {
+			NOT = {
+				controls_state = 76
+			}
+		}
 		available = {
 		}
 		completion_reward = {
 			set_global_flag = rom_no_partition
-			custom_effect_tooltip = "TODO: cannot lose north transylvania or dobrudja"
+			custom_effect_tooltip = ROM_prevent_partition_tt
 		}
 	}
 	focus = {

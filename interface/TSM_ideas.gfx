@@ -4757,8 +4757,14 @@ spriteTypes = {
 		name = "GFX_idea_USA_free_thai_movement"
 		texturefile = "gfx/interface/ideas/USA_free_thai.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ROM_rizen"
+		texturefile = "gfx/interface/ideas/ROM_rizen.dds"
+	}
 
-
-
+	spriteType = {
+		name = "GFX_idea_SOV_mo"
+		texturefile = "gfx/interface/ideas/SOV_mo.dds"
+	}
 
 }

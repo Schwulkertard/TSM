@@ -16,7 +16,7 @@ characters = {
 			}
 			country_leader = {
 				ideology = despotism
-				traits = { tsar_unifier }
+				traits = { }
 				expire = "1965.1.1"
 				id = -1
 			}
@@ -54,7 +54,7 @@ characters = {
 			}
 			country_leader = {
 				ideology = fascism_ideology
-				traits = { hardened_officer }
+				traits = { }
 				expire = "1966.1.1.1"
 				id = -1
 			}
@@ -97,6 +97,25 @@ characters = {
 		}
 	}
 
+	BUL_nikola_mihov = {
+		name = BUL_nikola_mihov
+		portraits = {
+			army = {
+				large = "GFX_portrait_bul_nikola_mihov"
+				small = GFX_portrait_BUL_nikola_mihov_small
+			}
+		}
+		field_marshal = {
+			traits = { career_officer organizer fortress_buster }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 1201
+		}
+	}
+
 	BUL_asen_nikolov = {
 		instance = {
 			allowed = {
@@ -110,18 +129,18 @@ characters = {
 				}
 			}
 			corps_commander = {
-				traits = { career_officer infantry_officer }
-				skill = 2
-				attack_skill = 2
+				traits = { career_officer }
+				skill = 5
+				attack_skill = 4
 				defense_skill = 2
-				planning_skill = 2
+				planning_skill = 3
 				logistics_skill = 3
 				legacy_id = 1207
 			}
 		}
 	}
 
-		BUL_kiril_dimitrov_yanchulev = {
+	BUL_kiril_dimitrov_yanchulev = {
 			instance = {
 				allowed = {
 					has_dlc = "Battle for the Bosporus"
@@ -200,7 +219,7 @@ characters = {
 				available = {
 				}
 				traits = {
-					army_commando_3
+					army_commando_2
 				}
 				cost = 100
 				ai_will_do = {
@@ -329,22 +348,110 @@ characters = {
 		}
 	}
 
-	BUL_georgi_dimitrov = {
+	BUL_stoycho_mushanov = {
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_stoycho_mushanov
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_illusions_of_a_non_partisan_system
+			}
+			traits = {
+				industrial_genius 
+			}
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		name = BUL_stoycho_mushanov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_stoycho_mushanov"
+			}
+		}
+	}
+
+	BUL_konstantin_muraviev = {
 		instance = {
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
 			}
-			name = BUL_georgi_dimitrov
-			portraits = {
-				civilian = {
-					large = "GFX_portrait_bul_georgi_dimitrov"
+			advisor = {
+				slot = political_advisor
+				idea_token = BUL_konstantin_muraviev
+				allowed = {
+					has_dlc = "Battle for the Bosporus"
+					original_tag = BUL
+				}
+				available = {
+				}
+				traits = {
+					popular_figurehead 
+				}
+				ai_will_do = {
+					base = 1.000
 				}
 			}
-			country_leader = {
-				ideology = stalinism
-				traits = { the_hero_of_the_leipzig_trials }
-				expire = "1965.1.1"
-				id = -1
+			name = BUL_konstantin_muraviev
+			portraits = {
+				army = {
+					small = "GFX_idea_bul_konstantin_muraviev"
+				}
+			}
+		}
+	}
+
+	BUL_stefan_stefanov = {
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_stefan_stefanov
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_freedom_of_press
+			}
+			traits = {
+				brilliant_researcher 
+			}
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		name = BUL_stefan_stefanov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_stefan_stefanov"
+			}
+		}
+	}
+
+	BUL_valko_chervenkov = {
+		advisor = {
+			slot = political_advisor
+			idea_token = BUL_valko_chervenkov
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_promote_bulgarian_nationalism
+			}
+			traits = {
+				master_recruiter 
+			}
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		name = BUL_valko_chervenkov
+		portraits = {
+			army = {
+				small = "GFX_idea_bul_valko_chervenkov"
 			}
 		}
 	}
@@ -394,7 +501,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_leader ranger trait_mountaineer }
+			traits = { infantry_leader trait_mountaineer }
  	skill = 5
  	attack_skill = 5
  	defense_skill = 3

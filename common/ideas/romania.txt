@@ -158,7 +158,7 @@ ideas = {
 			}
 			modifier = {
 				war_support_weekly = 0.005
-				recruitable_population_factor = 0.2
+				conscription_factor = 0.1
 			}
 		}
 		ROM_outdated_doctrine = {
