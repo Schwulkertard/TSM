@@ -107,354 +107,6 @@ sp_land_flamethrower_tank = {
  #     #  #       #       #    #  #  #    #  #       #  #    #    #        #     #  #   #   #    #  #    #  #   #   #       #    #        # #    #       #    #  #  #    #  #       #       #    # 
   #####   #       ######   ####   #  #    #  ######  #   ####     #        #     #  #    #  #    #   ####   #    #  ######  #####          #     ######  #    #  #   ####   ######  ######   ####  
                                                                                                                                                                                                 
-sp_land_armor_1 = {
-	specialization = specialization_land
-
-	project_tags = sp_tag_tank
-	
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-	resource_cost = {
-		resources = { 
-			steel = 50
-		}
-	}
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	
-	project_output = {
-		enable_equipment_modules = {
-			armor_skirts
-		}
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = armor_tech_2_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_armor_tech_1
-		sp_land_generic_reward_armor_tech_2
-		sp_land_generic_reward_armor_tech_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
-sp_land_armor_2 = {
-	specialization = specialization_land
-
-	project_tags = sp_tag_tank
-	
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	special_project_parent = {
-		sp_land_armor_1
-	}
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	resource_cost = {
-		resources = { 
-			steel = 50
-		}
-	}	
-	project_output = {
-		
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = armor_tech_3_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_armor_tech_1
-		sp_land_generic_reward_armor_tech_2
-		sp_land_generic_reward_armor_tech_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
-sp_land_armor_3 = {
-	specialization = specialization_land
-
-	project_tags = sp_tag_tank
-	
-	special_project_parent = {
-		sp_land_armor_2
-	}
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	
-	project_output = {
-		
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = armor_tech_4_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_armor_tech_1
-		sp_land_generic_reward_armor_tech_2
-		sp_land_generic_reward_armor_tech_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
-sp_land_engine_1 = {
-	specialization = specialization_land
-
-	project_tags = sp_tag_tank
-	
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-	resource_cost = {
-		resources = { 
-			steel = 50
-		}
-	}
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	
-	project_output = {
-		enable_equipment_modules = {
-			tank_diesel_engine
-			tank_diesel_engine_L
-			tank_diesel_engine_H
-			tank_diesel_engine_SH
-		}	
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = engine_tech_2_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_engine_bonus_1
-		sp_land_generic_reward_engine_bonus_2
-		sp_land_generic_reward_engine_bonus_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
-sp_land_engine_2 = {
-	specialization = specialization_land
-
-	special_project_parent = {
-		sp_land_engine_1
-	}
-	project_tags = sp_tag_tank
-	
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-	resource_cost = {
-		resources = { 
-			steel = 50
-		}
-	}
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	
-	project_output = {
-	enable_subunits = {
-			amphibious_mechanized
-		}
-		enable_equipment_modules = {
-			amphibious_drive
-		}
-		
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = engine_tech_3_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_engine_bonus_1
-		sp_land_generic_reward_engine_bonus_2
-		sp_land_generic_reward_engine_bonus_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
-sp_land_engine_3 = {
-	specialization = specialization_land
-	special_project_parent = {
-		sp_land_engine_2
-	}
-	project_tags = sp_tag_tank
-	
-	available = {
-		#FROM = {
-		#	has_tech = tech_engineers
-		#}
-	}
-	resource_cost = {
-		resources = { 
-			steel = 50
-		}
-	}
-	prototype_time = sp_time.prototype.short
-
-	complexity = sp_complexity.small
-
-	breakthrough_cost = {
-		specialization_land = 1
-	}
-	
-	project_output = {
-		enable_equipment_modules = {
-			tank_petrol_electric_engine
-			tank_petrol_electric_engine_L
-			tank_petrol_electric_engine_H
-			tank_petrol_electric_engine_SH
-		}	
-
-		
-
-		country_effects = {
-
-			
-			custom_effect_tooltip = engine_tech_4_tt
-		}
-	}
-
-	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_engine_bonus_1
-		sp_land_generic_reward_engine_bonus_2
-		sp_land_generic_reward_engine_bonus_3
-		sp_land_generic_reward_resource_scarcity
-	}
-}
 sp_land_tungsten_core_ammunition = {
 	specialization = specialization_land
 
@@ -509,77 +161,77 @@ sp_land_tungsten_core_ammunition = {
 		sp_land_generic_reward_critical_failure
 	}
 }
-# sp_land_military_engineering_vehicles = {
-	# specialization = specialization_land
+ sp_land_military_engineering_vehicles = {
+	 specialization = specialization_land
 
-	# project_tags = sp_tag_tank
+	 project_tags = sp_tag_tank
 	
-	# available = {
-		# FROM = {
-			# has_tech = tech_engineers
-		# }
-	# }
+	 available = {
+		 FROM = {
+			 has_tech = tech_engineers
+		 }
+	 }
 	
-	# prototype_time = sp_time.prototype.short
+	 prototype_time = sp_time.prototype.short
 
-	# complexity = sp_complexity.small
+	 complexity = sp_complexity.small
 
-	# breakthrough_cost = {
-		# specialization_land = 1
-	# }
+	 breakthrough_cost = {
+		 specialization_land = 1
+	 }
 	
-	# project_output = {
-		# enable_equipments = {
-			# armored_support_vehicle_1
-		# }
+	 project_output = {
+		 enable_equipments = {
+			 armored_support_vehicle_1
+		 }
 
-		# enable_subunits = {
-			# assault_engineer
-		# }
+		 enable_subunits = {
+			 assault_engineer
+		 }
 
-		# country_effects = {
+		 country_effects = {
 
-			# custom_effect_tooltip = {
-				# localization_key = SP_UNLOCK_TECH
-				# TECH = sp_armored_engineer_tech
-			# }
-			# custom_effect_tooltip = {
-				# localization_key = SP_UNLOCK_TECH
-				# TECH = sp_armored_maintenance_tech
-			# }
-			# custom_effect_tooltip = {
-				# localization_key = SP_UNLOCK_TECH
-				# TECH = sp_armored_signal_tech
-			# }
-			# custom_effect_tooltip = {
-				# localization_key = SP_UNLOCK_TECH
-				# TECH = sp_armored_motorized_military_police_tech
-			# }
-		# }
-	# }
+			 custom_effect_tooltip = {
+				 localization_key = SP_UNLOCK_TECH
+				 TECH = sp_armored_engineer_tech
+			 }
+			 custom_effect_tooltip = {
+				 localization_key = SP_UNLOCK_TECH
+				 TECH = sp_armored_maintenance_tech
+			 }
+			 custom_effect_tooltip = {
+				 localization_key = SP_UNLOCK_TECH
+				 TECH = sp_armored_signal_tech
+			 }
+			 custom_effect_tooltip = {
+				 localization_key = SP_UNLOCK_TECH
+				 TECH = sp_armored_motorized_military_police_tech
+			 }
+		 }
+	 }
 
-	# generic_prototype_rewards = {
-		# sp_land_generic_reward_scientist_xp_1
-		# sp_land_generic_reward_scientist_xp_2
-		# sp_land_generic_reward_scientist_xp_3
-		# sp_land_generic_reward_army_xp_1
-		# sp_land_generic_reward_army_xp_2
-		# sp_land_generic_reward_army_xp_3
-		# sp_land_generic_reward_major_progress_1
-		# sp_land_generic_reward_major_progress_2
-		# sp_land_generic_reward_major_progress_3
-		# sp_land_generic_reward_test_failure_1
-		# sp_land_generic_reward_test_failure_2
-		# sp_land_generic_reward_test_failure_3
-		# sp_land_generic_reward_armor_tech_1
-		# sp_land_generic_reward_armor_tech_2
-		# sp_land_generic_reward_armor_tech_3
-		# sp_land_generic_reward_engine_bonus_1
-		# sp_land_generic_reward_engine_bonus_2
-		# sp_land_generic_reward_engine_bonus_3
-		# sp_land_generic_reward_resource_scarcity
-	# }
-# }
+	 generic_prototype_rewards = {
+		 sp_land_generic_reward_scientist_xp_1
+		 sp_land_generic_reward_scientist_xp_2
+		 sp_land_generic_reward_scientist_xp_3
+		 sp_land_generic_reward_army_xp_1
+		 sp_land_generic_reward_army_xp_2
+		 sp_land_generic_reward_army_xp_3
+		 sp_land_generic_reward_major_progress_1
+		 sp_land_generic_reward_major_progress_2
+		 sp_land_generic_reward_major_progress_3
+		 sp_land_generic_reward_test_failure_1
+		 sp_land_generic_reward_test_failure_2
+		 sp_land_generic_reward_test_failure_3
+		 sp_land_generic_reward_armor_tech_1
+		 sp_land_generic_reward_armor_tech_2
+		 sp_land_generic_reward_armor_tech_3
+		 sp_land_generic_reward_engine_bonus_1
+		 sp_land_generic_reward_engine_bonus_2
+		 sp_land_generic_reward_engine_bonus_3
+		 sp_land_generic_reward_resource_scarcity
+	 }
+ }
 
 
 
