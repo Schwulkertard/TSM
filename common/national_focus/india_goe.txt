@@ -4291,49 +4291,6 @@ focus = {
     }
     
    
-
-    focus = {
-        id = RAJ_indian_air_force
-        icon = GFX_goal_generic_build_airforce
-        #prerequisite = { focus =  }
-        x = 8
-        y = 0
-        relative_position_id = RAJ_military_pensions
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-            add_dynamic_modifier = {
-                modifier = idea_RAJ_indian_air_force
-            }
-            set_variable = {
-                var = RAJ_indian_air_force_xp_gain
-                value = 0.2
-                tooltip = experience_gain_air_tt  #Optional. localized text with LEFT and RIGHT tokens in it, tokens will replaced by values
-            }
-
-        }
-    }
-    
-
     focus = {
         id = RAJ_cordite_factory_aruvankadu_tamil_nadu
         icon = GFX_goal_generic_construct_mil_factory
@@ -4383,301 +4340,6 @@ focus = {
         }
     }
 
-    focus = {
-        id = RAJ_womens_auxiliary_air_force
-        icon = GFX_focus_SOV_women_in_aviation
-        prerequisite = { focus = RAJ_indian_air_force }
-        x = -2
-        y = 1
-        relative_position_id = RAJ_indian_air_force
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-
-
-        completion_reward = {
-            
-            custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
-            set_variable = {
-                var = RAJ_indian_air_air_accidents_factor
-                value = -0.15
-                tooltip = air_accidents_factor_tt  
-            }
-        }
-    }
-    
-
-    focus = {
-        id = RAJ_trainer_planes
-        icon = GFX_focus_generic_air_bases
-        prerequisite = { focus = RAJ_indian_air_force }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_indian_air_force
-        
-        cost = 10
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-            custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
-            set_variable = {
-                var = RAJ_indian_air_training_xp_gain_factor
-                value = 0.15
-                tooltip = air_training_xp_gain_factor_tt  
-            }
-
-            set_variable = {
-                var = RAJ_indian_air_mission_xp_gain_factor
-                value = 0.15
-                tooltip = air_mission_xp_gain_factor_tt  #Optional. localized text with LEFT and RIGHT tokens in it, tokens will replaced by values
-            }
-
-
-
-        }
-    }
-
-    focus = {
-        id = RAJ_spitfire
-        icon = GFX_goal_generic_air_fighter2
-        prerequisite = { focus = RAJ_trainer_planes }
-        x = -2
-        y = 1
-        relative_position_id = RAJ_trainer_planes
-        
-        cost = 10
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-
-            air_experience = 25
-            add_tech_bonus = {
-                name = RAJ_spitfire
-                bonus = 1
-                uses = 1
-                category = light_fighter
-            }
-            if = {
-                limit = {
-                    has_dlc = "Arms Against Tyranny"
-                }
-
-                mio:RAJ_supermarine_organization = {
-                    add_mio_size = 1
-                }
-            }
-        }
-    }
-    
-
-    focus = {
-        id = RAJ_ground_pounder
-        icon = GFX_focus_SWE_marauder_bombers
-        prerequisite = { focus = RAJ_trainer_planes }
-        x = 2
-        y = 1
-        relative_position_id = RAJ_trainer_planes
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-
-
-        completion_reward = {
-            custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
-            set_variable = {
-                var = RAJ_indian_air_air_cas_present_factor
-                value = 0.1
-                tooltip = air_cas_present_factor_tt  
-            }
-
-            set_variable = {
-                var = RAJ_indian_air_air_cas_efficiency
-                value = 0.05
-                tooltip = air_cas_efficiency_tt  
-            }
-        }
-    }
-    
-
-    focus = {
-        id = RAJ_douglas_dakota
-        icon = GFX_goal_generic_air_bomber
-        prerequisite = { focus = RAJ_trainer_planes }
-        x = 4
-        y = 1
-        relative_position_id = RAJ_trainer_planes
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH}
-
-        completion_reward = {
-            add_tech_bonus = {
-                name = RAJ_douglas_dakota
-                bonus = 1
-                uses = 1
-                category = transport_planes_cat # optional 
-            }
-
-            if = {
-                limit = {
-                    has_dlc = "By Blood Alone"
-                }
-                add_tech_bonus = {
-                    name = RAJ_douglas_dakota
-                    uses = 1
-                    ahead_reduction = 2
-                    technology  = bba_strategic_airlifter # optional
-                }
-            }
-
-            else = {
-                add_tech_bonus = {
-                    name = RAJ_douglas_dakota
-                    uses = 1
-                    ahead_reduction = 2
-                    technology  = strategic_airlifter # optional
-                }
-            }
-        }
-    }
-    
-
-    focus = {
-        id = RAJ_vultee_vengeance
-        icon = GFX_focus_generic_cas_aircraft
-        prerequisite = { focus = RAJ_ground_pounder  }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_ground_pounder
-        
-        cost = 10
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-            if = {
-                limit = {
-                    has_dlc = "By Blood Alone"
-                }
-
-                add_tech_bonus = {
-                    name = RAJ_spitfire
-                    bonus = 1
-                    uses = 1
-                    category = cat_air_bombs
-                }
-            }
-            else = {
-                air_experience = 60
-            }
-
-            custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
-            set_variable = {
-                var = RAJ_indian_air_air_agility_factor
-                value = 0.08
-                tooltip = air_agility_factor_tt  
-            }
-        }
-    }
     
 
     focus = {
@@ -4730,92 +4392,16 @@ focus = {
         }
     }
 
-    focus = {
-        id = RAJ_long_range_escorts
-        icon = GFX_focus_generic_multi_role_aircraft
-        prerequisite = { focus = RAJ_trainer_planes }
-        x = 2
-        y = 0
-        relative_position_id = RAJ_spitfire
         
-        cost = 5
 
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-            air_experience = 25
-            add_tech_bonus = {
-                name = RAJ_long_range_escorts
-                bonus = 1
-                uses = 1
-                category = cat_heavy_fighter
-            }
-
-        }
-    }
     
-
-    focus = {
-        id = RAJ_british_air_experts
-        icon = GFX_focus_generic_air_partners
-        prerequisite = { focus = RAJ_spitfire focus = RAJ_long_range_escorts }
-        x = 1
-        y = 1
-        relative_position_id = RAJ_spitfire
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_AIR_XP}
-
-        completion_reward = {
-            custom_effect_tooltip = idea_RAJ_indian_air_force_modify_tt
-            add_to_variable = {
-                var = RAJ_indian_air_force_xp_gain
-                value = 0.3
-                tooltip = experience_gain_air_tt  #Optional. localized text with LEFT and RIGHT tokens in it, tokens will replaced by values
-            }
-        }
-    }
-
     focus = {
         id = RAJ_special_operations_executive
         icon = GFX_focus_generic_paratrooper 
         prerequisite = { focus = RAJ_british_air_experts }
         x = -1
         y = 1
-        relative_position_id = RAJ_british_air_experts
+        relative_position_id = RAJ_purchase_british_supply_equipment
         
         cost = 5
 
@@ -4944,7 +4530,7 @@ focus = {
         prerequisite = { focus = RAJ_british_air_experts }
         x = 1
         y = 1
-        relative_position_id = RAJ_british_air_experts
+        relative_position_id = RAJ_purchase_british_supply_equipment
         
         cost = 5
 
@@ -4981,9 +4567,9 @@ focus = {
         icon = GFX_goal_generic_navy_doctrines_tactics
         #prerequisite = { focus = RAJ_expand_mazagon_dock_dlc
         #focus = RAJ_found_scindia_shipyard_dlc }
-        x = 8
+        x = -12
         y = 0
-        relative_position_id = RAJ_indian_air_force
+        relative_position_id = RAJ_his_majestys_loyal_government
 
         cost = 5
 
