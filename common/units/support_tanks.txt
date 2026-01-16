@@ -22,7 +22,7 @@ sub_units = {
 			category_tanks
 			category_all_armor
 			category_army
-			support_tanks
+			category_support_tanks
 		}
 
 		combat_width = 0
@@ -109,7 +109,7 @@ sub_units = {
 			category_tanks
 			category_all_armor
 			category_army
-			support_tanks
+			category_support_tanks
 		}
 
 		combat_width = 0
@@ -194,7 +194,7 @@ sub_units = {
 			category_tanks
 			category_all_armor
 			category_army
-			support_tanks
+			category_support_tanks
 		}
 
 		combat_width = 0
@@ -273,7 +273,7 @@ sub_units = {
 			category_tanks
 			category_all_armor
 			category_army
-			support_tanks
+			category_support_tanks
 		}
 
 		combat_width = 0
