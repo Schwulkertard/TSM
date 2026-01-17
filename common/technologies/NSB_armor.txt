@@ -664,6 +664,10 @@ technologies = {
 			leads_to_tech = improved_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
+        path = {
+			leads_to_tech = heavy_tank_detachment_tech
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1939
 		categories = {
@@ -703,6 +707,43 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
+	heavy_tank_detachment_tech = {
+			is_special_project_tech = yes
+
+    		allow = {
+    	 		has_completed_subdoctrine = armored_infantry_support
+    		}
+    
+    		is_special_project_tech = yes
+    
+    		force_use_small_tech_layout = yes
+    		show_equipment_icon = yes
+    
+    		research_cost = 1.0
+    		start_year = 1940
+    		folder = {
+    			name = nsb_armour_folder
+    			position = { x = 6 y = 7 }
+    		}
+    
+    		categories = {
+    			support_tech
+    		}
+    
+    		enable_subunits = {
+    			heavy_tank_detachment
+    		}
+    
+    
+    		ai_will_do = {
+    			base = 2
+    
+    			modifier = {
+    				factor = 2
+    				is_major = yes
+    			}
+    		}
+   	}
 	improved_heavy_tank_chassis = { #Tiger
 		enable_equipments = {
 			heavy_tank_chassis_2
