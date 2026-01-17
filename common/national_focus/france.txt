@@ -505,7 +505,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_appeal_to_the_french_nation }
 		mutually_exclusive = { }
 		relative_position_id = FRA_appeal_to_the_french_nation
-		cost = 2.9
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -940,7 +940,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		x = 1
 		y = 1
-		cost = 10
+		cost = 7.2
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 75
@@ -1225,11 +1225,46 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_freedom_front
 		}
+		available = {
+			date >  1939.7.1
+		}
 		relative_position_id = FRA_freedom_front
 		cost = 5
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			466 = {
+			add_extra_state_shared_building_slots = 30
 			
+		}
+		687 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		688 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		686 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		480 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		693 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		691 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		690 = {
+			add_extra_state_shared_building_slots = 30
+			
+		}
+		
 		}
 	}
 	focus = {
@@ -1316,10 +1351,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
 			custom_effect_tooltip = "This focus will automatically bypass when the idea Worker Strikes expires"
-			swap_ideas = {
-					remove_idea = worker_strikes
-					add_idea = fourty_hour_work_week
-				}
+					remove_ideas = worker_strikes
+					add_ideas = fourty_hour_work_week
 		}
 	}
 	focus = {
