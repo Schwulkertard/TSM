@@ -758,7 +758,7 @@ characters={
 		name=USA_chester_w_nimitz
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Chester_W_Nimitz.dds"
+				large="gfx/leaders/USA/Portrait_USA_Chester_Nimitz.png"
 			}
 			army={
 				small="GFX_idea_chester_nimitz"

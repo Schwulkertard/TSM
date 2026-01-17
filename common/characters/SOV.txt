@@ -278,7 +278,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_aleksandr_vasilevsky"
-				large = "GFX_portrait_SOV_aleksandr_vasilevsky"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Vasilevsky.dds"
 			}
 		}
 		corps_commander = {
@@ -370,7 +370,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_ivan_konev"
-				large = "GFX_portrait_SOV_ivan_konev"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Ivan_Konev.dds"
 			}
 		}
 		advisor = {

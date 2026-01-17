@@ -435,3 +435,4 @@ recruit_character = ENG_ernest_bevin
 recruit_character = ENG_george_giffard
 recruit_character = ENG_leslie_hore_belisha
 recruit_character = ENG_nevile_henderson
+recruit_character = ENG_charles_forbes

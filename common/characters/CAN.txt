@@ -59,7 +59,7 @@ characters={
 		name=CAN_thomas_victor_anderson
 		portraits={
 			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				large="gfx/leaders/CAN/Portrait_Canada_Thomas_Victor_Anderson.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
 			}
 		}
@@ -78,7 +78,7 @@ characters={
 		name=CAN_charles_foulkes
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="gfx/leaders/CAN/Portrait_Canada_Charles_Foulkes.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
 			}
 		}
@@ -97,7 +97,7 @@ characters={
 		name=CAN_percival_john_montague
 		portraits={
 			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				large="gfx/leaders/CAN/Portrait_Canada_Percival_John_Montague.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 			}
 		}
@@ -116,7 +116,7 @@ characters={
 		name=CAN_bert_hoffmeister
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="gfx/leaders/CAN/Portrait_Canada_Bert_Hoffmeister.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
 			}
 		}
