@@ -11,22 +11,18 @@ country_event = {
 	immediate = {
 		HUN = {
 			transfer_state = 45
-			transfer_state = 678
 		}
 		if = {
 			limit = {country_exists = BUL }
 			77 = {remove_core_of = ROM}
 			BUL = {
 				transfer_state = 106
-				transfer_state = 649
 				transfer_state = 177
-				transfer_state = 77
 			}
 		}
 		else = {
 			ITA = {
 				transfer_state = 106
-				transfer_state = 649
 				transfer_state = 177
 			}
 		}
@@ -37,11 +33,11 @@ country_event = {
 			transfer_state = 109
 			transfer_state = 104
 			transfer_state = 105
-			transfer_state = 108
-			transfer_state = 107
 			transfer_state = 178
 			transfer_state = 47
 			transfer_state = 179
+			transfer_state = 747
+			transfer_state = 748
 		}
 		#}
 		# if = {
@@ -63,8 +59,12 @@ country_event = {
 		# }
 		# }
 		GER = {
+			transfer_state = 649
 			transfer_state = 102
 			transfer_state = 715
+			transfer_state = 108
+			transfer_state = 107
+			transfer_state = 678
 			if={
 				limit={
 					175={

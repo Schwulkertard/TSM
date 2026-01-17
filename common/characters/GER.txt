@@ -39,7 +39,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ defensive_doctrine offensive_doctrine infantry_leader organizer }
+			traits={ defensive_doctrine infantry_leader organizer }
 			skill=6
 			attack_skill=5
 			defense_skill=4
@@ -257,8 +257,8 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader organizer trickster trait_engineer swamp_fox }
-			skill=6
+			traits={ inflexible_strategist infantry_leader organizer trickster trait_engineer swamp_fox }
+			skill=7
 			attack_skill=5
 			defense_skill=5
 			planning_skill=3
@@ -277,7 +277,7 @@ characters={
 		}
 		corps_commander={
 			traits={ harsh_leader infantry_leader naval_invader trickster }
-			skill=6
+			skill=5
 			attack_skill=5
 			defense_skill=4
 			planning_skill=4
@@ -334,7 +334,7 @@ characters={
 		}
 		corps_commander={
 			traits={ trickster brilliant_strategist panzer_leader panzer_expert trickster ranger trait_engineer }
-			skill=8
+			skill=6
 			attack_skill=5
 			defense_skill=4
 			planning_skill=4
@@ -352,7 +352,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader infantry_leader naval_invader trickster }
+			traits={ harsh_leader infantry_leader commando trickster }
 			skill=6
 			attack_skill=5
 			defense_skill=4
@@ -505,7 +505,7 @@ characters={
 		}
 		corps_commander={
 			traits={ trickster brilliant_strategist panzer_leader panzer_expert trickster ranger trait_engineer }
-			skill=8
+			skill=6
 			attack_skill=5
 			defense_skill=4
 			planning_skill=4
@@ -559,10 +559,10 @@ characters={
 			}
 		}		
 		corps_commander={
-			traits = { harsh_leader infantry_leader naval_invader trickster trait_mountaineer }
-			skill=6
+			traits = { inflexible_strategist infantry_leader commando trickster trait_mountaineer }
+			skill=7
 			attack_skill=5
-			defense_skill=4
+			defense_skill=6
 			planning_skill=4
 			logistics_skill=2
 			legacy_id=32

@@ -8,9 +8,6 @@ state={
  		victory_points = {
  			3674 3
  		}
- 		victory_points = {
- 			10492 1
- 		}
  		buildings = {
  			infrastructure = 5
  			dockyard = 1
@@ -25,7 +22,7 @@ state={
  		add_core_of = YUG
  	}
  	provinces={
- 		556 930 3378 3628 3674 3715 6115 6381 10492 10724 10792
+ 		556 930 3378 3628 3674 3715 6115 6381 10724 10792
  	}
  }
 

@@ -934,7 +934,7 @@ focus_tree = {
 	focus = {
 		id = ENG_a_s_warfare
 		prerequisite = { focus = uk_destroyer_focus }
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_ENG_a_s_warfare
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
@@ -1010,7 +1010,7 @@ focus_tree = {
 	focus = {
 		id = ENG_anti_submarine_training_school
 		prerequisite = { focus = uk_destroyer_focus }
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_ENG_anti_submarine_training_school
 		x = 1
 		y = 1
 		offset = {
@@ -1827,7 +1827,7 @@ focus_tree = {
 		available = {
 		}
 		relative_position_id = ENG_steady_as_she_goes
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_ENG_reinforce_the_empire
 		x = 3
 		y = 1
 		offset = {

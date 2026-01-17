@@ -10,7 +10,7 @@ state={
  		add_core_of = YUG
  	}
  	provinces={
- 		584 3393 3399 8830 8841
+ 		584 3393 3399 8830 8841 6175
  	}
  	manpower=838621
  	buildings_max_level_factor=1.000

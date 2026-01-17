@@ -257,9 +257,9 @@ characters={
 			traits = { inflexible_strategist infantry_leader trickster desert_fox}
 	skill = 5
 	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 5
 			legacy_id=0
 		}
 	}
@@ -273,7 +273,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { trait_reckless panzer_leader desert_fox }
+			traits = { trait_reckless panzer_leader }
 	skill = 4
 	attack_skill = 5
 	defense_skill = 3
@@ -311,11 +311,12 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=4
+			traits = { trait_reckless panzer_leader desert_fox }
+			skill=6
+			attack_skill=6
+			defense_skill=2
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=1001
 		}
 	}
@@ -783,7 +784,7 @@ characters={
 		
 		navy_leader={
 			traits = { blockade_runner superior_tactician }
-	skill = 5
+	skill = 7
 	attack_skill = 6
 	defense_skill = 4
 	maneuvering_skill = 5
@@ -802,7 +803,7 @@ characters={
 		}
 		navy_leader={
 			traits = { naval_lineage blockade_runner }
-	skill = 4
+	skill = 5
 	attack_skill = 3
 	defense_skill = 2
 	maneuvering_skill = 6

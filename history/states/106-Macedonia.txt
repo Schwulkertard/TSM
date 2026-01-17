@@ -15,10 +15,10 @@ state={
  			3640 5
  		}
  		add_core_of = YUG
- 		add_core_of = BUL
+ 		add_claim_by = BUL
  	}
  	provinces={
- 		864 923 3599 3626 3640 6379 10738 10758 10759 10767
+ 		864 923 3599 3626 3640 6379 10738 10759 10767
  	}
  	manpower=1374200
  	buildings_max_level_factor=1.000

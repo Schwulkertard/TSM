@@ -120,6 +120,21 @@ spriteTypes = {
 	name = "GFX_crusader"
 	texturefile = "gfx/interface/goals/crusader.tga"			
 	}
+
+	SpriteType = {
+	name = "GFX_ENG_reinforce_the_empire"
+	texturefile = "gfx/interface/goals/ENG_reinforce_the_empire.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_ENG_anti_submarine_training_school"
+	texturefile = "gfx/interface/goals/ENG_anti_submarine_training_school.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_ENG_a_s_warfare"
+	texturefile = "gfx/interface/goals/ENG_a_s_warfare.dds"			
+	}
 	################################################
 	#GER
 	SpriteType = {
@@ -150,6 +165,21 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_SOV_german_soviet_background"
 	texturefile = "gfx/interface/goals/SOV_german_soviet_background.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_GER_bulwark_against_bolshevism"
+	texturefile = "gfx/interface/goals/GER_bulwark_against_bolshevism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_GER_strengthen_the_kriegsmarine"
+	texturefile = "gfx/interface/goals/GER_strengthen_the_kriegsmarine.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_GER_the_second_naval_race"
+	texturefile = "gfx/interface/goals/GER_the_second_naval_race.dds"			
 	}
 	################################################
 	#FRA
@@ -218,6 +248,16 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_SOV_armour_development"
 	texturefile = "gfx/interface/goals/SOV_armour_development.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_desperate_measures"
+	texturefile = "gfx/interface/goals/SOV_desperate_measures.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_victory_over_devastation"
+	texturefile = "gfx/interface/goals/SOV_victory_over_devastation.dds"			
 	}
 	################################################
 	#ITA
@@ -697,7 +737,11 @@ spriteTypes = {
 	name = "GFX_USA_liberty_ships"
 	texturefile = "gfx/interface/goals/USA/USA_liberty_ships.dds"			
 	}
-
+	
+	SpriteType = {
+	name = "GFX_USA_womens_armed_service_integration_act"
+	texturefile = "gfx/interface/goals/USA/USA_womens_armed_service_integration_act.dds"			
+	}
 	################
 	##PLACEHOLDER###
 	################

@@ -202,7 +202,7 @@ characters = {
 
 		corps_commander = {
 			traits = { winter_specialist winter_expert armor_officer trait_cautious brilliant_strategist panzer_leader panzer_expert ranger }
-			skill = 6
+			skill = 8
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 3
@@ -283,7 +283,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { winter_specialist winter_expert armor_officer politically_connected infantry_leader organizer }
-			skill = 4
+			skill = 6
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 3
@@ -335,9 +335,9 @@ characters = {
 
 		corps_commander = {
 			traits = { winter_specialist winter_expert trait_cautious infantry_leader }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
@@ -355,7 +355,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { winter_specialist winter_expert infantry_officer trait_reckless infantry_leader trait_engineer }
-			skill = 4
+			skill = 5
 			attack_skill = 4
 			defense_skill = 3
 			planning_skill = 3
@@ -549,7 +549,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { winter_specialist winter_expert infantry_leader infantry_expert trickster }
-			skill = 4
+			skill = 6
 			attack_skill = 3
 			defense_skill = 5
 			planning_skill = 2
@@ -589,7 +589,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { infantry_leader infantry_expert swamp_fox commando winter_specialist winter_expert  }
-			skill = 3
+			skill = 5
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3

@@ -1244,7 +1244,7 @@ focus = {
 	}
 	focus = {
 		id = USA_womens_armed_service_integration_act
-		icon = GFX_focus_generic_treaty
+		icon = GFX_USA_womens_armed_service_integration_act
 		x = -1
 		y = 1
 		prerequisite = { focus = USA_tank_experiments focus = USA_support_rock_island }

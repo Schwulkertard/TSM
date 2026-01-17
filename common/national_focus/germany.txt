@@ -2121,6 +2121,9 @@ focus = {
 					transfer_state = 76
 				}
 			}
+			BUL = {
+				transfer_state = 77
+			}
 			SOV = {
 				country_event = { id = germany.11 days = 1 }
 				custom_effect_tooltip = GER_mol_rib_pact_tt
@@ -2266,7 +2269,7 @@ focus = {
 	}
 	focus = {
 		id = GER_anti_comitern_pact
-		icon = GFX_focus_GER_kriegslokomotive
+		icon = GFX_GER_bulwark_against_bolshevism
 		available = {
 			date > 1941.1.1
 		}
@@ -3044,7 +3047,7 @@ focus = {
 	}
 	focus = {
 		id = GER_all_options
-		icon = GFX_focus_GER_all_options
+		icon = GFX_GER_the_second_naval_race
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_plan_z }
 		x = 0
@@ -3501,7 +3504,7 @@ focus = {
 	}
 	focus = {
 		id = GER_h_class
-		icon = GFX_focus_GER_h_class
+		icon = GFX_GER_strengthen_the_kriegsmarine
 		prerequisite = { focus = GER_germaniawerft  }
 		x = 0
 		y = 1

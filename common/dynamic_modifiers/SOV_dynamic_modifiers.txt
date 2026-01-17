@@ -1,0 +1,16 @@
+SOV_stavka = {
+	icon = "GFX_idea_SOV_stavka"
+	enable = { always = yes }
+	land_reinforce_rate = SOV_land_reinforce_rate
+	operative_slot = SOV_operative_slot
+	supply_consumption_factor = SOV_supply_consumption_factor
+	production_speed_bunker_factor = SOV_production_speed_bunker_factor
+	production_speed_coastal_bunker_factor = SOV_production_speed_coastal_bunker_factor
+	training_time_army_factor = SOV_training_time_army_factor
+	no_supply_grace = SOV_no_supply_grace
+	army_org_factor = SOV_army_org_factor
+	conscription = SOV_conscription
+	air_cas_present_factor = SOV_air_cas_present_factor
+    air_superiority_efficiency = SOV_air_superiority_efficiency
+	air_cas_efficiency = SOV_air_cas_efficiency
+}

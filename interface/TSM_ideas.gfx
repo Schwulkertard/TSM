@@ -4767,4 +4767,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV_mo.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_SOV_stavka"
+		texturefile = "gfx/interface/ideas/idea_stavka.tga"
+	}
+
 }

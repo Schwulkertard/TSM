@@ -169,12 +169,12 @@ characters={
 		}
 
 		corps_commander={
-			traits={ trickster armor_officer infantry_leader naval_invader panzer_leader war_hero trait_reckless hill_fighter skilled_staffer }
-			skill=6
-			attack_skill=6
+			traits={ trickster infantry_leader trait_engineer panzer_leader war_hero trait_reckless hill_fighter skilled_staffer }
+			skill=8
+			attack_skill=7
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=6
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -204,12 +204,12 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader skilled_staffer }
+			traits={ logistics_wizard organizer trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader }
 			skill=6
-			attack_skill=6
+			attack_skill=5
 			defense_skill=4
-			planning_skill=7
-			logistics_skill=7
+			planning_skill=8
+			logistics_skill=8
 			legacy_id=602
 		}
 	}
@@ -259,7 +259,7 @@ characters={
 
 		corps_commander={
 			traits={ infantry_leader naval_invader trait_engineer trickster expert_improviser urban_assault_specialist }
-			skill=6
+			skill=7
 			attack_skill=6
 			defense_skill=2
 			planning_skill=3
@@ -324,9 +324,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ media_personality politically_connected infantry_leader }
+			traits={ media_personality politically_connected infantry_leader trait_mountaineer }
 			skill=3
-			attack_skill=3
+			attack_skill=4
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
@@ -361,7 +361,7 @@ characters={
 
 		corps_commander={
 			traits={ infantry_leader infantry_expert naval_invader jungle_rat skilled_staffer trait_engineer fortress_buster }
-			skill=7
+			skill=6
 			attack_skill=7
 			defense_skill=4
 			planning_skill=4
@@ -457,8 +457,8 @@ characters={
 		corps_commander={
 			traits={ infantry_officer trait_reckless infantry_leader }
 			skill=5
-			attack_skill=5
-			defense_skill=3
+			attack_skill=3
+			defense_skill=7
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=0
@@ -512,7 +512,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ commando infantry_officer }
+			traits={ commando infantry_leader jungle_rat }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -531,9 +531,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer infantry_leader }
-			skill=3
-			attack_skill=2
+			traits={ infantry_leader ranger }
+			skill=5
+			attack_skill=5
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=2
@@ -687,8 +687,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer trait_reckless brilliant_strategist }
-			skill=4
+			traits={ panzer_leader trait_reckless brilliant_strategist }
+			skill=5
 			attack_skill=5
 			defense_skill=2
 			planning_skill=2

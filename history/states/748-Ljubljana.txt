@@ -1,0 +1,24 @@
+state={
+ 	id=748
+ 	name="STATE_748"
+ 	history={
+ 		owner = YUG
+ 		buildings = {
+ 			infrastructure = 4
+ 		}
+ 		add_core_of = YUG
+		victory_points = {
+ 			8846 3
+ 		}
+ 		victory_points = {
+ 			10492 1
+ 		}
+ 	}
+ 	provinces={
+		6154 8846 10492
+ 	}
+ 	manpower=233000
+ 	buildings_max_level_factor=1.000
+ 	state_category=town
+ }
+

@@ -168,7 +168,7 @@ ideas = {
 				original_tag = ROM
 			}
 			modifier = {
-				land_doctrine_cost_factor = 0.25
+				land_mastery_gain_factor = -0.25
 			}
 		}
 		ROM_future_secured = {

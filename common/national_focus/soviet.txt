@@ -85,17 +85,14 @@ focus_tree = {
 				add_resource = {
 					type = steel
 					amount = 100
-					state = 582
 				}
 				add_resource = {
 					type = aluminium
 					amount = 70
-					state = 582
 				}
 				add_resource = {
 					type = tungsten
 					amount = 60
-					state = 582
 				}
 			}
 			}}
@@ -220,7 +217,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=SOV_improve_stalin_line
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_production_speed_bunker_factor = 0.3 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { SOV_production_speed_coastal_bunker_factor = 0.3 tooltip = production_speed_coastal_bunker_factor_tt }
 			202 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -350,8 +349,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip="This will start the industry relocation. Every 4 days two civilian factories and two military factories will be moved from states at the front to the Ural."
 			add_offsite_building = { type = industrial_complex level = 25 }
-			remove_ideas = peace_training
-			add_ideas=Fast_Training
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_training_time_army_factor = -0.4 tooltip = training_time_army_factor_tt }
 			add_ideas = SOV_the_great_war
 			add_stability = 0.4
 			hidden_effect = {
@@ -369,7 +368,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_great_figher
-		icon = GFX_Goal_Positive_heroism
+		icon = GFX_SOV_desperate_measures
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0
 		y = 1.5
@@ -383,7 +382,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_ideas = order_227
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_supply_consumption_factor = -0.2 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { SOV_no_supply_grace = 156 tooltip = no_supply_grace_tt }
 		}
 	}
 	focus = {
@@ -445,7 +446,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_ideas = SOV_great_airforce
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_air_superiority_efficiency = 0.1 tooltip = air_superiority_efficiency_tt }
+			add_to_variable = { SOV_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tt }
+			add_to_variable = { SOV_air_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
 	}
 }
 focus = {
@@ -613,7 +617,8 @@ focus = {
 		bypass = {
 		}
 		completion_reward = {
-			add_ideas = SOV_red_army
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_army_org_factor = 0.1 tooltip = army_org_factor_tt }
 			#swap_ideas = {
 				#figure out how to character swap
 			#}
@@ -763,7 +768,6 @@ focus = {
 			every_unit_leader = {
 				limit={has_id=407}
 				promote_leader = yes
-				add_skill_level=3
 				add_attack=-1
 				add_defense=2
 				add_logistics=4
@@ -1368,21 +1372,9 @@ focus = {
 			air_experience = 250
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
-				technology= improved_small_airframe
-			}
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 1
-				uses = 1
-				technology= advanced_small_airframe
-			}
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 1
-				uses = 1
-				technology= late_small_airframe
+				technology= cas_2
 			}
 		}
 	}
@@ -1487,13 +1479,13 @@ focus = {
 				name = air_bonus
 				bonus = 1.0
 				uses = 1
-				technology= fighter2
+				technology= improved_small_airframe
 			}
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 1
 				uses = 1
-				technology= fighter3
+				technology= advanced_small_airframe
 			}
 			add_tech_bonus = {
 				name = air_bonus
@@ -1522,114 +1514,6 @@ focus = {
 				technology = antiair1
 				technology = antiair2
 				technology = antiair3
-			}
-		}
-	}
-	focus = {
-		id = SOV_expand_red_fleet
-		icon = GFX_focus_SOV_expand_red_fleet
-		prerequisite = { focus = SOV_great_purge }
-		x = 17
-		y = 1
-		relative_position_id = SOV_great_purge
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			navy_experience = 100
-			133 = {
-				add_extra_state_shared_building_slots = 7
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SOV_expand_red_fleet_2dockyards
-			}
-			188 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = SOV_expand_red_fleet_2dockyards
-			}
-			add_tech_bonus = {
-				name = ships_bonus
-				bonus = 3.0
-				uses = 3
-				category = naval_equipment
-			}
-			if = {
-				limit = {
-					not = { has_tech = ship_hull_super_heavy }
-				}
-				set_technology = {
-					ship_hull_super_heavy = 1
-				}
-			}
-			create_equipment_variant = {
-				name = "Sovetsky Soyuz Class"
-				type = ship_hull_super_heavy_1
-				name_group = SOV_BB_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot=ship_460_battery
-					fixed_ship_anti_air_slot=ship_anti_air_2
-					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
-					fixed_ship_engine_slot=heavy_ship_engine_3
-					fixed_ship_secondaries_slot=dp_ship_secondaries_2
-					fixed_ship_armor_slot=ship_armor_shbb
-					front_1_custom_slot=ship_460_battery
-					mid_1_custom_slot=dp_ship_secondaries_2
-					mid_2_custom_slot=dp_ship_secondaries_2
-					rear_1_custom_slot=ship_460_battery
-					front_2_custom_slot=ship_460_battery
-					mid_3_custom_slot=dp_ship_secondaries_2
-					rear_2_custom_slot=ship_460_battery
-				}
-			}
-			custom_effect_tooltip = "Adds Two Sovetsky Soyuz Class super heavy battleship to the production queue at 70% completion"
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "SOV"
-						version_name = "Sovetsky Soyuz Class"
-					}
-					name = "Sovetsky Soyuz"
-					requested_factories = 1
-					progress = 0.5
-					amount = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = SOV_ocean_going_navy
-		icon = GFX_focus_PER_the_peoples_navy
-		prerequisite = { focus = SOV_expand_red_fleet }
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SOV_expand_red_fleet
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 3.0
-				uses = 5
-				category = naval_doctrine
 			}
 		}
 	}
@@ -1672,7 +1556,7 @@ focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = SOV_great_purge }
-		x = 19
+		x = 18
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 5
@@ -1686,13 +1570,13 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = rehabilitated_military_focus
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_land_reinforce_rate = 0.02 tooltip = land_reinforce_rate_tt }
 			add_tech_bonus = {
 				name = artillery
 				ahead_reduction= 1
 				uses = 3
 				category =cat_anti_tank
-				technology=infantry_at
 			}
 		}
 	}
@@ -1731,14 +1615,13 @@ focus = {
 				uses = 1
 				technology = artillery4
 			}
-			army_experience = 50
 		}
 	}
 	focus = {
 		id = SOV_nkvd_primacy
 		icon = GFX_focus_SOV_nkvd_primacy
 		prerequisite = { focus = SOV_great_purge }
-		x = 21
+		x = 20
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 5
@@ -1752,7 +1635,8 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = nkvd
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_operative_slot = 1 tooltip = operative_slot_tt }
 			set_technology = {motorized_rocket_unit=1}
 			custom_effect_tooltip = "Five fully equipped Katyusha-Divisions will spawn in Moscow."
 			hidden_effect={
@@ -1813,24 +1697,20 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
-			army_experience = 20
-			swap_ideas = {
-				remove_idea = nkvd
-				add_idea = nkvd_2
-			}
+			custom_effect_tooltip = SOV_modify_stavka_tt
+			add_to_variable = { SOV_land_reinforce_rate = 0.18 tooltip = land_reinforce_rate_tt }
 		}
 	}
 	focus = {
 		id = SOV_lessons_of_war
 		icon = GFX_focus_SOV_lessons
-		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization focus = SOV_ocean_going_navy }
+		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
 		available = {
 			OR = {
 				date > 1940.1.1
 			}
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_military_reorganization
 		cost = 10
@@ -2240,7 +2120,7 @@ focus = {
 		}		
 focus = {
 	id = SOV_long_term
-	icon = GFX_focus_por_workers_of_iberia
+	icon = GFX_SOV_victory_over_devastation
 	prerequisite = { focus = SOV_trans_volga_railways }
 	relative_position_id = SOV_trans_volga_railways
 	cost = 10
@@ -2558,4 +2438,333 @@ focus = {
 		}
 	}
 }
+
+	focus = {
+		id = SOV_expand_red_fleet
+		icon = GFX_focus_SOV_expand_red_fleet
+		x = 0
+		y = 1
+		relative_position_id = SOV_socialist_realism
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			133 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			188 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+		}
+	}
+	focus = {
+		id = SOV_ocean_going_navy
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_expand_red_fleet
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 300
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+		}
+	}
+	focus = {
+		id = SOV_ocean_going_navy_2
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_ocean_going_navy }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_ocean_going_navy
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+		}
+	}
+	focus = {
+		id = SOV_ocean_going_navy_3
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_ocean_going_navy_2 }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_ocean_going_navy_2
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+		}
+	}
+	focus = {
+		id = SOV_capital_ship_development
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SOV_expand_red_fleet
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 3.0
+				uses = 1
+				technology = basic_ship_hull_heavy
+			}
+		}
+	}
+	focus = {
+		id = SOV_sovetsky_soyuz
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_capital_ship_development }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_capital_ship_development
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			if = {
+				limit = {
+					not = { has_tech = ship_hull_super_heavy }
+				}
+				set_technology = {
+					ship_hull_super_heavy = 1
+				}
+			}
+			create_equipment_variant = {
+				name = "Sovetsky Soyuz Class"
+				type = ship_hull_super_heavy_1
+				name_group = SOV_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot=ship_460_battery
+					fixed_ship_anti_air_slot=ship_anti_air_2
+					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
+					fixed_ship_engine_slot=heavy_ship_engine_3
+					fixed_ship_secondaries_slot=dp_ship_secondaries_2
+					fixed_ship_armor_slot=ship_armor_shbb
+					front_1_custom_slot=ship_460_battery
+					mid_1_custom_slot=dp_ship_secondaries_2
+					mid_2_custom_slot=dp_ship_secondaries_2
+					rear_1_custom_slot=ship_460_battery
+					front_2_custom_slot=ship_460_battery
+					mid_3_custom_slot=dp_ship_secondaries_2
+					rear_2_custom_slot=ship_460_battery
+				}
+			}
+			custom_effect_tooltip = "Adds Two Sovetsky Soyuz Class super heavy battleship to the production queue at 70% completion"
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV"
+						version_name = "Sovetsky Soyuz Class"
+					}
+					name = "Sovetsky Soyuz"
+					requested_factories = 1
+					progress = 0.5
+					amount = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_carrier_experiments
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_sovetsky_soyuz }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_sovetsky_soyuz
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 3.0
+				uses = 1
+				technology = basic_ship_hull_carrier
+			}
+		}
+	}
+	focus = {
+		id = SOV_screen_expansion
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = SOV_expand_red_fleet	
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 3.0
+				uses = 2
+				technology = basic_ship_hull_cruiser
+				technology = basic_ship_hull_light
+			}
+		}
+	}
+	focus = {
+		id = SOV_new_modules
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_screen_expansion }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_screen_expansion	
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 1
+				uses = 3
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = SOV_super_cruisers
+		icon = GFX_focus_PER_the_peoples_navy
+		prerequisite = { focus = SOV_new_modules }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_new_modules	
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			222 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SOV_expand_red_fleet_2dockyards
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 3.0
+				uses = 1
+				technology = improved_ship_hull_cruiser
+			}
+		}
+	}
 }										

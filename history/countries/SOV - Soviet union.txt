@@ -190,14 +190,14 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = small_plane_cas_airframe_1
-	variant_name = "LBSh"
+	variant_name = "LBsh"
 	amount = 600
 	producer = SOV
 }
 add_equipment_to_stockpile = {
 	type = small_plane_naval_bomber_airframe_1
 	amount = 300
-	variant_name = "Il 4"
+	variant_name = "Il-4"
 	producer = SOV
 }
 add_equipment_to_stockpile = {
@@ -230,6 +230,22 @@ add_ideas = {
 	SOV_home_fleet
 	SOV_the_great_terror
 }
+
+add_dynamic_modifier = {
+	modifier = SOV_stavka
+}
+set_variable = { SOV_land_reinforce_rate = 0 }
+set_variable = { SOV_operative_slot = 0 }
+set_variable = { SOV_supply_consumption_factor = 0 }
+set_variable = { SOV_production_speed_bunker_factor = 0 }
+set_variable = { SOV_production_speed_coastal_bunker_factor = 0 }
+set_variable = { SOV_training_time_army_factor = 0 }
+set_variable = { SOV_no_supply_grace = 0 }
+set_variable = { SOV_army_org_factor = 0 }
+set_variable = { SOV_conscription = 0 }
+set_variable = { SOV_air_cas_present_factor = 0 }
+set_variable = { SOV_air_superiority_efficiency = 0 }
+set_variable = { SOV_air_cas_efficiency = 0 }
 
 if = { 
 	limit = { has_dlc = "No Step Back" }
@@ -353,8 +369,6 @@ recruit_character = SOV_sergey_rudenko
 recruit_character = SOV_ivan_yumashev
 recruit_character = SOV_aleksandr_golovanov
 recruit_character = SOV_yakov_smushkevich
-recruit_character = SOV_vasily_blyukher
-
 recruit_character = SOV_better_konstantin_rokossovsky
 
 SOV_better_konstantin_rokossovsky = {
