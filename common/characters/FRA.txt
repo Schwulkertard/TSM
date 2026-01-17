@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { armor_officer trait_cautious infantry_leader commando  }
+			traits = { armor_officer trait_cautious infantry_leader commando ranger }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -318,12 +318,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			traits={ trickster brilliant_strategist panzer_leader panzer_expert trickster ranger trait_engineer }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -420,10 +420,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { old_guard infantry_officer infantry_leader }
+			traits = { old_guard infantry_officer infantry_leader urban_assault_specialist }
 	skill = 3
 	attack_skill = 5
-	defense_skill = 3
+	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 3
 			legacy_id=0

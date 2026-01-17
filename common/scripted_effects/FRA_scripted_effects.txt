@@ -284,6 +284,6 @@ add_offmap_civs_from_marks = {
 
         add_to_temp_variable = { i = 1 }
 
-        add_offsite_building = { type = industrial_complex level = 3 }
+        add_offsite_building = { type = industrial_complex level = 2 }
     }
 }

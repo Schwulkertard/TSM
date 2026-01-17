@@ -38,7 +38,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ trait_cautious armor_officer ranger }
 			skill=4
 			attack_skill=3
 			defense_skill=2
@@ -146,12 +146,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			traits={ trickster brilliant_strategist panzer_leader panzer_expert trickster ranger trait_engineer }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
