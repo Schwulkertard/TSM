@@ -11,7 +11,7 @@ state={
  			infrastructure = 3
  		}
  	}
- 	state_category = pastoral
+ 	state_category = french_colony
  	provinces={
  		1051 3725 4640 6473 9167 9208 9261 10824 10846 10889 11801 11832
  	}

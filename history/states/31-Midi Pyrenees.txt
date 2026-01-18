@@ -2,8 +2,9 @@ state={
  	id=31
  	name="STATE_31"
  	manpower = 1825000
- 	state_category = city
+ 	state_category = french_colony
  	history={
+		add_extra_state_shared_building_slots = 2
  		owner = FRA
  		victory_points = {
  			6268 5

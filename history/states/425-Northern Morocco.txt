@@ -5,13 +5,14 @@ state={
  		chromium = 120.000
  	}
  	manpower = 3197719
- 	state_category = rural
+ 	state_category = french_colony
  	history={
  		owner = FRA
  		add_core_of=SWE
  		victory_points = {
  			6536 10
  		}
+		add_extra_state_shared_building_slots = 1
  		buildings = {
  			infrastructure = 3
  			industrial_complex = 1

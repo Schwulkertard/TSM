@@ -6,8 +6,9 @@ state={
  		steel = 600
  		aluminium = 350
  	}
- 	state_category = city
+ 	state_category = french_colony
  	history={
+		add_extra_state_shared_building_slots = 10
  		owner = FRA
  		victory_points = {
  			6117 10

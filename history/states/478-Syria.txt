@@ -2,7 +2,7 @@ state={
  	id=478
  	name="STATE_554"
  	manpower = 547797
- 	state_category = rural
+ 	state_category = french_colony
  	history={
  		owner = FRA
  		add_core_of=SWE
@@ -12,6 +12,7 @@ state={
  		victory_points = {
  			755 3
  		}
+		add_extra_state_shared_building_slots = 1
  		buildings = {
  			infrastructure = 3
  			industrial_complex = 1
