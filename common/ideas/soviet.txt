@@ -154,7 +154,7 @@ ideas = {
 			}
 		}
 		SOV_the_great_terror = {
-			picture = sov_red_army_reborn
+			picture = generic_oppression
             modifier = {
 				political_power_gain = -0.1
 				stability_factor = -0.05

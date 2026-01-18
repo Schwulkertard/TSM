@@ -2130,23 +2130,23 @@ focus = {
 			create_corps_commander = {
 				name = "George S. Patton"
 				picture = "Portrait_USA_George_S_Patton.dds"
-				traits = {  trickster armor_officer infantry_leader naval_invader panzer_leader war_hero trait_reckless hill_fighter skilled_staffer }
-				skill = 6
-				attack_skill = 6
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 6
+				traits = {  trickster infantry_leader trait_engineer panzer_leader war_hero trait_reckless hill_fighter skilled_staffer }
+				skill=8
+				attack_skill=7
+				defense_skill=4
+				planning_skill=3
+				logistics_skill=4
 			}
 			create_field_marshal = {
 				name = "Dwight D. Eisenhower"
 				picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader skilled_staffer }
+				traits = { logistics_wizard organizer trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader }
 				skill = 6
 				id =567
-				attack_skill = 6
+				attack_skill = 5
 				defense_skill = 4
-				planning_skill = 7
-				logistics_skill = 7
+				planning_skill = 8
+				logistics_skill = 8
 			}
 		}
 	}
@@ -2166,6 +2166,8 @@ focus = {
 		relative_position_id = USA_intervention_in_europe
 		cost = 3
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = william_simpson
 			custom_effect_tooltip=USA_war_plan_black_tt
 			division_template = {
 				name = "US-Mountaineers"

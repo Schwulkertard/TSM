@@ -2687,5 +2687,7 @@ equipment_modules = {
  			convert_cost_ic = 100
  		}
 	}
+	###TODO RADAR JAMMER(USA)
+	###TODO ARMOR SCHEME 2
  }
 

@@ -573,3 +573,45 @@ USA_island_hopping_level_down = {
 		}
 	}
 }
+
+update_usa_relative_industry = {
+
+    # remove so base read isn't contaminated by our own modifier
+    remove_dynamic_modifier = { modifier = relative_industrial_capacity_factory }
+
+# target = base_output - baseline (clamped)
+set_temp_variable = { xr = modifier@industrial_capacity_factory }
+subtract_from_temp_variable = { xr = usa_rel_ic_baseline }
+set_variable = { usa_rel_ic_target = xr }
+
+if = { limit = { check_variable = { usa_rel_ic_target > 0.30 } } set_variable = { usa_rel_ic_target = 0.30 } }
+if = { limit = { check_variable = { usa_rel_ic_target < -0.30 } } set_variable = { usa_rel_ic_target = -0.30 } }
+
+# delta = (target - current) * K
+set_temp_variable = { xr = usa_rel_ic_target }
+subtract_from_temp_variable = { xr = usa_rel_ic_current }
+multiply_temp_variable = { xr = 0.01 }        # weekly smoothing
+set_variable = { usa_rel_ic_delta = xr }
+
+# HARD cap (constant)
+if = { limit = { check_variable = { usa_rel_ic_delta > 0.0010 } } set_variable = { usa_rel_ic_delta = 0.0010 } }
+if = { limit = { check_variable = { usa_rel_ic_delta < -0.0010 } } set_variable = { usa_rel_ic_delta = -0.0010 } }
+
+add_to_variable = { usa_rel_ic_current = usa_rel_ic_delta }
+
+# clamp current
+if = { limit = { check_variable = { usa_rel_ic_current > 0.30 } } set_variable = { usa_rel_ic_current = 0.30 } }
+if = { limit = { check_variable = { usa_rel_ic_current < -0.30 } } set_variable = { usa_rel_ic_current = -0.30 } }
+
+set_variable = { relative_industrial_capacity_factory_actual = usa_rel_ic_current }
+add_dynamic_modifier = { modifier = relative_industrial_capacity_factory }
+
+
+    # log
+    add_to_variable = { usa_rel_ic_calls = 1 }
+    log = "[USA RIC] calls=[?usa_rel_ic_calls] base=[?usa_rel_ic_base] cap=[?usa_rel_ic_cap] current=[?usa_rel_ic_current] target=[?usa_rel_ic_target] delta=[?usa_rel_ic_delta]"
+}
+
+
+
+

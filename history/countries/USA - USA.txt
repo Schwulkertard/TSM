@@ -14,15 +14,11 @@ create_intelligence_agency = yes
 set_research_slots = 4
 set_stability = 0.25
 set_war_support = 0.05
-set_variable = { var = senators_support value = 44 }
-set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 206 }
-set_variable = { var = representatives_total value = 435 }
-set_variable = { var = quorum_low value = 39 }
-set_variable = { var = quorum_medium value = 49 }
-set_variable = { var = quorum_high value = 58 }
-USA_recalc_congress_icon_frames = yes
 set_country_flag = USA_no_armor_genius
+
+set_variable = { usa_rel_ic_current = -0.30 }
+add_dynamic_modifier = { modifier = relative_industrial_capacity_factory }
+
 # Starting tech
 set_technology = {
 	synth_oil_experiments = 1 

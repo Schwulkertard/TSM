@@ -469,8 +469,8 @@ focus = {
 	}
 	completion_reward = {
 		custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = aleksandr_golovanov
-}
+		show_ideas_tooltip = alexander_golovanov
+	}
 }
 	focus = {
 		id = SOV_wartime_industry

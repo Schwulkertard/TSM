@@ -690,7 +690,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ naval_lineage battleship_adherent ironside air_controller }
+			traits={ naval_lineage battleship_adherent ironside }
 			skill=5
 			attack_skill=5
 			defense_skill=4
@@ -750,8 +750,8 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=4
+			traits={ old_guard_navy bold superior_tactician air_controller }
+			skill=5
 			attack_skill=4
 			defense_skill=2
 			maneuvering_skill=3

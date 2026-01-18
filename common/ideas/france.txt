@@ -223,7 +223,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = ger_glory
+			picture = new_economic_policy
 			modifier = {
 				stability_weekly = -0.002
 				

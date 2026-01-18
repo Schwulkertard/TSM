@@ -4018,5 +4018,6 @@
   BUL_total_war:0 "Join the Eastern War"
   BUL_join_the_tripartite_pact_axis:0 "Our Lost Lands"
   ROM_prevent_partition_tt:0 "§GNorth Transylvania will not be lost to Hungary, if you do this before Molotov-Ribbentrop Pact.§!"
+  ROM_ensure_prosperity_tt:0 "§RWill be removed once we are at war with the USSR.§!"
   SOV_stavka:0 "STAVKA"
   SOV_modify_stavka_tt: "Modify §Y$SOV_stavka$§! by:"

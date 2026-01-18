@@ -230,7 +230,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ROM_church_secured
-			custom_effect_tooltip = "TODO: 10% rec rate left side 1% manpower right side"
 		}
 	}
 	focus = {
@@ -378,7 +377,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ROM_future_secured
-			custom_effect_tooltip = "TODO: tooltip that says its removed at barb"
+			custom_effect_tooltip = ROM_ensure_prosperity_tt
 		}
 	}
 	focus = {
@@ -587,11 +586,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				name = ROM_army_maneuvers
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -787,11 +782,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				name = ROM_army_maneuvers
-				category = land_doctrine
-			}
+			army_experience = 100
 		}
 	}
 	focus = {

@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		ROM_armored_support = {
-			picture = anti_soviet_pact
+			picture = man_five_year_plan_tank
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		ROM_french_drill = {
-			picture = anti_soviet_pact
+			picture = YUG_federal_defense_council
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -32,7 +32,7 @@ ideas = {
 			}
 		}
 		ROM_church_secured = {
-			picture = anti_soviet_pact
+			picture = YUG_orthodox_church_support
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -43,7 +43,7 @@ ideas = {
 			}
 		}
 		ROM_powerful_boyars = {
-			picture = anti_soviet_pact
+			picture = SOV_legacy_of_rome_ccp_sov_compatibility
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -54,7 +54,7 @@ ideas = {
 			}
 		}
 		ROM_industrialization = {
-			picture = anti_soviet_pact
+			picture = SOV_fourth_five_year_plan
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -64,7 +64,7 @@ ideas = {
 			}
 		}
 		ROM_krupp = {
-			picture = anti_soviet_pact
+			picture = krupp
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -79,7 +79,7 @@ ideas = {
 			}
 		}
 		ROM_opel_idea = {
-			picture = anti_soviet_pact
+			picture = opel
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -89,7 +89,7 @@ ideas = {
 			}
 		}
 		ROM_fascism_support = {
-			picture = anti_soviet_pact
+			picture = SOV_romanov_reconstruction_ccp_sov_compatibility
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -99,7 +99,7 @@ ideas = {
 			}
 		}
 		ROM_desire_for_revenge = {
-			picture = anti_soviet_pact
+			picture = GER_fan_prussian_militarism
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -110,7 +110,7 @@ ideas = {
 			}
 		}
 		ROM_war_preparation = {
-			picture = anti_soviet_pact
+			picture = SWE_neither_death_nor_dishonor
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -120,7 +120,7 @@ ideas = {
 			}
 		}
 		ROM_revanchism = {
-			picture = anti_soviet_pact
+			picture = SOV_factionalism_modifier
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -141,7 +141,7 @@ ideas = {
 			}
 		}
 		ROM_iron_guard_controlled = {
-			picture = anti_soviet_pact
+			picture = DEN_occupation_laws
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -151,7 +151,7 @@ ideas = {
 			}
 		}
 		ROM_iron_guard_supported = {
-			picture = anti_soviet_pact
+			picture = PER_unification_initiative_idea
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -162,7 +162,7 @@ ideas = {
 			}
 		}
 		ROM_outdated_doctrine = {
-			picture = anti_soviet_pact
+			picture = YUG_serbian_general_staff
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -172,7 +172,7 @@ ideas = {
 			}
 		}
 		ROM_future_secured = {
-			picture = anti_soviet_pact
+			picture = HUN_treaty_of_triannon
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -186,7 +186,7 @@ ideas = {
 			}
 		}
 		ROM_agrarian_society = {
-			picture = anti_soviet_pact
+			picture = POL_looming_peasants_strike
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM
@@ -196,7 +196,7 @@ ideas = {
 			}
 		}
 		ROM_oil_trade= {
-			picture = anti_soviet_pact
+			picture = ARG_resource_extration_focus
 			removal_cost = -1
 			allowed = {
 				original_tag = ROM

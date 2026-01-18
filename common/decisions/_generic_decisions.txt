@@ -682,4 +682,28 @@ exercise_decisions = {
             add_command_power = -75
 		}
     }
+	land_maneuvers = {
+		icon = GFX_decision_SWE_set_army_budget
+        allowed = {
+			always = yes
+		}
+        visible = {
+            always = yes
+		}
+		available = {
+			has_army_experience > 100
+		}
+        fire_only_once = no
+		days_remove = 180
+		complete_effect = {
+			army_experience = -100
+		}
+        remove_effect = {
+            add_command_power = 50
+        }
+        modifier = {
+			experience_gain_army_factor = -0.5
+		}
+		cost = 0
+    }
 }

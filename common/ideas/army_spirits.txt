@@ -503,8 +503,7 @@ ideas = {
 		aggressive_reconnaisance_spirit = {
 			ledger = army
 			modifier = {
-				intel_from_combat_factor = 0.15
-				recon_factor = 0.15
+				coordination_bonus = 0.04
 			}
 			ai_will_do = {
 				factor = 0
