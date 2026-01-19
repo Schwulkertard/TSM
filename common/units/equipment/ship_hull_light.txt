@@ -104,6 +104,7 @@ equipments = {
  		priority = 2000
  		#alias = destroyer_1
  		module_slots = inherit
+		naval_dominance_factor = 20
  	}
  	ship_hull_light_2 = {
  		year = 1936

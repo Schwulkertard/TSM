@@ -54,7 +54,7 @@ country_event = {
 				if={limit = {NOT={has_global_flag= major_only_scenario}}
 				set_global_flag = spanish_civil_war
 				
-				SPN = {
+				SPR = {
 					declare_war_on = {
 						target = SPR
 						type = annex_everything

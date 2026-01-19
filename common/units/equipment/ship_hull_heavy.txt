@@ -254,6 +254,7 @@ equipments = {
  		reliability = 0.75
  		fuel_consumption = 67
  		build_cost_ic = 3300
+		naval_dominance_factor = 300
  	}
  	ship_hull_heavy_2 = {
  		year = 1936

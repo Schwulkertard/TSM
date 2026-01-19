@@ -105,12 +105,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 5000
+	amount = 10000
 	producer = USA
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 1344
+	amount = 1500
 	producer = USA
 }
 add_equipment_to_stockpile = {
@@ -120,7 +120,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 250
+	amount = 500
 	producer = USA
 }
 set_politics = {
