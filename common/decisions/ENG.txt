@@ -70,6 +70,7 @@ UK_foreign_politics = {
 			date > 1938.1.1
 		}
 		days_remove = 100
+		cost = 50
 		fire_only_once = yes
 		complete_effect = {
 		}
@@ -233,6 +234,7 @@ UK_foreign_politics = {
 			date > 1939.1.1
 		}
 		days_remove = 100
+		cost = 50
 		fire_only_once = yes
 		complete_effect = {
 		}

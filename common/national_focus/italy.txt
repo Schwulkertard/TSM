@@ -701,6 +701,13 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			157 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 6110
+				}
+			}
 			army_experience = 100
 			add_tech_bonus = {
 				name = GER_soviet_treaty
@@ -785,6 +792,13 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			155 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 3551
+				}
+			}
 			air_experience = 100
 			113 = {	add_building_construction = {
 					type = air_base

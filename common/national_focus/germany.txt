@@ -232,6 +232,13 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			59 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 5886
+				}
+			}
 			air_experience = 475
 			add_tech_bonus = {
 				name = fighter_command_focus
@@ -2857,6 +2864,13 @@ focus = {
 			}
 		}
 		completion_reward = {
+			58 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					province = 5898
+				}
+			}
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {

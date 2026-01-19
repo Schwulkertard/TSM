@@ -75,7 +75,7 @@ sp_air_bouncing_bomb = {
 		#sp_air_generic_reward_air_xp_3
 		sp_air_generic_reward_major_progress_1
 		sp_air_generic_reward_major_progress_2
-		#sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_major_progress_3
 		#sp_air_generic_reward_test_failure_1
 		#sp_air_generic_reward_test_failure_2
 		#sp_air_generic_reward_test_failure_3		
@@ -796,18 +796,11 @@ sp_air_jet_engine = {
 		FROM = {
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
-				has_tech = engines_2
 				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
+					has_tech = advanced_small_airframe
+					has_tech = advanced_medium_airframe
 				}
 			}
-			else = {
-				OR = {
-					has_tech = fighter2
-					has_tech = tactical_bomber2
-				}
-			}	
 		}
 	}
 	
@@ -918,7 +911,7 @@ sp_air_jet_engine = {
 		sp_air_generic_reward_air_xp_3
 		sp_air_generic_reward_major_progress_1
 		sp_air_generic_reward_major_progress_2
-		#sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_major_progress_3
 		sp_air_generic_reward_test_failure_1
 		sp_air_generic_reward_test_failure_2
 		sp_air_generic_reward_test_failure_3		
@@ -1569,7 +1562,7 @@ sp_air_jet_engine = {
 	 }
 
 	 allowed = {
-		 has_dlc = "Gotterdammerung"		
+		always = no	
 	 }
 
 	 breakthrough_cost = {

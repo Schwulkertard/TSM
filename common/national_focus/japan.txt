@@ -1225,6 +1225,13 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+			462 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 9214
+				}
+			}
  			455 = {
  				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
@@ -1490,6 +1497,13 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+			460 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 6634
+				}
+			}
  			add_tech_bonus = {
  				name = JAP_fighter_modernization
  				bonus = 1.0

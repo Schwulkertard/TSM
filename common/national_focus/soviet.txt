@@ -1474,6 +1474,13 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			572 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 11012
+				}
+			}
 			air_experience = 250
 			add_tech_bonus = {
 				name = air_bonus

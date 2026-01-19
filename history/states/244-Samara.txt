@@ -11,6 +11,9 @@ state={
  		buildings = {
  			infrastructure = 5
  			air_base = 1
+			10170 = {
+                land_facility = 1
+            }
  		}
  		add_core_of = SOV
  		1939.1.1 = {

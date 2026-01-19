@@ -230,6 +230,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			128 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 8547
+				}
+			}
 		    add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
@@ -706,6 +713,13 @@ focus_tree = {
 		relative_position_id = limited_rearmament_focus
 		cost = 5
 		completion_reward = {
+			131 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					province = 3058
+				}
+			}
 			air_experience = 25
 			305 = {
 				set_building_level = {

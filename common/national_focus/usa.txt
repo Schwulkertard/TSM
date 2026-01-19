@@ -1011,6 +1011,13 @@ focus = {
         available = {
         }
         completion_reward = {
+			338 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					province = 1470
+				}
+			}
             army_experience = 100
             add_tech_bonus = {
                 name = USA_louisiana_maneuvers

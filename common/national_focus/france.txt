@@ -125,7 +125,7 @@ focus_tree = {
 		    custom_effect_tooltip = FRA_doc_tt_2
 		    every_owned_state = {
 			limit= {AND = {infrastructure > 9 is_core_of = FRA}  }
-				 add_extra_state_shared_building_slots = 2
+				 add_extra_state_shared_building_slots = 3
 				    add_building_construction = {
 				    type = arms_factory
 				    level = 3
@@ -998,9 +998,10 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_idea = FRA_inefficient_economy_2 }
-				swap_ideas = {
-					remove_idea = FRA_inefficient_economy_2
-					add_idea = FRA_inefficient_economy_1
+				remove_ideas = FRA_inefficient_economy_2
+				add_timed_idea = {
+					idea = FRA_inefficient_economy_1
+					days = 365
 				}
 			}
 			else_if = {
@@ -1232,37 +1233,37 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			466 = {
+		466 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		687 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		688 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		686 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		480 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		693 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		691 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		690 = {
 			add_extra_state_shared_building_slots = 30
-			
+			set_state_category = city
 		}
 		
 		}
@@ -1286,8 +1287,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			NOT = { has_idea = FRA_inefficient_economy_1 }
-			NOT = { has_idea = FRA_inefficient_economy_2 }
+			FRA_has_inefficient_economy = no
 			
 			any_state_in = { strategic_region = 18    
 			arms_factory  > 9 }  
@@ -2321,7 +2321,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = FRA_inefficient_economy_2
 		}
 	}
 	focus = {

@@ -16,6 +16,12 @@ on_actions = {
 			
 		}
 	}
+
+	on_weekly_FRA = {
+		effect= {
+			set_variable = { FRA.total_civs = num_of_civilian_factories }
+		}
+	}
 	
 	on_daily = {
 	effect = {
