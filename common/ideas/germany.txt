@@ -1332,6 +1332,7 @@ ideas = {
 			allowed = {
 				or = {
 					original_TAG = GER
+					original_TAG = ROM
 			}
 		}
 			research_bonus = {

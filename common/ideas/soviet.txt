@@ -1206,7 +1206,7 @@ ideas = {
 	}
 	theorist_production = {
 		SOV_terror_mo = {
-			picture = idea_SOV_mo
+			picture = SOV_mo
 			cost = 150
 
 			allowed = {

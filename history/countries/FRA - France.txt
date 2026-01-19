@@ -8,7 +8,7 @@ set_rule = {can_be_spymaster = no}
 set_research_slots = 4
 set_stability = 0.46
 set_war_support = 0.2
-
+add_ideas = ENG_allied_exped_corp
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = FRA_small_businesses_focus

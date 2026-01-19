@@ -5,13 +5,6 @@ set_war_support = 0.4
 set_research_slots = 3
 oob = "SIA_1936"
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SIA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SIA_1936_naval_legacy"
-	}
-}
-if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_to_tech_sharing_group = japanese_research
 }
@@ -45,9 +38,6 @@ recruit_character = SIA_thawon_thamrongnawasawat
 recruit_character = SIA_phra_silpasakrakorn
 recruit_character = SIA_luang_wichitwathakan
 set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	#desertinfantry_at = 1

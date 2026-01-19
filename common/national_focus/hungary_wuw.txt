@@ -2576,11 +2576,8 @@ focus_tree = {
 				name = HUN_danuvia_submachine_guns
 				bonus = 1
 				uses = 1
-				technology = advanced_infantry_weapons
+				technology = improved_infantry_weapons
 			}
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HUN_pal_kiraly
 		}
 	}
 
@@ -2942,7 +2939,7 @@ focus_tree = {
 				name = wuw_HUN_quantity_over_quality
 				bonus = 1
 				uses = 1
-				technology = improved_infantry_weapons
+				technology = advanced_infantry_weapons
 			}
 		}
 	}

@@ -1207,5 +1207,32 @@ ideas = {
 			traits = {  }
 		}
 	}
+	theorist_production = {
+		JAP_takuo_godo = {
+			picture = JAP_takuo_godo
+			cost = 150
+
+			allowed  = {
+				original_tag  = JAP
+			}
+			available  = {
+				has_completed_focus = JAP_intervene_in_china
+			}
+
+			traits = { war_industrialist }
+		}
+		JAP_kingoro_hashimoto = {
+			picture = JAP_kingoro_hashimoto
+			cost = 150
+
+			allowed  = {
+				original_tag  = JAP
+			}
+			available  = {
+			}
+
+			traits = { industrial_genius }
+		}
+	}
 }
 

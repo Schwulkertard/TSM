@@ -327,7 +327,7 @@ country_event = {
 			remove_ideas = ENG_allied_exped_corp2
 			remove_ideas = SPR_kindergarten
 		}
-		NZL = {
+		USA = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}

@@ -12,9 +12,6 @@ set_variable = {
 }
 set_research_slots = 3
 set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 	amphibious_mechanized_infantry = 1
 	armored_car1 = 1
 	motorised_infantry = 1

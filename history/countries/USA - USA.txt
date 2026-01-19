@@ -15,7 +15,7 @@ set_research_slots = 4
 set_stability = 0.25
 set_war_support = 0.05
 set_country_flag = USA_no_armor_genius
-
+add_ideas = ENG_allied_exped_corp2
 set_variable = { usa_rel_ic_current = -0.30 }
 add_dynamic_modifier = { modifier = relative_industrial_capacity_factory }
 

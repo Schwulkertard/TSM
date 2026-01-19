@@ -7,11 +7,9 @@ recruit_character = HUN_károly_beregfy
 recruit_character = HUN_lajos_veress
 recruit_character = HUN_ferenc_feketehalmyczeydner
 recruit_character = HUN_salvo
-recruit_character = HUN_vilmos_roder
 recruit_character = HUN_zoltan_tildy
 recruit_character = HUN_hugo_sonyi
 recruit_character = HUN_dezso_laszlo
-recruit_character = HUN_lajos_remenyi_schneller
 recruit_character = HUN_reszo_kastner
 recruit_character = HUN_sandor_magyarossy
 recruit_character = HUN_bela_rakosi
@@ -40,9 +38,6 @@ capital = 43
  set_rule = {can_be_spymaster = no}
  set_rule = {can_send_volunteers  = yes}
  set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
  	#desertinfantry_at = 1

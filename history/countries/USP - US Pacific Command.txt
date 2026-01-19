@@ -3,9 +3,6 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 		#set_air_oob = "USA_1936_air_bba"
 		set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 			photo_reconnaisance = 1
 			aa_lmg = 1
 			air_torpedoe_1 = 1

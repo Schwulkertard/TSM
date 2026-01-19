@@ -732,8 +732,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				lend_lease_tension = 10
-				army_armor_attack_factor = -1
-				army_armor_defence_factor = -1
 				experience_gain_army_factor = -0.5
 			}
 		}

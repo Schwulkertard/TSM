@@ -1351,21 +1351,6 @@ characters={
 				small="GFX_idea_chuichi_nagumo"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = chuichi_nagumo
-			ledger = air
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				navy_carrier_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 
@@ -1411,29 +1396,6 @@ characters={
 				factor = 0.000
 			}
 		}
-	}
-
-	JAP_kingoro_hashimoto={
-		name=JAP_kingoro_hashimoto
-		portraits={
-			army={
-				small="GFX_idea_kingoro_hashimoto"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = kingoro_hashimoto
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-				
-			}
-			traits = {
-				industrial_genius 
-			}
-		}		
 	}
 
 	JAP_mitsumasa_yonai={
@@ -1498,29 +1460,6 @@ characters={
 				quartermaster_general
 			}
 		}		
-	}
-
-	JAP_takuo_godo={
-		name=JAP_takuo_godo
-		portraits={
-			army={
-				small="GFX_idea_takuo_godo"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = takuo_godo
-			allowed = {
-				original_tag = JAP
-				has_completed_focus = JAP_intervene_in_china
-			}
-			traits = {
-				war_industrialist 
-			}
-			ai_will_do = {
-				factor = 3.000
-			}
-		}
 	}
 
 	# Illusive Gentleman auto-generated

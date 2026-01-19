@@ -8,6 +8,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+add_ideas = ENG_allied_exped_corp2
 add_dynamic_modifier = { modifier = idea_RAJ_agrarian_society } 		
 set_variable = { RAJ_agrarian_society_conscription_factor = -0.72 } #3
 set_variable = { RAJ_agrarian_society_mobilization_laws_cost_factor = 2.16 } #9

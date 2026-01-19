@@ -1,8 +1,5 @@
 capital = 268
 oob = "CAN_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-}
 set_variable = {
 	var = min_fuel
 	value = 0.800
@@ -14,6 +11,7 @@ set_stability = 0.55
 set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
+add_ideas = ENG_allied_exped_corp2
 # Starting tech
 set_technology = {
 	airfield_allowed = 1

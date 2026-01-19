@@ -839,21 +839,6 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Frank_Jack_Fletcher.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = frank_jack_fletcher
-			ledger = air
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				navy_carrier_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		navy_leader={
 			traits={ superior_tactician spotter ironside inshore_fighter }

@@ -142,24 +142,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	HUN_vilmos_roder={
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_vilmos_roder
-			allowed  = {
-					original_tag  = HUN 
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="HUN_vilmos_roder"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-	}
 	HUN_zoltan_tildy={
 		advisor={
 			slot = political_advisor
@@ -278,24 +260,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-	HUN_lajos_remenyi_schneller={
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_lajos_remenyi_schneller
-			allowed  = {
-					original_tag  = HUN 
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="HUN_lajos_remenyi_schneller"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 	}

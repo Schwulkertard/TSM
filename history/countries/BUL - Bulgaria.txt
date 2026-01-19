@@ -11,6 +11,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+add_ideas = ENG_allied_exped_corp2
 set_rule = {can_be_spymaster = no}
 set_technology = {
 	amphibious_mechanized_infantry = 1

@@ -5,6 +5,7 @@ set_stability = 0.44
 set_war_support = 0.50
 set_rule = {can_be_spymaster = no}
 create_intelligence_agency = yes
+add_ideas = ENG_allied_exped_corp2
 add_ideas = {
     peace_training
 	victor_emmanuel

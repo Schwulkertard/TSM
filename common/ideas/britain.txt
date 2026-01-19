@@ -1007,7 +1007,10 @@ ideas = {
 	industrial_concern = {
 		aioc = {
 			allowed = {
-				original_TAG = ENG
+				OR = {
+					original_TAG = ENG
+					original_TAG = SAF
+				}
 			}
 			research_bonus = {
 				industry = 0.15

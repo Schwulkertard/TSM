@@ -2560,6 +2560,31 @@ ideas = {
 			modifier = {
 			}
 		}
+	}
+	theorist_production = {
+		HUN_vilmos_roder = {
+			picture = HUN_vilmos_roder
+			cost = 150
 
+			allowed  = {
+				original_tag  = HUN
+			}
+			available  = {
+			}
+
+			traits = { war_industrialist }
+		}
+		HUN_lajos_remenyi_schneller = {
+			picture = HUN_lajos_remenyi_schneller
+			cost = 150
+
+			allowed  = {
+				original_tag  = HUN
+			}
+			available  = {
+			}
+
+			traits = { captain_of_industry }
+		}
 	}
 }

@@ -3,6 +3,7 @@ equipments = {
  		year = 1922
  		is_archetype = yes 
 		naval_weather_penalty_factor = 1
+		naval_dominance_factor = 100
  		is_buildable = no
  		type = screen_ship
  		interface_category = interface_category_screen_ships
@@ -124,6 +125,7 @@ equipments = {
  		resources = {
  			steel = 20
  		}
+		naval_dominance_factor = 125
  		module_slots = {
  			fixed_ship_battery_slot = inherit
  			fixed_ship_anti_air_slot = inherit
@@ -185,6 +187,7 @@ equipments = {
  		resources = {
  			steel = 30
  		}
+		naval_dominance_factor = 150
  		module_slots = {
  			fixed_ship_battery_slot = inherit
  			fixed_ship_anti_air_slot = inherit
@@ -246,6 +249,7 @@ equipments = {
  		resources = {
  			steel = 30
  		}
+		naval_dominance_factor = 175
  		module_slots = {
  			fixed_ship_battery_slot = inherit
  			fixed_ship_anti_air_slot = inherit
@@ -759,6 +763,7 @@ equipments = {
  		resources = {
  			steel = 15
  		}
+		naval_dominance_factor = 200
  		module_slots = {
  			fixed_ship_battery_slot = {
  				required = yes

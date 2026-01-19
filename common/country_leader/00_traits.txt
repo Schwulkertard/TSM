@@ -934,10 +934,8 @@ leader_traits = {
 	national_integralist = {
 		sprite = 13
 		random = yes
-		political_power_factor = 0.1
-		stability_factor = 0.1
-		army_attack_factor = 0.05
-		army_defence_factor = 0.05
+		stability_weekly = 0.003
+		stability_factor = 0.15
 		ai_will_do = {
 			factor = 1
 		}
@@ -1622,7 +1620,7 @@ leader_traits = {
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.2
+		consumer_goods_expected_value = -0.05
 
 		ai_will_do = {
 			factor = 2
@@ -3815,6 +3813,7 @@ leader_traits = {
 	navy_chief_naval_aviation_1 = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.03
+		sortie_efficiency = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -3824,6 +3823,7 @@ leader_traits = {
 	navy_chief_naval_aviation_2 = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.07
+		sortie_efficiency = 0.1
 
 		ai_will_do = {
 			factor = 2
@@ -3833,6 +3833,7 @@ leader_traits = {
 	navy_chief_naval_aviation_3 = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.12
+		sortie_efficiency = 0.15
 
 		ai_will_do = {
 			factor = 3

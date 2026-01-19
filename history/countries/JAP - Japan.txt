@@ -83,6 +83,7 @@ capital = 270
 	never_surrender
 	JAP_island_hopping8
 }
+add_ideas = ENG_allied_exped_corp2
 # ASIA GUI - VARIABLES
 # ALLIES
 set_variable = { global.RUBBER_ALLIES_LOCATIONS = 22 }

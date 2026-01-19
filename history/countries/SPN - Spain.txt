@@ -26,9 +26,6 @@ set_variable = {
 add_offsite_building = { type = arms_factory level = 3 }
 set_research_slots = 1
 set_technology = {
-	special_forces_mountaineers = 1
-	special_forces_marines = 1
-	special_forces_paratroopers = 1
 	basic_train = 1
 	bba_early_transport_plane = 1
 	armor_tech_1 = 1
