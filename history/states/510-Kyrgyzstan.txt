@@ -6,7 +6,7 @@ state={
  		chromium = 120.000
  		tungsten = 200
  		aluminium = 150
-		rubber = 40
+		
  	}
  	history={
  		owner = SOV
