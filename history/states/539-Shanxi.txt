@@ -4,6 +4,10 @@ state=
  	name="STATE_615"
  	manpower = 11601000
  	state_category = town
+	resources={
+ 		steel = 30.000
+ 		tungsten = 30.000
+ 	}
  	history=
  	{
  		owner = CHI
@@ -13,7 +17,7 @@ state=
  		}
  		buildings = {
  			infrastructure = 3
- 			arms_factory = 2
+ 			arms_factory = 4
  			industrial_complex = 2
  		}
  		1938.10.25 = {
@@ -21,7 +25,7 @@ state=
  		}
  	}
  	provinces={
- 		973 980 1125 1148 1383 1461 1473 1515 3810 3906 4195 4260 4345 7020 9537 9581 9635 9657 10965 11179 11216 11292
+ 		973 980 1125 1148 1383 1461 1473 1515 3906 4195 4260 4345 7020 9537 9581 9635 9657 10965 11179 11216 11292
  	}
  }
 

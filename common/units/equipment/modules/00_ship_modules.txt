@@ -127,7 +127,6 @@ equipment_modules = {
 			naval_speed = -0.01
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 0.5
@@ -155,7 +154,6 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
@@ -188,7 +186,6 @@ equipment_modules = {
 			naval_speed = -0.03
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1.75
@@ -221,7 +218,6 @@ equipment_modules = {
 			naval_speed = -0.04
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1.75

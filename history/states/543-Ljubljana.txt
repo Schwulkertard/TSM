@@ -1,5 +1,5 @@
 state={
- 	id=748
+ 	id=543
  	name="STATE_748"
  	history={
  		owner = YUG

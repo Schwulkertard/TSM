@@ -20,15 +20,21 @@ state=
  			9441 = {
  				naval_base = 5
  			}
+			9412 = {
+ 				naval_base = 5
+ 			}
+			6816 = {
+ 				naval_base = 5
+ 			}
  		}
  		victory_points = {
- 			9441 15
+ 			9441 10
  		}
  		victory_points = {
  			1166 1
  		}
 		victory_points = {
-			6788 2
+			7216 2
 		}
 		victory_points = {
 			6816 5
@@ -38,7 +44,7 @@ state=
 		rubber = 250
 	}
  	provinces={
- 		1166 1233 6740 6788 6816 9343 9412 9441 11118
+ 		1166 1233 6740 6788 6816 9343 9412 9441 11118 6673 4652 11040 9844 1854 7216 9820
  	}
  }
 
