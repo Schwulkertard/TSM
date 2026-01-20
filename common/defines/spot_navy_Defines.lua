@@ -98,7 +98,25 @@ NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1.0
 NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 10.0	-- spotting speed mult against naval invasion armies
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 2		-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 2	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 7								-- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 100									-- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 100							-- base cap of divisions that can be assigned in a naval invasion
+NDefines.NNavy.DOMINANCE_CONTROLLED_THRESHOLD_RATIO = 0.55 -- Percentage of needed dominance control over enemies for you and friendlies to control a strategic sea region
+NDefines.NNavy.NAVAL_HEADQUARTERS_FIRST_ADJACENT_FACTOR = 0.0						-- naval dominance from naval headquarters is multiplied by this value for the first adjacent region
+NDefines.NNavy.NAVAL_HEADQUARTERS_SECOND_ADJACENT_FACTOR = 0.0					-- naval dominance from naval headquarters is multiplied by this value for the second adjacent region
 
+NDefines.NNavy.MISSION_DOMINANCE_RATIOS = { -- dominance multipliers for different mission types
+		0.0, -- HOLD
+		1.0, -- PATROL
+		1.0, -- STRIKE FORCE
+		0.5, -- CONVOY RAIDING
+		1.0, -- CONVOY ESCORT
+		0.0, -- MINES PLANTING
+		0.0, -- MINES SWEEPING
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		1.0, -- NAVAL_INVASION_SUPPORT
+	}
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 		0.4, -- HOLD
@@ -110,18 +128,6 @@ NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 		0.4, -- MINES SWEEPING	
 		0.4, -- TRAIN
 		0.4, -- RESERVE_FLEET
-		0.4, -- NAVAL_INVASION_SUPPORT
-	}
-NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
-		0.0, -- HOLD
-		1.0, -- PATROL		
-		0.4, -- STRIKE FORCE 
-		0.5, -- CONVOY RAIDING
-		0.5, -- CONVOY ESCORT
-		0.3, -- MINES PLANTING	
-		0.3, -- MINES SWEEPING	
-		0.0, -- TRAIN
-		0.0, -- RESERVE_FLEET
 		0.4, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.

@@ -370,6 +370,7 @@ NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.005		-- Factor to scal
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRA_FACTOR = 0.0011	-- Factor to scale collateral damage to infra with.
 NDefines.NMilitary.USE_MULTIPLICATIVE_ORG_LOSS_WHEN_MOVING = true -- whether to apply org_loss_when_moving modifiers additively or multiplicatively (hardcoded multiplicative pre-2021)
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true      -- Whether unit leader XP gain is scaled by 1/<nr_of_traits> 
+
 -------------------------------------
 --Air changes
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60

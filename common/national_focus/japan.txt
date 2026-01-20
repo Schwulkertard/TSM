@@ -1196,7 +1196,7 @@ focus_tree = {
  				name = JAP_small_arms_modernization
  				bonus = 1.0
  				uses = 2
- 				technology = improved_infantry_weapons_2
+ 				technology = improved_infantry_weapons
 				technology = advanced_infantry_weapons
  			}
  		}
