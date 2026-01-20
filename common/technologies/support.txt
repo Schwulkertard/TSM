@@ -122,9 +122,33 @@ technologies = {
 		engineer = {
 			entrenchment  = 2
 			fort = {
-				defence = 0.10
+				defence = 0.05
 				attack = 0.10
 			}
+		}
+		pioneer_support = {
+			entrenchment  = 2
+			fort = {
+				defence = 0.10
+				attack = 0.05
+			}
+		}
+		assault_engineer = {
+			entrenchment  = 2
+			fort = {
+				defence = 0.10
+				attack = 0.05
+			}
+		}
+		armored_engineer = {
+			entrenchment  = 2
+			fort = {
+				defence = 0.10
+				attack = 0.05
+			}
+		}
+		enable_subunits = {
+			pioneer_support
 		}
 		enable_equipment_modules = {
 			dozer_blade
@@ -167,27 +191,29 @@ technologies = {
 	tech_engineers3 = {
 		engineer = {
 			entrenchment  = 2
-			river = {
-				attack = 0.1
+			fort = {
 				defence = 0.10
-			}
-		}
-		light_flame_tank = {
-			entrenchment  = 1
-			fort = {
-
 				attack = 0.10
 			}
 		}
-		medium_flame_tank = {
-			entrenchment  = 1
+		pioneer_support = {
+			entrenchment  = 2
 			fort = {
+				defence = 0.10
 				attack = 0.10
 			}
 		}
-		heavy_flame_tank = {
-			entrenchment  = 1
+		assault_engineer = {
+			entrenchment  = 2
 			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
+		armored_engineer = {
+			entrenchment  = 2
+			fort = {
+				defence = 0.10
 				attack = 0.10
 			}
 		}
@@ -229,34 +255,28 @@ technologies = {
 		engineer = {
 			entrenchment  = 2
 			urban = {
-				attack = 0.1
-				defence = 0.1
-			}
-		}
-		light_flame_tank = {
-			entrenchment  = 1
-			urban = {
-				attack = 0.1
-			}
-			fort = {
+				defence = 0.10
 				attack = 0.10
 			}
 		}
-		medium_flame_tank = {
-			entrenchment  = 1
+		pioneer_support = {
+			entrenchment  = 2
 			urban = {
-				attack = 0.1
-			}
-			fort = {
+				defence = 0.10
 				attack = 0.10
 			}
 		}
-		heavy_flame_tank = {
-			entrenchment  = 1
+		assault_engineer = {
+			entrenchment  = 2
 			urban = {
-				attack = 0.1
+				defence = 0.10
+				attack = 0.10
 			}
-			fort = {
+		}
+		armored_engineer = {
+			entrenchment  = 2
+			urban = {
+				defence = 0.10
 				attack = 0.10
 			}
 		}
@@ -517,7 +537,16 @@ technologies = {
 	}
 	tech_military_police2 = {
 		military_police = {
-			max_organisation=20
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.02
+            }
+		}
+		motorized_military_police = {
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.03
+            }
 		}
 		path = {
 			leads_to_tech = tech_military_police3
@@ -547,7 +576,16 @@ technologies = {
 	}
 	tech_military_police3 = {
 		military_police = {
-			max_organisation=20
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.02
+            }
+		}
+		motorized_military_police = {
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.03
+            }
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -577,7 +615,16 @@ technologies = {
 	}
 	tech_military_police4 = {
 		military_police = {
-			max_organisation=20
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.02
+            }
+		}
+		motorized_military_police = {
+			battalion_mult = {
+			category = category_light_infantry
+			max_organisation = 0.03
+            }
 		}
 		research_cost = 1
 		start_year = 1943
@@ -645,9 +692,28 @@ technologies = {
 	}
 	tech_maintenance_company2 = {
 		maintenance_company = {
-			reliability_factor = 0.05
-			#equipment_capture_factor = 0.05
-			default_morale =0.2
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.01
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.01
+			add = yes
+            }
+		}
+		armored_maintenance = {
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.015
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.015
+			add = yes
+            }
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -690,8 +756,28 @@ technologies = {
 	}
 	tech_maintenance_company3 = {
 		maintenance_company = {
-			reliability_factor = 0.05
-			default_morale =0.2
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.01
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.01
+			add = yes
+            }
+		}
+		armored_maintenance = {
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.015
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.015
+			add = yes
+            }
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -729,13 +815,28 @@ technologies = {
 	}
 	tech_maintenance_company4 = {
 		maintenance_company = {
-			reliability_factor = 0.05
-			default_morale =0.2
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.01
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.01
+			add = yes
+            }
 		}
-		research_cost = 1
-		start_year = 1943
-		categories = {
-			year_1943
+		armored_maintenance = {
+			battalion_mult = {
+			category = category_all_armor
+			default_morale = 0.015
+			add = yes
+            }
+		battalion_mult = {
+			category = category_all_armor
+			max_strength = 0.015
+			add = yes
+            }
 		}
 		special_project_specialization = { specialization_land }
 		folder = {
@@ -808,7 +909,12 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
+            battalion_mult = {
+			category = category_all_infantry
+            max_strength = 0.03
+			add = yes
+            }
+        }
 		path = {
 			leads_to_tech = tech_field_hospital3
 			research_cost_coeff = 1
@@ -846,9 +952,14 @@ technologies = {
 	}
 	tech_field_hospital3 = {
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
+            battalion_mult = {
+			category = category_all_infantry
+            max_strength = 0.03
+			add = yes
+            }
+        }
 		path = {
 			leads_to_tech = tech_field_hospital4
 			research_cost_coeff = 1
@@ -886,9 +997,14 @@ technologies = {
 	}
 	tech_field_hospital4 = {
 		field_hospital = {
-			casualty_trickleback = 0.1
+			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
+            battalion_mult = {
+			category = category_all_infantry
+            max_strength = 0.03
+			add = yes
+            }
+        }
 		research_cost = 1
 		start_year = 1943
 		categories = {
@@ -1130,6 +1246,9 @@ technologies = {
 		signal_company = {
 			initiative = 0.07
 		}
+		armored_signal = {
+			initiative = 0.1
+		}
 		path = {
 			leads_to_tech = tech_signal_company3
 			research_cost_coeff = 1
@@ -1169,6 +1288,9 @@ technologies = {
 		signal_company = {
 			initiative = 0.07
 		}
+		armored_signal = {
+			initiative = 0.1
+		}
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
@@ -1207,6 +1329,9 @@ technologies = {
 	tech_signal_company4 = {
 		signal_company = {
 			initiative = 0.07
+		}
+		armored_signal = {
+			initiative = 0.1
 		}
 		research_cost = 1
 		start_year = 1943
