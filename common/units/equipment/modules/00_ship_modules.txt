@@ -2250,19 +2250,21 @@ equipment_modules = {
  	#### ###  # # # #  # ###       #  #    #### ##  # # # ##   #
  	#  # #  # #   # #  # #  #       # #  # #  # #   #   # #     #
  	#  # #  # #   #  ##  #  #     ##   ##  #  # ### #   # ### ##
- 	ship_armor_bb_1 = {
+	ship_scheme_mixed = {
  		category = ship_heavy_armor
- 		gfx = ship_armor_thick_1
+ 		gfx = ship_scheme_mixed
  		multiply_stats = {
- 			build_cost_ic = 0.10
  			naval_speed = -0.15
- 			max_strength = 0.05
+ 			max_strength = 0.025
+			naval_torpedo_damage_reduction_factor = -0.66
+			anti_air_attack = -0.66
+			reliability = -0.33
  		}
  		build_cost_resources = {
- 			chromium = 10
+ 			chromium = 2
  		}
  		add_stats = {
- 			armor_value = 45
+ 			armor_value = 55
  			surface_visibility = 10
  		}
 		can_convert_from = {
@@ -2271,76 +2273,86 @@ equipment_modules = {
  		}
  		dismantle_cost_ic = 5500
  	}
- 	ship_armor_bc_1 = {
+	ship_scheme_incremental = {
  		category = ship_heavy_armor
- 		gfx = ship_armor_1
+ 		gfx = ship_scheme_incremental
  		multiply_stats = {
- 			build_cost_ic = 0.10
- 			naval_speed = -0.05
- 			max_strength = 0.05
- 		}
- 		build_cost_resources = {
- 			chromium = 5
- 		}
- 		add_stats = {
- 			armor_value = 40
- 			surface_visibility = 10
- 		}
-		can_convert_from = {
- 			module_category = ship_heavy_armor
- 			convert_cost_ic = 1200
- 		}
- 		dismantle_cost_ic = 4500
- 	}
- 	ship_armor_bb_2 = {
- 		category = ship_heavy_armor
- 		gfx = ship_armor_thick_2
- 		multiply_stats = {
- 			build_cost_ic = 0.10
+ 			build_cost_ic = 0.05
  			naval_speed = -0.15
- 			max_strength = 0.1
+ 			max_strength = 0.05
+			naval_torpedo_damage_reduction_factor = -0.33
+			anti_air_attack = -0.33
+			reliability = -0.17
  		}
  		build_cost_resources = {
- 			chromium = 10
+ 			chromium = 4
  		}
  		add_stats = {
- 			armor_value = 50
+ 			armor_value = 55
  			surface_visibility = 10
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
- 			convert_cost_ic = 2250
- 		}
- 		dismantle_cost_ic = 6000
- 	}
- 	ship_armor_bc_2 = {
- 		category = ship_heavy_armor
- 		gfx = ship_armor_2
- 		multiply_stats = {
- 			build_cost_ic = 0.10
- 			naval_speed = -0.05
- 			max_strength = 0.1
- 		}
- 		build_cost_resources = {
- 			chromium = 5
- 		}
- 		add_stats = {
- 			armor_value = 45
-			surface_visibility = 10
- 		}
-		can_convert_from = {
- 			module_category = ship_heavy_armor
- 			convert_cost_ic = 1800
+ 			convert_cost_ic = 1500
  		}
  		dismantle_cost_ic = 5500
  	}
- 	ship_armor_bb_3 = {
+	ship_scheme_incremental_post_jutland = {
  		category = ship_heavy_armor
- 		gfx = ship_armor_thick_3
+ 		gfx = ship_scheme_incremental_post_jutland
+ 		multiply_stats = {
+ 			build_cost_ic = 0.075
+ 			naval_speed = -0.15
+ 			max_strength = 0.075
+			naval_torpedo_damage_reduction_factor = -0.17
+			anti_air_attack = -0.17
+			reliability = -0.09
+ 		}
+ 		build_cost_resources = {
+ 			chromium = 6
+ 		}
+ 		add_stats = {
+ 			armor_value = 55
+ 			surface_visibility = 10
+ 		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 1500
+ 		}
+ 		dismantle_cost_ic = 5500
+ 	}
+	ship_scheme_all_or_nothing = {
+ 		category = ship_heavy_armor
+ 		gfx = ship_scheme_all_or_nothing
  		multiply_stats = {
  			build_cost_ic = 0.10
  			naval_speed = -0.15
- 			max_strength = 0.15
+ 			max_strength = 0.1
+			naval_torpedo_damage_reduction_factor = 0.09
+			reliability = 0.09
+ 		}
+ 		build_cost_resources = {
+ 			chromium = 8
+ 		}
+ 		add_stats = {
+ 			armor_value = 55
+ 			surface_visibility = 10
+ 		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 1500
+ 		}
+ 		dismantle_cost_ic = 5500
+ 	}
+	ship_scheme_all_or_nothing_armor_citadel = {
+ 		category = ship_heavy_armor
+ 		gfx = ship_scheme_all_or_nothing_armor_citadel
+ 		multiply_stats = {
+ 			build_cost_ic = 0.10
+ 			naval_speed = -0.15
+ 			max_strength = 0.1
+			naval_torpedo_damage_reduction_factor = 0.17
+			reliability = 0.17
  		}
  		build_cost_resources = {
  			chromium = 10
@@ -2351,30 +2363,9 @@ equipment_modules = {
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
- 			convert_cost_ic = 3000
+ 			convert_cost_ic = 1500
  		}
- 		dismantle_cost_ic = 7500
- 	}
- 	ship_armor_bc_3 = {
- 		category = ship_heavy_armor
- 		gfx = ship_armor_3
- 		multiply_stats = {
- 			build_cost_ic = 0.10
- 			naval_speed = -0.05
- 			max_strength = 0.15
- 		}
- 		build_cost_resources = {
- 			chromium = 5
- 		}
- 		add_stats = {
- 			armor_value = 50
- 			surface_visibility = 10
- 		}
-		can_convert_from = {
- 			module_category = ship_heavy_armor
- 			convert_cost_ic = 2400
- 		}
- 		dismantle_cost_ic = 6200
+ 		dismantle_cost_ic = 5500
  	}
  	ship_armor_shbb = {
  		category = ship_super_heavy_armor

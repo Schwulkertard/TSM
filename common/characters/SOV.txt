@@ -186,7 +186,6 @@ characters = {
 			traits = {
 				mass_assault_expert
 			}
-			research_bonus = { cat_mass_assault = 0.15 }
 		}		
 	}
 
@@ -504,7 +503,6 @@ characters = {
 			traits = {
 				military_theorist
 			}
-			research_bonus = { land_doctrine = 0.10 }
 		}
 
 		field_marshal = {

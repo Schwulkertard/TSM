@@ -233,7 +233,7 @@ technologies = {
 		}
 				
 
-		research_cost = 2
+		research_cost = 1.9
 		start_year = 1940
 		categories = {
 			year_1940

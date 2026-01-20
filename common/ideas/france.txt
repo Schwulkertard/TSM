@@ -1080,11 +1080,9 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_victors_of_ww1
-			research_bonus = {
-				land_doctrine = -0.25
-			}
 			modifier = {
 				conscription = -0.003
+				land_mastery_gain_factor = -0.25
 			}
 		}
 		FRA_disjointed_government = {

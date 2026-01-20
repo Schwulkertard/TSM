@@ -284,9 +284,6 @@ characters={
 				allowed  = {
 					original_tag  = MAN 
 				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
 				traits  = {
 					military_theorist 
 				}

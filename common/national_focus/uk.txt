@@ -237,12 +237,7 @@ focus_tree = {
 					province = 8547
 				}
 			}
-		    add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 2
@@ -266,14 +261,8 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 100
+			army_experience = 300
 			add_ideas=ENG_Tank_upgrade_cost
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 2				
-				category = land_doctrine
-			}
 			add_tech_bonus = {
 				bonus = 1
 				ahead_reduction = 2
@@ -1261,7 +1250,7 @@ focus_tree = {
 					fixed_ship_radar_slot = ship_radar_4
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = dp_ship_secondaries_4
-					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_armor_slot = ship_scheme_all_or_nothing_armor_citadel
 					front_1_custom_slot = ship_406_battery
 					mid_1_custom_slot = ship_406_battery
 					mid_2_custom_slot = dp_ship_secondaries_4
@@ -1826,14 +1815,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
-			army_experience=100
-				add_tech_bonus = {
-					name = ENG_military_training_act
-					bonus = 1
-					uses = 2
-					category = land_doctrine
-				}
-			}
+			army_experience=300
+		}
 	}
 	focus = {
 		id = uk_empire_focus

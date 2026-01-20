@@ -89,7 +89,6 @@ critical_parts = {
 		str_damage_multiplier = 50
 		org_damage_multiplier = 50
 	}
-	
 
 	on_fire = {
 		icon = "GFX_default_critical_damage_icons"

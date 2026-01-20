@@ -618,13 +618,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = FRA_victors_of_wwi
-			army_experience = 100
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 200
 			add_tech_bonus = {
 				technology = antitank1
 				technology = antitank2
@@ -833,12 +827,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = charles_de_gaulle
-			add_tech_bonus = {
-				name = FRA_battle_of_maneuver
-				category = land_doctrine
-				uses = 2
-				bonus = 1
-			}
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -1685,7 +1674,7 @@ focus_tree = {
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_armor_slot = ship_scheme_incremental_post_jutland
 					front_1_custom_slot = ship_381_battery
 					mid_1_custom_slot = ship_anti_air_3
 					mid_2_custom_slot = ship_anti_air_3
@@ -2598,11 +2587,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 100
-			add_tech_bonus = {
-				bonus = 4
-				uses = 4
-				category = land_doctrine
-				}
 		}
 	}
 	focus = {

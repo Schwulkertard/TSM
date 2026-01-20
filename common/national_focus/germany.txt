@@ -344,7 +344,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 25
+			army_experience = 100
 			add_tech_bonus = {
 				name = at
 				bonus = 1
@@ -358,12 +358,6 @@
 				technology=artillery3
 				technology=artillery2
 				technology=artillery1
-			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
 			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = franz_halder
@@ -409,13 +403,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 			add_tech_bonus = {
 				name = mech_army_bonus
 				bonus = 1.5
@@ -438,13 +426,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 			add_tech_bonus = {
 				name = GER_soviet_treaty
 				bonus = 1.3
@@ -1114,13 +1096,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 100
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 200
 
 			add_tech_bonus = {
 				bonus = 1.5
@@ -3110,7 +3086,7 @@ focus = {
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_bb_3
+					fixed_ship_armor_slot = ship_scheme_all_or_nothing
 					front_1_custom_slot = ship_381_battery
 					mid_1_custom_slot = ship_anti_air_3
 					mid_2_custom_slot = ship_anti_air_3
@@ -3647,6 +3623,7 @@ focus = {
 	relative_position_id = GER_german_engineering
 	cost = 5
 	completion_reward = {
+		army_experience = 100
 		add_tech_bonus = {
 		name = mech_army_bonus
 		bonus = 1.1
@@ -3659,13 +3636,7 @@ focus = {
 		uses = 1
 		technology = mechanised_infantry3
 			}
-		add_tech_bonus = {
-		name = land_doc_bonus
-		bonus = 1
-		uses = 1
-		category = land_doctrine
-			}
-			            }	
+		}	
 	}
 focus = {
 	id = GER_ground_support

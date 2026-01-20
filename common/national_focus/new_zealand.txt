@@ -944,15 +944,7 @@ focus_tree = {
  	complete_tooltip = {
  	}
  	completion_reward = {
- 		if={limit={has_global_flag= major_only_scenario}
- 			army_experience = 35
-			}
- 		add_tech_bonus = {
- 			name = NZL_army_reforms
- 			bonus = 1.0
- 			uses = 1
- 			category = land_doctrine
- 		}
+ 		army_experience = 100
  	}
  }
  focus = {

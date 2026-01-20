@@ -273,7 +273,6 @@ characters={
 			traits = {
 				blitzkrieg_theorist
 			}
-			research_bonus = { land_doctrine = 0.1 }
 			ai_will_do = {
 				factor = 1.000
 				}
@@ -359,7 +358,6 @@ characters={
 			traits = {
 				military_theorist
 			}
-			research_bonus = { land_doctrine = 0.1 }
 		}
 		
 		corps_commander={

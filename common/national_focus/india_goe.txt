@@ -1935,12 +1935,7 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            add_doctrine_cost_reduction = {
-                name = RAJ_learn_from_the_crown
-                cost_reduction = 0.75
-                uses = 1
-                category = land_doctrine
-            }
+            army_experience = 100
         }
     }
 
@@ -3374,12 +3369,7 @@ focus = {
         search_filters = {FOCUS_FILTER_RESEARCH}
 
         completion_reward = {
-            add_doctrine_cost_reduction = {
-                name = RAJ_the_burma_rifles
-                cost_reduction = 0.35
-                uses = 1
-                category = land_doctrine
-            }
+            army_experience = 100
 
             add_tech_bonus = {
                 bonus = 0.4
@@ -3600,11 +3590,7 @@ focus = {
 
         search_filters = { FOCUS_FILTER_MANPOWER }
         completion_reward = {
-            add_doctrine_cost_reduction = {
-                cost_reduction = 0.5
-                uses = 1
-                category = land_doctrine
-            }
+            army_experience = 100
         }
     }
     

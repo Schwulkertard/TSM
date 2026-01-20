@@ -142,9 +142,6 @@ ideas = {
 			allowed = {
 				original_tag = PER
 			}
-			research_bonus = {
-				land_doctrine = 0.10
-			}
 			traits = { military_theorist }
 		}
 		PER_hossein_afkhami = {

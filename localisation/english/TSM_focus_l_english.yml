@@ -4021,3 +4021,7 @@
   ROM_ensure_prosperity_tt:0 "§RWill be removed once we are at war with the USSR.§!"
   SOV_stavka:0 "STAVKA"
   SOV_modify_stavka_tt: "Modify §Y$SOV_stavka$§! by:"
+  theorist_mastery_tt:0 "§GGrants 2.5 Monthly Mastery.§!"
+  theorist_chief_of_army_tt:0 "§GGrants 1 Monthly Mastery.§!"
+  theorist_chief_of_navy_tt:0 "§GGrants 3 Monthly Mastery.§!"
+  theorist_chief_of_air_tt:0 "§GGrants 3 Monthly Mastery.§!"

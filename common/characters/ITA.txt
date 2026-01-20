@@ -184,7 +184,6 @@ characters={
 			traits = {
 				mobile_warfare_expert
 			}
-			research_bonus = { cat_mobile_warfare = 0.15 }
 		}
 		
 		corps_commander={
@@ -417,8 +416,6 @@ characters={
 				military_theorist
 				grand_fleet_proponent
 			}
-			research_bonus = { land_doctrine = 0.1 }
-			research_bonus = { naval_doctrine = 0.1 }
 		}
 	}
 

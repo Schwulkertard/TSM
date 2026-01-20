@@ -1605,11 +1605,7 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 200
 			add_tech_bonus = {
 				name = artillery
 				bonus = 1
@@ -1741,13 +1737,7 @@ focus = {
 					progress = 0.1
 					efficiency = 50
 				}   
-			army_experience = 100
-			add_tech_bonus = {
-				name = land_doctrine_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 300
 		}
 	}
 	focus = {

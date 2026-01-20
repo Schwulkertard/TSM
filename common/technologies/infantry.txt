@@ -513,7 +513,7 @@ technologies = {
 			leads_to_tech = infantry_at
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 2.2
 		start_year = 1942
 		categories = {
 			year_1942

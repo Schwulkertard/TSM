@@ -1189,9 +1189,6 @@ ideas = {
 			allowed = {
 				OR = { original_tag = INS  }
 			}
-			research_bonus = {
-				land_doctrine = 0.10
-			}
 			traits = { military_theorist }
 		}
 		generic_naval_theorist = {
@@ -1199,18 +1196,12 @@ ideas = {
 			allowed = {
 				OR = { original_tag = INS  }
 			}
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
 			traits = { naval_theorist }
 		}
 		generic_air_warfare_theorist = {
 			ledger = air
 			allowed = {
 				OR = { original_tag = INS  }
-			}
-			research_bonus = {
-				air_doctrine = 0.10
 			}
 			traits = { air_warfare_theorist }
 		}

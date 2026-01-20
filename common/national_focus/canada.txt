@@ -1284,13 +1284,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			army_experience = 20
- 			add_tech_bonus = {
- 				name = CAN_independent_command
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}
+ 			army_experience = 100
  		}
  	}
  	focus = {
@@ -1362,15 +1356,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			if={limit={has_global_flag= major_only_scenario}
- 			army_experience = 35
-			}
- 			add_tech_bonus = {
- 				name = CAN_army_modernization
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}
+ 			army_experience = 100
  		}
  	}
  	focus = {
@@ -1561,13 +1547,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			army_experience = 5
- 			add_tech_bonus = {
- 				name = CAN_red_deer_training_camp
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}
+ 			army_experience = 100
  		}
  	}
  	focus = {

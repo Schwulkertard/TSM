@@ -737,15 +737,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = yes
  		completion_reward = {
- 			if={limit={has_global_flag= major_only_scenario}
- 			army_experience = 35
-			}
- 			add_tech_bonus = {
- 				name = SAF_special_service_battalion
- 				bonus = 1.0
- 				uses = 2
- 				category = land_doctrine
- 			}
+ 			army_experience = 100
  		}
  	}
  	focus = {
@@ -825,13 +817,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = yes
  		completion_reward = {
- 			army_experience = 100
- 			add_tech_bonus = {
- 				name = SAF__south_african_military_college
- 				bonus = 1.0
- 				uses = 2
- 				category = land_doctrine
- 			}
+ 			army_experience = 200
  		}
  	}
  	focus = {

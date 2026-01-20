@@ -1,5 +1,5 @@
 on_actions = {
-on_daily = {
+on_monthly = {
 		effect = {
 			share_intel_effect = yes
 			if = {
@@ -10,19 +10,31 @@ on_daily = {
 					}
 				}
 				add_mastery = {
-					amount = 5
+					amount = 2.5
 					track = infantry
 				}
 				add_mastery = {
-					amount = 5
-					track = armor
-				}
-				add_mastery = {
-					amount = 5
+					amount = 2.5
 					track = combat_support
 				}
 				add_mastery = {
-					amount = 5
+					amount = 2.5
+					track = armor
+				}
+				add_mastery = {
+					amount = 2.5
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 2.5
+					track = support
+				}
+				add_mastery = {
+					amount = 2.5
+					track = motorized
+				}
+				add_mastery = {
+					amount = 2.5
 					track = operations
 				}
 			}
@@ -34,19 +46,31 @@ on_daily = {
 					}
 				}
 				add_mastery = {
-					amount = 2.5
+					amount = 1
 					track = infantry
 				}
 				add_mastery = {
-					amount = 2.5
-					track = armor
-				}
-				add_mastery = {
-					amount = 2.5
+					amount = 1
 					track = combat_support
 				}
 				add_mastery = {
-					amount = 2.5
+					amount = 1
+					track = armor
+				}
+				add_mastery = {
+					amount = 1
+					track = combat_support
+				}
+				add_mastery = {
+					amount = 1
+					track = support
+				}
+				add_mastery = {
+					amount = 1
+					track = motorized
+				}
+				add_mastery = {
+					amount = 1
 					track = operations
 				}
 			}
@@ -58,19 +82,19 @@ on_daily = {
 					}
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = capital_ships
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = carriers
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = screens
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = submarines
 				}
 			}
@@ -82,19 +106,19 @@ on_daily = {
 					}
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = fighter_aircraft
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = strike_aircraft
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = medium_aircraft
 				}
 				add_mastery = {
-					amount = 5
+					amount = 3
 					track = heavy_aircraft
 				}
 			}

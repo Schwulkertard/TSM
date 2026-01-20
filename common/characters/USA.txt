@@ -129,7 +129,6 @@ characters={
 			traits = {
 				superior_firepower_expert
 			}
-			research_bonus = { cat_superior_firepower = 0.15 }
 		}
 
 		corps_commander={
@@ -993,7 +992,6 @@ characters={
 			traits = {
 				military_theorist
 			}
-			research_bonus = { land_doctrine = 0.1 }
 		}
 	}
 

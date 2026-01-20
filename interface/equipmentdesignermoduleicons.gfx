@@ -166,6 +166,32 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_pure_oxygen_torpedo.dds"
 	}
 
+	###Armor New
+	spriteType = {
+		name = "GFX_SMI_ship_scheme_mixed"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_scheme_mixed.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_scheme_incremental"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_scheme_incremental.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_scheme_incremental_post_jutland"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_scheme_incremental_post_jutland.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_scheme_all_or_nothing"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_scheme_all_or_nothing.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_scheme_all_or_nothing_armor_citadel"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_scheme_all_or_nothing_armor_citadel.png"
+	}
+
 	######## Ship Light battery
 
 	### Category Icon

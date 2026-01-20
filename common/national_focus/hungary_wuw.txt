@@ -1729,16 +1729,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			army_experience = 100
-
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-
+			army_experience = 200
 		}
 	}
 
@@ -2708,12 +2699,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 100
 
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = HUN_henrik_werth

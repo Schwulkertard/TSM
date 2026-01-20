@@ -61,7 +61,6 @@ characters={
 			traits = {
 				grand_battle_plan_expert
 			}
-			research_bonus = { cat_grand_battle_plan = 0.15 }
 		}
 
 		corps_commander={
@@ -131,7 +130,6 @@ characters={
 			traits = {
 				military_theorist
 			}
-			research_bonus = { land_doctrine = 0.1 }
 		}
 		
 		field_marshal={

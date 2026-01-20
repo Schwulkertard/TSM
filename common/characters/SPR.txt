@@ -138,7 +138,6 @@ characters={
 				traits = {
 					military_theorist
 				}
-				research_bonus = { land_doctrine = 0.1 }
 			}
 
 			corps_commander={

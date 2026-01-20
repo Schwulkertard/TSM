@@ -2180,6 +2180,8 @@ leader_traits = {
 	military_theorist = {
 		sprite = 14
 		experience_gain_army = 0.2
+		experience_gain_army_factor = 0.1
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -2188,7 +2190,8 @@ leader_traits = {
 	mobile_warfare_expert = {
 		sprite = 14
 		experience_gain_army = 0.2
-
+		experience_gain_army_factor = 0.15
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -2197,7 +2200,8 @@ leader_traits = {
 	superior_firepower_expert = {
 		sprite = 14
 		experience_gain_army = 0.2
-
+		experience_gain_army_factor = 0.15
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -2206,7 +2210,8 @@ leader_traits = {
 	grand_battle_plan_expert = {
 		sprite = 14
 		experience_gain_army = 0.2
-
+		experience_gain_army_factor = 0.15
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -2215,7 +2220,8 @@ leader_traits = {
 	mass_assault_expert = {
 		sprite = 14
 		experience_gain_army = 0.2
-
+		experience_gain_army_factor = 0.15
+		custom_modifier_tooltip = theorist_mastery_tt
 		ai_will_do = {
 			factor = 500
 		}
@@ -2849,7 +2855,7 @@ leader_traits = {
 	army_chief_defensive_1 = { # +5 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.10
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2858,7 +2864,7 @@ leader_traits = {
 	army_chief_defensive_2 = { # +10 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -2867,7 +2873,7 @@ leader_traits = {
 	army_chief_defensive_3 = { # +15 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.20
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -2876,7 +2882,7 @@ leader_traits = {
 	army_chief_offensive_1 = { # +5 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2885,7 +2891,7 @@ leader_traits = {
 	army_chief_offensive_2 = { # +10 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -2894,7 +2900,7 @@ leader_traits = {
 	army_chief_offensive_3 = { # +15 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -2904,7 +2910,7 @@ leader_traits = {
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		army_core_attack_factor = 0.10
 		army_core_defence_factor = 0.10
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2913,7 +2919,7 @@ leader_traits = {
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.05
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2922,7 +2928,7 @@ leader_traits = {
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.1
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -2931,7 +2937,7 @@ leader_traits = {
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -2941,7 +2947,7 @@ leader_traits = {
 	army_chief_reform_1 = { # Rate at which field experience is gained increases by 5%
 		sprite = 5
 		experience_gain_army_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2950,7 +2956,7 @@ leader_traits = {
 	army_chief_reform_2 = { # Rate at which field experience is gained increases by 10%
 		sprite = 5
 		experience_gain_army_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -2959,7 +2965,7 @@ leader_traits = {
 	army_chief_reform_3 = { # Rate at which field experience is gained increases by 15%
 		sprite = 5
 		experience_gain_army_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -2969,7 +2975,7 @@ leader_traits = {
 	army_chief_organizational_1 = { # Ground units get 4 more Organization
 		sprite = 5
 		army_org_factor = 0.04
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -2978,7 +2984,7 @@ leader_traits = {
 	army_chief_organizational_2 = { # Ground units get 8 more Organization
 		sprite = 5
 		army_org_factor = 0.08
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -2987,7 +2993,7 @@ leader_traits = {
 	army_chief_organizational_3 = { # Ground units get 12 more Organization
 		sprite = 5
 		army_org_factor = 0.12
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -2996,7 +3002,7 @@ leader_traits = {
 	army_chief_planning_1 = { #
 		sprite = 5
 		planning_speed = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3005,7 +3011,7 @@ leader_traits = {
 	army_chief_planning_2 = { #
 		sprite = 5
 		planning_speed = 0.10
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3014,7 +3020,7 @@ leader_traits = {
 	army_chief_planning_3 = { #
 		sprite = 5
 		planning_speed = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3023,7 +3029,7 @@ leader_traits = {
 	army_chief_morale_1 = { # Ground units get 4 more Morale
 		sprite = 5
 		army_morale_factor = 0.04
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3032,7 +3038,7 @@ leader_traits = {
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
 		army_morale_factor = 0.08
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3041,7 +3047,7 @@ leader_traits = {
 	army_chief_morale_3 = { # Ground units get 12 more Morale
 		sprite = 5
 		army_morale_factor = 0.12
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3051,7 +3057,7 @@ leader_traits = {
 	army_chief_maneuver_1 = { # Ground units move 5% faster
 		sprite = 5
 		army_speed_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3060,7 +3066,7 @@ leader_traits = {
 	army_chief_maneuver_2 = { # Ground units move 10% faster
 		sprite = 5
 		army_speed_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3069,7 +3075,7 @@ leader_traits = {
 	army_chief_maneuver_3 = { # Ground units move 15% faster
 		sprite = 5
 		army_speed_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_army_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3374,7 +3380,7 @@ leader_traits = {
 	air_chief_reform_1 = {  # Rate at which air experience is gained increases by 5%
 		sprite = 5
 		experience_gain_air_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3383,7 +3389,7 @@ leader_traits = {
 	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
 		sprite = 5
 		experience_gain_air_factor = 0.075
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3392,7 +3398,7 @@ leader_traits = {
 	air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 5
 		experience_gain_air_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3402,7 +3408,7 @@ leader_traits = {
 	air_chief_safety_1 = {  # Rate of air accidents reduced by 5%
 		sprite = 1
 		air_accidents_factor = -0.05
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3411,7 +3417,7 @@ leader_traits = {
 	air_chief_safety_2 = {  # Rate of air accidents reduced by 10%
 		sprite = 1
 		air_accidents_factor = -0.1
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3420,7 +3426,7 @@ leader_traits = {
 	air_chief_safety_3 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.15
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3430,7 +3436,7 @@ leader_traits = {
 		sprite = 1
 		experience_gain_air_factor = -0.1
 		political_power_factor = 0.2
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3439,7 +3445,7 @@ leader_traits = {
 	air_chief_night_operations_1 = {
 		sprite = 1
 		air_night_penalty = -0.1
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3448,7 +3454,7 @@ leader_traits = {
 	air_chief_night_operations_2 = {
 		sprite = 1
 		air_night_penalty = -0.2
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3457,7 +3463,7 @@ leader_traits = {
 	air_chief_night_operations_3 = {
 		sprite = 1
 		air_night_penalty = -0.3
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3467,7 +3473,7 @@ leader_traits = {
 	air_chief_ground_support_1 = {  # Air superiority impact on land units improved by 5%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3476,7 +3482,7 @@ leader_traits = {
 	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3485,7 +3491,7 @@ leader_traits = {
 	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		army_bonus_air_superiority_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3496,7 +3502,7 @@ leader_traits = {
 	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.1
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3505,7 +3511,7 @@ leader_traits = {
 	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.2
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3514,7 +3520,7 @@ leader_traits = {
 	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.3
-
+		custom_modifier_tooltip = theorist_chief_of_air_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3813,7 +3819,7 @@ leader_traits = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.03
 		sortie_efficiency = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3823,7 +3829,7 @@ leader_traits = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.07
 		sortie_efficiency = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3833,7 +3839,7 @@ leader_traits = {
 		sprite = 1
 		naval_strike_targetting_factor = 0.12
 		sortie_efficiency = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3844,7 +3850,7 @@ leader_traits = {
 		naval_strike_targetting_factor = 0.2
 		navy_capital_ship_attack_factor = 0.1
 		navy_screen_attack_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3855,7 +3861,7 @@ leader_traits = {
 		naval_strike_targetting_factor = 0.1
 		navy_capital_ship_attack_factor = 0.1
 		navy_screen_attack_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3865,7 +3871,7 @@ leader_traits = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.05
 		navy_screen_attack_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3875,7 +3881,7 @@ leader_traits = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.1
 		navy_screen_attack_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3885,7 +3891,7 @@ leader_traits = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.15
 		navy_screen_attack_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3894,8 +3900,9 @@ leader_traits = {
 
 	navy_chief_commerce_raiding_1 = {
 		sprite = 3
-		convoy_raiding_efficiency_factor = 0.1
-
+		navy_screen_attack_factor = 0.05
+		naval_speed_factor = 0.05
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3903,8 +3910,9 @@ leader_traits = {
 
 	navy_chief_commerce_raiding_2 = {
 		sprite = 3
-		convoy_raiding_efficiency_factor = 0.15
-
+		navy_screen_attack_factor = 0.1
+		naval_speed_factor = 0.1
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3912,8 +3920,9 @@ leader_traits = {
 
 	navy_chief_commerce_raiding_3 = {
 		sprite = 3
-		convoy_raiding_efficiency_factor = 0.2
-
+		navy_screen_attack_factor = 0.15
+		naval_speed_factor = 0.15
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3923,7 +3932,7 @@ leader_traits = {
 		sprite = 3
 		experience_gain_navy_factor = -0.1
 		political_power_factor = 0.2
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3932,7 +3941,7 @@ leader_traits = {
 	navy_chief_reform_1 = {
 		sprite = 3
 		experience_gain_navy_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3941,7 +3950,7 @@ leader_traits = {
 	navy_chief_reform_2 = {
 		sprite = 3
 		experience_gain_navy_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3950,7 +3959,7 @@ leader_traits = {
 	navy_chief_reform_3 = {
 		sprite = 3
 		experience_gain_navy_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
@@ -3959,7 +3968,7 @@ leader_traits = {
 	navy_chief_maneuver_1 = { # Naval units move 5% faster
 		sprite = 3
 		naval_speed_factor = 0.05
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 1
 		}
@@ -3968,7 +3977,7 @@ leader_traits = {
 	navy_chief_maneuver_2 = { # Naval units move 10% faster
 		sprite = 3
 		naval_speed_factor = 0.1
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 2
 		}
@@ -3977,7 +3986,7 @@ leader_traits = {
 	navy_chief_maneuver_3 = { # Naval units move 15% faster
 		sprite = 3
 		naval_speed_factor = 0.15
-
+		custom_modifier_tooltip = theorist_chief_of_navy_tt
 		ai_will_do = {
 			factor = 3
 		}
