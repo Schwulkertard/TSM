@@ -18,7 +18,7 @@ set_country_flag = USA_no_armor_genius
 add_ideas = ENG_allied_exped_corp2
 set_variable = { usa_rel_ic_current = -0.30 }
 add_dynamic_modifier = { modifier = relative_industrial_capacity_factory }
-
+add_dynamic_modifier = { modifier = USA_two_ocean_navy }
 # Starting tech
 set_technology = {
 	synth_oil_experiments = 1 

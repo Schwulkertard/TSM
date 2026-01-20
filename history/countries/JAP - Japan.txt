@@ -33,7 +33,6 @@ recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_kiyoshi_hasegawa
 recruit_character = JAP_shigeyoshi_inoue
-recruit_character = JAP_nobutake_kondō
 recruit_character = JAP_takeo_takagi
 recruit_character = JAP_soemu_toyoda
 recruit_character = JAP_jisaburo_ozawa
@@ -41,9 +40,6 @@ recruit_character = JAP_zengo_yoshida
 recruit_character = JAP_hiroaki_abe
 recruit_character = JAP_tadashige_daigo
 recruit_character = JAP_gengo_hyakutake
-recruit_character = JAP_hikonojo_kawakami
-recruit_character = JAP_yasukata_kamimura
-recruit_character = JAP_yoshika_kodama
 recruit_character = JAP_fushimi_hiroyasu
 recruit_character = JAP_korechika_anami
 recruit_character = JAP_mitsuo_fuchida
@@ -57,10 +53,8 @@ recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_nishizo_tsukahara
 recruit_character = JAP_chuichi_nagumo
 recruit_character = JAP_mitsumasa_yonai
-recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_tateo_kato
 recruit_character = JAP_hiroshi_oshima
-recruit_character = JAP_takuo_godo
 recruit_character = JAP_hideo_itokawa
 recruit_character = JAP_hideki_tojo
 recruit_character = JAP_matome_ugaki
@@ -83,6 +77,7 @@ capital = 270
 	never_surrender
 	JAP_island_hopping8
 }
+add_dynamic_modifier = { modifier = USA_two_ocean_navy }
 add_ideas = ENG_allied_exped_corp2
 # ASIA GUI - VARIABLES
 # ALLIES
@@ -123,9 +118,6 @@ if = {
 		#set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
 			photo_reconnaisance = 1
-			special_forces_mountaineers = 1
-			special_forces_marines = 1
-			special_forces_paratroopers = 1
 			aa_lmg = 1
 			air_torpedoe_1 = 1
 			engines_1 = 1

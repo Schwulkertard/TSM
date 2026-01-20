@@ -1891,7 +1891,6 @@ focus = {
 		id = ITA_desert_fox
 		icon = GFX_gazala
 		prerequisite = { focus = ITA_rommel }
-		available = {NOT = {has_full_control_of_state = 413 }}
 		x = 0
 		y = 1
 		relative_position_id = ITA_rommel

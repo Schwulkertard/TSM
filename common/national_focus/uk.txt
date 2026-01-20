@@ -183,8 +183,8 @@ focus_tree = {
 
 				clamp_variable = { var = shadow_civs2 min = 0 max = 120 }
 
-				multiply_variable = { var = shadow_civs2 value = 2 }
-				divide_variable   = { var = shadow_civs2 value = 5 }
+				multiply_variable = { var = shadow_civs2 value = 1 }
+				divide_variable   = { var = shadow_civs2 value = 2 }
 
 				set_variable   = { var = shadow_civs3 value = var:shadow_civs2 }
 				round_variable = shadow_civs2
@@ -531,6 +531,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 5
+		available = {
+			num_of_factories > 125
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
@@ -539,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = crypto_bomb_focus
 		available = {
-			date > 1938.1.1
+			date > 1937.6.1
 		}
 		bypass = {
 		}
@@ -558,7 +561,7 @@ focus_tree = {
 				name = codebreaking_bonus
 				bonus = 1.0
 				uses = 3
-				category = computing_tech
+				category = electronics
 			}
 		}
 	}
@@ -1511,6 +1514,8 @@ focus_tree = {
 			add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
 			hidden_effect ={every_country = {limit = {check_variable= { speeches_enabled > 0}}}
 				scoped_sound_effect="sp_uk_chur"}
+			custom_effect_tooltip = ENG_rubber_reserve_company_tt
+			add_to_variable ={resource_stockpile_capacity_base^1=200000}
 		}
 	}
 	focus = {
@@ -1640,9 +1645,15 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-				set_technology = {
-				antiair2 = 1
+			set_technology = {
+				antiair1 = 1
 				popup = yes
+			}
+			USA = {
+				set_technology = {
+				antiair1 = 1
+				popup = yes
+				}
 			}
 		}
 	}
@@ -1930,7 +1941,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = ENG_colonial_elite
 		}
 	}
 	focus = {

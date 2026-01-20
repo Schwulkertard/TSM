@@ -601,7 +601,6 @@ technologies = {
 			air_attack = 0.2
 		}
 		tech_air_damage_factor = -0.01
-		navy_anti_air_attack_factor = 0.05
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
@@ -659,7 +658,6 @@ technologies = {
 			ap_attack = 0.3
 			air_attack = 0.2
 		}
-		navy_anti_air_attack_factor = 0.05
 		tech_air_damage_factor = -0.01
 		path = {
 			leads_to_tech = antiair4
@@ -709,7 +707,6 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		navy_anti_air_attack_factor = 0.05
 		tech_air_damage_factor = -0.01
 		path = {
 			leads_to_tech = antiair5
@@ -755,7 +752,6 @@ technologies = {
 			tank_medium_anti_air_cannon_3
 			ship_anti_air_4
 		}
-		navy_anti_air_attack_factor = 0.05
 		research_cost = 1
 		start_year = 1943
 		categories = {
