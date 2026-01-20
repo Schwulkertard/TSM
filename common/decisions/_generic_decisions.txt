@@ -1,129 +1,4 @@
 political_actions = {                           
-    raj_rubber1 = {                           
-          allowed = { tag = RAJ tag = JAP }                 
-          available = {                          
-              JAP = { controls_state = 432 }                     
-          }
-          activation = {                          
-			JAP = {
-				has_completed_focus = JAP_strike_on_the_southern_resource_area
-			}                      
-          }
-          is_good = yes                                         
-          days_mission_timeout = 60           
-          timeout_effect = {                    
-			add_resource = {
-				type = rubber
-				amount = -10
-				state = 432
-			}
-			add_resource = {
-				type = rubber
-				amount = 10
-				state = 439
-			}
-			activate_mission = raj_rubber2
-          }
-          complete_effect = {                   
-			640 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}     
-			activate_mission = raj_rubber2       
-          }
-     }
-	 raj_rubber2 = {                           
-		allowed = { tag = RAJ tag = JAP }                 
-		available = {                          
-			JAP = { controls_state = 430 }                     
-		}
-		is_good = yes                                         
-		days_mission_timeout = 50            
-		timeout_effect = {        
-		  add_resource = {
-			  type = rubber
-			  amount = -10
-			  state = 430
-		  } 
-		  add_resource = {
-			type = rubber
-			amount = 10
-			state = 440
-		}
-		activate_mission = raj_rubber3
-		}
-		complete_effect = {                   
-		  288 = {
-			  add_building_construction = {
-				  type = infrastructure
-				  level = 3
-				  instant_build = yes
-			  }
-		  }            
-		}
-   }
-   raj_rubber3 = {                           
-	allowed = { tag = RAJ tag = JAP }                 
-	available = {                          
-		JAP = { controls_state = 431 }                     
-	}
-	is_good = yes                                         
-	days_mission_timeout = 40            
-	timeout_effect = {        
-	  add_resource = {
-		  type = rubber
-		  amount = -5
-		  state = 431
-	  } 
-	  add_resource = {
-		type = rubber
-		amount = 5
-		state = 440
-	}
-	activate_mission = raj_rubber4
-	}
-	complete_effect = {                   
-	432 = {
-	add_building_construction = {
-	type = infrastructure
-	level = 3
-	instant_build = yes
-			}
-		}            
-	}
-    }	
-	raj_rubber4 = {                           
-		allowed = { tag = RAJ tag = JAP }                 
-		available = {                          
-			JAP = { controls_state = 435 }                     
-		}
-		is_good = yes                                         
-		days_mission_timeout = 40            
-		timeout_effect = {        
-		  add_resource = {
-			  type = rubber
-			  amount = -5
-			  state = 435
-		  } 
-		  add_resource = {
-			type = rubber
-			amount = 5
-			state = 440
-		}
-		}
-		complete_effect = {                   
-		  430 = {
-			  add_building_construction = {
-				  type = infrastructure
-				  level = 3
-				  instant_build = yes
-			  }
-		  }            
-		}
-    }
 	improved_worker_conditions_cancel = {
 		icon = generic_industry
 		allowed = {
@@ -521,27 +396,21 @@ economy_decisions = {
 		allowed = {
 			always = yes
 		}
-		cost = 75
+		cost = 50
 		fire_only_once = no
-		days_re_enable = 30
+		days_re_enable = 0
 		available = {
 			any_owned_state = {
 				NOT = { has_state_flag = infrastructure_building_slot_flag }
 				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
+				infrastructure > 9
 			}
 		}
 		visible = {
 			any_owned_state = {
 				NOT = { has_state_flag = infrastructure_building_slot_flag }
 				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
+				infrastructure > 9
 			}
 		}
 		complete_effect = {
@@ -549,15 +418,7 @@ economy_decisions = {
 				limit = {
 					is_fully_controlled_by = ROOT
 					is_owned_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
+					infrastructure > 9
 					NOT = { has_state_flag = infrastructure_building_slot_flag }
 				}
 				add_extra_state_shared_building_slots = 3

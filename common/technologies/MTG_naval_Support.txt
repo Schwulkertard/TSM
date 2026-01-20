@@ -43,6 +43,9 @@ technologies = {
 			ship_330_battery
 			ship_305_battery
 			ship_283_battery
+			dp_light_battery_1
+			dp_ship_secondaries_1
+			dp_ship_secondaries_2
 		}
 
 
@@ -759,9 +762,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			dp_light_battery_2
-			dp_ship_secondaries_2
-			dp_light_battery_1
-			dp_ship_secondaries_1
+			dp_ship_secondaries_3
 		}
 
 		path = {
@@ -807,7 +808,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			dp_light_battery_3
-			dp_ship_secondaries_3
+			dp_ship_secondaries_4
 		}
 
 		path = {
@@ -853,7 +854,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			dp_light_battery_4
-			dp_ship_secondaries_4
 			dp_ship_medium_1
 		}
 

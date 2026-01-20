@@ -902,7 +902,7 @@ technologies = {
             
         }
 
-		research_cost = 0.5
+		research_cost = 1
 
 		start_year = 1922
 
