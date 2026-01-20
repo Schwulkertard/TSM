@@ -9,8 +9,34 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.4
+				}
+				#small_plane_cas_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.4
+				#}
+				#small_plane_naval_bomber_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.4
+				#}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.3
+				}
+				#medium_plane_fighter_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.3
+				#}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.4
+				}
+			}
 		}
-		speed3_africa={
+	speed3_africa={
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -34,7 +60,7 @@ ideas = {
 				}
 			}
 		}
-		speed3_scw={
+	speed3_scw={
 			picture = generic_infantry_bonus
 			allowed = {
 			}
@@ -54,6 +80,228 @@ ideas = {
 				experience_gain_army_unit_factor=-0.5
 			}
 		}
+	railwaygun_1 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 0.47  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 0.47  instant = yes
+				}
+			}
+		}
+	railwaygun_2 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 0.91  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 0.91  instant = yes
+				}
+			}
+		}
+	railwaygun_3 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 1.35  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 1.35  instant = yes
+				}
+			}
+		}
+	railwaygun_4 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 1.78  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 1.78  instant = yes
+				}
+			}
+		}
+	railwaygun_5 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 2.2  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 2.2  instant = yes
+				}
+			}
+		}
+	railwaygun_6 = {
+		removal_cost = -1
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 2.64  instant = yes
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = 2.64  instant = yes
+				}
+			}
+		}			
+	}
+	
+	country={
+	all_quite_on_the_eastern_front_axis={
+		picture = russian_winter
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+	}
+	}
+	all_quite_on_the_eastern_front_sov={
+		picture = russian_winter
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = SPR
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = ROM
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = HUN
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = BUL
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		}
+	}
+	all_quite_on_the_eastern_front_axis2={
+		picture = russian_winter
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+	}
+	all_quite_on_the_eastern_front_sov2={
+		picture = russian_winter
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = SPR
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = ROM
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = HUN
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+		targeted_modifier = {
+			tag = BUL
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.1
+		}
+	}
 	}
 }
-
