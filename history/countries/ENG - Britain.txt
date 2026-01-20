@@ -12,7 +12,6 @@ set_war_support = 0.151
 add_ideas = reliance_on_natural_rubber
 # Starting tech
 set_technology = {
-	amphibious_mechanized_infantry = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	infantry_weapons = 1

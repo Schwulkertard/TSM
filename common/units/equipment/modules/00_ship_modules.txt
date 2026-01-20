@@ -263,7 +263,7 @@ equipment_modules = {
  			hg_armor_piercing = 35
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 4
  		}
 		can_convert_from = {
 			module_category = ship_14_battery
@@ -303,7 +303,7 @@ equipment_modules = {
  			hg_armor_piercing = 40
  		}
  		build_cost_resources = {
- 			steel = 8
+ 			steel = 6
  		}
 		can_convert_from = {
 			module_category = ship_13_battery
@@ -343,7 +343,7 @@ equipment_modules = {
  			hg_armor_piercing = 45
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			steel = 8
  		}
 		can_convert_from = {
 			module_category = ship_13_battery
@@ -381,7 +381,7 @@ equipment_modules = {
  			hg_armor_piercing = 52.5
  		}
  		build_cost_resources = {
- 			steel = 13
+ 			steel = 10
  		}
 		can_convert_from = {
 			module_category = ship_13_battery

@@ -348,7 +348,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip="This will start the industry relocation. Every 4 days two civilian factories and two military factories will be moved from states at the front to the Ural."
-			add_offsite_building = { type = industrial_complex level = 25 }
 			custom_effect_tooltip = SOV_modify_stavka_tt
 			add_to_variable = { SOV_training_time_army_factor = -0.4 tooltip = training_time_army_factor_tt }
 			add_ideas = SOV_the_great_war

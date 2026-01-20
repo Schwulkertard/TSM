@@ -763,7 +763,7 @@ equipments = {
  		max_strength = 275
 		armor_value = 12
  		resources = {
- 			steel = 15
+ 			steel = 10
  		}
 		naval_dominance_factor = 200
  		module_slots = {
