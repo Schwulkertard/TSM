@@ -694,6 +694,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		available = {
+			date > 1937.1.1
+		}
 		completion_reward = {
 		#IF YOU DID IT TWICE
 			if = { limit = { has_idea = great_depression_3 }
@@ -737,7 +740,6 @@ focus_tree = {
 		relative_position_id = USA_fair_labour_standards_act
 		prerequisite = { focus = USA_labour focus = USA_fair_labour_standards_act }
 		available = {
-			has_war_support > 0.15
 		}
 		available_if_capitulated = yes
 		x = -1
@@ -754,7 +756,6 @@ focus_tree = {
 		relative_position_id = USA_fair_labour_standards_act
 		prerequisite = { focus = USA_fair_labour_standards_act focus = USA_extra_research_slot }
 		available = {
-			has_war_support > 0.15
 		}
 		available_if_capitulated = yes
 		x = 1
@@ -807,6 +808,9 @@ focus_tree = {
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		available = {
+			date > 1937.6.1
+		}
 		completion_reward = {
 			#IF YOU DID IT TWICE
 				if = { limit = { has_idea = great_depression_3 }
@@ -846,6 +850,9 @@ focus_tree = {
 				remove_idea = undisturbed_isolation
 				add_idea = isolation
 			}
+			custom_effect_tooltip = USA_rubber_reserve_company_tt
+			add_to_variable ={resource_stockpile_capacity_silos^1=2500}
+			add_to_variable ={resource_stockpile_capacity_base^1=250000}
 		}
 	}
 focus = {
@@ -1486,6 +1493,12 @@ focus = {
                 bonus = 2
                 category = radar_tech
             }
+			hidden_effect = {
+				set_technology = {
+					radar_jammer_navy = 1
+				}
+			}
+			custom_effect_tooltip = USA_jammer_tt
 		}
 	}
 	focus = {

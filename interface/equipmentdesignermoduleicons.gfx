@@ -166,6 +166,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_pure_oxygen_torpedo.dds"
 	}
 
+	spriteType = {
+		name = "GFX_SMI_ship_radar_jammer"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_radar_jammer.png"
+	}
+
 	###Armor New
 	spriteType = {
 		name = "GFX_SMI_ship_scheme_mixed"

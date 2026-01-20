@@ -222,8 +222,8 @@ ENG_shadow_debug_calc = {
 	clamp_variable = { var = shadow_dbg_delta min = 0 max = 120 }
 
 	set_variable      = { var = shadow_dbg_mils value = var:shadow_dbg_delta }
-	multiply_variable = { var = shadow_dbg_mils value = 2 }
-	divide_variable   = { var = shadow_dbg_mils value = 5 }
+	multiply_variable = { var = shadow_dbg_mils value = 1 }
+	divide_variable   = { var = shadow_dbg_mils value = 2 }
 
 	set_variable   = { var = shadow_dbg_tmp value = var:shadow_dbg_mils }
 	round_variable = shadow_dbg_mils

@@ -1,0 +1,5 @@
+USA_two_ocean_navy = {
+	icon = "GFX_idea_usa_last_bastion_of_liberty"
+	enable = { always = yes }
+	production_speed_dockyard_factor = USA_production_speed_dockyard_factor
+}

@@ -3,5 +3,11 @@ on_actions = {
 		effect = {
 			if = { limit = { tag = USA } update_usa_relative_industry = yes }
 		}
+		effect = {
+			if = { limit = { tag = USA } update_dockyard_overcap_usa = yes }
+		}
+		effect = {
+			if = { limit = { tag = JAP } update_dockyard_overcap_japan = yes }
+		}
 	}
 }
