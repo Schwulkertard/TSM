@@ -48,4 +48,5 @@ sub_unit_categories = {
 	category_medium_maritime_patrol_bomber
 	category_support_tanks
 	category_sp_support_artillery
+	category_engineers
 }

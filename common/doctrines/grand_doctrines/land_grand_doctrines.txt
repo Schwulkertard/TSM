@@ -128,9 +128,9 @@ new_mobile_warfare = {
 			}
 		}
         effect = {
-        custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
-        custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
-        custom_effect_tooltip = "Each Motorized Artillery requires Batallion 10 less Motorized Equipment"
+        custom_effect_tooltip = "Each Mechanized Batallion requires 5 less Mechanized Equipment"
+        custom_effect_tooltip = "Each Motorized Batallion requires 10 less Motorized Equipment"
+        custom_effect_tooltip = "Each Motorized Artillery requires Batallion 5 less Motorized Equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -388,14 +388,14 @@ grand_battleplan = {
 
     # EFFECTS
     enable_tactic = tactic_planned_attack
-    
+    max_dig_in_factor = 0.1
     max_planning = 0.1
     command_power_gain = 0.25
     milestones = {
         {
             #Infantry 
             enable_tactic = tactic_elastic_defense
-            max_dig_in_factor = 0.2
+           
         infantry = {
 		
 			urban = {
@@ -810,6 +810,7 @@ grand_battleplan = {
             army_org_factor = 0.15
             coordination_bonus = 0.08
             max_command_power = 30
+            max_planning = 0.1
             land_night_attack = 0.15
             effect = {
                 if = {
@@ -879,7 +880,7 @@ mass_assault = {
 			max_strength = -4}
 
             effect = {
-                custom_effect_tooltip = "Each Infantry Batallion requires 10 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
+                custom_effect_tooltip = "Each Infantry Batallion requires 15 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -966,7 +967,7 @@ mass_assault = {
 			}
 		}
             effect = {
-                custom_effect_tooltip = continuous_offensive_tt
+                custom_effect_tooltip = "Motorized and Mechanized Batallions needs 10 less mot/mech and 10 more Katyushas"
                 if = {
                     limit = {
                         NOT = {
@@ -995,6 +996,9 @@ mass_assault = {
 			need = {support_equipment = -5}
 		}
 		maintenance_company = {
+			need = {support_equipment = -5}
+		}
+        Military_police = {
 			need = {support_equipment = -5}
 		}
             effect = {
