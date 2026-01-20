@@ -77,14 +77,5 @@ air_wings = {
 	}
 }
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "IRQ"
-		}
-		requested_factories = 1
-		progress = 0.38
-		efficiency = 100
-	}
 }
 

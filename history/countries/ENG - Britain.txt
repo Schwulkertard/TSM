@@ -5,10 +5,10 @@ set_variable = {
 	value = 0.800
 }
 add_ideas = ENG_allied_exped_corp
-set_research_slots = 4
+set_research_slots = 5
 create_intelligence_agency = yes
 set_stability = 0.40
-set_war_support = 0.15
+set_war_support = 0.151
 add_ideas = reliance_on_natural_rubber
 # Starting tech
 set_technology = {

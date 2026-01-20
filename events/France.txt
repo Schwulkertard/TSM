@@ -62,14 +62,6 @@ country_event = {
 		GER ={
 			remove_ideas = GER_westfeldzug
 		}
-		every_country={
-		limit={OR={is_in_faction_with = GER original_tag=GER} }
-		add_dynamic_modifier={modifier=	Africa_status_axis}
-		}
-		every_country={
-		limit={OR={is_in_faction_with = ENG original_tag=ENG} NOT={original_tag=USA}}
-		add_dynamic_modifier={modifier=	Africa_status_allies}
-		}
 		EFR ={inherit_technology = FRA}
 		EFR ={transfer_state =20}
 		FRA = {set_equipment_fraction = 0}

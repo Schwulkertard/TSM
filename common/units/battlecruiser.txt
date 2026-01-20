@@ -6,7 +6,12 @@ sub_units = {
 		active = yes
 		type = { capital_ship }
 		need_equipment = { ship_hull_cruiser_panzerschiff = 1 }
-
+		need_equipment_modules = {
+			any = { 
+				ship_283_battery = 1
+				ship_305_battery = 1
+			}
+		}
 		max_organisation = 50
 
 		supply_consumption = 0.48

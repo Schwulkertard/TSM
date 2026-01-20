@@ -202,7 +202,7 @@ country_event = {
 				producer = SPR
 			}
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment_0
 				amount = 7500
 				producer = SPR
 			}

@@ -330,15 +330,6 @@ scripted_gui = {
 							}
 						}
 					}
-					543 = {
-						CONTROLLER = {
-							OR = {
-								tag = USA
-								is_subject_of = USA
-								is_in_faction_with = USA
-							}
-						}
-					}
 					539 = {
 						CONTROLLER = {
 							OR = {

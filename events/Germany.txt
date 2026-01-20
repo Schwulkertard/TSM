@@ -37,7 +37,7 @@ country_event = {
 			transfer_state = 47
 			transfer_state = 179
 			transfer_state = 747
-			transfer_state = 748
+			transfer_state = 543
 		}
 		#}
 		# if = {

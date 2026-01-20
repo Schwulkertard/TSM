@@ -123,44 +123,7 @@ ideas = {
 				consumer_goods_expected_value = 0.3
 				conversion_cost_civ_to_mil_factor = 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
-				production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = 0.10
-			}
-			allowed_to_remove = {
-				OR = {
-					has_war = yes
-				}
-			}
-			cancel_if_invalid = no
-		}
-		USA_war_economy = {
-			allowed = {
-				always = no
-				tag = USA
-			}
-			picture = war_economy
-			removal_cost = -1
-			modifier = {
-				consumer_goods_expected_value = 0.26
-				production_speed_dockyard_factor = 0.20
-				production_speed_arms_factory_factor = 0.1
-			}
-			allowed_to_remove = {
-				OR = {
-					has_war = yes
-				}
-			}
-			cancel_if_invalid = no
-		}
-		JAP_economy_law = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				consumer_goods_expected_value = 0.25
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.2
+				production_speed_arms_factory_factor = -0.2
 			}
 			allowed_to_remove = {
 				OR = {

@@ -57,34 +57,14 @@ sub_units = {
 
 		forest = {
 			attack   = 0.05
-			movement = 0.1
 		}
-
-
 		jungle = {
 			attack = 0.1
 		}
-
-		marsh = {
-			movement = 0.2
-		}
-
 		fort = {
-			attack = 0.2
-		}
-		amphibious = {
-			attack = 0.3
-		}
-
-		urban = {
 			attack = 0.05
 		}
-		river = {
-			attack	= 0.1
-			movement = 0.25
-		}
-
-		same_support_type = flame
+		same_support_type = light_flame_tank
 	}
 
 	medium_flame_tank = {
@@ -144,32 +124,19 @@ sub_units = {
 
 		forest = {
 			attack   = 0.1
-			movement = 0.1
 		}
 
 		jungle = {
 			attack = 0.05
 		}
-
-		marsh = {
-			movement = 0.2
-		}
-
 		fort = {
-			attack = 0.25
+			attack = 0.05
 		}
 		urban = {
-			attack = 0.1
-		}
-		river = {
-			attack	= 0.1
-			movement = 0.25
-		}
-		amphibious = {
-			attack = 0.3
+			attack = 0.05
 		}
 
-		same_support_type = flame
+		same_support_type = light_flame_tank
 	}
 
 	heavy_flame_tank = {
@@ -229,27 +196,14 @@ sub_units = {
 
 		forest = {
 			attack   = 0.05
-			movement = 0.1
 		}
-
-		marsh = {
-			movement = 0.2
-		}
-
 		fort = {
-			attack = 0.3
+			attack = 0.1
 		}
 		urban = {
-			attack = 0.15
+			attack = 0.1
 		}
-		river = {
-			attack	= 0.1
-			movement = 0.25
-		}
-		amphibious = {
-			attack = 0.3
-		}
-		same_support_type = flame
+		same_support_type = light_flame_tank
 	}
 	heavy_tank_detachment = {
 		abbreviation = "HTD"
@@ -313,6 +267,11 @@ sub_units = {
 			breakthrough = 0.05
 			#add = yes
 		}
-		same_support_type = flame
+		battalion_mult = {
+			category = category_light_infantry
+			breakthrough = 0.1
+			#add = yes
+		}
+		same_support_type = light_flame_tank
 	}
 }

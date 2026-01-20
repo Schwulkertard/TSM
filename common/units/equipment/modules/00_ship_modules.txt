@@ -127,7 +127,6 @@ equipment_modules = {
 			naval_speed = -0.01
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 0.5
@@ -155,7 +154,6 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
@@ -188,7 +186,6 @@ equipment_modules = {
 			naval_speed = -0.03
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1.75
@@ -221,7 +218,6 @@ equipment_modules = {
 			naval_speed = -0.04
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1.75
@@ -382,7 +378,7 @@ equipment_modules = {
 			reliability = -0.13
  		}
  		add_average_stats = {
- 			hg_armor_piercing = 50
+ 			hg_armor_piercing = 52.5
  		}
  		build_cost_resources = {
  			steel = 13
@@ -1140,6 +1136,25 @@ equipment_modules = {
  			convert_cost_ic = 90
  		}
  	}
+
+	ship_radar_jammer = {
+ 		category = ship_radar
+ 		sfx = sfx_ui_sd_module_sonar
+		gfx = ship_radar_jammer
+ 		multiply_stats = {
+ 			anti_air_attack = 0.15
+ 		}
+ 		add_stats = {
+ 			build_cost_ic = 100
+ 			surface_detection = 18
+ 			sub_detection = 14
+			surface_visibility = -2
+ 		}
+ 		can_convert_from = {
+ 			module_category = ship_radar
+ 			convert_cost_ic = 90
+ 		}
+ 	}
  	### #  #  ##  ### #  # ###
  	#   ## # #     #  ## # #
  	##  # ## # ##  #  # ## ##
@@ -1510,7 +1525,7 @@ equipment_modules = {
 			reliability = -0.15
  		}
  		multiply_stats = {
- 			naval_speed = 0.45
+ 			naval_speed = 0.4
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
@@ -1528,7 +1543,7 @@ equipment_modules = {
 			reliability = -0.15
  		}
  		multiply_stats = {
- 			naval_speed = 0.6
+ 			naval_speed = 0.5
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
@@ -2321,7 +2336,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
  		dismantle_cost_ic = 5500
  	}
@@ -2341,7 +2355,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2365,7 +2378,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2392,7 +2404,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2423,7 +2434,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
 		can_convert_from = {
 			module = ship_scheme_mixed
@@ -2458,7 +2468,6 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 55
- 			surface_visibility = 10
  		}
 		can_convert_from = {
  			module_category = ship_heavy_armor
@@ -2480,7 +2489,7 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 80
- 			surface_visibility = 15
+ 			surface_visibility = 5
 			naval_torpedo_damage_reduction_factor = -1.5
  		}
 		can_convert_from = {
@@ -2503,7 +2512,7 @@ equipment_modules = {
  		}
  		add_stats = {
  			armor_value = 100
- 			surface_visibility = 15
+ 			surface_visibility = 5
 			naval_torpedo_damage_reduction_factor = -1.5
  		}
 		can_convert_from = {
