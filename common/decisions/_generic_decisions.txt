@@ -441,7 +441,7 @@ exercise_decisions = {
 			always = yes
 		}
         available = {
-            command_power > 25
+            command_power > 50
 		}
         visible = {
             always = yes
@@ -459,7 +459,7 @@ exercise_decisions = {
 		}
 		cost = 0
 		complete_effect = {
-            add_command_power = -25
+            add_command_power = -50
 		}
     }
    artillery_exercise = {
@@ -468,7 +468,7 @@ exercise_decisions = {
 			always = yes
 		}
         available = {
-            command_power > 50
+            command_power > 75
 		}
         visible = {
             always = yes
@@ -477,12 +477,12 @@ exercise_decisions = {
 		days_remove = 180
         remove_effect = {
             add_mastery = {
-				amount = 50
+				amount = 75
 				track = combat_support
             }
         }
         modifier = {
-            industrial_capacity_factory = -0.05
+            industrial_capacity_factory = -0.025
 		}
 		cost = 0
 		complete_effect = {
@@ -495,7 +495,7 @@ exercise_decisions = {
 			always = yes
 		}
         available = {
-            command_power > 99
+            command_power > 150
         }
         visible = {
             always = yes
@@ -509,11 +509,11 @@ exercise_decisions = {
             }
         }
         modifier = {
-            industrial_capacity_factory = -0.1
+            industrial_capacity_factory = -0.025
 		}
 		cost = 0
 		complete_effect = {
-            add_command_power = -100
+            add_command_power = -150
 		}
     }
     mechanized_exercise = {
@@ -536,7 +536,7 @@ exercise_decisions = {
             }
         }
         modifier = {
-            industrial_capacity_factory = -0.075
+            industrial_capacity_factory = -0.025
 		}
 		cost = 0
 		complete_effect = {
