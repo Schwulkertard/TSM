@@ -71,8 +71,7 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-}
-motorized = {
+	motorized = {
 		sprite = motorized
 		map_icon_category = infantry
 
@@ -238,3 +237,4 @@ motorized = {
 
 		#hardness = 0.2 moving these buffs to unit stats
 	}
+}

@@ -1,0 +1,22 @@
+JAP = {
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+			}
+			models = {
+				JAP_amphibious_armor_1_entity
+			}
+		}
+	}
+
+	land_cruiser_chassis_1 = {
+		pool = {
+			icons = {
+				GFX_JAP_land_cruiser_armor_medium
+			}
+			models = {
+				JAP_land_cruiser_entity
+			}
+		}
+	}
+}

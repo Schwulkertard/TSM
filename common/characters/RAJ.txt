@@ -234,16 +234,6 @@ characters={
 		}
 		gender = female
 	}
-
-	RAJ_orde_wingate = {
-		name=RAJ_orde_wingate
-		portraits={
-			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-			}
-		}
-	}
 	
 	RAJ_kodandera_madappa_cariappa = {
 		name=RAJ_kodandera_madappa_cariappa

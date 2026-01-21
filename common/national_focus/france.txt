@@ -1809,7 +1809,7 @@ focus_tree = {
 				}
 		}
 		every_owned_state = {
-			limit= {AND = {dockyard > 0 is_core_of = FRA limit_to_coastal = yes}  }
+			limit= { dockyard > 0 is_core_of = FRA  }
 			}
 			add_offsite_building = {
 				type = dockyard

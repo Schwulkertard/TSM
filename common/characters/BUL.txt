@@ -472,25 +472,6 @@ characters = {
 ##     ## ##   ###  ##     ##       ##       ##       ##     ## ##     ## ##       ##    ##  ##    ## 
  #######  ##    ## ####    ##       ######## ######## ##     ## ########  ######## ##     ##  ######  
 
-	BUL_nikola_mihov = {
-		name = BUL_nikola_mihov
-		portraits = {
-			army = {
-				large = "gfx/leaders/Portrait_Europe_Generic_land_5.dds"
-				small = "gfx/leaders/Portrait_Europe_Generic_land_5.dds"
-			}
-		}
-		field_marshal = {
-			traits = { organizer panzer_leader infantry_leader ranger trait_engineer expert_improviser }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-			legacy_id = 1201
-		}
-	}
-
 	BUL_ivan_markov = {
 		name = BUL_ivan_markov
 		portraits = {

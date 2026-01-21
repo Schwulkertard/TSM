@@ -344,10 +344,6 @@ technologies = {
 			leads_to_tech = advanced_infantry_weapons
 			research_cost_coeff = 1
 		}
-		path = {
-			infantry_equipment_2
-			research_cost_coeff = 1
-		}
 		research_cost = 2
 		start_year = 1940
 		categories = {

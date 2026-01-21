@@ -119,10 +119,10 @@ last_stand = {
         }
 
     #rewards = {
-        w#erwolf_groups = {
+        #werwolf_groups = {
         #1
            
-        }
+        #}
 
         # pocket_consolidation = {
         # #2
@@ -257,7 +257,7 @@ infiltration_tactics = {
                     soft_attack = 0.1
                 }
             }
-            ranger_support = {
+            rangers_support = {
                 battalion_mult = {
                     category = category_light_infantry
                     soft_attack = 0.1
@@ -357,7 +357,7 @@ deep_battle = {
                     defense = 0.05
                 }
             }
-            ranger_support = {
+            rangers_support = {
                 battalion_mult = {
                     category = category_light_infantry
                     soft_attack = 0.05
@@ -500,7 +500,7 @@ rapid_domination = {
                     soft_attack = 0.05
                 }
             }
-            ranger_support = {
+            rangers_support = {
                 battalion_mult = {
                     category = category_line_artillery
                     soft_attack = 0.05
