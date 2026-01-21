@@ -7,7 +7,7 @@ state={
  	}
  	state_category = wasteland
  	provinces={
- 		4593
+ 		4593 1850
  	}
  }
 

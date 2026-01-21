@@ -467,10 +467,6 @@ ideas = {
 
 			picture = raj_ammunition_factory_khadki
 			name = RAJ_ammunition_factory_khadki 
-			allowed = {
-				is_raj_or_raj_inheritor = yes
-				has_dlc = "Graveyard of Empires"
-			}
 
 
 			available = {
@@ -493,10 +489,7 @@ ideas = {
 
 			picture = raj_ammunition_factory_khadki
 			name = RAJ_ammunition_factory_khadki 
-			allowed = {
-				is_raj_or_raj_inheritor = yes
-				has_dlc = "Graveyard of Empires"
-			}
+			
 
 
 			available = {
@@ -524,10 +517,7 @@ ideas = {
 
 			picture = raj_ammunition_factory_khadki
 			name = RAJ_ammunition_factory_khadki 
-			allowed = {
-				is_raj_or_raj_inheritor = yes
-				has_dlc = "Graveyard of Empires"
-			}
+			
 
 			visible = {
 				check_variable = { khadi_level = 2 }
@@ -558,10 +548,7 @@ ideas = {
 
 			picture = raj_ammunition_factory_khadki
 			name = RAJ_ammunition_factory_khadki 
-			allowed = {
-				is_raj_or_raj_inheritor = yes
-				has_dlc = "Graveyard of Empires"
-			}
+			
 
 			visible = {
 				check_variable = { khadi_level = 3 }
@@ -592,11 +579,7 @@ ideas = {
 
 		idea_gun_and_shell_factory_cossipore = {
 			picture = raj_gun_and_shell_factory_cossipore
-			allowed = {
-
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 			name = RAJ_gun_and_shell_factory_cossipore
 			visible = {
 				check_variable = { RAJ.gun_and_shell_level = 0 }
@@ -615,11 +598,7 @@ ideas = {
 		idea_gun_and_shell_factory_cossipore_1 = {
 			name = RAJ_gun_and_shell_factory_cossipore
 			picture = raj_gun_and_shell_factory_cossipore
-			allowed = {
-
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 			
 			visible = {
 				check_variable = { RAJ.gun_and_shell_level = 1 }
@@ -648,11 +627,7 @@ ideas = {
 		idea_gun_and_shell_factory_cossipore_2 = {
 			name = RAJ_gun_and_shell_factory_cossipore
 			picture = raj_gun_and_shell_factory_cossipore
-			allowed = {
-
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 
 
 			visible = {
@@ -685,11 +660,7 @@ ideas = {
 		idea_gun_and_shell_factory_cossipore_3 = {
 			name = RAJ_gun_and_shell_factory_cossipore
 			picture = raj_gun_and_shell_factory_cossipore
-			allowed = {
-
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 
 
 			visible = {
@@ -723,10 +694,7 @@ ideas = {
 			name = RAJ_ordnance_factory_medak
 			picture = raj_ordnance_factory_medak
 
-			allowed = {
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 
 			visible = {
 				NOT = { has_completed_focus = RAJ_chariot_of_victory }
@@ -746,10 +714,7 @@ ideas = {
 			name = RAJ_ordnance_factory_medak
 			picture = raj_ordnance_factory_medak
 
-			allowed = {
-				has_dlc = "Graveyard of Empires" 
-				is_raj_or_raj_inheritor = yes
-			}
+			
 			
 			cost = 150
 			removal_cost = 10

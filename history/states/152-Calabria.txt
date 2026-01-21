@@ -15,13 +15,11 @@ state={
  			air_base = 5
  			10743 = {
  				naval_base = 20
+				naval_facility = 1
  			}
  			10887 = {
  				naval_base = 2
  			}
-			10743 = {
-                naval_facility = 1
-            }
  		}
  		add_core_of = ITA
  		1939.1.1 = {

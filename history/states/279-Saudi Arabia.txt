@@ -1,13 +1,17 @@
 state={
  	id=279
  	name="STATE_292"
- 	manpower = 1
+ 	manpower = 62093
+ 	state_category = wasteland
  	history = {
- 	owner = TUR
+ 	owner = ENG
+	add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+		}
  	}
- 	state_category = rural
  	provinces={
- 		1850
+ 		12087 12088 12089 12090 12091 12092 12093 12094 12095 12096 12097 12098 12099 12100 12101 12102 12103
  	}
  }
 

@@ -2323,7 +2323,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			CAN_national_resources_mobilization_act
+			add_ideas = CAN_national_resources_mobilization_act
 		}
 	}
 	focus = {
