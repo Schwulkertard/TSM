@@ -669,7 +669,19 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			add_ideas = FRA_firepower
+			army_experience = 100
+			add_tech_bonus = {
+				name = FRA_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = FRA_gun_focus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -710,17 +722,17 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 50
+			add_ideas = FRA_firepower
 			add_tech_bonus = {
 				name = FRA_artillery_focus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
 				name = FRA_gun_focus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -840,7 +852,6 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
 				bonus = 1.0
@@ -933,6 +944,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 75
+			add_stability = -0.1
 		custom_effect_tooltip = available_political_advisor	
 		show_ideas_tooltip = rene_massigli
 		}
@@ -1066,7 +1078,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.15
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -1802,7 +1814,8 @@ focus_tree = {
 			add_offsite_building = {
 				type = dockyard
 				level = 2
-}	
+}
+               remove_ideas = FRA_Metropolitan_industry	
 }	
 }
 }	
@@ -2310,6 +2323,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			CAN_national_resources_mobilization_act
 		}
 	}
 	focus = {

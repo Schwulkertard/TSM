@@ -148,14 +148,14 @@ focus_tree = {
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 2
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -204,6 +204,21 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_ideas = BUL_tobacco_exports
 		}
 	}
@@ -250,14 +265,14 @@ focus_tree = {
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = arms_factory
 						size > 2
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -472,7 +487,7 @@ focus_tree = {
 		relative_position_id = BUL_georgi_benkovski_aircraft_repair_facilities
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 5
 
 		available = {
 
@@ -515,7 +530,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			army_experience = 50
+			army_experience = 100
 		}
 	}
 
@@ -810,7 +825,7 @@ focus_tree = {
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
 		x = 10
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 		}
@@ -836,7 +851,7 @@ focus_tree = {
 		relative_position_id = BUL_a_black_sea_fleet
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 
@@ -863,7 +878,7 @@ focus_tree = {
 		relative_position_id = BUL_a_black_sea_fleet
 		x = 0
 		y = 2
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 		}
@@ -889,7 +904,7 @@ focus_tree = {
 		relative_position_id = BUL_bulgarian_shipping_chamber
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 
@@ -922,7 +937,7 @@ focus_tree = {
 		relative_position_id = BUL_acquire_modern_tools
 		x = 13
 		y = 2
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 		}
@@ -948,7 +963,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_varna_naval_base
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 		}
@@ -975,7 +990,7 @@ focus_tree = {
 		relative_position_id = BUL_a_black_sea_fleet
 		x = 2
 		y = 2
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 		}
@@ -1001,7 +1016,7 @@ focus_tree = {
 		relative_position_id = BUL_an_aegean_sea_fleet
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 
@@ -1028,7 +1043,7 @@ focus_tree = {
 		relative_position_id = BUL_strike_from_the_seas
 		x = 1
 		y = 1
-		cost = 7.2
+		cost = 2.9
 
 		available = {
 

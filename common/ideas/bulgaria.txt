@@ -546,6 +546,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.04
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
@@ -640,7 +641,6 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
-				global_building_slots_factor = 0.2
 				consumer_goods_expected_value = 0.03
 			}
 		}
@@ -676,6 +676,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.2
 			}
 		}
 
@@ -1723,7 +1724,6 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
-				consumer_goods_expected_value = -0.02
 				trade_laws_cost_factor = -0.5
 				min_export = -0.1
 			} 
@@ -1745,7 +1745,6 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
-				consumer_goods_expected_value = -0.03
 				trade_laws_cost_factor = -0.5
 				min_export = -0.15
 				local_resources_factor = 0.15

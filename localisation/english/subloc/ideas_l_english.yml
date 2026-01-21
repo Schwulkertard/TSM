@@ -9874,7 +9874,16 @@
 
  FRA_disjointed_government_desc:0 "The state of French politics is far from stable. While reforms are needed and welcome, the nation is divided and getting drawn into a conflict would put it at great risk."
 
-
+ worker_strikes:0 "Worker Strikes"
+ fourty_hour_work_week:0 "Fourty Hour Work Week"  
+ FRA_small_businesses_focus:0 "Reliance On Small Businesses" 
+ FRA_small_businesses_focus_1:0 "Supremacy Of Small Businesses"
+ FRA_centralised_industry:0 "Industrial Mergers" 
+ FRA_mechanisation_effort:0 "Tank Production"
+ FRA_increased_shifts:0 "Emergency Shifts In Arms Factories"
+ FRA_Rhineland_Offensive:0 "The Rhineland Offensive"
+ FRA_Metropolitan_industry:0 "Metropolitan Industry"
+ FRA_rearmament_plan:0 "Rearmament Plan"
 
  FRA_protected_by_the_maginot_line:0 "Protected by the Maginot Line"
  FRA_protected_by_the_maginot_line_pre_spain:0 "Protected by the Maginot Line"
