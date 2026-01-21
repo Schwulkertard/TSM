@@ -571,6 +571,9 @@ operations = {
 		available = {  GER = { controls_state = 10 } has_war=yes }
 		cost = 0
 		complete_effect = {
+			FRA = {
+				set_country_flag = fra_evacuating_industry
+			}
 			effect_tooltip = {
 				declare_war_on = {
 					target = HOL

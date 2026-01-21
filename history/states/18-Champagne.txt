@@ -4,6 +4,7 @@ state={
  	manpower = 1370800
  	state_category = city
  	history={
+		set_state_flag = mainland_france_state
  		owner = FRA
  		victory_points = {
  			8714 5

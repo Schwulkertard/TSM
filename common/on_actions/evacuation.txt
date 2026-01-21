@@ -1,0 +1,7 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			if = { limit = { has_country_flag = fra_evacuating_industry } fra_weekly_evacuate_industry = yes }
+		}
+	}
+}

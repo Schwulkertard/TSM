@@ -1,0 +1,72 @@
+fra_evacuate_one_mil = {
+  if = {
+    limit = {
+      any_owned_state = {
+        has_state_flag = mainland_france_state
+        arms_factory > 0
+      }
+    }
+
+    random_owned_state = {
+      limit = {
+        has_state_flag = mainland_france_state
+        arms_factory > 0
+      }
+      remove_building = { type = arms_factory level = 1 }
+
+      FRA = {
+        random_owned_state = {
+          limit = { has_state_flag = french_africa_state }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+      }
+
+      add_to_variable = { fra_evacuated_mils = 1 }
+    }
+  }
+  else = {
+    clr_country_flag = fra_evacuating_industry
+  }
+}
+
+
+
+fra_evacuate_one_civ = {
+  if = {
+    limit = {
+      any_owned_state = {
+        has_state_flag = mainland_france_state
+        industrial_complex > 0
+      }
+    }
+
+    random_owned_state = {
+      limit = {
+        has_state_flag = mainland_france_state
+        industrial_complex > 0
+      }
+      remove_building = { type = industrial_complex level = 1 }
+
+      FRA = {
+        random_owned_state = {
+          limit = { has_state_flag = french_africa_state }
+          add_extra_state_shared_building_slots = 1
+          add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+      }
+    }
+  }
+}
+
+
+fra_weekly_evacuate_industry = {
+  log = "FRA weekly evac fired on [?Global.date.GetDateString]"
+  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+    fra_evacuate_one_mil = yes
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+    fra_evacuate_one_mil = yes
+  }
+  fra_evacuate_one_civ = yes
+}

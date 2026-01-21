@@ -2,6 +2,7 @@ state={
  	id=688
  	name="STATE_774"
  	history={
+		set_state_flag = french_africa_state
  		owner = FRA
  		add_core_of=SWE
  		victory_points = {

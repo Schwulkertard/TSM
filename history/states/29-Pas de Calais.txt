@@ -8,6 +8,7 @@ state={
  		aluminium = 80
  	}
  	history={
+		set_state_flag = mainland_france_state
  		owner = FRA
  		victory_points = {
  			540 5
