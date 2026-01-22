@@ -124,6 +124,13 @@ leader_traits = {
 		production_speed_buildings_factor = 0.1
 	}
 
+	HUN_desertnomist_minor = {
+		random = no
+		sprite = 13
+		industrial_factory_donations = 2
+		production_speed_buildings_factor = 0.1
+	}
+
 	HUN_desertnomist_major = {
 		random = no
 		sprite = 13

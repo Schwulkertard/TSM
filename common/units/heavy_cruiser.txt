@@ -8,15 +8,15 @@ sub_units = {
 		need = { ship_hull_cruiser = 1 }
 		need_equipment_modules = {
 			any = { 
-				ship_medium_battery_1 = 1
-				ship_medium_battery_2 = 1
-				ship_medium_battery_3 = 1
-				ship_medium_battery_4 = 1
+				ship_203_battery = 1
+				ship_234_battery = 1
 			}
 		}
 		
 		max_organisation = 40
-
+		max_strength = 0.5
+		armor_value = 0.25
+		torpedo_attack = 0.3
 		
 		supply_consumption = 0.4
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }

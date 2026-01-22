@@ -271,7 +271,6 @@ massed_carrier_fleet = {
     	}
     	crew_shifts = {
     		sortie_efficiency = 0.3
-    		carrier_sortie_hours_delay = -2
     	}
     	efficient_rearming = {
     		carrier = {

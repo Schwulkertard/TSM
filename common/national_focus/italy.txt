@@ -1352,6 +1352,7 @@ focus = {
  		prerequisite = { focus = ITA_corp  }
  		relative_position_id = ITA_corp
  		available = {
+			date > 1940.1.1
  		}
  		x = -1
  		y = 1
@@ -1528,6 +1529,7 @@ focus = {
  		relative_position_id = ITA_faire
  		icon = GFX_focus_research
  		available = {
+			date > 1940.1.1
  		}
  		x = 1
  		y = 1

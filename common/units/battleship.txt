@@ -15,6 +15,7 @@ sub_units = {
 				ship_scheme_all_or_nothing_armor_citadel = 1
 				ship_armor_shbb = 1
 				ship_armor_shbb2 = 1
+				ship_anti_torpedo_bulge = 1
 			}
 		}
 		

@@ -456,25 +456,6 @@ ENG_yarrow_shipbuilders_organization = {
 	}
 }
 
-ENG_john_brown_organization = {
-	include = generic_black_sea_fleet_organization
-	icon = GFX_idea_john_brown_company
-	allowed = {	
-		
-		or = {
-					
-					original_TAG = ENG
-					original_TAG = FRA
-					original_TAG = CAN
-					original_TAG = AST
-					original_TAG = SAF
-					original_TAG = RAJ
-					original_TAG = NZL
-				}
-		has_dlc = "Arms Against Tyranny"
-	}
-}
-
 
 
 ########  ##          ###    ##    ## ########  ######  

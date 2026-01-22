@@ -7,9 +7,9 @@ state={
  		owner = RAJ
  		buildings = {
  			infrastructure = 2
- 			industrial_complex=3
+			industrial_complex = 3
  		}
- 		add_core_of = RAJ
+ 		add_core_of=SWE
  	}
  	provinces={
  		4676 6738 6781 7385 9956 11543 11636

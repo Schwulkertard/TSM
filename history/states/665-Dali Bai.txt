@@ -1,6 +1,6 @@
 state={
  	id=665
- 	name="STATE_747"
+ 	name="Dali"
  	provinces={
  		4280 4598 4653 7354 7362 7473 9575 9929 11570 11646
  	}

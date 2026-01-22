@@ -51,7 +51,7 @@ exploit_korea = {
 }
 
 develop_korea = {
-	state_production_speed_buildings_factor = 0.4
+	state_production_speed_buildings_factor = 0.6
 	enable = { always = yes }
 	icon = GFX_modifiers_generic_defense
 }

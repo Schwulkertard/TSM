@@ -51,6 +51,9 @@ new_fleet_in_being = {
         }
         {
             #Screens
+            destroyer = {
+                lg_attack = 0.1
+            }
             light_cruiser = {
                 lg_attack = 0.1
             }
@@ -98,9 +101,6 @@ new_fleet_in_being = {
                 hg_attack = 0.05
             }
             battle_cruiser = {
-                hg_attack = 0.05
-            }
-            heavy_cruiser = {
                 hg_attack = 0.05
             }
             naval_retreat_speed = -0.25
@@ -299,14 +299,17 @@ new_base_strike = {
             #Carriers
             destroyer = {
                 maximum_speed = 0.05
+                torpedo_attack = 0.15
             }
 
             light_cruiser = {
                 maximum_speed = 0.05
+                torpedo_attack = 0.15
             }
 
             heavy_cruiser = {
                 maximum_speed = 0.05
+                torpedo_attack = 0.15
             }
 
             effect = {
@@ -326,7 +329,7 @@ new_base_strike = {
         {
             #Screens
 			carrier = {
-                naval_speed = 0.1
+                anti_air_attack = 0.33
             }
 
             effect = {
@@ -354,7 +357,8 @@ new_base_strike = {
             heavy_cruiser = {
                 reliability = 0.1
             }
-
+            naval_retreat_speed = 0.25
+            naval_retreat_chance_after_initial_combat = 0.25
             effect = {
                 if = {
                     limit = {

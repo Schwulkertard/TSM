@@ -35,17 +35,21 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_light_battery_1
-			ship_medium_battery_1
-			ship_light_medium_battery_1
 			ship_secondaries_1
 			ship_381_battery
 			ship_355_battery
 			ship_330_battery
 			ship_305_battery
 			ship_283_battery
+			ship_234_battery
+			ship_203_battery
+			ship_183_battery
+			ship_152_battery
 			dp_light_battery_1
 			dp_ship_secondaries_1
 			dp_ship_secondaries_2
+			dp_ship_secondaries_light_1
+			dp_ship_secondaries_light_2
 		}
 
 
@@ -96,7 +100,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_light_battery_2
-			ship_light_medium_battery_2
 			ship_secondaries_2			
 		}
 
@@ -194,7 +197,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_light_battery_3
-			ship_light_medium_battery_3
 			ship_he_shell
 		}
 
@@ -287,7 +289,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_light_battery_4
-			ship_light_medium_battery_4
 			ship_sap_shell
 		}
 
@@ -555,7 +556,6 @@ technologies = {
 		enable_equipment_modules = {
 			ship_406_battery
 			ship_460_battery
-			ship_medium_battery_2
 		}
 
 		folder = {
@@ -600,7 +600,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_medium_battery_3
 			ship_ap_shell
 		}
 
@@ -641,7 +640,6 @@ technologies = {
 		start_year = 1944
 
 		enable_equipment_modules = {
-			ship_medium_battery_4
 			ship_shap_shell
 		}
 
@@ -763,6 +761,7 @@ technologies = {
 		enable_equipment_modules = {
 			dp_light_battery_2
 			dp_ship_secondaries_3
+			dp_ship_secondaries_light_3
 		}
 
 		path = {
@@ -809,6 +808,7 @@ technologies = {
 		enable_equipment_modules = {
 			dp_light_battery_3
 			dp_ship_secondaries_4
+			dp_ship_secondaries_light_4
 		}
 
 		path = {

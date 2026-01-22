@@ -1,20 +1,9 @@
 state={
  	id=647
  	name="STATE_729"
- 	manpower = 157805
- 	state_category = enclave
+ 	manpower = 1
+ 	state_category = wasteland
  	history={
- 		owner = CHI
- 		add_core_of=SWE
- 		victory_points = {
- 			3921 5
- 		}
- 		buildings = {
- 			infrastructure = 4
- 			3921 = {
- 				naval_base = 1
- 			}
- 		}
  	}
  	provinces={
  		3921

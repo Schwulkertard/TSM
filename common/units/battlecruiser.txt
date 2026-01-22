@@ -13,6 +13,7 @@ sub_units = {
 			}
 		}
 		max_organisation = 50
+		max_strength = 0.05
 
 		supply_consumption = 0.48
 		
