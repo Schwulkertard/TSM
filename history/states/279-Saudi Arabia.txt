@@ -4,11 +4,12 @@ state={
  	manpower = 62093
  	state_category = wasteland
  	history = {
- 	owner = ENG
-	add_core_of = SWE
+ 		owner = ENG
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 		}
+		set_demilitarized_zone = yes
  	}
  	provinces={
  		12087 12088 12089 12090 12091 12092 12093 12094 12095 12096 12097 12098 12099 12100 12101 12102 12103

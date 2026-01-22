@@ -171,16 +171,6 @@ USA_tank_destroyer_board_organization = {
  
 #####################
 
-
-USA_norfolk_naval_yard_organization = {
-	include = generic_black_sea_fleet_organization
-	icon = GFX_idea_norfolk_naval_yard
-	allowed = {	
-		tag = USA 
-
-	}
-}
-
 USA_electric_boat_company_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_electric_boat_company
@@ -197,9 +187,6 @@ USA_brooklyn_naval_yard_organization = {
 		tag = USA 
 
 	}
-
-	
-
 }
 
 USA_newport_news_shipbuilding_organization = {

@@ -164,7 +164,6 @@ add_to_faction = ROM
 add_to_faction = ITA
 add_to_faction = HUN
 add_to_faction = BUL
-add_to_faction = SPR
 add_ideas = {
 	sour_loser
 	general_staff
@@ -362,7 +361,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
-	amount = 1000
+	amount = 1500
 	producer = GER
 	variant_name = "Bf 109 D"
 }

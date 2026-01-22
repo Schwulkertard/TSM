@@ -398,13 +398,6 @@ SOV_rubin_design_bureau_organization = {
 		original_tag = SOV
 	}
 }
-SOV_black_sea_shipyard_organization = {
-	include = generic_black_sea_fleet_organization
-	icon = GFX_idea_SOV_black_sea_shipyard
-	allowed = {	
-		original_tag = SOV
-	}
-}
 #SOV_sevastopol_marine_plant_organization = {
 #	include = generic_refurbishment_repair_organization
 #	icon = GFX_idea_SOV_sevastopol_marine_plant

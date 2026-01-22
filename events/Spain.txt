@@ -56,7 +56,7 @@ country_event = {
 				
 				SPR = {
 					declare_war_on = {
-						target = SPR
+						target = SPN
 						type = annex_everything
 					}
 				}

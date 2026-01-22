@@ -46,14 +46,6 @@
 
 		completion_reward = {
 			add_political_power = 150
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_core_of = PRC
-					}
-					add_compliance = -100
-				}
-			}
 		}
 	}
 

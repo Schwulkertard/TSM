@@ -1,10 +1,10 @@
 ﻿l_english:
-paratroopers:0"Jäger I"
-paratroopers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
-paratroopers2:0"Jäger II"
-paratroopers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
-paratroopers3:0"Jäger III"
-paratroopers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+paratroopers:0"Rangers I"
+paratroopers_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+paratroopers2:0"Rangers II"
+paratroopers2_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+paratroopers3:0"Rangers III"
+paratroopers3_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
 
 jungletroops:0"Jungle Specialists I"
 jungletroops_desc:0"Jungle Specialists are trained to sustain the harsh conditions of the Jungle Warfare and to cope with the frequent lack of supplies."
@@ -29,8 +29,8 @@ desertinfantry_at2_desc:0"The sandy Mountains of the desert can be treacherous t
 desertinfantry_at3:0"Desert Infantry III"
 desertinfantry_at3_desc:0"The sandy Mountains of the Desert can be treacherous to your regular Infantry. To be able to cope in this environment you can train Desert Infantry to gain an upper hand in the desert."
 
-paratrooper:0"Jäger"
-paratrooper_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+paratrooper:0"Rangers"
+paratrooper_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
 
 jungletroop:0"Jungle Specialists"
 jungletroop_desc:0"Jungle Specialists are trained to sustain the harsh conditions of Jungle Warfare and challenge the Enemy on their own terms."

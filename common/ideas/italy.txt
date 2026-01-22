@@ -304,6 +304,8 @@ ideas = {
 			modifier = {
 				operative_slot = 1
 				agency_upgrade_time = -0.30
+				send_volunteer_size	= 3
+				send_volunteer_divisions_required = -1
 			}
 		}
 		ITA_roman_legacy = {

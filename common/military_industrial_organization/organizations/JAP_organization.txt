@@ -256,19 +256,6 @@ JAP_maizuru_naval_arsenal_organization = {
 	}
 }
 
-JAP_sasebo_naval_arsenal_organization = {
-	include = generic_black_sea_fleet_organization
-	icon = GFX_idea_sasebo_naval_arsenal
-	allowed = {	 
-		or = {
-					original_TAG = JAP
-					original_TAG = SIA
-					original_TAG = MAN
-				}
-		has_dlc = "Arms Against Tyranny"
-	}
-}
-
 ###########################
 
 ###  #    ##  #  # ###  ## 

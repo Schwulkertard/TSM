@@ -1262,6 +1262,8 @@
 
  available_political_advisor:0 "§GAvailable§! as §YPolitical Advisor§!:\n"
 
+ available_theorist_production:0 "§GAvailable§! as §YProduction Theorist§!:\n"
+
  available_chief_of_army:0 "§GAvailable§! as §YChief of Army§!:\n"
 
  available_chief_of_navy:0 "§GAvailable§! as §YChief of Navy§!:\n"

@@ -11,7 +11,7 @@ state={
  		buildings = {
  			infrastructure = 2
  		}
- 		add_core_of = RAJ
+ 		add_core_of=SWE
  	}
  	provinces={
  		1808 1919 1954 9905

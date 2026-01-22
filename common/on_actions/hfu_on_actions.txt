@@ -230,6 +230,14 @@ on_actions = {
 			}}
 	on_startup = {
 	effect= {
+		RAJ = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SWE
+				}
+				add_compliance = -70
+			}
+		}
 		set_variable={Global.hotjoin_rehost_count=-1}
 		every_country={
 			add_ideas = speed3

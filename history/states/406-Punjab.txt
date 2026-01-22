@@ -8,9 +8,10 @@ state={
  			9945 5
  		}
  		owner = RAJ
- 		add_core_of=RAJ
+ 		add_core_of=SWE
  		buildings = {
  			infrastructure = 5
+			industrial_complex=3
  		}
  	}
  	provinces={
