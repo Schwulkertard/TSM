@@ -48,6 +48,40 @@
 	}
 
 	focus = {
+		id = GER_satisfy_the_civilian_base
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = -1
+		y = 1
+		relative_position_id = GER_grosraumwirtschaft
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_protect_our_trade_routes
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_get_better_advisors }
+		x = 1
+		y = 1
+		relative_position_id = GER_get_better_advisors
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = GER_MittelEuropa
 		icon = GFX_focus_GER_grosraumwirtschaft
 		prerequisite = { focus = GER_grosraumwirtschaft focus = GER_get_better_advisors }
@@ -77,7 +111,17 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			custom_effect_tooltip = GER_Reichsbank_War_loans_tt
+			add_timed_idea = { idea = USA_amend_the_budget days = 365 }
+			add_to_variable = {
+				GER_political_power_cost_var = -0.15
+			}
+			add_to_variable = {
+				GER_production_speed_industrial_complex_factor_var = -0.1
+			}
+			add_to_variable = {
+				GER_production_speed_arms_factory_factor_var = 0.15
+			}
 		}
 	}
 
@@ -96,7 +140,16 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			custom_effect_tooltip = GER_doc_tt
+			every_owned_state = {
+				limit= {AND = {infrastructure > 9 is_core_of = GER}  }
+				    add_extra_state_shared_building_slots = 10
+				    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -113,7 +166,7 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	
@@ -802,6 +855,23 @@
 	}
 
 	focus = {
+		id = GER_every_man_a_soldier
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_Fuhrer_directives }
+		x = 1
+		y = 1
+		relative_position_id = GER_Fuhrer_directives
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = GER_right_hand_man
 		icon = GFX_focus_GER_grosraumwirtschaft
 		prerequisite = { focus = GER_Fuhrer_Prinzip }
@@ -815,6 +885,23 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = GER_direct_oversight
+		icon = GFX_focus_GER_grosraumwirtschaft
+		prerequisite = { focus = GER_right_hand_man }
+		x = -1
+		y = 1
+		relative_position_id = GER_right_hand_man
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			#unique MIOs here i think
 		}
 	}
 
@@ -1076,7 +1163,7 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			wap_ideas = {
+			swap_ideas = {
 					remove_idea = GER_autarky_idea
 					add_idea = GER_autarky_idea_1
 				}
@@ -1114,10 +1201,10 @@
 				add_timed_idea = { idea = GER_rebuild_our_glory1 days = 100 } 
 				custom_effect_tooltip = GER_Goering_plan_tt
 			add_to_variable = {
-				GER_production_speed_industrial_complex_factor_var = 0.1
+				GER_production_speed_industrial_complex_factor_var = 0.15
 			}
 			add_to_variable = {
-				GER_production_speed_arms_factory_factor_var = 0.1
+				GER_production_speed_arms_factory_factor_var = -0.1
 			}
 		}
 	}
@@ -1139,7 +1226,7 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+			add_ideas = GER_adjust_building_plans
 		}
 	}		
 
@@ -1169,7 +1256,7 @@
 		icon = GFX_focus_GER_german_war_economy
 		prerequisite = { focus = GER_hermann_goering_plan }
 		x = -1.5
-		y = 1
+		y = 3
 		relative_position_id = GER_hermann_goering_plan
 		cost = 5
 		ai_will_do = {
@@ -1186,7 +1273,7 @@
 	}
 
 	focus = {
-		id = GER_balance_the_sheets
+		id = GER_finish_the_Rhine_dam
 		icon = GFX_focus_GER_german_war_economy
 		prerequisite = { focus = GER_hermann_goering_plan }
 		x = -1.5
@@ -1201,10 +1288,37 @@
 		bypass = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			
+		completion_reward = { 
+			51 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 6074
+				}
+			}
+			51 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			55 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 5949
+				}
+			}
+			55 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
+		
+	
 
 
 

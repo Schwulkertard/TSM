@@ -360,7 +360,6 @@ ideas = {
 			picture = generic_exploit_mines
 			modifier = {
 				production_speed_synthetic_refinery_factor=0.1
-				global_building_slots_factor=0.15
 				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
@@ -382,9 +381,9 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.025
 				production_speed_synthetic_refinery_factor=0.1
-				global_building_slots_factor=0.15
 				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
+				local_resources_factor = 0.1
 			}
 		}
 		GER_grosraumwirtschaft = {
@@ -775,6 +774,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				global_building_slots_factor=0.15
+				industrial_capacity_factory = 0.05
 			}
 		}
 		GER_all_options = {
