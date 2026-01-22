@@ -856,6 +856,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_tech_bonus = {
+ 				name = SAF_armor_effort
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = armor
+ 			}
 			army_experience = 200
 		}
 	}
@@ -1233,11 +1239,19 @@ focus_tree = {
  		cost = 10
  		available_if_capitulated = yes
  		completion_reward = {
+			remove_ideas = neutrality_idea 
+			ENG = {
+				add_to_faction = MEX
+			}
+			transfer_state = 289
+			289 = {
+				add_core_of = MEX
+			}
  			289 = {
- 					add_extra_state_shared_building_slots = 3
+ 					add_extra_state_shared_building_slots = 1
  					add_building_construction = {
- 						type = industrial_complex
- 						level = 3
+ 						type = arms_factory
+ 						level = 1
  						instant_build = yes
  				}
  			}
@@ -1294,7 +1308,7 @@ focus_tree = {
 			719 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
- 					type = industrial_complex
+ 					type = arms_factory
  					level = 1
  					instant_build = yes
  				}
@@ -1302,15 +1316,7 @@ focus_tree = {
 			721 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-			722 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = industrial_complex
+ 					type = arms_factory
  					level = 1
  					instant_build = yes
  				}
@@ -1445,7 +1451,7 @@ focus_tree = {
  		cost = 10
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_ideas = YUG_idea_foreign_capital
+ 			add_ideas = HOL_responsibility_for_our_own_defense
  		}
  	}
  	focus = {
@@ -1496,30 +1502,50 @@ focus_tree = {
  				}
  				730 = {
  					create_unit = {
- 						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 1"
  						owner = MEX
  					}
  				}
  				731 = {
  					create_unit = {
- 						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 1"
  						owner = MEX
  					}
  				}
 				722 = {
  					create_unit = {
- 						division = "name = \"3. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						division = "name = \"3. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 1"
  						owner = MEX
  					}
  				}
 				720 = {
  					create_unit = {
- 						division = "name = \"4. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						division = "name = \"4. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 1"
  						owner = MEX
  					}
  				}
  			}
  		}
+		focus = {
+ 		id = MEX_join_the_allies
+ 		available = {
+ 		has_idea = neutrality_idea
+	date > 1940.9.1
+ 		}
+ 		prerequisite = { focus = MEX_american_west_indies_protectorate focus = MEX_go_with_britain }
+ 		icon = GFX_goal_generic_major_alliance
+ 		x = -1
+ 		y = 1
+ 		relative_position_id =  MEX_american_west_indies_protectorate 
+ 		cost = 1
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			remove_ideas = neutrality_idea
+			ENG = {
+				add_to_faction = MEX
+			}
+ 		}
+ 	}
 	focus = {
 		id = MEX_focus_nationalize_the_oil_fields
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
@@ -1568,7 +1594,7 @@ focus_tree = {
 			719 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
- 					type = arms_factory
+ 					type = industrial_complex
  					level = 1
  					instant_build = yes
  				}
@@ -1576,7 +1602,7 @@ focus_tree = {
 			721 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
- 					type = arms_factory
+ 					type = industrial_complex
  					level = 1
  					instant_build = yes
  				}
@@ -1647,7 +1673,8 @@ focus_tree = {
  		available_if_capitulated = yes
  		completion_reward = {
  			add_war_support = 0.05
- 			add_ideas = HOL_responsibility_for_our_own_defense
+ 			
+			add_ideas = YUG_idea_foreign_capital
  		}
  	}
 }

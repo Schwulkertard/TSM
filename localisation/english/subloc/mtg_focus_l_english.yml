@@ -80,7 +80,9 @@
  MEX_focus_community_of_nations_desc:0 "Our economic dependence on British trade need not be a curse. By accepting the status quo we can engage in international diplomacy with the backing of a super power."
  anglo_mexican_diplomacy:0 "Anglo-Mexican Diplomacy"
  MEX_focus_purchase_belize:0 "Purchase Belize"
+ 
  MEX_focus_purchase_belize_desc:0 "This small territory was long claimed by the Spanish crown in colonial times, though never settled by peninsulares. After the loss of Spain's colonial empire during the Napoleonic Wars, Britain gradually solidifed a hold on the territory, culminating in the creation of the colony of British Honduras in 1862. The territory ought to be turned over to Mexico as a gesture of good faith."
+ MEX_join_the_allies:0 "Join the Allies"
  MEX_focus_nationalize_the_oil_fields:0 "Nationalize the Oil Fields"
  MEX_focus_nationalize_the_oil_fields_desc:0 "The foreign oil concessions are dominating the Mexican economy and exerting too much influence over our affairs, both domestic and foreign. The British and Americans pay more attention to Royal Dutch Shell and Standard Oil than to our government!"
  tooltip_mexico_they_may_declare_war:0 "§RThey may be persuaded to declare war by the oil barons!§!\n"

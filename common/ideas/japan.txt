@@ -27,6 +27,20 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
+		 JAP_special_tank_regiments = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_armor_attack_factor = 0.05
+		army_armor_defence_factor = 0.05
+			}
+			}
 		JAP_special_air_landing_force = {
 			picture = generic_infantry_bonus
 			allowed = {

@@ -1310,29 +1310,14 @@ focus_tree = {
 
 # Start Army Tree
 
-    focus = {
-        id = SIA_reform_army
-        icon = GFX_goal_generic_army_doctrines
-
-        x = 27
-        y = 0
-        cost = 5
-
-		ai_will_do = {
-			factor = 7
-		}
-        
-        completion_reward = {
-            army_experience = 50
-        }
-    }
+    
 
     focus = {
         id = SIA_military_modernization
         icon = GFX_goal_generic_cavalry
         prerequisite = { focus = SIA_reform_army }
-        x = 0
-        y = 1
+        x = 27
+        y = 0
         relative_position_id = SIA_reform_army
 
         cost = 5

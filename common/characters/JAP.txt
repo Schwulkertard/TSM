@@ -1280,12 +1280,12 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = nishizo_tsukahara
-			ledger = navy
+			ledger = army
 			allowed = {
 				original_tag = JAP
 			}
 			traits = {
-				air_naval_strike_1
+				army_armored_2
 			}
 			cost =  50
 			ai_will_do = {
