@@ -2354,7 +2354,7 @@ equipment_modules = {
  			naval_speed = -0.05
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			steel = 5
  		}
  		dismantle_cost_ic = 700
  	}

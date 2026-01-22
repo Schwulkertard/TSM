@@ -4,6 +4,7 @@ state={
  	manpower = 405100
  	state_category = wasteland
  	history={
+		set_state_flag = RAJ_muslim_state
  		victory_points = {
  			4726 1
  		}

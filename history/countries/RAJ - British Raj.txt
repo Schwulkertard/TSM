@@ -10,11 +10,10 @@ set_variable = {
 }
 add_ideas = ENG_allied_exped_corp2
 add_dynamic_modifier = { modifier = idea_RAJ_agrarian_society } 		
-set_variable = { RAJ_agrarian_society_conscription_factor = -0.72 } #3
-set_variable = { RAJ_agrarian_society_mobilization_laws_cost_factor = 2.16 } #9
-set_variable = { RAJ_agrarian_society_mobilization_speed = -0.72 } #3
+set_variable = { RAJ_agrarian_society_conscription_factor = -0.72 }
 add_ideas = idea_RAJ_great_depression_1
 add_ideas = peace_training
+add_ideas = trade_with_allies
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
@@ -128,6 +127,7 @@ recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_bhaskar_soman
 recruit_character = ENG_william_slim
 recruit_character = ENG_geoffry_scoones
+recruit_character = RAJ_sir_mohammed_iqbal
 
 set_convoys = 100
 add_equipment_to_stockpile = {

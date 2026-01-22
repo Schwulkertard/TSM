@@ -14,7 +14,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	never_surrender
-	
+	trade_with_axis
 }
 set_variable = {
 	var = min_fuel

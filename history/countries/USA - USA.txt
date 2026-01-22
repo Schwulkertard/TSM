@@ -6,6 +6,7 @@ add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = Pacific_focus
 add_ideas = USA_agents
+add_ideas = trade_with_allies
 set_variable = {
 	var = min_fuel
 	value = 0.800

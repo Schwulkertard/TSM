@@ -8,7 +8,6 @@ state={
  		add_core_of=SWE
  		buildings = {
  			infrastructure = 4
- 			arms_factory = 1
  		}
 		victory_points = {
 			9212 3 

@@ -4,6 +4,7 @@ state={
  	manpower = 1415800
  	state_category = rural
  	history={
+		set_state_flag = RAJ_muslim_state
  		victory_points = {
  			1808 1
  		}

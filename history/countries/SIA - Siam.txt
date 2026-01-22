@@ -10,6 +10,7 @@ if = {
 }
 
 add_ideas = ENG_allied_exped_corp2
+add_ideas = SIA_faction_trade
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_prawat_chumsai
 recruit_character = SIA_chulalongkorn_phonphayuhasena

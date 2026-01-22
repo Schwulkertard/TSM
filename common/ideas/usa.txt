@@ -11,7 +11,6 @@ ideas = {
 			}
 			modifier = {
 				operative_slot = 2
-				agency_upgrade_time = -0.30
 			}
 		}
 	}

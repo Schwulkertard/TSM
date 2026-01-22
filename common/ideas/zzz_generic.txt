@@ -24,6 +24,76 @@ ideas = {
 	}
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+		trade_with_axis = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = SPR
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = ROM
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = HUN
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -0.6
+			}
+		}
+		trade_with_allies = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = export_focus
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = MEX
+				trade_cost_for_target_factor = -0.6
+			}
+		}
 		peace_training = {
 			allowed = {
 				always = no

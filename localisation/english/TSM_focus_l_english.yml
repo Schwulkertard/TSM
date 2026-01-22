@@ -4027,3 +4027,4 @@
   theorist_chief_of_army_tt:0 "§GGrants 1 Monthly Land Mastery.§!"
   theorist_chief_of_navy_tt:0 "§GGrants 3 Monthly Naval Mastery.§!"
   theorist_chief_of_air_tt:0 "§GGrants 3 Monthly Air Mastery.§!"
+  RAJ_modify_agrarian_society_tt:0 "Modify §Y$idea_RAJ_agrarian_society$§! by:"

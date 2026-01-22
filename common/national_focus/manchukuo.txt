@@ -2255,7 +2255,6 @@
 			MAN_low_legitimacy_clear_all = yes
 			set_cosmetic_tag = MAN_great_qing
 			set_province_name = { id = 9047 name = "Peking" }
-			remove_ideas = MAN_puyi
 			retire_ideology_leader = fascism
 			create_country_leader = {
 				name = "Aisin Gioro Puyi"

@@ -274,7 +274,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				air_cas_present_factor = 0.1
-				agency_upgrade_time = -0.30
 				send_volunteer_size	= 3
 				send_volunteer_divisions_required = -1
 			}

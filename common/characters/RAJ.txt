@@ -71,7 +71,6 @@ characters={
 			allowed = {
 				original_tag = RAJ
 			}
-			available = { has_completed_focus = RAJ_chindits_dlc }
 			traits = {
 				special_operations_specialist 
 			}
@@ -394,13 +393,16 @@ characters={
 			}
 		}
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = RAJ_archibald_wavell
 			allowed = {
 				original_tag = RAJ
 			}
+			available = {
+				date > 1940.6.1
+			}
 			traits = {
-				army_chief_reform_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -680,19 +682,36 @@ characters={
 			}
 		}
 		advisor={	
-			slot = high_command
+			slot = political_advisor
 			idea_token = RAJ_arjan_singh_vibhusan
-			ledger = army
-			visible = { always = yes }
 			allowed = {
-				has_completed_focus = RAJ_lions_of_the_great_war
+				original_tag = RAJ
 			}
 			traits = {
-				army_commando_2
+				war_industrialist
 			}
 			cost = 150
 			ai_will_do = {
 				factor = 1.000
+			}
+		}
+	}
+
+	RAJ_agha_khan_iii={
+		name=RAJ_agha_khan_iii
+		portraits={
+			army={
+				small= "GFX_idea_RAJ_agha_khan_iii" #small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_agha_khan_iii
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				captain_of_industry
 			}
 		}
 	}
@@ -910,13 +929,13 @@ characters={
 			}
 		}
 		advisor={
-			allowed = {
-				has_completed_focus = RAJ_indian_national_congress_2
-			}
 			slot = political_advisor
 			idea_token = RAJ_mahatma_mohandas_gandhi
 			allowed = {
 				original_tag = RAJ
+			}
+			available = {
+				has_completed_focus = RAJ_the_integrity_of_india_act
 			}
 			traits = {
 				nationalist_symbol
@@ -945,25 +964,6 @@ characters={
 			}
 		}
 	} 
-	
-	RAJ_agha_khan_iii={
-		name=RAJ_agha_khan_iii
-		portraits={
-			army={
-				small= "GFX_idea_RAJ_agha_khan_iii" #small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = RAJ_agha_khan_iii
-			allowed = {
-				original_tag = RAJ
-			}
-			traits = {
-				captain_of_industry
-			}
-		}
-	}
 	
 	#Illusive Gentleman auto-generated
 }

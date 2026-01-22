@@ -170,6 +170,7 @@ add_ideas = {
 	limited_exports_axis
 	limited_conscription
 	partial_economic_mobilisation
+	trade_with_axis
 }
 
 #POLITICAL

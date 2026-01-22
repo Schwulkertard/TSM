@@ -152,6 +152,7 @@
  MODIFIER_CONSUMER_GOODS_FACTOR:1 "Consumer Goods Factories factor"
  consumer_goods_factor_tt: " $MODIFIER_CONSUMER_GOODS_FACTOR$: $RIGHT|Y=%1$"
  MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE: "Expected number of factories put on Consumer Goods"
+ consumer_goods_expected_factor_tt: " $MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$: $RIGHT|Y=%1$"
  MODIFIER_AIR_ATTACK:0 "Air Attack"
  MODIFIER_AIR_ATTACK_FACTOR:0 "Air Attack"
  air_attack_factor_tt: " $MODIFIER_AIR_ATTACK_FACTOR$: $RIGHT|+=%1$" 

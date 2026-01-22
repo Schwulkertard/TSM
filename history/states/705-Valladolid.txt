@@ -1,9 +1,6 @@
 state={
  	id=705
  	name="STATE_791"
- 	resources={
- 		tungsten = 100.000
- 	}
  	history={
  		owner = SPR
  		victory_points = {

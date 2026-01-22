@@ -46,6 +46,7 @@ RAJ_a_loyal_government = {
 	master_ideology_drift = RAJ_a_loyal_government_master_ideology_drift #0.3
 
 	#Later
+	consumer_goods_expected_value = RAJ_a_loyal_government_consumer_goods_expected_value
 	consumer_goods_factor = RAJ_a_loyal_government_consumer_goods_factor #-0.1
 	political_advisor_cost_factor = RAJ_a_loyal_government_political_advisor_cost_factor  #-0.5
 	party_popularity_stability_factor = RAJ_a_loyal_government_party_popularity_stability_factor #0.1

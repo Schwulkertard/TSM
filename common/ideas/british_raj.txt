@@ -291,7 +291,9 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				no_compliance_gain = 1
-				resistance_target = -1.5
+				resistance_target = -1
+				resistance_activity = -1
+				resistance_growth = -1
 			}
 		}
 		RAJ_princely_states_election = {
@@ -470,6 +472,16 @@ ideas = {
 			}
 
 			traits = { captain_of_industry }
+		}
+		RAJ_arjan_singh_vibhusan = {
+			picture = RAJ_john_mathai
+			cost = 150
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			traits = { war_industrialist }
 		}
 	}
 }
