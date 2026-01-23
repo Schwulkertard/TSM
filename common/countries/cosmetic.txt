@@ -251,8 +251,14 @@ LIT_reichskommissariat = {
 	color_ui = rgb { 107 92 87 }
 }
 
+SAF_dominion = {
+	color = rgb { 78 44 117 }
+	color_ui = rgb { 198 169 248 }
+}
 
-
-
+SAF_nationalist = {
+	color = rgb { 78 44 117 }
+	color_ui = rgb { 198 169 248 }
+}
 
 

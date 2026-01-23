@@ -113,7 +113,7 @@ ideas = {
 
 			modifier = {
 				planning_speed = 0.15
-				max_planning_factor = 0.05
+				max_planning = 0.05
 				command_power_gain = 0.15
 			}
 		}

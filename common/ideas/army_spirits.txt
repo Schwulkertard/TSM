@@ -457,7 +457,7 @@ ideas = {
 			ledger = army
 			modifier = {
 				max_dig_in = 2.5
-				max_planning_factor = 0.05
+				max_planning = 0.05
 				custom_modifier_tooltip=static_warfare_spirit_fort_tt
 				
 			}

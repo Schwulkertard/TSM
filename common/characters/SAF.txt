@@ -1,4 +1,18 @@
 characters={
+	SAF_jan_smuts = {
+		name=SAF_jan_smuts
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_jan_smuts
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	SAF_j_b_m_hertzog={ 
 		name=SAF_j_b_m_hertzog
 		portraits={
@@ -6,8 +20,21 @@ characters={
 				large="GFX_SAF_james_hertzog"
 			}
 		}
+	}
+
+	SAF_d_f_malan={
+		name=SAF_d_f_malan
+		portraits={
+			civilian={
+				large="GFX_SAF_daniel_malan"
+			}
+			army={
+				small=GFX_portrait_SAF_d_f_malan_small
+			}
+		}
+		
 		country_leader={
-			ideology=conservatism
+			ideology=centrism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -22,20 +49,6 @@ characters={
 		}
 		country_leader={
 			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_pixley_ka_isaka_seme={
-		name=SAF_pixley_ka_isaka_seme
-		portraits={
-			civilian={
-				large="gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-			}
-		}
-		country_leader={
-			ideology=centrism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -59,8 +72,9 @@ characters={
 			legacy_id=-1
 		}
 	}
-	SAF_jan_smuts = {
-		name=SAF_jan_smuts
+	
+	SAF_dan_pienaar = {
+		name="Dan Pienaar"
 		portraits={
 			army={
 				large="gfx/leaders/Portrait_Europe_Generic_land_2.dds"
@@ -122,40 +136,6 @@ characters={
 				military_theorist
 			}
 		}
-
-		advisor={
-			slot = political_advisor
-			idea_token = SAF_j_f_van_rensburg_fascist
-			allowed = {
-				original_tag = SAF
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
 	}
 
 	SAF_s_p_le_roux={
@@ -166,17 +146,19 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SAF_s_p_le_roux
-			ledger = air
+			slot = political_advisor
+			idea_token = SAF_s_p_le_roux_advisor
 			allowed = {
 				original_tag = SAF
 			}
-			traits = {
-				air_warfare_theorist
+			available = {
+				has_completed_focus = SAF_dominion_first_policy
 			}
-		}		
+			traits = {
+				industrial_genius 
+			}
+			cost = 150
+		}
 	}
 
 
@@ -196,7 +178,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				army_chief_maneuver_2
+				army_chief_offensive_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -392,7 +374,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				air_naval_strike_2
+				army_infantry_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -416,7 +398,7 @@ characters={
 				original_tag = SAF
 			}
 			traits = {
-				navy_screen_2
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -445,28 +427,8 @@ characters={
 			allowed = {
 				original_tag = SAF
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
 			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
+				popular_figurehead 
 			}
 			ai_will_do = {
 				factor = 0.000

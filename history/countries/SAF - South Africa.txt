@@ -101,9 +101,9 @@ if = {
 	add_ideas = SAF_ossewabrandwag
 	add_ideas = SAF_history_of_segregation
 	add_ideas = SAF_the_commonwealth
-	add_ideas = SAF_civ_railroad
 	add_to_tech_sharing_group = commonwealth_research
 	add_ideas = peace_training
+	add_ideas = SAF_divided_parliament
 }
 set_convoys = 100
 add_equipment_to_stockpile = {
@@ -138,14 +138,12 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
-	fascism = 20
-	communism = 5
+	democratic = 70
+	neutrality = 30
 }
 
 recruit_character = SAF_j_b_m_hertzog
 recruit_character = SAF_moses_kotane
-recruit_character = SAF_pixley_ka_isaka_seme
 recruit_character = SAF_george_edwin_brink
 recruit_character = SAF_guy_hallifax
 recruit_character = SAF_pierre_oliver_knoll
@@ -161,3 +159,6 @@ recruit_character = SAF_e_g_jansen
 recruit_character = SAF_sir_patrick_duncan
 recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_jan_smuts
+recruit_character = SAF_s_p_le_roux
+recruit_character = SAF_dan_pienaar
+recruit_character = SAF_d_f_malan

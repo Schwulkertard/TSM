@@ -1,6 +1,19 @@
 ideas = {
 	# MILITARY
 	country = {
+		SAF_divided_parliament = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				political_power_factor = -0.25
+			}
+		}
 		SAF_ossewabrandwag = {
 			allowed = {
 				always = no
@@ -11,7 +24,7 @@ ideas = {
 			removal_cost = -1
 			picture = saf_ossewabrandwag
 			modifier = {
-				fascism_drift = 0.01
+				neutrality_drift = 0.01
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -41,9 +54,8 @@ ideas = {
 			removal_cost = -1
 			picture = saf_ossewabrandwag_fascism
 			modifier = {
-				fascism_drift = 0.01
-				resistance_damage_to_garrison = -0.1
-				foreign_subversive_activites = -0.4
+				industrial_capacity_factory = 0.05
+				stability_weekly = 0.003
 			}
 		}
 		SAF_the_commonwealth = {
@@ -92,9 +104,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_industrial_complex_factor = 0.07
-				production_speed_arms_factory_factor = 0.07
-				production_speed_infrastructure_factor = 0.07
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		SAF_civ_railroad = {
@@ -148,10 +159,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
 				consumer_goods_expected_value = -0.03
-				conscription_factor = -0.05
 			}
 		}
 		SAF_cheap_labor_3 = {
@@ -164,10 +172,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				consumer_goods_expected_value = -0.08
-				conscription_factor = -0.05
+				consumer_goods_expected_value = -0.06
 			}
 		}
 		SAF_voortrekker_monument = {
@@ -209,8 +214,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
-				conscription = 0.01
-				war_support_factor = 0.05
+				local_resources_factor = 0.1
 			}
 		}
 		SAF_equal_opportunities = {
@@ -256,6 +260,7 @@ ideas = {
 			}
 		}
 		SAF_scw_veterans = {
+			name = "Home Guard"
 			allowed = {
 				always = no
 			}
@@ -265,7 +270,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
-				army_org_Factor = 0.05
+				conscription_factor = 0.10
 			}
 		}
 		SAF_support_spain = {
@@ -296,8 +301,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				heat_attrition_factor = -0.5
-				acclimatization_hot_climate_gain_factor = 0.1
+				max_planning = 0.05
+				army_org_regain = 0.1
 			}
 		}
 		SAF_king_edward = {
@@ -338,36 +343,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_air_bonus
 			modifier = {
-				air_ace_generation_chance_factor = 0.10
-			}
-		}
-	}
-	materiel_manufacturer = {
-		sadf = {
-			allowed = {
-				tag = SAF
-			}
-			picture = generic_artillery_manufacturer_1
-			cost = 100
-			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.05
-					hard_attack = 0.05
-					build_cost_ic = -0.05
-				}
-			}
-		}
-		armscor = {
-			allowed = {
-				original_tag = SAF
-			}
-			picture = generic_infantry_equipment_manufacturer_2
-			equipment_bonus = {
-				infantry_equipment = {
-					soft_attack = 0.05
-					hard_attack = 0.05
-					build_cost_ic = -0.05
-				}
+				experience_gain_air = 0.2
 			}
 		}
 	}
