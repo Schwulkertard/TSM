@@ -720,33 +720,6 @@ ideas = {
 
 
 	industrial_concern = {
-		idea_RAJ_azad_hind_bank = { 
-			name = idea_RAJ_azad_hind_bank
-			picture = tur_balkan_central_bank_wealthy_greece
-			allowed = {
-				has_dlc = "Graveyard of Empires"
-				original_tag = RAJ
-			}
-			available = {
-			}
-			visible = {
-				
-			}
-			cost = 100
-			removal_cost = 10
-			research_bonus = {
-			}
-			traits = {  } 
-			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				war_support_factor = 0.05	
-			}
-
-			research_bonus = {
-				industry = 0.15
-			}
-		}
-
 		idea_RAJ_the_reserve_bank_of_india = { 
 			picture = raj_reserve_bank_of_india
 			allowed = {
@@ -762,10 +735,10 @@ ideas = {
 			cost = 100
 			removal_cost = -1
 			research_bonus = {
+				industry = 0.15
 			}
-			traits = { } 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
 				consumer_goods_expected_value = -0.05		
 			}
 		}

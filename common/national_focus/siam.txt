@@ -620,10 +620,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			hidden_effect = {
-			RAJ={	
-			add_offsite_building = { type = industrial_complex level = 2 }
-			}}
 		}
 	}
 
@@ -643,10 +639,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
-			hidden_effect = {
-			RAJ={	
-			add_offsite_building = { type = industrial_complex level = 2 }
-			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -807,10 +799,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			hidden_effect = {
-			RAJ={	
-			add_offsite_building = { type = arms_factory level = 2 }
-			}}
 		}
 	}
 	
@@ -830,10 +818,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
-			hidden_effect = {
-			RAJ={	
-			add_offsite_building = { type = arms_factory level = 2 }
-			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -873,10 +857,6 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			hidden_effect = {
-			RAJ={	
-			add_offsite_building = { type = industrial_complex level = 2 }
-			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -911,10 +891,6 @@ focus_tree = {
 
         search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
-			hidden_effect={
-			RAJ={	
-			add_offsite_building = { type =arms_factory level = 2 }
-			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

@@ -111,7 +111,6 @@ recruit_character = RAJ_douglas_gracey
 recruit_character = RAJ_herbert_fitzherbert
 recruit_character = RAJ_mohan_singh
 recruit_character = RAJ_mehar_singh 
-recruit_character = RAJ_arjan_singh_vibhusan
 recruit_character = RAJ_reginald_savory
 recruit_character = RAJ_subroto_mukherjee
 recruit_character = RAJ_arthur_a_barrett
@@ -128,6 +127,7 @@ recruit_character = RAJ_bhaskar_soman
 recruit_character = ENG_william_slim
 recruit_character = ENG_geoffry_scoones
 recruit_character = RAJ_sir_mohammed_iqbal
+recruit_character = RAJ_arjan_singh_vibhusan
 
 set_convoys = 100
 add_equipment_to_stockpile = {
@@ -137,16 +137,26 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 30000
+	amount = 15000
 	producer = RAJ
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2000
+	amount = 1000
 	producer = RAJ
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
+	amount = 500
+	producer = RAJ
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 500
+	producer = RAJ
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
 	amount = 500
 	producer = RAJ
 }
