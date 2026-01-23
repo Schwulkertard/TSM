@@ -8,9 +8,15 @@
 
  GER_Goering_plan_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nMilitary Factory Construction Speed: §R-10%§!\nCivilian Factory Construction Speed: §G+15%§!"
 
- GER_Rethink_our_plans_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nDaily Political Power Cost: §G+0.15§!\nWar Support: §R-20%§!\nStability: §G+10%§!\nFactory Output: §R-10%§!\nDockyard Output: §R-10%§!\nCivilian Factory Construction Speed: §G+40%§!"
+ GER_Rethink_our_plans_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nDaily Political Power Cost: §G+0.15§!\nWar Support: §R-20%§!\nStability: §G+10%§!\nFactory Output: §R-10%§!\nDockyard Output: §R-10%§!\nCivilian Factory Construction Speed: §G+50%§!"
 
- GER_Reichsbank_War_loans_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nMilitary Factory Construction Speed: §G+15%§!\nCivilian Factory Construction Speed: §R-10%§!\nDaily Political Power Cost: §R-0.15§!"
+ GER_Reichsbank_War_loans_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nMilitary Factory Construction Speed: §G+15%§!\nCivilian Factory Construction Speed: §R-40%§!\nDaily Political Power Cost: §R-0.15§!"
+
+ GER_release_more_bonds_to_the_market_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nConsumer Goods: §G-1%§!"
+
+ GER_withdraw_bonds_from_the_market_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nConsumer Goods: §R+1%§!"
+
+ GER_Goering_plan_2_tt:0 "Modify §YGER_Mefo_Bills_dynamic§! by\nMilitary Factory Construction Speed: §G+20%§!\nCivilian Factory Construction Speed: §R-15%§!\nDaily Political Power Cost: §R-0.15§!"
 
  FRA_katyusha:0 "Crusade for Cherbourg"
 
