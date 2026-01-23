@@ -65,7 +65,7 @@ ideas = {
 			}
 			modifier = {
 				industrial_capacity_factory = -0.5
-				consumer_goods_expected_value = 0.5
+				consumer_goods_factor = 2
 				stability_factor = -0.5
 				training_time_factor = 1000
 			}
@@ -200,7 +200,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 				stability_factor = -0.05
 			}
 		}
@@ -227,7 +227,7 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.002
 				
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 				
 			}
 		}
@@ -661,7 +661,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.2
+				consumer_goods_factor = 0.5
 			}
 		}
 		FRA_occupation_costs_3 = {
@@ -676,7 +676,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.75
 			}
 		}
 		FRA_occupation_costs_2 = {
@@ -691,7 +691,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.5
 			}
 		}
 		FRA_occupation_costs_1 = {
@@ -705,7 +705,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 			}
 		}
 		FRA_mandatory_work_service = {
@@ -1354,7 +1354,7 @@ ideas = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				stability_factor = 0.1
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 			}
 		}
 		FRA_Civs = {
@@ -1384,7 +1384,7 @@ ideas = {
 			}
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.3
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.05
 			}
 		}

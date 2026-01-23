@@ -358,7 +358,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
 		add_to_variable = { RAJ_a_loyal_government_political_power_factor = 0.2	tooltip = political_power_factor_tt }
-		add_to_variable = { RAJ_a_loyal_government_consumer_goods_expected_value = -0.03	tooltip = consumer_goods_expected_factor_tt }
+		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.15	tooltip = consumer_goods_expected_factor_tt }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
@@ -421,7 +421,7 @@ focus = {
 
 	completion_reward = {
         custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
-        add_to_variable = { RAJ_a_loyal_government_consumer_goods_expected_value = -0.02	tooltip = consumer_goods_expected_factor_tt }
+        add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.1	tooltip = consumer_goods_expected_factor_tt }
         custom_effect_tooltip = RAJ_modify_agrarian_society_tt
 		add_to_variable = { RAJ_agrarian_society_conscription_factor = 0.15	tooltip = conscription_factor_tt }
 	}

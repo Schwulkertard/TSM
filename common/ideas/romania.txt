@@ -49,7 +49,7 @@ ideas = {
 				original_tag = ROM
 			}
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 				production_speed_industrial_complex_factor = -0.2
 			}
 		}
@@ -126,7 +126,7 @@ ideas = {
 				original_tag = ROM
 			}
 			modifier = {
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.1
 			}
 		}
 		ROM_iron_guard = {
@@ -179,7 +179,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.125
 			}
 			cancel = {
 				has_war_with = SOV
@@ -202,7 +202,7 @@ ideas = {
 				original_tag = ROM
 			}
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.125
 			}
 		}
 		ROM_revenge_against_soviet = {
@@ -412,7 +412,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.75
 				political_power_gain = -0.25
 			}
 		}
@@ -500,7 +500,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.125
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}

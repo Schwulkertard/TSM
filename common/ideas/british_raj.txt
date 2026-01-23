@@ -356,7 +356,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				autonomy_gain = -0.4
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.1
 			}
 		}
 		RAJ_princely_states_donations_troops = {
@@ -375,7 +375,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				autonomy_gain = -0.4
-				consumer_goods_expected_value = -0.03
+				consumer_goods_factor = -0.15
 				conscription_factor = 0.05
 			}
 		}

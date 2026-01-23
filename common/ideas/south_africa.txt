@@ -159,7 +159,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				consumer_goods_expected_value = -0.03
+				consumer_goods_factor = -0.15
 			}
 		}
 		SAF_cheap_labor_3 = {
@@ -172,7 +172,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				consumer_goods_expected_value = -0.06
+				consumer_goods_factor = -0.3
 			}
 		}
 		SAF_voortrekker_monument = {
@@ -330,7 +330,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 			}
 		}
 		SAF_joint_air_training_scheme = {

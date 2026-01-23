@@ -545,7 +545,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_expected_value = -0.04
+				consumer_goods_factor = -0.2
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
@@ -601,7 +601,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.02
 				production_factory_max_efficiency_factor = 0.02
-				consumer_goods_expected_value = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -621,7 +621,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_expected_value = 0.02
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -641,7 +641,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
-				consumer_goods_expected_value = 0.03
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -658,7 +658,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_expected_value = -0.04
+				consumer_goods_factor = -0.2
 			}
 		}
 

@@ -119,7 +119,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_factor = -0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
@@ -218,7 +218,7 @@ ideas = {
 
             modifier = {
                 production_speed_arms_factory_factor = 0.10
-                consumer_goods_expected_value = -0.045
+                consumer_goods_factor = -0.25
             }
         }
 		Order_227 = {
@@ -264,7 +264,7 @@ ideas = {
 			}
 			picture = generic_manpower_bonus
 			modifier = {
-				consumer_goods_expected_value=-0.15
+				consumer_goods_factor = -0.75
 				industry_repair_factor = 1
 				political_power_gain = 0.5
 				production_speed_arms_factory_factor = 0.1

@@ -200,7 +200,7 @@ ideas = {
 				production_speed_synthetic_refinery_factor=0.7
 				industry_free_repair_factor=0.5
 				industry_repair_factor=0.25
-				consumer_goods_expected_value = 0.03
+				consumer_goods_factor = 0.15
 				}}
 		GER_Albert_Speer_idea = {
 			allowed = {
@@ -342,7 +342,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_wall_line
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
 				production_speed_anti_air_building_factor = 0.1
 				production_speed_coastal_bunker_factor = 0.1
@@ -842,7 +842,7 @@ ideas = {
 			removal_cost = -1
 			picture = ger_mefo_bills
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -869,7 +869,7 @@ ideas = {
 			removal_cost = -1
 			picture = ger_mefo_bills_payment
 			modifier = {
-				consumer_goods_expected_value = 0.20
+				consumer_goods_factor = 1
 			}
 		}
 		GER_messerschmitt_transport_plane = {

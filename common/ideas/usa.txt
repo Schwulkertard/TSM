@@ -451,7 +451,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 			}
 		}
 		USA_war_plans_1 = {
@@ -536,7 +536,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 1.1
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.5
 				industrial_capacity_dockyard = -0.15
 				production_speed_industrial_complex_factor = 0.3
 			}
@@ -552,7 +552,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.8
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 				industrial_capacity_dockyard = -0.10
 				production_speed_industrial_complex_factor = 0.2
 			}
@@ -568,7 +568,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.5
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.125
 				industrial_capacity_dockyard = -0.05
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -722,7 +722,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 			}
 		}
 		USA_intervention_in_the_americas = {
@@ -813,7 +813,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 			}
 		}
 		USA_the_pentagon = {
@@ -968,7 +968,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 				stability_factor = 0.1
 			}
 		}
@@ -1252,7 +1252,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.25
 			}
 		}
 		USA_adjusted_compensation_payment = {
@@ -1265,7 +1265,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.25
 			}
 		}
 		liberty_ships_focus = {
@@ -1542,7 +1542,7 @@ ideas = {
 				army_core_defence_factor = 0.25
 				training_time_factor = -0.5
 				equipment_capture = 0.125
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.5
 				conscription_factor = 0.25
 			}
 		}
