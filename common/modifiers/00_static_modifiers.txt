@@ -462,12 +462,10 @@ air_wing_experience_malus_min = {
 
 ship_experience_bonus_max = {
 	naval_damage_factor = 0.1
-	naval_defense_factor = 0.1
 }
 
 ship_experience_malus_min = {
 	naval_damage_factor = -0.1
-	naval_defense_factor = -0.1
 }
 
 carrier_experience_bonus_max = {
