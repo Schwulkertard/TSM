@@ -1561,6 +1561,27 @@ focus = {
 				    instant_build = yes
 				}
 			}
+			154 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 8955
+				}
+			}
+			155 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 6165
+				}
+			}
+			156 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 568
+				}
+			}
  		}
  	}
  	focus = {

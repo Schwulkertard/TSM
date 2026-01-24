@@ -1114,7 +1114,7 @@
 		cost = 5
 
 		available = {
-			has_war = yes
+			date > 1939.9.1
 		}
 
 		cancel_if_invalid = yes

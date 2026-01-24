@@ -833,7 +833,7 @@
 			prerequisite = { focus = GER_extra_tech_slot }
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = { 
-				add_ideas = GER_hermann_goering_plan1
+			add_ideas = GER_hermann_goering_plan1
 		}
 	}		
 	focus = {
@@ -907,6 +907,13 @@
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
+			}
+			51 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 6074
+				}
 			}
 		}
 	}
@@ -999,6 +1006,13 @@ focus = {
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			55 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 10488
+				}
 			}
 		}
 	}

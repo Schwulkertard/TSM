@@ -65,44 +65,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_filipino_workers
-		icon = GFX_focus_PHI_investment_fund
-		relative_position_id = USA_healthcare_act
-		prerequisite = { focus = USA_healthcare_act }
-		available = {
-		}
-		x = 3
-		y = 1
-		cost = 5
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			294 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-                add_state_modifier = {
-                    modifier = {
-                        state_production_speed_buildings_factor = 0.75
-                    }
-                }
-            }
-            544 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				} 
-                add_state_modifier = {
-                    modifier = {
-                        state_production_speed_buildings_factor = 0.75
-                    }
-                }
-            }
-        }
-	}
-	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research2
 		relative_position_id = USA_healthcare_act
@@ -110,7 +72,7 @@ focus_tree = {
 		available = {
 		}
 		available_if_capitulated = yes
-		x = -3
+		x = 3
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -164,49 +126,6 @@ focus_tree = {
 				building = synthetic_refinery
 				resource = rubber
 				amount = 20
-			}
-		}
-	}
-	focus = {
-		id = USA_colonial_development
-		icon = GFX_USA_tier_1_defence_philippines
-		relative_position_id = USA_filipino_workers
-		prerequisite = { focus = USA_filipino_workers }
-		available = {
-		}
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		cost = 5
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			550 = {
-				add_resource = {
-					type = rubber
-					amount = 100
-				}
-			}
-			605 = {
-				add_resource = {
-					type = rubber
-					amount = 100
-				}
-			}
-			294 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-				}
-			}
-			544 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-				}
 			}
 		}
 	}
@@ -584,7 +503,7 @@ focus_tree = {
 				add_building_construction = {
 					type = dam
 					level = 1
-					province = 1265
+					province = 4690
 				}
 			}
 		}
@@ -831,14 +750,14 @@ focus_tree = {
 	focus = {
 		id = USA_arsenal_of_democracy
 		icon = GFX_USA_arsenal_of_democracy
-		relative_position_id = USA_colonial_development
-		prerequisite = { focus = USA_agricultural_adjustment_act focus = USA_colonial_development focus = USA_ford_motor_company_focus }
+		relative_position_id = USA_agricultural_adjustment_act
+		prerequisite = { focus = USA_agricultural_adjustment_act focus = USA_ford_motor_company_focus }
 		available = {
 			date > 1939.3.1
 		}
 		available_if_capitulated = yes
-		x = 0
-		y = 2
+		x = 2
+		y = 1
 		cost = 2
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1834,6 +1753,12 @@ focus = {
 				add_idea = war_economy
 			}
 			set_country_flag = USA_the_giant_wakes_added_civ_eco
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = USA_second_deal_2
+					add_idea = USA_second_deal_3
+				}
+			}
 		}
 	}
 

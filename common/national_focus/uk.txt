@@ -83,6 +83,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			unlock_decision_tooltip = ENG_infrastructure_development
+			119 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 8546
+				}
+			}
+			131 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 5831
+				}
+			}
 		}
 	}
 

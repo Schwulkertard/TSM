@@ -433,6 +433,20 @@ ideas = {
 				consumer_goods_factor = 0.25
 			}
 		}
+		USA_second_deal_3 = {
+			name = USA_second_deal
+			picture = home_of_the_free_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+			}
+		}
 		USA_stability = {
 			picture = generic_war_preparation
 			allowed = {
