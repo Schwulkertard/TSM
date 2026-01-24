@@ -125,10 +125,10 @@ focus_tree = {
 		    custom_effect_tooltip = FRA_doc_tt_2
 		    every_owned_state = {
 			limit= {AND = {infrastructure > 9 is_core_of = FRA}  }
-				 add_extra_state_shared_building_slots = 3
+				 add_extra_state_shared_building_slots = 2
 				    add_building_construction = {
 				    type = arms_factory
-				    level = 3
+				    level = 2
 				    instant_build = yes
 				}
 			}
@@ -571,6 +571,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = FRA_rearmament_plan
 			unlock_decision_category_tooltip = FRA_rearmament_plan
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -1027,9 +1028,8 @@ focus_tree = {
 			
 		}
 		relative_position_id = FRA_economic_devolution
-		cost = 10
+		cost = 5
 		available = {
-			num_of_factories > 120
 		}
 		bypass = {
 		}
@@ -1266,6 +1266,16 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 30
 			set_state_category = city
 		}
+
+		every_owned_state={
+				limit={NOT={is_core_of=ROOT has_state_category=wasteland } is_on_continent=africa
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
 		
 		}
 	}
