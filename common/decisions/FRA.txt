@@ -209,28 +209,28 @@ FRA_great_war_veterans = {
 			factor = 1
 		}
 		complete_effect = {
-				custom_effect_tooltip= "When we complete this decision we will spawn 6 veteran great war shocktroops with modern equipment "
+				custom_effect_tooltip= "When we complete this decision we will spawn 6 veteran great war mountaineers with modern equipment "
 				hidden_effect = { 
 					division_template = {
-					name = "Great War shocktroops"
+					name = "Great War mountaineers"
 					regiments = {
-					shocktroop = { x = 0 y = 0 }
-		shocktroop = { x = 0 y = 1 }
-	    shocktroop = { x = 0 y = 2 }
-		shocktroop = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+	    mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
 		artillery_brigade = { x = 0 y = 4 }
-		shocktroop = { x = 1 y = 0 }
-		shocktroop = { x = 1 y = 1 }
-		shocktroop = { x = 1 y = 2 }
-		shocktroop = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
 		artillery_brigade = { x = 1 y = 4 }
-		shocktroop = { x = 2 y = 0 }
-		shocktroop = { x = 2 y = 1 }
-		shocktroop = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-		shocktroop = { x = 3 y = 0 }
-		shocktroop = { x = 3 y = 1 }
-		shocktroop = { x = 3 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 		artillery_brigade = { x = 3 y = 4 }
 		anti_tank_brigade = { x = 2 y = 4 }
@@ -251,7 +251,7 @@ FRA_great_war_veterans = {
 					for_loop_effect = {
 						end = 6
 						create_unit = {
-							division = "name = \"Great War shocktroops\" division_template = \"Great War shocktroops\" start_experience_factor = 0.3"
+							division = "name = \"Great War mountaineers\" division_template = \"Great War mountaineers\" start_experience_factor = 0.3"
 							owner = FRA
 						}
 						}}
