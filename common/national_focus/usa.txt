@@ -30,42 +30,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_develop_the_steel_belt
-		icon = GFX_USA_the_heartland
-		relative_position_id = USA_healthcare_act
-		prerequisite = { focus = USA_healthcare_act }
-		available = {
-		}
-		available_if_capitulated = yes
-		x = -3
-		y = 1
-		cost = 5
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			360 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			254 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			362 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
 		id = USA_second_new_deal
 		icon = GFX_USA_prepare_new_deal_legislation
 		relative_position_id = USA_healthcare_act
@@ -105,7 +69,6 @@ focus_tree = {
 		icon = GFX_focus_PHI_investment_fund
 		relative_position_id = USA_healthcare_act
 		prerequisite = { focus = USA_healthcare_act }
-		mutually_exclusive = { focus = USA_USACE_projects }
 		available = {
 		}
 		x = 3
@@ -142,12 +105,12 @@ focus_tree = {
 	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research2
-		relative_position_id = USA_develop_the_steel_belt
-		prerequisite = { focus = USA_develop_the_steel_belt }
+		relative_position_id = USA_healthcare_act
+		prerequisite = { focus = USA_healthcare_act }
 		available = {
 		}
 		available_if_capitulated = yes
-		x = 0
+		x = -3
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -343,11 +306,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_USACE_projects
-        icon = GFX_goal_generic_production
+		id = USA_develop_the_steel_belt
+		icon = GFX_USA_the_heartland
 		relative_position_id = USA_new_reforms
 		prerequisite = { focus = USA_new_reforms }
-		mutually_exclusive = { focus = USA_filipino_workers }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -357,28 +319,25 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			360 = {
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
+					type = infrastructure
+					level = 3
 					instant_build = yes
 				}
 			}
-			361 = {
-				add_extra_state_shared_building_slots = 2
+			254 = {
 				add_building_construction = {
-					type = arms_factory
-					level = 2
+					type = infrastructure
+					level = 3
 					instant_build = yes
-					}
+				}
 			}
 			362 = {
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
+					type = infrastructure
+					level = 3
 					instant_build = yes
-					}
+				}
 			}
 		}
 	}
@@ -387,7 +346,6 @@ focus_tree = {
 		icon = GFX_USA_revive_core_industry
 		relative_position_id = USA_new_reforms
 		prerequisite = { focus = USA_new_reforms }
-		mutually_exclusive = { focus = USA_public_works_programs }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -434,8 +392,8 @@ focus_tree = {
 	focus = {
 		id = USA_sunbelt_investments
 		icon = GFX_USA_dixie_land
-		relative_position_id = USA_USACE_projects
-		prerequisite = { focus = USA_USACE_projects }
+		relative_position_id = USA_develop_the_steel_belt
+		prerequisite = { focus = USA_develop_the_steel_belt }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -524,8 +482,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_expanded_shipyards
-		icon = GFX_USA_attack_their_supply_lines
+		id = USA_USACE_projects
+        icon = GFX_goal_generic_production
 		relative_position_id = USA_congress_support
 		prerequisite = { focus = USA_congress_support }
 		available = {
@@ -536,7 +494,46 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = USA_shipyard_expansion
+			360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			361 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			362 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			363 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			254 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -560,7 +557,6 @@ focus_tree = {
 		icon = GFX_USA_usace_military_projects
 		relative_position_id = USA_appoint_regnery
 		prerequisite = { focus = USA_appoint_regnery }
-		mutually_exclusive = { focus = USA_industrial_expansion }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -695,7 +691,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		available = {
-			date > 1937.1.1
+			date > 1937.6.1
 		}
 		completion_reward = {
 		#IF YOU DID IT TWICE
@@ -809,7 +805,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 		available = {
-			date > 1937.6.1
+			date > 1938.1.1
 		}
 		completion_reward = {
 			#IF YOU DID IT TWICE
@@ -924,7 +920,7 @@ focus = {
 		id = USA_administration
         icon = GFX_focus_generic_steel
 		relative_position_id = USA_ford_motor_company_focus
-		prerequisite = { focus = USA_ford_motor_company_focus focus = USA_expanded_shipyards focus = USA_agricultural_adjustment_act }
+		prerequisite = { focus = USA_ford_motor_company_focus focus = USA_USACE_projects focus = USA_agricultural_adjustment_act }
 		available = {
 		}
 		available_if_capitulated = yes
@@ -1722,10 +1718,15 @@ focus = {
 		cost = 2
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_stability = 0.4
          	swap_ideas = {
 				remove_idea = isolation
-				add_idea = war_preparation
+				add_idea = low_economic_mobilisation
+			}
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = USA_second_deal
+					add_idea = USA_second_deal_2
+				}
 			}
 		}
 	}

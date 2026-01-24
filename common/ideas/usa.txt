@@ -203,7 +203,7 @@ ideas = {
 				original_tag = USA
 			}
 			modifier = {
-				license_production_speed = 0.15
+				license_production_speed = 0.1
 				license_tech_difference_speed = 0.25
 			}
 		}
@@ -415,6 +415,22 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
+				stability_factor = 0.10
+			}
+		}
+		USA_second_deal_2 = {
+			name = USA_second_deal
+			picture = home_of_the_free_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				consumer_goods_factor = 0.25
 			}
 		}
 		USA_stability = {
@@ -536,9 +552,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 1.1
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.66
 				industrial_capacity_dockyard = -0.15
-				production_speed_industrial_complex_factor = 0.3
 			}
 		}
 		great_depression_2 = {
@@ -552,9 +567,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.8
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.33
 				industrial_capacity_dockyard = -0.10
-				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 		great_depression_3 = {
@@ -568,9 +582,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.5
-				consumer_goods_factor = 0.125
+				consumer_goods_factor = 0.17
 				industrial_capacity_dockyard = -0.05
-				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		USA_bigger_wages = {
@@ -597,8 +610,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				research_speed_factor = -0.1
+				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 		USA_shipyard_expansion = {
