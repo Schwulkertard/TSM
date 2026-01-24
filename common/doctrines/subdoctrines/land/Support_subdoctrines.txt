@@ -105,37 +105,37 @@ mobile_recon_and_assault = {
         deep_reconnaissance_focus = {
             recon = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }
             }
             sniper_recon = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }
             }
             mot_recon = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }                
             }
             armored_car_recon = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }                
             }
             light_tank_recon = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }                
             }
             rangers_support = {
                 battalion_mult = {
-                    categorey = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.05
                 }                
             }

@@ -38,7 +38,7 @@ new_mobile_warfare = {
     milestones = {
         {
             #Infantry
-            category_light_infantry = {max_organisation = 10}
+            category_light_infantry = {max_organisation = 5}
             dig_in_speed_factor = 0.25
             land_reinforce_rate = 0.05
             enable_tactic = tactic_delay
@@ -59,7 +59,7 @@ new_mobile_warfare = {
         }
         {
             #Artillery/Support
-	        category_mobile_artillery = {soft_attack = 0.1 air_attack = 0.1 hard_attack = 0.1}
+	        category_mobile_artillery = {soft_attack = 0.05 air_attack = 0.05 hard_attack = 0.05}
             enable_tactic = tactic_overwhelming_fire
             effect = {
                 if = {
@@ -77,7 +77,7 @@ new_mobile_warfare = {
         }
         {
             #Armor
-            category_all_armor = {max_organisation = 10 default_morale =0.05 breakthrough = 0.1 maximum_speed = 0.1}
+            category_all_armor = {max_organisation = 5 default_morale =0.05 breakthrough = 0.1 maximum_speed = 0.1}
             enable_tactic = tactic_blitz
 
             effect = {
@@ -96,7 +96,7 @@ new_mobile_warfare = {
         }
         {
         #motorized
-        category_mobile_infantry = {max_organisation=10 default_morale = 0.05}
+        category_mobile_infantry = {max_organisation=5 default_morale = 0.05 maximum_speed = 0.1}
         motorized={
 			need = {
 				motorized_equipment = -10
@@ -146,9 +146,8 @@ new_mobile_warfare = {
         }
         {
             #support
-            light_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
-            medium_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
-            heavy_flame_tank = {soft_attack = 0.05 hard_attack = 0.05}
+            category_support_tanks = {soft_attack = 0.05 hard_attack = 0.05}
+            category_sp_support_artillery = {soft_attack = 0.05 hard_attack = 0.05}
             effect = {
                 if = {
                     limit = {
@@ -221,8 +220,8 @@ superior_firepower = {
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
     category_army = {
-        soft_attack = 0.1
-        hard_attack = 0.05
+        soft_attack = 0.05
+        hard_attack = 0.025
         air_attack = 0.05
     }
     
@@ -230,7 +229,7 @@ superior_firepower = {
         {
             #Infantry
             enable_tactic = tactic_elastic_defense
-            category_light_infantry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
+            category_light_infantry = { default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
 
             effect = {
                 if = {
@@ -271,10 +270,9 @@ superior_firepower = {
             #Armor
             enable_tactic = tactic_delay
             category_all_armor = {
-                max_organisation = 5
-                soft_attack = 0.1
+                soft_attack = 0.05
                 air_attack = 0.05
-                breakthrough = 0.1
+                breakthrough = 0.05
             }
 
             effect = {
@@ -293,7 +291,7 @@ superior_firepower = {
         }
         {
             #motorized
-            category_mobile_infantry = { max_organisation = 5 default_morale = 0.05 soft_attack = 0.1 defense = 0.1}
+            category_mobile_infantry = { default_morale = 0.05 soft_attack = 0.1 defense = 0.05}
             effect = {
                 if = {
                     limit = {
@@ -809,9 +807,8 @@ grand_battleplan = {
             army_morale = 0.0
             army_org_factor = 0.15
             coordination_bonus = 0.08
-            max_command_power = 30
             max_planning = 0.1
-            land_night_attack = 0.15
+            land_night_attack = 0.1
             effect = {
                 if = {
                     limit = {
@@ -934,7 +931,7 @@ mass_assault = {
         {
             #Armor
             land_reinforce_rate = 0.02
-            category_all_armor = { default_morale = 0.1 breakthrough = 0.1}
+            category_all_armor = { default_morale = 0.1 breakthrough = 0.05}
             enable_tactic = tactic_overwhelming_fire
 
             effect = {

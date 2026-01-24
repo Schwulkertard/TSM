@@ -477,8 +477,6 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
-
-		maximum_speed = 0.6 # move at horsie speeds
 		
 		essential = {
 			infantry_equipment

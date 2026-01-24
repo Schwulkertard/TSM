@@ -67,7 +67,10 @@ mission_type_tactics = {
         }
         control_zone_responsibilities = {
         #5
-			category_army = {
+			signal_company = {
+				initiative = 0.20
+			}
+            armored_signal = {
 				initiative = 0.20
 			}
             category_all_infantry = {
@@ -99,10 +102,10 @@ last_stand = {
     conscription = 0.05
     category_army = { default_morale = 0.2 }
     modifier = {
-			army_core_attack_factor = 0.3
-			army_core_defence_factor = 0.3
-			army_attack_factor = -0.15
-			army_defence_factor = -0.15
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+			army_attack_factor = -0.1
+			army_defence_factor = -0.1
 			}
             # infantry_battalion ={
 			# need = {
@@ -193,7 +196,7 @@ infiltration_tactics = {
         }
         self_sustaining_infiltration_units = {
         #3
-            supply_consumption_factor = -0.10
+            supply_consumption_factor = -0.05
             command_power_gain = 0.015
             category_tanks = {
                 max_organisation = 5
@@ -275,7 +278,7 @@ infiltration_tactics = {
         infiltration_in_depth = {
         #5
             land_reinforce_rate = 0.05
-            max_planning = 0.15
+            max_planning = 0.05
             
         }
     }
@@ -375,7 +378,7 @@ deep_battle = {
                 max_organisation = 5
                 default_morale = 0.1
             }
-            land_reinforce_rate = 0.1
+            land_reinforce_rate = 0.05
         }
         maskirovka = {
         #3
