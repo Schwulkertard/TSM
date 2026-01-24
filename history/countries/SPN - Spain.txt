@@ -24,7 +24,7 @@ set_variable = {
 	value = 0.800
 }
 add_offsite_building = { type = arms_factory level = 3 }
-set_research_slots = 1
+set_research_slots = 2
 set_technology = {
 	basic_train = 1
 	bba_early_transport_plane = 1
@@ -93,5 +93,4 @@ set_popularities = {
 set_convoys = 200
 set_stability = 0.55
 set_war_support = 1
-
 

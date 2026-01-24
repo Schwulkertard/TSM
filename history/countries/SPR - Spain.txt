@@ -5,6 +5,7 @@ add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
 	trade_with_axis
+	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}
 set_variable = {
@@ -111,3 +112,4 @@ set_popularities = {
 set_convoys = 200
 set_stability = 0.35
 set_war_support = 0.15
+add_manpower = 100000
