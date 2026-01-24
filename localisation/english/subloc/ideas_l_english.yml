@@ -3320,6 +3320,24 @@
 
  workers_culture:0 "Worker's Culture"
 
+ SOV_factories_must_grow:0 "Factories Must Grow"
+
+ SOV_peoples_commissariat_focus_2:0 "Long Term Rearmament"
+
+ SOV_industrial_boom:0 "Five Year Plan"
+
+ SOV_the_great_terror:0 "The Great Terror"
+
+ SOV_manual_labor:0 "Soviet Labour"
+
+ SOV_research_insitutes1:0 "Research Institutes"
+
+ SOV_work_faster:0 "Emergency Shifts"
+
+ SOV_build_refs:0 "Synthetic Self Sufficiency"
+
+ SOV_barb_industry:0 "Wartime Industry"
+
 
 
  POL_roman_dmowski:0 "Roman Dmowski"

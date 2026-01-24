@@ -870,6 +870,64 @@
 
  SOV_progress_cult_desc:0 "We should celebrate the innovations of outstanding Soviet scientists and encourage the correct kind of free thinking. The USSR will always be ahead of the decadent West when it comes to daring new fields of science; just look at the brilliant work of comrade Lysenko!"
 
+ SOV_leningrad_designs:0 "Leningrad Designs"
+
+ SOV_mechanization_effort:0 "Mechanisation Effort"
+
+ SOV_modernize_the_tank_corp:0 "Modernise The Tank Corps"
+
+ SOV_factories_must_grow:0 "Factories Must Grow"
+
+ SOV_trans_volga_railways:0 "Trans Volga Railways"
+
+ SOV_short_term:0 "Short Term Rearmament"
+
+ SOV_long_term:0 "Long Term Rearmament"
+
+ SOV_technological_advancment:0 "Technological Advancment"
+
+ SOV_great_terror:0 "Stop The Great Terror"
+
+ SOV_road_quality:0 "Build Up Quality Roads"
+
+ SOV_industrial_revolution:0 "Incentivise Industrial Research"
+
+ SOV_people_work:0 "Celebrate Soviet Labour"
+
+ SOV_research_institute:0 "Cult Of Reason"
+
+ SOV_develop_modern_guns:0 "Modern Gun Development"
+
+ SOV_speed_up_production:0 "Emergency Factory Shifts"
+
+ SOV_open_old_stockpiles:0 "Open Old Stockpiles"
+
+ SOV_wartime_industry:0 "The Wartime Industry"
+
+ SOV_appoint_golovanov:0 "Appoint Golovanov"
+
+ SOV_novikov_blueprint:0 "Novikov Blueprints"
+
+ SOV_drive_them_out:0 "Drive The Fascists Out"
+
+ SOV_screen_expansion:0 "Screen expansion"
+
+ SOV_new_modules:0 "New Guns For Our Ships"
+
+ SOV_super_cruisers:0 "Super Cruisers"
+
+ SOV_ocean_going_navy_2:0 "Expand The Dry Docks"
+
+ SOV_ocean_going_navy_3:0 "Rule The Open Seas"
+
+ SOV_capital_ship_development:0 "Develop The Project 21"
+
+ SOV_sovetsky_soyuz:0 "Lay Down The Sovyetski Soyuz"
+
+ SOV_carrier_experiments:0 "Carrier Experiments"
+
+ SOV_Expand_Industrial_Land:0 "Expand Industrial Land"
+
  SOV_socialist_science:0 "Socialist Science"
 
  SOV_socialist_science_desc:0 "The world, like the mind, is in constant motion. Nature is in a state of constant progress; revolution even. The principles of dialectical materialism can be applied to the natural sciences as well as the social..."
