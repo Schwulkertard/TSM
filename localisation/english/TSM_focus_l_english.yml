@@ -3046,13 +3046,13 @@
 
  ROM_german_military_mission:0 "German Military Mission"
 
- ROM_modernise_equipment:0 "Modernise Equipment"
+ ROM_modernize_equipment:0 "Modernise Equipment"
 
  ROM_western_drill:0 "Western Drill"
 
  ROM_french_military_mission:0 "French Military Mission"
 
- ROM_modernise_logistics:0 "Modernise Logistics"
+ ROM_modernize_logistics:0 "Modernise Logistics"
 
  ROM_modernize_artillery:0 "Modernise Artillery"
 
@@ -3066,7 +3066,7 @@
 
  ROM_battle_rifle_development:0 "Battle Rifle Development"
 
- ROM_at_advancments:0 "Anti Tank Advancments"
+ ROM_at_advancements:0 "Anti Tank Advancements"
 
  ROM_green_devils:0 "The Green Devils"
 
