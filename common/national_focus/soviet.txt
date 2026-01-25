@@ -2149,9 +2149,6 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = available_designer
 		show_ideas_tooltip = okmo
-		hidden_effect = {
-			set_country_flag = SOV_okmo
-		}
     	}
     }
 	

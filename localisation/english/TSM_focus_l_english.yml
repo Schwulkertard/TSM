@@ -2422,7 +2422,7 @@
 
  SAF_economic_mobilisation:0 "Economic Mobilisation"
 
- SAF_expand_civil_infrastructure:0 "Expand Civil Infrastructur"
+ SAF_expand_civil_infrastructure:0 "Expand Civil Infrastructure"
 
  SAF_exploit_mineral_wealth:0 "Mineral Wealth"
 
@@ -2442,7 +2442,7 @@
 
  SAF_reorganise_union_defence_force:0 "Reorganise the Union Forces"
 
- SAF_professional_officer_corps:0 "Proffesional Officers"
+ SAF_professional_officer_corps:0 "Professional Officers"
 
  SAF_expand_staff_college:0 "Expand Staff College"
 
@@ -3097,7 +3097,7 @@
 
  ROM_discover_new_resources:0 "New Resources"
 
- ROM_stabiilize_the_throne:0 "Stabilise The Throne"
+ ROM_stabilize_the_throne:0 "Stabilise The Throne"
 
  ROM_education_reform:0 "Education Reform"
 
@@ -3170,7 +3170,6 @@
  ROM_at_advancements:0 "Anti Tank Advancements"
 
  ROM_green_devils:0 "The Green Devils"
-
 
  RAJ_provincial_elections:0 "Provincial Elections"
 

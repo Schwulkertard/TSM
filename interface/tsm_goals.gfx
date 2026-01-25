@@ -742,6 +742,123 @@ spriteTypes = {
 	name = "GFX_USA_womens_armed_service_integration_act"
 	texturefile = "gfx/interface/goals/USA/USA_womens_armed_service_integration_act.dds"			
 	}
+	################################################
+	#SAF
+	SpriteType = {
+	name = "GFX_goal_jans_smut"
+	texturefile = "gfx/interface/goals/SAF/goal_jans_smut.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SAF_south_african_ordnance_corps"
+	texturefile = "gfx/interface/goals/SAF/goal_SAF_south_african_ordnance_corps.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_war_powers_act"
+	texturefile = "gfx/interface/goals/SAF/goal_war_powers_act.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_goal_aa_and_at"
+	texturefile = "gfx/interface/goals/SAF/goal_aa_and_at.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_native_soldiers"
+	texturefile = "gfx/interface/goals/SAF/SAF_native_soldiers.tga"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_van_der_bijl"
+	texturefile = "gfx/interface/goals/SAF/SAF_van_der_bijl.tga"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_mandate"
+	texturefile = "gfx/interface/goals/SAF/mandate.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_neutral"
+	texturefile = "gfx/interface/goals/SAF/neutral.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_Increase_Afrikaner_Privileges"
+	texturefile = "gfx/interface/goals/SAF/SAF_Increase_Afrikaner_Privileges.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_South_African_Air_Force"
+	texturefile = "gfx/interface/goals/SAF/SAF_South_African_Air_Force.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_together"
+	texturefile = "gfx/interface/goals/SAF/together.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_war"
+	texturefile = "gfx/interface/goals/SAF/war.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_white"
+	texturefile = "gfx/interface/goals/SAF/white.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_liberal"
+	texturefile = "gfx/interface/goals/SAF/liberal.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_united"
+	texturefile = "gfx/interface/goals/SAF/united.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_urbanization"
+	texturefile = "gfx/interface/goals/SAF/urbanization.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_rearm"
+	texturefile = "gfx/interface/goals/SAF/rearm.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_Bush_Warfare"
+	texturefile = "gfx/interface/goals/SAF/SAF_Bush_Warfare.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_affairs_act"
+	texturefile = "gfx/interface/goals/SAF/affairs_act.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_call_up"
+	texturefile = "gfx/interface/goals/SAF/call_up.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_black_amendment"
+	texturefile = "gfx/interface/goals/SAF/black_amendment.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_diamond_exports"
+	texturefile = "gfx/interface/goals/SAF/diamon_exports.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_SAF_natives_act"
+	texturefile = "gfx/interface/goals/SAF/natives_act.png"			
+	}
+
 	################
 	##PLACEHOLDER###
 	################

@@ -268,13 +268,15 @@ SOV_astrov_design_bureau_organization = {
 	}
 }
 SOV_okmo_organization = {
-	include = generic_heavy_tank_organization
+	include = generic_medium_tank_organization
 	icon = GFX_idea_okmo
 	allowed = {	
 		original_tag = SOV
-		has_country_flag = SOV_okmo
 	}
-	available = { 
+	available = {
+		SOV = {
+			has_completed_focus = SOV_leningrad_designs
+		}
 	}
 	initial_trait = {
 		limit_to_equipment_type = { medium_tank_chassis } 

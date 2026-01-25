@@ -2603,7 +2603,7 @@ focus_tree = {
  	focus = {
  		id = JAP_at
  		prerequisite = { focus=JAP_strike_on_the_southern_resource_area }
- 		icon = GFX_focus_anti_tank
+ 		icon = GFX_focus_generic_anti_tank_guns
  		available = {
  		}
  		x = -4
@@ -2954,7 +2954,7 @@ focus_tree = {
  	}
  	focus = {
  		id = JAP_develop_the_bejing_area
- 		icon = GFX_focus_JAP_yen
+ 		icon = GFX_focus_JAP_approach_sumitomo
  		prerequisite = { focus = JAP_korean_guest_workers focus = JAP_heavy_industry_development}
  		x = 2
  		y = 1

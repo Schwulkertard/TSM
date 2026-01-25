@@ -377,3 +377,5 @@ recruit_character = SOV_provisional_government
 SOV_better_konstantin_rokossovsky = {
 set_character_flag = SOV_exiled_flag
 }
+create_faction_from_template = faction_template_comintern
+add_to_faction = MON

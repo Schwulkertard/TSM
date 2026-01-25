@@ -1,17 +1,16 @@
 # Greater East Asia Co-Prosperity Sphere
 faction_template_geacps_faction = {
 	name = JAP_greater_east_asian_co_prosperity_sphere
-	manifest = faction_manifest_strategic_resource_control
+	manifest = faction_manifest_strength_in_unity
 
 	goals = {
 
 		# Short Term 
-		# faction_goal_coastal_security
 
 		# Medium Term 
-		faction_goal_secure_the_oil_supply
 
 		# Long Term 
+		faction_goal_defeat_of_communism
 
 	}
 

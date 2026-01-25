@@ -14,7 +14,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SAF_assert_union_autonomy
 		}
- 		icon = x
+ 		icon = GFX_SAF_united
  		x = 1
  		y = 0
  		cost = 7.2
@@ -35,7 +35,7 @@ focus_tree = {
  		id = SAF_smuts_imperial_mandate
 		relative_position_id = SAF_united_party
 		prerequisite = {focus = SAF_united_party }
- 		icon = x
+ 		icon = GFX_goal_jans_smut
  		x = -2
  		y = 1
  		cost = 7.2
@@ -52,7 +52,7 @@ focus_tree = {
  		id = SAF_full_imperial_commitment
 		relative_position_id = SAF_smuts_imperial_mandate
 		prerequisite = {focus = SAF_smuts_imperial_mandate }
- 		icon = x
+ 		icon = GFX_SAF_native_soldiers
  		x = 0
  		y = 1
  		cost = 7.2
@@ -76,7 +76,7 @@ focus_tree = {
  		id = SAF_parliamentary_consent
 		relative_position_id = SAF_united_party
 		prerequisite = {focus = SAF_united_party }
- 		icon = x
+ 		icon = GFX_SAF_liberal
  		x = 0
  		y = 1
  		cost = 7.2
@@ -89,7 +89,7 @@ focus_tree = {
  		id = SAF_mandate_for_war
 		relative_position_id = SAF_parliamentary_consent
 		prerequisite = {focus = SAF_parliamentary_consent }
- 		icon = x
+ 		icon = GFX_SAF_natives_act
  		x = 0
  		y = 1
  		cost = 7.2
@@ -102,7 +102,7 @@ focus_tree = {
  		id = SAF_manage_afrikaner_dissent
 		relative_position_id = SAF_united_party
 		prerequisite = {focus = SAF_united_party }
- 		icon = x
+ 		icon = GFX_SAF_mandate
  		x = 2
  		y = 1
  		cost = 7.2
@@ -114,7 +114,7 @@ focus_tree = {
  		id = SAF_contain_antiwar_movements
 		relative_position_id = SAF_manage_afrikaner_dissent
 		prerequisite = {focus = SAF_manage_afrikaner_dissent }
- 		icon = x
+ 		icon = GFX_goal_war_powers_act
  		x = 0
  		y = 1
  		cost = 7.2
@@ -128,7 +128,7 @@ focus_tree = {
 		prerequisite = {focus = SAF_full_imperial_commitment }
 		prerequisite = {focus = SAF_mandate_for_war }
 		prerequisite = {focus = SAF_contain_antiwar_movements }
- 		icon = x
+ 		icon = GFX_SAF_together
 		available = {
 			date > 1939.1.1
 			has_war_support > 0.5
@@ -147,7 +147,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SAF_united_party
 		}
- 		icon = x
+ 		icon = GFX_SAF_van_der_bijl
  		x = 6
  		y = 0
  		cost = 7.2
@@ -169,7 +169,7 @@ focus_tree = {
  		id = SAF_afrikaner_parliamentary_bloc
 		relative_position_id = SAF_assert_union_autonomy
 		prerequisite = {focus = SAF_assert_union_autonomy }
- 		icon = x
+ 		icon = GFX_SAF_Increase_Afrikaner_Privileges
  		x = -2
  		y = 1
  		cost = 7.2
@@ -182,7 +182,7 @@ focus_tree = {
  		id = SAF_conditional_war_participation
 		relative_position_id = SAF_afrikaner_parliamentary_bloc
 		prerequisite = {focus = SAF_afrikaner_parliamentary_bloc }
- 		icon = x
+ 		icon = GFX_SAF_call_up
  		x = 0
  		y = 1
  		cost = 7.2
@@ -195,7 +195,7 @@ focus_tree = {
  		id = SAF_dominion_first_policy
 		relative_position_id = SAF_assert_union_autonomy
 		prerequisite = {focus = SAF_assert_union_autonomy }
- 		icon = x
+ 		icon = GFX_SAF_affairs_act
  		x = 0
  		y = 1
  		cost = 7.2
@@ -209,7 +209,7 @@ focus_tree = {
  		id = SAF_prioritize_internal_security
 		relative_position_id = SAF_dominion_first_policy
 		prerequisite = {focus = SAF_dominion_first_policy }
- 		icon = x
+ 		icon = GFX_SAF_black_amendment
  		x = 0
  		y = 1
  		cost = 7.2
@@ -225,7 +225,7 @@ focus_tree = {
  		id = SAF_limit_imperial_overreach
 		relative_position_id = SAF_assert_union_autonomy
 		prerequisite = {focus = SAF_assert_union_autonomy }
- 		icon = x
+ 		icon = GFX_SAF_diamond_exports
  		x = 2
  		y = 1
  		cost = 7.2
@@ -237,7 +237,7 @@ focus_tree = {
  		id = SAF_restrict_overseas_commitments
 		relative_position_id = SAF_limit_imperial_overreach
 		prerequisite = {focus = SAF_limit_imperial_overreach }
- 		icon = x
+ 		icon = GFX_SAF_neutral
  		x = 0
  		y = 1
  		cost = 7.2
@@ -254,7 +254,7 @@ focus_tree = {
 		prerequisite = {focus = SAF_conditional_war_participation }
 		prerequisite = {focus = SAF_prioritize_internal_security }
 		prerequisite = {focus = SAF_restrict_overseas_commitments }
- 		icon = x
+ 		icon = GFX_SAF_white
  		x = 0
  		y = 1
  		cost = 7.2
@@ -270,7 +270,7 @@ focus_tree = {
  		id = SAF_wartime_measures
 		relative_position_id = SAF_autonomous_partner_in_allied_war
 		prerequisite = { focus = SAF_autonomous_partner_in_allied_war focus = SAF_south_africa_in_imperial_war }
- 		icon = x
+ 		icon = GFX_SAF_war
  		x = -3
  		y = 1
  		cost = 7.2
@@ -286,7 +286,7 @@ focus_tree = {
  		id = SAF_homeland_defence
 		relative_position_id = SAF_wartime_measures
 		prerequisite = { focus = SAF_wartime_measures }
- 		icon = x
+ 		icon = GFX_SAF_goal_aa_and_at
  		x = -1
  		y = 1
  		cost = 7.2
@@ -317,7 +317,7 @@ focus_tree = {
  		id = SAF_militia_training
 		relative_position_id = SAF_wartime_measures
 		prerequisite = { focus = SAF_wartime_measures }
- 		icon = x
+ 		icon = GFX_SAF_Bush_Warfare
  		x = 1
  		y = 1
  		cost = 7.2
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
  		id = SAF_economic_mobilisation
 		relative_position_id = SAF_united_party
- 		icon = x
+ 		icon = GFX_focus_generic_reinforcing_the_supply_network
  		x = 14
  		y = 0
  		cost = 7.2
@@ -348,7 +348,7 @@ focus_tree = {
  		id = SAF_expand_civil_infrastructure
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_economic_mobilisation }
- 		icon = x
+ 		icon = GFX_SAF_urbanization
  		x = -2
  		y = 1
  		cost = 7.2
@@ -372,7 +372,7 @@ focus_tree = {
  		id = SAF_exploit_mineral_wealth
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_economic_mobilisation }
- 		icon = x
+ 		icon = GFX_focus_generic_steel
  		x = 0
  		y = 1
  		cost = 7.2
@@ -390,7 +390,7 @@ focus_tree = {
  		id = SAF_war_industry_coordination
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_economic_mobilisation }
- 		icon = x
+ 		icon = GFX_focus_generic_reorient_production
  		x = 2
  		y = 1
  		cost = 7.2
@@ -409,7 +409,7 @@ focus_tree = {
  		id = SAF_expand_urban_industry
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_expand_civil_infrastructure focus = SAF_exploit_mineral_wealth }
- 		icon = x
+ 		icon = GFX_focus_GER_wirtschaftswunder
  		x = -1
  		y = 2
  		cost = 7.2
@@ -428,7 +428,7 @@ focus_tree = {
  		id = SAF_union_arsenal_program
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_exploit_mineral_wealth }
- 		icon = x
+ 		icon = GFX_focus_ARG_develop_the_electricity_sector
  		x = 0
  		y = 3
  		cost = 7.2
@@ -441,7 +441,7 @@ focus_tree = {
  		id = SAF_resource_processing_facilities
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_exploit_mineral_wealth focus = SAF_war_industry_coordination }
- 		icon = x
+ 		icon = GFX_focus_CHL_silverworking
  		x = 1
  		y = 2
  		cost = 7.2
@@ -454,7 +454,7 @@ focus_tree = {
  		id = SAF_state_industrial_planning
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_expand_urban_industry }
- 		icon = x
+ 		icon = GFX_focus_CHI_planned_economy
  		x = -2
  		y = 3
  		cost = 7.2
@@ -473,7 +473,7 @@ focus_tree = {
  		id = SAF_expand_ordnance_manufacturing
 		relative_position_id = SAF_economic_mobilisation
 		prerequisite = { focus = SAF_resource_processing_facilities }
- 		icon = x
+ 		icon = GFX_goal_SAF_south_african_ordnance_corps
  		x = 2
  		y = 3
  		cost = 7.2
@@ -494,7 +494,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_state_industrial_planning }
 		prerequisite = { focus = SAF_union_arsenal_program }
 		prerequisite = { focus = SAF_expand_ordnance_manufacturing }
- 		icon = x
+ 		icon = GFX_focus_HUN_form_the_gyorshadtest
  		x = 0
  		y = 4
  		cost = 7.2
@@ -509,7 +509,7 @@ focus_tree = {
 	focus = {
  		id = SAF_reorganise_union_defence_force
 		relative_position_id = SAF_united_party
- 		icon = x
+ 		icon = GFX_SAF_rearm
  		x = 24
  		y = 0
  		cost = 7.2
@@ -522,7 +522,7 @@ focus_tree = {
  		id = SAF_professional_officer_corps
 		relative_position_id = SAF_reorganise_union_defence_force
 		prerequisite = { focus = SAF_reorganise_union_defence_force }
- 		icon = x
+ 		icon = GFX_focus_generic_commonwealth_build_infantry
  		x = -4
  		y = 1
  		cost = 7.2
@@ -540,7 +540,7 @@ focus_tree = {
  		id = SAF_standardised_training
 		relative_position_id = SAF_professional_officer_corps
 		prerequisite = { focus = SAF_professional_officer_corps }
- 		icon = x
+ 		icon = GFX_focus_chi_army_reform
  		x = -1
  		y = 1
  		cost = 7.2
@@ -558,7 +558,7 @@ focus_tree = {
  		id = SAF_study_british_designs
 		relative_position_id = SAF_professional_officer_corps
 		prerequisite = { focus = SAF_professional_officer_corps }
- 		icon = x
+ 		icon = GFX_focus_focus_fra_maquis
  		x = 0
  		y = 2
  		cost = 7.2
@@ -576,7 +576,7 @@ focus_tree = {
  		id = SAF_expand_staff_college
 		relative_position_id = SAF_professional_officer_corps
 		prerequisite = { focus = SAF_professional_officer_corps }
- 		icon = x
+ 		icon = GFX_focus_AFG_royal_guard
  		x = 1
  		y = 1
  		cost = 7.2
@@ -594,7 +594,7 @@ focus_tree = {
  		id = SAF_commit_expeditionary_forces
 		relative_position_id = SAF_reorganise_union_defence_force
 		prerequisite = { focus = SAF_reorganise_union_defence_force }
- 		icon = x
+ 		icon = GFX_focus_generic_mechanized
  		x = 0
  		y = 1
  		cost = 7.2
@@ -612,7 +612,7 @@ focus_tree = {
  		id = SAF_north_african_experience
 		relative_position_id = SAF_commit_expeditionary_forces
 		prerequisite = { focus = SAF_commit_expeditionary_forces }
- 		icon = x
+ 		icon = GFX_crusader
  		x = -1
  		y = 1
  		cost = 7.2
@@ -630,7 +630,7 @@ focus_tree = {
  		id = SAF_repair_corps
 		relative_position_id = SAF_commit_expeditionary_forces
 		prerequisite = { focus = SAF_commit_expeditionary_forces }
- 		icon = x
+ 		icon = GFX_focus_generic_license_production
  		x = 0
  		y = 2
  		cost = 7.2
@@ -648,7 +648,7 @@ focus_tree = {
  		id = SAF_integrated_allied_command
 		relative_position_id = SAF_commit_expeditionary_forces
 		prerequisite = { focus = SAF_commit_expeditionary_forces }
- 		icon = x
+ 		icon = GFX_commonwealth_mob
  		x = 1
  		y = 1
  		cost = 7.2
@@ -666,7 +666,7 @@ focus_tree = {
  		id = SAF_expand_auxiliary_forces
 		relative_position_id = SAF_reorganise_union_defence_force
 		prerequisite = { focus = SAF_reorganise_union_defence_force }
- 		icon = x
+ 		icon = GFX_focus_BEL_poudreries_reunies_de_belgique
  		x = 4
  		y = 1
  		cost = 7.2
@@ -684,7 +684,7 @@ focus_tree = {
  		id = SAF_support_units_and_logistics
 		relative_position_id = SAF_expand_auxiliary_forces
 		prerequisite = { focus = SAF_expand_auxiliary_forces }
- 		icon = x
+ 		icon = GFX_focus_generic_road_investment
  		x = -1
  		y = 1
  		cost = 7.2
@@ -702,7 +702,7 @@ focus_tree = {
  		id = SAF_improved_radios
 		relative_position_id = SAF_expand_auxiliary_forces
 		prerequisite = { focus = SAF_expand_auxiliary_forces }
- 		icon = x
+ 		icon = GFX_focus_generic_cryptologic_bomb
  		x = 0
  		y = 2
  		cost = 7.2
@@ -720,7 +720,7 @@ focus_tree = {
  		id = SAF_home_guard_and_reserves
 		relative_position_id = SAF_expand_auxiliary_forces
 		prerequisite = { focus = SAF_expand_auxiliary_forces }
- 		icon = x
+ 		icon = GFX_focus_BRA_anaue
  		x = 1
  		y = 1
  		cost = 7.2
@@ -732,7 +732,7 @@ focus_tree = {
 	focus = {
  		id = SAF_reorganise_south_african_air_force
 		relative_position_id = SAF_united_party
- 		icon = x
+ 		icon = GFX_SAF_South_African_Air_Force
  		x = 34
  		y = 0
  		cost = 5
@@ -745,7 +745,7 @@ focus_tree = {
  		id = SAF_commonwealth_air_training_plan
 		relative_position_id = SAF_reorganise_south_african_air_force
 		prerequisite = { focus = SAF_reorganise_south_african_air_force }
- 		icon = x
+ 		icon = GFX_focus_generic_copy_plane_designs
  		x = -1
  		y = 1
  		cost = 5
@@ -764,7 +764,7 @@ focus_tree = {
  		id = SAF_expand_flight_schools
 		relative_position_id = SAF_commonwealth_air_training_plan
 		prerequisite = { focus = SAF_commonwealth_air_training_plan }
- 		icon = x
+ 		icon = GFX_focus_generic_air_bases
  		x = -1
  		y = 1
  		cost = 5
@@ -783,7 +783,7 @@ focus_tree = {
  		id = SAF_allied_aircrew_integration
 		relative_position_id = SAF_reorganise_south_african_air_force
 		prerequisite = { focus = SAF_reorganise_south_african_air_force }
- 		icon = x
+ 		icon = GFX_focus_generic_air_partners
  		x = 0
  		y = 2
  		cost = 5
@@ -796,7 +796,7 @@ focus_tree = {
  		id = SAF_coastal_air_defence
 		relative_position_id = SAF_reorganise_south_african_air_force
 		prerequisite = { focus = SAF_reorganise_south_african_air_force }
- 		icon = x
+ 		icon = GFX_focus_generic_air_defense
  		x = 1
  		y = 1
  		cost = 5
@@ -815,7 +815,7 @@ focus_tree = {
  		id = SAF_maritime_patrol_squadrons
 		relative_position_id = SAF_coastal_air_defence
 		prerequisite = { focus = SAF_coastal_air_defence }
- 		icon = x
+ 		icon = GFX_focus_generic_long_range_aircraft
  		x = 1
  		y = 1
  		cost = 5

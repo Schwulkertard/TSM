@@ -93,6 +93,9 @@ set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 0 }
 set_variable = { global.ISLHOP_GEACPS_LOCATIONS = 4 }
 set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 0 }
 
+create_faction_from_template = faction_template_geacps_faction
+add_to_faction = MAN
+add_to_faction = SIA
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_to_tech_sharing_group = japanese_research
