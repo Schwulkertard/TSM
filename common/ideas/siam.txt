@@ -175,6 +175,8 @@ ideas = {
 			}
         }
 
+		
+
         SIA_curb_civilians = {
             picture = generic_goods_red_bonus
 
@@ -221,22 +223,6 @@ ideas = {
 			}
         }
 
-		industrial_concern = {	
-		
-		kawasaki = {
-						
-			allowed = {
-				original_tag = SIA
-			}
-						
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
-		}
-	}
-
         SIA_militarism = {
 			allowed = {
 				always = no
@@ -256,6 +242,19 @@ ideas = {
 				supply_consumption_factor = -0.1
 				no_supply_grace = 24
 				experience_loss_factor = -0.1
+			}
+		}
+	}
+	industrial_concern = {
+		kawasaki  = {
+			allowed = {
+				original_tag = SIA
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = { industrial_concern }
+			modifier = {
 			}
 		}
 	}
