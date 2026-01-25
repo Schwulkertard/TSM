@@ -10,6 +10,8 @@
 
  ITA_doc_tt:0 "§R For every State that has Level 10 Infrastructure you get 2 mils (for every core state) §!"
 
+ SOV_doc_tt_2:0 "§R THIS FOCUS AUTOMATICALLY COMPLETES WHEN THE CONDITIONS ARE MET §!"
+
  generic_focus:0 "National Focus"
 
  uk_eri_focus: "British Administration in Eritrea"
@@ -2375,6 +2377,105 @@
  CAN_united_shipyards:0 "United Shipyards"
 
  CAN_united_shipyards_desc:0 "The Montreal dock of United Shipyards has become the primary source for our landing craft and cargo vessels."
+
+ SAF_united_party:0 "The United Party"
+
+ SAF_smuts_imperial_mandate:0 "Smuts Imperial Mandate"
+
+ SAF_full_imperial_commitment:0 "Full Imperial Commitment"
+
+ SAF_parliamentary_consent:0 "Get Parliament Support"
+
+ SAF_mandate_for_war:0 "Popular Support"
+
+ SAF_manage_afrikaner_dissent:0 "Manage Dissent"
+
+ SAF_contain_antiwar_movements:0 "Contain The Anti War Movement"
+
+ SAF_south_africa_in_imperial_war:0 "Full Commitment"
+
+ SAF_assert_union_autonomy:0 "Assert Union Autonomy"
+
+ SAF_afrikaner_parliamentary_bloc:0 "The Afrikaner Parliamentary Bloc"
+
+ SAF_conditional_war_participation:0 "Conditional Participation"
+
+ SAF_dominon_first_policy:0 "South Africa First"
+
+ SAF_prioritize_internal_security:0 "Prioritise Internal Security"
+
+ SAF_dominion_first_policy:0 "Dominion First Policy"
+
+ SAF_restrict_overseas_commitments:0 "Restrict Overseas Commitments"
+
+ SAF_standardised_training:0 "Standardised Training"
+
+ SAF_limit_imperial_overreach:0 "Limit Imperial Overreach"
+
+ SAF_autonomous_partner_in_allied_war:0 "Autonomous Participant in the War"
+
+ SAF_wartime_measures:0 "Wartime Measures"
+
+ SAF_homeland_defence:0 "Homeland Defence"
+
+ SAF_militia_training:0 "Militia Training"
+
+ SAF_economic_mobilisation:0 "Economic Mobilisation"
+
+ SAF_expand_civil_infrastructure:0 "Expand Civil Infrastructur"
+
+ SAF_exploit_mineral_wealth:0 "Mineral Wealth"
+
+ SAF_war_industry_coordination:0 "War Industry Coordination"
+
+ SAF_expand_urban_industry:0 "Expand Urban Industry"
+
+ SAF_resource_processing_facilities:0 "Resource Processing Facilities"
+
+ SAF_state_industrial_planning:0 "State Industrial Planning"
+
+ SAF_union_arsenal_program:0 "The Union Arsenal Program"
+
+ SAF_expand_ordnance_manufacturing:0 "Expand Ordnance Manufacturing"
+
+ SAF_imperial_supply_hub:0 "Imperial Supply Hub"
+
+ SAF_reorganise_union_defence_force:0 "Reorganise the Union Forces"
+
+ SAF_professional_officer_corps:0 "Proffesional Officers"
+
+ SAF_expand_staff_college:0 "Expand Staff College"
+
+ SAF_study_british_designs:0 "Study British Designs"
+
+ SAF_commit_expeditionary_forces:0 "Commit Expeditionary Forces"
+
+ SAF_north_african_experience:0 "North African Experience"
+
+ SAF_repair_corps:0 "The Repair Corps"
+
+ SAF_integrated_allied_command:0 "Integrated Allied Command"
+
+ SAF_expand_auxiliary_forces:0 "Expand Auxiliary Forces"
+
+ SAF_support_units_and_logistics:0 "Support Units and Logistics"
+
+ SAF_home_guard_and_reserves:0 "Home Guard and Reserves"
+
+ SAF_improved_radios:0 "Improved Radios"
+
+ SAF_reorganise_south_african_air_force:0 "The Union Airforce"
+
+ SAF_commonwealth_air_training_plan:0 "Commonwealth Air Training Plan"
+
+ SAF_expand_flight_schools:0 "Expand Flight Schools"
+
+ SAF_allied_aircrew_integration:0 "Allied Aircrew Integration"
+
+ SAF_coastal_air_defence:0 "Coastal Air Defence"
+
+ SAF_maritime_patrol_squadrons:0 "Maritime Patrol Squadrons"
+
 
  SAF_support_axis_interests_effect_tt:0 "Build §YInfrastructure§! and add §YBuilding Slots§! in occupied states located in southern and mid parts of Africa.\n"
 

@@ -11,6 +11,21 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 	LUX_gustave_lebeau={
 		name="Gustave Lebeau"

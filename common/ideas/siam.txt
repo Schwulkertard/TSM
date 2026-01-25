@@ -221,6 +221,22 @@ ideas = {
 			}
         }
 
+		industrial_concern = {	
+		
+		kawasaki = {
+						
+			allowed = {
+				original_tag = SIA
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+
         SIA_militarism = {
 			allowed = {
 				always = no
@@ -242,6 +258,31 @@ ideas = {
 				experience_loss_factor = -0.1
 			}
 		}
-    }
+	}
+		theorist_production = { 
+		SIA_vajiravudh_chichalerm = {
+			picture = SIA_vajiravudh_chichalerm
+			cost = 150
+
+			allowed = {
+				original_tag = SIA
+			}
+
+			traits = { war_industrialist }
+		}
+		SIA_wichit_wichitwathakarn = {
+			picture = AST_arthur_calwell
+			cost = 150
+
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+
+			traits = { industrial_genius }
+		}
+	}
 
 }

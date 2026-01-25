@@ -339,24 +339,6 @@ characters={
 			}
 		}
 	}
-	SIA_vajiravudh_chichalerm={
-		advisor={
-			slot = political_advisor
-			idea_token = SIA_vajiravudh_chichalerm
-			allowed  = {
-				original_tag  = SIA
-			}
-			traits  = {
-				captain_of_industry 
-			}
-		}
-		name="Phot Bhahalyodin"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
-			}
-		}
-	}
 	SIA_seni_pramoja={
 		advisor={
 			slot = political_advisor
@@ -375,6 +357,87 @@ characters={
 			}
 		}
 	}
+
+	SIA_Somchai_Saetang={
+		advisor={
+			slot = political_advisor
+			idea_token = Somchai_Saetang
+			allowed  = {
+				original_tag  = SIA
+			}
+			traits  = {
+				modernizer
+			}
+		}
+		name="Somchai Saetang"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+
+	SIA_Anan_Wongsa={
+		advisor={
+			slot = political_advisor
+			idea_token = Anan_Wongsa
+			allowed  = {
+				original_tag  = SIA
+			}
+			traits  = {
+				appeaser
+			}
+			available = {
+				has_completed_focus = SIA_return_to_absolutism
+			}
+		}
+		name="Anan Wongsa"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	SIA_Somsak_Chaiyaporn={
+		advisor={
+			slot = political_advisor
+			idea_token = Somchai_Saetang
+			allowed  = {
+				original_tag  = SIA
+			}
+			traits  = {
+				armaments_organizer 
+			}
+		}
+		name="Somsak Chaiyaporn"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	SIA_Sakchai_Pattanakul={
+		advisor={
+			slot = political_advisor
+			idea_token = Sakchai_Pattanakul
+			allowed  = {
+				original_tag  = SIA
+			}
+			traits  = {
+				council_communist
+			}
+			available = {
+				has_completed_focus = SIA_prepare_for_expansion
+			}
+		}
+		name="Sakchai Pattanakul"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	
 	SIA_vaino_valve={
 		advisor={
 			slot = theorist
@@ -498,24 +561,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
-			}
-		}
-	}
-	SIA_wichit_wichitwathakarn={
-		advisor={
-			slot = political_advisor
-			idea_token = SIA_wichit_wichitwathakarn
-			allowed  = {
-				original_tag  = SIA
-			}
-			traits  = {
-				war_industrialist 
-			}
-		}
-		name="Kuang Abhayavongsa"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
 			}
 		}
 	}

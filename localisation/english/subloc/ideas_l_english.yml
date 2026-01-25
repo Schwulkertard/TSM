@@ -3330,7 +3330,7 @@
 
  workers_culture:0 "Worker's Culture"
 
- SOV_factories_must_grow:0 "Factories Must Grow"
+ SOV_factories_must_grow1:0 "Factories Must Grow"
 
  SOV_peoples_commissariat_focus_2:0 "Long Term Rearmament"
 
@@ -6465,6 +6465,8 @@
 
 
  SAF_gold_exports:0 "Gold Exports"
+
+ SAF_divided_parliament:0 "Divided Parliament"
 
 
 
