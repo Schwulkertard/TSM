@@ -110,17 +110,6 @@ sub_units = {
 		mega_carrier_air_wing_size = 10
 	}
 
-	medium_maritime_patrol_plane = {
-		sprite = medium_plane
-		priority = 5
-		active = yes
-		type = maritime_patrol_plane
-		need = { medium_plane_maritime_patrol_plane_airframe = 1 }
-		categories = { category_medium_maritime_patrol_bomber }
-		land_air_wing_size = 50
-		mega_carrier_air_wing_size = 10
-	}
-
 	scout_plane = {
 		sprite = light_plane
 		priority = 1

@@ -77,6 +77,9 @@ recruit_character = SPR_francisco_ciutat_de_miguel
 recruit_character = SPR_infantry_military_council
 recruit_character = SPA_wilhelm_ritter_von_thoma
 recruit_character = SPR_domenec_batet
+recruit_character = SPR_niceto_alcala_zamora
+recruit_character = SPR_alejandro_lerroux
+recruit_character = SPR_manuel_fal_conde
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

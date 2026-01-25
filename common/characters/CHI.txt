@@ -12,5 +12,23 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			ideology=nazism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 }

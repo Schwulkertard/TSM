@@ -1150,7 +1150,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		mutually_exclusive = { focus = BUL_power_to_the_tsar }
+		mutually_exclusive = { focus = BUL_restrained_paramilitary_organizations }
 
 		available = {
 
@@ -1304,29 +1304,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_found_the_brannik
-
-		prerequisite = { focus = BUL_bulgarian_irredentism }
-
-		icon = GFX_focus_BUL_found_the_brannik
-		relative_position_id = BUL_bulgarian_irredentism
-		x = -2
-		y = 1
-		cost = 7.2
-
-		mutually_exclusive = { focus = BUL_depose_the_tsar }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_ideas = BUL_brannik
-		}
-	}
-
-	focus = {
 		id = BUL_bulgarian_irredentism
 
 		prerequisite = { focus = BUL_promote_bulgarian_nationalism focus = BUL_the_path_towards_a_greater_bulgaria }
@@ -1347,6 +1324,29 @@ focus_tree = {
 				remove_idea = BUL_second_national_catastrophe
 				add_idea = BUL_bulgarian_irredentism
 			}
+		}
+	}
+
+	focus = {
+		id = BUL_found_the_brannik
+
+		prerequisite = { focus = BUL_bulgarian_irredentism }
+
+		icon = GFX_focus_BUL_found_the_brannik
+		relative_position_id = BUL_bulgarian_irredentism
+		x = -2
+		y = 1
+		cost = 7.2
+
+		mutually_exclusive = { focus = BUL_depose_the_tsar }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = BUL_brannik
 		}
 	}
 

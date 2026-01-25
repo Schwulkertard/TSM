@@ -8,15 +8,4 @@ JAP = {
 			}
 		}
 	}
-
-	land_cruiser_chassis_1 = {
-		pool = {
-			icons = {
-				GFX_JAP_land_cruiser_armor_medium
-			}
-			models = {
-				JAP_land_cruiser_entity
-			}
-		}
-	}
 }

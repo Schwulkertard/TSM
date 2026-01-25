@@ -130,3 +130,6 @@ recruit_character = ROM_emanoil_ionescu
 recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ioan_mihail_racovita
 recruit_character = ROM_octavian_goga
+recruit_character = ROM_corneliu_codreanu
+recruit_character = ROM_constantin_ion_parhon
+recruit_character = ROM_king_michael

@@ -562,8 +562,6 @@ operative_nationality_mission = {
 # modifiers active when an operative has the nationalty of the operation's target
 operative_nationality_operation = {
 	# NOTE: all modifiers used here need to be pre-defined in modifier_definitions if dynamic
-	operation_outcome = 0.1
-	operation_cost = -0.1
 }
 
 #LaR Compliance

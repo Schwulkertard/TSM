@@ -33,6 +33,11 @@ characters={
 				large="GFX_Portrait_MEX_Dionisio_Encina" #Can become country leader later (Communism -> Stalinism)
 			}
 		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 
 	MEX_jesus_degollado_guizar={

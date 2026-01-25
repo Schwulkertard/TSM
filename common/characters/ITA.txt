@@ -13,6 +13,8 @@ characters={
 		}
 	}
 
+
+
 	ITA_ferruccio_parri={
 		name=ITA_ferruccio_parri
 		portraits={
@@ -21,7 +23,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=socialism
+			ideology=liberalism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -31,7 +33,7 @@ characters={
 		name=ITA_victor_emmanuel_iii
 		portraits={
 			civilian={
-				large="GFX_portrait_italy_victor_emmanuel_iii"
+				large = GFX_portrait_ITA_vittorio_emanuele_III
 			}
 		}
 		country_leader={

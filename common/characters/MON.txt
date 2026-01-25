@@ -1,0 +1,55 @@
+characters={
+	MON_anandyn_amar={
+		name= MON_anandyn_amar
+		portraits={
+			civilian={
+				large="GFX_portrait_mon_anandyn_amar"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MON_mingzhu_zhanshan={
+		name= MON_mingzhu_zhanshan
+		portraits={
+			civilian={
+				large=GFX_portrait_Mingzhu_Zhanshan
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ silent_workhorse dealbroker }
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	MON_fu_shangzhi={
+		name= MON_fu_shangzhi
+		portraits={
+			civilian={
+				large=GFX_portrait_Fu_Shangzhi
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	MON_songgotu_kangan={
+		name= MON_songgotu_kangan
+		portraits={
+			civilian={
+				large=GFX_portrait_Songgotu_Kangan
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+}

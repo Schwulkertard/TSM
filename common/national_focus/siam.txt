@@ -1291,10 +1291,8 @@ focus_tree = {
     focus = {
         id = SIA_military_modernization
         icon = GFX_goal_generic_cavalry
-        prerequisite = { focus = SIA_reform_army }
         x = 27
         y = 0
-        relative_position_id = SIA_reform_army
 
         cost = 5
 

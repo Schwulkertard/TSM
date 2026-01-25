@@ -162,3 +162,4 @@ recruit_character = SAF_jan_smuts
 recruit_character = SAF_s_p_le_roux
 recruit_character = SAF_dan_pienaar
 recruit_character = SAF_d_f_malan
+recruit_character = SAF_pixley_ka_isaka_seme

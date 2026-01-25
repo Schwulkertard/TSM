@@ -435,3 +435,6 @@ recruit_character = ENG_george_giffard
 recruit_character = ENG_leslie_hore_belisha
 recruit_character = ENG_nevile_henderson
 recruit_character = ENG_charles_forbes
+recruit_character = ENG_horatio_dundas
+recruit_character = ENG_harry_pollitt
+recruit_character = ENG_oswald_mosley

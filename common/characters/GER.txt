@@ -14,6 +14,49 @@ characters={
 		}
 	}
 
+	GER_wilhelm_ii = {
+		name = GER_wilhelm_ii
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_wilhelm_ii
+			}	
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	GER_konrad_adenauer = {
+		name = GER_konrad_adenauer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_konrad_adenauer
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	GER_wilhelm_pieck = {
+		name = GER_wilhelm_pieck
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_wilhelm_pieck
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { staunch_stalinist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
 	GER_gerd_von_rundstedt={
 		name=GER_gerd_von_rundstedt
 		portraits={
@@ -1271,6 +1314,55 @@ characters={
 			}
 			ai_will_do = {
 				factor = 0.000
+			}
+		}
+	}
+	###scientists
+	GER_heisenberg = {
+		name = GER_heisenberg
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_werner_heisenberg
+				small = GFX_idea_heisenberg
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+
+	GER_peter_adolf_thiessen = {
+		name = GER_peter_adolf_thiessen
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_peter_adolf_thiessen
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_warfare_expert scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+	}
+
+	GER_gustav_ludwig_hertz = {
+		name = GER_gustav_ludwig_hertz
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_gustav_ludwig_hertz
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_power_expert scientist_trait_fast_learner }
+			skills = {
+				specialization_nuclear = 1
 			}
 		}
 	}

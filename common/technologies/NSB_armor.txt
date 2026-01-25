@@ -647,10 +647,6 @@ technologies = {
 		}
 		enable_subunits = {
 			heavy_armor
-			heavy_tank_detachment
-		}
-		enable_subunits = {
-			heavy_tank_detachment
 		}
 		
 		on_research_complete = {

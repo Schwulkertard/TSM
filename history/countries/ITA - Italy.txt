@@ -334,3 +334,6 @@ recruit_character = ITA_sebastiano_visconti_prasca
 recruit_character = ITA_Rodolfo_Graziani
 recruit_character = ITA_ubaldo_soddu
 recruit_character = ITA_italo_balbo
+recruit_character = ITA_ferruccio_parri
+recruit_character = ITA_victor_emmanuel_iii
+recruit_character = ITA_palmiro_togliatti

@@ -136,7 +136,6 @@ script_enum_equipment_category = {
 	suicide
 	scout_plane
 	maritime_patrol_plane
-	medium_maritime_patrol_plane
 	air_transport
 	carrier
 	missile_launcher
@@ -188,7 +187,6 @@ script_enum_equipment_bonus_type = {
 	suicide
 	scout_plane
 	maritime_patrol_plane
-	medium_maritime_patrol_plane
 	air_transport
 	carrier
 	missile_launcher
@@ -322,14 +320,13 @@ script_enum_equipment_bonus_type = {
 	ship_hull_carrier_modern
 	ship_hull_carrier_conversion_bb
 	ship_hull_carrier_conversion_ca
-	ship_hull_escort_carrier
+	ship_hull_carrier_escort
 	carrier_1
 	carrier_2
 	carrier_3
 	carrier_4
 	modern_carrier
 	mega_carrier
-	escort_carrier
 	ship_hull_cruiser
 	light_cruiser
 	ship_hull_cruiser_1
@@ -380,7 +377,6 @@ script_enum_equipment_bonus_type = {
 	ship_hull_submarine_2
 	ship_hull_submarine_3
 	ship_hull_submarine_4
-	ship_hull_carrier_submarine
 	cruiser_submarine
 	fleet_submarine
 	midget_submarine
@@ -457,12 +453,6 @@ script_enum_equipment_bonus_type = {
 	cv_small_plane_naval_bomber_airframe_2
 	cv_small_plane_naval_bomber_airframe_3
 	cv_small_plane_naval_bomber_airframe_4
-	medium_plane_maritime_patrol_plane_airframe
-	medium_plane_maritime_patrol_plane_airframe_0
-	medium_plane_maritime_patrol_plane_airframe_1
-	medium_plane_maritime_patrol_plane_airframe_2
-	medium_plane_maritime_patrol_plane_airframe_3
-	medium_plane_maritime_patrol_plane_airframe_4
 	small_plane_suicide_airframe_0
 	small_plane_suicide_airframe_1
 	small_plane_suicide_airframe_2

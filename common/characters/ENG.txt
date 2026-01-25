@@ -45,23 +45,6 @@ characters={
 				small="GFX_idea_ENG_oswald_mosley"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_oswald_mosley
-			available  = {
-				has_government  = neutrality 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				economic_organizer 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 		
 		country_leader={
 			ideology=fascism_ideology
@@ -79,40 +62,6 @@ characters={
 			}
 			army={
 				small="GFX_idea_harry_pollitt"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = harry_pollitt
-			allowed  = {
-				original_tag  = ENG
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_government  = communism 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				NOT = {
-					has_government  = communism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
 			}
 		}
 		

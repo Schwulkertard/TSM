@@ -1,5 +1,4 @@
 
-recruit_character = JAP_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_emperor_hirohito
@@ -59,6 +58,8 @@ recruit_character = JAP_hideo_itokawa
 recruit_character = JAP_hideki_tojo
 recruit_character = JAP_matome_ugaki
 recruit_character = JAP_hajime_sugiyama
+recruit_character = JAP_kyuichi_tokuda
+recruit_character = JAP_tetsu_katayama
 capital = 270
  oob = "JAP_1936"
  set_stability = 0.1 #baseline, THE EMPEROR PROTECTS
@@ -165,7 +166,6 @@ if = {
  	#CAS1 = 1
  	electronic_mechanical_engineering = 1
  	radio = 1
- 	base_strike = 1
  	synth_oil_experiments = 1
  	fuel_refining = 1
 	tech_logistics_company = 1

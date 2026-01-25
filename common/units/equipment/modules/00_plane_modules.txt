@@ -1376,7 +1376,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane medium_maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
 		allowed_module_categories = {
  			fixed_auxiliary_weapon_slot_1 = {
  				plane_special_module_defense_turret
@@ -1407,7 +1407,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane medium_maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
 		allowed_module_categories = {
  			fixed_auxiliary_weapon_slot_1 = {
  				plane_special_module_defense_turret
@@ -1439,7 +1439,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane medium_maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
 		allowed_module_categories = {
  			fixed_auxiliary_weapon_slot_1 = {
  				plane_special_module_defense_turret

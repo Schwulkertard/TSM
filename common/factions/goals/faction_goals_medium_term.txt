@@ -590,7 +590,6 @@ faction_goal_marine_corps = {
 						faction_members 
 						limit = {
 							OR = {
-								#has_tech = niggers
 								has_tech = amphibious_mechanized_infantry
 								has_tech = amphibious_tank
 							}
@@ -691,9 +690,6 @@ faction_goal_airborne_corps = {
 					input = game:scope
 					operators = { 
 						faction_members 
-						limit = {
-							#has_tech = niggers
-						}
 					}
 					name = ALL_FACTION_MEMBERS_WITH_PARATROOPERS_TECH
 				}
@@ -782,9 +778,6 @@ faction_goal_mountaineer_corps = {
 					input = game:scope
 					operators = { 
 						faction_members 
-						limit = {
-							#has_tech = niggers
-						}
 					}
 					name = ALL_FACTION_MEMBERS_WITH_MOUNTAINEERS_TECH
 				}

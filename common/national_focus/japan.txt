@@ -1579,8 +1579,8 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			custom_effect_tooltip = available_designer
- 			show_ideas_tooltip = aichi
+ 			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = JAP_aichi_organization
  		}
  	}
  	focus = {
@@ -1606,8 +1606,8 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			custom_effect_tooltip = available_designer
- 			show_ideas_tooltip = mitsubishi
+ 			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = JAP_mitsubishi_organization
  		}
  	}
  	focus = {
@@ -2397,12 +2397,6 @@ focus_tree = {
 				}
 			}
 		}
- 		RAJ = {
- 		       add_ideas= RAJ_asia_focus
- 			   add_timed_idea = {
-                idea = RAJ_ttt
-                days = 180
-             }}
  			set_variable={Global.super_event=4}
  			show_super_event=yes
  			hidden_effect = {

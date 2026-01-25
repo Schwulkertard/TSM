@@ -2534,7 +2534,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = BUL_kaproni_bulgarski
 			}
 						
 			research_bonus = {
@@ -2563,7 +2562,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = BUL_kaproni_bulgarski
 			}
 						
 			research_bonus = {

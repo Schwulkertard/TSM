@@ -1,4 +1,4 @@
-recruit_character = SPR_SPA_manuel_azana
+recruit_character = SPR_jose_diaz
 recruit_character = SPR_SPA_tomas_garciano_goni_vanilla
 recruit_character = SPR_SPA_miguel_cabanellas_ferrer_vanilla
 recruit_character = SPR_SPA_fransisco_moreno_fernandez_vanilla

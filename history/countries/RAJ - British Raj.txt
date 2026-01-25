@@ -11,7 +11,6 @@ set_variable = {
 add_ideas = ENG_allied_exped_corp2
 add_dynamic_modifier = { modifier = idea_RAJ_agrarian_society } 		
 set_variable = { RAJ_agrarian_society_conscription_factor = -0.72 }
-add_ideas = idea_RAJ_great_depression_1
 add_ideas = peace_training
 add_ideas = trade_with_allies
 set_rule = {can_be_spymaster = no}

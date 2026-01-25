@@ -1,19 +1,25 @@
 characters={
 	
-	SPR_SPA_manuel_azana={
-		name="Manuel Azana"
-		portraits={
-			civilian={
-				large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+	SPR_jose_diaz={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_jose_diaz
+			portraits={
+				civilian={
+					large=GFX_portrait_SPR_jose_diaz
+				}
+			}
+			country_leader={
+				ideology=stalinism
+				traits={ veteran_communist }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={
-			desc="POLITICS_MANUEL_AZANA_DESC"
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
+	
 	SPR_SPA_tomas_garciano_goni_vanilla={
 		advisor={
 			slot = political_advisor

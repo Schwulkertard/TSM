@@ -1,7 +1,6 @@
 on_actions = {
 on_monthly = {
 		effect = {
-			share_intel_effect = yes
 			if = {
 				limit = {
 					any_character = {

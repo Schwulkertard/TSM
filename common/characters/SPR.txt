@@ -51,6 +51,54 @@ characters={
 		}
 	}
 
+	SPR_niceto_alcala_zamora={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_niceto_alcala_zamora
+			portraits={
+				civilian={
+					large="GFX_portrait_SPR_niceto_alcala_zamora"
+				}
+			}
+			country_leader={
+				ideology=conservatism
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}
+	}
+
+	SPR_alejandro_lerroux={
+		name=SPR_alejandro_lerroux
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_alejandro_lerroux
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=1100
+		}
+	}
+
+	SPR_manuel_fal_conde={
+		name=SPR_manuel_fal_conde
+		portraits={
+			civilian={
+				large="GFX_portrait_SPA_manuel_fal_conde"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ jefe }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	SPR_juan_lopez_sanchez={
 		name=SPR_juan_lopez_sanchez
 		portraits={
@@ -68,7 +116,7 @@ characters={
 			visible = {
 			}
 			traits = {
-				infrastructure_expert 
+				modernizer 
 			}
 			ai_will_do = {
 				factor = 1.000

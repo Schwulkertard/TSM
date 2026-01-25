@@ -145,5 +145,6 @@ recruit_character = CAN_john_murchie
 recruit_character = CAN_frederick_m_w_harvey
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_leo_richer_lafleche
-
-
+recruit_character = CAN_adrien_arcand
+recruit_character = CAN_tim_buck
+recruit_character = CAN_j_s_woodsworth

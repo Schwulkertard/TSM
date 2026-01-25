@@ -40,6 +40,20 @@ characters={
 		}
 	}
 
+	ROM_corneliu_codreanu={
+		name=ROM_corneliu_codreanu
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_corneliu_zelea_codreanu"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	ROM_king_michael={
 		name=ROM_king_michael
 		portraits={

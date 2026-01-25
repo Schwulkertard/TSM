@@ -96,7 +96,7 @@ last_stand = {
 
     available = {
             and = { date > 1941.06.01
-             surrender_progress = 0.5}
+             surrender_progress > 0.5}
     }
     # EFFECTS
     conscription = 0.05
@@ -120,7 +120,11 @@ last_stand = {
         base = 0
 
         }
+    rewards = {
+        gg = {
 
+        }
+    }
     #rewards = {
         #werwolf_groups = {
         #1

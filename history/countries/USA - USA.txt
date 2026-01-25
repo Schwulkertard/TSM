@@ -190,3 +190,6 @@ recruit_character = USA_donald_nelson
 recruit_character = USA_joseph_patterson
 recruit_character = USA_chester_w_nimitz
 recruit_character = USA_douglas_macarthur
+recruit_character = USA_william_dudley_pelley
+recruit_character = USA_carnot_wheeler
+recruit_character = USA_earl_browder

@@ -344,3 +344,5 @@ recruit_character = FRA_vincent_auriol
 recruit_character = FRA_rene_massigli
 recruit_character = FRA_leon_blum
 recruit_character = FRA_jacques_duclos
+recruit_character = FRA_denis_guillaumat
+recruit_character = FRA_rene_nicod

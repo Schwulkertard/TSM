@@ -864,7 +864,6 @@ equipments = {
 			tactical_bomber
 			fighter
 			scout_plane
-			medium_maritime_patrol_plane
 			#cas
 			#naval_bomber
 		}
@@ -1140,7 +1139,6 @@ equipments = {
 					recon_camera
 					#cas_weapon
 					#nav_bomber_weapon
-					nav_bomber_weapon
 				}
 			}
 

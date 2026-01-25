@@ -12,6 +12,11 @@ characters={
 			expire="1989.1.1.1"
 			id=700
 		}
+		country_leader={
+			ideology=centrism
+			expire="1989.1.1.1"
+			id=699
+		}
 	}
 
 	JAP_kyuichi_tokuda={

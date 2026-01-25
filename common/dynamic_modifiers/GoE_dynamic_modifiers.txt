@@ -86,7 +86,6 @@ RAJ_south_east_asia_command_dm = { #This is an upgrade from Indian Gentlement Of
 	#Later
 	extra_marine_supply_grace = RAJ_south_east_asia_command_dm_extra_marine_supply_grace
 	shore_bombardment_bonus = RAJ_south_east_asia_command_dm_shore_bombardment_bonus
-	modifier_army_sub_unit_marine_attack_factor = RAJ_south_east_asia_command_dm_modifier_army_sub_unit_marine_attack_factor
 
 	#Spec Offensive
 	army_attack_speed_factor = RAJ_south_east_asia_command_dm_army_attack_speed_factor

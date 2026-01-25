@@ -118,6 +118,9 @@ recruit_character = AST_john_lavarack
 recruit_character = AST_robert_g_menzies
 recruit_character = AST_alexander_hore_ruthven
 recruit_character = AST_herbert_v_evatt
+recruit_character = AST_eric_campbell
+recruit_character = AST_richard_dixon
+recruit_character = AST_earle_page
 
 if = {
 	limit = {
