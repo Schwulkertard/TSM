@@ -15,7 +15,21 @@ characters={
 			}
 			country_leader={
 				ideology=despotism
-				traits={ father_of_the_turks }
+				expire="1965.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology=nazism
+				expire="1965.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology=liberalism
+				expire="1965.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology=stalinism
 				expire="1965.1.1.1"
 				id=-1
 			}

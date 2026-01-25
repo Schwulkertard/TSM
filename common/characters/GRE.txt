@@ -8,7 +8,21 @@ characters={
 		}
 		country_leader={
 			ideology=centrism
-			traits={ monarchist_puppet }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -23,7 +37,6 @@ characters={
 		}
 		country_leader={
 			ideology=stalinism
-			traits={ reluctant_stalinist }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -38,7 +51,6 @@ characters={
 		}
 		country_leader={
 			ideology=gen_nazism
-			traits={ polemarch likes_turkey }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -59,72 +71,6 @@ characters={
 				id=-1
 			}
 		}
-		instance={
-			allowed = { has_dlc = "Battle for the Bosporus" }
-			name=GRE_ioannis_metaxas
-			portraits={
-				army={
-					small="GFX_idea_gre_ioannis_metaxas"
-				}
-				civilian={
-					large="gfx/leaders/GRE/Portrait_Greece_Ioannis_Metaxas.dds"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_ioannis_metaxas
-				allowed = {
-					original_tag = GRE
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					AND = {
-						OR = {
-							custom_trigger_tooltip = {
-								tooltip = GRE_monarchists_friendly_or_loyal
-								check_variable = {
-									var = GRE_monarchist_loyalty
-									value = 1.000
-									compare = greater_than_or_equals 
-								}
-							}
-							custom_trigger_tooltip = {
-								tooltip = GRE_fascists_friendly_or_loyal
-								check_variable = {
-									var = GRE_fascist_loyalty
-									value = 1.000
-									compare = greater_than_or_equals 
-								}
-							}
-						}
-						NOT = {
-							has_country_leader = {
-								character = GRE_ioannis_metaxas
-								ruling_only = yes 
-							}
-							has_country_flag = GRE_metaxas_is_dead_crab_rave_flag 
-						}
-					}
-				}
-				traits = {
-					devoted_corporatist 
-				}
-			}
-			country_leader = {
-				ideology = despotism
-				expire="1965.1.1.1"
-				traits = { 
-					arkhigos
-				}
-			}
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					arkhigos
-				}
-			}
-		}
 	}
 
 	GRE_markos_vafiadis={
@@ -138,27 +84,6 @@ characters={
 				}
 				civilian={
 					large="gfx/leaders/GRE/Portrait_Greece_Markos_Vafiadis.dds"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_markos_vafiadis
-				allowed = {
-					original_tag = GRE
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					custom_trigger_tooltip = {
-						tooltip = GRE_communists_friendly_or_loyal
-						check_variable = {
-							var = GRE_communist_loyalty
-							value = 1.000
-							compare = greater_than_or_equals 
-						}
-					}
-				}
-				traits = {
-					guerilla_warfare_expert 
 				}
 			}
 		}
@@ -179,36 +104,6 @@ characters={
 	}
 
 	GRE_konstantinos_tsaldaris={
-		instance={
-			allowed={ has_dlc = "Battle for the Bosporus" }
-			name=GRE_konstantinos_tsaldaris
-			portraits={
-				army={
-					small="GFX_idea_gre_konstantinos_tsaldaris"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_konstantinos_tsaldaris
-				allowed = {
-					original_tag = GRE
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					custom_trigger_tooltip = {
-						tooltip = GRE_monarchists_friendly_or_loyal
-						check_variable = {
-							var = GRE_monarchist_loyalty
-							value = 1.000
-							compare = greater_than_or_equals 
-						}
-					}
-				}
-				traits = {
-					sharp_tongued_lawyer 
-				}
-			}
-		}
 		instance={
 			allowed={ NOT = { has_dlc = "Battle for the Bosporus" } }
 			name=GRE_konstantinos_tsaldaris
@@ -248,7 +143,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist trait_cautious war_hero trait_GRE_stauch_monarchist trickster trait_mountaineer }
+			traits={ inflexible_strategist trait_cautious war_hero trickster trait_mountaineer }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -867,7 +762,7 @@ characters={
 		}
 
 		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer war_hero trait_GRE_stauch_monarchist trait_mountaineer }
+			traits={ old_guard inflexible_strategist career_officer war_hero trait_mountaineer }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -973,7 +868,6 @@ characters={
 
 		country_leader={
 			ideology=liberalism
-			traits={ ethnarch }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -1276,19 +1170,6 @@ characters={
 				small="GFX_idea_gre_xenophon_giosmas"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = GRE_xenophon_giosmas
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-			}
-			traits = {
-				national_socialist_paramilitarist 
-			}
-		}
 	}
 
 	GRE_georgios_papandreou={
@@ -1300,21 +1181,6 @@ characters={
 			portraits={
 				army={
 					small="GFX_idea_gre_george_papandreou"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_georgios_papandreou
-				name = GRE_georgios_papandreou
-				allowed = {
-					original_tag = GRE
-					has_dlc = "Battle for the Bosporus"
-				}
-				available = {
-					has_government = democratic 
-				}
-				traits = {
-					resolute_social_democrat 
 				}
 			}
 		}
@@ -1406,21 +1272,7 @@ characters={
 			army={
 				small="GFX_idea_gre_dimitris_glinos"
 			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GRE_dimitris_glinos
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				has_government = communism 
-			}
-			traits = {
-				marxist_academic 
-			}
-		}		
+		}	
 	}
 
 	GRE_evripidis_bakirtris={
@@ -1455,29 +1307,6 @@ characters={
 				large = "gfx/leaders/GRE/portrait_gre_aristotle_onassis.dds" #Can become country leader later
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = GRE_aristotle_onassis
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				has_country_flag = onassis_proposition_accepted 
-				NOT = {
-					has_country_leader = {
-						character = GRE_aristotle_onassis
-						ruling_only = yes 
-					}
-				}
-			}
-			visible = {
-				has_country_flag = onassis_proposition_accepted 
-			}
-			traits = {
-				gifted_shipping_magnate 
-			}
-		}
 	}
 	
 	GRE_dimitrios_holevas={
@@ -1485,27 +1314,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_gre_dimitrios_holevas"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GRE_dimitrios_holevas
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = GRE_communists_friendly_or_loyal
-					check_variable = {
-						var = GRE_communist_loyalty
-						value = 1.000
-						compare = greater_than_or_equals 
-					}
-				}
-			}
-			traits = {
-				marxist_priest 
 			}
 		}
 	}

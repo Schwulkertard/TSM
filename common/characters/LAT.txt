@@ -9,16 +9,23 @@ characters={
 					small="GFX_idea_LAT_gustavs_celmins"
 				}
 			}
-			advisor={
-				slot = political_advisor
-				idea_token = LAT_gustavs_celminsh
-				ai_will_do = {
-					factor = 10.000
-				}
+			country_leader={
+				ideology=centrism
+				expire="1965.1.1.1"
+				id=-1
 			}
-
 			country_leader={
 				ideology=fascism_ideology
+				expire="1965.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology=liberalism
+				expire="1965.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology=stalinism
 				expire="1965.1.1.1"
 				id=-1
 			}
