@@ -1019,10 +1019,10 @@ focus = {
 	focus = {
 		id = GER_coal_liquidization
 		icon = GFX_focus_GER_subsidize_hoesch_benzin
-		prerequisite = { focus = GER_kdf_wagen }
+		prerequisite = { focus = GER_synthetic_rubber }
 		x = 0
 		y = 1
-		relative_position_id = GER_kdf_wagen
+		relative_position_id = GER_synthetic_rubber
 		cost = 5
 		ai_will_do = {
 			factor = 4
@@ -1041,10 +1041,10 @@ focus = {
 focus = {
 		id = GER_synthetic_rubber
 		icon = GFX_focus_GER_synthetic_rubber
-		prerequisite = { focus = GER_coal_liquidization }
+		prerequisite = { focus = GER_kdf_wagen }
 		x = 0
 		y = 1
-		relative_position_id = GER_coal_liquidization
+		relative_position_id = GER_kdf_wagen
 		cost = 5
 		ai_will_do = {
 			factor = 4
@@ -1082,7 +1082,7 @@ focus = {
 	focus = {
 		id = GER_german_engineering
 		icon = GFX_focus_GER_wunderwaffe
-		prerequisite = { focus = GER_long_range_escorts focus = GER_air_innovation_2 focus = GER_flak_36 focus = GER_synthetic_rubber }
+		prerequisite = { focus = GER_long_range_escorts focus = GER_air_innovation_2 focus = GER_flak_36 focus = GER_coal_liquidization }
 		x = 1
 		y = 1
 		relative_position_id = GER_long_range_escorts

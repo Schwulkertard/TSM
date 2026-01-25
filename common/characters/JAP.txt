@@ -1388,7 +1388,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				communist_revolutionary 
+				armaments_organizer
 			}
 			do_effect = {
 				NOT = {
