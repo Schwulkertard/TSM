@@ -664,6 +664,7 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			complete_special_project = sp:sp_air_radar
 			air_experience = 100
 			add_ideas = GER_air_innovations_2_idea
 			add_tech_bonus = {
@@ -684,6 +685,7 @@
 						uses = 3
 						category = radar_tech
 					}
+					complete_special_project = sp:sp_air_radar
 				}
 			}
 		}
@@ -1017,28 +1019,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_coal_liquidization
-		icon = GFX_focus_GER_subsidize_hoesch_benzin
-		prerequisite = { focus = GER_synthetic_rubber }
-		x = 0
-		y = 1
-		relative_position_id = GER_synthetic_rubber
-		cost = 5
-		ai_will_do = {
-			factor = 4
-		}
-		available = {
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = rubber
-				amount = 5
-			}
-		}
-	}
-focus = {
 		id = GER_synthetic_rubber
 		icon = GFX_focus_GER_synthetic_rubber
 		prerequisite = { focus = GER_kdf_wagen }
@@ -1078,7 +1058,29 @@ focus = {
 				}
 			}
 		}
-	}				
+	}	
+	focus = {
+		id = GER_coal_liquidization
+		icon = GFX_focus_GER_subsidize_hoesch_benzin
+		prerequisite = { focus = GER_synthetic_rubber }
+		x = 0
+		y = 1
+		relative_position_id = GER_synthetic_rubber
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 5
+			}
+		}
+	}			
 	focus = {
 		id = GER_german_engineering
 		icon = GFX_focus_GER_wunderwaffe

@@ -1,6 +1,6 @@
 faction_template_comintern = {
 	name = Comintern
-	manifest = faction_manifest_an_iron_curtain
+	manifest = faction_manifest_suppress_regional_fascism
 	icon = GFX_faction_logo_comintern
 	goals = {
 

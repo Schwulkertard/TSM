@@ -393,7 +393,6 @@ grand_battleplan = {
         {
             #Infantry 
             enable_tactic = tactic_elastic_defense
-           
         infantry = {
 		
 			urban = {

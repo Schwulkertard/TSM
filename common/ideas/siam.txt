@@ -245,19 +245,6 @@ ideas = {
 			}
 		}
 	}
-	industrial_concern = {
-		kawasaki  = {
-			allowed = {
-				original_tag = SIA
-			}
-			research_bonus = {
-				industry = 0.15
-			}
-			traits = { industrial_concern }
-			modifier = {
-			}
-		}
-	}
 		theorist_production = { 
 		SIA_vajiravudh_chichalerm = {
 			picture = SIA_vajiravudh_chichalerm

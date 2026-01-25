@@ -188,38 +188,6 @@ ideas = {
 			}
 		}
 		}
-		industrial_concern = {
-		aioc = {
-			allowed = {
-				original_TAG = MEX
-			}
-			research_bonus = {
-				industry = 0.15
-			}
-			traits = { industrial_concern }
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_idea_with_trait = silent_workhorse
-					factor = 10
-				}
-			}
-		}
-		english_electric = {
-			allowed = {
-				original_TAG = MEX
-			}
-			research_bonus = {
-				electronics = 0.20
-			}
-			cost = 75
-			traits = { electronics_concern }
-			modifier = {
-			}
-		}
-	}
 		theorist_production = {
 		MEX_alberto_pani ={
 			picture = alberto_pani

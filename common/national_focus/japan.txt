@@ -1702,6 +1702,7 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+			complete_special_project = sp:sp_air_radar
  			remove_ideas = JAP_duplicate_research_efforts
  			air_experience = 100
 			add_tech_bonus = {
@@ -2293,7 +2294,7 @@ focus_tree = {
  		y = 1
  		prerequisite = { focus = JAP_coal_liquification focus = JAP_non_aggression_pact_with_sov }
  		relative_position_id = JAP_coal_liquification
- 		cost = 0.1
+ 		cost = 8.7
  		ai_will_do = {
  			factor = 10
  			modifier = {
@@ -2311,7 +2312,7 @@ focus_tree = {
  			}
  		}
  		available = {
- 			date > 1941.5.31
+ 			date > 1941.4.1
  		}
  		bypass = {
  			OR = {
@@ -2323,6 +2324,17 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_ANNEXATION }
+		select_effect = {
+			annex_country = {
+				target = INS
+				transfer_troops = no
+			}
+			AST = {
+				transfer_state = 588
+				transfer_state = 740
+				transfer_state = 656
+			}
+		}
  		completion_reward = {
 		hidden_effect = {
  			JAP={clear_variable = getting_annexed}
@@ -2350,15 +2362,6 @@ focus_tree = {
 						popup=no
 					}
 			}
-		#345 = {
-		#	add_resource = {
- 		#		type = rubber
- 		#		amount = 1200
- 		#	}
-		#}
-		#USA = {
-		#	activate_mission=USA_rubber_reserve
-		#}
 		303 = {
 			add_dynamic_modifier = {
 				modifier = ENG_singapore
@@ -2400,21 +2403,21 @@ focus_tree = {
  			set_variable={Global.super_event=4}
  			show_super_event=yes
  			hidden_effect = {
- 			
+				add_dynamic_modifier={modifier=pacific_war}
+				USA={add_dynamic_modifier={modifier=pacific_war}}
+				JAP={
+					add_timed_idea = { idea = JAP_banzai days = 180 }
+				}
+				MAN={
+					add_timed_idea = { idea = JAP_banzai days = 180 }
+				}
+				SIA={
+					add_timed_idea = { idea = JAP_banzai_no_core days = 180 }
+				}
  				every_country = {limit = {check_variable= { speeches_enabled > 0} OR={is_in_faction_with=GER tag=JAP }}
  					scoped_sound_effect = "sp_jap_banzai"
  				}
  			}
- 			add_dynamic_modifier={modifier=pacific_war}
- 			USA={add_dynamic_modifier={modifier=pacific_war}}
- 			JAP={
- 				add_timed_idea = { idea = JAP_banzai days = 180 }
- 			}MAN={
- 				add_timed_idea = { idea = JAP_banzai days = 180 }
- 			}SIA={
- 				add_timed_idea = { idea = JAP_banzai_no_core days = 180 }
- 			}
- 			
  			custom_effect_tooltip = tooltip_jap_war
  			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
  			hidden_effect={
@@ -2443,33 +2446,7 @@ focus_tree = {
  					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
  					add_dynamic_modifier={modifier=pacific_war_minor}
  				}
- 				
- 				hidden_effect = {
- 					591 = {
- 						add_compliance = 100
- 					}
- 					301 = {
- 						add_compliance = 100
- 					}
- 					302 = {
- 						add_compliance = 100
- 					}
- 					592 = {
- 						add_compliance = 100
- 					}
- 					586 = {
- 						add_compliance = 100
- 					}
- 					587 = {
- 						add_compliance = 100
- 					}
- 					588 = {
- 						add_compliance = 100
- 					}
- 					711 = {
- 						add_compliance = 100
- 					}
- 					}}
+			}
  		}
  	}
  	focus = {
@@ -2848,7 +2825,9 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
- 			update_pacific_war = yes
+ 			hidden_effect = {
+				update_pacific_war = yes
+			}
  			#452 = { add_manpower = -100000}
  			#454 = { add_manpower = -100000}
  			custom_effect_tooltip = JAP_korean_guest_workers_tt

@@ -10,7 +10,6 @@ faction_template_geacps_faction = {
 		# Medium Term 
 
 		# Long Term 
-		faction_goal_defeat_of_communism
 
 	}
 

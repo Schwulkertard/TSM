@@ -169,7 +169,6 @@ recruit_character = USA_raymond_a_spruance
 recruit_character = USA_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
-recruit_character = USA_carnot_wheeler
 recruit_character = USA_raymond_spruance
 recruit_character = USA_curtis_lemay
 recruit_character = USA_thomas_kinkaid

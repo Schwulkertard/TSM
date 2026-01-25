@@ -978,6 +978,7 @@ focus = {
         search_filters = { FOCUS_FILTER_RESEARCH }
         available ={date > 1939.08.1}
         completion_reward = {
+			complete_special_project = sp:sp_air_radar
             air_experience = 900
             add_tech_bonus = {
                 name = fighter_command_focus

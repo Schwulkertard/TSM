@@ -10,7 +10,6 @@ faction_template_axis = {
 		# Medium term goals
 
 		# Long terms
-		faction_goal_defeat_of_communism
 	
 	}
 

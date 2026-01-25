@@ -776,7 +776,7 @@
  USA_develop_liberia:0 "Develop African Rubber Plantations"
  USA_develop_liberia_desc:0 "With rubber trade from the Indies and Malaya plummetting, we must develop our allies' rubber supply for the war effort."
  tooltip_fra_dont_capitulate:0 "§RYou cannot take this focus if you are capitulated!§!\n"
- tooltip_jap_war:0 "§RThis will declare war on EVERY Allied nation!§!\n"
+ tooltip_jap_war:0 "§RYou will annex the Dutch East Indies when you take this focus. After it completes you will declare war on ALL Allied Nations!§!\n"
  SIA_ijn:0 "IJN Advisors"
  SIA_ijn_desc:0 "We will co-ordinate our naval research with Japan and Manchukuo." 
  bra_rubber:0 "Expand Maranhao Rubber Plantations"

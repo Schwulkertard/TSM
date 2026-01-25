@@ -247,17 +247,18 @@ characters={
 	
 	MAN_Fiyanggū_Niohuru ={
 		name="Fiyanggū Niohuru"
-		slot = political_advisor
-	    idea_token = MAN_Fiyanggū_Niohuru
-		allowed  = {
-					original_tag  = MAN 
-				}
-		
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_1"
 			}
-			traits={ armaments_organizer }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAN_Fiyanggū_Niohuru
+			allowed  = {
+			original_tag  = MAN 
+			}
+			traits = { armaments_organizer }
 		}
 	}
 

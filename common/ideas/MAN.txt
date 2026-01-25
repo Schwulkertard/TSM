@@ -1147,23 +1147,6 @@ ideas = {
 		}
 
 	}
-		industrial_concern = {	
-		
-			kawasaki = {
-						
-			allowed = {
-				original_tag = MAN
-			}
-						
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
-		}
-	}
-	}
-
 	tank_manufacturer = {
 		
 		designer = yes
@@ -1196,6 +1179,4 @@ ideas = {
 			}
 		}
 	}
-
-
 }

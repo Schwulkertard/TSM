@@ -51,14 +51,12 @@ set_technology = {
 recruit_character = MEX_lazaro_cardenas
 recruit_character = MEX_salvador_abascal
 recruit_character = MEX_adolfo_de_la_huerta
-recruit_character = MEX_dionisio_encina
 recruit_character = MEX_hernan_laborde
 recruit_character = MEX_heliodoro_charis
 recruit_character = MEX_luis_farell
 recruit_character = MEX_gildardo_magana
 recruit_character = MEX_manuel_perez_trevino
 recruit_character = MEX_abelardo_rodriguez
-
 recruit_character = MEX_othon_blanco
 recruit_character = MEX_heriberto_corona
 recruit_character = MEX_antonio_cardenas_rodriguez

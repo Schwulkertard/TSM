@@ -60,9 +60,9 @@ technologies = {
 			light_armor
 			medium_armor
 			heavy_armor
-			suppor_light_sp_artillery
-			support_heavy_sp_artillery
-			support_mdeium_sp_artillery
+			light_sp_artillery
+			medium_sp_artillery
+			heavy_sp_artillery
 		}
 		on_research_complete = {
 				hidden_effect = {
