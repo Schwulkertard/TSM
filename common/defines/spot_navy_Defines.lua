@@ -33,8 +33,6 @@ NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.1 -- Base chance for receiving a 
 NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 5.0 -- Multiplier for the critical damage. Scaled down with the ship reliability.
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 0.0 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
 
-NDefines.NNavy.CARRIER_STACK_PENALTY = 8 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_BASE = 10                             -- base scoring for target picking for planes inside naval combat based on screening efficency, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_BASE = 5
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_BASE = 50
