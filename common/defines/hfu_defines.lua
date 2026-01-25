@@ -51,11 +51,14 @@ NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0	-- The minimum number of factories we have to put on consumer goods, in percent.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 1		-- The minimum number of factories we have to put on consumer goods, by value.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.1	-- The minimum number of factories we have to put on consumer goods, in percent.
 NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_LIMIT = 25                -- When looking for an attack target, this score limit is required in the battle plan to consider province for attack
 NDefines.NMilitary.PLAN_EXECUTE_BALANCED_LIMIT = 0                -- When looking for an attack target, this score limit is required in the battle plan to consider province for attack
 NDefines.NMilitary.PLAN_EXECUTE_RUSH = -1000                       -- When looking for an attack target, this score limit is required in the battle plan to consider province for attack
+NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 0	-- max operative slots gained from upgrades
+NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 0
+NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 999
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
@@ -495,7 +498,7 @@ NDefines.NOperatives.AGENCY_DEFENSE_EFFECT_ON_HOSTILE_ACTION_COST = 0.1
 NDefines.NOperatives.OPERATIVE_MAX_DAYS_TO_AUTO_RESUME_MISSION = 121
 
 
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.075 			-- max combat bonus that will apply when intel is high enough
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0 			-- max combat bonus that will apply when intel is high enough
 
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50

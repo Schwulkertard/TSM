@@ -298,7 +298,6 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
 				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
 			}
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -330,7 +329,6 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
 			}
 			default = yes
 			cancel_if_invalid = no
@@ -388,7 +386,6 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
 			}
 			cancel_if_invalid = no
 		}
@@ -431,7 +428,6 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.01
 				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
 			}
 			cancel_if_invalid = no
 			ai_will_do = {
