@@ -219,6 +219,22 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
+		Ita_modernizations = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 		syndicalism = {
 			picture = generic_production_bonus
 			allowed = {

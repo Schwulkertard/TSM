@@ -490,7 +490,7 @@ characters={
 		}
 
 		navy_leader={
-			traits = { spotter blockade_runner bold superior_tactician }
+			traits = { ironside spotter blockade_runner bold superior_tactician }
 	skill = 6
 	attack_skill = 6
 	defense_skill = 3

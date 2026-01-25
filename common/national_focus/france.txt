@@ -536,16 +536,6 @@ focus_tree = {
 				amount = 200
 				state = 466
 			}
-
-			every_owned_state={
-				limit={NOT={is_core_of=ROOT has_state_category=wasteland } is_on_continent=africa
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 4
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1812,6 +1802,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes	
 		completion_reward = { 
+			add_timed_idea = { idea = SOV_work_faster days = 70 }
 			hidden_effect = {
 				if = {
 				limit = {
@@ -2448,15 +2439,29 @@ focus_tree = {
 				type = convoy
 				amount = 200
 			}
-			create_navy_leader = {
-				name = "Emilie Muselier"
-				GFX = GFX_portrait_fra_emilie_muselier
-				skill = 3
-				traits = {  }
-				attack_skill = 1
-				defense_skill = 2
-				maneuvering_skill = 3
-				coordination_skill = 4
+			693 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			691 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			687 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

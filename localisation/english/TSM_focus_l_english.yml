@@ -894,7 +894,9 @@
 
  SOV_people_work:0 "Celebrate Soviet Labour"
 
- SOV_research_institute:0 "Cult Of Reason"
+ SOV_research_institutes:0 "Cult Of Reason"
+
+ SOV_winter_camps:0 "Winter Camps"
 
  SOV_develop_modern_guns:0 "Modern Gun Development"
 
@@ -2953,6 +2955,121 @@
  NZL_independent_new_zealand_desc:0 "We are now a Republic! New Zealand owes nothing to the United Kingdom but the gratitude any child owes its mother for raising it safely. But we must leave the safe nest of the Commonwealth and view the world with our own interests in mind."
 
  NZL_transfer_ships_tt:0 "[ENG.GetNameDefCap] transfers §Y2 Light Cruisers§! to us."
+
+ ROM_begin_industrialization:0 "Begin Industrialization" 
+
+ ROM_armament_industry:0 "Armament Industry" 
+
+ ROM_krupp_contracts:0 "Krupp Contracts"
+
+ ROM_infrastructure_focus:0 "Infrastructure Buildup"
+
+ ROM_develop_heavy_industry:0 "Develop Heavy Industry"
+
+ ROM_german_loans:0 "German Loans"
+
+ ROM_german_loans_2:0 "German Loans 2"
+
+ ROM_german_loans_3:0 "German Loans 3"
+
+ ROM_german_loans_4:0 "German Loans 4"
+
+ ROM_german_loans_5:0 "German Loans 5"
+
+ ROM_german_loans_6:0 "German Loans 6"
+
+ Exercise_decisions:0 "Exercise Decisions"
+
+ infantry_exercise:0 "Infantry Exercises"
+
+ artillery_exercise:0 "Artillery Exercise"
+
+ armor_exercise:0 "Armor Exercises"
+
+ mechanized_exercise:0 "MEchanised Exercises"
+
+ land_maneuvers:0 "Land Maneuvers"
+
+ ROM_expand_ploiesti:0 "Expand Ploiesti"
+
+ ROM_open_new_mines:0 "Open New Mines"
+
+ ROM_discover_new_resources:0 "New Resources"
+
+ ROM_stabiilize_the_throne:0 "Stabilise The Throne"
+
+ ROM_education_reform:0 "Education Reform"
+
+ ROM_expand_universities:0 "Expand Universities"
+
+ ROM_german_ties:0 "German Ties"
+
+ ROM_ploiesti_trade_deal:0 "Ploiesti Trade Deal"
+
+ ROM_national_service_act:0 "National Service Act"
+
+ ROM_adopt_german_doctrine:0 "Adopt German Doctrine"
+
+ ROM_end_boyars:0 "End The Boyars"
+
+ ROM_distribute_land:0 "Land Distribution"
+
+ ROM_armed_and_ready:0 "Armed And Ready"
+
+ ROM_secure_the_church:0 "Secure Church Support"
+
+ ROM_integrate_odessa:0 "Integrate Odessa"
+
+ ROM_reassert_authority:0 "Reassert Authority"
+
+ ROM_carol_personality_cult:0 "Personality Cult"
+
+ ROM_ensure_prosperity:0 "Ensure Prosperity"
+
+ ROM_royalist_propaganda:0 "Royalist Propaganda"
+
+ ROM_control_iron_guard:0 "Control The Iron Guard"
+
+ ROM_national_catastrophe:0 "National Catastrophy"
+
+ ROM_weaken_the_king:0 "Weaken The King"
+
+ ROM_prevent_partition:0 "Prevent Partition"
+
+ ROM_prepare_for_war:0 "War Preparations"
+
+ ROM_support_the_guard:0 "Support The Iron Guard"
+
+ ROM_iron_guard_coup:0 "Iron Guard Coup"
+
+ ROM_avenge_1940:0 "Avenge 1940"
+
+ ROM_german_military_mission:0 "German Military Mission"
+
+ ROM_modernise_equipment:0 "Modernise Equipment"
+
+ ROM_western_drill:0 "Western Drill"
+
+ ROM_french_military_mission:0 "French Military Mission"
+
+ ROM_modernise_logistics:0 "Modernise Logistics"
+
+ ROM_modernize_artillery:0 "Modernise Artillery"
+
+ ROM_iron_guard_militia:0 "Iron Guard Militia"
+
+ ROM_lessons_of_war:0 "Lessons Of War"
+
+ ROM_armored_infantry_support:0 "Armored Infantry Support"
+
+ ROM_engineer_corps:0 "Engineer Corps"
+
+ ROM_battle_rifle_development:0 "Battle Rifle Development"
+
+ ROM_at_advancments:0 "Anti Tank Advancments"
+
+ ROM_green_devils:0 "The Green Devils"
+
 
  RAJ_provincial_elections:0 "Provincial Elections"
 

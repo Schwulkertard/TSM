@@ -30,6 +30,7 @@ ROM_loans_category = {
 		allowed = {
 			tag = ROM
 		}
+
 		available = {
 			NOT = {
 				has_country_flag = development_cooldown

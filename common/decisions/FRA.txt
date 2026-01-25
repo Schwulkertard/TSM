@@ -251,7 +251,7 @@ FRA_great_war_veterans = {
 					for_loop_effect = {
 						end = 6
 						create_unit = {
-							division = "name = \"Great War mountaineers\" division_template = \"Great War mountaineers\" start_experience_factor = 0.3"
+							division = "name = \"Great War mountaineers\" division_template = \"Great War mountaineers\" start_experience_factor = 1"
 							owner = FRA
 						}
 						}}

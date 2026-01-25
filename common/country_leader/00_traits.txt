@@ -1576,7 +1576,7 @@ leader_traits = {
 		}
 	}
 
-	reichsleiter = {
+	Reichsleiter = {
 		sprite = 10
 		stability_weekly = 0.003
 		war_stability_factor = 0.05

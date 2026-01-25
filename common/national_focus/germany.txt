@@ -3745,7 +3745,6 @@ focus = {
 	relative_position_id = GER_rhineland
 	cost = 5
 	completion_reward = {
-		add_political_power = 75
 		custom_effect_tooltip = available_political_advisor	
 		show_ideas_tooltip = kurt_schmitt
 	}
@@ -3764,7 +3763,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = "This focus will automatically bypass if not taken before July 1936."
 		add_tech_bonus = {
-			bonus = 3.5
+			bonus = 2
 			uses = 3
 			technology = improved_machine_tools
 			technology = concentrated_industry2

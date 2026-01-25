@@ -925,26 +925,9 @@ ideas = {
 			cost = 100
 			removal_cost = 0
 			
-			research_bonus = { infantry_weapons = 0.15 motorized_equipment = 0.15 } 
-			traits = { weapons_research_trait }
-		}
-		
-		generic_artillery_research = {
-			
-			picture = generic_artillery_manufacturer_2
-
-			allowed = {
-				is_playable_country = yes
-			}
-			
-			cost = 100
-			removal_cost = 0
-			
-			research_bonus = {
-				artillery = 0.15
-				support_tech = 0.15
-			}
-			traits = { artillery_research_trait }
+			research_bonus = { infantry_weapons = 0.15 motorized_equipment = 0.15 artillery = 0.15
+				support_tech = 0.15 } 
+			traits = { weapons_research_trait   }
 		}
 	}
 	industrial_theorist = {		

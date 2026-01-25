@@ -2110,7 +2110,13 @@
 
  generic_industrial_concern:0 "Industrial Company"
 
+ generic_tank_research:0 "Tank Research"
 
+ generic_naval_research:0 "Naval Research"
+
+ generic_air_research:0 "Air Research"
+
+ generic_weapons_research:0 "Weapons Research"
 
  generic_electronics_concern:0 "Electronics Company"
 
@@ -3316,7 +3322,11 @@
 
  rehabilitated_military_focus:0 "Rehabilitated Military"
 
+ uk_cw_infra:0 "Infrastructure Programs"
 
+ trade_with_allies:0 "Trade With Allies"
+ 
+ trade_with_axis:0 "Trade With Axis"
 
  workers_culture:0 "Worker's Culture"
 
@@ -3330,7 +3340,9 @@
 
  SOV_manual_labor:0 "Soviet Labour"
 
- SOV_research_insitutes1:0 "Research Institutes"
+ SOV_research_institutes1:0 "Research Institutes"
+
+ SOV_GG_EZ:0 "Simplified Designs"
 
  SOV_work_faster:0 "Emergency Shifts"
 
@@ -6818,7 +6830,35 @@
 
  CRO_mihajlo_tomasic:0 "Mihajlo Tomasic"
 
+ ROM_krupp:0 "Krupp Contracts"
 
+ ROM_opel_idea:0 "Opel Contracts"
+
+ ROM_powerful_boyars:0 "Powerful Boyars"
+
+ ROM_agrarian_society:0 "Agrarian Society"
+
+ ROM_oil_trade:0 "Oil Exports"
+
+ ROM_outdated_doctrine:0 "Outdated Military Thought"
+
+ ROM_church_secured:0 "Church Support"
+
+ ROM_iron_guard_controlled:0 "Iron Guard Under Controll"
+
+ ROM_future_secured:0 "Future Secured"
+
+ ROM_revanchism:0 "Revanchism"
+
+ ROM_fascism_support:0 "Fascism Support"
+
+ ROM_iron_guard_supported:0 "Iron Guard Supremacy"
+
+ ROM_desire_for_revenge:0 "Avenge 1940"
+
+ ROM_armroed_support:0 "Armored Support Companies"
+
+ rom_green_devils:0 "Green Devils"
 
  RAJ_subhas_chanda_bose:0 "Subhas Chandra Bose"
 
@@ -10554,8 +10594,19 @@
  GER_atlantikwall_idea:0 "Atlantikwall Construction"
 
 
+ GER_adjust_building_plans:0 "Adjust Building Plans"
+
+ GER_determine_the_investment:0 "Refinery Buildup"
 
  GER_autarky_idea:0 "Autarky"
+
+ GER_rebuild_our_glory1:0 "Rebuild Our Glory"
+
+ GER_rethink_our_old_plans1:0 "Rethink Our Old Plans"
+
+ GER_hermann_goering_plan1:0 "Follow Goerings Plan"
+
+ GER_strategic_air_effort_idea:0 "Air Experts"
 
 
 

@@ -392,6 +392,10 @@
 
  FRA_colonial_soldiers:0 "Expand Colonial Recruitment"
 
+ FRA_colonial_soldiers1:0 "Rely On The Natives"
+
+ FRA_mass_production:0 "Every Man A Gun"
+
  FRA_economy1:0 "Colonial Economy"
 
  FRA_arty1:0 "Modern Artillery"
