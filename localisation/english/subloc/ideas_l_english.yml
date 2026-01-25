@@ -6860,6 +6860,8 @@
 
  rom_green_devils:0 "Green Devils"
 
+ ROM_loans_category:0 "German Loans"
+
  RAJ_subhas_chanda_bose:0 "Subhas Chandra Bose"
 
 
@@ -10165,7 +10167,15 @@
 
  american_protection_defence_fascism_desc:0 "If an American country declares war on this country @USA §YUnited States§! can intervene."
 
+ GER_panther_program:0 "Panther Program"
 
+ GER_advanced_radar_idea:0 "Advanced Radars"
+
+ GER_reinforce_the_line_idea:0 "Equip Our Soldiers"
+
+ GER_messerschmitt_transport_plane:0 "Long Range Transport Flights"
+
+ ITA_infantry1:0 "Reinforce The Line"
 
  ITA_giovanni_marinelli:0 "Giovanni Marinelli"
 
@@ -10800,9 +10810,47 @@
 
  CHI_illegal_regime:0 "Illegal Regime"
 
+ Mil_donations_major:0 "Military Factories Bonds"
+
+ Dock_donations_major:0 "Dockyard Bonds"
+
+ HUN_desertnomist_major:0 "Civilian Industry Bonds"
+
+ HUN_desertnomist_minor:0 "Civilian Industry Bonds"
+
+ Mil_donations:0 "Military Factories Bonds"
+
+ Dock_donations:0 "Dockyard Bonds"
+
 
 
  USA_henry_morgenthau:0 "Henry Morgenthau Jr."
+
+ USA_bigger_wages:0 "Bigger Wages"
+
+ USA_ford_motor_company:0 "Ford Motor Compnay"
+
+ USA_increased_programs:0 "Increased Programs"
+
+ USA_stability:0 "Great Depression Recovery"
+
+ USA_foreign_scientists:0 "Foreign Scientists"
+
+ USA_navy_speed:0 "Naval Research"
+
+ USA_war_time:0 "War Time Logistics"
+
+ USA_two_ocean_navy:0 "The Two Ocean Navy"
+
+ USA_reform_the_bureaucracy:0 "Reform The Bureaucracy"
+
+ USA_lend_lease_act_allies:0 "The Lend Lease Act"
+
+ USA_islands:0 "Island Hopping"
+
+ war_preparation:0 "War Preparation"
+
+ USA_better_joseph_stilwell:0 "Joseph Stilwell"
 
 
 

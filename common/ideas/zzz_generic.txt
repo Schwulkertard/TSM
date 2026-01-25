@@ -966,6 +966,7 @@ ideas = {
 					original_tag = ENG
 					original_tag = USA
 					original_tag = JAP
+					original_tag = FRA
 
 				}
 			}
