@@ -395,9 +395,6 @@ war_support_bad_modifier = {
 attache_sent = {
 	#war_support_factor = 0.1
 	experience_gain_army = 0.2
-	land_mastery_gain_factor = 0.1
-	naval_mastery_gain_factor = 0.1
-	air_mastery_gain_factor = 0.1
 }
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
 	stability_factor = -0.3
