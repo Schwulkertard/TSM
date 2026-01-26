@@ -56,13 +56,13 @@ sub_units = {
 		}
 
 		forest = {
-			attack   = 0.05
+			attack   = 0.3
 		}
 		jungle = {
-			attack = 0.1
+			attack = 0.05
 		}
 		fort = {
-			attack = 0.05
+			attack = 0.03
 		}
 		same_support_type = light_flame_tank
 	}
@@ -123,17 +123,17 @@ sub_units = {
 		}
 
 		forest = {
-			attack   = 0.1
+			attack   = 0.05
 		}
 
 		jungle = {
-			attack = 0.05
+			attack = 0.03
 		}
 		fort = {
-			attack = 0.05
+			attack = 0.03
 		}
 		urban = {
-			attack = 0.05
+			attack = 0.03
 		}
 
 		same_support_type = light_flame_tank
@@ -195,13 +195,13 @@ sub_units = {
 		}
 
 		forest = {
-			attack   = 0.05
+			attack   = 0.03
 		}
 		fort = {
-			attack = 0.1
+			attack = 0.05
 		}
 		urban = {
-			attack = 0.1
+			attack = 0.05
 		}
 		same_support_type = light_flame_tank
 	}
@@ -257,7 +257,7 @@ sub_units = {
 		breakthrough = -0.7
 
 		need = {
-			heavy_tank_chassis = 30
+			heavy_tank_chassis = 20
 		}
 		amphibious = {
 			attack = -0.5

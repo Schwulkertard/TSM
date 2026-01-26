@@ -166,8 +166,10 @@ new_mobile_warfare = {
             #Operations
             planning_speed = 1
             coordination_bonus = 0.06
-            army_morale = 0.1
-            army_org_factor = 0.1
+            category_army = { 
+				max_organisation = 5
+				default_morale = 0.1
+				}
             enable_tactic = tactic_backhand_blow   
 
             effect = {
@@ -219,7 +221,7 @@ superior_firepower = {
 
     # EFFECTS
     enable_tactic = tactic_overwhelming_fire
-    category_army = {
+    category_army = { 
         soft_attack = 0.05
         hard_attack = 0.025
         air_attack = 0.05
@@ -335,8 +337,10 @@ superior_firepower = {
             enable_tactic = tactic_tactical_withdrawal
             land_reinforce_rate = 0.02
             coordination_bonus = 0.04
-            army_morale = 0.1
-            army_org_factor = 0.05
+            category_army = { 
+				max_organisation = 5
+				default_morale = 0.05
+				}
             planning_decay_rate_factor = -0.25
             planning_speed = 0.5
 
@@ -804,7 +808,9 @@ grand_battleplan = {
         {
             #Operations
             army_morale = 0.0
-            army_org_factor = 0.15
+            category_army = { 
+				max_organisation = 15
+				}
             coordination_bonus = 0.08
             max_planning = 0.1
             land_night_attack = 0.1
@@ -856,12 +862,6 @@ mass_assault = {
     out_of_supply_factor = -0.10
     enable_tactic = tactic_relentless_assault
     
-
-    milestones = {
-        {
-            #Infantry
-            enable_tactic = tactic_human_wave_tactics
-            category_light_infantry = { default_morale = 0.1 }
         infantry ={
             need = {infantry_equipment = -15}
             max_strength = -3}
@@ -874,9 +874,35 @@ mass_assault = {
 		marine = {
             need = {support_equipment = -5}
 			max_strength = -4}
+        artillery_brigade={
+            max_strength = -1.5
+			need = {
+				artillery_equipment = -4
+			}
+		}
+		anti_tank_brigade={
+            max_strength = -1.2
+			need = {
+				anti_tank_equipment  = -2
+			}
+		}
+		anti_air_brigade={
+            max_strength = -0.45
+			need = {
+				anti_air_equipment = -2
+			}
+		}
+    effect = {
+                custom_effect_tooltip = "Artillery Batallion needs 4 less and each Anti-Tank and Anti-Air Batallion 2 less Equipment"
+                custom_effect_tooltip = "Each Infantry Batallion requires 15 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
+                }
+    milestones = {
+        {
+            #Infantry
+            enable_tactic = tactic_human_wave_tactics
+            category_light_infantry = { default_morale = 0.1 }
 
             effect = {
-                custom_effect_tooltip = "Each Infantry Batallion requires 15 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -892,28 +918,11 @@ mass_assault = {
         }
         {
             #Artillery/Support
-                    artillery_brigade={
-		max_strength = -1.5
-			need = {
-				artillery_equipment = -4
-			}
-		}
-		anti_tank_brigade={
-		max_strength = -1.2
-			need = {
-				anti_tank_equipment  = -2
-			}
-		}
-		anti_air_brigade={
-		max_strength = -0.45
-			need = {
-				anti_air_equipment = -2
-			}
-		}
+			category_line_artillery = { default_morale = 0.1 }
+            
             enable_tactic = tactic_elastic_defense
 
             effect = {
-                custom_effect_tooltip = "Artillery Batallion needs 4 less and each Anti-Tank and Anti-Air Batallion 2 less Equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -979,13 +988,16 @@ mass_assault = {
         }
         {
             #support
-            field_hospital = {
+        field_hospital = {
 			need = {support_equipment = -5}
 		}
 		engineer = {
 			need = {support_equipment = -5}
 		}
-		category_recon = {
+		sniper_recon = {
+			need = {support_equipment = -5}
+		}
+		recon = {
 			need = {support_equipment = -5}
 		}
 		signal_company = {
@@ -995,6 +1007,9 @@ mass_assault = {
 			need = {support_equipment = -5}
 		}
         Military_police = {
+			need = {support_equipment = -5}
+		}
+        motorized_Military_police = {
 			need = {support_equipment = -5}
 		}
             effect = {
@@ -1017,8 +1032,11 @@ mass_assault = {
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
             minimum_training_level = -0.2
-            army_morale = 0.2
-            army_org_factor = 0.05 
+            category_army = { 
+				max_organisation = 2
+				default_morale = 0.15
+				}
+            category_army = { max_organisation = default_morale 0.05 
             coordination_bonus = 0.04
 
             effect = {

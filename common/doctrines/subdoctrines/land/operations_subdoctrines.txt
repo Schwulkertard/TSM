@@ -282,7 +282,7 @@ infiltration_tactics = {
         infiltration_in_depth = {
         #5
             land_reinforce_rate = 0.05
-            max_planning = 0.05
+            max_planning = 0.1
             
         }
     }
@@ -398,14 +398,13 @@ deep_battle = {
         breakthrough_priority = {
         #4
             org_loss_when_moving = -0.2
-            category_mobile_infantry = {
+            category_all_infantry = {
                 max_organisation = 10
                 default_morale = 0.1
             }
             category_tanks = {
                 breakthrough = 0.05
                 max_organisation = 5
-                default_morale = 0.1
             }
         }
         operational_depth_control = {
@@ -416,13 +415,13 @@ deep_battle = {
             military_police = {
                 battalion_mult = {
                     category = category_light_infantry
-                    max_organisation = 0.1
+                    max_organisation = 0.05
                 }
             }
             motorized_military_police = {
                 battalion_mult = {
                     category = category_light_infantry
-                    max_organisation = 0.1
+                    max_organisation = 0.05
                 }
             }
         }
@@ -482,11 +481,19 @@ rapid_domination = {
                     category = category_line_artillery
                     soft_attack = 0.05
                 }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
+                }
             }
             mot_recon = {
                 battalion_mult = {
                     category = category_line_artillery
                     soft_attack = 0.05
+                }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
                 }
             }
             light_tank_recon = {
@@ -494,11 +501,19 @@ rapid_domination = {
                     category = category_line_artillery
                     soft_attack = 0.05
                 }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
+                }
             }
             armored_car_recon = {
                battalion_mult = {
                     category = category_line_artillery
                     soft_attack = 0.05
+                }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
                 }
             }
             sniper_recon = {
@@ -506,11 +521,19 @@ rapid_domination = {
                     category = category_line_artillery
                     soft_attack = 0.05
                 }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
+                }
             }
             rangers_support = {
                 battalion_mult = {
                     category = category_line_artillery
                     soft_attack = 0.05
+                }
+                battalion_mult = {
+                    category = category_mobile_artillery
+                    soft_attack = 0.025
                 }
             }
         }
@@ -527,13 +550,13 @@ rapid_domination = {
             signal_company = {
                 battalion_mult = {
                     category = category_artillery
-                    breakthrough = 0.1
+                    breakthrough = 0.05
                 }
             }
             armored_signal = {
                 battalion_mult = {
                     category = category_artillery
-                    breakthrough = 0.1
+                    breakthrough = 0.05
                 }
             }
         }
