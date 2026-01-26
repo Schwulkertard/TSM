@@ -34,6 +34,7 @@ idea_RAJ_agrarian_society = {
 	conscription_factor = RAJ_agrarian_society_conscription_factor
 	mobilization_laws_cost_factor = RAJ_agrarian_society_mobilization_laws_cost_factor
 	mobilization_speed = RAJ_agrarian_society_mobilization_speed
+	consumer_goods_factor = RAJ_agrarian_society_government_consumer_goods_factor
 }
 
 RAJ_a_loyal_government = {
