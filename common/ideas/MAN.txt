@@ -886,7 +886,6 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				operative_slot = 1
 			}
 		}
 

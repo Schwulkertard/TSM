@@ -262,7 +262,6 @@ ideas = {
 			}
 			picture = generic_wall_line
 			modifier = {
-				operative_slot = 1
 				local_resources_factor = 0.2
 				industry_air_damage_factor = -0.1
 				production_speed_air_base_factor = 0.2
@@ -396,7 +395,6 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				operative_slot = 1
 			}
 		}
 		nkvd_2 = {
@@ -410,7 +408,6 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.10
 				land_reinforce_rate = 0.18
-				operative_slot = 1
 			}
 		}
 		comintern_influence = {
@@ -559,7 +556,6 @@ ideas = {
 			}
 			modifier = {
 				surrender_limit=1.0
-				operative_slot = 1
 				special_forces_min= 224
 				send_volunteer_size	= 3
 				send_volunteer_divisions_required = -1

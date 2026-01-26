@@ -1492,7 +1492,6 @@ ideas = {
 			}
 					
 			modifier = {
-				operative_slot = 1
 			}
 		}
 

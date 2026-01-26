@@ -1204,7 +1204,7 @@ technologies = {
 
 	coastal_fort_tech_2 = {
 
-		coastal_bunker_max_level_terrain_limit = 2
+		coastal_bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
 		start_year = 1940

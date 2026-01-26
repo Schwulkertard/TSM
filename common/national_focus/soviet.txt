@@ -868,7 +868,6 @@ focus = {
 		completion_reward = {
 			every_unit_leader = {
 				limit={has_id=402}
-				add_skill_level=1
 				add_attack=2
 				add_logistics = 2
 				add_planning = 1
@@ -880,7 +879,6 @@ focus = {
 			every_unit_leader = {
 				limit={has_id=410}
 				promote_leader = yes
-				add_skill_level=1
 				add_attack=2
 				add_defense=1
 				add_unit_leader_trait=expert_improviser

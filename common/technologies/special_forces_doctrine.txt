@@ -769,10 +769,6 @@ technologies = {
 			leads_to_tech = marines_commandoes_mechanised
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = marines_commandoes_mechanised_non_mtg
-			research_cost_coeff = 1
-		}
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
@@ -820,7 +816,6 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			add_ideas = GEN_cheaper_amphib
 		}
 		
 		doctrine = yes	
