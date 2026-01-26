@@ -77,6 +77,8 @@
  GER_fall_weiss_desc: "Invasion of Poland"
  GER_fall_gelb:0 "Westfeldzug"
  GER_fall_gelb_desc:0 "Invasion of the Benelux"
+ GER_join_war:0 "Operation Marita"
+ GER_join_war_desc:0 "Invasion of the Balkans"
  GER_operation_weserubung:0 "Operation Weserübung"
  GER_operation_weserubung_desc: "Invasion of Denmark and Norway"
  EFR_joining_faction:0 "Vichy Joining Faction"
