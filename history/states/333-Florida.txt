@@ -5,6 +5,7 @@ state={
  	state_category = USA_state
  	history={
  		owner = USA
+		set_state_flag = usa_rubber
  		buildings = {
  			infrastructure = 4
  			industrial_complex = 4

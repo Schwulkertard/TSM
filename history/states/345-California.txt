@@ -9,6 +9,7 @@ state={
  	}
  	history={
  		owner = USA
+		set_state_flag = usa_rubber
  		buildings = {
  			infrastructure = 6
  			arms_factory = 2

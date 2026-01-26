@@ -10,4 +10,22 @@ on_actions = {
 			if = { limit = { tag = JAP } update_dockyard_overcap_japan = yes }
 		}
 	}
+	on_war_relation_added = {
+    	effect = {
+      		if = {
+        		limit = {
+        			OR = {
+        				AND = { ROOT = { tag = USA } FROM = { tag = JAP } }
+            			AND = { ROOT = { tag = JAP } FROM = { tag = USA } }
+        			}
+    			}
+        		USA = { usa_start_rubber_relocation = yes }
+    		}
+		}
+	}
+	on_weekly = {
+    	effect = {
+        	if = { limit = { tag = USA has_country_flag = usa_rubber_relocating } usa_weekly_rubber_relocation = yes }
+		}
+	}
 }

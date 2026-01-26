@@ -360,3 +360,60 @@ update_dockyard_overcap_usa = {
 
     clamp_variable = { var = USA_production_speed_dockyard_factor min = -0.99 max = 0 }
 }
+
+usa_start_rubber_relocation = {
+	if = { limit = { has_country_flag = usa_rubber_relocating } }
+	else = {
+    	set_country_flag = usa_rubber_relocating
+    	set_variable = { usa_rubber_left = 1500 }
+	}
+}
+
+usa_weekly_rubber_relocation = {
+
+	if = {
+    	limit = { check_variable = { usa_rubber_left <= 0 } }
+    	clr_country_flag = usa_rubber_relocating
+  	}
+  	else = {
+
+    set_temp_variable = { move = 50 }
+
+    if = {
+      	limit = { check_variable = { usa_rubber_left < move } }
+      	set_temp_variable = { move = usa_rubber_left }
+    }
+
+    if = {
+      	limit = {
+        	NOT = {
+        	any_state = {
+            	has_state_flag = philippines_rubber
+            	is_controlled_by = USA
+          		}
+        	}
+      	}
+      	clr_country_flag = usa_rubber_relocating
+    }
+    else = {
+    	set_temp_variable = { move_neg = move }
+      	multiply_temp_variable = { move_neg = -1 }
+
+      	random_state = {
+        	limit = {
+          		has_state_flag = philippines_rubber
+          		is_controlled_by = USA
+        	}
+        	add_resource = { type = rubber amount = move_neg }
+      	}
+
+      	random_state = {
+        	limit = { has_state_flag = usa_rubber }
+        	add_resource = { type = rubber amount = move }
+      	}
+
+      	subtract_from_variable = { usa_rubber_left = move }
+    	}
+  	}
+}
+
