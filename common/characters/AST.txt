@@ -636,6 +636,25 @@ characters={
 		}		
 	}
 
+	AST_albert_moneyless={
+		name= "Albert Monelyess"
+		portraits={
+			army={
+				 small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_albert_moneyless
+			allowed = {
+				original_tag = AST
+			}
+			traits = {
+				finance_graduate
+			}
+		}		
+	}
+
 	AST_ben_chifley={
 		name=AST_ben_chifley
 		portraits={

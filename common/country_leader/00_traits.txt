@@ -1796,6 +1796,7 @@ leader_traits = {
 		random = no
 		production_speed_arms_factory_factor = 0.05
 		production_speed_dockyard_factor = 0.05
+		industrial_capacity_factory = 0.05
 
 		ai_will_do = {
 			factor = 2
@@ -1888,7 +1889,8 @@ leader_traits = {
 	princess_of_terror = {
 		random = no
 		sprite = 13
-
+        war_support_factor = 0.05
+		political_power_factor = 0.1
 		resistance_damage_to_garrison = -0.25
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02

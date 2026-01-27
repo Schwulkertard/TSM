@@ -799,6 +799,60 @@ characters={
 		}
 	}
 
+	MEX_mio_the_stealer={
+		name= "Mio the Stealer"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_mio_the_stealer
+			cost = 150.000
+			allowed = {
+				original_tag = MEX
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+				}
+			}
+			traits = {
+				princess_of_terror
+			}
+		}
+	}
+
+	MEX_fagotino_senioro={
+		name= "Fagotino Senioro"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_fagotino_senioro
+			cost = 150.000
+			allowed = {
+				original_tag = MEX
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+				}
+			}
+			traits = {
+				anti_fascist_agent
+			}
+		}
+	}
+
 	
 
 	MEX_pablo_gonzalez={

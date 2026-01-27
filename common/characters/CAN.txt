@@ -696,6 +696,25 @@ characters={
 		}
 	}
 
+	CAN_sir_mark_the_wise={
+		name= "Mark the Wise"
+		portraits={
+			army={
+				 small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAN_r_b_bennett
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				modernizer 
+			}
+		}
+	}
+
 	CAN_newton_wesley_rowell={
 		name=CAN_newton_wesley_rowell
 		portraits={

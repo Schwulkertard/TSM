@@ -156,6 +156,58 @@ characters={
 		}
 	}
 
+	SPR_aleandro_sanchez={
+		name= "Aleandro Sanchez"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_aleandro_sanchez
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				war_profiteer
+			}
+		}
+	}
+
+	SPR_tranvestiro_silva={
+		name= "Tranvestiro Silva"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_tranvestiro_silva
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				editor
+			}
+		}
+	}
+
 	SPA_jose_enrique_varela={
 		instance = {
 			allowed = {
