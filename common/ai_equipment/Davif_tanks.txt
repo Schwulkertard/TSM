@@ -179,7 +179,7 @@ GER_medium_tank_destroyer = {
 				special_type_slot_3 = empty
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
+				tank_nsb_engine_upgrade = 1
 				tank_nsb_armor_upgrade = {
 					base = 3
 					modifier = {
@@ -239,7 +239,7 @@ DAVIF_Mechanized = {
 				special_type_slot_1=armor_skirts
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
+				tank_nsb_engine_upgrade = 1
 				
 			}
 		}

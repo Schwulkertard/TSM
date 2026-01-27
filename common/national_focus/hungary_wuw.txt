@@ -407,6 +407,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			remove_ideas = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
 			add_ideas = war_economy
 		}
 	}
@@ -1546,17 +1547,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			IF = {
-				limit = {
-					has_idea = HUN_treaty_of_triannon_aat_wuw
-				}
-				swap_ideas = {
-					remove_idea = HUN_treaty_of_triannon_aat_wuw
-					add_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
-				}
-			}
-
 			army_experience = 35
 		}
 	}
@@ -1582,7 +1572,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_idea = war_economy
+			has_completed_focus = wuw_HUN_renounce_the_treaty_of_trianon
 		}
 
 		cancel_if_invalid = yes
@@ -1591,7 +1581,6 @@ focus_tree = {
 		completion_reward = {
 			add_threat = 1
 			remove_ideas = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
-			custom_effect_tooltip = "Will bypass with war eco"
 		}
 	}
 

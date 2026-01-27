@@ -89,14 +89,5 @@ units = {
 	}
 }
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "XSM"
-		}
-		requested_factories = 1
-		progress = 0.74
-		efficiency = 100
-	}
 }
 

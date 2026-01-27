@@ -231,7 +231,7 @@ if = {
 			engine_type_slot = tank_gasoline_engine_L
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 4
+			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
 
@@ -255,7 +255,7 @@ if = {
 			engine_type_slot = tank_gasoline_engine_L
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 4
+			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
 
@@ -279,7 +279,7 @@ if = {
 			engine_type_slot = tank_gasoline_engine_L
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 4
+			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
 
