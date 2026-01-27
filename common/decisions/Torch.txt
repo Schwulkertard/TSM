@@ -1,132 +1,276 @@
 operations = {
-	prepare_operation_torch = {
-		icon = generic_operation
-		allowed = { original_tag = ENG }
-		available = {
-			EFR = { exists = yes}
-			OR={
-			AND={439={is_controlled_by_ROOT_or_ally = yes } 285={is_controlled_by_ROOT_or_ally = yes }
-			Date > 1941.9.1
-		}
-	}
-}
+	ENG_make_fars_bombable_again={
+ 		icon = ger_reichskommissariats
+ 		fire_only_once = no
+ 		allowed = { OR={tag = ENG tag=USA}}
+ 		available = { ENG={controls_state=379} ENG={controls_province = 7283} }
+ 		visible={has_war=yes}
+		days_remove=30
+ 		cost = 0
+ 		complete_effect = {
 			
-		visible = {
-			EFR = { exists = yes}
+		set_victory_points = {
+			province = 7368
+			value = 0
 		}
-		is_good = yes
-		ai_will_do = {
-			factor = 1
+		FRA={set_province_controller = 7368}
+		ENG={set_province_controller = 7368}
+ 		}
+ 		remove_effect = {
+			
+		set_victory_points = {
+			province = 7368
+			value = 3
 		}
-		fire_only_once = yes
-		days_remove = 45
-		complete_effect = {
-			hidden_effect = {
-				every_enemy_country = {
-					country_event = {
-						id = britain.1115
-						days = 0
-					}
-				}
-			}
-		}
-		remove_effect = {
-			custom_effect_tooltip = "Operation Torch will begin"
-			hidden_effect = { activate_decision = USA_execute_operation_torch }
-		}
-	}
-	USA_execute_operation_torch = {
-		icon = generic_operation
-		allowed = { original_tag = ENG }
-		available = {
-			EFR = { exists = yes}
-			OR={
-			AND={439={is_controlled_by_ROOT_or_ally = yes } 285={is_controlled_by_ROOT_or_ally = yes }
-			Date > 1941.9.1
-		}
-	}
-		}
-		visible = {
-			EFR = { exists = yes}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		activation = {
-			has_war_with = GER
-		}
-		fire_only_once = yes
-		days_remove = 45
-		complete_effect = {
-			ITA = { transfer_state = 665
-				transfer_state = 1
-				transfer_state = 458
-				transfer_state = 32
-				transfer_state = 21
-			}
-			FRA={
+		FRA={set_province_controller = 7368}
+		ENG={set_province_controller = 7368}
+ 		}
+ 	}
+ 	prepare_operation_torch = {
+ 		icon = generic_operation
+ 		allowed = { original_tag = ENG }
+ 		available = {
+ 			EFR = { exists = yes}
+			Date > 1940.6.1
+ 			OR={Date > 1942.1.1
+			# AND={Date > 1941.6.1 
+			# count_triggers = {
+    			# amount = 6
+				# 302={is_controlled_by_ROOT_or_ally = yes} 
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 303={is_controlled_by_ROOT_or_ally = yes}
+				# 450={is_controlled_by_ROOT_or_ally = yes}
+				# 713={is_controlled_by_ROOT_or_ally = yes}
+				# 712={is_controlled_by_ROOT_or_ally = yes}
+				# 302={is_controlled_by_ROOT_or_ally = yes}
+				# 591={is_controlled_by_ROOT_or_ally = yes}
+				# 397={is_controlled_by_ROOT_or_ally = yes}
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 447={is_controlled_by_ROOT_or_ally = yes}
+			# }
+			# } 
+			# AND={Date > 1942.1.1 
+			# count_triggers = {
+    			# amount = 4
+				# 302={is_controlled_by_ROOT_or_ally = yes} 
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 303={is_controlled_by_ROOT_or_ally = yes}
+				# 450={is_controlled_by_ROOT_or_ally = yes}
+				# 713={is_controlled_by_ROOT_or_ally = yes}
+				# 712={is_controlled_by_ROOT_or_ally = yes}
+				# 302={is_controlled_by_ROOT_or_ally = yes}
+				# 591={is_controlled_by_ROOT_or_ally = yes}
+				# 397={is_controlled_by_ROOT_or_ally = yes}
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 447={is_controlled_by_ROOT_or_ally = yes}
+			# }
+			# } 
+			# AND={Date > 1942.6.1 
+			# count_triggers = {
+    			# amount = 2
+				# 302={is_controlled_by_ROOT_or_ally = yes} 
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 303={is_controlled_by_ROOT_or_ally = yes}
+				# 450={is_controlled_by_ROOT_or_ally = yes}
+				# 713={is_controlled_by_ROOT_or_ally = yes}
+				# 712={is_controlled_by_ROOT_or_ally = yes}
+				# 302={is_controlled_by_ROOT_or_ally = yes}
+				# 591={is_controlled_by_ROOT_or_ally = yes}
+				# 397={is_controlled_by_ROOT_or_ally = yes}
+				# 294={is_controlled_by_ROOT_or_ally = yes}
+				# 447={is_controlled_by_ROOT_or_ally = yes}
+			# }
+			# }
+ 			AND={415={is_controlled_by_ROOT_or_ally = yes } 413={is_controlled_by_ROOT_or_ally = yes }}
+ 			}
+ 			
+ 		}
+ 		visible = {
+ 			EFR = { exists = yes}
+ 		}
+ 		is_good = yes
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		fire_only_once = yes
+ 		days_remove = 45
+ 		complete_effect = {
+ 			hidden_effect = {
+ 				every_enemy_country = {
+ 					country_event = {
+ 						id = britain.1115
+ 						days = 0
+ 					}
+ 				}
+ 			}
+ 		}
+ 		remove_effect = {
+ 			custom_effect_tooltip = "Operation Torch will begin"
+ 			hidden_effect = { activate_decision = USA_execute_operation_torch }
+ 		}
+ 	}
+ 	USA_execute_operation_torch = {
+ 		icon = generic_operation
+ 		allowed = { original_tag = ENG }
+ 		available = {
+ 			always = no
+ 		}
+ 		visible = {
+ 			EFR = { exists = yes}
+ 		}
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		activation = {
+ 			has_war_with = GER
+ 		}
+ 		fire_only_once = yes
+ 		days_remove = 7
+ 		complete_effect = {
+ 			ITA = { 
+ 				transfer_state = 1
+ 				
+ 				transfer_state = 32
+ 				transfer_state = 21
 				if = {
-				limit={exists=yes}
-				transfer_state = 461
-				transfer_state = 462
-				transfer_state = 699
+					limit={controls_state=413 NOT={owns_state = 422}}
+					transfer_state = 422	
+					transfer_state = 584
 				}
-				else={
-					USA={
-						transfer_state = 461
-						transfer_state = 462
-						transfer_state = 699
-					}
-				}
+ 			}
+ 			FRA={
+ 				if = {
+ 				limit={exists=yes}
+ 				transfer_state = 425
+ 				transfer_state = 260
+ 				transfer_state = 426
+ 				}
+ 				else={
+ 					USA={
+ 						transfer_state = 425
+ 						transfer_state = 426
+ 						transfer_state = 260
+ 					}
+ 				}
+ 			}
+			set_global_flag= torch_launched
+ 			hidden_effect = {
+ 				EFR={
+					delete_unit = { 
+ 						state = 260          
+             					disband = yes #will refund equipment and manpower
+            					  }
+ 					every_country = {
+ 						if = {
+ 							limit = { is_in_faction_with = ENG has_war=yes}
+ 							EFR = {
+ 								declare_war_on = {
+ 									target = PREV
+ 									type = annex_everything
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 				every_country = {
+ 					if = {
+ 						limit = { is_in_faction_with = GER }
+ 						activate_decision = EFR_joining_faction
+ 					}
+ 				}
+ 			}
+ 			custom_effect_tooltip = "Vichy France goes to war with everyone in the allies"
+ 		}
+ 		remove_effect = {
+ 			GER = { puppet = EFR }
+ 			EFR = { remove_ideas = EFR_neutrality_idea}
+ 		}
+ 	}
+ 	EFR_joining_faction = {
+ 		icon = generic_operation
+ 		allowed = { OR = { tag = GER tag = ITA tag = HUN tag = ROM tag = BUL }}
+ 		available = {
+ 			always = no
+ 		}
+ 		visible = {
+ 			always = no
+ 		}
+ 		is_good = yes
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		fire_only_once = yes
+ 		days_remove = 15
+ 		complete_effect = {
+ 		}
+ 		remove_effect = {
+ 			custom_effect_tooltip = "Vichy France joins the Axis"
+ 		}
+ 	}
+ 	ENG_Compass_Decision = {
+ 		icon = generic_operation
+ 		available = {
+			582 = { is_controlled_by_ROOT_or_ally = yes }
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = yes
+ 		activation = {
+ 			tag = ENG
+			GER = {has_war_with = BEL}
+		    16 = { is_owned_and_controlled_by = FRA }
+ 		}
+ 		visible = {
+ 			NOT = { EFR = { exists = yes} }
+ 		}
+ 		cancel_if_not_visible = yes
+ 		is_good = no
+ 		complete_effect = {
+			add_ideas =   ENG_compass  
+ 			hidden_effect = {
+ 				SAF = {add_ideas  = ENG_compass  }
+ 				RAJ = {add_ideas  = ENG_compass  }
+ 				CAN = {add_ideas  = ENG_compass  }
+ 				AST = {add_ideas  = ENG_compass  }
+ 			}
+ 		}
+ 		timeout_effect = {
+ 		}
+ 	}
+ ENG_Compass_Decision2 = {
+ 		icon = generic_operation
+ 		available = {
+			OR = {
+			415 = { is_controlled_by_ROOT_or_ally = yes }		
+			412 = { is_controlled_by_ROOT_or_ally = no }
 			}
-			hidden_effect = {
-				EFR={
-					every_country = {
-						if = {
-							limit = { is_in_faction_with = ENG has_war=yes}
-							EFR = {
-								declare_war_on = {
-									target = PREV
-									type = annex_everything
-								}
-							}
-						}
-					}
-				}
-				every_country = {
-					if = {
-						limit = { is_in_faction_with = GER }
-						activate_decision = EFR_joining_faction
-					}
-				}
-			}
-			custom_effect_tooltip = "Vichy France goes to war with everyone in the allies"
-		}
-		remove_effect = {
-			GER = { puppet = EFR }
-			EFR = { remove_ideas = EFR_neutrality_idea}
-		}
-	}
-	EFR_joining_faction = {
-		icon = generic_operation
-		allowed = { OR = { tag = GER tag = ITA tag = HUN tag = ROM tag = BUL }}
-		available = {
-			always = no
-		}
-		visible = {
-			always = no
-		}
-		is_good = yes
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-		}
-		remove_effect = {
-			custom_effect_tooltip = "Vichy France joins the Axis"
-		}
-	}
-}
-
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = yes
+ 		activation = {
+			582 = { is_controlled_by_ROOT_or_ally = yes }
+			tag = ENG
+ 		}
+ 		visible = {
+ 		}
+ 		cancel_if_not_visible = yes
+ 		is_good = no
+ 		complete_effect = {
+			remove_ideas  = ENG_compass  
+ 			hidden_effect = {
+ 				SAF = {remove_ideas = ENG_compass  }
+ 				RAJ = {remove_ideas =  ENG_compass  }
+ 				CAN = {remove_ideas = ENG_compass  }
+ 				AST = {remove_ideas =   ENG_compass  }
+ 			}
+ 		}
+ 		timeout_effect = {
+			remove_ideas  = ENG_compass  
+ 			hidden_effect = {
+ 				SAF = {remove_ideas = ENG_compass  }
+ 				RAJ = {remove_ideas =  ENG_compass  }
+ 				CAN = {remove_ideas = ENG_compass  }
+ 				AST = {remove_ideas =   ENG_compass  }
+ 			}
+ 		}
+ 	}
+ }
