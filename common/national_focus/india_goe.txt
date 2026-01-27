@@ -102,8 +102,6 @@ focus = {
 		add_political_power = 150
 
         custom_effect_tooltip = generic_skip_one_line_tt
-
-        add_dynamic_modifier = { modifier = RAJ_a_loyal_government }
 	}
 }
 
@@ -186,7 +184,7 @@ focus = {
 		401 = {
 			add_building_construction = {
 				type = infrastructure
-				level = 3
+				level = 2
 				instant_build = yes
 			}
             add_resource = {
@@ -197,7 +195,7 @@ focus = {
         405 = {
 			add_building_construction = {
 				type = infrastructure
-				level = 3
+				level = 2
 				instant_build = yes
 			}
             add_resource = {
@@ -208,7 +206,7 @@ focus = {
         404 = {
 			add_building_construction = {
 				type = infrastructure
-				level = 3
+				level = 2
 				instant_build = yes
 			}
             add_resource = {
@@ -216,16 +214,27 @@ focus = {
                 amount = 50
             }
 		}
-        395 = {
+        397 = {
 			add_building_construction = {
 				type = infrastructure
-				level = 3
+				level = 2
 				instant_build = yes
 			}
             add_resource = {
                 type = steel
                 amount = 50
             }
+        396 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+            add_resource = {
+                type = steel
+                amount = 50
+            }
+		}
 		}
 	}
 }
@@ -238,7 +247,7 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id = RAJ_work_with_local_leaders 
-	cost = 10
+	cost = 5
 
 	mutually_exclusive = { focus = RAJ_concessions_to_the_industrialists }
 
@@ -270,7 +279,11 @@ focus = {
 	relative_position_id = RAJ_concessions_to_the_industrialists 
 	cost = 5
     available = {
-        date > 1937.1.1
+			OR = {
+					threat > 0.1
+					has_war = yes
+					date > 1938.1.1
+				}
     }
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
@@ -278,12 +291,6 @@ focus = {
 	completion_reward = {
 		add_political_power = 100
         custom_effect_tooltip = generic_skip_one_line_tt
-        407 = {
-            add_core_of = RAJ
-        }
-        395 = {
-            add_core_of = RAJ
-        }
         custom_effect_tooltip = generic_skip_one_line_tt
         add_ideas = partial_economic_mobilisation
         custom_effect_tooltip = generic_skip_one_line_tt
@@ -299,10 +306,7 @@ focus = {
 	x = -1
 	y = 1
 	relative_position_id = RAJ_confer_with_the_congress 
-	cost = 10
-    available = {
-        date > 1937.6.1
-    }
+	cost = 5
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -340,10 +344,12 @@ focus = {
 	relative_position_id = RAJ_favor_the_muslim_league 
 	cost = 5
 	available = {
+		OR = {
 		date > 1941.1.1
 		NOT = {
 			has_full_control_of_state = 410
-					}
+				}
+			}
 		}
 	mutually_exclusive = { focus = RAJ_the_integrity_of_india_act }
 
@@ -378,7 +384,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
 		add_to_variable = { RAJ_a_loyal_government_political_power_factor = 0.2	tooltip = political_power_factor_tt }
-		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.15	tooltip = consumer_goods_expected_factor_tt }
+		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.15	tooltip = consumer_goods_factor_tt }
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
@@ -392,7 +398,7 @@ focus = {
 	x = 2
 	y = 1
 	relative_position_id = RAJ_favor_the_muslim_league 
-	cost = 10
+	cost = 5
 
 	mutually_exclusive = { focus = RAJ_the_indian_parliament }
 
@@ -409,18 +415,18 @@ focus = {
         
 		
 		389 = {
-            add_extra_state_shared_building_slots = 2
+            add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
         391 = {
-            add_extra_state_shared_building_slots = 2
+            add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -447,7 +453,7 @@ focus = {
 
 	completion_reward = {
         custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
-        add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.1	tooltip = consumer_goods_expected_factor_tt }
+        add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.1	tooltip = consumer_goods_factor_tt }
         custom_effect_tooltip = RAJ_modify_agrarian_society_tt
 		add_to_variable = { RAJ_agrarian_society_conscription_factor = 0.15	tooltip = conscription_factor_tt }
 	}
@@ -488,13 +494,15 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id = RAJ_the_indian_parliament 
-	cost = 10
+	cost = 5
 
 	available = {
-		is_subject_of = ENG
-        has_idea = war_economy
+		OR = {
 		date > 1942.1.1
-	}
+		num_of_factories > 220
+			}
+		}
+	
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -520,8 +528,7 @@ focus = {
                 autonomy_state = autonomy_dominion
             }
         }
-		custom_effect_tooltip = RAJ_modify_agrarian_society_tt
-		add_to_variable = { RAJ_agrarian_society_government_consumer_goods_factor = -0.5	tooltip = consumer_goods_expected_factor_tt }
+		remove_dynamic_modifier = { modifier = RAJ_a_loyal_government tooltip = consumer_goods_factor_tt }
         custom_effect_tooltip = generic_skip_one_line_tt
         if = {
             limit = { 
@@ -550,7 +557,7 @@ focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
-		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.2	tooltip = consumer_goods_expected_factor_tt }
+		add_to_variable = { RAJ_a_loyal_government_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
 	}
 }
 
@@ -569,10 +576,10 @@ focus = {
 	completion_reward = {
 		390 = {
 			add_compliance = 50
-            add_extra_state_shared_building_slots = 2
+            add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
         }
@@ -587,7 +594,7 @@ focus = {
 	x = -1
 	y = 1
 	relative_position_id = RAJ_raise_import_duties 
-	cost = 10
+	cost = 5
 
 	available = {
 		has_tech = advanced_machine_tools
@@ -627,7 +634,7 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id = RAJ_imperial_industry_initiative 
-	cost = 10
+	cost = 5
 
 	available = {
 		industrial_complex > 39
@@ -668,10 +675,10 @@ focus = {
 	completion_reward = {
         391 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -711,10 +718,10 @@ focus = {
 	completion_reward = {
 		402 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -818,16 +825,12 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = RAJ_the_zamindari_system
-			add_idea = RAJ_the_zamindari_system_2
-		}
         392 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -851,17 +854,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = RAJ_the_zamindari_system_2
-			add_idea = RAJ_the_zamindari_system_3
-		}
 
 		403 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -877,17 +876,17 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id = RAJ_rural_development_plan 
-	cost = 10
+	cost = 5
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
 		399 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -903,7 +902,7 @@ focus = {
 	x = -1
 	y = 1
 	relative_position_id = RAJ_strengthen_ties_with_british_investors_GOE 
-	cost = 10
+	cost = 5
 
 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
@@ -916,10 +915,10 @@ focus = {
 		}
 		733 = {
 			add_compliance = 50
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -934,7 +933,7 @@ focus = {
 	x = 1
 	y = 1
 	relative_position_id = RAJ_territorial_development_scheme 
-	cost = 10
+	cost = 5
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -951,7 +950,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = RAJ_institute_of_fundamental_research_GOE 
-	cost = 10
+	cost = 5
 
 	available = {
 		arms_factory > 69
@@ -1013,7 +1012,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_indianize_the_army
        
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1552,7 +1551,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_royal_indian_artillery_dlc 
         mutually_exclusive = { focus = RAJ_standardized_rations }
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1586,7 +1585,7 @@ focus = {
         y = 0
         relative_position_id = RAJ_specialized_dietary_requirement
         mutually_exclusive = { focus = RAJ_specialized_dietary_requirement }
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1617,7 +1616,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_royal_indian_artillery_dlc
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1780,7 +1779,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_armoured_corps_center_and_school 
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1862,7 +1861,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_royal_indian_artillery_dlc
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -2069,7 +2068,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_gurkhas
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 25
@@ -2259,7 +2258,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_indian_territorial_force
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -3146,7 +3145,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_increase_funding_for_the_GRSE
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -3295,7 +3294,7 @@ focus = {
         y = 5
         relative_position_id = RAJ_royal_indian_navy_dlc
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 25

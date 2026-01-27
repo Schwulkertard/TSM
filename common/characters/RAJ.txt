@@ -935,7 +935,7 @@ characters={
 				original_tag = RAJ
 			}
 			available = {
-				has_completed_focus = RAJ_the_integrity_of_india_act
+				has_completed_focus = RAJ_the_indian_parliament
 			}
 			traits = {
 				nationalist_symbol
