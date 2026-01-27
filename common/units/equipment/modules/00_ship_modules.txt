@@ -2298,8 +2298,8 @@ equipment_modules = {
 		gfx = ship_seaplane_tender_1
 
 		add_stats = {
-			surface_detection = 2
-			sub_detection = 5
+			surface_detection = 4
+			sub_detection = 10
 			build_cost_ic = 60
 		}
 
@@ -2315,8 +2315,8 @@ equipment_modules = {
 		gfx = ship_seaplane_tender_2
 
 		add_stats = {
-			surface_detection = 3
-			sub_detection = 7
+			surface_detection = 6
+			sub_detection = 14
 			build_cost_ic = 75
 		}
 		can_convert_from = {

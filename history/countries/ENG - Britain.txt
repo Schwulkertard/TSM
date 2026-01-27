@@ -48,6 +48,7 @@ set_technology = {
 	engines_2 = 1
 	aircraft_construction = 1
 	tech_trucks = 1
+	coastal_defense_ships = 1
 }
 if = {
 	limit = {
@@ -332,7 +333,7 @@ if = {
 
 	#DEFAULT LIGHT TANK
 	create_equipment_variant = {
-		name = "Mathilda I"
+		name = "Matilda I"
 		type = light_tank_chassis_2
 		parent_version = 0
 		modules = {
@@ -384,7 +385,7 @@ add_equipment_to_stockpile = {
     type = light_tank_chassis_2
     amount = 800
     producer = ENG
-    variant_name = "Mathilda I"
+    variant_name = "Matilda I"
 }
 add_equipment_to_stockpile = {
     type = light_tank_aa_chassis_2

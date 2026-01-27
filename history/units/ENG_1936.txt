@@ -190,7 +190,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_chassis_2
-			version_name = "Mathilda I"
+			version_name = "Matilda I"
 			creator = "ENG"
 		}
 		requested_factories = 1

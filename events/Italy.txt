@@ -34,7 +34,6 @@ country_event = {
 				mechanized = { x = 4 y = 2 }
 				mechanized = { x = 4 y = 3 }
 				mot_anti_air_brigade= { x = 3 y = 4 }
-				mot_anti_air_brigade = { x = 4 y = 4 }
 			}
 			support = {
 				mot_recon = { x = 0 y = 0 }
@@ -78,7 +77,6 @@ country_event = {
 					motorized = { x = 4 y = 2 }
 					motorized = { x = 4 y = 3 }
 					mot_anti_air_brigade= { x = 3 y = 4 }
-					mot_anti_air_brigade = { x = 4 y = 4 }
 				}
 				support = {
 					mot_recon = { x = 0 y = 0 }

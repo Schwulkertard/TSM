@@ -50,6 +50,7 @@ set_technology = {
 	aircraft_construction = 1
 	basic_train = 1
 	tech_trucks = 1
+	coastal_defense_ships = 1
 }
 
 recruit_character = BUL_boris_iii

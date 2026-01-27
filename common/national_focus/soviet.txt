@@ -69,7 +69,6 @@ focus_tree = {
 				mechanized = { x = 4 y = 2 }
 				mechanized = { x = 4 y = 3 }
 				mot_anti_air_brigade= { x = 3 y = 4 }
-				mot_anti_air_brigade = { x = 4 y = 4 }
 			}
 			support = {
 				mot_recon = { x = 0 y = 0 }
@@ -97,13 +96,11 @@ focus_tree = {
 					anti_tank_brigade = { x = 3 y = 0 }
 					anti_tank_brigade = { x = 3 y = 1 }
 					anti_air_brigade = { x = 3 y = 2 }
-					anti_air_brigade = { x = 3 y = 3 }
 					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 4 y = 1 }
 					artillery_brigade = { x = 4 y = 2 }
 					artillery_brigade = { x = 4 y = 3 }
 					artillery_brigade = { x = 4 y = 4 }
-					artillery_brigade = { x = 4 y = 5 }
 				}
 				support = {
 					recon = { x = 0 y = 0 }
@@ -678,8 +675,8 @@ focus = {
 					paratrooper = { x = 2 y = 3 }
 					anti_tank_brigade = { x = 3 y = 0 }
 					anti_tank_brigade = { x = 3 y = 1 }
-					anti_air_brigade = { x = 3 y = 2 }
-					anti_air_brigade = { x = 3 y = 3 }
+					anti_tank_brigade = { x = 3 y = 2 }
+					anti_air_brigade = { x = 3 y = 4 }
 					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 4 y = 1 }
 					artillery_brigade = { x = 4 y = 2 }

@@ -843,64 +843,6 @@ equipments = {
  		default_modules = {
  		}
  	}
- 	ship_hull_cruiser_coastal_defense_ship = {
- 		year = 1929
- 		visual_level = 0
- 		archetype = ship_hull_cruiser
- 		priority = 1850
- 		manpower = 1800
- 		build_cost_ic = 3500
- 		resources = {
- 			steel = 30
- 		}
- 		hg_attack = 0
- 		naval_speed = 15
- 		reliability = 0.80
- 		surface_visibility = 20
- 		naval_range = 1500
- 		module_slots = {
- 			fixed_ship_battery_slot = {
- 				required = yes
- 				allowed_module_categories = { ship_6_battery ship_7_battery ship_8_battery ship_9_battery }
- 			}
- 			fixed_ship_anti_air_slot = inherit
- 			fixed_ship_fire_control_system_slot = inherit
- 			fixed_ship_radar_slot = inherit
- 			fixed_ship_engine_slot = inherit
- 			fixed_ship_secondaries_slot = inherit
- 			fixed_ship_armor_slot = inherit
- 			front_1_custom_slot = {
- 				required = no
- 				allowed_module_categories = {
- 					ship_anti_air
- 				}
- 			}
- 			mid_1_custom_slot = {
- 				required = no
- 				allowed_module_categories = {
- 					ship_anti_air
- 					ship_secondaries
- 					ship_airplane_launcher
- 				}
- 			}
- 			mid_2_custom_slot = mid_1_custom_slot
- 			rear_1_custom_slot = {
- 				required = no
- 				allowed_module_categories = {
- 					ship_anti_air
- 					ship_airplane_launcher
- 					ship_torpedo
- 					ship_6_battery ship_7_battery ship_8_battery ship_9_battery
- 				}
- 			}
- 		}
- 		default_modules = {
- 			front_1_custom_slot = empty
- 			rear_1_custom_slot = empty
- 			fixed_ship_battery_slot = empty
- 			fixed_ship_secondaries_slot = empty
- 		}
- 	}
 	ship_hull_cruiser_modern_aa = {
 		abbreviation = "hbdaa"
 		year = 1954

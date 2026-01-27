@@ -24,7 +24,7 @@ sub_units = {
 			category_anti_air
 		}
 
-		combat_width = 1
+		combat_width = 2
 
 		#Size Definitions
 		max_organisation = 15
@@ -85,7 +85,7 @@ sub_units = {
 			category_mobile_artillery
 		}
 
-		combat_width = 1
+		combat_width = 2
 		initiative = 0.005
 		#Size Definitions
 		max_organisation = 0
