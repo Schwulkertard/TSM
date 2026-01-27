@@ -37,7 +37,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 500
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
-NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.3, 0.09, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.3, 0.1, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2

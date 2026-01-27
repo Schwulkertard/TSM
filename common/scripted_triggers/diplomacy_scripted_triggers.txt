@@ -141,41 +141,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
 			has_war = no
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_BRITAIN_TOOLTIP
-			NOT = { FROM = { tag = MLT } }
-			NOT = { FROM = { tag = CYP } }
-			NOT = { FROM = { tag = PAL } }
-			NOT = { FROM = { tag = ISR } }
-			NOT = { FROM = { tag = JOR } }
-			NOT = { FROM = { tag = EGY } }
-			NOT = { FROM = { tag = KUW } }
-			NOT = { FROM = { tag = QAT } }
-			NOT = { FROM = { tag = UAE } }
-			NOT = { FROM = { tag = BLZ } }
-			NOT = { FROM = { tag = BAH } }
-			NOT = { FROM = { tag = JAM } }
-			NOT = { FROM = { tag = TRI } }
-			NOT = { FROM = { tag = BAS } }
-			NOT = { FROM = { tag = GYA } }
-			NOT = { FROM = { tag = SRL } }
-			NOT = { FROM = { tag = MLD } }
-			NOT = { FROM = { tag = FIJ } }
-			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
-			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
-			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
-			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
-		}
 	}
 	if = {
 		limit = {
@@ -760,19 +725,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option =  ALWAYS_FREE
 			}
 		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					#has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
-			}
-		}
 		else = {
 			always = yes
 		}
@@ -782,19 +734,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			has_game_rule = {
 				rule = allow_volunteers
 				option = LIMITED
-			}
-		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					#has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
 			}
 		}
 		else = {
@@ -811,19 +750,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_VOLUNTEERS_SAME_IDEOLOGY_TT
 			has_government = FROM
-		}
-		if = {
-			limit = {
-				NOT = { tag = SPC }
-				FROM = {
-					tag = SPC
-					#has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
-			}
 		}
 	}
 	if = {
