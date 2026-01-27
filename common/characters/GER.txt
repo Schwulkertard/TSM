@@ -1142,7 +1142,7 @@ characters={
 	}
 
 	GER_kurt_schmitt = {
-		name= GER_kurt_schmitt
+		name= "Kurt Schmitt"
 		portraits={
 			army={
 				small="GFX_idea_joachim_von_ribbentrop"

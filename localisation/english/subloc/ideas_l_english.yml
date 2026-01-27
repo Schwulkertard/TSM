@@ -2982,6 +2982,18 @@
 
  theorist:0 "Theorist"
 
+ tank_research:0 "Tank Research"
+
+ naval_research:0 "Naval Research"
+
+ aircraft_research:0 "Aircraft Research"
+
+ weapons_research:0 "Weapons Research"
+
+ industrial_theorist:0 "Industrial Research"
+
+ theorist_production:0 "Production Theorist"
+
 
 
  british_austerity_idea:0 "British Austerity"
