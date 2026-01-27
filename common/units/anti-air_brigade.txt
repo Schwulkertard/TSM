@@ -94,12 +94,12 @@ sub_units = {
 		manpower = 250
 		training_time = 120
 		weight = 0.5
-
+		hardness = -0.3
 		supply_consumption = 0.1
 		transport = motorized_equipment
 		need = {
 			anti_air_equipment = 12
-			motorized_equipment = 12
+			motorized_equipment = 20
 		}
 
 		forest = {

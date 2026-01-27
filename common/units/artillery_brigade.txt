@@ -101,18 +101,19 @@ sub_units = {
 		manpower = 500
 		need = {
 			artillery_equipment = 24
-			motorized_equipment = 24
+			motorized_equipment = 30
 		}
 		initiative = 0.015
-		max_strength = 6
+		max_strength = 1
 		max_organisation = 15
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.35
 		supply_consumption = 0.1
-
+		hardness = -0.3
 		forest = {
 			attack = -0.13
+			defence = -0.1
 			movement = -0.2
 		}
 
@@ -249,9 +250,9 @@ sub_units = {
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 24
-			motorized_equipment = 24
+			motorized_equipment = 30
 		}
-
+		hardness = -0.3
 		manpower = 500
 		max_organisation = 15
 		default_morale = 0.1
@@ -263,6 +264,7 @@ sub_units = {
 
 		forest = {
 			attack = -0.13
+			defence = -0.1
 			movement = -0.2
 		}
 
