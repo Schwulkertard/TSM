@@ -14,6 +14,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0		-- XP cost for remov
 --- Navy
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2
+NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 6
 NDefines.NNavy.COMBAT_INITIAL_DURATION = 12	
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.8 --- (0.2 -> 0.8)
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.05 --- (0.2 -> 0.05)
@@ -31,7 +32,7 @@ NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.15 -- chance for critical hit 
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 NDefines.NNavy.COMBAT_BASE_CRITICAL_CHANCE = 0.1 -- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
 NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 5.0 -- Multiplier for the critical damage. Scaled down with the ship reliability.
-NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 0.0 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 0.05 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
 
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_BASE = 10                             -- base scoring for target picking for planes inside naval combat based on screening efficency, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_SCREEN_TARGET_BASE = 5
@@ -49,9 +50,9 @@ NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.1									-- base chance for hit
 NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.03									-- never less hit chance then this?
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		80.0,	-- big guns
+		75.0,	-- big guns
 		140.0,	-- torpedos
-		40.0,	-- small guns
+		45.0,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
@@ -62,7 +63,7 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
 NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12
 NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24
-NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = 0.0 --vanilla -0.9
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.75 --vanilla -0.9
 
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
 
@@ -138,7 +139,7 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor mu
 }
 
 NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
-		2.50,
+		3.00,
 		1.25,
 		0.75,
 		0.50,

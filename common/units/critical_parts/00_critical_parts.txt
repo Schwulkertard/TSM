@@ -85,9 +85,22 @@ critical_parts = {
 			lg_attack = -0.7
 			torpedo_attack = -0.7
 		}
-		chance = 0.1
+		chance = 0.15
 		str_damage_multiplier = 50
 		org_damage_multiplier = 50
+	}
+
+	destroyed_fire_control = {
+		icon = "GFX_default_critical_damage_icons"
+		frame = 6
+		modifier = {
+			naval_torpedo_hit_chance_factor = -0.1
+			naval_light_gun_hit_chance_factor = -0.1
+			naval_heavy_gun_hit_chance_factor = -0.1
+		}
+		chance = 0.75
+		org_damage_multiplier = 0.01
+		str_damage_multiplier = 0.01
 	}
 
 	on_fire = {
@@ -97,6 +110,7 @@ critical_parts = {
 			navy_org_factor = -0.5
 			naval_morale_factor = -0.8
 		}
+		chance = 0.75
 		org_damage = 5
 		org_damage_multiplier = 2
 	}
@@ -107,7 +121,7 @@ critical_parts = {
 		modifier = {
 			naval_speed_factor = -0.9
 		}
-		chance = 0.5
+		chance = 0.33
 		org_damage_multiplier = 0.5
 		str_damage_multiplier = 0.5
 	}

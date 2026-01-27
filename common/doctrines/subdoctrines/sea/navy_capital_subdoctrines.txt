@@ -38,28 +38,28 @@ line_of_battle = {
         }
         ordnance_handling_training = {
 			battleship = {
-				hg_attack = 0.1
+				naval_torpedo_damage_reduction_factor = 0.075
 			}
             battle_cruiser = {
-                hg_attack = 0.1
+                naval_torpedo_damage_reduction_factor = 0.075
             }
         }
         blue_water_logistics = { #TODO see if these make sense
             battleship = {
 				naval_heavy_gun_hit_chance_factor = -0.3
-                hg_armor_piercing = 0.1
+                hg_attack = 0.1
 			}
 			battle_cruiser = {
 				naval_heavy_gun_hit_chance_factor = -0.3
-                hg_armor_piercing = 0.1
+                hg_attack = 0.1
 			}
         }
         bulkhead_drills = {
             battleship = {
-				naval_torpedo_damage_reduction_factor = 0.1
+				naval_torpedo_damage_reduction_factor = 0.075
 			}
             battle_cruiser = {
-				naval_torpedo_damage_reduction_factor = 0.1
+				naval_torpedo_damage_reduction_factor = 0.075
 			}
         }
         modernized_line_of_battle={

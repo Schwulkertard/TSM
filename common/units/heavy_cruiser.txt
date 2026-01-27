@@ -14,8 +14,8 @@ sub_units = {
 		}
 		
 		max_organisation = 40
-		max_strength = 0.5
-		armor_value = 0.25
+		max_strength = 0.3
+		armor_value = 0.2
 		torpedo_attack = 0.3
 		
 		supply_consumption = 0.4
