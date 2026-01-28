@@ -56,7 +56,7 @@ sub_units = {
 		}
 
 		forest = {
-			attack   = 0.3
+			attack   = 0.03
 		}
 		jungle = {
 			attack = 0.05
