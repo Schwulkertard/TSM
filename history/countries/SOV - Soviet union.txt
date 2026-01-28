@@ -369,6 +369,7 @@ recruit_character = SOV_konstantin_vershinin
 recruit_character = SOV_sergey_rudenko
 recruit_character = SOV_ivan_yumashev
 recruit_character = SOV_aleksandr_golovanov
+recruit_character = SOV_alexandr_morozov
 recruit_character = SOV_yakov_smushkevich
 recruit_character = SOV_better_konstantin_rokossovsky
 recruit_character = SOV_tsar_iosif_stalin

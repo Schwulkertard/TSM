@@ -215,6 +215,7 @@ recruit_character = GER_alfred_saalwachter
 recruit_character = GER_hermann_boehm
 recruit_character = GER_wilhelm_marschall
 recruit_character = GER_wilhelm_pieck
+recruit_character = GER_ferdinand_porsche
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_wilhelm_ii
 ###scientists

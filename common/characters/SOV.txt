@@ -2089,6 +2089,22 @@ characters = {
 		}
 	}
 
+	SOV_alexandr_morozov = {
+		name = "Alexandr Morozov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/alexander_morozov.dds"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_bright }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+
 	SOV_vsevolod_merkulov = {
 		name = SOV_vsevolod_merkulov
 		portraits = {

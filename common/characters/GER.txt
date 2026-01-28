@@ -1164,6 +1164,24 @@ characters={
 		}		
 	}
 
+	GER_ferdinand_porsche = {
+		name = GER_ferdinand_porsche
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_ferdinand_porsche
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 2
+			}
+
+			
+		}
+	}
+
 	GER_joseph_goebbels={
 		name=GER_joseph_goebbels
 		portraits={

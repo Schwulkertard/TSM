@@ -856,14 +856,13 @@ ideas = {
 		FRA_rebuild_the_military = {
 			picture = generic_infantry_bonus
 			allowed = {
-				original_tag = EFR #should probably be VIC
+				original_tag = FRA #should probably be VIC
 				always = no
 			}
 			allowed_civil_war = {
 				has_government = fascism
 			}
 			available = {
-				num_of_military_factories < 35
 			}
 			removal_cost = -1
 			modifier = {
