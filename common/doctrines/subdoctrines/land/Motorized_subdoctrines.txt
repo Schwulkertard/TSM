@@ -27,7 +27,8 @@ mobile_defense = {
     }
 
     category_mobile_infantry = {
-                entrenchment = 0.2
+                max_organisation = 10
+                default_morale = 0.05
             }
 
         rewards = {
@@ -40,13 +41,11 @@ mobile_defense = {
         }
         advance_under_fire = {
             category_mobile_infantry = {
-                max_organisation = 5
-                default_morale = 0.05
+                entrenchment = 0.2
             }
         }
         attached_support = {
             category_mobile_infantry = {
-                max_organisation = 5
                 defense = 0.05
                 default_morale = 0.05
             }
@@ -94,30 +93,30 @@ armored_cavalry = {
     }
 
     category_vehicle_infantry=  {
-        hardness = 0.05
+        max_organisation = 5
+        default_morale = 0.1
     }
     # EFFECTS
     rewards = {
         cruiser_tanks = {
             category_mobile_infantry = {
                 Breakthrough = 0.1
+                max_organisation = 5
             }
         }
         quick_response_force = {
             category_mobile_infantry = {
-                max_organisation = 5
                 default_morale = 0.05
             }         
         }
         speed_as_armour = {
             category_mobile_infantry = {
                 breakthrough = 0.05
-                default_morale = 0.1
+				hardness = 0.05
             } 
         }
         fighting_reconnaissance = {
             category_mobile_infantry = {
-                max_organisation = 5
                 soft_attack = 0.05
             } 
         }
@@ -161,34 +160,34 @@ mobile_infantry = {
            }
     category_mobile_infantry = {
                 initiative = 0.05
+                max_organisation = 5
+                default_morale = 0.1
             }
     rewards = {
         cavalry_charge = {
             category_mobile_infantry = {
+               max_organisation = 5
                breakthrough = 0.1
             }
         }
         combined_arms_planning = {
             category_mobile_infantry = {
-                max_organisation = 5
+				max_organisation = 5
                 breakthrough = 0.05
             }
         }
         decisive_operations = {
             category_mobile_infantry = {
-                max_organisation = 5
                 default_morale = 0.1
             }
         }
         delegated_authority = {
             category_mobile_infantry = {
-                default_morale = 0.1
                 soft_attack = 0.1
             }
         }
         maneuver_warfare = {
             category_mobile_infantry = {
-                max_organisation = 5
                 defense = 0.1
             }
         }
