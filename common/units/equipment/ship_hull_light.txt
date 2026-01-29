@@ -40,17 +40,15 @@ equipments = {
  				required = yes
  				allowed_module_categories = { light_ship_engine }
  			}
- 			mid_1_custom_slot = {
+ 			rear_1_custom_slot = {
  				required = yes
  				allowed_module_categories = {
  					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
  					ship_anti_air
- 					ship_depth_charge
+ 					ship_light_battery
  				}
  			}
- 			rear_1_custom_slot = mid_1_custom_slot
+ 			mid_1_custom_slot = rear_1_custom_slot
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -119,17 +117,15 @@ equipments = {
  			fixed_ship_radar_slot = inherit
  			fixed_ship_engine_slot = inherit
  			fixed_ship_torpedo_slot = inherit
- 			mid_1_custom_slot = {
+ 			rear_1_custom_slot = {
  				required = yes
  				allowed_module_categories = {
  					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
- 					ship_depth_charge
+ 					ship_anti_air
  					ship_light_battery
  				}
  			}
- 			rear_1_custom_slot = mid_1_custom_slot
+ 			mid_1_custom_slot = rear_1_custom_slot
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -166,35 +162,30 @@ equipments = {
  			fixed_ship_radar_slot = inherit
  			fixed_ship_engine_slot = inherit
  			fixed_ship_torpedo_slot = inherit
- 			front_1_custom_slot = {
+			rear_1_custom_slot = {
  				required = yes
  				allowed_module_categories = {
- 					ship_depth_charge
- 					ship_anti_air
+					ship_anti_air
  					ship_light_battery
  				}
  			}
  			mid_1_custom_slot = {
  				required = yes
  				allowed_module_categories = {
+					ship_anti_air
  					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
- 					ship_depth_charge
  					ship_light_battery
  				}
  			}
- 			rear_1_custom_slot = {
+ 			mid_2_custom_slot = {
  				required = yes
  				allowed_module_categories = {
- 					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
- 					ship_depth_charge
+ 					ship_anti_air
+					ship_torpedo
  					ship_light_battery
  				}
  			}
-			mid_2_custom_slot = {
+			mid_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_special_slot
@@ -230,10 +221,9 @@ equipments = {
  			fixed_ship_radar_slot = inherit
  			fixed_ship_engine_slot = inherit
  			fixed_ship_torpedo_slot = inherit
- 			front_1_custom_slot = {
+			rear_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_depth_charge
  					ship_anti_air
  					ship_light_battery
  				}
@@ -241,25 +231,20 @@ equipments = {
  			mid_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
+					ship_anti_air
  					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
- 					ship_depth_charge
  					ship_light_battery
  				}
  			}
  			mid_2_custom_slot = mid_1_custom_slot
- 			rear_1_custom_slot = {
+ 			mid_3_custom_slot = {
  				required = no
  				allowed_module_categories = {
- 					ship_torpedo
- 					ship_mine_warfare
- 					ship_mine_layer
- 					ship_depth_charge
+ 					ship_anti_air
  					ship_light_battery
  				}
  			}
-			mid_3_custom_slot = {
+			mid_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_special_slot
@@ -306,13 +291,13 @@ equipments = {
  				allowed_module_categories = { light_ship_engine }
 			}
  			front_1_custom_slot = {
- 				required = no
+ 				required = yes
  				allowed_module_categories = {
  					ship_seaplane_tender
  				}
  			}
  			mid_1_custom_slot = {
- 				required = no
+ 				required = yes
  				allowed_module_categories = {
  					ship_anti_air
  					ship_depth_charge
@@ -320,7 +305,7 @@ equipments = {
  			}
  			mid_2_custom_slot = mid_1_custom_slot
  			mid_3_custom_slot = {
- 				required = no
+ 				required = yes
  				allowed_module_categories = {
  					ship_anti_air
  				}

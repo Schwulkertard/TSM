@@ -52,13 +52,13 @@ new_fleet_in_being = {
         {
             #Screens
             destroyer = {
-                lg_attack = 0.1
+                torpedo_attack = 0.1
             }
             light_cruiser = {
-                lg_attack = 0.1
+                torpedo_attack = 0.1
             }
             heavy_cruiser = {
-                lg_attack = 0.1
+                torpedo_attack = 0.1
             }
 
             effect = {
@@ -298,18 +298,15 @@ new_base_strike = {
         {
             #Carriers
             destroyer = {
-                maximum_speed = 0.05
-                torpedo_attack = 0.15
+                lg_attack = 0.1
             }
 
             light_cruiser = {
-                maximum_speed = 0.05
-                torpedo_attack = 0.15
+                lg_attack = 0.1
             }
 
             heavy_cruiser = {
-                maximum_speed = 0.05
-                torpedo_attack = 0.15
+                lg_attack = 0.1
             }
 
             effect = {

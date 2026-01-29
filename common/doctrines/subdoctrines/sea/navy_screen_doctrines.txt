@@ -34,7 +34,7 @@ convoy_escort = {
     rewards = {
 		anti_submarine_sweep_training = {
 			destroyer = {
-				torpedo_attack = 0.33
+				torpedo_attack = 0.17
 				max_organisation = 10
 			}
 		}
@@ -46,13 +46,13 @@ convoy_escort = {
 		}
 		sweeping_duty = {
 			destroyer = {
-				surface_visibility = -0.1
+				surface_visibility = -0.05
 				max_organisation = 10
 			}
 		}
 		creeping_attack = {
 			destroyer = {
-				lg_attack = 0.33
+				lg_attack = 0.17
 				max_organisation = 10
 			}
 		}
@@ -106,21 +106,18 @@ support_integrated_operations = {
 			destroyer = {
 				max_organisation = 30
 				naval_light_gun_hit_chance_factor = 0.15
-				naval_speed = 0.05
 			}
 		}
 		first_line_of_attack = {
 			light_cruiser = {
 				max_organisation = 30
 				naval_light_gun_hit_chance_factor = 0.15
-				naval_speed = 0.05
 			}
 		}
 		blue_water_training = {
 			heavy_cruiser = {
 				max_organisation = 30
 				naval_light_gun_hit_chance_factor = 0.15
-				naval_speed = 0.05
 			}
 		}
 		fleet_coordination = {
@@ -224,32 +221,32 @@ torpedo_primacy = {
     	
     }
     destroyer = {
-    		naval_torpedo_hit_chance_factor = 0.1
+    	naval_torpedo_hit_chance_factor = 0.05
     }
 	light_cruiser = {
-    	naval_torpedo_hit_chance_factor = 0.1
+    	naval_torpedo_hit_chance_factor = 0.05
     }
 	heavy_cruiser = {
-		naval_torpedo_hit_chance_factor = 0.1
+		naval_torpedo_hit_chance_factor = 0.05
 	}
 
     rewards = {
     	modern_broadsides = {
 			destroyer = {
 				max_organisation = 20
-				torpedo_attack = 0.3
+				torpedo_attack = 0.15
 			}
     	}
     	coordinated_fire_patterns = {
 			light_cruiser = {
 				max_organisation = 20
-				torpedo_attack = 0.3
+				torpedo_attack = 0.15
 			}
     	}	
     	dedicated_torpedo_task_forces = {
 			heavy_cruiser = {
 				max_organisation = 20
-				torpedo_attack = 0.3
+				torpedo_attack = 0.15
 			}
     	}
     	improved_escort_role = {

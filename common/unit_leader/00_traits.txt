@@ -1377,7 +1377,15 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT
 		cost = 500
 		modifier = {
-			navy_capital_ship_attack_factor = 0.075
+			navy_capital_ship_attack_factor = 0.025
+		}
+		sub_unit_modifiers = {
+			battleship = {
+				naval_damage_factor = 0.05
+			}
+			battle_cruiser = {
+				naval_damage_factor = 0.05
+			}
 		}
 
 		ai_will_do = {
@@ -1430,7 +1438,7 @@ leader_traits = {
 	torpedo_expert = {
 		type = navy
 		modifier = {
-			naval_torpedo_hit_chance_factor = 0.1
+			naval_torpedo_hit_chance_factor = 0.05
 		}
 
 		ai_will_do = {
@@ -1475,7 +1483,7 @@ leader_traits = {
 		}
 		sub_unit_modifiers = {
 			destroyer = {
-				naval_damage_factor = 0.1
+				naval_damage_factor = 0.05
 				#naval_torpedo_hit_chance_factor = 0.1
 			}
 		}
@@ -1493,10 +1501,10 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			destroyer = {
-				naval_damage_factor = 0.1
+				naval_damage_factor = 0.05
 			}
 			submarine = {
-				naval_damage_factor = 0.1
+				naval_damage_factor = 0.05
 			}
 		}
 
@@ -1576,7 +1584,7 @@ leader_traits = {
 	lone_wolf = {
 		type = navy
 		modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.5
+			positioning = 0.05
 		}
 
 		ai_will_do = {
@@ -1593,7 +1601,7 @@ leader_traits = {
 	concealment_expert = {
 		type = navy
 		modifier = {
-			navy_visibility = -0.1
+			navy_visibility = -0.05
 		}
 
 		ai_will_do = {
@@ -1616,6 +1624,9 @@ leader_traits = {
 			mines_sweeping_by_fleets_factor = 0.25
 			naval_mines_effect_reduction = 0.25
 		}
+		allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 0
@@ -1635,6 +1646,9 @@ leader_traits = {
 		modifier = {
 			mines_planting_by_fleets_factor = 0.25
 		}
+		allowed = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 0
@@ -1653,7 +1667,7 @@ leader_traits = {
 	smoke_screen_expert = {
 		type = navy
 		modifier = {
-			naval_retreat_chance = 0.25
+			naval_retreat_speed = 0.25
 		}
 
 		ai_will_do = {
@@ -1672,7 +1686,15 @@ leader_traits = {
 	big_guns_expert = {
 		type = navy
 		modifier = {
-			navy_capital_ship_attack_factor = 0.075
+			navy_capital_ship_attack_factor = 0.025
+		}
+		sub_unit_modifiers = {
+			battleship = {
+				naval_damage_factor = 0.05
+			}
+			battle_cruiser = {
+				naval_damage_factor = 0.05
+			}
 		}
 
 		ai_will_do = {
@@ -2028,7 +2050,6 @@ leader_traits = {
 
 		modifier = {
 			naval_damage_factor = 0.05
-			naval_speed_factor = 0.1
 		}
 
 		ai_will_do = {
