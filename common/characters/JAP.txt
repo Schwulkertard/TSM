@@ -108,21 +108,6 @@ characters={
 				large="gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = shunroku_hata
-			ledger = army
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				army_commando_3
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 
 		advisor={
 			cost = 150
@@ -221,7 +206,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				army_infantry_2
+				army_infantry_3
 			}
 			cost = 100
 			ai_will_do = {
@@ -1061,7 +1046,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				army_chief_offensive_1
+				army_chief_offensive_2
 			}
 			cost =  50
 			ai_will_do = {

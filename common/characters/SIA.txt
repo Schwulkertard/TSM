@@ -174,21 +174,6 @@ characters={
 		}
 	}
 	SIA_army_commando={
-		advisor={
-			slot = high_command
-			idea_token = SIA_army_commando
-			ledger  = army 
-			allowed  = {
-				original_tag  = SIA
-			}
-			traits  = {
-				army_commando_1 
-			}
-			cost = 100
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 		name="Phraya Preechacholayudha"
 		portraits={
 			army={
