@@ -378,17 +378,7 @@ political_actions = {
 	institute_press_censorship_fascist_state = {
 		icon = generic_political_discourse
 		allowed = {
-			OR = {
-				tag = JAP
-				tag = CZE
-				tag = ROM
-				tag = HUN
-				tag = YUG
-				tag = GER
-				tag = ITA
-				tag = FIN
-				tag = EFR
-			}
+			has_government = fascism
 		}
 		visible = {
 			has_government = fascism
@@ -400,7 +390,7 @@ political_actions = {
 			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
-		days_remove = 120
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 0
@@ -409,15 +399,7 @@ political_actions = {
 	institute_press_censorship_democratic_state = {
 		icon = generic_political_discourse
 		allowed = {
-			OR = {
-				tag = FRA
-				tag = RAJ
-				tag = AST
-				tag = ENG
-				tag = SAF
-				tag = USA
-				tag = CAN
-			}
+			has_government = democratic
 		}
 		visible = {
 			has_government = democratic
@@ -429,7 +411,7 @@ political_actions = {
 			democratic_drift = 0.03
 			neutrality_drift = -0.01
 		}
-		days_remove = 120
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 0
@@ -438,7 +420,7 @@ political_actions = {
 	institute_press_censorship_communist_state = {
 		icon = generic_political_discourse
 		allowed = {
-			tag = SOV
+			has_government = communism
 		}
 		visible = {
 			has_government = communism
@@ -450,7 +432,7 @@ political_actions = {
 			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
-		days_remove = 120
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 0
@@ -459,26 +441,19 @@ political_actions = {
 	institute_press_censorship_neutrality_state = {
 		icon = generic_political_discourse
 		allowed = {
-			OR = {
-				tag = RAJ
-				tag = AST
-				tag = SAF
-				tag = YUG
-				tag = ROM
-				tag = BUL
-			}
+			has_government = neutrality
 		}
 		visible = {
 			has_government = neutrality
 		}
 		modifier = {
-			stability_weekly = 0.005
+			stability_weekly = 0.0035
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = -0.01
 			neutrality_drift = 0.03
 		}
-		days_remove = 360
+		days_remove = 180
 		cost = 50
 		ai_will_do = {
 			factor = 0

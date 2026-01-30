@@ -10,6 +10,9 @@ ideas = {
 				send_volunteer_divisions_required = -1
 				send_volunteers_tension	 = -1
 			}
+			rule = {
+				can_send_volunteers = yes
+			}
 		}
 		ENG_allied_exped_corp2 = {
 			allowed = {
@@ -20,6 +23,9 @@ ideas = {
 			    send_volunteer_size	= 1
 				send_volunteer_divisions_required = -1
 				send_volunteers_tension	 = -1
+			}
+			rule = {
+				can_send_volunteers = yes
 			}
 		}
 		uk_cw_infra = {

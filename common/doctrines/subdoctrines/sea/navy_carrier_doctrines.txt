@@ -33,7 +33,7 @@ carrier_battlegroups = {
 		}
 		personnel_management = {
 			carrier = {
-				max_organisation = 100
+				anti_air_attack = 0.5
 			}
 		}
 		dedicated_record_keeping = {
@@ -41,7 +41,6 @@ carrier_battlegroups = {
 		}
 		floating_fortresses = {
 			carrier = {
-				anti_air_attack = 0.5
                 reliability = 0.25
 			}
 		}
@@ -86,13 +85,13 @@ floating_airfields = {
     rewards = {
        traffic_control_systems = {
 			carrier = {
-                armor_value = 0.5
+                armor_value = 0.25
             }
 	   }
 	   floating_city = {
 			carrier = {
-				max_organisation = 40
-			}
+                armor_value = 0.25
+            }
 	   }
 	   veteran_pilots = {
 			navy_carrier_air_attack_factor = 0.1
@@ -273,9 +272,7 @@ massed_carrier_fleet = {
     		sortie_efficiency = 0.3
     	}
     	efficient_rearming = {
-    		carrier = {
-				max_organisation = 75
-			}
+    		carrier_traffic = 0.15
     	}
     	unceasing_airpower = {
     		carrier_traffic = 0.15

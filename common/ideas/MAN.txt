@@ -7,6 +7,10 @@ ideas = {
 				RAJ = {
 					NOT = {
 						controls_state = 398
+					}
+				}
+				ENG = {
+					NOT = {
 						controls_state = 303
 					}
 				}
@@ -343,7 +347,7 @@ ideas = {
 			picture = warrior_traditions_idea
 			
 			modifier = {
-				conscription_factor = -0.85
+				conscription_factor = -0.75
 			}
 		}
 	

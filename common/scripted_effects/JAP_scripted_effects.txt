@@ -349,13 +349,12 @@ JAP_island_hopping_level_down = {
 update_dockyard_overcap_japan = {
 
     set_variable = { var = dy_over value = num_of_naval_factories }
-    subtract_from_variable = { var = dy_over value = 100 }
+    subtract_from_variable = { var = dy_over value = 80 }
     clamp_variable = { var = dy_over min = 0 max = 100000 }
 
-    set_variable = { var = USA_production_speed_dockyard_factor value = dy_over }
-    divide_variable = { var = USA_production_speed_dockyard_factor value = 50 }
-    multiply_variable = { var = USA_production_speed_dockyard_factor value = -0.99 }
+    set_variable = { var = dockyard_overcap_penalty value = dy_over }
+    multiply_variable = { var = dockyard_overcap_penalty value = -0.02 }
 
-    clamp_variable = { var = USA_production_speed_dockyard_factor min = -0.99 max = 0 }
+	clamp_variable = { var = dockyard_overcap_penalty min = -1.2 max = 0 }
 }
 

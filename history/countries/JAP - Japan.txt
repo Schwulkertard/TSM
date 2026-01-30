@@ -79,7 +79,7 @@ capital = 270
 	JAP_island_hopping8
 }
 add_ideas = JAP_faction_trade
-add_dynamic_modifier = { modifier = USA_two_ocean_navy }
+add_dynamic_modifier = { modifier = JAP_dockyard_cap }
 add_ideas = ENG_allied_exped_corp2
 # ASIA GUI - VARIABLES
 # ALLIES

@@ -68,6 +68,7 @@ autonomous_occupation = {
 
 	visible = {
 		has_government = democratic #? on design
+		always = no
 	}
 
 	state_modifier = {
@@ -131,6 +132,7 @@ secret_police_oversight = {
 	visible = {
 		NOT = { has_government = democratic}
 		NOT = { has_government = communism}
+		always = no
 	}
 }
 martial_law_occupation = {
@@ -168,6 +170,7 @@ martial_law_occupation = {
 	visible = {
 		NOT = { has_government = democratic}
 		NOT = { has_government = communism}
+		always = no
 	}
 }
 martial_law_occupation_democratic = {
@@ -207,7 +210,7 @@ martial_law_occupation_democratic = {
 			has_government = democratic
 			has_government = communism
 		}
-
+		always = no
 	}
 }
 
@@ -217,6 +220,7 @@ forced_labor_occupation = {
 	visible = {
 		NOT = { has_government = democratic}
 		NOT = { has_government = communism}
+		always = no
 	}
 	state_modifier = {
 		resistance_target 					= -0.40
@@ -322,6 +326,7 @@ harsh_quotas_occupation = {
 	visible = {
 		NOT = { has_government = democratic}
 		NOT = { has_government = communism}
+		always = no
 	}
 
 	ai_will_do = {

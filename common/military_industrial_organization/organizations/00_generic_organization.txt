@@ -343,7 +343,7 @@ generic_battle_line_ship_organization = {
 		position = { x=4 y=0 }
 
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.03
 		}
 	}
 
@@ -356,7 +356,7 @@ generic_battle_line_ship_organization = {
 		relative_position_id = generic_mio_trait_anti_air_layout
 
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.03
 		}
 	}
 
@@ -371,7 +371,7 @@ generic_battle_line_ship_organization = {
 		all_parents = { generic_mio_trait_anti_air_layout generic_mio_trait_secondary_battery_layout }
 
 		production_bonus = {
-			production_resource_need_factor = -0.05
+			production_resource_need_factor = -0.03
 		}
 	}
 
@@ -385,8 +385,8 @@ generic_battle_line_ship_organization = {
 
 		any_parent = { generic_mio_trait_gyro_stabilized_mounts }
 
-		equipment_bonus = {
-			lg_attack = 0.05
+		production_bonus = {
+			production_resource_need_factor = -0.03
 		}
 	}
 
@@ -418,7 +418,7 @@ generic_battle_line_ship_organization = {
 
 
 		equipment_bonus = {
-			armor_value = 0.05
+			reliability = 0.01
 		}
 	}
 
@@ -433,7 +433,7 @@ generic_battle_line_ship_organization = {
 		all_parents = { generic_mio_trait_secondary_fire_director_control }
 
 		equipment_bonus = {
-			hg_armor_piercing = 0.1
+			reliability = 0.01
 		}
 	}
 }
@@ -469,7 +469,6 @@ generic_escort_ship_organization = {
 		limit_to_equipment_type = { screen_ship} 
 
 		equipment_bonus = {	
-				naval_range = 0.5 
 				sub_detection = 0.2
 		}
 	
@@ -554,8 +553,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_cruiser_panzerschiff }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
-			hg_attack = 0.05
+			surface_visibility = -0.01
 		}
 	}
 
@@ -572,8 +570,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_heavy }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
-			hg_attack = 0.1
+			surface_visibility = -0.01
 		}
 	}
 
@@ -605,7 +602,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { screen_ship }
 
 		equipment_bonus = {
-			lg_attack = 0.05
+			lg_attack = 0.025
 		}
 	}
 
@@ -622,7 +619,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_light }
 
 		equipment_bonus = {
-			surface_visibility = -0.025
+			surface_visibility = -0.01
 		}
 	}
 
@@ -657,7 +654,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_light }
 
 		equipment_bonus = {
-			surface_visibility = -0.025
+			surface_visibility = -0.01
 		}
 	}
 
@@ -674,7 +671,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { ship_hull_light ship_hull_submarine }
 
 		equipment_bonus = {
-			torpedo_attack = 0.1
+			torpedo_attack = 0.05
 		}
 	}
 

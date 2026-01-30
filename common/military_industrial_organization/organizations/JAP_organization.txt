@@ -211,22 +211,6 @@ JAP_kure_naval_arsenal_organization = {
 	}
 	initial_trait = {
 		limit_to_equipment_type = { capital_ship } 
-		
-		equipment_bonus = {				
-				armor_value = 0.20
-				hg_attack = 0.20
-			}
-	}
-	add_trait = {
-		name = trait1
-		token = trait1
-		position = { x=1 y=0 }
-		limit_to_equipment_type = { screen_ship  } 
-		equipment_bonus = {		
-				torpedo_attack = 0.20
-				sub_detection = -0.25
-		}
-	
 	}
 }
 
@@ -244,7 +228,7 @@ JAP_yokosuka_naval_arsenal_organization = {
 } 
 
 JAP_maizuru_naval_arsenal_organization = {
-	include = generic_escort_ship_organization
+	include = generic_raider_ship_organization
 	icon = GFX_idea_maizuru_naval_arsenal
 	allowed = {	
 		or = {

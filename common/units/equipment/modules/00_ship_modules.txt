@@ -869,14 +869,14 @@ equipment_modules = {
  		category = ship_secondaries
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
- 			lg_attack = 6
+ 			lg_attack = 12
  			build_cost_ic = 300
  		}
  		multiply_stats = {
  			naval_speed = -0.02
  		}
  		add_average_stats = {
- 			lg_armor_piercing = 3
+ 			lg_armor_piercing = 1
  		}
  		can_convert_from = {
  			module_category = ship_secondaries
@@ -897,7 +897,7 @@ equipment_modules = {
  			build_cost_ic = 0.01
  		}
  		add_average_stats = {
- 			lg_armor_piercing = 5
+ 			lg_armor_piercing = 4
  		}
  		can_convert_from = {
  			module_category = ship_secondaries
@@ -918,7 +918,7 @@ equipment_modules = {
  			build_cost_ic = 0.01
  		}
  		add_average_stats = {
- 			lg_armor_piercing = 5
+ 			lg_armor_piercing = 4
  		}
  		can_convert_from = {
  			module_category = ship_secondaries
@@ -939,7 +939,7 @@ equipment_modules = {
  			build_cost_ic = 0.01
  		}
  		add_average_stats = {
- 			lg_armor_piercing = 5
+ 			lg_armor_piercing = 4
  		}
  		can_convert_from = {
  			module_category = ship_secondaries
@@ -964,7 +964,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 5
+			lg_armor_piercing = 4
 		}
 		
 		can_convert_from = {
@@ -1061,7 +1061,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 12
 			anti_air_attack = 5
-			build_cost_ic = 500
+			build_cost_ic = 550
 		}
 
 		multiply_stats = {
@@ -2340,14 +2340,14 @@ equipment_modules = {
  		add_equipment_type = capital_ship
  		add_stats = {
  			carrier_size = 2
- 			build_cost_ic = 1250
+ 			build_cost_ic = 1000
  		}
  		manpower = 500 #outside the add_stats section for code reasons
  		multiply_stats = {
  			naval_speed = -0.05
  		}
  		build_cost_resources = {
- 			steel = 5
+ 			steel = 4
  		}
  		dismantle_cost_ic = 700
  	}

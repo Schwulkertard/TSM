@@ -75,6 +75,7 @@ if = {
 	add_ideas = MAN_opium_plantations
 	add_ideas = MAN_yamato-damashii
 	add_ideas = MAN_no_invasions
+	add_ideas = extensive_conscription
 }
 set_convoys = 100
 add_equipment_to_stockpile = {

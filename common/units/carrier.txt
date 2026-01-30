@@ -12,9 +12,9 @@ sub_units = {
 		
 		supply_consumption = 0.3
 		
-		max_organisation = 40
+		max_organisation = 200
 		
-		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_parts = { broken_propeller on_fire }
 		critical_part_damage_chance_mult = 1
 		
 		hit_profile_mult = 1.0
@@ -34,7 +34,7 @@ sub_units = {
 		
 		max_organisation = 1
 		default_morale = -1
-		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_parts = { broken_propeller on_fire }
 		critical_part_damage_chance_mult = 1
 		
 		hit_profile_mult = 1.0
