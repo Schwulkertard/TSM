@@ -7,6 +7,9 @@ new_strategic_destruction = {
     available = {
         always = yes
     }
+    visible = {
+        always = no
+    }
 
     xp_cost = 0
     xp_type = air
@@ -118,6 +121,9 @@ new_battlefield_support = {
     icon = GFX_doctrine_direct_ground_support_medium
     available = {
         always = yes
+    }
+    visible = {
+        always = no
     }
 
     xp_cost = 0
@@ -236,6 +242,9 @@ new_operational_integrity = {
     icon = GFX_doctrine_operational_destruction_medium
     available = {
         always = yes
+    }
+    visible = {
+        always = no
     }
 
     xp_cost = 0

@@ -2031,8 +2031,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			add_ideas = HUN_hungarian_autarky_idea
+			add_timed_idea = {
+				idea = HUN_hungarian_autarky_idea
+				days = 1000
+			}
 		}
 	}
 

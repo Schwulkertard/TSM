@@ -338,3 +338,4 @@ recruit_character = ITA_italo_balbo
 recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_victor_emmanuel_iii
 recruit_character = ITA_palmiro_togliatti
+recruit_character = ITA_lennardini_leechini

@@ -386,9 +386,6 @@ deep_battle = {
         }
         maskirovka = {
         #3
-            army_intel_to_others = -10.0
-            airforce_intel_to_others = -5.0
-            army_intel_factor = 0.05
             category_army = {
                 default_morale = 0.1
             }

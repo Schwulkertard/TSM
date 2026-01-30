@@ -20,7 +20,7 @@ branch_intelligence = {
 
 		level = {
 			modifier = {
-				civilian_intel_factor = 0.5
+				civilian_intel_factor = 1
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}
@@ -29,7 +29,7 @@ branch_intelligence = {
 
 		level = {
 			modifier = {
-				civilian_intel_factor = 0.5
+				civilian_intel_factor = 1
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}
@@ -38,7 +38,7 @@ branch_intelligence = {
 
 		level = {
 			modifier = {
-				civilian_intel_factor = 0.5
+				civilian_intel_factor = 1
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}
@@ -47,7 +47,7 @@ branch_intelligence = {
 
 		level = {
 			modifier = {
-				civilian_intel_factor = 0.5
+				civilian_intel_factor = 1
 			}
 			complete_effect = {
 				hidden_effect = {activate_mission = spy_agency_upgrade}

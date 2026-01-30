@@ -43,6 +43,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_trucks = 1
+	interwar_antitank = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

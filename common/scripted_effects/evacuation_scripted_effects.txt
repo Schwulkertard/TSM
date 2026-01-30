@@ -68,5 +68,11 @@ fra_weekly_evacuate_industry = {
   if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
     fra_evacuate_one_mil = yes
   }
+  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+    fra_evacuate_one_mil = yes
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+    fra_evacuate_one_mil = yes
+  }
   fra_evacuate_one_civ = yes
 }
