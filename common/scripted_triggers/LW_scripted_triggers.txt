@@ -23,4 +23,17 @@ is_playable_country = {
 		tag = USP
 	}
 }
-
+is_scw_minor_country = {
+	OR = {
+		tag = SIA
+		tag = SAF
+		tag = RAJ
+		tag = AST
+		tag = MAN
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = CAN
+		tag = MEX
+	}
+}

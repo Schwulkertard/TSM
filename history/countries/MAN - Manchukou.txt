@@ -53,6 +53,10 @@ set_technology = {
 	tech_recon = 1
 	armored_car1 = 1
 	tech_trucks = 1
+	basic_light_tank_chassis = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
@@ -85,7 +89,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 6000
+	amount = 3000
 	producer = MAN
 }
 add_equipment_to_stockpile = {

@@ -365,3 +365,103 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = spain.1000
+	title = spain.1000.t
+	desc = spain.1000.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes
+	trigger = {
+		is_scw_minor_country = yes
+	}
+	option = {
+		name = spain.1000.a
+		division_template = {
+			name = "Spanish Volunteers"
+			regiments = {
+				light_armor = { x = 0 y = 0 }
+				light_armor = { x = 0 y = 1 }
+				light_armor = { x = 0 y = 2 }
+				light_armor = { x = 0 y = 3 }
+				light_armor = { x = 1 y = 0 }
+				light_armor = { x = 1 y = 1 }
+				light_armor = { x = 1 y = 2 }
+				light_armor = { x = 1 y = 3 }
+				light_armor = { x = 2 y = 0 }
+				light_armor = { x = 2 y = 1 }
+				light_armor = { x = 2 y = 2 }
+				light_armor = { x = 2 y = 3 }
+				motorized = { x = 3 y = 0 }
+				motorized = { x = 3 y = 1 }
+				motorized = { x = 3 y = 2 }
+				motorized = { x = 3 y = 3 }
+				motorized = { x = 4 y = 0 }
+				motorized = { x = 4 y = 1 }
+				motorized = { x = 4 y = 2 }
+				motorized = { x = 4 y = 3 }
+			}
+					
+			support = {
+				light_tank_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 0 y = 4 }
+			}
+		}
+		random_owned_controlled_state = {
+			for_loop_effect = {
+			end = 1
+				create_unit = {
+					division = "name = \"Spanish Volunteers\" division_template = \"Spanish Volunteers\" start_experience_factor = 0.3"
+					owner = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = spain.1000.b
+		division_template = {
+			name = "Spanish Legion"
+			regiments = {
+				mountaineers = { x = 0 y = 0 }
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 0 y = 2 }
+				artillery_brigade = { x = 0 y = 3 }
+				mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 1 y = 2 }
+				artillery_brigade = { x = 1 y = 3 }
+				mountaineers = { x = 2 y = 0 }
+				mountaineers = { x = 2 y = 1 }
+				mountaineers = { x = 2 y = 2 }
+				artillery_brigade = { x = 2 y = 3 }
+				mountaineers = { x = 3 y = 0 }
+				mountaineers = { x = 3 y = 1 }
+				mountaineers = { x = 3 y = 2 }
+				artillery_brigade = { x = 3 y = 3 }
+				mountaineers = { x = 4 y = 0 }
+				mountaineers = { x = 4 y = 1 }
+				mountaineers = { x = 4 y = 2 }
+				artillery_brigade = { x = 4 y = 3 }
+			}
+					
+			support = {
+				light_tank_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 0 y = 4 }
+			}
+		}
+		random_owned_controlled_state = {
+			for_loop_effect = {
+			end = 2
+				create_unit = {
+					division = "name = \"Spanish Legion\" division_template = \"Spanish Legion\" start_experience_factor = 0.3"
+					owner = ROOT
+				}
+			}
+		}
+	}
+}

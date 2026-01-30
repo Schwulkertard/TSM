@@ -210,31 +210,31 @@ FRA_great_war_veterans = {
 		}
 		complete_effect = {
 				custom_effect_tooltip= "When we complete this decision we will spawn 6 veteran great war mountaineers with modern equipment "
-				hidden_effect = { 
+				hidden_effect = {
 					division_template = {
 					name = "Great War mountaineers"
 					regiments = {
 					mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-	    mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		artillery_brigade = { x = 0 y = 4 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		artillery_brigade = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
-		mountaineers = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		anti_tank_brigade = { x = 2 y = 4 }
-		anti_tank_brigade = { x = 4 y = 0 }
-		anti_air_brigade = { x = 4 y = 0 }
-	}
+					mountaineers = { x = 0 y = 1 }
+	    			mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					artillery_brigade = { x = 0 y = 4 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					artillery_brigade = { x = 1 y = 4 }
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					artillery_brigade = { x = 2 y = 3 }
+					mountaineers = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 2 y = 4 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_air_brigade = { x = 4 y = 0 }
+					}
 					
 					support = {
 						light_tank_recon = { x = 0 y = 0 }
@@ -245,15 +245,16 @@ FRA_great_war_veterans = {
 					}
 					}
 				}
-				16 = {
-					for_loop_effect = {
-						end = 6
-						create_unit = {
-							division = "name = \"Great War mountaineers\" division_template = \"Great War mountaineers\" start_experience_factor = 1"
-							owner = FRA
-						}
-						}}
-						}
+			16 = {
+				for_loop_effect = {
+				end = 6
+					create_unit = {
+						division = "name = \"Great War mountaineers\" division_template = \"Great War mountaineers\" start_experience_factor = 1"
+						owner = FRA
+					}
+				}
+			}
+		}
 	}
 
 }

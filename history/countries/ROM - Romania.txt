@@ -49,6 +49,9 @@ set_technology = {
 	aircraft_construction = 1
 	tech_trucks = 1
 	coastal_defense_ships = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -82,7 +85,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 10000
+	amount = 5000
 	producer = ROM
 }
 add_equipment_to_stockpile = {

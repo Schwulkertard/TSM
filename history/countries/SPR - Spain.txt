@@ -45,6 +45,9 @@ set_technology = {
 	aircraft_construction = 1
 	tech_trucks = 1
 	interwar_antitank = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0

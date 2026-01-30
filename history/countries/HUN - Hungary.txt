@@ -64,6 +64,10 @@ capital = 43
  	interwar_antiair = 1
 	armored_car1 = 1
 	tech_trucks = 1
+	basic_light_tank_chassis = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
  }
  set_convoys = 100
  add_equipment_to_stockpile = {
@@ -72,9 +76,9 @@ capital = 43
 	producer = HUN
 }
  add_equipment_to_stockpile = {
-          type = infantry_equipment_0
-          amount = 6000
-          producer = HUN
+    type = infantry_equipment_0
+    amount = 3000
+    producer = HUN
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1

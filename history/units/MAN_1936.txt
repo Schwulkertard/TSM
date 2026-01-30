@@ -67,15 +67,6 @@ division_template = {
 		artillery_brigade = { x = 3 y = 4 }
 	}
 }
-units = {
-	division= {
-		name = "This is here so you can look at your generals"
-		location =4292
-		division_template = "Bubing Shi"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

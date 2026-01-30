@@ -49,6 +49,10 @@ set_technology = {
 	aircraft_construction = 1
 	tech_trucks = 1
 	coastal_defense_ships = 1
+	engine_tech_1 = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 set_variable = {
 	var = min_fuel
@@ -145,7 +149,7 @@ set_popularities = {
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 2088
+	amount = 1088
 	producer = AST
 }
 add_equipment_to_stockpile = {

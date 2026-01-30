@@ -19,11 +19,6 @@ focus_tree = {
  		available_if_capitulated = yes
  		completion_reward = {
  			hidden_effect = {
-				add_resource = {
-    				type = steel
-    				amount = -10
-    				state = 297
-				}
  				anti_cross_faction_trade_all = yes
  				SPR = {
  					add_opinion_modifier = {
@@ -31,6 +26,12 @@ focus_tree = {
  						modifier = anti_cross_faction_trade
  					}
  				}
+				every_country = {
+					limit = {
+						is_scw_minor_country = yes
+					}
+					country_event = spain.1000
+				}
  			}
  			
  			every_country={

@@ -91,15 +91,6 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-units = {
-	division= {
-		name = "This is here so you can look at your generals"
-		location =8839
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

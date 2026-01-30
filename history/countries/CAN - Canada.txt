@@ -50,6 +50,9 @@ set_technology = {
 	engines_2 = 1
 	aircraft_construction = 1
 	coastal_defense_ships = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 if = {
 	limit = {
@@ -114,7 +117,7 @@ set_popularities = {
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 6000
+	amount = 3000
 	producer = CAN
 }
 add_equipment_to_stockpile = {

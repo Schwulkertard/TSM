@@ -48,6 +48,9 @@ set_technology = {
 	aircraft_construction = 1
 	tech_trucks = 1
 	coastal_defense_ships = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 if = {
 	limit = {
@@ -114,7 +117,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 5000
+	amount = 2500
 	producer = SAF
 }
 add_equipment_to_stockpile = {
