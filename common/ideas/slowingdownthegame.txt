@@ -80,6 +80,20 @@ ideas = {
 				max_dig_in_factor = -0.33
 				experience_gain_army_unit_factor=-0.5
 			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.15
+					instant = yes
+				}
+				support_equipment = {
+					reliability = 0.15
+					instant = yes
+				}
+				artillery_equipment = {
+					reliability = 0.15
+					instant = yes
+				}
+			}
 		}
 	railwaygun_1 = {
 		removal_cost = -1
