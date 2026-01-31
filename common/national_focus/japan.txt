@@ -2294,7 +2294,7 @@ focus_tree = {
  		y = 1
  		prerequisite = { focus = JAP_coal_liquification focus = JAP_non_aggression_pact_with_sov }
  		relative_position_id = JAP_coal_liquification
- 		cost = 8.7
+ 		cost = 0
  		ai_will_do = {
  			factor = 10
  			modifier = {
@@ -2312,141 +2312,18 @@ focus_tree = {
  			}
  		}
  		available = {
- 			date > 1941.4.1
+ 			always = no
  		}
  		bypass = {
- 			OR = {
- 				has_wargoal_against = ENG
- 				has_war_with = ENG
- 			}
+ 			has_war_with = ENG
  		}   
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_ANNEXATION }
 		select_effect = {
-			annex_country = {
-				target = INS
-				transfer_troops = no
-			}
-			AST = {
-				transfer_state = 588
-				transfer_state = 740
-				transfer_state = 656
-			}
 		}
  		completion_reward = {
-		hidden_effect = {
- 			JAP={clear_variable = getting_annexed}
-			RAJ={
-				add_dynamic_modifier = {
-						modifier = RAJ_penalty_visual
-					}	
-				
-				every_owned_state={
-					limit = {is_core_of=RAJ}
-					add_dynamic_modifier = {
-						modifier = RAJ_penalty
-					}			
-				}
-			}
-			every_country={
-				
-				limit={is_playable_country=yes}
-					remove_ideas = speed3_africa
-					remove_ideas = GER_africa_hp
-					add_ideas=speed3
-					set_technology = { africa_hp_off = 1 popup = no }
-					set_technology = {
-							hp_buff_41 = 1
-						popup=no
-					}
-			}
-		303 = {
-			add_dynamic_modifier = {
-				modifier = ENG_singapore
-				days = 120
-			}
-		}
-		550 = {
-				add_dynamic_modifier = {
-					modifier = USP_no_meme
-				}
-			}
-			AST = {
-				every_owned_state= {
-					limit={
-						OR = {is_coastal=yes is_core_of=AST}
-					}
-					 add_dynamic_modifier = {
- 						modifier = Papua_defense
-					}
-				}
-				add_dynamic_modifier = {
- 					modifier = Papua_visual
-				}
- 			}
-			if = {
-				limit = {has_idea = JAP_guide_the_zaibatsus}
-				swap_ideas = {
-					remove_idea = JAP_guide_the_zaibatsus
-					add_idea = JAP_guide_the_zaibatsus2
-				}
-			} 
-			else = {
-				swap_ideas = {
-					remove_idea = JAP_zaibatsus_challenged
-					add_idea = JAP_zaibatsus_challenged2
-				}
-			}
-		}
- 			set_variable={Global.super_event=4}
- 			show_super_event=yes
- 			hidden_effect = {
-				add_dynamic_modifier={modifier=pacific_war}
-				USA={add_dynamic_modifier={modifier=pacific_war}}
-				JAP={
-					add_timed_idea = { idea = JAP_banzai days = 180 }
-				}
-				MAN={
-					add_timed_idea = { idea = JAP_banzai days = 180 }
-				}
-				SIA={
-					add_timed_idea = { idea = JAP_banzai_no_core days = 180 }
-				}
- 				every_country = {limit = {check_variable= { speeches_enabled > 0} OR={is_in_faction_with=GER tag=JAP }}
- 					scoped_sound_effect = "sp_jap_banzai"
- 				}
- 			}
- 			custom_effect_tooltip = tooltip_jap_war
- 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
- 			hidden_effect={
- 				sound_effect = sp_jap_banzai
- 				if={limit={USA={has_war=no}}
- 					ENG={add_to_faction=USA}
- 					GER={declare_war_on = { target = USA type = annex_everything }}
- 				}
- 				USA={declare_war_on_enemy_faction =yes}
- 				USA= {add_to_war = {
- 						targeted_alliance = ENG
- 						enemy = ROOT
- 						}		
-						
-						
-						}
-				SIA={add_to_war = {
- 						targeted_alliance = JAP
- 						enemy = ENG
- 						}}	
-				MAN={add_to_war = {
- 						targeted_alliance = JAP
- 						enemy = ENG
- 						}}						
- 				every_country={
- 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
- 					add_dynamic_modifier={modifier=pacific_war_minor}
- 				}
-			}
  		}
  	}
  	focus = {

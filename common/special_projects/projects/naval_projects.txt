@@ -2481,7 +2481,7 @@ sp_naval_underway_replenishment = {
 	}
 
 	allowed = {
-		#always = no
+		always = no
 	}
 	
 	available = {

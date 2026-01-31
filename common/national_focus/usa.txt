@@ -1251,7 +1251,7 @@ focus = {
         relative_position_id = USA_TAC
         cost = 3
         available = {
-			date > 1941.5.1
+			date > 1942.1.1
         }
         completion_reward = {
             set_technology = {

@@ -1150,14 +1150,15 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			date > 1942.2.1
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			air_experience = 200
-			add_tech_bonus = {
-			technology = fighter3
-			bonus = 1
-			uses = 1
+			set_technology = {
+				advanced_small_airframe = 1
 			}
 		}
 	}
@@ -3109,31 +3110,6 @@ focus = {
 					rear_1_custom_slot = ship_381_battery
 				}
 			}
-			custom_effect_tooltip="Adds two Bismarck Class Battleships to the production queue, at 85% and 90% complete, respectively."
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck Class"
-					}
-					name = "Bismarck"
-					requested_factories = 1
-					progress = 0.9
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck Class"
-					}
-					name = "Tirpitz"
-					requested_factories = 1
-					progress = 0.85
-					amount = 1
-				}
-			}
 		}
 	}
 	focus = {
@@ -3403,31 +3379,6 @@ focus = {
 					mid_3_custom_slot = ship_secondaries_2
 					rear_1_custom_slot = ship_460_battery
 					rear_2_custom_slot = ship_airplane_launcher_2
-				}
-			}
-			custom_effect_tooltip="Adds two H-41 Class Battleships to the production queue, at 75% and 50% complete, respectively."
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "GER"
-						version_name = "H-41 Class"
-					}
-					name = "H-41"
-					requested_factories = 1
-					progress = 0.75
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "GER"
-						version_name = "H-41 Class"
-					}
-					name = "H-44"
-					requested_factories = 1
-					progress = 0.5
-					amount = 1
 				}
 			}
 		}

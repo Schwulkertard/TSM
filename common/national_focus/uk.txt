@@ -854,13 +854,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			date > 1942.5.1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = { bonus = 1
-							uses = 1
-							technology = late_small_airframe
+			set_technology = {
+				advanced_small_airframe = 1
+			}
 		}
-	}}
+	}
 	focus = {
 		id = naval_rearmament_focus
 		mutually_exclusive = { focus = royal_navy_focus}
@@ -1330,7 +1333,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_war_support = 0.05
 			123 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
