@@ -1540,6 +1540,20 @@ leader_traits = {
 		}
 	}
 
+	SOV_stalins_justice = {
+		sprite = 13
+		random = yes
+		stability_weekly = 0.003
+		stability_factor = -0.05
+		consumer_goods_expected_value = -0.01
+
+		industrial_capacity_factory = -0.05
+		industrial_capacity_dockyard = -0.05
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
 	industrial_genius = {
 		sprite = 10
 		production_speed_industrial_complex_factor = 0.15

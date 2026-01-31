@@ -176,6 +176,15 @@ ideas = {
 			}
 
 		}
+		ITA_iron_alliance = {
+			allowed = {
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.02
+			}
+			picture = can_wartime_prices_and_trade_board
+		}
 		ITA_atlantikschlacht = {
 			allowed = {
 				always = no

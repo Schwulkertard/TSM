@@ -401,6 +401,49 @@ ideas = {
 				global_building_slots_factor=0.3
 			}
 		}
+		GER_direct_oversight_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus
+		modifier = {
+				max_planning = 0.05
+				conscription = 0.01
+				planning_speed = 0.25
+				political_power_gain = -0.15
+				
+			}
+			research_bonus = {
+				industry = -0.1
+			}
+		}
+
+		GER_indoctrination_and_militarization = {
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+				support_tech = 0.15
+				artillery = 0.15
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				war_support_weekly = 0.001
+				stability_weekly = 0.001 
+				political_power_gain = -0.15
+			}
+		}
 		GER_align_hungary = {
 			allowed = {
 				always = no

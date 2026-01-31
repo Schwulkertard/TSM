@@ -1120,6 +1120,29 @@ characters={
 		}		
 	}
 
+	GER_konstantin_von_neurath = {
+		name= "Konstantin Von Neurath"
+		portraits={
+			army={
+				small="GFX_idea_joachim_von_ribbentrop"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GER_konstantin_von_neurath
+			cost = 150
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_get_better_advisors 
+			}
+			traits = {
+				SOV_stalins_justice
+			}
+		}		
+	}
+
 	GER_joseph_goebbels={
 		name=GER_joseph_goebbels
 		portraits={
