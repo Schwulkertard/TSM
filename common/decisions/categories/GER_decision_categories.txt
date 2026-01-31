@@ -7,6 +7,7 @@ GER_military_buildup = {
 		original_tag = GER
 	}
 	visible = {
+		has_completed_focus = GER_order_above_all
 	}
 }
 GER_reichswerke_four_year_plan = {

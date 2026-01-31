@@ -875,6 +875,144 @@ operations = {
 	}
 }
 GER_military_buildup = {
+
+	GER_restric_the_flow_of_bonds = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = GER_order_above_all
+		}
+		visible = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 0
+		days_re_enable = 182
+		modifier = {
+			
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_political_power = 150
+			set_variable = { GER_consumer_goods_factor_var = 0.01 }
+			custom_effect_tooltip = GER_Fighter_decision_tt
+	}
+
+}
+ GER_increase_the_flow_of_bonds = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = GER_order_above_all
+		}
+		visible = {
+			
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 0
+		days_re_enable = 182
+		modifier = {
+			
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_political_power = -150
+			set_variable = { GER_consumer_goods_factor_var = -0.01 }
+			custom_effect_tooltip = GER_Bonds_flow_tt
+	}
+
+}
+
+	GER_centralise_aviation_industries = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = GER_Fuhrer_directives
+		}
+		visible = {
+			
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_timed_idea = {
+					idea = GER_fighter_buildup
+					days = 365
+				}
+			set_variable = { GER_consumer_goods_factor_var = 0.01 }
+			custom_effect_tooltip = GER_Fighter_decision_tt
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	GER_12_hour_shifts_in_arms_factories = {
+		icon = generic_plane
+		available = {
+			has_completed_focus = GER_Fuhrer_directives
+		}
+		visible = {
+			
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.5
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_variable = { GER_consumer_goods_factor_var = 0.01 }
+			custom_effect_tooltip = GER_Fighter_decision_tt
+	}
+
+}
 }
 special_projects = {
 	GER_exploit_occupied_territories = {
