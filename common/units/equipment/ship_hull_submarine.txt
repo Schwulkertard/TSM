@@ -2,7 +2,7 @@ equipments = {
  	ship_hull_submarine = {
  		year = 1922
  		is_archetype = yes 
-		naval_dominance_factor = 5
+		naval_dominance_factor = 1
 		naval_weather_penalty_factor = 1
  		is_buildable = no
  		type = submarine
@@ -63,7 +63,7 @@ equipments = {
  			#oil = 10
  			steel = 10
  		}
- 		manpower = 0
+ 		manpower = 1
  	}
  	ship_hull_submarine_1 = {
  		year = 1922
@@ -99,7 +99,7 @@ equipments = {
  		reliability = 0.70
  		max_strength = 30
  		build_cost_ic = 250
-		naval_dominance_factor = 7
+		naval_dominance_factor = 1
  		resources = {
  			#oil = 10
  			steel = 20
@@ -144,7 +144,7 @@ equipments = {
  		naval_range = 5000
  		max_strength = 45
  		build_cost_ic = 400
-		naval_dominance_factor = 9
+		naval_dominance_factor = 1
  		resources = {
  			steel = 30
  		}
@@ -187,7 +187,7 @@ equipments = {
  		naval_range = 6000
  		max_strength = 52.5
  		build_cost_ic = 450
-		naval_dominance_factor = 11
+		naval_dominance_factor = 1
  		resources = {
  			steel = 30
  		}

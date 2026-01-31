@@ -108,7 +108,7 @@ equipments = {
  		resources = {
  			steel = 5
  		}
- 		manpower = 4000
+ 		manpower = 2500
  	}
  	###Special snowflake hull
  	ship_hull_pre_dreadnought = {
@@ -315,7 +315,7 @@ equipments = {
  			steel = 10
  		}
 		naval_dominance_factor = 325
- 		manpower = 5200
+ 		manpower = 2600
  	}
  	ship_hull_heavy_3 = {
  		year = 1940
@@ -387,7 +387,7 @@ equipments = {
  			
  		}
 		naval_dominance_factor = 350
- 		manpower = 6000
+ 		manpower = 2700
  	}
  	ship_hull_heavy_4 = {
  		year = 1941
@@ -457,7 +457,7 @@ equipments = {
  			
  		}
 		naval_dominance_factor = 375
- 		manpower = 6000
+ 		manpower = 2800
  	}
 	ship_hull_heavy_modern = {
 		abbreviation = "hcf"

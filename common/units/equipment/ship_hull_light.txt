@@ -94,7 +94,7 @@ equipments = {
  		resources = {
  			steel = 20
  		}
- 		manpower = 100
+ 		manpower = 275
  	}
  	ship_hull_light_1 = {
  		year = 1922
@@ -147,7 +147,7 @@ equipments = {
  		resources = {
  			steel = 20
  		}
- 		manpower = 125
+ 		manpower = 300
  	}
  	ship_hull_light_3 = {
  		year = 1940
@@ -206,7 +206,7 @@ equipments = {
  		max_strength = 45
  		build_cost_ic = 950
 		naval_dominance_factor = 60
- 		manpower = 175
+ 		manpower = 325
  	}
  	ship_hull_light_4 = {
  		year = 1941
@@ -261,7 +261,7 @@ equipments = {
  			steel = 40
  		}
 		naval_dominance_factor = 80
- 		manpower = 200
+ 		manpower = 350
  	}
 	ship_hull_cruiser_coastal_defense_ship = {
  		year = 1929
@@ -352,7 +352,7 @@ equipments = {
  			#oil = 10
  			steel = 20
  		}
- 		manpower = 250
+ 		manpower = 200
  	}
  	destroyer_2 = {
  		year = 1936

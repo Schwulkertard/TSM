@@ -1123,32 +1123,46 @@ focus = {
 			add_state_core = 159
 		}
 	}
-focus = {
-		id = ITA_sword_of_islam
-		icon = GFX_focus_IRQ_rally_the_arab_world
+	focus = {
+		id = ITA_egypt
+		icon = GFX_focus_IRQ_reach_out_to_jordan
 		prerequisite = { focus = ITA_romania_friend }
-		cost = 5
 		available = {
-			Date > 1942.1.1
-			has_full_control_of_state = 582
-			has_full_control_of_state = 414
-			has_full_control_of_state = 415
-			has_full_control_of_state = 413
-			has_full_control_of_state = 581
+			ITA ={  controls_state=412 }
 		}
+		bypass = {
+		date > 1941.6.1
+		}
+		relative_position_id = ITA_romania_friend
 		x = -2
 		y = 1
-		relative_position_id = ITA_romania_friend
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_state_core = 582
-			add_state_core = 414
-			add_state_core = 415
-			add_state_core = 413
-			add_state_core = 581
-		}
+			add_manpower = 100000
+			add_stability = 0.1
+			add_war_support = 0.1
+			412 = {
+				if = {
+					limit = {
+						is_controlled_by_ROOT_or_ally = yes
+						infrastructure < 5
+					}
+					set_building_level = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+	    }
 	}
 	focus = {
 		id = ITA_alpini
@@ -1897,6 +1911,29 @@ focus = {
 		}
 	}	
 	focus = {
+		id = ITA_sword_of_islam
+		icon = GFX_focus_IRQ_rally_the_arab_world
+		prerequisite = { focus = ITA_rommel }
+		cost = 5
+		available = {
+			Date > 1942.1.1
+			has_full_control_of_state = 582
+			has_full_control_of_state = 414
+			has_full_control_of_state = 415
+			has_full_control_of_state = 413
+			has_full_control_of_state = 581
+		}
+		x = -2
+		y = 1
+		relative_position_id = ITA_rommel
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_manpower = 200000
+		}
+	}
+	focus = {
 		id = ITA_desert_fox
 		icon = GFX_gazala
 		prerequisite = { focus = ITA_rommel }
@@ -1908,47 +1945,6 @@ focus = {
 		add_timed_idea = { idea = desert_fox  days = 90 }
 		}
     }	
-    focus = {
-		id = ITA_egypt
-		icon = GFX_focus_IRQ_reach_out_to_jordan
-		prerequisite = { focus = ITA_rommel}
-		available = {
-			ITA ={  controls_state=412 }
-		}
-		bypass = {
-		date > 1941.6.1
-		}
-		relative_position_id = ITA_rommel
-		x = -2
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_manpower = 100000
-			add_stability = 0.1
-			add_war_support = 0.1
-			412 = {
-				if = {
-					limit = {
-						is_controlled_by_ROOT_or_ally = yes
-						infrastructure < 5
-					}
-					set_building_level = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-			}
-	    }
-	}
 	focus = {
 		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
