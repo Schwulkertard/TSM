@@ -1016,6 +1016,7 @@ ideas = {
 					original_TAG = ENG
 					original_TAG = SAF
 					original_TAG = MEX
+					original_TAG = CAN
 				}
 			}
 			research_bonus = {
