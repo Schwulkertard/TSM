@@ -34,7 +34,6 @@ sub_units = {
 		weight = 0.5
 		initiative = 0.005
 		supply_consumption = 0.05
-		
 		forest = {
 			attack = -0.1
 			movement = -0.1

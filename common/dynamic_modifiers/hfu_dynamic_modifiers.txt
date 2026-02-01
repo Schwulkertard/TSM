@@ -65,7 +65,7 @@ Africa_status_allies = {
 }
 Africa_status_axis = {
 		icon="GFX_idea_stiff_upper_lip"
-	consumer_goods_expected_value=ITA.africa_status
+	consumer_goods_factor=ITA.africa_status
 }
 Stockpile = {
 

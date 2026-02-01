@@ -1661,23 +1661,29 @@ focus = {
 		relative_position_id = USA_american_dream
 		cost = 3
 		completion_reward = {
-			if = { limit = { has_tech = heavy_fighter2}
-				add_equipment_to_stockpile = {
-				type = medium_plane_airframe_2
+			custom_effect_tooltip=USA_office_of_strategic_services_tt
+ 			if = { limit = { has_tech = improved_medium_airframe}
+ 				add_equipment_to_stockpile = {
+ 				type = medium_plane_airframe_2
+ 				amount = 800
+ 				producer = USA
+ 				}
+			 add_equipment_to_stockpile = {
+				type = small_plane_airframe_2
 				amount = 800
 				producer = USA
 			}}
-			else = {add_equipment_to_stockpile = {
-				type = small_plane_airframe_2
-				amount = 1000
-				producer = USA
-			}}
-			add_equipment_to_stockpile = {
-				type = small_plane_cas_airframe_2
-				amount = 500
-				producer = USA
-			}
-		}
+ 			else = {add_equipment_to_stockpile = {
+ 				type = small_plane_airframe_2
+ 				amount = 1500
+ 				producer = USA
+ 			}}
+ 			add_equipment_to_stockpile = {
+ 				type = small_plane_cas_airframe_2
+ 				amount = 500
+ 				producer = USA
+ 			}
+ 		}
 	}
 	focus = {
 		id = USA_magic

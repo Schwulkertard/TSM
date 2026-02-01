@@ -29,7 +29,7 @@ sub_units = {
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
-
+		fuel_consumption = 1
 		#Misc Abilities
 		weight = 0.1
 		can_be_parachuted = yes

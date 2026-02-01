@@ -57,6 +57,19 @@ ideas = {
 			}
 		}
 	country = {
+		JAP_cuck = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				mic_to_overlord_factor = 0.35
+			}
+		}
 		JAP_riches_of_china = {
 			name = "Riches of China"
 			allowed = {

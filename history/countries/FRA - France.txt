@@ -285,7 +285,7 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
 	variant_name = "M S.410"
-	amount = 1000
+	amount = 500
 	producer = FRA
 }
 add_equipment_to_stockpile = {

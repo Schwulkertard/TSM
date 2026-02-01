@@ -301,7 +301,7 @@ technologies = {
 		}
 		allow={date>1941.1.1}
 		research_cost = 2
-		start_year = 1942
+		start_year = 1944
 		categories = {
 			year_1942
 		}
@@ -623,7 +623,7 @@ technologies = {
 		}
 		allow={date>1941.1.1}
 		research_cost = 2
-		start_year = 1942
+		start_year = 1944
 		categories = {
 			year_1942
 		}
@@ -891,7 +891,7 @@ technologies = {
 		}
 		allow={date>1941.1.1}
 		research_cost = 3
-		start_year = 1942
+		start_year = 1944
 		categories = {
 			year_1942
 		}

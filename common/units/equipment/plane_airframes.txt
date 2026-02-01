@@ -1675,6 +1675,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					strat_weapon
+					nav_bomber_weapon
 				}
 			}
 
@@ -1682,6 +1683,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					strat_weapon
+					nav_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1983,6 +1985,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					strat_weapon
+					nav_bomber_weapon
 				}
 			}
 
@@ -1990,7 +1993,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					strat_weapon
-										
+					nav_bomber_weapon	
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -2092,14 +2095,15 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					strat_weapon
+					nav_bomber_weapon
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					
-					strat_weapon					
+					strat_weapon	
+					nav_bomber_weapon				
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 

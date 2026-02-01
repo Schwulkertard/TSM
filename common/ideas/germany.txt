@@ -291,6 +291,7 @@ ideas = {
 				air_cas_present_factor = 0.1
 				send_volunteer_size	= 3
 				send_volunteer_divisions_required = -1
+				special_forces_min=128
 			}
 		}
 		GER_air_innovations_2_idea = {
