@@ -4373,3 +4373,7 @@
   RAJ_modify_agrarian_society_tt:0 "Modify §Y$idea_RAJ_agrarian_society$§! by:"
   SAF_dominion:0 "Dominion of South Africa"
   SAF_nationalist:0 "Union of South Africa"
+  spain.1000.t:0 "The Upcoming Civil War"
+  spain.1000.d:0 "We must select what volunteers to give in the Spanish Civil War."
+  spain.1000.a:0 "1 Light Tank Division"
+  spain.1000.b:0 "2 Mountaineer Divisions"
