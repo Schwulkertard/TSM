@@ -55,7 +55,6 @@ buildings = {
 		base_cost = 7200
 		base_cost_conversion = 4400
 		military_production = 1
-		disabled_in_dmz = yes
 		icon_frame = 2
 		level_cap = {
 			shares_slots = yes
