@@ -411,7 +411,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_military_training1
+			add_tech_bonus = {
+				name = radar_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 	focus = {
@@ -447,7 +452,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_support_guns1
+			add_ideas = ROM_armored_support
 		}
 	}
 	focus = {
@@ -1068,7 +1073,8 @@ focus_tree = {
 		relative_position_id = SPA_expand_the_special_forces
 		cost = 10
 		available_if_capitulated = yes
-		completion_reward = {
+		completion_reward = { 
+		add_ideas =  special_forces 
 		}
 	}
 	focus = {

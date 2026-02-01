@@ -3161,7 +3161,9 @@
 
  ROM_lessons_of_war:0 "Lessons Of War"
 
- ROM_armored_infantry_support:0 "Armored Infantry Support"
+ ROM_armored_support:0 "Armored Infantry Support"
+
+ ROM_french_drill:0 "French Drill"
 
  ROM_engineer_corps:0 "Engineer Corps"
 
@@ -4238,6 +4240,70 @@
  GER_Support_Romania:0 "Strengthen German-Romanian Cooperation"
 
  GER_steiner:0 "Steiners Counter-Attack"
+
+ spr_army_effort:0 "Army Effort"
+
+ spr_equipment_effort:0 "Equipment Effort"
+
+ spr_motorization_effort:0 "Motorization Effort"
+
+ spr_mechanization_effort:0 "Mechanisation Effort"
+
+ spr_doctrine_effort:0 "Doctrine effort"
+
+ spr_equipment_effort_2:0 "Artillery Effort"
+
+ spr_equipment_effort_3:0 "Better Equipment"
+
+ spr_mechanization:0 "Mech Effort"
+
+ spr_armor_effort:0 "Armor Effort"
+
+ spr_industrial_effort:0 "Industrial Effort"
+
+ spr_construction_effort:0 "More Civies"
+
+ spr_construction_effort_2:0 "More Civies 2"
+
+ spr_construction_effort_3:0 "More Civies 3"
+
+ spr_production_effort:0 "More Milies"
+
+ spr_production_effort_2:0 "More Milies 2"
+
+ spr_production_effort_3:0 "More Milies 3"
+
+ spr_extra_tech_slot:0 "More Scientists"
+
+ spr_extra_tech_slot_2:0 "More Techies"
+
+ spr_secret_weapons:0 "Get Nukes Instantly"
+
+ spr_political_effort:0 "Political Effort"
+
+ spr_political_correctness:0 "Political Correctness"
+
+ spr_indoctrination_focus:0 "Indoctrination"
+
+ spr_ideological_fanaticism:0 "Ideological Fanaticism"
+
+ spr_doctrine_effort_2:0 "Doctrine improvments"
+
+ spr_special_forces:0 "Special Forces"
+
+ SPA_military_training:0 "Radio Improvments"
+
+ SPA_support_tech:0 "Support Tech"
+
+ SPA_support_guns:0 "Tank Destroyer Corps"
+
+ SPA_CDC:0 "Panther Development"
+
+ SPA_anti_tank:0 "The Pak 40"
+
+ SPA_elite_forces:0 "Expand the Spanish Elite"
+
+
 
  SOV_lessons_of_poland:0 "Lessons of Poland" 
 
