@@ -1003,7 +1003,7 @@ ideas = {
 			available  = {
 			}
 
-			traits = { industrial_genius }
+			traits = { captain_of_industry }
 		}
 	}
 }

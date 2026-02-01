@@ -1445,7 +1445,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				quartermaster_general
+				industrial_genius
 			}
 		}		
 	}
