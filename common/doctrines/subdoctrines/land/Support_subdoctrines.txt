@@ -334,7 +334,6 @@ field_engineering = {
                 breakthrough = 0.5
             }
             maintenance_company = {
-                supply_consumption = -0.01
                 battalion_mult = {
                     category = category_tanks
                     reliability = 0.05

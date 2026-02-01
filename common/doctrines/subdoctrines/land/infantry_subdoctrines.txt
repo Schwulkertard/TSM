@@ -127,7 +127,7 @@ large_unit_tactics = {
         motorization_initiative = {
         #5
             category_light_infantry = {
-                supply_consumption = -0.1
+                breakthrough = 0.05
             }
         }
 
@@ -164,7 +164,6 @@ assault_infantry = {
 
     #OTHER BASE REWARDS
     category_light_infantry = {
-            supply_consumption = -0.05
             max_organisation = 5
             default_morale = 0.05
             }
@@ -247,7 +246,6 @@ commandos = {
     rewards = {
         isolated_combat_elements = { 
             category_light_infantry = {
-                supply_consumption = -0.1
                 reliability = 0.05
             } 
         }
