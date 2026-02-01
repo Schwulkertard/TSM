@@ -950,9 +950,9 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor	
-		show_ideas_tooltip = kurt_schmitt
+		show_ideas_tooltip = martin_bormann
 		custom_effect_tooltip = available_political_advisor	
-		show_ideas_tooltip = kurt_schmitt
+		show_ideas_tooltip = wilhelm_keitel
 		}
 	}
 

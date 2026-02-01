@@ -1578,7 +1578,7 @@ leader_traits = {
 	voice_of_the_people = {
 		sprite = 13
 		stability_factor = 0.05
-		political_power_gain = 0.3
+		political_power_gain = 0.1
 	}
 
 	captain_of_industry = {

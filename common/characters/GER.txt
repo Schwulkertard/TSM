@@ -895,9 +895,12 @@ characters={
 			}
 			available = {
 				has_government = fascism
+				has_completed_focus = GER_right_hand_man
 			}
 			traits = {
-				army_chief_defensive_2
+				army_chief_defensive_1
+				voice_of_the_people
+
 			}
 			cost = 100
 			ai_will_do = {
@@ -1107,7 +1110,7 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = kurt_schmitt
-			cost = 75.000
+			cost = 150
 			allowed = {
 				original_tag = GER
 			}
@@ -1196,7 +1199,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 50
+			cost = 150
 			slot = political_advisor
 			idea_token = rudolf_hess
 			allowed = {
@@ -1254,7 +1257,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 75
+			cost = 150
 			slot = political_advisor
 			idea_token = martin_bormann
 			allowed = {
@@ -1262,15 +1265,14 @@ characters={
 			}
 			available = {
 				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
+					has_completed_focus = GER_right_hand_man 
 				}
 			}
 			ai_will_do = {
 				factor = 30.000
 			}
 			traits = {
-				political_genius 
+				war_profiteer
 			}
 		}		
 	}
@@ -1283,7 +1285,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 75
+			cost = 150
 			slot = political_advisor
 			idea_token = joachim_von_ribbentrop
 			allowed = {
