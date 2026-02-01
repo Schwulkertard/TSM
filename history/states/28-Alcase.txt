@@ -8,6 +8,9 @@ state={
  	}
  	history={
 		set_state_flag = mainland_france_state
+		add_dynamic_modifier = {
+			modifier = FRA_maginot_line_dynamic_modifier
+		}
  		owner = FRA
  		victory_points = {641 5 }
  		victory_points = {8727 5 }
