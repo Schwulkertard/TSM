@@ -894,13 +894,13 @@ mass_assault = {
 		anti_tank_brigade={
             max_strength = -1.2
 			need = {
-				anti_tank_equipment  = -2
+				anti_tank_equipment  = -4
 			}
 		}
 		anti_air_brigade={
             max_strength = -0.45
 			need = {
-				anti_air_equipment = -2
+				anti_air_equipment = -4
 			}
 		}
     effect = {
