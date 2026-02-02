@@ -214,52 +214,11 @@ characters = {
 			}
 			visible = {
 				#NOT VISIBLE AFTER NEW TANK CORP IF YOU WENT POSITIVE
-				NOT = {
-					AND = {
-						has_completed_focus = SOV_positive_heroism
-						has_completed_focus = SOV_barb_2
-					}
-				}
 				NOT = { has_character_flag = SOV_exiled_flag }
 			}
 			available = {
-				OR = {
-				has_completed_focus = SOV_positive_heroism
-				has_completed_focus = SOV_barb_2	
-			}
-		}
-			traits = {
-				army_armored_2
-			}
-				cost = 150
-		}		
-	}
-
-	SOV_better_konstantin_rokossovsky = {
-		name = SOV_konstantin_rokossovsky
-
-		portraits = {
-			army = {
-				small = "GFX_idea_konstantin_rokossovsky"
-				large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = konstantin_rokossovsky
-			ledger = army
-			allowed = {
-			}
-			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-			}
-			available = {
-				#AVAILABLE WHEN YOU DO NEW TANK CORP IF YOU WENT POSITIVE
-				AND = {
 				has_completed_focus = SOV_positive_heroism
 				has_completed_focus = SOV_barb_2
-				}
 			}
 			traits = {
 				army_armored_3
@@ -482,7 +441,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = theorist
+			slot = high_command
 			idea_token = mikhail_tukhachevsky
 			ledger = army
 			allowed = {
@@ -495,9 +454,13 @@ characters = {
 					}
 					NOT = { has_character_flag = SOV_exiled_flag }
 				}
+				OR = {
+					has_completed_focus = SOV_positive_heroism
+					has_completed_focus = SOV_barb_2
+				}
 			}
 			traits = {
-				military_theorist
+				army_armored_2
 			}
 		}
 

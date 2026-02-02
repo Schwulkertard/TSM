@@ -580,9 +580,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer war_hero }
-			skill=3
-			attack_skill=1
+			traits={ career_officer war_hero urban_assault_specialist }
+			skill=5
+			attack_skill=4
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
@@ -618,8 +618,8 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer }
-			skill=4
+			traits={ infantry_leader trait_mountaineer }
+			skill=5
 			attack_skill=4
 			defense_skill=2
 			planning_skill=3

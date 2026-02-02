@@ -1567,8 +1567,8 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = konstantin_rokossovsky
+			custom_effect_tooltip = available_chief_of_army
+            show_ideas_tooltip = mikhail_tukhachevsky
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
 			add_ideas = SOV_positive_heroism1
@@ -2053,20 +2053,17 @@ focus = {
 		cost = 8
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip= "If you have completed Positive Heroism, Rokossovsky advisor gets upgraded to 15% stats instead"
-            if = {
+        if = {
             limit = {has_completed_focus = SOV_positive_heroism}
-
-			#EXILE THE WORSE VERSION IF POSITIVE HEROISM
-            SOV_konstantin_rokossovsky = { set_character_flag = SOV_exiled_flag }
-
-			#CLEAR THE EXILED FLAG FROM THE BETTER ROKOSSOVSKY
-			SOV_better_konstantin_rokossovsky = { clr_character_flag = SOV_exiled_flag }
-
+				custom_effect_tooltip = available_chief_of_army
+            	show_ideas_tooltip = konstantin_rokossovsky
+				retire_character = SOV_mikhail_tukhachevsky
+				activate_advisor = konstantin_rokossovsky
             else = {
-            custom_effect_tooltip = available_chief_of_army
-            show_ideas_tooltip = konstantin_rokossovsky
-            add_political_power = 150}
+            	custom_effect_tooltip = available_chief_of_army
+           		show_ideas_tooltip = mikhail_tukhachevsky
+				activate_advisor = mikhail_tukhachevsky
+			}
 		}
 	}
 }
