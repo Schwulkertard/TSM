@@ -92,7 +92,7 @@ country_event = {
 				}
 			}
 		}
-		FRA_vincent_auriol = { set_character_flag = SOV_exiled_flag }
+		retire_character = FRA_vincent_auriol 
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 100
