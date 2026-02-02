@@ -112,22 +112,22 @@ if = {
 set_convoys = 300
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 6000
+	amount = 7000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 1500
+	amount = 2000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 1500
+	amount = 2000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 70000
+	amount = 80000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
@@ -137,12 +137,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 2500
+	amount = 3000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1
-	amount = 100
+	amount = 150
 	producer = FRA
 }
 set_politics = {
@@ -290,19 +290,19 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
     type = light_tank_chassis_2
-    amount = 700
+    amount = 2000
     producer = FRA
     variant_name = "FCM 36"
 }
 add_equipment_to_stockpile = {
     type = light_tank_aa_chassis_2
-    amount = 150
+    amount = 300
     producer = FRA
     variant_name = "Light Tank SPAA"
 }
 add_equipment_to_stockpile = {
     type = light_tank_destroyer_chassis_2
-    amount = 150
+    amount = 300
     producer = FRA
     variant_name = "Light Tank Destroyer"
 }

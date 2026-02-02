@@ -2053,6 +2053,7 @@ focus = {
 		cost = 8
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip= "If you have completed Positive Heroism, Rokossovsky advisor gets upgraded to 15% stats instead"
             if = {
             limit = {has_completed_focus = SOV_positive_heroism}
 

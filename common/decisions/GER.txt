@@ -248,7 +248,7 @@ operations = {
 					}
 				}
 			}
-			785 = {
+			699 = {
 				if = {
 					limit= {anti_air_building >0 anti_air_building <5 }
 					add_building_construction = {
@@ -606,6 +606,17 @@ operations = {
 				FRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				every_state = {
+			limit = {
+				is_core_of = FRA
+			}
+			add_province_modifier = {
+				static_modifiers = { FRA_minibarb }
+				province = {
+					all_provinces = yes
+				}
+			}
+		}	
 			}
 		}
 	}

@@ -1255,7 +1255,7 @@ focus = {
 				35= {NOT={is_controlled_by_ROOT_or_ally=yes}}
 				6= {NOT={is_controlled_by_ROOT_or_ally=yes}}
 				29= {NOT={is_controlled_by_ROOT_or_ally=yes}}
-				785= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				699= {NOT={is_controlled_by_ROOT_or_ally=yes}}
 				15= {NOT={is_controlled_by_ROOT_or_ally=yes}}
 				14= {NOT={is_controlled_by_ROOT_or_ally=yes}}
 				30= {NOT={is_controlled_by_ROOT_or_ally=yes}}
@@ -1710,8 +1710,7 @@ focus = {
 				35= {is_controlled_by_ROOT_or_ally=no}
 				36= {is_controlled_by_ROOT_or_ally=no}
 				7= {is_controlled_by_ROOT_or_ally=no}
-				785= {is_controlled_by_ROOT_or_ally=no}
-				806= {is_controlled_by_ROOT_or_ally=no}
+				699= {is_controlled_by_ROOT_or_ally=no}
 				46= {is_controlled_by_ROOT_or_ally=no}
 				2= {is_controlled_by_ROOT_or_ally=no}
 				10= {is_controlled_by_ROOT_or_ally=no}
@@ -2679,6 +2678,9 @@ focus = {
 			}
 			LUX = {
 				country_event = { id = wtt_germany.64 }
+			}
+			every_unit_leader = {
+				add_attack=1
 			}
 			custom_effect_tooltip = "Every axis controlled state in europe will gain 40% compliance"
 			every_country = {

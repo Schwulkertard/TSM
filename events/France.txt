@@ -81,6 +81,18 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = france.14.a
+		every_state = {
+			limit = {
+				is_core_of = FRA
+			}
+			remove_province_modifier = {
+				static_modifiers = { FRA_minibarb }
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		FRA_vincent_auriol = { set_character_flag = SOV_exiled_flag }
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 100
@@ -202,6 +214,12 @@ country_event = {
 				popup = no
 			}
 			remove_ideas = FRA_protected_by_the_maginot_line
+			remove_ideas = FRA_Metropolitan_industry	
+			remove_ideas = FRA_market_dynamism 
+			remove_ideas = FRA_rearmament_plan
+			remove_ideas = FRA_mechanisation_effort
+			remove_ideas = FRA_entrepeneurship
+			remove_ideas = FRA_firepower
 			set_country_flag = free_france
 			set_capital = { state = 466 }
 			country_event = france.20

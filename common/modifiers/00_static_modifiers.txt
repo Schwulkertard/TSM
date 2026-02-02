@@ -132,6 +132,10 @@ unplanned_offensive = { # on Province
 	local_org_regain = -0.5
 }
 
+FRA_minibarb = { 
+	army_speed_factor = -0.25
+}
+
 soviet_hero_city = { # on Province
 	local_org_regain = 1
 	dig_in_speed_factor = 0.2
