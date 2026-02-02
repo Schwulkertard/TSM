@@ -3,7 +3,6 @@ add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = ENG_allied_exped_corp2
 add_ideas = neutrality_idea 
-add_ideas = trade_with_allies
 set_variable = {
 	var = min_fuel
 	value = 0.800

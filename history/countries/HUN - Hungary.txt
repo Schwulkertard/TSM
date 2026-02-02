@@ -119,6 +119,5 @@ IF = {
 		HUN_gombos_trade_treaty
 		HUN_hungarian_national_defense_association
 		HUN_levente_associations
-		trade_with_axis
 	}
 }

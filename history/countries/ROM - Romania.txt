@@ -113,7 +113,6 @@ set_popularities = {
 }
 add_ideas = {
 	civilian_economy
-	trade_with_axis
 }
 add_ideas = ENG_allied_exped_corp2
 recruit_character = ROM_gheorghe_tatarescu

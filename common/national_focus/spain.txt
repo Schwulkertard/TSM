@@ -483,9 +483,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 720 }
-			GER={add_relation_modifier = { target = SPR modifier = Stahlpakt}
-			}
-			add_relation_modifier = { target = GER modifier = Stahlpakt}
 		}
 	}
 	focus = {
@@ -674,19 +671,19 @@ focus_tree = {
 			162 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 			169 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 			41 = {
 				add_resource = {
 					type = aluminium
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -879,13 +876,13 @@ focus_tree = {
 			41 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 			41 = {
 				add_resource = {
 					type = aluminium
-					amount = 10
+					amount = 100
 				}
 			}
 		}
