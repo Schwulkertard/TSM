@@ -728,7 +728,6 @@ ideas = {
 				army_armor_attack_factor = 0.1
 				motorized_attack_factor = 0.05
 				motorized_defence_factor = 0.05
-				army_speed_factor = 0.05
 			}
 		}
 
@@ -1198,7 +1197,6 @@ ideas = {
 			picture = HUN_heirs_of_the_huns
 
 			modifier = {
-				army_speed_factor = 0.05
 				supply_consumption_factor = -0.05
 			}
 		}

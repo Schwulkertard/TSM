@@ -31,7 +31,7 @@ new_mobile_warfare = {
 
     # EFFECTS
     
-	army_speed_factor = 0.1
+	army_armor_speed_factor = 0.1
     org_loss_when_moving = -0.2
 	enable_tactic = tactic_unexpected_thrust
 	category_army = { 
@@ -100,7 +100,7 @@ new_mobile_warfare = {
         }
         {
         #motorized
-        category_mobile_infantry = {max_organisation=5 default_morale = 0.05 maximum_speed = 0.1}
+        category_mobile_infantry = {max_organisation=5 default_morale = 0.05}
         motorized={
 			need = {
 				motorized_equipment = -10

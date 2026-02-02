@@ -3087,8 +3087,6 @@ focus_tree = {
 				uses = 1
 				category = cat_light_armor
 			}
-
-			add_ideas = HUN_rapid_army_groups_idea
 		}
 	}
 

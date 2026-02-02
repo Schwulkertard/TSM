@@ -425,7 +425,6 @@ recruit_character = ENG_neil_ritchie
 recruit_character = ENG_bernard_rawlings
 recruit_character = ENG_john_cunningham
 recruit_character = ENG_raymond_briggs
-recruit_character = ENG_jfc_fuller
 recruit_character = ENG_edmund_ironside
 recruit_character = ENG_ernle_chatfield
 recruit_character = ENG_dudley_pound

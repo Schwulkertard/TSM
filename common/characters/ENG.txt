@@ -897,7 +897,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				military_theorist
+				blitzkrieg_theorist
 			}
 		}
 	}
