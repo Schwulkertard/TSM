@@ -167,7 +167,6 @@ add_ideas = {
     peace_training
 	stiff_upper_lip
 	george_v
-	trade_with_allies
 }
 set_convoys = 1200
 add_equipment_to_stockpile = {

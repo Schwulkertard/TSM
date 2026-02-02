@@ -1907,36 +1907,11 @@ focus_tree = {
 			add_manpower = 100000
 			add_legitimacy = 15
 			if = { limit = {has_tech = improved_medium_tank_chassis }
-				
-			create_equipment_variant = {
-				name = "Lorraine 40 t"
-				type = medium_tank_chassis_2
-				parent_version = 0
-				modules = {
-					main_armament_slot = tank_medium_cannon_2
-					turret_type_slot = tank_medium_two_man_tank_turret
-					special_type_slot_1 = tank_radio_2
-					special_type_slot_2 = secondary_turret_small_cannon
-					special_type_slot_3 = extra_ammo_storage
-					special_type_slot_4 = wet_ammo_storage
-		
-					suspension_type_slot = tank_bogie_suspension
-					armor_type_slot = tank_welded_armor
-					engine_type_slot = tank_gasoline_engine
-				}
-				upgrades = {
-					tank_nsb_engine_upgrade = 3
-					tank_nsb_armor_upgrade = 3
-				}
-		
-				icon = "gfx/interface/technologies/FRA_medium_tank_chassis_2.dds"
-			}	
 
 			add_equipment_production = {
 				equipment = {
 				type = medium_tank_chassis_2
 				creator = "FRA"
-				version_name = "Lorraine 40 t"
 			}
 				requested_factories = 20
 				progress = 0.1
@@ -1958,14 +1933,14 @@ focus_tree = {
 			medium_armor = { x = 2 y = 1 }
 			medium_armor = { x = 2 y = 2 }
 			medium_armor = { x = 2 y = 3 } 
-	        motorized = { x = 3 y = 0 }
-		    motorized = { x = 3 y = 1 }
-			motorized = { x = 3 y = 2 }
-			motorized = { x = 3 y = 3 }
-		    motorized = { x = 4 y = 0 }
-			motorized = { x = 4 y = 1 }
-			motorized = { x = 4 y = 2 }
-			motorized = { x = 4 y = 3 }
+	        mechanized = { x = 3 y = 0 }
+		    mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			mechanized = { x = 3 y = 3 }
+		    mechanized = { x = 4 y = 0 }
+			mechanized = { x = 4 y = 1 }
+			mechanized = { x = 4 y = 2 }
+			mechanized = { x = 4 y = 3 }
 			}
 			support = {
 			mot_recon = { x = 0 y = 0 }
@@ -1976,108 +1951,25 @@ focus_tree = {
 			maintenance_company = {x = 0 y = 5}
 			}
 		}
-		    466 = {
+		466 = {
 			for_loop_effect = {
 			end = 2
 			create_unit = {
 			division = "name = \"Medium Tank\" division_template = \"Medium Tank\" start_experience_factor = 0.4"
 			owner = FRA
-						}
-					}
 				}
-		
-		if = { limit = {has_tech = improved_heavy_tank_chassis }
-			
-		create_equipment_variant = {			
-			name = "AMX 65 t"
-			type = heavy_tank_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_heavy_cannon_2
-				turret_type_slot = tank_heavy_two_man_tank_turret
-				special_type_slot_1 = tank_radio_2
-				special_type_slot_2 = secondary_turret_small_cannon
-				special_type_slot_3 = extra_ammo_storage
-				special_type_slot_4 = wet_ammo_storage
-	
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_cast_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 7
-				tank_nsb_armor_upgrade = 7
-			}
-	
-			icon = "gfx/interface/technologies/FRA_imp_heavy_tank.dds"
-		}	
-
-		add_equipment_production = {
-			equipment = {
-			type = medium_tank_chassis_2
-			creator = "FRA"
-			version_name = "AMX 65 t"
-		}
-			requested_factories = 20
-			progress = 0.1
-			efficiency = 50
-		}
-
-		division_template = {
-		name = "Heavy Tank"
-		regiments = {
-			heavy_armor = { x = 0 y = 0 }
-			heavy_armor = { x = 0 y = 1 }
-			heavy_armor = { x = 0 y = 2 }
-			heavy_armor = { x = 0 y = 3 }
-			heavy_armor = { x = 1 y = 0 }
-			heavy_armor = { x = 1 y = 1 }
-			heavy_armor = { x = 1 y = 2 }
-			heavy_armor = { x = 1 y = 3 }
-			heavy_armor = { x = 2 y = 0 }
-			heavy_armor = { x = 2 y = 1 }
-			heavy_armor = { x = 2 y = 2 }
-			heavy_armor = { x = 3 y = 0 }
-			heavy_armor = { x = 3 y = 1 }
-			motorized = { x = 3 y = 0 }
-			motorized = { x = 3 y = 1 }
-			motorized = { x = 3 y = 2 }
-			motorized = { x = 3 y = 3 }
-			motorized = { x = 4 y = 0 }
-			motorized = { x = 4 y = 1 }
-			motorized = { x = 4 y = 2 }
-			motorized = { x = 4 y = 3 }
-			}
-			support = {
-				mot_recon = { x = 0 y = 0 }
-				engineer = { x = 0 y = 1 }
-				artillery = { x = 0 y = 2 }
-				logistics_company = { x = 0 y = 3 }
-				signal_company = { x = 0 y = 4 }
-				maintenance_company = {x = 0 y = 5}
 			}
 		}
-			466 = {
-				for_loop_effect = {
-				end = 2
-				create_unit = {
-				division = "name = \"Heavy Tank\" division_template = \"Heavy Tank\" start_experience_factor = 0.4"
-				owner = FRA
-				}
-									}
+		hidden_effect = {
+			if = {
+				limit={OR = { has_global_flag=Fall_of_france_dec has_global_flag=Fall_of_france_nov}}
+				country_event = lar_appeal_to_overseas_territories.9
 			}
-}
-
-			hidden_effect = {
-				if = {
-					limit={OR = { has_global_flag=Fall_of_france_dec has_global_flag=Fall_of_france_nov}}
-					country_event = lar_appeal_to_overseas_territories.9
-				}
-				if = {
-					limit={has_global_flag=Fall_of_france_dec}
-					country_event = lar_appeal_to_overseas_territories.5
-				}		
-			}
+			if = {
+				limit={has_global_flag=Fall_of_france_dec}
+				country_event = lar_appeal_to_overseas_territories.5
+			}		
+		}
 	}	
 }
 }	

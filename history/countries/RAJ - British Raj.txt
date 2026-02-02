@@ -15,7 +15,6 @@ set_variable = { RAJ_a_loyal_government_consumer_goods_factor = 0.6 }
 set_variable = { RAJ_agrarian_society_conscription_factor = -0.72}
 set_variable = { RAJ_agrarian_society_government_consumer_goods_factor = 0.4}
 add_ideas = peace_training
-add_ideas = trade_with_allies
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {

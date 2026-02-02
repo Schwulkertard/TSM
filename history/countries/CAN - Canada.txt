@@ -12,7 +12,6 @@ set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = ENG_allied_exped_corp2
-add_ideas = trade_with_allies
 # Starting tech
 set_technology = {
 	airfield_allowed = 1

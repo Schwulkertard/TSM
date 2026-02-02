@@ -12,7 +12,6 @@ add_ideas = ENG_allied_exped_corp
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = FRA_small_businesses_focus
-add_ideas = trade_with_allies
 add_timed_idea = {
 				idea = worker_strikes
 				days = 500

@@ -4,7 +4,6 @@ add_ideas = peace_training
 add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
-	trade_with_axis
 	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}

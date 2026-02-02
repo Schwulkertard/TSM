@@ -119,7 +119,7 @@ war_measures = {
 			original_tag = USA
 		}
 		available = {
-			USA = {has_full_control_of_state = 629}
+			USA = {has_full_control_of_state = 448}
 		}
 		cost = 10
 		visible = {
@@ -141,7 +141,7 @@ war_measures = {
 					infantry = { x = 2 y = 1 }
 				}
 			}
-			629 = {
+			448 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {
@@ -195,7 +195,7 @@ war_measures = {
 			original_tag = USA
 		}
 		available = {
-			RAJ = {has_full_control_of_state = 444}
+			RAJ = {has_full_control_of_state = 405}
 		}
 		cost = 10
 		visible = {
@@ -217,7 +217,7 @@ war_measures = {
 					infantry = { x = 2 y = 1 }
 				}
 			}
-			444 = {
+			405 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {
@@ -233,7 +233,7 @@ war_measures = {
 			original_tag = USA
 		}
 		available = {
-			FRA = {has_full_control_of_state = 773}
+			FRA = {has_full_control_of_state = 688}
 		}
 		cost = 10
 		visible = {
@@ -255,7 +255,7 @@ war_measures = {
 					infantry = { x = 2 y = 1 }
 				}
 			}
-			773 = {
+			688 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {

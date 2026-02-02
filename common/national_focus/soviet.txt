@@ -242,7 +242,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-			195 = {
+			210 = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
@@ -250,6 +250,13 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
+			}
+			210 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 485
+				}
 			}
 			188 = {
 				add_extra_state_shared_building_slots = 10
@@ -2258,6 +2265,13 @@ focus = {
 						instant_build = yes
 					}
 				}
+				232 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 295
+				}
+			}
 				244 = {
 					add_building_construction = {
 						type = infrastructure
