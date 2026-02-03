@@ -867,6 +867,7 @@ mass_assault = {
     # EFFECTS
     no_supply_grace = 48
     out_of_supply_factor = -0.10
+	supply_consumption_factor = -0.10
     enable_tactic = tactic_relentless_assault
     category_army = { 
 				default_morale = 0.1
@@ -904,8 +905,8 @@ mass_assault = {
 			}
 		}
     effect = {
-            custom_effect_tooltip = "Artillery Batallion needs 4 less and each Anti-Tank and Anti-Air Batallion 2 less Equipment"
-            custom_effect_tooltip = "Each Infantry Batallion requires 15 less Infantry Equipment and each special Forces Battalion rquires 5 less support equipment"
+            custom_effect_tooltip = "Artillery Batallion needs 4 less and each Anti-Tank and Anti-Air Batallion 4 less Equipment"
+            custom_effect_tooltip = "Each Infantry Batallion requires 15 less Infantry Equipment and each special Forces Battalion requires 5 less support equipment"
                 }
     milestones = {
         {
