@@ -292,6 +292,9 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			cancel = {
+				has_war = yes
+			}
 			allowed_civil_war = {
 				NOT = {
 					has_government = communism
@@ -306,7 +309,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_synthetic_refinery_factor=-0.2
-				stability_factor = 0.05
+				country_resource_rubber = 250
 			}
 		}
 		vittoria_mutilata = {
