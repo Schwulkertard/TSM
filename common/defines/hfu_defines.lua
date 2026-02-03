@@ -1097,8 +1097,9 @@ NDefines_Graphics.NMapMode.SUPPLY_MAP_MODE_BEST_FLOW_DISPLAY = 12 -- Which suppl
 		NDefines_Graphics.NInterface.POLITICAL_LEADER_ICON_SPRITE_ID = 13
 		NDefines_Graphics.NInterface.PIXEL_OFFSET = -3 
 		NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1
-
-
+		NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.5                    -- The rate at which mastery gained when a track is finished or empty is "banked"
+        NDefines.NDoctrines.MASTERY_BANK_MAX = 350.0                               -- The maximum amount of mastery that can be banked
+		 NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 20000.0           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
 
 
 

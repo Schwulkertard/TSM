@@ -4,7 +4,7 @@ infantry = {
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 1
+        multiplier = 2
         categories = {
             category_light_infantry
         }
@@ -17,7 +17,7 @@ combat_support = {
     icon = "GFX_doctrine_milestone_artillery_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 4
+        multiplier = 6
         categories = {
 	        category_line_artillery
         }
@@ -30,7 +30,7 @@ armor = {
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 3
+        multiplier = 5
         categories = {
 			category_all_armor
             }
@@ -44,7 +44,7 @@ support = {
     icon = "GFX_doctrine_milestone_artillery_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 8
+        multiplier = 12
         categories = {
             category_support_battalions
         }
@@ -56,7 +56,7 @@ motorized = {
     icon = "GFX_doctrine_milestone_armored_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 5
+        multiplier = 7
         categories = {
 			category_mobile_infantry
         }
@@ -69,7 +69,7 @@ operations = {
     icon = "GFX_doctrine_milestone_operations_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 0.5
+        multiplier = 1
         categories = {
             category_army
         }
