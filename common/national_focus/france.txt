@@ -1138,6 +1138,7 @@ focus_tree = {
 		}
 		available = {
 			date >  1939.7.1
+			num_of_military_factories > 100
 		}
 		relative_position_id = FRA_freedom_front
 		cost = 5
@@ -1208,12 +1209,8 @@ focus_tree = {
 		}
 		available = {
 			FRA_has_inefficient_economy = no
-			
-			any_state_in = { strategic_region = 18    
-			arms_factory  > 9 }  
-
-			any_state_in = { strategic_region = 200    
-			arms_factory > 9  } 
+	
+			num_of_military_factories > 60
 			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
