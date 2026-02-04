@@ -137,7 +137,7 @@ FRA_support_small_businesses = {
 			add_tech_bonus = {
 			name = Construction
 			uses = 1
-			bonus = 1
+			bonus = 2
 			category = construction_tech
 			}
 	}
@@ -179,7 +179,6 @@ FRA_defend_norway = {
 		fire_only_once = yes
 		days_remove = 120
 		modifier = {
-			consumer_goods_factor = 0.1
 		}
 
 		ai_will_do = {
@@ -202,7 +201,6 @@ FRA_great_war_veterans = {
 		fire_only_once = yes
 		days_remove = 120
 		modifier = {
-			consumer_goods_factor = 0.1
 		}
 
 		ai_will_do = {

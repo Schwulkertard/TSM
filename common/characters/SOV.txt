@@ -283,7 +283,7 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				air_warfare_theorist
+				military_theorist
 			}
 		}
 
