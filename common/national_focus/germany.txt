@@ -192,7 +192,6 @@
 			}
 			
 			ROM = { 
-			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
 				country_event = { id = wtt_germany.72 }
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2

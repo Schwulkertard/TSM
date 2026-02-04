@@ -6,6 +6,7 @@ state={
  		victory_points = {
  			10183 5
  		}
+		add_extra_state_shared_building_slots = 1
  		buildings = {
  			infrastructure = 5
  			air_base = 5

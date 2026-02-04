@@ -19,10 +19,6 @@ state={
  			industrial_complex = 2
  			dockyard = 1
  			air_base = 5
- 			10074 = {
- 				naval_base = 5
- 				coastal_bunker = 2
- 			}
  			2888 = {
  				naval_base = 3
  				coastal_bunker = 1

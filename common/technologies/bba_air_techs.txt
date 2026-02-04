@@ -1386,7 +1386,6 @@ technologies = {
 	}
 	photo_reconnaisance = {
 		enable_equipment_modules = {
-			recon_camera
 		}
 		
 		research_cost = 0.5

@@ -878,7 +878,8 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-		add_ideas = GER_air_innovations_2_idea
+			complete_special_project = sp:sp_air_radar
+			add_ideas = GER_air_innovations_2_idea
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1.0

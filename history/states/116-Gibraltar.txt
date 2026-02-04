@@ -14,11 +14,11 @@ state=
  			anti_air_building = 6
  			3867 = {
  				naval_base = 5
- 				coastal_bunker = 2
+ 				coastal_bunker = 1
  			}
  			11883 = {
  				naval_base = 6
- 				coastal_bunker = 2
+ 				coastal_bunker = 1
  			}
  		}
  		add_claim_by = SPR
