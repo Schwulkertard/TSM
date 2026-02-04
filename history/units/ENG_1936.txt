@@ -210,6 +210,15 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = train_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
 			type = small_plane_naval_bomber_airframe_1
 			creator = "ENG"
 			version_name = "Swordfish"
