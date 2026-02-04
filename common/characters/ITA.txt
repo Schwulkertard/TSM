@@ -234,9 +234,9 @@ characters={
 		corps_commander={
 			traits = { organizer panzer_leader trickster hill_fighter expert_improviser panzer_expert brilliant_strategist }
 			skill = 6
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
 			logistics_skill = 1
 			legacy_id=0
 		}

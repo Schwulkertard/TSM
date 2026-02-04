@@ -483,6 +483,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 720 }
+			add_ideas = SPA_recovering_from_civil_war
 		}
 	}
 	focus = {
@@ -790,7 +791,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_infra
+			add_ideas = SIA_foreign_investors
 			41 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -872,7 +873,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_resources1
+			add_ideas = FRA_global_investments
 			41 = {
 				add_resource = {
 					type = steel
@@ -1128,7 +1129,7 @@ focus_tree = {
 	focus = {
 		id = SPA_direct_the_universities
 		available = {
-			num_of_factories > 40
+			num_of_factories > 60
 		}
 		bypass = {
 		}

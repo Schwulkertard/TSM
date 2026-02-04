@@ -81,8 +81,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trait_engineer commando naval_invader jungle_rat }
-			skill=5
+			traits={ infantry_leader trait_engineer commando naval_invader jungle_rat ranger }
+			skill=6
 			attack_skill=6
 			defense_skill=4
 			planning_skill=2

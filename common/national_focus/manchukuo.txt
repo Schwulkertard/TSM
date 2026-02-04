@@ -217,12 +217,12 @@
 			create_corps_commander = {
 				name = "Yoshijiro Umezu"
 				portrait_path = "gfx/leaders/JAP/Portrait_Japan_Yoshijiro_Umezu.dds"
-				traits = { trait_cautious commando }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 4
+				traits = { trait_cautious infantry_leader commando ranger }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 			}
 		}
 	}	

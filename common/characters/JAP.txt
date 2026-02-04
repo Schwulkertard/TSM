@@ -280,12 +280,13 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ politically_connected JAP_samurai_lineage }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			traits = { trait_cautious infantry_leader commando ranger }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+			}
 			legacy_id=0
 		}
 	}

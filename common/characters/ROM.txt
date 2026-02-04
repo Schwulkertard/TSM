@@ -154,7 +154,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { swamp_fox infantry_leader trickster panzer_leader }
+			traits = {  infantry_leader trickster panzer_leader ranger swamp_fox }
 	skill = 5
 	attack_skill = 6
 	defense_skill = 3
