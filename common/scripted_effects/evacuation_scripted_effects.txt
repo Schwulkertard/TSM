@@ -62,17 +62,43 @@ fra_evacuate_one_civ = {
 
 fra_weekly_evacuate_industry = {
   log = "FRA weekly evac fired on [?Global.date.GetDateString]"
-  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
     fra_evacuate_one_mil = yes
   }
-  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
     fra_evacuate_one_mil = yes
   }
-  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
     fra_evacuate_one_mil = yes
   }
-  if = { limit = { check_variable = { fra_evacuated_mils < 80 } }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
     fra_evacuate_one_mil = yes
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+    fra_evacuate_one_mil = yes
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+    fra_evacuate_one_mil = yes
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+    fra_evacuate_one_civ = yes
   }
   fra_evacuate_one_civ = yes
+
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+     GER = {  add_offsite_building = { type = arms_factory level = 1 }
+      }
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+     GER = {  add_offsite_building = { type = arms_factory level = 1 }
+      }
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+     GER = {  add_offsite_building = { type = arms_factory level = 1 }
+      }
+  }
+  if = { limit = { check_variable = { fra_evacuated_mils < 150 } }
+     ITA = {  add_offsite_building = { type = arms_factory level = 1 }
+      }
+  }
 }
