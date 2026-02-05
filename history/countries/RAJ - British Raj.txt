@@ -19,7 +19,7 @@ set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
 	armored_car1 = 1
-	airfield_allowed = 1
+	asia_air = 1
 	naval_base_allowed = 1
 	infantry_weapons = 1
 	#infantry_weapons1= 1

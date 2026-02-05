@@ -208,19 +208,7 @@ technologies = {
 			additional_machine_guns
 		}
 		enable_building = {
-			building = bunker
-			level = 5
-		}
-		enable_building = {
-			building =air_base
-			level = 10
-		}
-		enable_building = {
 			building = anti_air_building
-			level = 5
-		}
-		enable_building = {
-			building = coastal_bunker
 			level = 5
 		}
 		enable_subunits = {
@@ -1688,6 +1676,7 @@ technologies = {
 			}
 		}
 		categories = {
+			motorized_equipment
 			mot_rockets
 			rocketry
 		}

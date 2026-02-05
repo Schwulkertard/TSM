@@ -43,6 +43,12 @@ technologies = {
 			level = 20
 		}
 	}
+	asia_air = {
+		enable_building = {
+			building =air_base
+			level = 5
+		}
+	}
 	africa_hp_off = {
 		motorized = {
 			max_strength = -27

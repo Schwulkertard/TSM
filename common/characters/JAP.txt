@@ -279,15 +279,14 @@ characters={
 				small="gfx/interface/ideas/idea_JAP_naruhiko_higashikuni.dds"
 			}
 		}
-		corps_commander={
-			traits = { trait_cautious infantry_leader commando ranger }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-			}
-			legacy_id=0
+	corps_commander={
+		traits = { trait_cautious infantry_leader commando ranger }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+		legacy_id=0
 		}
 	}
 

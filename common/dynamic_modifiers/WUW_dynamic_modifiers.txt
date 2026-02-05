@@ -34,6 +34,13 @@ FRA_maginot_line_dynamic_modifier = { #State Modifer
     state_bunker_max_level_terrain_limit = 9
 }
 
+impassable_airfield_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+    state_bunker_max_level_terrain_limit = 9
+}
+
 
 ############# RAIDS RELATED ##############
 #TODO_TA Remove or make proper modifier

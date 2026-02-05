@@ -127,10 +127,7 @@ equipment_modules = {
  		add_stats = {
  			fuel_consumption = 2.5
  			build_cost_ic = 3
- 			maximum_speed = 2
- 		}
- 		multiply_stats = {
- 			maximum_speed = 0.15
+ 			maximum_speed = 1.5
  		}
  	}
  	tank_diesel_engine_H = {
@@ -141,7 +138,7 @@ equipment_modules = {
  			build_cost_ic = 3.5
  			fuel_consumption = 1.5
  			reliability = 0.2
- 			maximum_speed = 2
+ 			maximum_speed = 1.5
  		}
  	}
  	tank_petrol_electric_engine_H = {
