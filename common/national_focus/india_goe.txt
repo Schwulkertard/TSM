@@ -295,6 +295,12 @@ focus = {
         add_ideas = partial_economic_mobilisation
         custom_effect_tooltip = generic_skip_one_line_tt
         set_war_support = 0.25
+        ENG = {
+            set_autonomy = {
+                target = RAJ
+                autonomy_state = autonomy_dominion
+            }
+        }
 	}
 }
 
@@ -522,13 +528,7 @@ focus = {
 			elections_allowed = yes
 		}
         custom_effect_tooltip = generic_skip_one_line_tt
-        ENG = {
-            set_autonomy = {
-                target = RAJ
-                autonomy_state = autonomy_dominion
-            }
-        }
-		remove_dynamic_modifier = { modifier = RAJ_a_loyal_government tooltip = consumer_goods_factor_tt }
+		remove_dynamic_modifier = { modifier = RAJ_a_loyal_government }
         custom_effect_tooltip = generic_skip_one_line_tt
         if = {
             limit = { 

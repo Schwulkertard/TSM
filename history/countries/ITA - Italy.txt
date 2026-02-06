@@ -157,12 +157,17 @@ if = {
 set_convoys = 300
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 45000
+	amount = 55000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 500
+	amount = 1000
+	producer =ITA
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 1000
 	producer =ITA
 }
 add_equipment_to_stockpile = {
@@ -177,12 +182,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 2000
+	amount = 2500
 	producer =ITA
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2000
+	amount = 3000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
@@ -194,7 +199,7 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
 	variant_name = "C200 Saetta"
-	amount = 1500
+	amount = 1800
 	producer = ITA
 }
 add_equipment_to_stockpile = {
@@ -307,7 +312,7 @@ add_equipment_to_stockpile = {
     type = light_tank_destroyer_chassis_2
     amount = 300
     producer = ITA
-    variant_name = "Light Tank Destroyer"
+    variant_name = "L3"
 }
 
 recruit_character = ITA_benito_mussolini

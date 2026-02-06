@@ -460,7 +460,7 @@ equipment_modules = {
 		}
 		add_stats = {
  			lg_attack = 6
- 			build_cost_ic = 500
+ 			build_cost_ic = 350
 			naval_light_gun_hit_chance_factor = 0.1
 			reliability = -0.05
  		}
@@ -486,7 +486,7 @@ equipment_modules = {
 		}
 		add_stats = {
  			lg_attack = 6
- 			build_cost_ic = 600
+ 			build_cost_ic = 450
 			reliability = -0.06
  		}
  		multiply_stats = {
