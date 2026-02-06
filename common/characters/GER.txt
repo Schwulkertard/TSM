@@ -189,7 +189,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ organizer panzer_leader panzer_expert brilliant_strategist trickster hill_fighter }
 			skill=8
 			attack_skill=6
