@@ -297,4 +297,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3679;706;impassable;-1;-1;-1;-1;-1;;francespain
 3508;706;impassable;-1;-1;-1;-1;-1;;francespain
 6258;706;impassable;-1;-1;-1;-1;-1;;francespain
+741;576;impassable;-1;-1;-1;-1;-1;;franceitaly
+8962;576;impassable;-1;-1;-1;-1;-1;;franceitaly
+8962;6282;impassable;-1;-1;-1;-1;-1;;franceitaly
+8962;8955;impassable;-1;-1;-1;-1;-1;;franceitaly
+727;8955;impassable;-1;-1;-1;-1;-1;;franceitaly
+3535;8955;impassable;-1;-1;-1;-1;-1;;franceitaly
+3535;10643;impassable;-1;-1;-1;-1;-1;;franceitaly
 -1;-1;;-1;-1;-1;-1;-1;-1
