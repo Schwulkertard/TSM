@@ -1735,7 +1735,7 @@ focus = {
 			add_tech_bonus = {
 				name = artillery
 				ahead_reduction= 1
-				uses = 3
+				uses = 2
 				category =cat_anti_tank
 			}
 		}
@@ -2007,7 +2007,10 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-		custom_effect_tooltip = SOV_doc_tt
+			add_mastery = {
+					amount = 500
+					track = operations
+				}
 		}
 	}
 	focus = {
