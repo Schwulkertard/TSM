@@ -69,8 +69,7 @@ instant_effect = {
 		progress = 0.27
 		efficiency = 100
 	}
-}
-add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
 			type = train_equipment_1
 			creator = "SIA"
@@ -88,4 +87,4 @@ add_equipment_production = {
 		progress = 0.3
 		efficiency = 50
 	}
-
+}

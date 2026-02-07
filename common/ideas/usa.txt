@@ -1957,17 +1957,6 @@ ideas = {
 	}
 	naval_manufacturer = {
 		designer = yes
-		norfolk_naval_yard = {
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				has_completed_focus = USA_liberty_ships
-			}
-			cost = 100
-			modifier = { naval_manufacturer_cost_factor = -1 }
-			traits = { liberty_ships_manufacturer }
-		}
 		electric_boat_company = {
 			allowed = {
 				original_tag = USA

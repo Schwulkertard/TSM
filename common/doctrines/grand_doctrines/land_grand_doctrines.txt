@@ -869,7 +869,7 @@ mass_assault = {
     out_of_supply_factor = -0.10
 	supply_consumption_factor = -0.10
     enable_tactic = tactic_relentless_assault
-    category_army = { 
+    category_army = {
 				default_morale = 0.1
                 max_organisation = 5
 				}
@@ -1040,16 +1040,17 @@ mass_assault = {
             }
         }
         {
-            #Operations
+        #Operations
             enable_tactic = tactic_backhand_blow
             weekly_casualties_war_support = 0.001
             minimum_training_level = -0.2
             category_army = { 
 				default_morale = 0.1
-				}
-            category_army = { max_organisation = default_morale 0.05 
+			}
+            category_army = { 
+                max_organisation = 0.05 
+            }
             coordination_bonus = 0.04
-
             effect = {
                 if = {
                     limit = {

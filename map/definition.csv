@@ -4469,7 +4469,7 @@
 4468;50;102;198;land;false;forest;6
 4469;50;105;13;land;false;mountain;6
 4470;50;105;163;land;false;forest;6
-4471;50;105;218;land;true;desert;6
+4471;50;105;218;land;false;desert;6
 4472;50;108;78;land;false;forest;2
 4473;50;108;128;land;false;forest;6
 4474;50;111;43;land;false;forest;2
@@ -12123,3 +12123,8 @@
 12122;108;8;251;land;false;desert;6
 12123;108;8;252;land;false;desert;6
 12124;176;30;3;land;false;desert;6
+12125;177;30;3;land;false;desert;7
+12126;178;30;3;land;false;desert;7
+12127;179;30;3;land;true;desert;7
+12128;8;36;201;land;false;desert;7
+

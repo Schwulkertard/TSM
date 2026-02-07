@@ -1284,6 +1284,7 @@
  modifier_experience_gain_battleship_mission_factor: "Battleship mission Experience Gain"
  modifier_experience_gain_battleship_combat_factor:1 "Battleship Combat Experience Gain"
  modifier_experience_gain_carrier_training_factor:1 "Carrier Training Experience Gain"
+ modifier_experience_gain_escort_carrier_mission_factor: "Escort Carrier mission Experience Gain"
  modifier_experience_gain_carrier_mission_factor: "Carrier mission Experience Gain"
  modifier_experience_gain_carrier_combat_factor:1 "Carrier Combat Experience Gain"
  modifier_experience_gain_destroyer_training_factor:1 "Destroyer Training Experience Gain"

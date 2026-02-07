@@ -2,7 +2,7 @@ state={
  	id=664
  	name="STATE_746"
  	provinces={
- 		1652
+ 		1652 12125
  	}
  	state_category = wasteland
  	history=

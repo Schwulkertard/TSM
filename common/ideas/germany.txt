@@ -871,6 +871,7 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.3
 				political_power_cost = 0.2
+				country_resource_rubber = 100
 			}
 			
 		}

@@ -83,30 +83,6 @@ faction_manifest_containment_of_communism = {
 	}
 }
 
-# Supress Regional Fascism
-faction_manifest_suppress_regional_fascism = {
-	name = suppress_regional_fascism_goal_name
-	description = suppress_regional_fascism_goal_desc
-	is_manifest = yes
-	ratio_progress = {
-		total_amount_collection = collection:states_on_my_continent
-		completed_amount_collection = collection:non_fascist_controlled_states_on_my_continent
-		
-		scale = {
-			fascism_drift = -0.08
-		}
-		
-		progress_sections = {
-			manifest_fulfilled = {
-				min = @manifest_fulfilled_value
-				modifier = { 
-					weekly_casualties_war_support = 0.006
-				}
-			}
-		}
-	}
-}
-
 # Generic Expansionism
 faction_manifest_regional_expansionism = {
 	name = regional_expansionism_goal_name

@@ -377,9 +377,6 @@ political_actions = {
 	}
 	institute_press_censorship_fascist_state = {
 		icon = generic_political_discourse
-		allowed = {
-			has_government = fascism
-		}
 		visible = {
 			has_government = fascism
 		}
@@ -398,9 +395,6 @@ political_actions = {
 	}
 	institute_press_censorship_democratic_state = {
 		icon = generic_political_discourse
-		allowed = {
-			has_government = democratic
-		}
 		visible = {
 			has_government = democratic
 		}
@@ -419,9 +413,6 @@ political_actions = {
 	}
 	institute_press_censorship_communist_state = {
 		icon = generic_political_discourse
-		allowed = {
-			has_government = communism
-		}
 		visible = {
 			has_government = communism
 		}
@@ -440,9 +431,6 @@ political_actions = {
 	}
 	institute_press_censorship_neutrality_state = {
 		icon = generic_political_discourse
-		allowed = {
-			has_government = neutrality
-		}
 		visible = {
 			has_government = neutrality
 		}

@@ -1,7 +1,7 @@
 # The Allies 
 faction_template_allies = {
 	name = Allies
-	manifest = faction_manifest_suppress_regional_fascism
+	manifest = faction_manifest_defense_of_democracy_allies
 
 	goals = {
 

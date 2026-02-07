@@ -24,8 +24,7 @@ characters = {
 	}
 
 	BUL_georgi_dimitrov = {
-		instance = {
-			name = BUL_georgi_dimitrov
+		name = BUL_georgi_dimitrov
 			portraits = {
 				civilian = {
 					large = GFX_portrait_BUL_georgi_dimitrov
@@ -36,7 +35,6 @@ characters = {
 				expire = "1965.1.1.1"
 				id = -1
 			}
-		}
 	}
 
 	BUL_nikola_mushanov = { #BFTB only

@@ -374,15 +374,6 @@ states_on_my_continent = {
 	}
 	name = COLLECTION_STATES_MY_CONTINENT
 }
-non_fascist_controlled_states_on_my_continent = {
-	input = collection:states_on_my_continent
-	operators = {
-		limit = {
-			controller = { NOT = { has_government = fascism } }
-		}
-	}
-	name = COLLECTION_NON_FASCIST_STATES_MY_CONTINENT
-}
 non_communist_controlled_states_on_my_continent = {
 	input = collection:states_on_my_continent
 	operators = {
@@ -427,21 +418,6 @@ communist_controlled_states_my_continent = {
 		}
 	}
 }
-
-
-fascist_controlled_states_my_continent = {
-	input = game:all_states
-	name = COLLECTION_AMOUNT_OF_FASCIST_CONTROLLED_STATES_SAME_CONTINENT
-	operators = {
-		limit = {
-			is_on_same_continent_as = ROOT
-			controller = {
-				has_government = fascism
-			}
-		}
-	}
-}
-
 
 anti_communist_controlled_states_my_continent = {
 	input = game:all_states

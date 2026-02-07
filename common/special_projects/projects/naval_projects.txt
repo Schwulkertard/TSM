@@ -2263,6 +2263,84 @@ sp_naval_escort_carrier = {
 	}
 }
 
+sp_naval_ice_carrier = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"
+		always = no
+	}
+	
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}  
+				has_tech = basic_ship_hull_carrier
+			}
+			else = {
+				has_tech = basic_carrier
+			}
+
+		}
+
+	}
+	
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+	
+
+	resource_cost = {
+		resources = { 
+			steel = 400
+			chromium = 200
+		}
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.long	
+	
+	project_output = {
+
+
+		
+
+		enable_equipment_modules = {
+			 
+		}
+
+		enable_equipments= { 
+		carrier_2	
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_reward_armor_tech_1
+		sp_naval_generic_reward_armor_tech_2
+		sp_naval_generic_reward_armor_tech_3					
+	}
+}
 
 #ICE CARRIER
 # sp_naval_ice_carrier = {
