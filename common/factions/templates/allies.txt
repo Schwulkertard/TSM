@@ -10,7 +10,7 @@ faction_template_allies = {
 		# Medium term goals
 
 		# Long term goals
-		faction_goal_defeat_of_fascism
+		faction_goal_defeat_of_communism
 
 	}
 

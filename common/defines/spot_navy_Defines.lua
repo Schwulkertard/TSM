@@ -47,12 +47,12 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCALE = 1.0
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 10                         -- how much score factor from low health (scales between 0->this number)
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 2.5                           -- how much score factor from low AA guns (scales between 0->this number)
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.1									-- base chance for hit
-NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.03									-- never less hit chance then this?
+NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.025									-- never less hit chance then this?
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		75.0,	-- big guns
 		150.0,	-- torpedos
-		45.0,	-- small guns
+		40.0,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
