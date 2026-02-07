@@ -223,6 +223,7 @@ equipments = {
  			fixed_ship_engine_slot = carrier_ship_engine_2
  		}
 		naval_dominance_factor = 350
+		max_strength = 350
  	}
  	ship_hull_carrier_2 = {
  		year = 1940
@@ -264,7 +265,7 @@ equipments = {
  		}
  		naval_range = 4000
  		reliability = 0.75
- 		max_strength = 375
+ 		max_strength = 425
  		build_cost_ic = 2600
  		resources = {
  			steel = 10
@@ -328,7 +329,7 @@ equipments = {
  		}
  		naval_range = 5000
  		reliability = 0.8
- 		max_strength = 400
+ 		max_strength = 475
  		build_cost_ic = 3250
  		resources = {
  			steel = 10
@@ -535,7 +536,7 @@ equipments = {
  		}
  		naval_range = 4000
  		reliability = 0.65
- 		max_strength = 325
+ 		max_strength = 425
  		naval_speed = 23
  		build_cost_ic = 3200
  		resources = {

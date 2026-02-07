@@ -8,7 +8,7 @@ sub_units = {
 		need = { ship_hull_cruiser = 1 }
 		
 		max_organisation = 40
-		torpedo_attack = 0.3
+		torpedo_attack = 1
 		
 		supply_consumption = 0.16
 		

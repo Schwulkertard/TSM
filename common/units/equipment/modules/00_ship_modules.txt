@@ -1194,7 +1194,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.04
 			naval_light_gun_hit_chance_factor = 0.04
 			naval_heavy_gun_hit_chance_factor = 0.04
- 			build_cost_ic = 90
+ 			build_cost_ic = 45
  		}
  		can_convert_from = {
  			module = ship_fire_control_system_0
@@ -1209,7 +1209,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.06
 			naval_light_gun_hit_chance_factor = 0.06
 			naval_heavy_gun_hit_chance_factor = 0.06
- 			build_cost_ic = 120
+ 			build_cost_ic = 60
  		}
  		can_convert_from = {
  			module = ship_fire_control_system_1
@@ -1228,7 +1228,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.08
 			naval_light_gun_hit_chance_factor = 0.08
 			naval_heavy_gun_hit_chance_factor = 0.08
- 			build_cost_ic = 180
+ 			build_cost_ic = 90
  		}
  		can_convert_from = {
  			module = ship_fire_control_system_2
