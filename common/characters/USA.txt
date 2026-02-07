@@ -166,6 +166,43 @@ characters={
 		}
 	}
 
+	USA_george_marshall={
+		name=USA_george_marshall
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_USA_George_Marshall.dds"
+			}
+			army={
+				small="GFX_idea_george_marshall"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = george_marshall
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ 
+				organizer skilled_staffer
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=604
+		}
+	}
+
 	USA_geoffrey_keyes={
 		name=USA_geoffrey_keyes
 		portraits={
@@ -277,7 +314,7 @@ characters={
 		
 		corps_commander={
 			traits={ media_personality politically_connected infantry_leader trait_mountaineer }
-			skill=3
+			skill=5
 			attack_skill=4
 			defense_skill=3
 			planning_skill=3
@@ -1024,30 +1061,6 @@ characters={
 
 	# Krueger up there
 
-	USA_george_marshall={
-		name=USA_george_marshall
-		portraits={
-			army={
-				small="GFX_idea_george_marshall"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = george_marshall
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	
 	### NAVY CHIEFS ###
 
 	# King up there

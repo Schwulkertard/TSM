@@ -335,13 +335,13 @@ characters={
 			}
 		}
 		
-		corps_commander={
-			traits = { infantry_leader infantry_expert naval_invader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 5
+		field_marshal={
+			traits = { infantry_leader naval_invader }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 7
 			legacy_id=995
 		}
 	}
