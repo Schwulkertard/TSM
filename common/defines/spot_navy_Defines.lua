@@ -51,13 +51,13 @@ NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.03									-- never less hit chance the
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		75.0,	-- big guns
-		140.0,	-- torpedos
+		150.0,	-- torpedos
 		45.0,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		1.0,	-- big guns
-		3.0,	-- torpedos
+		1.0,	-- torpedos
 		1.0,	-- small guns
 	}
 NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0
