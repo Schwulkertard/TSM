@@ -149,6 +149,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_factory = 0.03
 				industrial_capacity_dockyard = 0.03
+				global_building_slots_factor = 0.2
 			}
 		}
 		CAN_commit_to_the_war = {

@@ -81,6 +81,7 @@ ideas = {
 				consumer_goods_factor = -0.25
 				industrial_capacity_factory = 0.05
 				stability_factor = 0.05
+				global_building_slots_factor = 0.2
 			}
 		}
 		AST_invest_in_victory_2 = {
@@ -96,6 +97,7 @@ ideas = {
 				consumer_goods_factor = -0.5
 				industrial_capacity_factory = 0.1
 				stability_factor = 0.10
+				global_building_slots_factor = 0.2
 			}
 		}
 		AST_australian_womens_army_service = {
