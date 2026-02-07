@@ -173,6 +173,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				consumer_goods_factor = -0.3
+				global_building_slots_factor = 0.2
 			}
 		}
 		SAF_voortrekker_monument = {
@@ -215,6 +216,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			modifier = {
 				local_resources_factor = 0.1
+				global_building_slots_factor = 0.2
 			}
 		}
 		SAF_equal_opportunities = {
