@@ -497,6 +497,7 @@ equipments = {
  		archetype = ship_hull_carrier
  		priority = 1100
  		can_convert_from = { ship_hull_pre_dreadnought ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 ship_hull_super_heavy_1 }
+		naval_dominance_factor = 300
  		module_slots = {
  			fixed_ship_deck_slot_1 = {
  				required = yes
@@ -551,14 +552,16 @@ equipments = {
  		archetype = ship_hull_carrier
  		priority = 1200
  		can_convert_from = { ship_hull_cruiser_1 ship_hull_cruiser_2 ship_hull_cruiser_3 ship_hull_cruiser_4 ship_hull_cruiser_panzerschiff }
+		naval_dominance_factor = 200
  		module_slots = {
  			fixed_ship_deck_slot_1 = {
  				required = yes
- 				allowed_module_categories = ship_deck_space
+ 				allowed_module_categories = { ship_deck_space }
  				gfx = ship_deck_space_slot
  			}
  			fixed_ship_anti_air_slot = inherit
  			fixed_ship_deck_slot_2 = {
+				required = no
  				allowed_module_categories = { ship_secondaries ship_anti_air ship_airplane_launcher}
  				gfx = ship_deck_space_slot
  			}
