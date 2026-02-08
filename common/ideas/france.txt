@@ -866,7 +866,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 		FRA_hidden_materials = {
