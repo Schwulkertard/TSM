@@ -1,6 +1,6 @@
 strategic_region={
 	id=189
-	name="Lower Red Sea"
+	name="Lake Mohammed"
 	provinces={
 		2619 8048 
 	}

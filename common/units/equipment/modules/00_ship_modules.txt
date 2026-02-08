@@ -1088,7 +1088,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = anti_air
  		add_stats = {
- 			anti_air_attack = 2.5
+ 			anti_air_attack = 3
  			build_cost_ic = 10
  		}
  		multiply_stats = {
@@ -1106,7 +1106,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = anti_air
  		add_stats = {
- 			anti_air_attack = 3
+ 			anti_air_attack = 4
  			build_cost_ic = 20
  		}
  		multiply_stats = {
@@ -1128,7 +1128,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = anti_air
  		add_stats = {
- 			anti_air_attack = 3.5
+ 			anti_air_attack = 5
  			build_cost_ic = 30
  		}
  		multiply_stats = {
@@ -1150,7 +1150,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		add_equipment_type = anti_air
  		add_stats = {
- 			anti_air_attack = 4
+ 			anti_air_attack = 6
  			build_cost_ic = 40
  		}
  		multiply_stats = {

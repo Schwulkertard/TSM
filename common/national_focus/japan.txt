@@ -2076,7 +2076,7 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			create_equipment_variant = {
- 				name = "Yamato Class"
+ 				name = "Yamatō Class"
  				type = ship_hull_super_heavy_1
  				name_group = JAP_BB_HISTORICAL
  				parent_version = 0
@@ -2110,7 +2110,7 @@ focus_tree = {
  					equipment = {
  						type = ship_hull_super_heavy_1
  						creator = "JAP"
- 						version_name = "Yamato Class"
+ 						version_name = "Yamatō Class"
  					}
  					name = "Yamato"
  					requested_factories = 1
@@ -2121,7 +2121,7 @@ focus_tree = {
  					equipment = {
  						type = ship_hull_super_heavy_1
  						creator = "JAP"
- 						version_name = "Yamato Class"
+ 						version_name = "Yamatō Class"
  					}
  					name = "Musashi"
  					requested_factories = 1

@@ -296,6 +296,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	essential_equipment_conversion = {
 		line_change_production_efficiency_factor = 0.05
+		refit_speed = 0.05
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
 		}
@@ -322,6 +323,7 @@ technologies = {
 	}
 	basic_equipment_conversion = {
 		line_change_production_efficiency_factor = 0.05
+		refit_speed = 0.05
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
 		}
@@ -348,6 +350,7 @@ technologies = {
 	}
 	improved_equipment_conversion = {
 		line_change_production_efficiency_factor = 0.05
+		refit_speed = 0.05
 		research_cost = 1
 		start_year = 1939
 		categories = {
@@ -371,6 +374,7 @@ technologies = {
 	}
 	advanced_equipment_conversion = {
 		line_change_production_efficiency_factor = 0.05
+		refit_speed = 0.05
 		research_cost = 1
 		start_year = 1941
 		categories = {
