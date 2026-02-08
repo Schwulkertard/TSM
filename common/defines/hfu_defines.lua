@@ -10,7 +10,7 @@ NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0
 --------------------------------------------------------------
 ---nukes
 NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
-NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.15
+NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.16
 NDefines.NMilitary.NUKE_DELAY_HOURS =12
 NDefines.NMilitary.PARADROP_HOURS = 72
 NDefines.NMilitary.PARADROP_PENALTY = -0.25
