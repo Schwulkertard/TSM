@@ -1733,11 +1733,6 @@ focus_tree = {
 					}
 				}
 			}	
-			hidden_effect = {
-				remove_ideas = fourty_hour_work_week
-				remove_ideas = FRA_small_businesses_focus_1
-				remove_ideas = FRA_centralised_industry
-			}
 		}
 	}
 	

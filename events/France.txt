@@ -221,6 +221,9 @@ country_event = {
 			remove_ideas = FRA_entrepeneurship
 			remove_ideas = FRA_firepower
 			remove_ideas = FRA_rebuild_the_military
+			remove_ideas = fourty_hour_work_week
+			remove_ideas = FRA_small_businesses_focus_1
+			remove_ideas = FRA_centralised_industry
 			set_country_flag = free_france
 			set_capital = { state = 466 }
 			country_event = france.20
