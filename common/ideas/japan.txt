@@ -606,15 +606,12 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu_ally
 			modifier = {
-				production_speed_industrial_complex_factor = 0.25
-				production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = -0.1
 				consumer_goods_factor = 0.5
 				global_building_slots_factor=0.2
 				army_morale_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.2
 				research_speed_factor = 0.1
 			}
 		}		
@@ -649,15 +646,12 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu_control
 			modifier = {
-				production_speed_industrial_complex_factor = 0.25
-				production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = -0.1
 				consumer_goods_factor = 0.5
 				global_building_slots_factor=0.2
 				army_morale_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.2
 				research_speed_factor = 0.1
 			}
 		}

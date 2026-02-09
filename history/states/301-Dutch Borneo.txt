@@ -3,7 +3,7 @@ state={
 	name="STATE_334"
 	resources={
 		rubber=700
-		oil=70
+		oil=140
 	}
 	history={
 		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
