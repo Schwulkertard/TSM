@@ -1015,10 +1015,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
+			custom_effect_tooltip = FRA_doc_tt_3
 			swap_ideas = { 
 			remove_idea = FRA_small_businesses_focus
 			add_idea = FRA_small_businesses_focus_1
-			 }
+			}
 		}
 	}
 	focus = {
@@ -1047,11 +1048,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			#REMINDER TO ADD SHIT FOR MIOOOS
+			custom_effect_tooltip = FRA_doc_tt_3
 			swap_ideas = { 
 			remove_idea = FRA_small_businesses_focus
 			add_idea = FRA_centralised_industry
-			 }
-		
+			}
 		}
 	}
 	focus = {
@@ -1261,8 +1262,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
 			custom_effect_tooltip = "This focus will automatically bypass when the idea Worker Strikes expires"
-					remove_ideas = worker_strikes
-					add_ideas = fourty_hour_work_week
+			remove_ideas = worker_strikes
+			custom_effect_tooltip = FRA_doc_tt_3
+			add_ideas = fourty_hour_work_week
 		}
 	}
 	focus = {
@@ -1711,27 +1713,31 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes	
-		completion_reward = { 
+		completion_reward = {
 			add_equipment_to_stockpile = {
 			type = convoy
 			amount = 200
-		}
+			}
 			add_timed_idea = { idea = SOV_work_faster days = 70 }
 			hidden_effect = {
 				if = {
-				limit = {
-					has_completed_focus = FRA_prepare_the_new_navy
+					limit = {
+						has_completed_focus = FRA_prepare_the_new_navy
+					}
+					every_owned_state = {
+					limit= { dockyard > 0 is_core_of = FRA  }
+					}
+					add_offsite_building = {
+					type = dockyard
+					level = 2
+					}
 				}
-		}
-		every_owned_state = {
-			limit= { dockyard > 0 is_core_of = FRA  }
-			}
-			add_offsite_building = {
-				type = dockyard
-				level = 2
-			}
-               
 			}	
+			hidden_effect = {
+				remove_ideas = fourty_hour_work_week
+				remove_ideas = FRA_small_businesses_focus_1
+				remove_ideas = FRA_centralised_industry
+			}
 		}
 	}
 	

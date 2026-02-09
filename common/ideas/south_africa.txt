@@ -159,7 +159,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.075
 			}
 		}
 		SAF_cheap_labor_3 = {
@@ -172,7 +172,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.15
 				global_building_slots_factor = 0.2
 			}
 		}
