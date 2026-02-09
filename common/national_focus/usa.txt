@@ -792,6 +792,11 @@ focus = {
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 300 producer = USA }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
 			country_event = { id = wtt_britain.30 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			add_ideas = ENG_shadow_scheme
 		}
 		every_country = {
 			limit = {
