@@ -1141,13 +1141,11 @@ focus = {
         available_if_capitulated = no
 
         completion_reward = {
-            effect_tooltip = {
-                RAJ = {
-                    add_equipment_to_stockpile = { 
-                        type = infantry_equipment
-                        amount = 10000
-                        producer = ENG
-                    }
+            RAJ = {
+                add_equipment_to_stockpile = { 
+                    type = infantry_equipment
+                    amount = 10000
+                    producer = ENG
                 }
             }
         }
@@ -1179,23 +1177,21 @@ focus = {
         search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
 
         completion_reward = {
-            effect_tooltip = {
-                RAJ = {
-                    add_equipment_to_stockpile = { 
-                        type = motorized_equipment_1
-                        amount = 500
-                        producer = ENG
-                    }
-                    add_equipment_to_stockpile = { 
-                        type = train_equipment
-                        amount = 50
-                        producer = ENG
-                    }
-                    add_equipment_to_stockpile = { 
-                        type = support_equipment
-                        amount = 500
-                        producer = ENG
-                    }
+            RAJ = {
+                add_equipment_to_stockpile = { 
+                    type = motorized_equipment_1
+                    amount = 500
+                    producer = ENG
+                }
+                add_equipment_to_stockpile = { 
+                    type = train_equipment
+                    amount = 50
+                    producer = ENG
+                }
+                add_equipment_to_stockpile = { 
+                    type = support_equipment
+                    amount = 500
+                    producer = ENG
                 }
             }
         }
