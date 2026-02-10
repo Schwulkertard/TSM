@@ -402,7 +402,7 @@ equipments = {
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_hmg
  		}
- 		maximum_speed = 6
+ 		maximum_speed = 4
  		build_cost_ic = 2.5
  		reliability = 0.95
  		breakthrough = 2
@@ -548,7 +548,7 @@ equipments = {
 			special_type_slot_3 = additional_machine_guns
  		}
  		build_cost_ic = 3
- 		maximum_speed = 6
+ 		maximum_speed = 4.5
  		reliability = 1.2
  		breakthrough = 3.5
  		armor_value = 22.5
@@ -704,7 +704,7 @@ equipments = {
 			special_type_slot_3 = additional_machine_guns
  		}	
  		build_cost_ic = 3.5
- 		maximum_speed = 6.5
+ 		maximum_speed = 5
  		reliability = 1.5
  		armor_value = 30
  		breakthrough = 5

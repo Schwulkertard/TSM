@@ -2312,7 +2312,7 @@ focus_tree = {
  			}
  		}
  		available = {
- 			always = no
+			date > 1941.1.1
  		}
  		bypass = {
  			has_war_with = ENG
@@ -2324,6 +2324,21 @@ focus_tree = {
 		select_effect = {
 		}
  		completion_reward = {
+			annex_country = {
+				target = INS
+				transfer_troops = no
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = INS
+				}
+				add_compliance = 100
+			}
+			AST = {
+				transfer_state = 588
+				transfer_state = 740
+				transfer_state = 656
+			}
  		}
  	}
  	focus = {
@@ -2762,7 +2777,7 @@ focus_tree = {
  		}
  		available = {
  			count_triggers = {
- 				amount=10
+ 				amount=6
  				300= {is_controlled_by_ROOT_or_ally=yes}
  				294= {is_controlled_by_ROOT_or_ally=yes}
  				547= {is_controlled_by_ROOT_or_ally=yes}

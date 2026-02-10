@@ -622,6 +622,7 @@ country_event = {
 				white_peace = GRE
 				white_peace = POL
 				white_peace = LUX
+				white_peace = MEX
 				add_ideas = peace_training
 				add_ideas = war_in_our_neigbour
 				remove_decision = war_bonds

@@ -1791,8 +1791,6 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = SOV_modify_stavka_tt
-			add_to_variable = { SOV_operative_slot = 1 tooltip = operative_slot_tt }
 			set_technology = {motorized_rocket_unit=1}
 			custom_effect_tooltip = "Five fully equipped Katyusha-Divisions will spawn in Moscow."
 			hidden_effect={
