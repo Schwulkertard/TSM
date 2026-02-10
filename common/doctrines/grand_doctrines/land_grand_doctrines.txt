@@ -101,31 +101,6 @@ new_mobile_warfare = {
         {
         #motorized
         category_mobile_infantry = {max_organisation=5 default_morale = 0.05}
-        motorized={
-			need = {
-				motorized_equipment = -10
-			}
-		}
-		mot_anti_tank_brigade={
-			need = {
-				motorized_equipment = -5
-			}
-		}
-		mot_anti_air_brigade={
-			need = {
-				motorized_equipment = -5
-			}
-		}
-		mot_artillery_brigade={
-			need = {
-				motorized_equipment = -5
-			}
-		}
-		mot_rocket_artillery_brigade={
-			need = {
-				motorized_equipment = -5
-			}
-		}
         mechanized={
 			need = {
 				mechanized_equipment = -5
@@ -133,8 +108,6 @@ new_mobile_warfare = {
 		}
         effect = {
         custom_effect_tooltip = "Each Mechanized Batallion requires 5 less Mechanized Equipment"
-        custom_effect_tooltip = "Each Motorized Batallion requires 10 less Motorized Equipment"
-        custom_effect_tooltip = "Each Motorized Artillery requires Batallion 5 less Motorized Equipment"
                 if = {
                     limit = {
                         NOT = {
@@ -725,25 +698,6 @@ grand_battleplan = {
             
         }
         {
-            #motorized
-            motorized = {
-		
-                urban = {
-                    attack = 0.025
-                }
-                jungle = {
-                    attack = 0.025
-                }
-                mountain = {
-                    attack = 0.025
-                }
-                hills = {
-                    attack = 0.025
-                }
-                forest = {
-                    attack = 0.025
-			}
-		}
             mechanized = {
 		
                 urban = {
@@ -971,12 +925,6 @@ mass_assault = {
         {
             #motorized
             category_mobile_infantry = {default_morale = 0.1 }
-            motorized = {
-			need = {
-				motorized_rocket_equipment = 10
-				motorized_equipment = -10
-			}
-		}
 		mechanized = {
 			need = {
 				motorized_rocket_equipment = 10
@@ -984,7 +932,7 @@ mass_assault = {
 			}
 		}
             effect = {
-                custom_effect_tooltip = "Motorized and Mechanized Batallions needs 10 less mot/mech and 10 more Katyushas"
+                custom_effect_tooltip = "Mechanized Batallions needs 10 less mech and 10 more Katyushas"
                 if = {
                     limit = {
                         NOT = {

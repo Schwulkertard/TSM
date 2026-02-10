@@ -280,9 +280,6 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.05
 		}
-		motorized = {
-			soft_attack = 0.05
-		}
 		mechanized = {
 			soft_attack = 0.05
 		}
@@ -373,9 +370,6 @@ technologies = {
 			soft_attack = 0.075
 		}
 		cavalry = {
-			soft_attack = 0.075
-		}
-		motorized = {
 			soft_attack = 0.075
 		}
 		mechanized = {
@@ -527,9 +521,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 		cavalry = {
-			soft_attack = 0.1
-		}
-		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
@@ -1165,10 +1156,6 @@ technologies = {
 			defense = 0.08
 			breakthrough = 0.08
 		}
-		motorized = {
-			defense = 0.08
-			breakthrough = 0.08
-		}
 		mechanized = {
 			defense = 0.08
 			breakthrough = 0.08
@@ -1231,10 +1218,6 @@ technologies = {
 			breakthrough = 0.08
 		}
 		category_special_forces = {
-			defense = 0.08
-			breakthrough = 0.08
-		}
-		motorized = {
 			defense = 0.08
 			breakthrough = 0.08
 		}
@@ -1310,10 +1293,6 @@ technologies = {
 			defense = 0.08
 			breakthrough = 0.08
 		}
-		motorized = {
-			defense = 0.08
-			breakthrough = 0.08
-		}
 		mechanized = {
 			defense = 0.08
 			breakthrough = 0.08
@@ -1377,10 +1356,6 @@ technologies = {
 			breakthrough = 0.08
 		}
 		category_special_forces = {
-			defense = 0.08
-			breakthrough = 0.08
-		}
-		motorized = {
 			defense = 0.08
 			breakthrough = 0.08
 		}
@@ -1451,10 +1426,6 @@ technologies = {
 			defense = 0.08
 			breakthrough = 0.08
 		}
-		motorized = {
-			defense = 0.08
-			breakthrough = 0.08
-		}
 		mechanized = {
 			defense = 0.08
 			breakthrough = 0.08
@@ -1503,9 +1474,6 @@ technologies = {
 	tech_trucks = {
 
 		enable_subunits = {
-			motorized
-			mot_anti_tank_brigade
-			mot_artillery_brigade
 			mot_anti_air_brigade
 		}
 
