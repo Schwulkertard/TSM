@@ -36,6 +36,50 @@ ideas = {
 				}
 			}
 		}
+		hihi_modding={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 100
+				}
+				#small_plane_cas_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.4
+				#}
+				#small_plane_naval_bomber_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.4
+				#}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 100
+				}
+				#medium_plane_fighter_airframe = {
+				#	instant = yes
+				#	build_cost_ic = 0.3
+				#}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 100
+				}
+				ship_hull_carrier = {
+					instant = yes
+					build_cost_ic = 100
+				}
+				ship_hull_submarine = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+			}
+		}
 	speed3_africa={
 			picture = generic_infantry_bonus
 			allowed = {

@@ -244,8 +244,13 @@ on_actions = {
 			if= {limit={is_ai=no}
 			calculate_resource_stockpile=yes
 			}
-			
  		}
+		every_country = {
+			limit = {
+				is_scw_minor_country = yes
+			}
+			add_ideas = hihi_modding
+		}
 		SWE={update_academy_weekly=yes}
 		every_country={ limit={is_playable_country =yes }
  			add_dynamic_modifier= {modifier =academy_over_time}
