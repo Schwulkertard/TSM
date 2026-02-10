@@ -822,6 +822,30 @@ focus = {
 				uses = 2
 				category = cat_anti_air
 			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = survivability_studies
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = self_sealing_fuel_tanks
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = engines_3
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = aa_cannon_1
+			}
 		}
 	}
 	focus = {

@@ -997,6 +997,30 @@ focus = {
                 bonus = 1
                 technology = improved_medium_airframe
             }
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = survivability_studies
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = self_sealing_fuel_tanks
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = engines_3
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = aa_cannon_1
+			}
         }
 	}
 	focus = {

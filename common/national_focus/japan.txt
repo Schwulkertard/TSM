@@ -156,114 +156,22 @@ focus_tree = {
  				JAP = {
  					army_experience = 300
  					air_experience = 600
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = survivability_studies
 					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = self_sealing_fuel_tanks
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = engines_3
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = aa_cannon_1
-					}}
  				SOV = { 
 					army_experience = 50
  					air_experience = 250
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = survivability_studies
 					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = self_sealing_fuel_tanks
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = engines_3
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = aa_cannon_1
-					}}
  				USA = { 
 					add_war_support = 0.15
 					add_stability = 0.05
  					army_experience = 100
  					air_experience = 250
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = survivability_studies
 					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = self_sealing_fuel_tanks
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = engines_3
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = aa_cannon_1
-					}}
  				ENG = { 
 					add_war_support = 0.1
  					army_experience = 50
  					air_experience = 200
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = survivability_studies
 					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = self_sealing_fuel_tanks
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = engines_3
-					}
-					add_tech_bonus = {
-						name = JAP_air_research
-						bonus = 1.5
-						uses = 1
-						technology = aa_cannon_1
-					}}
  				AST = { 
 					add_war_support = 0.1
  					army_experience = 50
@@ -1558,6 +1466,30 @@ focus_tree = {
  				uses = 1
  				category = medium_air
  			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = survivability_studies
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = self_sealing_fuel_tanks
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = engines_3
+			}
+			add_tech_bonus = {
+				name = JAP_air_research
+				bonus = 1
+				uses = 1
+				technology = aa_cannon_1
+			}		
  		}
  	}
  	focus = {
