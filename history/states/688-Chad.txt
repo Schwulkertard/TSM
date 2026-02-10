@@ -2,7 +2,6 @@ state={
  	id=688
  	name="STATE_774"
  	history={
-		add_extra_state_shared_building_slots = 1
 		set_state_flag = french_africa_state
  		owner = FRA
  		add_core_of=SWE

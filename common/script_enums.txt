@@ -659,15 +659,19 @@ script_enum_equipment_bonus_type = {
 	mechanized_amphibious_chassis
 	mechanized_spg_equipment
 	mechanized_td_equipment
+	mechanized_aa_equipment_0
 	mechanized_aa_equipment_1
 	mechanized_aa_equipment_2
 	mechanized_aa_equipment_3
+	mechanized_amphibious_chassis_0
 	mechanized_amphibious_chassis_1
 	mechanized_amphibious_chassis_2
 	mechanized_amphibious_chassis_3
+	mechanized_spg_equipment_0
 	mechanized_spg_equipment_1
 	mechanized_spg_equipment_2
 	mechanized_spg_equipment_3
+	mechanized_td_equipment_0
 	mechanized_td_equipment_1
 	mechanized_td_equipment_2
 	mechanized_td_equipment_3

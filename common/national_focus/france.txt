@@ -1718,7 +1718,6 @@ focus_tree = {
 			type = convoy
 			amount = 200
 			}
-			add_timed_idea = { idea = SOV_work_faster days = 70 }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1902,10 +1901,10 @@ focus_tree = {
 				equipment = {
 				type = medium_tank_chassis_2
 				creator = "FRA"
-			}
+				}
 				requested_factories = 20
 				progress = 0.1
-				efficiency = 50
+				efficiency = 10
 			}
 
 			division_template = {
@@ -1919,10 +1918,10 @@ focus_tree = {
 			medium_armor = { x = 1 y = 1 }
 			medium_armor = { x = 1 y = 2 }
 			medium_armor = { x = 1 y = 3 }
-			medium_armor = { x = 2 y = 0 }
-			medium_armor = { x = 2 y = 1 }
-			medium_armor = { x = 2 y = 2 }
-			medium_armor = { x = 2 y = 3 } 
+			medium_tank_destroyer_brigade = { x = 2 y = 0 }
+			medium_tank_destroyer_brigade = { x = 2 y = 1 }
+			medium_sp_artillery_brigade = { x = 2 y = 2 }
+			medium_sp_artillery_brigade = { x = 2 y = 3 } 
 	        mechanized = { x = 3 y = 0 }
 		    mechanized = { x = 3 y = 1 }
 			mechanized = { x = 3 y = 2 }
@@ -1933,19 +1932,20 @@ focus_tree = {
 			mechanized = { x = 4 y = 3 }
 			}
 			support = {
-			mot_recon = { x = 0 y = 0 }
+			armored_car_recon = { x = 0 y = 0 }
 			engineer = { x = 0 y = 1 }
-			artillery = { x = 0 y = 2 }
+			medium_sp_artillery = { x = 0 y = 2 }
 			logistics_company = { x = 0 y = 3 }
 			signal_company = { x = 0 y = 4 }
 			maintenance_company = {x = 0 y = 5}
+			medium_tank_destroyer = {x = 0 y = 6}
 			}
 		}
-		466 = {
+		478 = {
 			for_loop_effect = {
-			end = 2
+			end = 6
 			create_unit = {
-			division = "name = \"Medium Tank\" division_template = \"Medium Tank\" start_experience_factor = 0.4"
+			division = "name = \"Medium Tank\" division_template = \"Medium Tank\" start_experience_factor = 0.3"
 			owner = FRA
 				}
 			}
