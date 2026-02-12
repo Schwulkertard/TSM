@@ -61,56 +61,61 @@
 		prefix = "HMS"
 		generic = { "Light Cruiser" }
 		unique = {
-			# Starting with Leander class (less HMNZS ships)
-			"Ajax" "Neptune" "Orion" "Amphion" "Apollo" "Arethusa" "Aurora" "Galatea" "Penelope" "Southampton" "Birmingham" "Glasgow" "Newcastle" "Sheffield" "Gloucester" "Liverpool"
-			"Manchester" "Edinburgh" "Belfast" "Bonaventure" "Dido" "Hermione" "Naiad" "Phoebe" "Euryalus" "Sirius" "Charybdis" "Cleopatra" "Scylla" "Argonaut"
-			"Bermuda" "Fiji" "Gambia" "Jamaica" "Kenya" "Mauritius" "Nigeria" "Trinidad" "Swiftsure" "Minotaur" "Superb" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan"
-			"Ceylon" "Newfoundland" "Uganda" "Swiftsure" "Minotaur" "Superb" "Tiger" "Lion" "Blake"
-			##reusing WW1 ship names from here##
-			"Constance" "Centaur" "Concord" "Phaeton" "Bristol" "Weymouth" "Dartmouth" "Falmouth" "Yarmouth" "Chatham" "Caroline" "Caledon" "Calypso" "Caradoc" "Cardiff" "Ceres"
-			"Coventry" "Curacoa" "Curlew" "Cairo" "Calcutta" "Capetown" "Carlisle" "Colombo" "Danae" "Dauntless" "Dragon" "Delhi" "Dunedin" "Durban" "Despatch" "Diomede" "Emerald"
-			"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion"
+			"Ajax" "Neptune" "Orion" "Amphion" "Apollo" "Arethusa" "Aurora" "Galatea"
+			"Penelope" "Southampton" "Birmingham" "Glasgow" "Newcastle" "Sheffield" "Gloucester" "Liverpool"
+			"Manchester" "Edinburgh" "Belfast" "Bonaventure" "Dido" "Hermione" "Naiad" "Phoebe"
+			"Euryalus" "Sirius" "Charybdis" "Cleopatra" "Scylla" "Argonaut" "Bermuda" "Fiji"
+			"Gambia" "Jamaica" "Kenya" "Mauritius" "Nigeria" "Trinidad" "Ceylon" "Newfoundland"
+			"Uganda" "Swiftsure" "Minotaur" "Superb" "Bellona" "Diadem" "Royalist" "Spartan"
+			"Constance" "Centaur" "Concord" "Phaeton" "Bristol" "Weymouth" "Dartmouth" "Falmouth"
+			"Yarmouth" "Chatham" "Caroline" "Caledon" "Calypso" "Caradoc" "Cardiff" "Ceres"
+			"Coventry" "Curacoa" "Curlew" "Cairo" "Calcutta" "Capetown" "Carlisle" "Colombo"
+			"Danae" "Dauntless" "Dragon" "Delhi" "Dunedin" "Durban" "Despatch" "Diomede"
+			"Emerald" "Enterprise" "Achilles" "Leander"
 		}
 	}
 	heavy_cruiser = {
 		prefix = "HMS"
 		generic = { "Heavy Cruiser" }
 		unique = {
-			"Cavendish" "Raleigh" "Imperieuse" "Orlando" "Blake" "Surrey" "Blenheim"
-			"Hawkins" "Frobisher" "Effingham" "Cumberland" "Berwick" "Cornwall" "Suffolk" "Kent" "London" "Devonshire" "Shropshire" "Sussex" "Norfolk" "Dorsetshire"
-			"York" "Exeter"
-			###
-			"Edgar" "Hawke" "Endymion" "Grafton" "St. George" "Northumberland" "Crescent" "Powerful" "Terrible"
-			"Diadem" "Niobe" "Amphitrite" "Ariadne" "Spartiate" "Hogue" "Bacchante" "Euryalus" "Drake" "Good Hope" "Essex" "Hampshire" "Carnarvon" "Antrim" "Roxburgh" "Argyll" "Duke of Edinburgh" "Cochrane" "Black Prince"
+			"Cavendish" "Raleigh" "Imperieuse" "Orlando" "Blake" "Surrey" "Blenheim" "Hawkins" "Frobisher" "Effingham"
+			"Cumberland" "Berwick" "Cornwall" "Suffolk" "Kent" "London" "Devonshire"
+			"Shropshire" "Sussex" "Norfolk" "Dorsetshire" "York" "Exeter"
+			"Drake" "Good Hope" "Essex" "Hampshire" "Carnarvon" "Antrim" "Roxburgh" "Argyll"
+			"Duke of Edinburgh" "Cochrane" "Monmouth" "Lancaster" "Gloucester" "Warwick"
 		}
 	}
 	battle_cruiser = {
 		prefix = "HMS"
 		generic = { "Battlecruiser" }
 		unique = {
-			"Anson" "Howe" "Jellicoe" "Beatty" "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Princess Royal" "Queen Mary" "Tiger"
-			"Renown" "Repulse" "Courageous" "Glorious" "Furious" "Hood" "Rodney"
+			"Jellicoe" "Beatty" "Resistance" "Incomparable" "Invincible" "Inflexible"
+			"Princess Royal" "Queen Mary" "Tiger" "Renown" "Repulse"
+			"Courageous" "Glorious" "Furious" "Hood" "Conquest" "Majestic" "Magnificent"
+			"Illustrious" "Victorious" "Benbow" "Duncan"
+			"Fisher" "Sturdee" "Dominion" "Imperial"
 		}
 	}
 	battleship = {
 		prefix = "HMS"
 		generic = { "Battleship" }
 		unique = {
-			"King George V" "Prince of Wales" "Duke of York" "Anson" "Howe" "Jellicoe" "Beatty" "Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Agincourt" "Resistance"
-			"Bellerophon" "Superb" "St Vincent" "Collingwood" "Neptune" "Colossus" "Hercules" "Orion" "Monarch" "Centurion" "Audacious" "Ajax" "Erin" "Iron Duke" "Marlborough"
-			"Benbow" "Emperor of India"
-			"Queen Elizabeth" "Warspite" "Valiant" "Barham" "Malaya" "Revenge" "Resolution" "Royal Oak" "Royal Sovereign" "Ramillies" "Renown" "Repulse" "Nelson" "Rodney" "Dreadnought"
+			"King George V" "Prince of Wales" "Duke of York" "Anson" "Howe" "Queen Elizabeth" "Warspite" "Valiant"
+			"Barham" "Malaya" "Revenge" "Resolution" "Royal Oak" "Royal Sovereign" "Ramillies" "Nelson"
+			"Rodney" "Dreadnought" "Vanguard" "Agincourt" "Britannia" "Lion" "Temeraire" "Conqueror"
+			"Thunderer" "Bellerophon" "Superb" "St Vincent" "Collingwood" "Neptune" "Colossus" "Orion"
+			"Monarch" "Centurion" "Audacious" "Erin" "Iron Duke" "Marlborough" "Emperor of India" "Victoria"
 		}
 	}
 	carrier = {
 		prefix = "HMS"
 		generic = { "Carrier" }
 		unique = {
-			"Ark Royal" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable"
-			"Unicorn" "Colossus" "Glory" "Ocean" "Theseus" "Triumph" "Venerable" "Vengeance" "Warrior" "Perseus" "Pioneer"
-			"Majestic" "Hercules" "Leviathan" "Magnificent" "Powerful" "Terrible" "Africa" "Glorious" "Courageous" "Furious" "Eagle"
-			"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Malta" "New Zealand" "Gibraltar"
-
+			"Ark Royal" "Eagle" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable"
+			"Unicorn" "Colossus" "Glory" "Ocean" "Theseus" "Triumph" "Venerable" "Vengeance"
+			"Warrior" "Perseus" "Pioneer" "Majestic" "Hercules" "Leviathan" "Magnificent" "Powerful"
+			"Terrible" "Courageous" "Furious" "Andromeda" "Centaur" "Albion" "Bulwark" "Malta"
+			"Africa" "New Zealand" "Gibraltar"
 		}
 	}
 	air_wing_names_template = AIR_WING_NAME_ENG_FALLBACK

@@ -33,43 +33,40 @@
 		prefix = ""
 		generic = { "Croiseur Léger" }
 		unique = {
-			"La Galissonnière" "Jean de Vienne" "Marseillaise" "Gloire" "Montcalm" "Georges Leygues" "De Grasse" "Châteaurenault" "Guichen" "Colbert"
-			# Older and other models
-			"Duguay-Trouin" "Lamotte-Picquet" "Primaguet" "Pluton" "Jeanne d'Arc" "Émile Bertin"
-			# Fictional names start here
-			"Colmar" "Mulhouse" "Strasbourg" "Metz" "Thionville"
+			"La Galissonnière" "Jean de Vienne" "Marseillaise" "Gloire" "Montcalm" "Georges Leygues" "De Grasse" "Châteaurenault"
+			"Guichen" "Colbert" "Duguay-Trouin" "Lamotte-Picquet" "Primauguet" "Émile Bertin" "Jeanne d'Arc" "Colmar"
+			"Mulhouse" "Metz" "Thionville" "Bougainville" "La Pérouse" "Dumont d'Urville" "D'Entrecasteaux" "Kerguelen"
+			"Forbin" "Cassard" "Duperré" "Kersaint" "Latouche-Tréville" "Surville" "Bouvet" "Bruix"
 		}
 	}
 	heavy_cruiser = {
 		prefix = ""
 		generic = { "Croiseur Lourd" }
 		unique = {
-			"Duquesne" "Tourville" "Suffren" "Colbert" "Foch" "Dupleix" "Algerié"
-			# Fictional (WWI) names start here
-			"St. Louis" "Dupuy de Lôme" "Amiral Charner" "Bruix" "Chanzy" "Latouche-Tréville" "Pothuau" "Dupetit-Thouars" "Gueydon"
-			"Gloire" "Montcalm" "Desaix" "Dupleix" "Kléber" "Amiral Aube" "Condé" "Marseillaise" "Léon Gambetta"
-			"Jules Ferry" "Victor Hugo" "Jules Michelet" "Ernest Renan" "Edgar Quinet" "Waldeck-Rousseau"
+			"Duquesne" "Tourville" "Suffren" "Foch" "Algérie" "Dupleix" "Bruix" "Chanzy"
+			"Latouche-Tréville" "Pothuau" "Dupetit-Thouars" "Gueydon" "Dupuy de Lôme" "Amiral Charner" "Amiral Aube" "Kléber"
+			"Desaix" "Léon Gambetta" "Edgar Quinet" "Waldeck-Rousseau" "Jules Ferry" "Victor Hugo" "Jules Michelet" "Ernest Renan"
+			"Baudin" "Courbet" "Charlemagne" "Villars" "Villeneuve" "Decrès" "Casabianca" "Duguay-Trouin"
 		}
 	}
 	battle_cruiser = {
 		prefix = ""
 		generic = { "Croiseur Cuirassé" }
 		unique = {
-			"Dunkerque" "Strasbourg" "Arras" "Bourges" "Metz" "Lille" "Nantes" "Toulon" "Rouen" "Montpellier"
-			"La Hire" "Jean Bureau" "Bertrand du Guesclin" "Pierre de Brézé" "Jean de Grouchy" "Jean Le Maingre"
-			# Fictional names start here
-			"Normandie" "Flandre" "Gascogne" "Béarn" "Gille" "Durand-Viel"
+			"Dunkerque" "Strasbourg" "Gascogne" "Béarn" "Bourgogne" "Champagne"
+			"Picardie" "Bretagne" "Anjou" "Orléans" "Touraine" "Provence" "Lorraine" "Artois"
+			"Bertrand du Guesclin" "La Hire" "Pierre de Brézé" "Jean de Dunois" "Olivier de Clisson" "Enguerrand de Coucy" "Jean de Vienne" "Philippe de Valois"
+			"Capet" "Valois" "Bourbon" "Orléanais" "Armagnac"
 		}
 	}
 	battleship = {
 		prefix = ""
 		generic = { "Navire de Ligne" }
 		unique = {
-			"Richelieu" "Jean Bart" "Clemenceau" "Gascogne" "Alsace" "Normandie" "Flandre" "Bourgogne" "Languedoc"
-			"Champagne" "Poitou" "Artois" "Foix" "Picardie" "Liberté" "Justice" "Vérité" "Démocratie" "République" "Patrie"
-			"Paris" "Orléans" "Marseille" "Lyon" "Toulouse" "Nice" "Courbet" "France" "Océan" "Bretagne" "Lorraine" "Provence"
-			# Fictional names start here
-			"Duquesne" "Lille" "Tourville"
+			"Richelieu" "Jean Bart" "France" "Bretagne" "Lorraine" "Provence"
+			"Normandie" "Flandre" "Alsace" "Languedoc" "Poitou" "Foix"
+			"Île-de-France" "Berry" "Auvergne" "Limousin" "Dauphiné"
+			"Liberté" "Justice" "Vérité" "République" "Patrie"
 		}
 	}
 	carrier = {
@@ -77,7 +74,6 @@
 		generic = { "Porte-Avions" }
 		unique = {
 			"Joffre" "Painlevé" "Clemenceau" "Béarn"
-			# Fictional names start here
 			"Dixmude" "Arromanches" "Lafayette" "Bois Belleau" "Foch" "Jeanne d'Arc" "Verdun" "Foudre" "Commandant Tante"
 		}
 	}
