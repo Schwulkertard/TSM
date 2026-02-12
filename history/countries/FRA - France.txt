@@ -184,10 +184,10 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Br.693"
-			type = small_plane_cas_airframe_1
+			type = cv_small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
 				special_type_slot_1 = radio_navigation_1
 				engine_type_slot = engine_2_1x				
 				special_type_slot_2 = dive_brakes_small
@@ -276,7 +276,7 @@ if = {
 }
 
 add_equipment_to_stockpile = {
-	type = small_plane_cas_airframe_1
+	type = cv_small_plane_cas_airframe_1
 	variant_name = "Br.693"
 	amount = 400
 	producer = FRA
