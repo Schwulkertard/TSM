@@ -1,4 +1,4 @@
-version="1.16"
+version="1.17*"
 tags={
 	"Balance"
 }
@@ -79,6 +79,5 @@ replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="portraits"
 replace_path="tests"
-name="TSM - DEV"
 supported_version="1.17.3.0"
-remote_file_id="3648114679"
+name="mod"
