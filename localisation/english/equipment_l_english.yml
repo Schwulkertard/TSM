@@ -3680,7 +3680,7 @@ tank_reliability_variant_upgrade_desc:0 "Improving reliability leads to less bro
  plane_gun_upgrade_desc:0 "Better weapons to fight other planes with"
  cv_plane_gun_upgrade:0 "Weapons"
  cv_plane_gun_upgrade_desc:0 "Better weapons to fight other planes with"
- plane_engine_upgrade:0 "Engine"
+ plane_engine_upgrade:0 "Payload"
  plane_engine_upgrade_desc:0 "Higher speed gives a plane an advantage when it comes to positioning and target selection. Important for interceptors."
  plane_range_upgrade:0 "Range"
  plane_range_upgrade_desc:0 "A plane with better range can reach more strategic areas for missions"

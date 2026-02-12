@@ -294,14 +294,14 @@ JAP_yokosuka_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	equipment_type = {
-		small_plane_naval_bomber_airframe
-		small_plane_cas_airframe
+		cv_small_plane_naval_bomber_airframe
+		cv_small_plane_cas_airframe
 	}
 
 	research_categories = { mio_cat_all_naval_bomber_and_modules mio_cat_all_cas_and_modules}
 
 	initial_trait = {
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe } 
+		limit_to_equipment_type = { cv_small_plane_naval_bomber_airframe } 
 		
 		equipment_bonus = {			
 				air_range = 0.1 
@@ -312,7 +312,7 @@ JAP_yokosuka_organization = {
 		name = trait1
 		token = trait1
 		position = { x=1 y=0 }
-		limit_to_equipment_type = { small_plane_cas_airframe  } 
+		limit_to_equipment_type = { cv_small_plane_cas_airframe  } 
 		equipment_bonus = {		
 					air_ground_attack = 0.1
 					reliability = 0.1
