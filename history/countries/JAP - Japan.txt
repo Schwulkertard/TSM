@@ -199,10 +199,10 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Ki-32"
-			type = cv_small_plane_cas_airframe_1
+			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
 				special_type_slot_1 = radio_navigation_1
 				engine_type_slot = engine_2_1x				
 				special_type_slot_2 = dive_brakes_small
@@ -212,10 +212,10 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "G3M1"
-			type = cv_small_plane_naval_bomber_airframe_1
+			type = small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
 				special_type_slot_1 = radio_navigation_1
 				engine_type_slot = engine_2_1x
 				special_type_slot_2 = dive_brakes_small
@@ -319,13 +319,13 @@ if = {
 		  variant_name = "Ki-21"
  }
  add_equipment_to_stockpile = {
-          type = cv_small_plane_cas_airframe_1
+          type = small_plane_cas_airframe_1
           amount = 600
           producer = JAP
 		  variant_name = "Ki-32"
  }
  add_equipment_to_stockpile = {
-          type = cv_small_plane_naval_bomber_airframe_1
+          type = small_plane_naval_bomber_airframe_1
           amount = 691
           producer = JAP
 		  variant_name = "G3M1"

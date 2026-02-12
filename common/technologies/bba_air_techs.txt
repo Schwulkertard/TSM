@@ -107,8 +107,7 @@ technologies = {
 	
 	iw_small_airframe = {
 		allow_branch={NOT={tag=EFR} }
-		enable_equipments = {	
-			cv_small_plane_airframe_0
+		enable_equipments = {
 			small_plane_airframe_0
 			small_plane_cas_airframe_0
 			small_plane_naval_bomber_airframe_0
@@ -156,7 +155,6 @@ technologies = {
 	basic_small_airframe = {
 
 		enable_equipments = {
-			cv_small_plane_airframe_1
 			small_plane_airframe_1
 			small_plane_cas_airframe_1
 			small_plane_naval_bomber_airframe_1
@@ -223,7 +221,6 @@ technologies = {
 	improved_small_airframe = {
 
 		enable_equipments = {
-			cv_small_plane_airframe_2
 			small_plane_airframe_2
 			small_plane_cas_airframe_2
 			small_plane_naval_bomber_airframe_2
@@ -292,7 +289,6 @@ technologies = {
 	advanced_small_airframe = {
 
 		enable_equipments = {
-			cv_small_plane_airframe_3
 			small_plane_airframe_3
 			small_plane_cas_airframe_3
 			small_plane_naval_bomber_airframe_3

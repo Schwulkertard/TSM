@@ -79,7 +79,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Catalina"
-			type = cv_small_plane_naval_bomber_airframe_1
+			type = small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = light_mg_2x
