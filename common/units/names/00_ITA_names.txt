@@ -55,59 +55,63 @@
 		prefix = "RN" # Regio Incrociatore
 		generic = { "Incrociatore Leggero" }
 		unique = {
-			# Current models (2 Duca d'Aosta class, 2 Duca degli Abruzzi class, 4 Capitani Romani class)
-			"Emanuele Filiberto Duca d'Aosta" "Eugenio di Savoia" "Duca degli Abruzzi" "Giuseppe Garibaldi" "Attilio Regolo" "Scipione Africano" "Giulio Germanico" "Pompeo Magno"
-			# Canceled/Not completed/Reconstructed (8 Capitani Romani class, 2 San Giorgio class, 2 Etna class, 2 Costanzo Ciano class)
-			"Lucio Cornelio Silla" "Caio Mario" "Ottaviano Augusto" "Ulpio Traiano" "Claudio Druso" "Claudio Tiberio" "Vipsanio Agrippa" "Paolo Emilio" "San Giorgio" "San Marco" "Etna" "Vesuvio"
-			"Costanzo Ciano" "Venezia"
-			# Older models (SMS Pillau, SMS Strassburg, 4 Giussano class, 2 Cadorna class, 2 Montecuccoli class)
-			"Bari" "Taranto" "Alberto da Giussano" "Alberico da Barbiano" "Bartolomeo Colleoni" "Giovanni dalle Bande Nere" "Luigi Cadorna" "Armando Diaz" "Raimondo Montecuccoli" "Muzio Attendolo"
-			# Fictional names start here (2 WWI Basilicata class, 7 pre-WWI Regioni class, 6 WWI Esploratori class)
-			"Basilicata" "Campania" "Lombardia" "Calabria" "Elba" "Etruria" "Liguria" "Puglia" "Umbria" "Quarto" "Nino Bixio" "Marsala" "Libia" "Ancona" "Brindisi"
+			"Italo Balbo" "Cesare Battisti" "Gabriele D'Annunzio" "Nazario Sauro" "Enrico Toti" "Luigi Rizzo" "Carlo Mirabello" "Costanzo Arconati"
+			"Giuseppe Garibaldi" "Duca degli Abruzzi" "Emanuele Filiberto Duca d'Aosta" "Attilio Regolo" "Scipione Africano" "Giulio Germanico" "Pompeo Magno" "Raimondo Montecuccoli"
+			"Muzio Attendolo" "Alberto da Giussano" "Alberico da Barbiano" "Bartolomeo Colleoni" "Giovanni delle Bande Nere" "Luigi Cadorna" "Armando Diaz" "Francesco Ferruccio"
+			"La Spezia" "Livorno" "Cagliari" "Palermo" "Messina" "Siracusa" "Catania" "Reggio Calabria"
+			"Piombino" "La Maddalena" "Ancona" "Brindisi" "Taranto" "Gaeta" "Salerno" "Bari"
+			"Sardegna" "Sicilia" "Friuli" "Veneto" "Romagna" "Toscana"
+			"Trentino" "Alto Adige" "Liguria" "Campania" "Puglia" "Calabria" "Basilicata" "Abruzzo" "Pelagosa" "Ustica" "Pantelleria"
+			"Lampedusa" "Piave" "Isonzo" "Grappa" "San Giusto" "Quarto" "Anzio"
 		}
 	}
 	heavy_cruiser = {
 		prefix = "RN" # Regio Incrociatore
 		generic = { "Incrociatore Pesante" }
 		unique = {
-			# Current models (2 Trento class, 4 Zara class, 1 Bolzano class)
-			"Trento" "Trieste" "Zara" "Fiume" "Gorizia" "Pola" "Bolzano"
-			# Older models (1 WWI San Giorgio class)
-			"San Giorgio"
-			# Fictional names start here (3 WWI Vettor Pisani class, 3 WWI Giuseppe Garibaldi class, 2 WWI Pisa class, 1 WWI San Giorgio class)
-			"Vettor Pisani" "Carlo Alberto" "Marco Polo" "Giuseppe Garibaldi" "Varese" "Francesco Ferruccio" "Pisa" "Amalfi" "San Marco"
+			"Zara" "Fiume" "Pola" "Gorizia" "Trento" "Trieste" "Bolzano"
+			"Genova" "Venezia" "Ancona" "Ravenna" "Rimini" "Pesaro" "Senigallia"
+			"Bari" "Brindisi" "Taranto" "Otranto" "Napoli" "Gaeta" "Salerno"
+			"Livorno" "La Spezia" "Piombino" "Palermo" "Messina" "Catania" "Siracusa"
+			"Cagliari" "Olbia" "Sassari" "Trapani" "Marsala"
+			"Aosta" "Udine" "Treviso" "Vicenza" "Padova" "Verona"
+			"Brescia" "Bergamo" "Como" "Lecco" "Parma" "Modena" "Reggio Emilia"
+			"L'Aquila" "Pescara" "Chieti"
+			"Istria" "Dalmazia" "Quarnaro" "Liburnia" "Spalato" "Cattaro" "Ragusa"
+			"Valona" "Durazzo" "Tripoli" "Bengasi" "Derna" "Tobruk"
+			"Rodi" "Kos" "Lero"
 		}
 	}
 	battle_cruiser = {
 		prefix = "RN" # Regia Nave
 		generic = { "Incrociatore da Battaglia" }
 		unique = {
-			# Canceled/Not completed (4 Francesco Caracciolo class)
-			"Francesco Caracciolo" "Cristoforo Colombo" "Marcantonio Colonna" "Francesco Morosini"
-			# Fictional names start here (2 pre-WWI Principe Amedeo class)
-			"Principe Amedeo" "Palestra"
+			"Francesco Caracciolo" "Cristoforo Colombo" "Marcantonio Colonna" "Vettor Pisani" "Carlo Zeno"
+			"Andrea Contarini" "Pietro Mocenigo" "Lorenzo Marcello" "Giovanni Giustiniani"
+			"Principe Amedeo" "Principe Umberto" "Principe Vittorio Emanuele" "Principe Tommaso" "Principe Eugenio di Savoia" "Principe Ferdinando"
 		}
 	}
 	battleship = {
 		prefix = "RN" # Regia Nave
 		generic = { "Corazzata" }
 		unique = {
-			# Current models (2 Conte Di Cavour class, 2 Caio Duilio class, 3 Littorio class)
-			"Conte Di Cavour" "Giulio Cesare" "Caio Duilio" "Andrea Doria" "Littorio" "Vittorio Veneto" "Roma"
-			# Canceled/Not completed/Reconstructed (1 Littorio class, 1 Italia class)
-			"Impero" "Italia"
-			# Fictional names start here (1 WWI Conte Di Cavour class, 1 WWI Dante Alighieri class)
-			"Leonardo Da Vinci" "Dante Alighieri"
+			"Conte di Cavour" "Giulio Cesare" "Caio Duilio" "Andrea Doria"
+			"Littorio" "Vittorio Veneto" "Roma" "Italia" "Impero"
+			"Re Vittorio Emanuele I" "Re Vittorio Emanuele II" "Re Vittorio Emanuele III"
+			"Re Umberto I" "Re Umberto II" "Re Carlo Alberto"
+			"Amedeo di Savoia" "Emanuele Filiberto"
+			"Francesco Morosini" "Sebastiano Venier" "Enrico Dandolo"
+			"Cesare Augusto" "Traiano" "Adriano"
+			"Dante Alighieri" "Leonardo da Vinci" "Raffaello"
 		}
 	}
 	carrier = {
 		prefix = "RN" # Regia Nave
 		generic = { "Portaerei" }
 		unique = {
-			# Canceled/Not completed/Reconstructed (1 Aquila class, 1 Sparviero class)
-			"Aquila" "Sparviero"
-			# Fictional names start here (1 fictional, 1 pre-WWI Europa class, 1 WWI Giuseppe Miraglia class)
-			"Falco" "Europa" "Giuseppe Miraglia"
+			"Aquila" "Sparviero" "Falco" "Astore" "Poiana" "Nibbio" "Grifone" "Condor"
+			"Pegaso" "Icaro" "Dedalo" "Orione" "Atlante" "Mercurio"
+			"Giuseppe Miraglia" "Miraglia II"
 		}
 	}
 

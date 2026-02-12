@@ -381,7 +381,7 @@ equipment_modules = {
  			hg_armor_piercing = 62.5
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			steel = 15
  		}
 		can_convert_from = {
 			module_category = ship_13_battery

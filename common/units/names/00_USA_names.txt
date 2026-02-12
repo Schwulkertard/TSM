@@ -66,49 +66,46 @@
 		generic = { "Light Cruiser" }
 		unique = {
 			# From Wiki (Built/Served/Fought)
-			"Omaha" "Milwaukee" "Cincinnati" "Raleigh" "Detroit" "Richmond" "Concord" "Trenton" "Marblehead" "Memphis" "Brooklyn" "Philadelphia" "Savannah" "Nashville" "Phoenix" "Boise" "Honolulu"
-			"St. Louis" "Helena" "Atlanta" "Juneau" "San Diego" "San Juan" "Cleveland"	"Columbia" "Montpelier" "Denver" "Santa Fe" "Birmingham" "Mobile" "Vincennes" "Pasadena" "Springfield"
-			"Topeka" "Biloxi" "Houston" "Providence" "Manchester" "Vicksburg" "Duluth" "Miami" "Astoria" "Oklahoma City" "Little Rock" "Galveston" "Oakland" "Reno" "Flint" "Tucson"
-			"Amsterdam" "Portsmouth" "Wilkes-Barre" "Dayton" "Fargo" "Huntington" "Spokane" "Fresno"
-			# From Wiki  (Unfinished/Cancelled/Converted before completion)
-			"Newark" "New Haven" "Buffalo" "Wilmington" "Vallejo" "Roanoke" "Tallahassee" "Cheyenne" "Chattanooga" "Worcester" "Gary" "Providence" "Portsmouth"
+			"Omaha" "Milwaukee" "Cincinnati" "Raleigh" "Detroit" "Richmond" "Concord" "Trenton" "Marblehead" "Memphis"
+			"Brooklyn" "Philadelphia" "Savannah" "Nashville" "Phoenix" "Boise" "Honolulu" "St. Louis" "Helena" "Atlanta" "Juneau" "San Diego" "San Juan"
+			"Cleveland" "Columbia" "Montpelier" "Denver" "Santa Fe" "Birmingham" "Mobile"
+			"Vincennes" "Pasadena" "Springfield" "Topeka" "Biloxi" "Houston" "Providence" "Manchester" "Vicksburg" "Duluth" "Miami"
+			"Astoria" "Oklahoma City" "Little Rock" "Galveston" "Oakland" "Reno" "Flint" "Tucson"
+			"Amsterdam" "Portsmouth" "Wilkes-Barre" "Dayton" "Fargo" "Huntington" "Spokane" "Fresno" "Newark" "New Haven" "Buffalo" "Wilmington"
+			"Vallejo" "Roanoke" "Tallahassee" "Cheyenne" "Chattanooga" "Worcester" "Gary"
 		}
 	}
 	heavy_cruiser = {
 		prefix = "USS"
 		generic = { "Heavy Cruiser" }
 		unique = {
-			"Pensacola" "Salt Lake City" "Northampton" "Chester" "Louisville" "Chicago" "Houston" "Augusta"
-			"New Orleans" "Portland" "Astoria" "Indianapolis" "Minneapolis" "Tuscaloosa" "San Francisco" "Quincy" "Vincennes" "Wichita"
-			"Baltimore" "Boston" "Canberra" "Pittsburgh" "St. Paul" "Columbus" "Helena" "Bremerton" "Fall River" "Macon" "Toledo" "Los Angeles"
-			"Oregon City" "Albany" "Rochester" "Des Moines" "Salem" "Worcester" "Roanoke" "Newport News"
-			# From Wiki  (Unfinished/Cancelled/Converted before completion)
-			"Cambridge" "Bridgeport" "Kansas City" "Tulsa" "Norfolk" "Scranton" "Dallas" "Vallejo" "Gary"
+			"Pensacola" "Salt Lake City" "Northampton" "Chester" "Louisville" "Chicago" "Houston" "Augusta" "Portland" "Indianapolis"
+			"New Orleans" "Astoria" "Minneapolis" "Tuscaloosa" "San Francisco" "Quincy" "Vincennes" "Wichita"
+			"Baltimore" "Boston" "Canberra" "Pittsburgh" "St. Paul" "Columbus"
+			"Bremerton" "Fall River" "Macon" "Toledo" "Los Angeles"
+			"Oregon City" "Albany" "Rochester" "Des Moines" "Salem" "Newport News"
 		}
 	}
 	battle_cruiser = {
 		prefix = "USS"
-		generic = { "Battle Cruiser" }
+		generic = { "Large Cruiser" }
 		unique = {
-			#wiki: Historic list of Alaska Class
 			"Alaska" "Guam" "Hawaii" "Philippines" "Puerto Rico" "Samoa" "Virgin Islands"
-			#Additional US Territories/Districts during WW2 era
-			"District of Columbia" "Panama Canal" "Wake Island" "Midway Island" "Johnston Atoll" "Palmyra Island" "Baker Island" "Howland Island" "Jarvis Island"
+			"District of Columbia" "Panama Canal" "Wake Island" "Midway Island"
+			"Johnston Atoll" "Palmyra Island" "Baker Island" "Howland Island" "Jarvis Island" "American Samoa"
+			"Ponape" "Kosrae" "Canton Island" "Enderbury Island" "Kingman Reef" "Navassa Island" "Guantanamo Bay"
 		}
 	}
 	battleship = {
 		prefix = "USS"
 		generic = { "Battleship" }
 		unique = {
-			# From Wiki (Served)
-			"Arkansas" "New York" "Texas" "Nevada" "Oklahoma" "Pennsylvania" "Arizona" "New Mexico" "Mississippi" "Idaho" "Tennessee" "California" "Colorado" "Maryland" "West Virginia"
-			"North Carolina" "Washington" "South Dakota" "Indiana" "Massachusetts" "Alabama" "Iowa" "New Jersey" "Missouri" "Wisconsin" "Illinois" "Kentucky"
-			# From Wiki (never completed)
-			"Montana" "Ohio" "Maine" "New Hampshire" "Louisiana" "South Carolina"
-			# Older/Other state names
-			"Minnesota" "North Dakota" "Oregon" "Connecticut" "Vermont" "New Hampshire" "Florida" "Utah" "Delaware" "Michigan" "Kansas" "Rhode Island" "Nebraska" "Virginia"
-			# Training ship, historically
-			"Wyoming"
+			"Arkansas" "New York" "Texas" "Nevada" "Oklahoma" "Pennsylvania" "Arizona" "New Mexico" "Mississippi" "Idaho" "Tennessee" "California" "Colorado"
+			"Maryland" "West Virginia" "North Carolina" "Washington" "South Dakota" "Indiana" "Massachusetts" "Alabama"
+			"Iowa" "New Jersey" "Missouri" "Wisconsin" "Illinois" "Kentucky" "Montana" "Ohio" "Maine" "New Hampshire" "Louisiana" "South Carolina"
+			"Minnesota" "North Dakota" "Oregon" "Connecticut" "Vermont" "Florida" "Utah" "Delaware" "Michigan" "Kansas" "Rhode Island" "Nebraska"
+			"Virginia" "Wyoming" "Georgia" "New York II" "California II" "Texas II" "Maine II" "Virginia II"
+			"Delaware II" "Michigan II" "Constitution"
 		}
 	}
 	carrier = {
@@ -116,12 +113,14 @@
 		generic = { "Carrier" }
 		unique = {
 			"Lexington" "Saratoga" "Ranger" "Yorktown" "Enterprise" "Wasp" "Hornet"
-			"Essex" "Intrepid" "Franklin" "Ticonderoga" "Randolph" "Bunker Hill" "Hancock" "Bennington" "Boxer" "Bon Homme Richard" "Shangri-la" "Lake Champlain" "Tarawa" "Antietam"
-			"Midway" "Franklin D Roosevelt" "Leyte"	"Kearsarge"	"Valley Forge" "Philippine Sea" "Coral Sea" "Oriskany"
-			# CVL Names
+			"Essex" "Intrepid" "Franklin" "Ticonderoga" "Randolph" "Bunker Hill" "Hancock" "Bennington" "Boxer"
+			"Bon Homme Richard" "Shangri-la" "Lake Champlain" "Tarawa" "Antietam"
+			"Midway" "Franklin D Roosevelt" "Leyte" "Kearsarge" "Valley Forge" "Philippine Sea" "Coral Sea" "Oriskany"
+
 			"Independence" "Princeton" "Belleau Wood" "Cowpens" "Monterey" "Cabot" "Bataan" "San Jacinto" "Saipan" "Wright"
-			# Cold War and Beyond  (WW2 era Gen/Adm names excluded)
-			"United States" "Forrestal" "Kitty Hawk" "Constellation" "America" "Theodore Roosevelt" "Abraham Lincoln" "George Washington"
+
+			"United States" "Forrestal" "Kitty Hawk" "Constellation" "America"
+			"Theodore Roosevelt" "Abraham Lincoln" "George Washington"
 		}
 	}
 
