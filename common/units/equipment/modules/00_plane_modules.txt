@@ -915,11 +915,6 @@ equipment_modules = {
 		gui_category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 1
 		}
@@ -1140,11 +1135,6 @@ equipment_modules = {
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 2
 			weight = 8
@@ -1173,11 +1163,6 @@ equipment_modules = {
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 2.5
 			weight = 10
@@ -1206,11 +1191,6 @@ equipment_modules = {
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 3
 		}
@@ -1233,30 +1213,12 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0.5
 	}
-	tail_hook = {
-		abbreviation = "th"
-		category = arrestor_hook
-		forbid_module_categories = {
-			fighter_weapon
-		}
-		gui_category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			build_cost_ic = 1
-		}
-		dismantle_cost_ic = 1
-	}
 	armor_piercing_bomb_locks = {
 		abbreviation = "bol"
 		category = special_bombs
 		gui_category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		forbid_module_categories = {
 			nav_bomber_weapon
 		}
@@ -1287,11 +1249,6 @@ equipment_modules = {
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 2
 		}
@@ -1320,11 +1277,6 @@ equipment_modules = {
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 2
 		}
@@ -1354,11 +1306,6 @@ equipment_modules = {
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
-		allowed_module_categories = {
- 			fixed_auxiliary_weapon_slot_1 = {
- 				plane_special_module_defense_turret
- 			}
- 		}
 		add_stats = {
 			build_cost_ic = 2
 		}
