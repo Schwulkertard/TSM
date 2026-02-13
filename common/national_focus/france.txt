@@ -798,7 +798,7 @@ focus_tree = {
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
-				type = small_plane_cas_airframe_1
+				type = cv_small_plane_cas_airframe_1
 				amount = 400
 				producer = FRA
 			}

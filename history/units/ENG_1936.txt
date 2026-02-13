@@ -219,7 +219,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_naval_bomber_airframe_1
+			type = cv_small_plane_naval_bomber_airframe_1
 			creator = "ENG"
 			version_name = "Swordfish"
 		}
@@ -229,7 +229,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_cas_airframe_1
+			type = cv_small_plane_cas_airframe_1
 			creator = "ENG" 
 			version_name = "Hector"
 		}

@@ -268,7 +268,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_cas_airframe_1
+			type = cv_small_plane_cas_airframe_1
 			creator = "GER"
 			version_name = "Ju 87"
 		}

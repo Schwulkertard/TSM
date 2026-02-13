@@ -14,13 +14,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_nato_unit_jungletroop_icon_small"
+		name = "GFX_nato_unit_cadet_icon_small"
 		texturefile = "gfx/texticons/nato_unit_jungletroops_icon_small.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
-		name = "GFX_unit_jungletroop_icon_small"
+		name = "GFX_unit_cadet_icon_small"
 		texturefile = "gfx/texticons/unit_jungletroops_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2

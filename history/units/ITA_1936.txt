@@ -2,116 +2,6 @@
 air_wings = { 
 	### ITALY ###
 	# 1a Squadra Aerea - SQA1 (Milan)
-	155 = { 
-		# 2a Divisione Aerea 'Borea'
-		small_plane_airframe_1 = { 
-			amount = 100
-			owner = "ITA"
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		}
-	154 = { 
-		# 2a Divisione Aerea 'Borea'
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-			}
-		}
-	2 = {
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA"
-			version_name = "Ba.65"			
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA"
-			version_name = "Ba.65"			
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-		small_plane_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "CR.42"
-		}
-		small_plane_cas_airframe_1 = { 
-			amount = 100 
-			owner = "ITA" 
-			version_name = "Ba.65"
-		}
-	} 
 }
 division_template = {
 	name = "Divisione di Fanteria"
@@ -271,7 +161,7 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = small_plane_cas_airframe_1
+				type = cv_small_plane_cas_airframe_1
 				creator = "ITA"
 			}
 			requested_factories = 1
@@ -308,7 +198,7 @@ instant_effect = {
 		add_equipment_production = {
 			equipment = {
 				version_name = "SM.79"
-				type = small_plane_naval_bomber_airframe_1
+				type = cv_small_plane_naval_bomber_airframe_1
 				creator = "ITA"
 			}
 			requested_factories = 1

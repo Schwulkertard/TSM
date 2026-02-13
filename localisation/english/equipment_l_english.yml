@@ -4113,3 +4113,5 @@ tank_reliability_variant_upgrade_desc:0 "Improving reliability leads to less bro
  FRA_ship_hull_cruiser_panzerschiff:0 "Dunkerque Class"
  ITA_ship_hull_cruiser_panzerschiff:0 "Costanzo Ciano Class"
  SOV_ship_hull_cruiser_panzerschiff:0 "Kronshtadt Class"
+
+ cadet:0 "Cadets"

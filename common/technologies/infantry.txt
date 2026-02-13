@@ -213,6 +213,7 @@ technologies = {
 		}
 		enable_subunits = {
 			infantry
+			cadet
 		}
 		path = {
 			leads_to_tech = infantry_weapons1
