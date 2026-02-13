@@ -1115,7 +1115,10 @@ technologies = {
 		categories = {
 			year_1940
 		}
-
+		path = {
+			leads_to_tech = cas_3
+			research_cost_coeff = 1
+		}
 		special_project_specialization = { specialization_air }
 		folder = {
 			name = bba_air_techs_folder
@@ -1141,7 +1144,42 @@ technologies = {
 			}
 		}
 	}
+	cas_3 = {
+		enable_equipment_modules = {
+			rocket_rails
+		}
+		
+		research_cost = 0.5
+		start_year = 1943
+		categories = {
+			year_1943
+		}
 
+		special_project_specialization = { specialization_air }
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cas_bomber
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
 	air_torpedoe_1 = {
 		enable_equipment_modules = {
 			torpedo_mounting
@@ -1478,7 +1516,6 @@ technologies = {
 			heavy_mg_4x
 			hmg_defense_turret
 			hmg_defense_turret_2x
-			tank_buster_1
 		}
 		
 		research_cost = 0.5
@@ -1527,7 +1564,7 @@ technologies = {
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 			ammunition_2
-			tank_buster_2
+			tank_buster_1
 		}
 		
 		research_cost = 0.5
@@ -1579,7 +1616,7 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 			ammunition_3
-			rocket_rails
+			tank_buster_2
 		}
 		allow={date>1941.6.1}
 		research_cost = 1.25
