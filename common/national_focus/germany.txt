@@ -1140,7 +1140,6 @@ focus = {
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
-				ahead_reduction = 1.2
 				technology = advanced_medium_tank_chassis
 			}
 		}

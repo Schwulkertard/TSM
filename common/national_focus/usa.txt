@@ -1117,8 +1117,7 @@ focus = {
             add_tech_bonus = {
                 name = USA_tank_experiments
                 uses = 1
-                ahead_reduction = 0.5
-                bonus = 1.6
+                bonus = 1.2
                 technology = advanced_medium_tank_chassis
             }
         }
