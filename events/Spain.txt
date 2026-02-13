@@ -47,6 +47,9 @@ country_event = {
 				MAN = {
 					army_experience = 50
 				}
+				YUG = {
+					army_experience = 50
+				}
 				army_experience = 30
 				if={limit = {has_global_flag= major_only_scenario}
 					country_event = spain.11

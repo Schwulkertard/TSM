@@ -1,56 +1,90 @@
 capital = 107
 oob = "YUG_1936"
-set_research_slots = 0
-add_ideas = neutrality_idea1
-add_timed_idea = { idea = no_training days= 1095 }
-add_ideas = peace_training
+set_research_slots = 3
 
 set_technology = {
+	armored_car1 = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	infantry_weapons = 1
-	#infantry_weapons1= 1
+	basic_train = 1
 	tech_support = 1
 	tech_engineers = 1
-	tech_recon = 1
 	motorised_infantry = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+    engine_tech_1 = 1
+	fuel_silos = 1
+	infantry_weapons = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	basic_train = 1
-	synth_oil_experiments = 1
-	fuel_silos = 1
-	fuel_refining = 1
+	mtg_transport = 1
 	interwar_antitank = 1
-	radio = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_small_airframe = 1
+	basic_medium_airframe = 1
+	bba_early_transport_plane = 1
+	early_bombs = 1
+	air_torpedoe_1 = 1
+	photo_reconnaisance = 1
+	aa_lmg = 1
+	engines_1 = 1
+	engines_2 = 1
+	aircraft_construction = 1
+	tech_trucks = 1
+	coastal_defense_ships = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 
 recruit_character = YUG_prince_paul
 recruit_character = YUG_milan_stojadinovic
 recruit_character = YUG_milan_grol
+recruit_character = YUG_vladimir_Cukavac
+recruit_character = YUG_ivan_gosnjak
+recruit_character = YUG_milutin_nedic
+recruit_character = YUG_petar_kosic
+recruit_character = YUG_dusan_simovic
+recruit_character = YUG_mihajlo_lukic
+recruit_character = YUG_ljubomir_maric
+recruit_character = YUG_slobodan_jovanovic
+recruit_character = YUG_dimitrije_ljotic
+recruit_character = YUG_milovan_djilas
+recruit_character = CRO_slavko_kvaternik
+recruit_character = CRO_ante_pavelic
 
 add_ideas = peace_training
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 50000
-	producer = GER
+add_ideas = ENG_allied_exped_corp2
+ add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 50
+	producer = YUG
 }
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 1000
-	producer = GER
+ add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 3000
+    producer = YUG
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1000
-	producer = GER
+	amount = 400
+	producer = YUG
 }
 add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 1000
-	producer = GER
+	type = support_equipment_1
+	amount = 450
+	producer = YUG
 }
 add_manpower = 250000
-set_convoys = 350
+set_convoys = 150
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
@@ -58,7 +92,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	neutrality = 100
+	neutrality = 70
+	fascism = 10
+	communism = 15
+	democratic = 5
 }
 set_stability = 0.6
 

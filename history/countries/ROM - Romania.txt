@@ -53,6 +53,7 @@ set_technology = {
 	special_forces_marines = 1
 	special_forces_paratroopers = 1
 }
+add_to_tech_sharing_group = axis_research
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

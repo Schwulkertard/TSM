@@ -1351,6 +1351,7 @@ ideas = {
 				or = {
 					original_TAG = GER
 					original_TAG = ROM
+					original_TAG = YUG
 			}
 		}
 			research_bonus = {

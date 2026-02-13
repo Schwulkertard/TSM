@@ -11,6 +11,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+add_to_tech_sharing_group = axis_research
 set_research_slots = 3
 set_technology = {
 	armored_car1 = 1

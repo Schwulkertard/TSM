@@ -12,7 +12,6 @@ state={
  		owner = YUG
  		buildings = {
  			infrastructure = 3
- 			industrial_complex = 1
  			9018 = {
  				naval_base = 1
  			}
@@ -24,6 +23,6 @@ state={
  	}
  	manpower=895500
  	buildings_max_level_factor=1.000
- 	state_category=rural
+ 	state_category=french_colony
  }
 

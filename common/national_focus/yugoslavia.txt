@@ -1,342 +1,229 @@
 focus_tree = {
- 	id = yugoslavian_focus
- 	country = {
- 		factor = 0
- 		modifier = {
- 			add = 10
- 			tag = YUG
- 			has_dlc = "Death or Dishonor"
- 		}
- 	}
- 	default = no
- 	continuous_focus_position = { x = 50 y = 1350 }
+	id = yugoslavian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = YUG
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1650 }
+	focus = {
+		id = CRO_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 0
+		cost = 5
+		available = {
+			is_ai = no
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
  	focus = {
- 		id = YUG_western_focus
- 		icon = GFX_goal_generic_position_armies
- 		x = 2
- 		y = 0
- 		cost = 10
- 		ai_will_do = {
- 			factor = 200
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_political_power = 120
- 		}
- 	}
- 	focus = {
- 		id = YUG_friendship_treaty_with_italy
- 		icon = GFX_goal_generic_improve_relations
- 		prerequisite = { focus = YUG_western_focus }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_western_focus
- 		cost = 10
- 		ai_will_do = {
- 			factor = 80
- 		}
- 		available = {
- 			ITA = {
- 				NOT = { has_war_with = ROOT }
- 				exists = yes
- 				has_capitulated = no
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			ITA = {
- 				add_opinion_modifier = {
- 					target = ROOT
- 					modifier = large_increase
- 				}
- 			}
- 			if = {
- 				limit = { is_ai = no}
- 				add_ideas = YUG_dimitrije_ljotic
- 			}
- 			if = {
- 				limit = { has_idea = YUG_dimitrije_ljotic }
- 				add_political_power = 187.5
- 			}
- 		}
- 	}
- 	focus = {
- 		id = YUG_attract_foreign_capital
- 		icon = GFX_goal_generic_intelligence_exchange
- 		prerequisite = { focus = YUG_friendship_treaty_with_italy }
- 		x = 0
- 		y = 2
- 		relative_position_id = YUG_western_focus
- 		cost = 10
- 		ai_will_do = {
- 			factor = 80
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_ideas = YUG_idea_foreign_capital
- 		}
- 	}
- 	focus = {
- 		id = YUG_ban_slovene_nationalist_parties
- 		icon = GFX_focus_generic_support_the_left_right
- 		prerequisite = { focus = YUG_attract_foreign_capital }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_attract_foreign_capital
- 		cost = 5
- 		ai_will_do = {
- 			factor = 40
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			remove_ideas = YUG_idea_slovene_nationalism
- 			ITA = {
- 				add_opinion_modifier = {
- 					target = ROOT
- 					modifier = huge_increase
- 				}
- 			}
- 		}
- 	}
- 	focus = {
- 		id = YUG_traditional_values
- 		icon = GFX_goal_generic_propaganda
- 		prerequisite = { focus = YUG_ban_slovene_nationalist_parties  }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_ban_slovene_nationalist_parties
- 		cost = 10
- 		ai_will_do = {
- 			factor = 60
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_ideas = YUG_idea_orthodox_church_support
- 		}
- 	}
- 	focus = {
- 		id = YUG_greater_yugoslavia
- 		icon = GFX_goal_generic_occupy_states_ongoing_war
- 		prerequisite = { focus = YUG_traditional_values }
- 		mutually_exclusive = { focus = YUG_concessions_for_macedonians }
- 		x = 0
- 		y = 2
- 		relative_position_id = YUG_ban_slovene_nationalist_parties
- 		cost = 10
- 		ai_will_do = {
- 			factor = 60
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_state_claim = 48
- 			add_state_claim = 204
- 			add_state_claim = 205
- 			news_event = { id = news.325 }
- 		}
- 	}
- 	focus = {
- 		id = YUG_crush_the_ustasa
- 		icon = GFX_goal_generic_political_pressure
- 		prerequisite = { focus = YUG_concessions_for_macedonians }
- 		x = 0
- 		y = 3
- 		relative_position_id = YUG_ban_slovene_nationalist_parties
- 		cost = 5
- 		ai_will_do = {
- 			factor = 60
- 		}
- 		available = {
- 			ITA = {
- 				NOT = { has_war_with = ROOT }
- 				exists = yes
- 				has_capitulated = no
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			swap_ideas = {
- 				remove_idea = YUG_idea_croatian_opposition
- 				add_idea = YUG_idea_croats_suppressed
- 			}
- 		}
- 	}
- 	focus = {
- 		id = YUG_all_yugoslavian_regiments
- 		icon = GFX_goal_rhineland
- 		prerequisite = { focus = YUG_crush_the_ustasa }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_crush_the_ustasa
- 		cost = 10
- 		ai_will_do = {
- 			factor = 80
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_ideas = YUG_idea_all_yugoslavian_regiments
- 		}
- 	}
- 	focus = {
- 		id = YUG_invite_german_military_mission
- 		icon = GFX_focus_generic_military_mission
- 		prerequisite = { focus = YUG_all_yugoslavian_regiments  }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_all_yugoslavian_regiments
- 		cost = 5
- 		ai_will_do = {
- 			factor = 50
- 		}
- 		available = {
- 			is_ai = no
- 			GER = {
- 				NOT = { has_war_with = ROOT }
- 				exists = yes
- 				has_capitulated = no
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			remove_ideas = anti_german_military
- 			swap_ideas = { remove_idea = YUG_idea_serbian_general_staff add_idea = YUG_idea_yugoslavian_general_staff }
- 		}
- 	}
- 	focus = {
- 		id = YUG_invite_italian_naval_experts
- 		icon = GFX_goal_generic_occupy_states_coastal
- 		prerequisite = { focus = YUG_invite_german_military_mission }
- 		x = 0
- 		y = 1
- 		relative_position_id = YUG_invite_german_military_mission
- 		cost = 5
- 		ai_will_do = {
- 			factor = 100
- 		}
- 		available = {
- 			ITA = {
- 				is_in_faction_with = ROOT
- 				NOT = { has_war_with = ROOT }
- 				exists = yes
- 				has_capitulated = no
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			add_to_tech_sharing_group = YUG_naval_research_group
- 			ITA = {
- 				add_to_tech_sharing_group = YUG_naval_research_group
- 			}
- 			navy_experience = 50
- 		}
- 	}
- 	focus = {
- 		id = YUG_concessions_for_macedonians
- 		icon = GFX_focus_generic_concessions
- 		prerequisite = { focus = YUG_traditional_values }
- 		mutually_exclusive = { focus = YUG_greater_yugoslavia }
- 		x = 0
- 		y = 2
- 		relative_position_id = YUG_ban_slovene_nationalist_parties
- 		cost = 5
- 		ai_will_do = {
- 			factor = 40
- 		}
- 		available = {
- 			BUL = {
- 				NOT = { has_war_with = ROOT }
- 				exists = yes
- 				has_capitulated = no
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			remove_ideas = YUG_idea_macedonian_opposition
- 		}
- 	}
+		id = CRO_nationalism_focus
+		icon = GFX_goal_CRO_national_rebirth #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = CRO_political_effort }
+		available = {
+		}
+		relative_position_id = CRO_political_effort
+		x = 2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = nationalism
+		}
+	}
+	focus = {
+		id = CRO_a_king_for_our_people_focus
+		icon = GFX_focus_YUG_banovina_of_croatia #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = CRO_political_effort }
+		available = {
+		}
+		relative_position_id = CRO_political_effort
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = CRO_militarism
+		icon = GFX_goal_CRO_ustasha_army
+		prerequisite = { focus = CRO_nationalism_focus }
+		available = {
+			fascism > 0.35
+		}
+		relative_position_id = CRO_political_effort
+		x = 3
+		y = 2
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = CRO_military_youth
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = CRO_militarism }
+		prerequisite = { focus = CRO_catholic_dominance_focus }
+		relative_position_id = CRO_political_effort
+		x = 3
+		y = 3
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+		}
+	}
+
+	focus = {
+		id = CRO_catholic_dominance_focus
+		icon = GFX_goal_christianity_and_state
+		prerequisite = { focus = CRO_nationalism_focus}
+		available = {
+		}
+		relative_position_id = CRO_political_effort
+		x = 1
+		y = 2
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = CRO_catholic_dominance
+		}
+	}
+
+	focus = {
+		id = CRO_integrate_muslims_focus
+		icon = GFX_goal_CRO_muslim_alliance
+		prerequisite = { focus = CRO_catholic_dominance_focus }
+		prerequisite = { focus = CRO_a_king_for_our_people_focus }
+		prerequisite = { focus = CRO_militarism }
+
+		relative_position_id = CRO_political_effort
+		x = 0
+		y = 3
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = YUG_idea_federal_defense_council
+		}
+	}
+	focus = {
+		id = CRO_integrate_orthodox_croats_focus
+		icon = GFX_goal_CRO_reconcile_croatian_orthodox
+		prerequisite = { focus = CRO_military_youth }
+		prerequisite = { focus = CRO_integrate_muslims_focus }
+		relative_position_id = CRO_political_effort
+		x = 1
+		y = 4
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			109 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			104 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			103 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = 150
+		}
+	}
+
+
+	focus = {
+		id = CRO_paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CRO_military_youth }
+		relative_position_id = CRO_political_effort
+		x = 3
+		y = 4
+		cost = 7.2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}
  	focus = {
  		id = YUG_industrialization_program
  		icon = GFX_goal_generic_construction
- 		x = 7
+ 		x = 8
  		y = 0
  		cost = 5
  		ai_will_do = {
  			factor = 300
  		}
  		available = {
+			is_ai = no
  		}
  		bypass = {
  		}
@@ -349,7 +236,13 @@ focus_tree = {
  			add_tech_bonus = {
  				bonus = 1.0
  				uses = 2
- 				category = industry
+ 				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry4
+				technology = dispersed_industry5
  			}
  		}
  	}
@@ -375,6 +268,16 @@ focus_tree = {
  		}
  		completion_reward = {
  			add_ideas = YUG_idea_expanded_mining_industry
+			109 = {
+ 				add_resource = {
+ 					type = steel
+ 					amount = 160
+ 				}
+ 			}
+			add_timed_idea = {
+				idea = HUN_urbanization_efforts
+				days = 365
+			}
  		}
  	}
  	focus = {
@@ -389,10 +292,6 @@ focus_tree = {
  			factor = 250
  		}
  		available = {
- 			OR = {
- 				has_full_control_of_state = 105
- 				has_full_control_of_state = 109
- 			}
  		}
  		bypass = {
  		}
@@ -404,23 +303,23 @@ focus_tree = {
  		completion_reward = {
  			if = {
  				limit = {
- 					has_full_control_of_state = 105
+ 					has_full_control_of_state = 104
  				}
- 				105 = {
+ 				104 = {
  					add_resource = {
  						type = tungsten
- 						amount = 80
+ 						amount = 100
  					}
  				}
  			}
  			if = {
  				limit = {
- 					has_full_control_of_state = 109
+ 					has_full_control_of_state = 104
  				}
- 				109 = {
+ 				104 = {
  					add_resource = {
  						type = chromium
- 						amount = 80
+ 						amount = 100
  					}
  				}
  			}
@@ -438,7 +337,6 @@ focus_tree = {
  			factor = 250
  		}
  		available = {
- 			has_full_control_of_state = 45
  		}
  		bypass = {
  		}
@@ -450,9 +348,9 @@ focus_tree = {
  		completion_reward = {
  			if = {
  				limit = {
- 					has_full_control_of_state = 45
+ 					has_full_control_of_state = 109
  				}
- 				45 = {
+ 				109 = {
  					add_resource = {
  						type = oil
  						amount = 80
@@ -465,11 +363,10 @@ focus_tree = {
  		id = YUG_develop_civilian_industry
  		icon = GFX_goal_generic_construct_civ_factory
  		prerequisite = { focus = YUG_expand_the_mining_industry }
- 		mutually_exclusive = { focus = YUG_develop_military_industry }
  		x = -1
  		y = 1
  		relative_position_id = YUG_expand_the_mining_industry
- 		cost = 3
+ 		cost = 5
  		ai_will_do = {
  			factor = 250
  		}
@@ -484,38 +381,14 @@ focus_tree = {
  		}
  		completion_reward = {
  			random_owned_controlled_state = {
- 				prioritize = { 102 }
- 				limit = {
- 					ROOT = { has_full_control_of_state = PREV }
- 				}
- 				add_extra_state_shared_building_slots = 1
- 				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
- 			}
- 			random_owned_controlled_state = {
- 				prioritize = { 107 }
- 				limit = {
- 					ROOT = { has_full_control_of_state = PREV }
- 				}
- 				add_extra_state_shared_building_slots = 1
- 				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
- 			}
- 			random_owned_controlled_state = {
  				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
- 				add_extra_state_shared_building_slots = 1
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = industrial_complex
- 					level = 1
+ 					level = 2
  					instant_build = yes
  				}
  			}
@@ -528,7 +401,7 @@ focus_tree = {
  		x = 0
  		y = 3
  		relative_position_id = YUG_industrialization_program
- 		cost = 3
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 250
  		}
@@ -553,7 +426,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = YUG_develop_civilian_industry
- 		cost = 2
+ 		cost = 5
  		ai_will_do = {
  			factor = 250
  		}
@@ -567,14 +440,27 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			every_owned_state = {
+ 			random_owned_controlled_state = {
+ 				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
- 					is_core_of = ROOT
  				}
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
- 					type = infrastructure
- 					level = 1
+ 					type = arms_factory
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}
+			random_owned_controlled_state = {
+ 				prioritize = { 103 }
+ 				limit = {
+ 					ROOT = { has_full_control_of_state = PREV }
+ 				}
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 2
  					instant_build = yes
  				}
  			}
@@ -587,7 +473,7 @@ focus_tree = {
  		x = 1
  		y = 3
  		relative_position_id = YUG_develop_civilian_industry
- 		cost = 2
+ 		cost = 5
  		ai_will_do = {
  			factor = 250
  		}
@@ -606,22 +492,10 @@ focus_tree = {
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
- 				add_extra_state_shared_building_slots = 1
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
- 			}
- 			random_owned_controlled_state = {
- 				prioritize = { 106 }
- 				limit = {
- 					ROOT = { has_full_control_of_state = PREV }
- 				}
- 				add_extra_state_shared_building_slots = 1
- 				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
+ 					level = 2
  					instant_build = yes
  				}
  			}
@@ -630,11 +504,11 @@ focus_tree = {
  	focus = {
  		id = YUG_develop_slovenian_industry
  		icon = GFX_goal_generic_construct_mil_factory
- 		prerequisite = { focus = YUG_integrated_rail_network }
+ 		prerequisite = { focus = YUG_integrated_rail_network focus = YUG_improve_serbian_rail_network }
  		x = 0
  		y = 4
  		relative_position_id = YUG_develop_civilian_industry
- 		cost = 2
+ 		cost = 5
  		ai_will_do = {
  			factor = 250
  		}
@@ -649,16 +523,11 @@ focus_tree = {
  		}
  		completion_reward = {
  			random_owned_controlled_state = {
- 				prioritize = { 108 }
+ 				prioritize = { 103 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = arms_factory
  					level = 2
@@ -674,7 +543,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = YUG_develop_slovenian_industry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 60
  		}
@@ -692,41 +561,13 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = YUG_expand_the_university_of_ljubljana
- 		icon = GFX_focus_research
- 		prerequisite = { focus = YUG_develop_slovenian_industry }
- 		x = -2
- 		y = 1
- 		relative_position_id = YUG_develop_slovenian_industry
- 		cost = 10
- 		ai_will_do = {
- 			factor = 100
- 		}
- 		available = {
- 			NOT = {
- 				has_idea = YUG_idea_slovene_nationalism
- 			}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = yes
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_research_slot = 1
- 		}
- 	}
- 	focus = {
  		id = YUG_develop_military_industry
  		icon = GFX_goal_generic_construct_mil_factory
  		prerequisite = { focus = YUG_expand_the_mining_industry }
- 		mutually_exclusive = { focus = YUG_develop_civilian_industry }
  		x = 1
  		y = 1
  		relative_position_id = YUG_expand_the_mining_industry
- 		cost = 2
+ 		cost = 5
  		ai_will_do = {
  			factor = 250
  			modifier = {
@@ -745,14 +586,14 @@ focus_tree = {
  		}
  		completion_reward = {
  			random_owned_controlled_state = {
- 				prioritize = { 107 }
+ 				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
- 				add_extra_state_shared_building_slots = 3
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = arms_factory
- 					level = 3
+ 					level = 2
  					instant_build = yes
  				}
  			}
@@ -766,22 +607,11 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = YUG_develop_military_industry
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 40
- 			modifier = {
- 				factor = 2
- 				is_in_faction_with = GER
- 			}
  		}
  		available = {
- 			OR = {
- 				has_full_control_of_state = 45
- 				has_full_control_of_state = 105
- 				has_full_control_of_state = 107
- 				has_full_control_of_state = 108
- 				has_full_control_of_state = 678
- 			}
  		}
  		bypass = {
  		}
@@ -791,101 +621,20 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			if = {
- 				limit = { has_full_control_of_state = 45 }
- 				45 = {
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 1
- 						instant_build = yes
- 					}
- 				}
- 			}
- 			if = {
- 				limit = { has_full_control_of_state = 105 }
- 				105 = {
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 1
- 						instant_build = yes
- 					}
- 				}
- 			}
- 			if = {
- 				limit = { has_full_control_of_state = 107 }
- 				107 = {
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 1
- 						instant_build = yes
- 					}
- 				}
- 			}
- 			if = {
- 				limit = { has_full_control_of_state = 108 }
- 				108 = {
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 1
- 						instant_build = yes
- 					}
- 				}
- 			}
- 			if = {
- 				limit = { has_full_control_of_state = 678 }
- 				678 = {
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 1
- 						instant_build = yes
- 					}
- 				}
- 			}
- 		}
- 	}
- 	focus = {
- 		id = YUG_serbian_steel
- 		icon = GFX_goal_generic_construct_civilian
- 		prerequisite = { focus = YUG_improve_serbian_rail_network }
- 		x = 1
- 		y = 3
- 		relative_position_id = YUG_develop_military_industry
- 		cost = 10
- 		ai_will_do = {
- 			factor = 60
- 		}
- 		available = {
- 			has_full_control_of_state = 108
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = yes
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			108 = {
- 				add_resource = {
- 					type = steel
- 					amount = 160
- 				}
- 			}
+ 			add_timed_idea = {
+				idea = YUG_idea_foreign_capital
+				days = 730
+			}
  		}
  	}
  	focus = {
  		id = YUG_expand_the_university_of_belgrad
  		icon = GFX_focus_research
- 		prerequisite = { focus = YUG_improve_serbian_rail_network }
+ 		prerequisite = { focus = YUG_improve_serbian_rail_network focus = YUG_integrated_rail_network }
  		x = 0
  		y = 4
  		relative_position_id = YUG_develop_military_industry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 100
  		}
@@ -909,7 +658,7 @@ focus_tree = {
  		x = 0
  		y = 5
  		relative_position_id = YUG_develop_military_industry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 50
  		}
@@ -933,12 +682,11 @@ focus_tree = {
  		x = 1
  		y = 1
  		relative_position_id = YUG_local_self_management
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 100
  		}
  		available = {
- 			has_full_control_of_state = 104
  		}
  		bypass = {
  		}
@@ -972,6 +720,7 @@ focus_tree = {
  			}
  		}
  		available = {
+			is_ai = no
  		}
  		bypass = {
  		}
@@ -997,7 +746,7 @@ focus_tree = {
  		x = -2
  		y = 1
  		relative_position_id = YUG_modernize_the_air_force
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 60
  		}
@@ -1035,9 +784,8 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			custom_effect_tooltip = YUG_designer_tt
  			random_owned_controlled_state = {
- 				prioritize = { 107 }
+ 				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
@@ -1071,9 +819,8 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			custom_effect_tooltip = YUG_designer_tt
  			random_owned_controlled_state = {
- 				prioritize = { 107 }
+ 				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
@@ -1107,9 +854,8 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			custom_effect_tooltip = YUG_designer_tt
  			random_owned_controlled_state = {
- 				prioritize = { 107 }
+ 				prioritize = { 109 }
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
  				}
@@ -1218,7 +964,7 @@ focus_tree = {
  		x = 2
  		y = 1
  		relative_position_id = YUG_modernize_the_air_force
- 		cost = 1
+ 		cost = 5
  		ai_will_do = {
  			factor = 180
  		}
@@ -1232,6 +978,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
+			add_ideas = YUG_tank_licenses
  		}
  	}
  	focus = {
@@ -1239,7 +986,7 @@ focus_tree = {
  		icon = GFX_goal_generic_army_doctrines
  		x = 23
  		y = 0
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 70
  			modifier = {
@@ -1248,6 +995,7 @@ focus_tree = {
  			}
  		}
  		available = {
+			is_ai = no
  		}
  		bypass = {
  		}
@@ -1257,7 +1005,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			army_experience = 25
+ 			army_experience = 150
  		}
  	}
  	focus = {
@@ -1267,7 +1015,7 @@ focus_tree = {
  		x = -3
  		y = 1
  		relative_position_id =  YUG_army_modernization
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 50
  			modifier = {
@@ -1287,8 +1035,9 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = YUG_motorize_the_cavalry
- 				bonus = 3.0
- 				technology = motorised_infantry
+				uses = 1
+ 				bonus = 2
+ 				technology = mechanised_infantry
  			}
  		}
  	}
@@ -1299,7 +1048,7 @@ focus_tree = {
  		x = -2
  		y = 1
  		relative_position_id = YUG_motorize_the_cavalry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 40
  			modifier = {
@@ -1321,7 +1070,7 @@ focus_tree = {
  				name = YUG_motorized_logistics
  				bonus = 1.0
  				uses = 2
- 				category = hospital_tech
+ 				category = signal_company_tech
  				category = logistics_tech
  			}
  		}
@@ -1329,11 +1078,11 @@ focus_tree = {
  	focus = {
  		id = YUG_armored_cavalry
  		icon = GFX_goal_generic_build_tank
- 		prerequisite = { focus = YUG_motorize_the_cavalry }
+ 		prerequisite = { focus = YUG_motorized_logistics }
  		x = 0
  		y = 1
- 		relative_position_id = YUG_motorize_the_cavalry
- 		cost = 10
+ 		relative_position_id = YUG_motorized_logistics
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 40
  			modifier = {
@@ -1355,48 +1104,18 @@ focus_tree = {
  				name = YUG_armored_cavalry
  				bonus = 1.0
  				uses = 1
- 				category = cat_mechanized_equipment
+ 				technology = mechanised_infantry2
  			}
- 		}
- 	}
- 	focus = {
- 		id = YUG_tank_conversions
- 		icon = GFX_goal_generic_production2
- 		prerequisite = { focus = YUG_armored_cavalry }
- 		mutually_exclusive = { focus = YUG_modern_tanks }
- 		x = -2
- 		y = 2
- 		relative_position_id = YUG_motorize_the_cavalry
- 		cost = 10
- 		ai_will_do = {
- 			factor = 50
- 			modifier = {
- 				factor = 1.5
- 				is_in_faction_with = GER
- 			}
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_ideas = YUG_idea_tank_conversions
  		}
  	}
  	focus = {
  		id = YUG_modern_tanks
  		icon = GFX_goal_generic_army_tanks
- 		prerequisite = { focus = YUG_armored_cavalry }
- 		mutually_exclusive = { focus = YUG_tank_conversions }
+ 		prerequisite = { focus = YUG_motorize_the_cavalry }
  		x = 0
- 		y = 2
+ 		y = 1
  		relative_position_id = YUG_motorize_the_cavalry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 25
  			modifier = {
@@ -1427,9 +1146,9 @@ focus_tree = {
  		icon = GFX_focus_generic_license_production
  		prerequisite = { focus = YUG_modern_tanks }
  		x = 0
- 		y = 3
+ 		y = 2
  		relative_position_id = YUG_motorize_the_cavalry
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 60
  			modifier = {
@@ -1447,7 +1166,12 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_ideas = YUG_tank_licenses
+ 			add_tech_bonus = {
+ 				name = YUG_modern_tanks
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = armor
+ 			}
  		}
  	}
  	focus = {
@@ -1457,7 +1181,7 @@ focus_tree = {
  		x = -1
  		y = 1
  		relative_position_id = YUG_army_modernization
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 70
  		}
@@ -1474,7 +1198,7 @@ focus_tree = {
  			add_tech_bonus = {
  				name = YUG_small_arms
  				bonus = 1.00
- 				uses = 1
+ 				uses = 2
  				category = infantry_weapons
  			}
  		}
@@ -1486,7 +1210,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = YUG_small_arms
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 70
  		}
@@ -1515,7 +1239,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = YUG_small_arms
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 60
  		}
@@ -1531,8 +1255,8 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = YUG_anti_tank_defenses
- 				bonus = 3.0
- 				uses = 1
+ 				bonus = 1.0
+ 				uses = 3
  				category = cat_anti_tank
  			}
  		}
@@ -1544,7 +1268,7 @@ focus_tree = {
  		x = 1
  		y = 1
  		relative_position_id = YUG_army_modernization
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 70
  		}
@@ -1560,7 +1284,7 @@ focus_tree = {
  		completion_reward = {
  			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 1
 				category = cat_mountaineers_doctrine
  			}
@@ -1573,7 +1297,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = YUG_mountain_brigades
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 50
  		}
@@ -1589,8 +1313,8 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = YUG_independent_engineer_regiments
- 				bonus = 3.0
- 				uses = 1
+ 				bonus = 1.0
+ 				uses = 3
  				category = engineers_tech
  			}
  		}
@@ -1602,7 +1326,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = YUG_mountain_brigades
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 40
  		}
@@ -1618,8 +1342,8 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = YUG_motorized_recon_companies
- 				bonus = 3.0
- 				uses = 1
+ 				bonus = 1.0
+ 				uses = 3
  				category = recon_tech
  			}
  		}
@@ -1631,7 +1355,7 @@ focus_tree = {
  		x = 0
  		y = 3
  		relative_position_id = YUG_mountain_brigades
- 		cost = 10
+ 		cost = 7.2
  		ai_will_do = {
  			factor = 10
  		}
@@ -1645,11 +1369,11 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = YUG_form_parachute_battalions
- 				bonus = 3.0
- 				uses = 1
- 				category = para_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mountaineers_doctrine
  			}
  		}
  	}
@@ -1660,7 +1384,7 @@ focus_tree = {
  		x = 4
  		y = 1
  		relative_position_id = YUG_army_modernization
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 70
  		}
@@ -1674,12 +1398,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = YUG_army_maneuvers
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}
+ 			army_experience = 150
  		}
  	}
  	focus = {
@@ -1690,7 +1409,7 @@ focus_tree = {
  		x = -1
  		y = 1
  		relative_position_id = YUG_army_maneuvers
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 30
  		}
@@ -1704,6 +1423,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
+			add_ideas = YUG_idea_serbian_general_staff
  		}
  	}
  	focus = {
@@ -1714,7 +1434,7 @@ focus_tree = {
  		x = 1
  		y = 1
  		relative_position_id = YUG_army_maneuvers
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 60
  		}
@@ -1728,13 +1448,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = YUG_supremacy_of_defense
- 				bonus = 1.0
- 				uses = 2
- 				category = cat_grand_battle_plan
- 				category = cat_mass_assault
- 			}
+			add_ideas = YUG_idea_yugoslavian_general_staff
  		}
  	}
  	focus = {
@@ -1744,7 +1458,7 @@ focus_tree = {
  		x = 0
  		y = 2
  		relative_position_id = YUG_army_maneuvers
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 70
  		}
@@ -1764,7 +1478,6 @@ focus_tree = {
  	focus = {
  		id = YUG_expand_the_split_shipyards
  		icon = GFX_goal_generic_construct_naval_dockyard
- 		mutually_exclusive = { focus = YUG_expand_the_serbian_shipyards }
  		x = 31
  		y = 0
  		cost = 10
@@ -1772,7 +1485,7 @@ focus_tree = {
  			factor = 40
  		}
  		available = {
- 			has_full_control_of_state = 103
+			is_ai = no
  		}
  		bypass = {
  		}
@@ -1955,7 +1668,6 @@ focus_tree = {
  	focus = {
  		id = YUG_expand_the_serbian_shipyards
  		icon = GFX_goal_generic_construct_naval_dockyard
- 		mutually_exclusive = { focus = YUG_expand_the_split_shipyards }
  		x = 2
  		y = 0
  		relative_position_id = YUG_expand_the_split_shipyards
@@ -1964,7 +1676,7 @@ focus_tree = {
  			factor = 40
  		}
  		available = {
- 			has_full_control_of_state = 105
+			is_ai = no
  		}
  		bypass = {
  		}
@@ -1974,7 +1686,7 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			105 = {
+ 			103 = {
  				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = dockyard
@@ -1996,10 +1708,6 @@ focus_tree = {
  			factor = 30
  		}
  		available = {
- 			OR = {
- 				has_full_control_of_state = 103
- 				has_full_control_of_state = 105
- 			}
  		}
  		bypass = {
  		}
@@ -2012,54 +1720,14 @@ focus_tree = {
  			if = {
  				limit = { has_full_control_of_state = 103 }
  				103 = {
- 					custom_effect_tooltip = YUG_coastal_defense_effect_tt1
- 					custom_effect_tooltip = YUG_coastal_defense_effect_tt2
- 					hidden_effect = {
- 						add_building_construction = {
- 							type = coastal_bunker
- 							province = {
- 								all_provinces = yes
- 								limit_to_coastal = yes
- 							}
- 							level = 2
- 							instant_build = yes
+					add_building_construction = {
+ 						type = coastal_bunker
+ 						province = {
+ 							all_provinces = yes
+ 							limit_to_naval_base = yes
  						}
- 						add_building_construction = {
- 							type = coastal_bunker
- 							province = {
- 								all_provinces = yes
- 								limit_to_naval_base = yes
- 							}
- 							level = 1
- 							instant_build = yes
- 						}
- 					}
- 				}
- 			}
- 			if = {
- 				limit = { has_full_control_of_state = 105 }
- 				105 = {
- 					custom_effect_tooltip = YUG_coastal_defense_effect_tt1
- 					custom_effect_tooltip = YUG_coastal_defense_effect_tt2
- 					hidden_effect = {
- 						add_building_construction = {
- 							type = coastal_bunker
- 							province = {
- 								all_provinces = yes
- 								limit_to_coastal = yes
- 							}
- 							level = 2
- 							instant_build = yes
- 						}
- 						add_building_construction = {
- 							type = coastal_bunker
- 							province = {
- 								all_provinces = yes
- 								limit_to_naval_base = yes
- 							}
- 							level = 1
- 							instant_build = yes
- 						}
+ 						level = 1
+ 						instant_build = yes
  					}
  				}
  			}

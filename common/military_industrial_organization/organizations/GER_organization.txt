@@ -26,7 +26,8 @@ GER_krupp_organization = {
 					original_TAG = MAN
 					original_TAG = HUN
 					original_TAG = SIA
-					original_TAG = JAP		
+					original_TAG = JAP
+					original_TAG = YUG		
 				}
 	}
 	
@@ -84,6 +85,7 @@ GER_nibelungenwerke_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -146,6 +148,7 @@ GER_daimler_benz_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -210,6 +213,7 @@ GER_man_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -269,6 +273,7 @@ GER_porsche_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -327,6 +332,7 @@ GER_henschel_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -390,6 +396,7 @@ GER_alkett_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -485,6 +492,7 @@ GER_ckd_organization = {
 					original_TAG = HUN
 					original_TAG = SIA
 					original_TAG = JAP
+					original_TAG = YUG
 				}
 	}
 	visible={FROM={OR={NOT={original_tag=JAP} has_completed_focus=JAP_armored_divisions}}}
@@ -649,6 +657,7 @@ GER_rheinmetall_organization = {
 					original_TAG = BUL
 					original_TAG = ROM
 					original_TAG = HUN
+					original_TAG = YUG
 				}
 	}
 	
@@ -665,6 +674,7 @@ GER_mauser_organization = {
 					original_TAG = BUL
 					original_TAG = ROM
 					original_TAG = HUN
+					original_TAG = YUG
 				}
 	}
 }
@@ -680,6 +690,7 @@ GER_opel_organization = {
 					original_TAG = BUL
 					original_TAG = ROM
 					original_TAG = HUN
+					original_TAG = YUG
 				}
 	}
 	initial_trait = {

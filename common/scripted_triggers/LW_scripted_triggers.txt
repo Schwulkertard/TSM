@@ -21,6 +21,8 @@ is_playable_country = {
 		tag = EFR
 		tag = MEX
 		tag = USP
+		tag = YUG
+		tag = SPN
 	}
 }
 is_scw_minor_country = {
@@ -35,5 +37,6 @@ is_scw_minor_country = {
 		tag = HUN
 		tag = CAN
 		tag = MEX
+		tag = YUG
 	}
 }

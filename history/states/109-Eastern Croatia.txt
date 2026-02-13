@@ -2,11 +2,11 @@ state={
  	id=109
  	name="STATE_109"
  	manpower = 2224400
- 	state_category = large_town
+ 	state_category = city
  	history={
  		owner = YUG
  		buildings = {
- 			infrastructure = 6
+ 			infrastructure = 7
  			industrial_complex = 3
  		}
  		victory_points = {

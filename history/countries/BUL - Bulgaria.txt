@@ -81,6 +81,7 @@ recruit_character = BUL_asen_nikolov
 recruit_character = BUL_georgi_dimitrov
 recruit_character = BUL_nikola_mushanov
 
+add_to_tech_sharing_group = axis_research
 set_stability = 0.6
 set_war_support = 0.60
 add_equipment_to_stockpile = {

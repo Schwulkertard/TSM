@@ -12,6 +12,96 @@ characters={
 			id=-1
 		}
 	}
+	CRO_ante_pavelic = {
+
+		name = CRO_ante_pavelic
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Ante_Pavelic
+			}
+			army = {
+				small = GFX_idea_CRO_ante_pavelic
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		advisor = {
+
+			slot = high_command
+
+			idea_token = CRO_ante_pavelic
+
+			ledger = army
+
+			allowed = {
+				original_tag = YUG
+			}
+
+			traits = {
+				army_armored_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CRO_slavko_kvaternik = {
+
+		name = CRO_slavko_kvaternik
+
+		portraits = {
+			army = {
+				large = GFX_portrait_CRO_slavko_kvaternik
+				small = GFX_portrait_CRO_slavko_kvaternik_small
+			}
+		}
+		
+		field_marshal = {
+			traits = { organizer aggressive_assaulter harsh_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+
+		advisor = {
+
+			slot = high_command
+
+			idea_token = CRO_slavko_kvaternik
+
+			ledger = army
+
+			allowed = {
+				original_tag = YUG
+			}
+
+			traits = {
+				army_regrouping_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1.000
+			}
+
+		}
+		
+	}
+
 	YUG_milan_stojadinovic={
 		name=YUG_milan_stojadinovic
 		portraits={
@@ -47,13 +137,11 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			traits={ underage_monarch }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		country_leader={
 			ideology=conservatism
-			traits={ underage_monarch }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -100,8 +188,8 @@ characters={
 		name=YUG_vladimir_Cukavac
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="GFX_Portrait_yugoslavia_vladimir_cukavac"
+				small=GFX_portrait_YUG_vladimir_Cukavac_small
 			}
 		}
 		corps_commander={
@@ -113,13 +201,35 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
+		advisor = {
+
+			slot = high_command
+
+			idea_token = YUG_vladimir_Cukavac
+
+			ledger = army
+
+			allowed = {
+				original_tag = YUG
+			}
+
+			traits = {
+				army_infantry_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 	YUG_ivan_gosnjak={
 		name=YUG_ivan_gosnjak
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="GFX_Portrait_yugoslavia_ivan_gosnjak"
+				small=GFX_portrait_YUG_ivan_gosnjak_small
 			}
 		}
 		corps_commander={
@@ -130,6 +240,28 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+		}
+		advisor = {
+
+			slot = high_command
+
+			idea_token = YUG_ivan_gosnjak
+
+			ledger = army
+
+			allowed = {
+				original_tag = YUG
+			}
+
+			traits = {
+				army_commando_2
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	YUG_danilo_kalafatovic={
@@ -169,8 +301,8 @@ characters={
 		name=YUG_milutin_nedic
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="GFX_Portrait_yugoslavia_milutin_nedic"
+				small=GFX_portrait_YUG_milutin_nedic_small
 			}
 		}
 		field_marshal={
@@ -201,8 +333,8 @@ characters={
 		name=YUG_petar_kosic
 		portraits={
 			army={
-				large="gfx/interface/ideas/idea_europe_generic_land_3.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+				large="GFX_Portrait_yugoslavia_petar_kosic"
+				small=GFX_portrait_YUG_petar_kosic_small
 			}
 		}
 		corps_commander={
@@ -491,49 +623,13 @@ characters={
 					original_tag  = YUG
 				}
 				traits  = {
-					democratic_reformer 
+					smooth_talking_charmer 
 				}
 		}
 		name=YUG_milovan_djilas
 		portraits={
 			army={
 				small="GFX_idea_YUG_milovan_djilas"
-			}
-		}
-	}
-	YUG_milan_nedic={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_milan_nedic
-			allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name=YUG_milan_nedic
-		portraits={
-			army={
-				small="GFX_idea_YUG_milan_nedic"
-			}
-		}
-	}
-	YUG_ivan_ribar={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_ivan_ribar
-			allowed  = {
-					original_tag  = YUG
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name=YUG_ivan_ribar
-		portraits={
-			army={
-				small="GFX_idea_YUG_ivan_ribar"
 			}
 		}
 	}
