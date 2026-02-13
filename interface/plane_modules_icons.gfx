@@ -522,6 +522,11 @@ spriteTypes = {
 	#### Category
 	
 	spriteType = {
+		name = "GFX_EMI_special_bombs"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_rocket_rail_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_plane_ammunition"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_ammunition1.dds"
 		legacy_lazy_load = no
