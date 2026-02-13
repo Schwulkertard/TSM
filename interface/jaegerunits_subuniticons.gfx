@@ -2,7 +2,7 @@ spriteTypes = {
 
 	#################custom
 	spriteType = { name = "GFX_unit_jaeger_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_jaeger_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_jungletroop_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_jungletroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_cadet_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_jungletroop_icon.dds" noOfFrames = 2 }
 
 	spriteType = { name = "GFX_unit_flamethrower_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_flamethrower_icon.dds" noOfFrames = 2 }
 
@@ -14,7 +14,7 @@ spriteTypes = {
 
 	######White icons
 	spriteType = { name = "GFX_unit_jaeger_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jaeger_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_jungletroop_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jungletroop_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_cadet_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jungletroop_icon.dds" noOfFrames = 2}
 
 
 	spriteType = { name = "GFX_unit_flamethrower_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_support_unit_flamethrower_icon.dds" noOfFrames = 2}

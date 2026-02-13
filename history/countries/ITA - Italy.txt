@@ -193,15 +193,15 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = cv_small_plane_cas_airframe_1
-	variant_name = "BA.65"
-	amount = 300
+	amount = 700
 	producer = ITA
+	variant_name = "Ba.65"
 }
 add_equipment_to_stockpile = {
 	type = small_plane_airframe_1
-	variant_name = "C200 Saetta"
 	amount = 1800
 	producer = ITA
+	variant_name = "CR.42"
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1

@@ -29,7 +29,6 @@ sub_units = {
 		type = cas
 		need = { small_plane_cas_airframe = 1 }
 		categories = { category_cas }
-		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
 	cv_cas = {
@@ -51,7 +50,6 @@ sub_units = {
 		type = naval_bomber
 		need = { small_plane_naval_bomber_airframe = 1 }
 		categories = { category_nav_bomber }
-		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
 	cv_nav_bomber = {
@@ -72,7 +70,6 @@ sub_units = {
 		active = yes
 		type = suicide
 		need = { small_plane_suicide_airframe = 1 }
-		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
 	cv_suicide_craft = {
@@ -154,7 +151,6 @@ sub_units = {
 		need = { jet_fighter_equipment = 1 }
 		categories = { category_fighter }
 		land_air_wing_size = 100
-		carrier_air_wing_size = 1
 		mega_carrier_air_wing_size = 10
 	}
 
@@ -187,7 +183,6 @@ sub_units = {
 		type = interceptor
 		need = { rocket_interceptor_equipment = 1 }
 		land_air_wing_size = 100
-		carrier_air_wing_size = 1
 		mega_carrier_air_wing_size = 10
 	}
 
