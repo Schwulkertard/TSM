@@ -1,7 +1,7 @@
 capital = 107
 oob = "YUG_1936"
 set_research_slots = 3
-
+add_to_tech_sharing_group = axis_research
 set_technology = {
 	armored_car1 = 1
 	airfield_allowed = 1
