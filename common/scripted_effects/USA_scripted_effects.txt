@@ -377,7 +377,7 @@ usa_weekly_rubber_relocation = {
   	}
   	else = {
 
-    set_temp_variable = { move = 50 }
+    set_temp_variable = { move = 25 }
 
     if = {
       	limit = { check_variable = { usa_rubber_left < move } }

@@ -38,21 +38,31 @@ ideas = {
 			equipment_bonus = {
 				small_plane_airframe = {
 					build_cost_ic = 500
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = 500
+					instant = yes
 				} 
 				medium_plane_airframe = {
 					build_cost_ic = 500
+					instant = yes
 				}
 				large_plane_airframe = {
 					build_cost_ic = 500
+					instant = yes
 				}
 				light_tank_chassis = {
 					build_cost_ic = 500
+					instant = yes
 				}
 				medium_tank_chassis = {
 					build_cost_ic = 500
+					instant = yes
 				}
 				heavy_tank_chassis = {
 					build_cost_ic = 500
+					instant = yes
 				}
 			}
 		}

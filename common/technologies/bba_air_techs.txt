@@ -1183,7 +1183,6 @@ technologies = {
 	air_torpedoe_1 = {
 		enable_equipment_modules = {
 			torpedo_mounting
-			tail_hook
 		}
 		
 		research_cost = 0.5
