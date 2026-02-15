@@ -160,7 +160,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = {focus = SPA_obtain_training_staff }
-		icon = GFX_focus_anti_tank
+		icon = GFX_focus_generic_anti_tank_guns
 		x = 0
 		y = 1
 		relative_position_id = SPA_obtain_training_staff
@@ -207,7 +207,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_fuse_the_parties }
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_generic_full_social_mobilization
 		x = -6
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
@@ -221,7 +221,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SPA_the_army_of_africa_model
+		id = SPA_the_army_of_africa
 		available = {
 		}
 		bypass = {
@@ -331,11 +331,11 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
-		icon = GFX_focus_SPR_motorization
+		prerequisite = { focus = SPA_the_army_of_africa }
+		icon = GFX_focus_generic_mechanized
 		x = 1
 		y = 1
-		relative_position_id = SPA_the_army_of_africa_model
+		relative_position_id = SPA_the_army_of_africa
 		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -361,7 +361,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_motorization }
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_generic_heavy_tank
 		x = 0
 		y = 1
 		relative_position_id = SPA_motorization
@@ -401,11 +401,11 @@ focus_tree = {
 		id = SPA_military_training
 		available = {
 		}
-		icon = GFX_focus_SPR_military_training
-		prerequisite = { focus = SPA_the_army_of_africa_model }
+		icon = GFX_focus_generic_radio_communication
+		prerequisite = { focus = SPA_the_army_of_africa }
 		x = -1
 		y = 1
-		relative_position_id = SPA_the_army_of_africa_model
+		relative_position_id = SPA_the_army_of_africa
 		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -422,7 +422,7 @@ focus_tree = {
 		id = SPA_support_tech
 		available = {
 		}
-		icon = GFX_focus_SPR_apoyo
+		icon = GFX_focus_generic_public_works
 		prerequisite = { focus = SPA_military_training }
 		x = 0
 		y = 1
@@ -443,7 +443,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = SPA_support_tech }
-		icon = GFX_focus_SPR_pistolas
+		icon = GFX_focus_generic_army_tanks2
 		x = 0
 		y = 1
 		relative_position_id = SPA_support_tech
@@ -493,7 +493,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_national_recovery }
 		mutually_exclusive = { focus = SPA_autarky }
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_german_trade
 		x = -1
 		y = 1
 		relative_position_id = SPA_national_recovery
@@ -565,7 +565,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_autarky }
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_road_investment
 		x = 1
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
@@ -601,7 +601,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_reorient_production
 		x = 0
 		y = 1
 		relative_position_id = SPA_facilitate_pyrenees_freight_transports
@@ -680,9 +680,9 @@ focus_tree = {
 					amount = 100
 				}
 			}
-			41 = {
+			166 = {
 				add_resource = {
-					type = aluminium
+					type = tungsten
 					amount = 100
 				}
 			}
@@ -1081,7 +1081,7 @@ focus_tree = {
 		bypass = {
 		}
 		prerequisite = { focus = SPA_integrate_the_requetes }
-		icon = GFX_focus_research
+		icon = GFX_focus_ARG_fascist_researchers
 		x = 0
 		y = 1
 		relative_position_id = SPA_integrate_the_requetes

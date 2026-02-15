@@ -67,11 +67,11 @@ characters={
 		}
 		
 		field_marshal = {
-			traits = { organizer aggressive_assaulter harsh_leader }
-			skill = 3
-			attack_skill = 3
+			traits = { organizer aggressive_assaulter harsh_leader infantry_leader }
+			skill = 5
+			attack_skill = 4
 			defense_skill = 2
-			planning_skill = 2
+			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = -1
 		}
@@ -193,12 +193,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster }
-			skill=3
-			attack_skill=2
+			traits={ trickster trait_mountaineer infantry_leader }
+			skill=5
+			attack_skill=4
 			defense_skill=3
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=-1
 		}
 		advisor = {
@@ -233,11 +233,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
+			traits={ urban_assault_specialist infantry_leader panzer_leader trait_engineer }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -306,11 +306,11 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ thorough_planner }
-			skill=3
-			attack_skill=3
+			traits={ thorough_planner organizer infantry_leader }
+			skill=5
+			attack_skill=4
 			defense_skill=2
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -338,12 +338,15 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=-1
+			traits = {
+				hill_fighter infantry_leader
+			}
 		}
 		advisor={
 			slot = navy_chief
@@ -434,13 +437,13 @@ characters={
 	}
 	YUG_dusan_simovic={
 		advisor={
-			slot = air_chief
+			slot = political_advisor
 			idea_token = YUG_dusan_simovic
 			allowed = {
 					original_tag = YUG
 				}
 				traits = {
-					air_chief_safety_2
+					silent_workhorse
 				}
 				cost = 100
 				ai_will_do = {
