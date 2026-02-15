@@ -1512,18 +1512,6 @@ focus_tree = {
  				bonus = 1.0
  				uses = 1
  				category = motorized_equipment
- 				technology = tech_field_hospital
- 				technology = tech_field_hospital2
- 				technology = tech_field_hospital3
- 				technology = tech_field_hospital4
- 				technology = tech_logistics_company
- 				technology = tech_logistics_company2
- 				technology = tech_logistics_company3
- 				technology = tech_logistics_company4
- 				technology = tech_signal_company
- 				technology = tech_signal_company2
- 				technology = tech_signal_company3
- 				technology = tech_signal_company4
  			}
  		}
  	}
