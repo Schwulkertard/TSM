@@ -54,6 +54,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = 100
 				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 100
+				}
 				#small_plane_cas_airframe = {
 				#	instant = yes
 				#	build_cost_ic = 0.4
