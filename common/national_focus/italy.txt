@@ -1115,7 +1115,6 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
-				ahead_reduction = 0.75
 				uses = 1
 				technology = advanced_medium_tank_chassis
 			}
